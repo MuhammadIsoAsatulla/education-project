@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} | %{size_download}b\" http://localhost:5173/)",
+      "Bash(powershell -Command '\\(Get-ChildItem src/data/*.json\\) | ForEach-Object { \\(Get-Content -Path $_.FullName -Raw\\) -replace '\\\\''\\\\.png\"'\\\\'', '\\\\''.jpg\"'\\\\'' | Set-Content -Path $_.FullName -NoNewline; Write-Host \"Reverted: $\\($_.Name\\)\" }')"
+    ]
+  }
+}

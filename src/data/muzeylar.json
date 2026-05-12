@@ -1,0 +1,127 @@
+[
+  {
+    "id": "registon",
+    "slug": "registon",
+    "name": "Registon Maydoni",
+    "city": "Samarqand",
+    "century": "XV–XVII asrlar",
+    "status": "available",
+    "initial": "R",
+    "accent": "#d4a574",
+    "image": "/images/muzeylar/registon.jpg",
+    "shortDescription": "Sharqning eng buyuk me'morchilik ansambli — uchta madrasaning shukuhli birlashmasi.",
+    "fullDescription": [
+      "Registon — Samarqand qalbidagi maydon, bu yerda Ulug'bek, Sherdor va Tillakori madrasalari yonma-yon turibdi. Har biri o'z davrining ilmu-ma'rifat markazi bo'lgan.",
+      "Ulug'bek madrasasi (1417–1420) — astronomiya va matematikaning markazi edi. Sherdor (1619–1636) o'z fasadidagi sherlar tasviri bilan mashhur. Tillakori (1646–1660) esa o'zining oltin bezakli devorlari va gumbazi bilan hayratga soladi.",
+      "Bu maydon shunchaki me'moriy yodgorlik emas — bu o'zbek madaniyatining yuragi. Bu yerda Ulug'bek dars bergan, Navoiy yurgan, Bobur ulg'aygan."
+    ],
+    "highlights": [
+      { "title": "Ulug'bek Madrasasi", "text": "1417-yilda qurilgan, ilm dargohi." },
+      { "title": "Sherdor Madrasasi", "text": "Sher tasvirli noyob fasadi bilan mashhur." },
+      { "title": "Tillakori", "text": "Oltin bezakli ichki bezagi nafis." }
+    ],
+    "hotspots": [
+      { "id": "ulugbek", "x": 25, "y": 50, "label": "Ulug'bek Madrasasi", "info": "Yodgorlikning eng qadimgi madrasasi (1420). Astronomiya darslari shu yerda olib borilgan." },
+      { "id": "tillakori", "x": 50, "y": 45, "label": "Tillakori Madrasasi", "info": "Oltin bezaklari va gumbazi bilan jahonga mashhur (1660)." },
+      { "id": "sherdor", "x": 75, "y": 50, "label": "Sherdor Madrasasi", "info": "Sherlar tasvirini fasadga joylashtirilgan noyob namuna (1636)." }
+    ],
+    "audioGuide": "/audio/voiceovers/registon.mp3",
+    "panorama": "/panoramas/registon.jpg"
+  },
+  {
+    "id": "amir-temur",
+    "slug": "amir-temur",
+    "name": "Amir Temur Muzeyi",
+    "city": "Toshkent",
+    "century": "1996",
+    "status": "available",
+    "initial": "A",
+    "accent": "#b8893f",
+    "image": "/images/muzeylar/amir-temur.jpg",
+    "shortDescription": "Sohibqiron Amir Temur va Temuriylar sulolasi tarixiga bag'ishlangan davlat muzeyi.",
+    "fullDescription": [
+      "Amir Temur muzeyi 1996-yilda — Sohibqironning 660 yilligida ochilgan. Muzey Toshkentning markazidagi Amir Temur xiyobonida joylashgan.",
+      "Muzey ekspozitsiyasi 5000 dan ortiq eksponatdan iborat: qurol-yarog'lar, libos namunalari, qo'lyozma kitoblar, miniatyuralar, tangalar va Temuriylar davriga oid arxeologik topilmalar.",
+      "Bosh zalda Amir Temurning ulkan haykali va Temuriylar imperiyasining buyuk xaritalari joylashtirilgan."
+    ],
+    "highlights": [
+      { "title": "Bosh zal", "text": "Sohibqironning haykali va saroy bezaklari." },
+      { "title": "Qurol-yarog'lar", "text": "Temuriylar davriga oid noyob qurollar." },
+      { "title": "Qo'lyozmalar", "text": "Boburnoma va boshqa noyob qo'lyozmalar." }
+    ],
+    "hotspots": [
+      { "id": "haykal", "x": 50, "y": 45, "label": "Sohibqiron haykali", "info": "Muzey markazidagi haykal — Sohibqironning shukuhini ifodalaydi." },
+      { "id": "xarita", "x": 30, "y": 60, "label": "Imperiya xaritasi", "info": "Temuriylar imperiyasining geografik kengligi ko'rsatilgan." },
+      { "id": "qurollar", "x": 70, "y": 55, "label": "Qurol zali", "info": "XIV-XV asr qilich, sovut va qurollari." }
+    ],
+    "audioGuide": "/audio/voiceovers/amir-temur.mp3",
+    "panorama": "/panoramas/amir-temur.jpg"
+  },
+  {
+    "id": "ichan-qala",
+    "slug": "ichan-qala",
+    "name": "Ichan Qal'a",
+    "city": "Xiva",
+    "century": "X–XIX asrlar",
+    "status": "coming-soon",
+    "initial": "X",
+    "accent": "#1a6b7e",
+    "image": "/images/muzeylar/ichan-qala.jpg",
+    "shortDescription": "UNESCO ro'yxatidagi ochiq osmon ostidagi muzey — Xivaning qadimgi ichki shahri.",
+    "fullDescription": [
+      "Ichan Qal'a — Xivaning ichki shahri, 26 gektar maydonda joylashgan. Bu yer 1990-yilda UNESCO Jahon merosi ro'yxatiga kiritilgan.",
+      "Hududda 60 dan ortiq tarixiy yodgorlik bor: madrasalar, masjidlar, minoralar, saroylar va karvonsaroylar. Eng mashhuri — Kalta Minor minorasi.",
+      "Ichan Qal'a — vaqt to'xtab qolgan joy. Bu yerga kelgan kishi o'zini O'rta asrlardagi karvon yo'lining markazida his etadi."
+    ],
+    "highlights": [
+      { "title": "Kalta Minor", "text": "Yorqin feruza koshinli noyob minora." },
+      { "title": "Tosh Hovli", "text": "Xon saroyining muhim qismi." },
+      { "title": "Juma Masjidi", "text": "213 yog'och ustun bilan tutib turilgan zal." }
+    ],
+    "hotspots": [],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "shahi-zinda",
+    "slug": "shahi-zinda",
+    "name": "Shohi Zinda",
+    "city": "Samarqand",
+    "century": "XI–XIX asrlar",
+    "status": "coming-soon",
+    "initial": "Sh",
+    "accent": "#1e3a8a",
+    "image": "/images/muzeylar/shahi-zinda.jpg",
+    "shortDescription": "Tirik shoh — Samarqandning eng go'zal nekropoli, koshin san'atining cho'qqisi.",
+    "fullDescription": [
+      "Shohi Zinda — Samarqanddagi eng go'zal nekropollardan biri. Bu yerda Temuriylar sulolasining muhim a'zolari, sayyidlar va olimlar dafn etilgan.",
+      "Maqbaralar fasadlari koshin san'atining cho'qqisi hisoblanadi — har bir maqbara o'zining naqshlari va rang-barangligi bilan ajralib turadi."
+    ],
+    "highlights": [
+      { "title": "Qusam ibn Abbos maqbarasi", "text": "Eng qadimgi maqbara, Muhammad payg'ambarning amakivachchasi." },
+      { "title": "Shoda Mulk maqbarasi", "text": "Koshin san'atining noyob namunasi." }
+    ],
+    "hotspots": [],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "buxoro",
+    "slug": "buxoro",
+    "name": "Buxoroi Sharif",
+    "city": "Buxoro",
+    "century": "IX–XIX asrlar",
+    "status": "coming-soon",
+    "initial": "B",
+    "accent": "#8b2635",
+    "image": "/images/muzeylar/buxoro.jpg",
+    "shortDescription": "«Muqaddas Buxoro» — 140 dan ortiq tarixiy yodgorlikni saqlovchi shahar-muzey.",
+    "fullDescription": [
+      "Buxoro 2500 yillik tarixga ega bo'lib, butun shahar UNESCO ro'yxatiga kiritilgan. Po'i Kalon ansambli, Mir Arab madrasasi, Ismoil Somoniy maqbarasi — bularning har biri alohida hayrat manbai."
+    ],
+    "highlights": [],
+    "hotspots": [],
+    "audioGuide": null,
+    "panorama": null
+  }
+]

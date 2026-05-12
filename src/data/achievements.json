@@ -1,0 +1,66 @@
+[
+  {
+    "id": "first-step",
+    "name": "Ilk Qadam",
+    "description": "MEROS sayohatini boshladingiz.",
+    "icon": "compass",
+    "tier": "bronze",
+    "requires": { "type": "any", "count": 1 }
+  },
+  {
+    "id": "alloma-do-st",
+    "name": "Alloma Do'sti",
+    "description": "Bir alloma haqida to'liq tanishdingiz.",
+    "icon": "scroll",
+    "tier": "bronze",
+    "requires": { "type": "allomalar", "count": 1 }
+  },
+  {
+    "id": "ulug-bilim",
+    "name": "Ulug' Bilim",
+    "description": "Barcha allomalarni o'rganib chiqdingiz.",
+    "icon": "telescope",
+    "tier": "gold",
+    "requires": { "type": "allomalar", "count": 5 }
+  },
+  {
+    "id": "muzey-mehmoni",
+    "name": "Muzey Mehmoni",
+    "description": "Birinchi virtual muzey sayohatini bajarib chiqdingiz.",
+    "icon": "landmark",
+    "tier": "silver",
+    "requires": { "type": "muzeylar", "count": 1 }
+  },
+  {
+    "id": "maqomshunos",
+    "name": "Maqomshunos",
+    "description": "5 ta milliy qo'shiqni tinglab chiqdingiz.",
+    "icon": "music",
+    "tier": "silver",
+    "requires": { "type": "musiqa", "count": 5 }
+  },
+  {
+    "id": "kinoshunos",
+    "name": "Kinoshunos",
+    "description": "5 ta klassik kinoni ko'rib chiqdingiz.",
+    "icon": "film",
+    "tier": "silver",
+    "requires": { "type": "kinolar", "count": 5 }
+  },
+  {
+    "id": "kitobxon",
+    "name": "Kitobxon",
+    "description": "5 ta kitobni mutolaa qildingiz.",
+    "icon": "book-open",
+    "tier": "silver",
+    "requires": { "type": "kitoblar", "count": 5 }
+  },
+  {
+    "id": "meros-vorisi",
+    "name": "Meros Vorisi",
+    "description": "Barcha bo'limlarni kashf etdingiz.",
+    "icon": "crown",
+    "tier": "platinum",
+    "requires": { "type": "all", "count": 6 }
+  }
+]

@@ -1,0 +1,21 @@
+:root {
+  --bg-deep: #0a1f2e;
+  --bg-mid: #0d2b3e;
+  --teal: #0f4c5c;
+  --teal-light: #1a6b7e;
+  --gold: #d4a574;
+  --gold-bright: #e8c898;
+  --gold-deep: #b8893f;
+  --cream: #f5ebd6;
+  --cream-soft: #ebe0c8;
+  --lapis: #1e3a8a;
+  --crimson: #8b2635;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-amiri: 'Amiri', serif;
+
+  --ease-out-expo: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
