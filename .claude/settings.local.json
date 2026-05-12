@@ -3,7 +3,15 @@
     "allow": [
       "Bash(npm run *)",
       "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} | %{size_download}b\" http://localhost:5173/)",
-      "Bash(powershell -Command '\\(Get-ChildItem src/data/*.json\\) | ForEach-Object { \\(Get-Content -Path $_.FullName -Raw\\) -replace '\\\\''\\\\.png\"'\\\\'', '\\\\''.jpg\"'\\\\'' | Set-Content -Path $_.FullName -NoNewline; Write-Host \"Reverted: $\\($_.Name\\)\" }')"
+      "Bash(powershell -Command '\\(Get-ChildItem src/data/*.json\\) | ForEach-Object { \\(Get-Content -Path $_.FullName -Raw\\) -replace '\\\\''\\\\.png\"'\\\\'', '\\\\''.jpg\"'\\\\'' | Set-Content -Path $_.FullName -NoNewline; Write-Host \"Reverted: $\\($_.Name\\)\" }')",
+      "Bash(powershell -Command '\\(Get-ChildItem src/data/*.json\\) | ForEach-Object { \\(Get-Content -Path $_.FullName -Raw\\) -replace '\\\\''/images/'\\\\'', '\\\\''/'\\\\'' | Set-Content -Path $_.FullName -NoNewline; Write-Host \"Updated: $\\($_.Name\\)\" }')",
+      "Bash(curl -s -o /dev/null -w \"registon: %{http_code}\\\\n\" http://localhost:5173/muzeylar/registon.jpg)",
+      "Bash(curl -s -o /dev/null -w \"beruniy: %{http_code}\\\\n\" http://localhost:5173/allomalar/beruniy.jpg)",
+      "Bash(curl -s -o /dev/null -w \"cholpon: %{http_code}\\\\n\" http://localhost:5173/allomalar/cholpon.jpg)",
+      "Bash(npm install *)",
+      "Bash(ls \"C:\\\\Users\\\\msi-1\\\\.claude\\\\projects\" 2>&1 | head -10)",
+      "Read(//c/Users/msi-1/.claude/projects/**)",
+      "Bash(powershell -Command ' *)"
     ]
   }
 }

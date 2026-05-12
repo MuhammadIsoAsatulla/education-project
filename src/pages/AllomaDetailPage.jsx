@@ -56,6 +56,7 @@ export default function AllomaDetailPage() {
                 alt={alloma.name}
                 initial={alloma.initial}
                 accent={alloma.accent}
+                objectPosition={alloma.imagePosition || 'center top'}
               />
             </div>
             <div className="absolute inset-3 border border-gold/40 pointer-events-none z-10" />
@@ -189,7 +190,13 @@ export default function AllomaDetailPage() {
                   className="group p-3 border border-gold/20 hover:border-gold/80 rounded-sm transition-all overflow-hidden"
                 >
                   <div className="aspect-[3/4] mb-3 rounded-sm overflow-hidden">
-                    <SmartImage src={a.image} alt={a.name} initial={a.initial} accent={a.accent} />
+                    <SmartImage
+                      src={a.image}
+                      alt={a.name}
+                      initial={a.initial}
+                      accent={a.accent}
+                      objectPosition={a.imagePosition || 'center top'}
+                    />
                   </div>
                   <div className="font-serif text-cream text-sm text-center">{a.name}</div>
                   <div className="text-gold/60 text-[10px] tracking-[2px] mt-1 text-center">{a.years}</div>

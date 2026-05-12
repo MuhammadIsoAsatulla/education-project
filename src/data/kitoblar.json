@@ -10,7 +10,7 @@
     "language": "Eski o'zbek",
     "accent": "#d4a574",
     "initial": "B",
-    "cover": "/images/kitoblar/boburnoma.jpg",
+    "cover": "/kitoblar/boburnoma.jpg",
     "annotation": "Sohibqironning nevarasi Boburning shaxsiy kundaliklari — bu nafaqat avtobiografiya, balki butun bir davrning jonli xronikasidir.",
     "longDescription": "«Boburnoma» — Hindistonda Boburiylar imperiyasiga asos solgan Zahiriddin Muhammad Boburning yodnomalari. Asar Andijonda boshlanib, Hindistonda yakunlanadi.",
     "excerpts": [
@@ -36,7 +36,7 @@
     "language": "Eski o'zbek (chig'atoy)",
     "accent": "#e8c898",
     "initial": "N",
-    "cover": "/images/kitoblar/navoiy-gazallari.jpg",
+    "cover": "/kitoblar/navoiy-gazallari.jpg",
     "annotation": "Mir Alisher Navoiyning to'rt devondan iborat g'azallar to'plami — turk tilining shoh asari.",
     "longDescription": "«Xazoyin ul-Maoniy» — Navoiyning to'rt devondan iborat she'riy to'plami. «G'aroyib us-sig'ar», «Navodir ush-shabob», «Badoyi' ul-vasat», «Favoyid ul-kibar» — har biri shoirning bir umr davridagi kechinmalarini aks ettiradi.",
     "excerpts": [
@@ -62,7 +62,7 @@
     "language": "O'zbek",
     "accent": "#1a6b7e",
     "initial": "Q",
-    "cover": "/images/kitoblar/otkan-kunlar.jpg",
+    "cover": "/kitoblar/otkan-kunlar.jpg",
     "annotation": "O'zbek nasrining birinchi va eng buyuk romani. Otabek va Kumush hikoyasi orqali butun bir davrni ifodalovchi shoh asar.",
     "longDescription": "Abdulla Qodiriyning «O'tkan kunlar» romani 1922-yilda nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. XIX asr oxiri Turkistondagi hayot, sevgi va fojialar tasvirlanadi.",
     "excerpts": [
@@ -88,7 +88,7 @@
     "language": "O'zbek",
     "accent": "#b8893f",
     "initial": "Ch",
-    "cover": "/images/kitoblar/kecha-va-kunduz.jpg",
+    "cover": "/kitoblar/kecha-va-kunduz.jpg",
     "annotation": "Cho'lponning shoh asari — XX asr boshlaridagi o'zbek qishloq hayoti va ayollar taqdiri haqida.",
     "longDescription": "«Kecha va kunduz» — Cho'lponning ijodiy taqdiri qatag'on tomonidan uzilib qolgan, ammo bizgacha yetib kelgan eng yorqin nasriy asarlaridan biri. Zebixonning hayoti orqali muallif butun bir avlodning og'ir taqdirini ko'rsatadi.",
     "excerpts": [
@@ -110,7 +110,7 @@
     "language": "O'zbek",
     "accent": "#8b2635",
     "initial": "Q",
-    "cover": "/images/kitoblar/mehrobdan-chayon.jpg",
+    "cover": "/kitoblar/mehrobdan-chayon.jpg",
     "annotation": "Qodiriyning ikkinchi yirik asari — Xudoyorxon davridagi Qo'qon xonligi tarixini sevgi hikoyasi orqali ko'rsatadi.",
     "longDescription": "«Mehrobdan chayon» — XIX asr o'rtalaridagi Qo'qon xonligi haqida. Anvar va Ra'no sevgisi, saroy intrigasi, fitnalar va sodiqlik — barchasi bir matnda.",
     "excerpts": [
@@ -132,7 +132,7 @@
     "language": "O'zbek",
     "accent": "#1e3a8a",
     "initial": "Q",
-    "cover": "/images/kitoblar/sarob.jpg",
+    "cover": "/kitoblar/sarob.jpg",
     "annotation": "Yangi davr boshlanishida o'zini topa olmagan ziyolining ichki olami haqida qisqa, lekin chuqur asar.",
     "longDescription": "Abdulla Qahhorning eng mashhur romani. Shaxsiy va ijtimoiy keskinliklar bir matnda mahorat bilan birlashtirilgan.",
     "excerpts": [

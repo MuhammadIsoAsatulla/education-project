@@ -15,6 +15,7 @@ export default function SmartImage({
   imgClassName = '',
   fallbackClassName = '',
   rounded = false,
+  objectPosition = 'center',
 }) {
   const [failed, setFailed] = useState(false);
   const showImage = src && !failed;
@@ -27,6 +28,7 @@ export default function SmartImage({
           alt={alt}
           loading="lazy"
           onError={() => setFailed(true)}
+          style={{ objectPosition }}
           className={`absolute inset-0 w-full h-full object-cover ${rounded ? 'rounded-sm' : ''} ${imgClassName}`}
         />
       ) : (

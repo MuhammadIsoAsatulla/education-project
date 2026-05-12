@@ -22,7 +22,13 @@ export default function DailyFigure() {
       <div className="relative max-w-[1200px] mx-auto grid lg:grid-cols-[1fr_1.5fr] gap-16 items-center">
         {/* Portrait card */}
         <div className="reveal aspect-[3/4] relative overflow-hidden border border-gold rounded-sm shadow-2xl">
-          <SmartImage src={figure.image} alt={figure.name} initial={figure.initial} accent={figure.accent} />
+          <SmartImage
+            src={figure.image}
+            alt={figure.name}
+            initial={figure.initial}
+            accent={figure.accent}
+            objectPosition={figure.imagePosition || 'center top'}
+          />
           <div className="absolute inset-3 border border-gold/40 pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg-deep via-bg-deep/70 to-transparent">
             <p className="eyebrow text-xs">— BUGUNGI ALLOMA —</p>
