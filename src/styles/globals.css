@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--bg-deep);
+    color: var(--cream);
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent zoom-on-input-focus on iOS while keeping desktop look. */
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Larger tap targets and removed iOS tap flash */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Make sure inputs use 16px on mobile to prevent iOS zoom */
+  @media (max-width: 640px) {
+    input, select, textarea {
+      font-size: 16px;
+    }
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--bg-deep);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-deep);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--gold-deep), var(--teal));
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+  }
+}
+
+@layer components {
+  /* Reusable text utilities */
+  .text-gold-gradient {
+    background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .eyebrow {
+    font-family: var(--font-amiri);
+    color: var(--gold);
+    letter-spacing: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 500;
+    color: var(--cream);
+    letter-spacing: 2px;
+    line-height: 1.05;
+  }
+
+  .gold-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 36px;
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    border-radius: 2px;
+  }
+
+  .gold-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    transform: translateX(-101%);
+    transition: transform 0.45s var(--ease-out-expo);
+    z-index: 0;
+  }
+
+  .gold-cta > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .gold-cta:hover {
+    color: var(--bg-deep);
+  }
+
+  .gold-cta:hover::before {
+    transform: translateX(0);
+  }
+
+  /* Reveal-on-scroll utility */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Subtle ornamental hairline divider */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(212, 165, 116, 0.4), transparent);
+  }
+}
+
+@layer utilities {
+  .bg-girih {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-16.569-13.431-30-30-30v60c16.569 0 30-13.431 30-30zM60 30c0-16.569-13.431-30-30-30v60c16.569 0 30-13.431 30-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/* Globally-available keyframes (used in inline styles, so we keep
+   them outside @layer to ensure Tailwind never purges them). */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounceY {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+}
+@keyframes fadeInUpCenter {
+  0% { opacity: 0; transform: translateX(-50%) translateY(30px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+@keyframes heroTitleReveal {
+  0% { opacity: 0; letter-spacing: 40px; filter: blur(10px); }
+  100% { opacity: 1; letter-spacing: 12px; filter: blur(0); }
+}

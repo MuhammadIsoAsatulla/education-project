@@ -1,0 +1,194 @@
+[
+  {
+    "id": "beruniy",
+    "slug": "beruniy",
+    "name": "Abu Rayhon Beruniy",
+    "fullName": "Abu Rayhon Muhammad ibn Ahmad al-Beruniy",
+    "years": "973 — 1048",
+    "yearBorn": 973,
+    "yearDied": 1048,
+    "era": "X–XI asr",
+    "field": "Astronom · Matematik · Tarixchi",
+    "initial": "B",
+    "accent": "#d4a574",
+    "image": "/images/allomalar/beruniy.jpg",
+    "birthplace": "Kot, Xorazm",
+    "quote": "Bilim — eng aziz xazinadir. Uni hech kim sendan tortib ololmaydi.",
+    "shortBio": "Yer sharining radiusini hisoblagan, 150 dan ortiq asar yozgan, Hindiston tarixi va madaniyatini ilk bo'lib chuqur o'rgangan buyuk qomusiy olim.",
+    "fullBio": [
+      "Abu Rayhon Beruniy 973-yilda Xorazmning Kot shahrida tug'ildi. Yoshligidan ilm-fanga ishtiyoqi baland bo'lgan u astronomiya, matematika, geografiya, tarix va tilshunoslik sohalarida tengsiz natijalarga erishdi.",
+      "U Yer sharining radiusini bugungi qiymatga juda yaqin aniqlikda hisoblab chiqdi — bu uchun maxsus geometrik usul ishlab chiqdi. Astronomiya bo'yicha yozgan «Qonuni Mas'udiy» asari o'rta asrlarda haqiqiy ensiklopediyaga aylandi.",
+      "Hindistonda 13 yil yashagan Beruniy hind madaniyati, dini va falsafasini chuqur o'rgandi va «Hindiston» nomli mashhur asarini yaratdi. Bu asar zamondoshlari uchun yangi olamni ochib berdi.",
+      "Beruniy 150 dan ortiq asar yozgan deb hisoblanadi. Uning ishlari arab, fors, sanskrit va boshqa tillarda saqlangan — har biri bilim chashmasi sifatida bugun ham qadrli."
+    ],
+    "timeline": [
+      { "year": 973, "title": "Tug'ilishi", "text": "Xorazmning Kot shahrida dunyoga keldi." },
+      { "year": 995, "title": "Birinchi astronomik kuzatishlar", "text": "Yulduzlar va sayyoralar harakatini o'rgana boshladi." },
+      { "year": 1017, "title": "G'azna saroyiga", "text": "Sulton Mahmud G'aznaviy saroyiga taklif etildi." },
+      { "year": 1030, "title": "«Hindiston» asari", "text": "13 yillik tadqiqot natijasi sifatida yozildi." },
+      { "year": 1037, "title": "«Qonuni Mas'udiy»", "text": "Astronomiya bo'yicha qomusiy asar tugatildi." },
+      { "year": 1048, "title": "Vafoti", "text": "G'aznada vafot etdi, ammo asarlari abadiyatga qoldi." }
+    ],
+    "works": [
+      "Hindiston (Tahqiq mâ li-l-Hind)",
+      "Qonuni Mas'udiy",
+      "Qadimgi xalqlardan qolgan yodgorliklar",
+      "Mineralogiya",
+      "Astrolabiya kitobi"
+    ],
+    "tags": ["astronomiya", "matematika", "tarix", "geografiya"]
+  },
+  {
+    "id": "ibn-sino",
+    "slug": "ibn-sino",
+    "name": "Abu Ali ibn Sino",
+    "fullName": "Abu Ali al-Husayn ibn Abdulloh ibn Sino",
+    "years": "980 — 1037",
+    "yearBorn": 980,
+    "yearDied": 1037,
+    "era": "X–XI asr",
+    "field": "Tabib · Faylasuf · Olim",
+    "initial": "S",
+    "accent": "#e8c898",
+    "image": "/images/allomalar/ibn-sino.jpg",
+    "birthplace": "Afshona, Buxoro",
+    "quote": "Bemorni davolashda eng kuchli dori — umiddir.",
+    "shortBio": "G'arbda «Avitsenna» nomi bilan mashhur, «Tib qonunlari» asari 600 yil davomida Yevropa universitetlarida asosiy darslik bo'lgan tabib.",
+    "fullBio": [
+      "Abu Ali ibn Sino 980-yilda Buxoro yaqinidagi Afshona qishlog'ida tug'ildi. 10 yoshida Qur'onni yod oldi, 16 yoshida tabiblik sirlarini egalladi, 18 yoshida esa Buxoro amirini muvaffaqiyatli davoladi.",
+      "Uning «Kitob ash-shifo» (Davolash kitobi) falsafa bo'yicha buyuk asar bo'lib, mantiq, fizika, matematika va metafizikani qamrab oladi. Bu asar arab tilidagi falsafiy adabiyotning eng yirik namunasi hisoblanadi.",
+      "«Al-qonun fit-tib» (Tib qonunlari) — 5 jildli tibbiy ensiklopediya. U Yevropada 1473-yili lotin tiliga tarjima qilindi va 17-asrgacha tibbiyot fakultetlarining asosiy darsligi bo'lib xizmat qildi.",
+      "Ibn Sino umrida 450 dan ortiq asar yozgan. Tibbiyot, falsafa, astronomiya, kimyo, geologiya, musiqashunoslik — barcha sohada chuqur iz qoldirgan."
+    ],
+    "timeline": [
+      { "year": 980, "title": "Tug'ilishi", "text": "Buxoro yaqinidagi Afshonada tug'ildi." },
+      { "year": 996, "title": "Tabiblik faoliyati", "text": "Buxoro amiri Nuh II ni davolab, kutubxonadan foydalanish huquqini oldi." },
+      { "year": 1014, "title": "Hamadonga ko'chish", "text": "Hamadon hukmdorining vaziri etib tayinlandi." },
+      { "year": 1020, "title": "«Tib qonunlari»", "text": "Beshiklikning eng katta tibbiy asari yozila boshladi." },
+      { "year": 1030, "title": "«Kitob ash-shifo»", "text": "Falsafiy bosh asari tugatildi." },
+      { "year": 1037, "title": "Vafoti", "text": "Hamadonda vafot etdi." }
+    ],
+    "works": [
+      "Al-qonun fit-tib (Tib qonunlari)",
+      "Kitob ash-shifo (Davolash kitobi)",
+      "Kitob an-najot (Najot kitobi)",
+      "Donishnoma",
+      "Risola fil-ishq (Ishq haqida risola)"
+    ],
+    "tags": ["tibbiyot", "falsafa", "mantiq", "astronomiya"]
+  },
+  {
+    "id": "ulugbek",
+    "slug": "ulugbek",
+    "name": "Mirzo Ulug'bek",
+    "fullName": "Muhammad Tarag'ay ibn Shohrux Mirzo",
+    "years": "1394 — 1449",
+    "yearBorn": 1394,
+    "yearDied": 1449,
+    "era": "XV asr",
+    "field": "Astronom · Hukmdor · Olim",
+    "initial": "U",
+    "accent": "#1a6b7e",
+    "image": "/images/allomalar/ulugbek.jpg",
+    "birthplace": "Sultoniya, Eron",
+    "quote": "Dinlar tarqaladi va yo'qoladi — ammo ilmlar abadiy yashaydi.",
+    "shortBio": "Samarqandda dunyoning eng katta o'rta asr rasadxonasini qurgan, 1018 ta yulduzni o'lchagan astronom-shoh.",
+    "fullBio": [
+      "Mirzo Ulug'bek — Amir Temurning nevarasi, Shohrux Mirzoning o'g'li. 17 yoshida Movarounnahr hukmdori bo'ldi va Samarqandni dunyoning ilm-fan markaziga aylantirishni o'z oldiga maqsad qilib qo'ydi.",
+      "1424–1429 yillarda u Ko'hak tepaligida ulkan rasadxona qurdirdi. Uning balandligi 40 metrga, kvadranti diametri 40 metrgacha yetar edi. Bu o'sha davrning eng aniq astronomik asbobi edi.",
+      "Ulug'bek o'z atrofiga davrning eng yirik olimlarini — Qozizoda Rumiy, G'iyosiddin Jamshid Koshiy, Ali Qushchini to'pladi. Birgalikda 1018 yulduzning aniq joylashuvini ko'rsatuvchi «Zij» (yulduzlar jadvali) tuzdilar.",
+      "1449-yilda fojiali ravishda o'z o'g'li tomonidan o'ldirildi. Lekin uning ilmiy merosi — «Ziji jadidi Ko'ragoniy» Yevropaga yetib bordi va 17-asrgacha asosiy astronomik manba bo'lib qoldi."
+    ],
+    "timeline": [
+      { "year": 1394, "title": "Tug'ilishi", "text": "Sultoniya shahrida (hozirgi Eron) tug'ildi." },
+      { "year": 1411, "title": "Hokimiyat", "text": "Movarounnahr hokimi etib tayinlandi." },
+      { "year": 1417, "title": "Madrasa", "text": "Samarqand Registonida o'z madrasasini bunyod etdi." },
+      { "year": 1424, "title": "Rasadxona", "text": "Ulug'bek rasadxonasi qurilishi boshlandi." },
+      { "year": 1437, "title": "«Ziji jadidi»", "text": "Yulduzlar jadvali tugatildi — 1018 yulduz." },
+      { "year": 1449, "title": "Vafoti", "text": "Fojiali ravishda hayotdan ko'z yumdi." }
+    ],
+    "works": [
+      "Ziji jadidi Ko'ragoniy",
+      "Tarixi arba' ulus",
+      "Risolai Ulug'bek (matematika)"
+    ],
+    "tags": ["astronomiya", "matematika", "davlat", "ta'lim"]
+  },
+  {
+    "id": "cholpon",
+    "slug": "cholpon",
+    "name": "Cho'lpon",
+    "fullName": "Abdulhamid Sulaymon o'g'li Yunusov",
+    "years": "1897 — 1938",
+    "yearBorn": 1897,
+    "yearDied": 1938,
+    "era": "XX asr",
+    "field": "Shoir · Yozuvchi · Jadidchi",
+    "initial": "Ch",
+    "accent": "#8b2635",
+    "image": "/images/allomalar/cholpon.jpg",
+    "birthplace": "Andijon",
+    "quote": "Tilim — qanotim, men u bilan parvoz etaman.",
+    "shortBio": "O'zbek modernizm she'riyatining asoschisi, jadid harakati yetakchilaridan biri, fojiali taqdir egasi.",
+    "fullBio": [
+      "Cho'lpon (asl ismi Abdulhamid Sulaymon o'g'li) 1897-yilda Andijonda savdogar oilasida tug'ildi. Yoshligidan an'anaviy maktabda o'qib, keyin yangi usuldagi maktabga o'tdi va jadidchilik harakatiga qo'shildi.",
+      "U o'zbek she'riyatiga yangi ovoz olib kirdi. «Uyg'onish», «Bahorni qolardim sog'inib» kabi she'rlari milliy uyg'onishning ramziga aylandi. «Kecha va kunduz» romani esa o'zbek nasrining shoh asarlaridan biri.",
+      "Cho'lpon shoir, dramaturg, tarjimon, publitsist va madaniyat arbobi sifatida ko'p qirrali ish olib bordi. Pushkin, Shekspir, Gogolni o'zbek tiliga tarjima qildi.",
+      "1937-yilda «xalq dushmani» degan tuhmat bilan qamoqqa olindi va 1938-yilda otib o'ldirildi. Uzoq yillar davomida nomi taqiqlangan bo'lsa-da, mustaqillik yillarida butun ulug'vor ijodi qaytadan xalqqa qaytdi."
+    ],
+    "timeline": [
+      { "year": 1897, "title": "Tug'ilishi", "text": "Andijonda savdogar oilasida tug'ildi." },
+      { "year": 1914, "title": "Birinchi she'rlar", "text": "Matbuotda chiqishni boshladi." },
+      { "year": 1922, "title": "«Uyg'onish»", "text": "Birinchi she'riy to'plami nashrdan chiqdi." },
+      { "year": 1925, "title": "«Buloqlar»", "text": "Ikkinchi to'plami chiqdi — modernizm yorqin namunasi." },
+      { "year": 1936, "title": "«Kecha va kunduz»", "text": "Romanning birinchi qismi nashr etildi." },
+      { "year": 1938, "title": "Fojiali oxiri", "text": "Stalin qatag'oni qurboniga aylandi." }
+    ],
+    "works": [
+      "Uyg'onish (she'riy to'plam)",
+      "Buloqlar",
+      "Tong sirlari",
+      "Soz",
+      "Kecha va kunduz (roman)"
+    ],
+    "tags": ["she'riyat", "nasr", "jadidchilik", "tarjima"]
+  },
+  {
+    "id": "behbudiy",
+    "slug": "behbudiy",
+    "name": "Mahmudxo'ja Behbudiy",
+    "fullName": "Mahmudxo'ja Behbudiy",
+    "years": "1875 — 1919",
+    "yearBorn": 1875,
+    "yearDied": 1919,
+    "era": "XIX–XX asr",
+    "field": "Jadidchi · Dramaturg · Pedagog",
+    "initial": "M",
+    "accent": "#0f4c5c",
+    "image": "/images/allomalar/behbudiy.jpg",
+    "birthplace": "Samarqand",
+    "quote": "Maktabsiz millat — yo'lsiz qolgan karvon kabidir.",
+    "shortBio": "O'zbek jadid harakatining peshvosi, birinchi o'zbek dramaturgi, milliy uyg'onish g'oyasining nazariyotchisi.",
+    "fullBio": [
+      "Mahmudxo'ja Behbudiy 1875-yilda Samarqandda ruhoniy oilasida tug'ildi. An'anaviy ilm-fanni egallab, keyin jadidchilik g'oyalari ta'sirida yangi maktablar ochish, gazeta-jurnallar chiqarish faoliyatini boshladi.",
+      "U 1911-yilda «Padarkush» pyesasini yozdi — bu o'zbek tilidagi birinchi sahna asaridir. Pyesa jaholat va johillikning fojiasini ko'rsatadi va xalqni ma'rifatga chorlaydi.",
+      "Behbudiy «Samarqand» gazetasi va «Oyna» jurnalini chop etdi. Bu nashrlar o'zbek matbuoti tarixida muhim o'rin tutadi. U o'z mablag'i hisobiga maktablar, kutubxonalar, teatrlar tashkil etdi.",
+      "1919-yilda Buxoro amiri tomonidan zolimona qatl etildi. Uning fojiali o'limi butun jadidchilik harakatining katta yo'qotishi bo'ldi, lekin g'oyalari xalq ongida abadiy qoldi."
+    ],
+    "timeline": [
+      { "year": 1875, "title": "Tug'ilishi", "text": "Samarqandda ruhoniy oilasida tug'ildi." },
+      { "year": 1903, "title": "Hajga safar", "text": "Hindiston, Misr, Turkiya orqali sayohat qildi." },
+      { "year": 1911, "title": "«Padarkush»", "text": "Birinchi o'zbek pyesasi yozildi." },
+      { "year": 1913, "title": "«Oyna» jurnali", "text": "Jadidchilikning markaziy nashri tashkil etildi." },
+      { "year": 1917, "title": "Inqilob davri", "text": "Turkiston Muxtoriyati harakatida faol ishtirok etdi." },
+      { "year": 1919, "title": "Shahid bo'lishi", "text": "Buxoro amiri tomonidan qatl etildi." }
+    ],
+    "works": [
+      "Padarkush (drama)",
+      "Samarqand (gazeta — muharrir)",
+      "Oyna (jurnal — muharrir)",
+      "Muntaxabi jug'rofiyai umumiy"
+    ],
+    "tags": ["jadidchilik", "drama", "matbuot", "ma'rifat"]
+  }
+]

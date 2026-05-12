@@ -1,0 +1,146 @@
+[
+  {
+    "id": "boburnoma",
+    "slug": "boburnoma",
+    "title": "Boburnoma",
+    "author": "Zahiriddin Muhammad Bobur",
+    "year": "1494–1530",
+    "genre": "Avtobiografiya · Tarix",
+    "pages": 540,
+    "language": "Eski o'zbek",
+    "accent": "#d4a574",
+    "initial": "B",
+    "cover": "/images/kitoblar/boburnoma.jpg",
+    "annotation": "Sohibqironning nevarasi Boburning shaxsiy kundaliklari — bu nafaqat avtobiografiya, balki butun bir davrning jonli xronikasidir.",
+    "longDescription": "«Boburnoma» — Hindistonda Boburiylar imperiyasiga asos solgan Zahiriddin Muhammad Boburning yodnomalari. Asar Andijonda boshlanib, Hindistonda yakunlanadi.",
+    "excerpts": [
+      {
+        "title": "Andijon haqida",
+        "text": "Andijonning samosi go'zal, suvi shirin, mevasi mo'l. Olmasi va anorini hech bir yurtda topa olmaysan. Ovi ham xushmazza, qush-qurti ham mo'l."
+      },
+      {
+        "title": "Sevgi haqida",
+        "text": "Yorni topgan kishi — tojni ham unutadi. Toj — boshda, sevgi — qalbda; qaysi biri haqiqat, kim ayta oladi?"
+      }
+    ],
+    "themes": ["tarix", "sayohat", "siyosat", "tabiat"]
+  },
+  {
+    "id": "navoiy-gazallari",
+    "slug": "navoiy-gazallari",
+    "title": "Xazoyin ul-Maoniy",
+    "author": "Alisher Navoiy",
+    "year": "1498",
+    "genre": "She'riyat · G'azal",
+    "pages": 800,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#e8c898",
+    "initial": "N",
+    "cover": "/images/kitoblar/navoiy-gazallari.jpg",
+    "annotation": "Mir Alisher Navoiyning to'rt devondan iborat g'azallar to'plami — turk tilining shoh asari.",
+    "longDescription": "«Xazoyin ul-Maoniy» — Navoiyning to'rt devondan iborat she'riy to'plami. «G'aroyib us-sig'ar», «Navodir ush-shabob», «Badoyi' ul-vasat», «Favoyid ul-kibar» — har biri shoirning bir umr davridagi kechinmalarini aks ettiradi.",
+    "excerpts": [
+      {
+        "title": "Sevgi g'azali",
+        "text": "Kelmadi yor, kelmadi yor — yo'liga ko'z tikkonim sham,\nYondi yondi, yonib bitdi — bag'rim aro armon hamdam.\nUning manzili qaydadir, deb so'rsam ko'klar, suvlardan,\nJavob bermas hech kim, faqat sukut — bu ham bir alam."
+      },
+      {
+        "title": "Til haqida",
+        "text": "Tilim — millatim hayoti, tilim — qalbimning ovozi.\nTilsiz qolgan xalq — yo'lsiz qolgan karvon."
+      }
+    ],
+    "themes": ["sevgi", "tasavvuf", "til", "ma'rifat"]
+  },
+  {
+    "id": "otkan-kunlar-roman",
+    "slug": "otkan-kunlar-roman",
+    "title": "O'tkan Kunlar",
+    "author": "Abdulla Qodiriy",
+    "year": "1922",
+    "genre": "Roman · Tarixiy",
+    "pages": 432,
+    "language": "O'zbek",
+    "accent": "#1a6b7e",
+    "initial": "Q",
+    "cover": "/images/kitoblar/otkan-kunlar.jpg",
+    "annotation": "O'zbek nasrining birinchi va eng buyuk romani. Otabek va Kumush hikoyasi orqali butun bir davrni ifodalovchi shoh asar.",
+    "longDescription": "Abdulla Qodiriyning «O'tkan kunlar» romani 1922-yilda nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. XIX asr oxiri Turkistondagi hayot, sevgi va fojialar tasvirlanadi.",
+    "excerpts": [
+      {
+        "title": "Otabek va Kumush uchrashuvi",
+        "text": "Bog' so'qmog'idan kelayotgan yosh qiz birinchi marta yigitning ko'zlariga qaradi. Bu nigoh — butun olamning yorishi edi go'yo. Ikkala qalb ham bir lahzada bir-birini tanidi, garchi tilda hech kim hech narsa demagan bo'lsa-da."
+      },
+      {
+        "title": "Toshkent ko'chalari",
+        "text": "Eski Toshkentning tor ko'chalari, paxsa devorlar ortidagi bog'lar, rangsiz darvozalar — bularning hammasi o'z hikoyasiga ega edi."
+      }
+    ],
+    "themes": ["sevgi", "tarix", "an'ana", "ma'rifat"]
+  },
+  {
+    "id": "kecha-va-kunduz",
+    "slug": "kecha-va-kunduz",
+    "title": "Kecha va Kunduz",
+    "author": "Cho'lpon",
+    "year": "1936",
+    "genre": "Roman · Modern",
+    "pages": 320,
+    "language": "O'zbek",
+    "accent": "#b8893f",
+    "initial": "Ch",
+    "cover": "/images/kitoblar/kecha-va-kunduz.jpg",
+    "annotation": "Cho'lponning shoh asari — XX asr boshlaridagi o'zbek qishloq hayoti va ayollar taqdiri haqida.",
+    "longDescription": "«Kecha va kunduz» — Cho'lponning ijodiy taqdiri qatag'on tomonidan uzilib qolgan, ammo bizgacha yetib kelgan eng yorqin nasriy asarlaridan biri. Zebixonning hayoti orqali muallif butun bir avlodning og'ir taqdirini ko'rsatadi.",
+    "excerpts": [
+      {
+        "title": "Ochil tonglar",
+        "text": "Tong otdi. Qishloq uyqudan uyg'ondi. Qarg'alar daraxtlardan ko'tarilib, bo'z osmonni qora chiziqlar bilan to'ldirdi. Lekin Zebixonning ko'zi yoshli edi."
+      }
+    ],
+    "themes": ["ayol taqdiri", "qishloq", "milliy uyg'onish"]
+  },
+  {
+    "id": "mehrobdan-chayon",
+    "slug": "mehrobdan-chayon",
+    "title": "Mehrobdan Chayon",
+    "author": "Abdulla Qodiriy",
+    "year": "1929",
+    "genre": "Roman · Tarixiy",
+    "pages": 380,
+    "language": "O'zbek",
+    "accent": "#8b2635",
+    "initial": "Q",
+    "cover": "/images/kitoblar/mehrobdan-chayon.jpg",
+    "annotation": "Qodiriyning ikkinchi yirik asari — Xudoyorxon davridagi Qo'qon xonligi tarixini sevgi hikoyasi orqali ko'rsatadi.",
+    "longDescription": "«Mehrobdan chayon» — XIX asr o'rtalaridagi Qo'qon xonligi haqida. Anvar va Ra'no sevgisi, saroy intrigasi, fitnalar va sodiqlik — barchasi bir matnda.",
+    "excerpts": [
+      {
+        "title": "Saroy hayoti",
+        "text": "Saroyda har xizmatkor, har devorning soyasi — birovning quloq solib turgan ko'zi va qulog'i edi. Bu yerda hech kim na sevishi, na nafratlanishi mumkin emas — barchasi siyosat edi."
+      }
+    ],
+    "themes": ["sevgi", "tarix", "saroy", "fitna"]
+  },
+  {
+    "id": "sarob",
+    "slug": "sarob",
+    "title": "Sarob",
+    "author": "Abdulla Qahhor",
+    "year": "1934",
+    "genre": "Roman",
+    "pages": 280,
+    "language": "O'zbek",
+    "accent": "#1e3a8a",
+    "initial": "Q",
+    "cover": "/images/kitoblar/sarob.jpg",
+    "annotation": "Yangi davr boshlanishida o'zini topa olmagan ziyolining ichki olami haqida qisqa, lekin chuqur asar.",
+    "longDescription": "Abdulla Qahhorning eng mashhur romani. Shaxsiy va ijtimoiy keskinliklar bir matnda mahorat bilan birlashtirilgan.",
+    "excerpts": [
+      {
+        "title": "Sarobdagi yo'lovchi",
+        "text": "U yo'lda yurib, har lahza orqaga qarar edi. Lekin orqada hech narsa yo'q edi — chunki kelajak ham, o'tmish ham unga sarob bo'lib ko'rinardi."
+      }
+    ],
+    "themes": ["o'zlik", "davr", "ziyolilik"]
+  }
+]
