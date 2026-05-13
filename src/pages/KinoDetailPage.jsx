@@ -4,11 +4,13 @@ import kinolar from '../data/kinolar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import useProgress from '../hooks/useProgress.js';
+import useScrollReveal from '../hooks/useScrollReveal.js';
 
 export default function KinoDetailPage() {
   const { slug } = useParams();
   const movie = useMemo(() => kinolar.find((m) => m.slug === slug), [slug]);
   const { visit } = useProgress();
+  useScrollReveal();
 
   useEffect(() => {
     if (movie) visit('kinolar', movie.id, { points: 7, achievement: 'kinoshunos' });

@@ -5,6 +5,7 @@ import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import ReadingCTA from '../components/kitoblar/ReadingCTA.jsx';
 import useProgress from '../hooks/useProgress.js';
+import useScrollReveal from '../hooks/useScrollReveal.js';
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
 
 // Lazy load the heavy PDF reader — only loaded when user clicks "Mutolaa"
@@ -19,6 +20,7 @@ export default function KitobDetailPage() {
   const { state: progressState, visit, clearReadingProgress } = useProgress();
   const { speak, stop, speaking, available, voiceLabel } = useTextToSpeech();
   const readingProgress = book ? progressState.readingProgress[book.slug] : undefined;
+  useScrollReveal();
 
   useEffect(() => {
     if (book) visit('kitoblar', book.id, { points: 7, achievement: 'kitobxon' });
