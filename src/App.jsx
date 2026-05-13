@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar.jsx';
 import Footer from './components/common/Footer.jsx';
 import ScrollToTop from './components/common/ScrollToTop.jsx';
+import useProgress from './hooks/useProgress.js';
 
 import HomePage from './pages/HomePage.jsx';
 import AllomalarPage from './pages/AllomalarPage.jsx';
@@ -17,6 +19,11 @@ import ProfilPage from './pages/ProfilPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
 export default function App() {
+  const { tickStreak } = useProgress();
+  useEffect(() => {
+    tickStreak();
+  }, [tickStreak]);
+
   return (
     <>
       <ScrollToTop />

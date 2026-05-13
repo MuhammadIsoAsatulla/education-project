@@ -9,6 +9,7 @@
     "initial": "R",
     "accent": "#d4a574",
     "image": "/muzeylar/registon.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "Sharqning eng buyuk me'morchilik ansambli — uchta madrasaning shukuhli birlashmasi.",
     "fullDescription": [
       "Registon — Samarqand qalbidagi maydon, bu yerda Ulug'bek, Sherdor va Tillakori madrasalari yonma-yon turibdi. Har biri o'z davrining ilmu-ma'rifat markazi bo'lgan.",
@@ -21,9 +22,30 @@
       { "title": "Tillakori", "text": "Oltin bezakli ichki bezagi nafis." }
     ],
     "hotspots": [
-      { "id": "ulugbek", "x": 25, "y": 50, "label": "Ulug'bek Madrasasi", "info": "Yodgorlikning eng qadimgi madrasasi (1420). Astronomiya darslari shu yerda olib borilgan." },
-      { "id": "tillakori", "x": 50, "y": 45, "label": "Tillakori Madrasasi", "info": "Oltin bezaklari va gumbazi bilan jahonga mashhur (1660)." },
-      { "id": "sherdor", "x": 75, "y": 50, "label": "Sherdor Madrasasi", "info": "Sherlar tasvirini fasadga joylashtirilgan noyob namuna (1636)." }
+      {
+        "id": "ulugbek",
+        "x": 25,
+        "y": 50,
+        "label": "Ulug'bek Madrasasi",
+        "info": "Yodgorlikning eng qadimgi madrasasi (1420). Astronomiya darslari shu yerda olib borilgan. Maydonga kirsangiz chap tomonda turadi.",
+        "embed360": "https://www.google.com/maps/embed?pb=!4v1778645599037!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V5cjNpMVFF!2m2!1d39.65465539460872!2d66.97488109442057!3f319.1307557257782!4f-85.29386857383602!5f0.7820865974627469"
+      },
+      {
+        "id": "tillakori",
+        "x": 50,
+        "y": 45,
+        "label": "Tillakori Madrasasi",
+        "info": "Oltin bezaklari va gumbazi bilan jahonga mashhur (1660). Maydonga kirib to'g'riga qaraganingizda o'rtada turadi.",
+        "embed360": "https://www.google.com/maps/embed?pb=!4v1778645671911!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzZyZnlVTHc.!2m2!1d39.6555990796924!2d66.97546791334021!3f272.3330275316219!4f-65.96128847586895!5f0.7820865974627469"
+      },
+      {
+        "id": "sherdor",
+        "x": 75,
+        "y": 50,
+        "label": "Sherdor Madrasasi",
+        "info": "Sherlar tasvirini fasadga joylashtirilgan noyob namuna (1636). Maydonga kirsangiz o'ng tomonda, Ulug'bekga qarama-qarshi turadi.",
+        "embed360": "https://www.google.com/maps/embed?pb=!4v1778645415148!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGgtNUhVZlE.!2m2!1d39.6549590077305!2d66.97655692895808!3f242.34928958491417!4f-33.200138940482695!5f0.7820865974627469"
+      }
     ],
     "audioGuide": "/audio/voiceovers/registon.mp3",
     "panorama": "/panoramas/registon.jpg"
@@ -38,6 +60,7 @@
     "initial": "A",
     "accent": "#b8893f",
     "image": "/muzeylar/amir-temur.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "Sohibqiron Amir Temur va Temuriylar sulolasi tarixiga bag'ishlangan davlat muzeyi.",
     "fullDescription": [
       "Amir Temur muzeyi 1996-yilda — Sohibqironning 660 yilligida ochilgan. Muzey Toshkentning markazidagi Amir Temur xiyobonida joylashgan.",
@@ -67,6 +90,7 @@
     "initial": "X",
     "accent": "#1a6b7e",
     "image": "/muzeylar/ichan-qala.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "UNESCO ro'yxatidagi ochiq osmon ostidagi muzey — Xivaning qadimgi ichki shahri.",
     "fullDescription": [
       "Ichan Qal'a — Xivaning ichki shahri, 26 gektar maydonda joylashgan. Bu yer 1990-yilda UNESCO Jahon merosi ro'yxatiga kiritilgan.",
@@ -96,6 +120,7 @@
     "initial": "Sh",
     "accent": "#1e3a8a",
     "image": "/muzeylar/shahi-zinda.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "«Tirik shoh» — Samarqandning eng go'zal nekropoli, koshin san'atining cho'qqisi.",
     "fullDescription": [
       "Shohi Zinda — Samarqanddagi eng buyuk me'morchilik ansambllaridan biri. Nomi «Tirik shoh» degan ma'noni anglatadi va Muhammad payg'ambarning amakivachchasi Qusam ibn Abbosga bog'liq.",
@@ -125,6 +150,7 @@
     "initial": "B",
     "accent": "#8b2635",
     "image": "/muzeylar/buxoro.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "«Muqaddas Buxoro» — 140 dan ortiq tarixiy yodgorlikni saqlovchi shahar-muzey.",
     "fullDescription": [
       "Buxoro — 2500 yillik tarixga ega bo'lgan shahar. Butun eski shahar 1993-yilda UNESCO Jahon merosi ro'yxatiga kiritilgan.",

@@ -1,0 +1,142 @@
+[
+  {
+    "ownerId": "beruniy",
+    "ownerType": "allomalar",
+    "questions": [
+      {
+        "q": "Beruniy qaysi yilda tug'ilgan?",
+        "options": ["863-yilda", "973-yilda", "1073-yilda", "883-yilda"],
+        "correct": 1
+      },
+      {
+        "q": "Beruniy hisoblab chiqqan eng mashhur natijasi nima?",
+        "options": [
+          "Quyosh haroratini",
+          "Yer sharining radiusini",
+          "Oygacha bo'lgan masofani",
+          "Atmosfera bosimini"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "«Hindiston» asari asosan nimaga bag'ishlangan?",
+        "options": [
+          "Geografiyaga",
+          "Tibbiyotga",
+          "Hind madaniyati va falsafasiga",
+          "Sayohat hikoyalariga"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "ownerId": "ibn-sino",
+    "ownerType": "allomalar",
+    "questions": [
+      {
+        "q": "Ibn Sino G'arbda qaysi nom bilan mashhur?",
+        "options": ["Algoritmus", "Avitsenna", "Alxazen", "Averroes"],
+        "correct": 1
+      },
+      {
+        "q": "«Al-qonun fit-tib» asari nechta jilddan iborat?",
+        "options": ["3 jild", "5 jild", "7 jild", "10 jild"],
+        "correct": 1
+      },
+      {
+        "q": "Ibn Sino qaerda tug'ilgan?",
+        "options": [
+          "Samarqandda",
+          "Buxoro yaqinidagi Afshonada",
+          "Hamadonda",
+          "Marvda"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "ownerId": "ulugbek",
+    "ownerType": "allomalar",
+    "questions": [
+      {
+        "q": "Mirzo Ulug'bek kimning nevarasi edi?",
+        "options": [
+          "Bobur Mirzo",
+          "Amir Temur",
+          "Shohrux Mirzo",
+          "Hulagu xon"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Ulug'bek rasadxonasi qaerda qurilgan?",
+        "options": ["Buxoroda", "Hirotda", "Samarqand Ko'hak tepaligida", "Toshkentda"],
+        "correct": 2
+      },
+      {
+        "q": "«Ziji jadidi Ko'ragoniy» asarida nechta yulduz keltirilgan?",
+        "options": ["518", "818", "1018", "2018"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "ownerId": "cholpon",
+    "ownerType": "allomalar",
+    "questions": [
+      {
+        "q": "Cho'lponning haqiqiy ismi nima?",
+        "options": [
+          "Abdulla Qodiriy",
+          "Abdulhamid Sulaymon o'g'li",
+          "Mahmudxo'ja Behbudiy",
+          "Abdulla Qahhor"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Cho'lponning birinchi she'riy to'plami qanday nomlanadi?",
+        "options": ["Buloqlar", "Tong sirlari", "Uyg'onish", "Soz"],
+        "correct": 2
+      },
+      {
+        "q": "Cho'lpon qanday vafot etgan?",
+        "options": [
+          "Tabiiy o'lim bilan",
+          "Stalin qatag'oni qurboni sifatida otib o'ldirilgan",
+          "Jangda halok bo'lgan",
+          "Kasallikdan vafot etgan"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "ownerId": "behbudiy",
+    "ownerType": "allomalar",
+    "questions": [
+      {
+        "q": "Behbudiy qaysi shaharda tug'ilgan?",
+        "options": ["Toshkentda", "Buxoroda", "Samarqandda", "Andijonda"],
+        "correct": 2
+      },
+      {
+        "q": "«Padarkush» pyesasi nima bilan mashhur?",
+        "options": [
+          "Birinchi rus pyesasi",
+          "Birinchi o'zbek pyesasi",
+          "Birinchi tarjima pyesasi",
+          "Birinchi tarixiy pyesasi"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Behbudiy qaysi jurnalni tashkil etgan?",
+        "options": ["Yulduz", "Oyna", "Sharq tongi", "Mushtum"],
+        "correct": 1
+      }
+    ]
+  }
+]

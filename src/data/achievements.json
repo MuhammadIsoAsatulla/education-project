@@ -62,5 +62,45 @@
     "icon": "crown",
     "tier": "platinum",
     "requires": { "type": "all", "count": 6 }
+  },
+  {
+    "id": "streak-3",
+    "name": "Sodiq Sayyoh",
+    "description": "3 kun ketma-ket saytga tashrif buyurdingiz.",
+    "icon": "compass",
+    "tier": "bronze",
+    "requires": { "type": "streak", "count": 3 }
+  },
+  {
+    "id": "streak-7",
+    "name": "Haftalik Ziyokash",
+    "description": "7 kun ketma-ket bilim oldingiz.",
+    "icon": "book-open",
+    "tier": "silver",
+    "requires": { "type": "streak", "count": 7 }
+  },
+  {
+    "id": "streak-30",
+    "name": "Madaniyat Fidoyisi",
+    "description": "30 kun ketma-ket — chinakam fidoyilik.",
+    "icon": "crown",
+    "tier": "gold",
+    "requires": { "type": "streak", "count": 30 }
+  },
+  {
+    "id": "quiz-master",
+    "name": "Bilim Sinovi",
+    "description": "Bitta viktorinani mukammal (3/3) o'tdingiz.",
+    "icon": "scroll",
+    "tier": "silver",
+    "requires": { "type": "quiz-perfect", "count": 1 }
+  },
+  {
+    "id": "all-quiz",
+    "name": "Bilim Cho'qqisi",
+    "description": "Barcha viktorinalarni mukammal o'tdingiz.",
+    "icon": "telescope",
+    "tier": "platinum",
+    "requires": { "type": "quiz-perfect", "count": 5 }
   }
 ]

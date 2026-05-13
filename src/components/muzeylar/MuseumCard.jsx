@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SmartImage from '../common/SmartImage.jsx';
+import FavoriteButton from '../common/FavoriteButton.jsx';
 
 export default function MuseumCard({ muzey, index = 0 }) {
   const isAvailable = muzey.status === 'available';
@@ -22,6 +23,11 @@ export default function MuseumCard({ muzey, index = 0 }) {
           className="absolute inset-0"
           imgClassName="transition-transform duration-700 group-hover:scale-105"
         />
+
+        {/* Favorite button top-right */}
+        <div className="absolute top-4 right-4 z-20">
+          <FavoriteButton section="muzeylar" itemId={muzey.id} />
+        </div>
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-bg-deep via-bg-deep/60 to-transparent" />

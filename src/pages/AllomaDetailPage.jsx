@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import allomalar from '../data/allomalar.json';
+import viktorinalar from '../data/viktorinalar.json';
 import Typewriter from '../components/allomalar/Typewriter.jsx';
 import Timeline from '../components/allomalar/Timeline.jsx';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import FavoriteButton from '../components/common/FavoriteButton.jsx';
+import Quiz from '../components/common/Quiz.jsx';
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
 import useProgress from '../hooks/useProgress.js';
 
@@ -12,8 +15,14 @@ export default function AllomaDetailPage() {
   const { slug } = useParams();
   const alloma = useMemo(() => allomalar.find((a) => a.slug === slug), [slug]);
   const [parallaxY, setParallaxY] = useState(0);
+  const [quizOpen, setQuizOpen] = useState(false);
   const { speak, stop, speaking, available, voiceLabel } = useTextToSpeech();
-  const { visit } = useProgress();
+  const { state: progressState, visit, submitQuiz } = useProgress();
+  const quiz = useMemo(
+    () => viktorinalar.find((v) => v.ownerType === 'allomalar' && v.ownerId === alloma?.slug),
+    [alloma?.slug],
+  );
+  const previousQuizScore = alloma ? progressState.quizScores[alloma.slug] : undefined;
 
   useEffect(() => {
     if (!alloma) return;
@@ -73,7 +82,10 @@ export default function AllomaDetailPage() {
               </svg>
               Allomalar ro'yxati
             </Link>
-            <div className="eyebrow mb-3">— {alloma.field} —</div>
+            <div className="flex items-center justify-between gap-4 mb-3">
+              <div className="eyebrow">— {alloma.field} —</div>
+              <FavoriteButton section="allomalar" itemId={alloma.id} size="lg" />
+            </div>
             <h1 className="font-serif text-gold-gradient leading-[0.95] mb-3"
                 style={{ fontSize: 'clamp(48px, 7vw, 96px)', letterSpacing: '2px' }}>
               {alloma.name}
@@ -175,6 +187,58 @@ export default function AllomaDetailPage() {
           </div>
         </div>
       </section>
+
+      {/* Quiz section */}
+      {quiz && (
+        <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <OrnamentDivider className="opacity-60 mb-6" />
+            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
+            <h2 className="section-title">Viktorina</h2>
+            <p className="font-serif italic text-cream-soft/80 mt-3">
+              {quiz.questions.length} ta savol. Har to'g'ri javob — bonus ball.
+            </p>
+          </div>
+
+          {quizOpen ? (
+            <Quiz
+              questions={quiz.questions}
+              previousBest={previousQuizScore ?? null}
+              onComplete={(score) => submitQuiz(alloma.slug, score)}
+              onClose={() => setQuizOpen(false)}
+            />
+          ) : (
+            <div className="text-center">
+              {previousQuizScore !== undefined ? (
+                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
+                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
+                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                    {previousQuizScore} / {quiz.questions.length}
+                  </div>
+                  {previousQuizScore === quiz.questions.length && (
+                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                  )}
+                </div>
+              ) : (
+                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                  Hozirgacha bu viktorinani topshirmaganmisiz.
+                </p>
+              )}
+              <div>
+                <button onClick={() => setQuizOpen(true)} className="gold-cta">
+                  <span className="flex items-center gap-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
+                      <path d="M9 12l2 2 4-4" />
+                      <circle cx="12" cy="12" r="9" />
+                    </svg>
+                    {previousQuizScore !== undefined ? 'Qayta sinash' : 'Viktorinani boshlash'}
+                  </span>
+                </button>
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       {/* Other allomas navigation */}
       <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 border-t border-gold/10">

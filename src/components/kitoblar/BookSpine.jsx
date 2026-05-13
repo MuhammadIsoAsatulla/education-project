@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SmartImage from '../common/SmartImage.jsx';
+import FavoriteButton from '../common/FavoriteButton.jsx';
 
 export default function BookSpine({ book, index = 0, height = 380 }) {
   // Vary spine width slightly so the shelf feels organic
@@ -42,6 +43,11 @@ export default function BookSpine({ book, index = 0, height = 380 }) {
           style={{ writingMode: 'vertical-rl' }}
         >
           {book.author}
+        </div>
+
+        {/* Favorite — small heart at top of spine */}
+        <div className="absolute top-12 left-1/2 -translate-x-1/2 z-10">
+          <FavoriteButton section="kitoblar" itemId={book.id} size="sm" />
         </div>
       </article>
     </Link>

@@ -1,0 +1,10 @@
+[
+  { "id": "girih-1", "label": "Girih", "accent": "#d4a574", "pattern": "stars" },
+  { "id": "girih-2", "label": "Naqsh", "accent": "#1a6b7e", "pattern": "octagon" },
+  { "id": "islimi", "label": "Islimi", "accent": "#e8c898", "pattern": "vine" },
+  { "id": "dome", "label": "Gumbaz", "accent": "#b8893f", "pattern": "dome" },
+  { "id": "tanbur", "label": "Tanbur", "accent": "#8b2635", "pattern": "music" },
+  { "id": "kalon", "label": "Minora", "accent": "#1e3a8a", "pattern": "tower" },
+  { "id": "book", "label": "Kitob", "accent": "#0f4c5c", "pattern": "book" },
+  { "id": "moon", "label": "Hilol", "accent": "#a3733c", "pattern": "crescent" }
+]

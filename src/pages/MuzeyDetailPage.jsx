@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import muzeylar from '../data/muzeylar.json';
 import VirtualTour from '../components/muzeylar/VirtualTour.jsx';
@@ -70,10 +70,21 @@ export default function MuzeyDetailPage() {
           <div className="eyebrow mb-3">— 360° INTERAKTIV SAYOHAT —</div>
           <h2 className="section-title mb-3">Ichkariga Boqing</h2>
           <p className="font-serif italic text-cream-soft/80">
-            Sahnani sichqoncha bilan suring · ✦-belgilarini bosing
+            {muzey.embed360
+              ? 'Sahnani sichqoncha bilan suring, zoom qiling — Google Street View'
+              : "Sahnani sichqoncha bilan suring · ✦-belgilarini bosing"}
           </p>
         </div>
-        <VirtualTour scene={muzey.slug} accent={muzey.accent} hotspots={muzey.hotspots || []} />
+        {muzey.embed360 ? (
+          <Embed360
+            src={muzey.embed360}
+            title={muzey.name}
+            accent={muzey.accent}
+            hotspots={muzey.hotspots || []}
+          />
+        ) : (
+          <VirtualTour scene={muzey.slug} accent={muzey.accent} hotspots={muzey.hotspots || []} />
+        )}
 
         {available && (
           <div className="mt-8 flex items-center gap-4 justify-center flex-wrap">
@@ -111,6 +122,37 @@ export default function MuzeyDetailPage() {
       </section>
 
       {/* Highlights */}
+      {/* Hotspots info accordion (shown alongside Google Maps tour) */}
+      {muzey.embed360 && muzey.hotspots?.length > 0 && (
+        <section className="px-4 sm:px-6 md:px-12 py-12 max-w-[1200px] mx-auto">
+          <div className="text-center mb-8">
+            <OrnamentDivider className="opacity-60 mb-6" />
+            <div className="eyebrow mb-3">— SAYOHAT NUQTALARI —</div>
+            <h2 className="section-title">Diqqatga Sazovor Joylar</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {muzey.hotspots.map((h) => (
+              <div
+                key={h.id}
+                className="p-6 border border-gold/20 hover:border-gold/70 rounded-sm bg-bg-mid/40 backdrop-blur transition"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <span
+                    className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center text-gold flex-shrink-0"
+                    style={{ background: `${muzey.accent}33` }}
+                  >
+                    ✦
+                  </span>
+                  <h3 className="font-serif text-cream text-lg leading-tight">{h.label}</h3>
+                </div>
+                <p className="text-cream-soft/80 text-sm leading-relaxed">{h.info}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Highlights */}
       {muzey.highlights?.length > 0 && (
         <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20"
                  style={{ background: `linear-gradient(180deg, transparent, ${muzey.accent}1a, transparent)` }}>
@@ -136,5 +178,110 @@ export default function MuzeyDetailPage() {
         </section>
       )}
     </article>
+  );
+}
+
+function Embed360({ src, title, accent, hotspots = [] }) {
+  // Build viewpoints: main view + any hotspots that have their own embed360
+  const viewpoints = useMemo(() => {
+    const list = [{ id: '__main__', label: 'Asosiy ko\'rinish', src, info: null }];
+    for (const h of hotspots) {
+      if (h.embed360) {
+        list.push({ id: h.id, label: h.label, src: h.embed360, info: h.info });
+      }
+    }
+    return list;
+  }, [src, hotspots]);
+
+  const [activeId, setActiveId] = useState('__main__');
+  const active = viewpoints.find((v) => v.id === activeId) || viewpoints[0];
+  const hasMultiple = viewpoints.length > 1;
+
+  return (
+    <div className="relative">
+      {/* View switcher tabs */}
+      {hasMultiple && (
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-8">
+          {viewpoints.map((v) => {
+            const isActive = v.id === activeId;
+            return (
+              <button
+                key={v.id}
+                onClick={() => setActiveId(v.id)}
+                className={`px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs tracking-[2px] uppercase transition-all ${
+                  isActive
+                    ? 'bg-gold text-bg-deep border border-gold shadow-[0_0_20px_rgba(212,165,116,0.4)]'
+                    : 'border border-gold/30 text-cream-soft/80 hover:text-gold hover:border-gold/70'
+                }`}
+              >
+                {v.id === '__main__' ? '✦ ' : ''}
+                {v.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Ornate frame: gold outer + dark inner bezel */}
+      <div
+        className="relative p-1.5 sm:p-2 rounded-sm shadow-[0_30px_80px_rgba(0,0,0,0.6),0_0_60px_rgba(212,165,116,0.15)]"
+        style={{
+          background: `linear-gradient(135deg, #e8c898 0%, ${accent || '#d4a574'} 50%, #b8893f 100%)`,
+        }}
+      >
+        <div className="relative p-1 sm:p-1.5 bg-bg-deep rounded-sm">
+          {/* Marquee dots (top) */}
+          <div className="absolute top-1 left-2 right-2 flex justify-between pointer-events-none">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <span key={i} className="block w-1 h-1 rounded-full bg-gold/30" />
+            ))}
+          </div>
+          {/* Marquee dots (bottom) */}
+          <div className="absolute bottom-1 left-2 right-2 flex justify-between pointer-events-none">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <span key={i} className="block w-1 h-1 rounded-full bg-gold/30" />
+            ))}
+          </div>
+
+          {/* The iframe — key ensures clean reload when switching views */}
+          <div className="relative w-full aspect-video bg-black rounded-sm overflow-hidden">
+            <iframe
+              key={active.id}
+              src={active.src}
+              title={`${title} — ${active.label}`}
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+              style={{ border: 0 }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Corner ornaments */}
+      <span className="absolute -top-3 -left-3 w-7 h-7 border-t-2 border-l-2 border-gold pointer-events-none" />
+      <span className="absolute -top-3 -right-3 w-7 h-7 border-t-2 border-r-2 border-gold pointer-events-none" />
+      <span className="absolute -bottom-3 -left-3 w-7 h-7 border-b-2 border-l-2 border-gold pointer-events-none" />
+      <span className="absolute -bottom-3 -right-3 w-7 h-7 border-b-2 border-r-2 border-gold pointer-events-none" />
+
+      {/* Active view info (only for hotspot views) */}
+      {active.info && active.id !== '__main__' && (
+        <div
+          key={`info-${active.id}`}
+          className="mt-6 p-5 sm:p-6 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur max-w-3xl mx-auto animate-fade-in-up"
+          style={{ animationDuration: '0.5s' }}
+        >
+          <div className="eyebrow text-xs mb-2">— ICHKARIDA —</div>
+          <h4 className="font-serif text-cream text-xl sm:text-2xl mb-2">{active.label}</h4>
+          <p className="text-cream-soft/85 text-sm sm:text-base leading-relaxed">{active.info}</p>
+        </div>
+      )}
+
+      <p className="text-center mt-5 text-cream-soft/60 text-xs sm:text-sm italic font-serif">
+        {hasMultiple
+          ? "Yuqoridan ko'rinishni tanlang · Sahnani suring · ⛶ to'liq ekran rejimini bosing"
+          : "Google Street View · Sahnani sichqoncha bilan suring · ⛶ to'liq ekran rejimini bosing"}
+      </p>
+    </div>
   );
 }

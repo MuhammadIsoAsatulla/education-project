@@ -1,4 +1,5 @@
 import SmartImage from '../common/SmartImage.jsx';
+import FavoriteButton from '../common/FavoriteButton.jsx';
 
 export default function SongCard({ song, onOpen, index = 0 }) {
   const youtubeAvailable = !!(song.youtubeId || song.youtubeQuery);
@@ -27,10 +28,19 @@ export default function SongCard({ song, onOpen, index = 0 }) {
           </span>
         )}
         {!youtubeAvailable && !song.audio && (
-          <span className="absolute top-3 right-3 px-2 py-1 bg-bg-deep/80 border border-gold/30 rounded-sm text-gold/80 text-[9px] tracking-[2px] uppercase backdrop-blur">
+          <span className="absolute top-3 left-3 px-2 py-1 bg-bg-deep/80 border border-gold/30 rounded-sm text-gold/80 text-[9px] tracking-[2px] uppercase backdrop-blur">
             Tez orada
           </span>
         )}
+
+        {/* Favorite button top-right */}
+        <div
+          className="absolute top-3 right-3 z-20"
+          onClick={(e) => e.stopPropagation()}
+          onKeyDown={(e) => e.stopPropagation()}
+        >
+          <FavoriteButton section="musiqa" itemId={song.id} size="sm" />
+        </div>
       </div>
 
       <div>

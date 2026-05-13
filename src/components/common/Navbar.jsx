@@ -28,10 +28,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300 ${
-        scrolled
-          ? 'bg-bg-deep/95 border-b border-gold/20 py-3 px-4 sm:px-6 md:px-12 backdrop-blur'
-          : 'py-4 sm:py-5 px-4 sm:px-6 md:px-12 bg-gradient-to-b from-bg-deep/90 to-transparent backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between transition-all duration-300 bg-bg-deep/90 backdrop-blur-md border-b border-gold/20 ${
+        scrolled ? 'py-3 px-4 sm:px-6 md:px-12 shadow-[0_4px_30px_rgba(0,0,0,0.4)]' : 'py-4 sm:py-5 px-4 sm:px-6 md:px-12'
       }`}
     >
       <Link to="/" className="flex items-center gap-2 sm:gap-3 text-gold font-serif font-semibold tracking-[3px] sm:tracking-[4px] text-lg sm:text-2xl">

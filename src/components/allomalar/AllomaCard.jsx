@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SmartImage from '../common/SmartImage.jsx';
+import FavoriteButton from '../common/FavoriteButton.jsx';
 
 export default function AllomaCard({ alloma, index = 0 }) {
   return (
@@ -35,6 +36,11 @@ export default function AllomaCard({ alloma, index = 0 }) {
         {/* Era badge in the top-left, above the face */}
         <div className="absolute top-5 left-5 z-10 px-3 py-1 bg-bg-deep/70 backdrop-blur border border-gold/40 rounded-sm">
           <span className="font-amiri text-gold text-[10px] tracking-[3px] uppercase">{alloma.era}</span>
+        </div>
+
+        {/* Favorite button top-right */}
+        <div className="absolute top-5 right-5 z-10">
+          <FavoriteButton section="allomalar" itemId={alloma.id} />
         </div>
 
         {/* Text block at the bottom — never overlaps the upper portrait */}

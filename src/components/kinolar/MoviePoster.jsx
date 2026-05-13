@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SmartImage from '../common/SmartImage.jsx';
+import FavoriteButton from '../common/FavoriteButton.jsx';
 
 export default function MoviePoster({ movie, index = 0, featured = false }) {
   return (
@@ -65,6 +66,11 @@ export default function MoviePoster({ movie, index = 0, featured = false }) {
         <span className="absolute top-3 right-3 px-2 py-1 bg-bg-deep/80 border border-gold/30 rounded-sm text-gold text-[10px] tracking-[2px] uppercase backdrop-blur z-20">
           ★ {movie.rating}
         </span>
+
+        {/* Favorite button top-left (so it doesn't collide with rating badge) */}
+        <div className="absolute top-3 left-5 z-20">
+          <FavoriteButton section="kinolar" itemId={movie.id} size="sm" />
+        </div>
       </article>
     </Link>
   );

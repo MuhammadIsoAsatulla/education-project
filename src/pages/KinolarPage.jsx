@@ -24,16 +24,16 @@ export default function KinolarPage() {
         accent
       />
 
-      <section className="px-6 md:px-12 max-w-[1400px] mx-auto -mt-4 mb-10">
-        <div className="flex flex-wrap items-center justify-center gap-2">
+      <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto pt-4 sm:pt-6 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           {FILTERS.map((f) => (
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-5 py-2 rounded-full text-xs tracking-[2px] uppercase transition-all ${
+              className={`px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs tracking-[2px] uppercase transition-all ${
                 filter === f
-                  ? 'bg-gold text-bg-deep border border-gold'
-                  : 'border border-gold/30 text-cream-soft/80 hover:text-gold hover:border-gold/70'
+                  ? 'bg-gold text-bg-deep border border-gold shadow-[0_0_20px_rgba(212,165,116,0.3)]'
+                  : 'bg-bg-deep/60 backdrop-blur border border-gold/30 text-cream-soft hover:text-gold hover:border-gold/70'
               }`}
             >
               {f}

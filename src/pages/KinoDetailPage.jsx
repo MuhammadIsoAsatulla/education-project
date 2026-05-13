@@ -121,17 +121,87 @@ export default function KinoDetailPage() {
         </div>
       </header>
 
-      {/* Embedded player when ID present */}
+      {/* Cinema Theater — embedded player */}
       {movie.youtubeId && (
-        <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto pb-12 sm:pb-16">
-          <div className="aspect-video rounded-sm overflow-hidden border border-gold/30 bg-black">
-            <iframe
-              src={`https://www.youtube.com/embed/${movie.youtubeId}`}
-              title={movie.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
+        <section
+          className="relative py-16 sm:py-24 px-4 sm:px-6 md:px-12 overflow-hidden"
+          style={{
+            background: `radial-gradient(ellipse at center, ${movie.accent}1a 0%, var(--bg-deep) 70%)`,
+          }}
+        >
+          {/* Pattern + spotlight */}
+          <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
+          <div
+            className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full pointer-events-none blur-3xl"
+            style={{ background: `radial-gradient(circle, ${movie.accent}33, transparent 60%)` }}
+          />
+
+          {/* Stage header */}
+          <div className="relative text-center mb-10 sm:mb-12">
+            <OrnamentDivider className="opacity-70 mb-6" />
+            <div className="eyebrow mb-3 text-[11px] sm:text-sm">— TOMOSHA ZALI —</div>
+            <h2 className="section-title text-gold-gradient mb-3">Filmni Boshlash</h2>
+            <p className="font-serif italic text-cream-soft/80 text-base sm:text-lg max-w-xl mx-auto">
+              Yorug'likni o'chiring, ovozni baland qiling — kino boshlanmoqda.
+            </p>
+          </div>
+
+          {/* Cinema screen frame */}
+          <div className="relative max-w-[1200px] mx-auto">
+            {/* Side projection lights */}
+            <div className="hidden md:block absolute -left-10 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gold/60 animate-pulse" />
+            <div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gold/60 animate-pulse" />
+
+            {/* Outer gold frame with ornate corners */}
+            <div className="relative p-1.5 sm:p-2 rounded-sm shadow-[0_30px_100px_rgba(0,0,0,0.7),0_0_60px_rgba(212,165,116,0.15)]"
+                 style={{ background: 'linear-gradient(135deg, #e8c898 0%, #d4a574 50%, #b8893f 100%)' }}>
+              {/* Inner dark bezel */}
+              <div className="relative p-1 sm:p-1.5 bg-bg-deep rounded-sm">
+                {/* Marquee dots top */}
+                <div className="absolute top-1 left-2 right-2 flex justify-between pointer-events-none">
+                  {Array.from({ length: 18 }).map((_, i) => (
+                    <span key={i} className="block w-1 h-1 rounded-full bg-gold/40" />
+                  ))}
+                </div>
+                {/* Marquee dots bottom */}
+                <div className="absolute bottom-1 left-2 right-2 flex justify-between pointer-events-none">
+                  {Array.from({ length: 18 }).map((_, i) => (
+                    <span key={i} className="block w-1 h-1 rounded-full bg-gold/40" />
+                  ))}
+                </div>
+
+                {/* Actual video screen */}
+                <div className="aspect-video bg-black rounded-sm overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${movie.youtubeId}?rel=0&modestbranding=1&cc_load_policy=1`}
+                    title={movie.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Corner ornaments */}
+            <span className="absolute -top-3 -left-3 w-7 h-7 border-t-2 border-l-2 border-gold pointer-events-none" />
+            <span className="absolute -top-3 -right-3 w-7 h-7 border-t-2 border-r-2 border-gold pointer-events-none" />
+            <span className="absolute -bottom-3 -left-3 w-7 h-7 border-b-2 border-l-2 border-gold pointer-events-none" />
+            <span className="absolute -bottom-3 -right-3 w-7 h-7 border-b-2 border-r-2 border-gold pointer-events-none" />
+          </div>
+
+          {/* Theater info strip */}
+          <div className="relative max-w-[1100px] mx-auto mt-10 sm:mt-12">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5">
+              <StatBlock label="Reyting" value={`★ ${movie.rating}/10`} accent={movie.accent} />
+              <StatBlock label="Yili" value={String(movie.year)} accent={movie.accent} />
+              <StatBlock label="Davomiyligi" value={movie.duration} accent={movie.accent} />
+              <StatBlock label="Janr" value={movie.genre} accent={movie.accent} />
+            </div>
+
+            <p className="text-center mt-8 text-cream-soft/60 text-xs sm:text-sm italic font-serif">
+              Plyer'dagi to'liq ekran tugmasini bosib, kinozaldagi tatti bilan tomosha qiling.
+            </p>
           </div>
         </section>
       )}
@@ -154,26 +224,46 @@ export default function KinoDetailPage() {
       </section>
 
       {/* Recommendations */}
-      <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
-        <div className="max-w-[1300px] mx-auto">
-          <div className="eyebrow mb-6 text-center">— BOSHQA KINOLAR —</div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-            {recommendations.map((m) => (
-              <Link
-                key={m.id}
-                to={`/kinolar/${m.slug}`}
-                className="group block aspect-[2/3] relative overflow-hidden rounded-sm border border-gold/20 hover:border-gold/70 transition"
-              >
-                <SmartImage src={m.poster} alt={m.title} initial={m.initial} accent={m.accent} />
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-bg-deep to-transparent">
-                  <p className="font-serif text-cream text-sm leading-tight">{m.title}</p>
-                  <p className="text-gold/70 text-[10px] tracking-[2px] mt-1">{m.year}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <RecommendationsSection recommendations={recommendations} />
     </article>
+  );
+}
+
+function StatBlock({ label, value, accent }) {
+  return (
+    <div
+      className="p-4 sm:p-5 rounded-sm border border-gold/20 bg-bg-mid/40 backdrop-blur text-center"
+      style={{ background: `linear-gradient(160deg, ${accent}14, transparent)` }}
+    >
+      <div className="text-cream-soft/60 text-[10px] sm:text-xs tracking-[2px] uppercase mb-2">
+        {label}
+      </div>
+      <div className="font-serif text-cream text-lg sm:text-xl leading-tight">{value}</div>
+    </div>
+  );
+}
+
+function RecommendationsSection({ recommendations }) {
+  return (
+    <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
+      <div className="max-w-[1300px] mx-auto">
+        <div className="eyebrow mb-6 text-center">— BOSHQA KINOLAR —</div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          {recommendations.map((m) => (
+            <Link
+              key={m.id}
+              to={`/kinolar/${m.slug}`}
+              className="group block aspect-[2/3] relative overflow-hidden rounded-sm border border-gold/20 hover:border-gold/70 transition"
+            >
+              <SmartImage src={m.poster} alt={m.title} initial={m.initial} accent={m.accent} />
+              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-bg-deep to-transparent">
+                <p className="font-serif text-cream text-sm leading-tight">{m.title}</p>
+                <p className="text-gold/70 text-[10px] tracking-[2px] mt-1">{m.year}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
