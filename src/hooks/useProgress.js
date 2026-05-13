@@ -10,6 +10,7 @@ const DEFAULT = {
   streak: { current: 0, longest: 0, lastVisit: null },
   favorites: { allomalar: [], muzeylar: [], musiqa: [], kinolar: [], kitoblar: [] },
   quizScores: {},
+  readingProgress: {}, // { "boburnoma": { lastPage: 47, totalPages: 540, percent: 8.7, updatedAt: "2026-05-15" } }
 };
 
 function normalize(prev) {
@@ -20,6 +21,7 @@ function normalize(prev) {
     favorites: { ...DEFAULT.favorites, ...(prev?.favorites || {}) },
     streak: { ...DEFAULT.streak, ...(prev?.streak || {}) },
     quizScores: { ...(prev?.quizScores || {}) },
+    readingProgress: { ...(prev?.readingProgress || {}) },
   };
 }
 
@@ -110,6 +112,46 @@ export default function useProgress() {
     [setState],
   );
 
+  const setReadingProgress = useCallback(
+    (slug, page, totalPages) => {
+      setState((prev) => {
+        const safe = normalize(prev);
+        const previous = safe.readingProgress[slug];
+        const percent = totalPages > 0 ? Math.round((page / totalPages) * 1000) / 10 : 0;
+        // Award 1 point for each new page read past the previous high-water mark.
+        const previousMax = previous?.lastPage || 0;
+        const newPagesRead = Math.max(0, page - previousMax);
+        const bonus = newPagesRead;
+        return {
+          ...safe,
+          points: safe.points + bonus,
+          readingProgress: {
+            ...safe.readingProgress,
+            [slug]: {
+              lastPage: Math.max(previousMax, page),
+              totalPages,
+              percent,
+              updatedAt: new Date().toISOString().slice(0, 10),
+            },
+          },
+        };
+      });
+    },
+    [setState],
+  );
+
+  const clearReadingProgress = useCallback(
+    (slug) => {
+      setState((prev) => {
+        const safe = normalize(prev);
+        const next = { ...safe.readingProgress };
+        delete next[slug];
+        return { ...safe, readingProgress: next };
+      });
+    },
+    [setState],
+  );
+
   const reset = useCallback(() => setState(DEFAULT), [setState]);
 
   return {
@@ -120,6 +162,8 @@ export default function useProgress() {
     toggleFavorite,
     tickStreak,
     submitQuiz,
+    setReadingProgress,
+    clearReadingProgress,
     reset,
   };
 }

@@ -1,18 +1,24 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import kitoblar from '../data/kitoblar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import ReadingCTA from '../components/kitoblar/ReadingCTA.jsx';
 import useProgress from '../hooks/useProgress.js';
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
+
+// Lazy load the heavy PDF reader — only loaded when user clicks "Mutolaa"
+const BookReader = lazy(() => import('../components/kitoblar/BookReader.jsx'));
 
 export default function KitobDetailPage() {
   const { slug } = useParams();
   const book = useMemo(() => kitoblar.find((b) => b.slug === slug), [slug]);
   const [opened, setOpened] = useState(false);
   const [excerptIndex, setExcerptIndex] = useState(0);
-  const { visit } = useProgress();
+  const [readerOpen, setReaderOpen] = useState(false);
+  const { state: progressState, visit, clearReadingProgress } = useProgress();
   const { speak, stop, speaking, available, voiceLabel } = useTextToSpeech();
+  const readingProgress = book ? progressState.readingProgress[book.slug] : undefined;
 
   useEffect(() => {
     if (book) visit('kitoblar', book.id, { points: 7, achievement: 'kitobxon' });
@@ -131,6 +137,16 @@ export default function KitobDetailPage() {
         </div>
       </header>
 
+      {/* Full PDF reader CTA */}
+      {book.pdf && (
+        <ReadingCTA
+          book={book}
+          progress={readingProgress}
+          onOpen={() => setReaderOpen(true)}
+          onRestart={() => clearReadingProgress(book.slug)}
+        />
+      )}
+
       {/* Excerpt reader */}
       {book.excerpts?.length > 0 && currentExcerpt && (
         <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 max-w-3xl mx-auto">
@@ -209,11 +225,33 @@ export default function KitobDetailPage() {
         </div>
       </section>
 
+      {/* Full-screen PDF reader (lazy loaded) */}
+      {readerOpen && book.pdf && (
+        <Suspense fallback={<ReaderLoadingFallback />}>
+          <BookReader
+            book={book}
+            initialPage={readingProgress?.lastPage || 1}
+            onClose={() => setReaderOpen(false)}
+          />
+        </Suspense>
+      )}
+
       <style>{`
         .perspective { perspective: 1600px; }
         .rotate-y-0 { transform: rotateY(0deg); }
         .-rotate-y-30 { transform: rotateY(-30deg); }
       `}</style>
     </article>
+  );
+}
+
+function ReaderLoadingFallback() {
+  return (
+    <div className="fixed inset-0 z-[90] bg-bg-deep/98 backdrop-blur-xl flex items-center justify-center">
+      <div className="text-center">
+        <div className="w-12 h-12 mx-auto mb-4 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+        <p className="text-cream-soft/70 text-sm tracking-[2px] uppercase">Reader yuklanmoqda…</p>
+      </div>
+    </div>
   );
 }

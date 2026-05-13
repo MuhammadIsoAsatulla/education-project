@@ -102,5 +102,29 @@
     "icon": "telescope",
     "tier": "platinum",
     "requires": { "type": "quiz-perfect", "count": 5 }
+  },
+  {
+    "id": "first-pages",
+    "name": "Birinchi sahifalar",
+    "description": "Bitta kitobning kamida 10 sahifasini o'qidingiz.",
+    "icon": "book-open",
+    "tier": "bronze",
+    "requires": { "type": "pages-read", "count": 10 }
+  },
+  {
+    "id": "deep-reader",
+    "name": "Chuqur Mutolaa",
+    "description": "Bitta kitobning yarmidan ko'pini o'qib chiqdingiz.",
+    "icon": "book-open",
+    "tier": "silver",
+    "requires": { "type": "pages-percent", "percent": 50 }
+  },
+  {
+    "id": "true-bibliophile",
+    "name": "Haqiqiy Kitobxon",
+    "description": "Bitta kitobni boshidan oxirigacha o'qidingiz.",
+    "icon": "book-open",
+    "tier": "gold",
+    "requires": { "type": "pages-percent", "percent": 95 }
   }
 ]

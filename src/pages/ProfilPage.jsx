@@ -54,6 +54,20 @@ function isUnlocked(badge, state) {
   if (req.type === 'quiz-perfect') {
     return countPerfectQuizzes(state.quizScores || {}) >= (req.count || 1);
   }
+  if (req.type === 'pages-read') {
+    const maxPagesRead = Object.values(state.readingProgress || {}).reduce(
+      (max, p) => Math.max(max, p?.lastPage || 0),
+      0,
+    );
+    return maxPagesRead >= (req.count || 1);
+  }
+  if (req.type === 'pages-percent') {
+    const maxPercent = Object.values(state.readingProgress || {}).reduce(
+      (max, p) => Math.max(max, p?.percent || 0),
+      0,
+    );
+    return maxPercent >= (req.percent || 100);
+  }
   return (state.visited[req.type]?.length || 0) >= (req.count || 1);
 }
 
