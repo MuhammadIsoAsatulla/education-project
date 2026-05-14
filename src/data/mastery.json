@@ -1,0 +1,131 @@
+{
+  "navoiy": {
+    "heroId": "navoiy",
+    "title": "Alisher Navoiy Sinovı",
+    "description": "20 ta savol, 10 daqiqa. 75% dan ortiq to'g'ri javob bersangiz — Alisher Navoiy kartochkasi sizniki!",
+    "timeLimit": 600,
+    "passThreshold": 0.75,
+    "questions": [
+      {
+        "id": "n1",
+        "question": "Alisher Navoiy qaysi shaharda tug'ilgan?",
+        "options": ["Samarqand", "Buxoro", "Hirot", "Toshkent"],
+        "answer": 2
+      },
+      {
+        "id": "n2",
+        "question": "Alisher Navoiy qaysi yilda tug'ilgan?",
+        "options": ["1430", "1441", "1450", "1462"],
+        "answer": 1
+      },
+      {
+        "id": "n3",
+        "question": "Navoiyning 'Xamsa'sida nechta doston mavjud?",
+        "options": ["3", "4", "5", "7"],
+        "answer": 2
+      },
+      {
+        "id": "n4",
+        "question": "Navoiyning 'Xamsa'sidagi birinchi doston nomi?",
+        "options": ["Farhod va Shirin", "Hayrat ul-abror", "Layli va Majnun", "Sab'ai sayyor"],
+        "answer": 1
+      },
+      {
+        "id": "n5",
+        "question": "Navoiy qaysi tilni badiiy adabiyot tili darajasiga ko'targan?",
+        "options": ["Fors tili", "Arab tili", "O'zbek (chig'atoy) tili", "Hind tili"],
+        "answer": 2
+      },
+      {
+        "id": "n6",
+        "question": "Navoiyning ulug' ustozi kim bo'lgan?",
+        "options": ["Jomiy", "Beruniy", "Ibn Sino", "Ulug'bek"],
+        "answer": 0
+      },
+      {
+        "id": "n7",
+        "question": "'Muhokamat ul-lug'atayn' asarida Navoiy nimani taqqoslagan?",
+        "options": ["Sharq va G'arb adabiyotini", "O'zbek va fors tillarini", "Ikki shoir ijodini", "Ikki diniy ta'limotni"],
+        "answer": 1
+      },
+      {
+        "id": "n8",
+        "question": "Navoiy qaysi hukmdor saroyida yaqin xizmatchi va vazir bo'lgan?",
+        "options": ["Amir Temur", "Ulug'bek", "Husayn Bayqaro", "Shohrux Mirzo"],
+        "answer": 2
+      },
+      {
+        "id": "n9",
+        "question": "Navoiy qaysi yilda vafot etgan?",
+        "options": ["1490", "1495", "1501", "1510"],
+        "answer": 2
+      },
+      {
+        "id": "n10",
+        "question": "Navoiyning 'Xamsa'sidagi eng mashhur ishqiy dostonlar juftligi?",
+        "options": ["Hayrat ul-abror va Sab'ai sayyor", "Farhod va Shirin hamda Layli va Majnun", "Saddi Iskandariy va Sab'ai sayyor", "Hayrat ul-abror va Lisonut-tayr"],
+        "answer": 1
+      },
+      {
+        "id": "n11",
+        "question": "Navoiyning 'Chor devon'idagi birinchi devon nomi?",
+        "options": ["G'aroyib us-sig'ar", "Navodir ush-shabob", "Badoe' ul-vasat", "Favoid ul-kibar"],
+        "answer": 0
+      },
+      {
+        "id": "n12",
+        "question": "Navoiy Hirotda qanday obidalar qurdirgan?",
+        "options": ["Faqat masjidlar", "Madrasa, xonaqoh, shifoxona, ko'prik", "Faqat saroylar", "Rasadxona va madrasa"],
+        "answer": 1
+      },
+      {
+        "id": "n13",
+        "question": "'Lisonut-tayr' asari qaysi janrda yozilgan?",
+        "options": ["Tarixiy doston", "Falsafiy-tasavvufiy doston", "Ishqiy lirika", "Hajviy asar"],
+        "answer": 1
+      },
+      {
+        "id": "n14",
+        "question": "'Nasoyim ul-muhabbat' asari nimaga bag'ishlangan?",
+        "options": ["Astronomiyaga", "Tibbiyotga", "Tasavvuf avliyolari tarjimayi holiga", "Davlat boshqaruviga"],
+        "answer": 2
+      },
+      {
+        "id": "n15",
+        "question": "Navoiy yoshligida qaysi shaharlarda ta'lim olgan?",
+        "options": ["Faqat Hirotda", "Faqat Buxoroda", "Hirot va Samarqandda", "Bag'dod va Qohirada"],
+        "answer": 2
+      },
+      {
+        "id": "n16",
+        "question": "Navoiyning otasining ismi nima?",
+        "options": ["G'iyosiddin Kichkina", "Mahmud Navoiy", "Ali Shir", "Husayn Navoiy"],
+        "answer": 0
+      },
+      {
+        "id": "n17",
+        "question": "'Mahbub ul-qulub' asari qaysi janrga kiradi?",
+        "options": ["Lirik doston", "Didaktik nasr", "Lirik she'rlar to'plami", "Tarixiy nasr"],
+        "answer": 1
+      },
+      {
+        "id": "n18",
+        "question": "'Saddi Iskandariy' dostoni kim haqida?",
+        "options": ["Amir Temur haqida", "Iskandar Zulqarnayn haqida", "Ulug'bek haqida", "Husayn Bayqaro haqida"],
+        "answer": 1
+      },
+      {
+        "id": "n19",
+        "question": "Navoiy she'riyatda qaysi taxallus (laqab)ni ishlatgan?",
+        "options": ["Layli", "Majnun", "Navoiy", "Alisher"],
+        "answer": 2
+      },
+      {
+        "id": "n20",
+        "question": "Navoiy nechta asardan ko'proq yozgan deb hisoblanadi?",
+        "options": ["10 dan ortiq", "20 dan ortiq", "30 dan ortiq", "50 dan ortiq"],
+        "answer": 2
+      }
+    ]
+  }
+}

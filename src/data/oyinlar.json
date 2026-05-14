@@ -1,0 +1,38 @@
+{
+  "memoryCards": [
+    { "id": 1, "type": "scholar", "label": "Beruniy", "pair": 1 },
+    { "id": 2, "type": "work", "label": "Hindiston kitobini yozgan", "pair": 1 },
+    { "id": 3, "type": "scholar", "label": "Ibn Sino", "pair": 2 },
+    { "id": 4, "type": "work", "label": "Tib qonunlari", "pair": 2 },
+    { "id": 5, "type": "scholar", "label": "Ulug'bek", "pair": 3 },
+    { "id": 6, "type": "work", "label": "Ziji jadidi Ko'ragoniy", "pair": 3 },
+    { "id": 7, "type": "scholar", "label": "Cho'lpon", "pair": 4 },
+    { "id": 8, "type": "work", "label": "Kecha va kunduz romani", "pair": 4 },
+    { "id": 9, "type": "scholar", "label": "Behbudiy", "pair": 5 },
+    { "id": 10, "type": "work", "label": "Padarkush pyesasi", "pair": 5 },
+    { "id": 11, "type": "fact", "label": "Avitsenna nomi bilan mashhur", "pair": 6 },
+    { "id": 12, "type": "scholar", "label": "Abu Ali ibn Sino", "pair": 6 },
+    { "id": 13, "type": "fact", "label": "Samarqandda rasadxona qurgan", "pair": 7 },
+    { "id": 14, "type": "scholar", "label": "Mirzo Ulug'bek", "pair": 7 },
+    { "id": 15, "type": "fact", "label": "O'zbek jadid harakatining peshvosi", "pair": 8 },
+    { "id": 16, "type": "scholar", "label": "Mahmudxo'ja Behbudiy", "pair": 8 }
+  ],
+  "timelineEvents": [
+    { "id": "e1", "year": 973, "text": "Beruniy tug'ildi", "scholar": "beruniy" },
+    { "id": "e2", "year": 980, "text": "Ibn Sino tug'ildi", "scholar": "ibn-sino" },
+    { "id": "e3", "year": 996, "text": "Ibn Sino Buxoro amirini davoladi", "scholar": "ibn-sino" },
+    { "id": "e4", "year": 1030, "text": "Beruniy 'Hindiston' asarini yozdi", "scholar": "beruniy" },
+    { "id": "e5", "year": 1037, "text": "Ibn Sino vafot etdi", "scholar": "ibn-sino" },
+    { "id": "e6", "year": 1048, "text": "Beruniy vafot etdi", "scholar": "beruniy" },
+    { "id": "e7", "year": 1394, "text": "Ulug'bek tug'ildi", "scholar": "ulugbek" },
+    { "id": "e8", "year": 1424, "text": "Ulug'bek rasadxonasi qurildi", "scholar": "ulugbek" },
+    { "id": "e9", "year": 1437, "text": "Ulug'bek Ziji jadidini tugatdi", "scholar": "ulugbek" },
+    { "id": "e10", "year": 1449, "text": "Ulug'bek vafot etdi", "scholar": "ulugbek" },
+    { "id": "e11", "year": 1875, "text": "Behbudiy tug'ildi", "scholar": "behbudiy" },
+    { "id": "e12", "year": 1897, "text": "Cho'lpon tug'ildi", "scholar": "cholpon" },
+    { "id": "e13", "year": 1911, "text": "Behbudiy 'Padarkush' pyesasini yozdi", "scholar": "behbudiy" },
+    { "id": "e14", "year": 1919, "text": "Behbudiy shahid bo'ldi", "scholar": "behbudiy" },
+    { "id": "e15", "year": 1936, "text": "Cho'lpon 'Kecha va kunduz' romani chiqdi", "scholar": "cholpon" },
+    { "id": "e16", "year": 1938, "text": "Cho'lpon qatl etildi", "scholar": "cholpon" }
+  ]
+}

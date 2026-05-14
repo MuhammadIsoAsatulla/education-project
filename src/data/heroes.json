@@ -1,0 +1,108 @@
+[
+  {
+    "id": "beruniy",
+    "name": "Abu Rayhon Beruniy",
+    "title": "Qomusiy Olim",
+    "rarity": "common",
+    "cost": 120,
+    "accent": "#d4a574",
+    "initial": "B",
+    "ability": "Viktirinada har to'g'ri javobga +5 tanga bonus",
+    "description": "973–1048. Matematika, astronomiya, geografiya va tarix sohasida tengsiz olim. Yer radiusini hisoblab chiqqan."
+  },
+  {
+    "id": "ibn-sino",
+    "name": "Abu Ali ibn Sino",
+    "title": "Shifo Sultoni",
+    "rarity": "common",
+    "cost": 120,
+    "accent": "#e8c898",
+    "initial": "S",
+    "ability": "Har kuni barcha o'yinlarga +10 tanga bonus",
+    "description": "980–1037. 'Tib qonunlari' asari 600 yil Yevropa universitetlarida asosiy darslik bo'ldi."
+  },
+  {
+    "id": "ulugbek",
+    "name": "Mirzo Ulug'bek",
+    "title": "Osmon Podshosi",
+    "rarity": "common",
+    "cost": 150,
+    "accent": "#1a6b7e",
+    "initial": "U",
+    "ability": "Vaqt chizig'i o'yinida har to'g'ri joyga +5 tanga bonus",
+    "description": "1394–1449. Samarqandda ulkan rasadxona qurib, 1018 yulduzning aniq o'rnini aniqladi."
+  },
+  {
+    "id": "cholpon",
+    "name": "Cho'lpon",
+    "title": "She'riyat Yulduzi",
+    "rarity": "common",
+    "cost": 100,
+    "accent": "#8b2635",
+    "initial": "Ch",
+    "ability": "So'z o'yinida bitta qo'shimcha urinish",
+    "description": "1897–1938. O'zbek modernizm she'riyatining asoschisi. 'Kecha va kunduz' romani adabiy meros durdonasi."
+  },
+  {
+    "id": "behbudiy",
+    "name": "Mahmudxo'ja Behbudiy",
+    "title": "Ma'rifat Peshvosi",
+    "rarity": "common",
+    "cost": 100,
+    "accent": "#0f4c5c",
+    "initial": "M",
+    "ability": "Xotira o'yinida +2 ta qo'shimcha urinish",
+    "description": "1875–1919. O'zbek jadid harakatining peshvosi. Birinchi o'zbek dramaturgi — 'Padarkush' muallifi."
+  },
+  {
+    "id": "xorazmiy",
+    "name": "Muhammad al-Xorazmiy",
+    "title": "Algoritmlar Otasi",
+    "rarity": "rare",
+    "cost": 0,
+    "packOnly": true,
+    "accent": "#7c3aed",
+    "initial": "X",
+    "ability": "Barcha o'yinlarda tanga mukofoti +15%",
+    "description": "780–850. Algebra fanining asoschisi. 'Algoritm' so'zi uning nomidan kelib chiqqan. O'rta asr matematikasining ulkan siymosi."
+  },
+  {
+    "id": "bobur",
+    "name": "Zahiriddin Muhammad Bobur",
+    "title": "Shoir-Hukmdor",
+    "rarity": "rare",
+    "cost": 0,
+    "packOnly": true,
+    "accent": "#1d4ed8",
+    "initial": "Bo",
+    "ability": "Viktirina va so'z o'yinida tanga mukofoti +20%",
+    "description": "1483–1530. Hind-Temuriylar sulolasiga asos solgan. 'Boburnoma' — dunyo adabiyotining noyob yodgorligi."
+  },
+  {
+    "id": "navoiy",
+    "name": "Alisher Navoiy",
+    "title": "She'riyat Sultoni",
+    "rarity": "legendary",
+    "cost": 0,
+    "packOnly": false,
+    "unlockType": ["test", "event"],
+    "testId": "navoiy",
+    "accent": "#f59e0b",
+    "initial": "N",
+    "ability": "Barcha o'yinlarda tanga mukofoti +50% va kunlik qo'shimcha so'z o'yini",
+    "description": "1441–1501. O'zbek adabiyotining ulkan toji. 30 dan ortiq asar, shu jumladan 'Xamsa' dostonlari muallifi."
+  },
+  {
+    "id": "temur",
+    "name": "Amir Temur",
+    "title": "Temuriylar Sultoni",
+    "rarity": "legendary",
+    "cost": 0,
+    "packOnly": false,
+    "unlockType": ["event"],
+    "accent": "#dc2626",
+    "initial": "T",
+    "ability": "Barcha kunlik vazifalar uchun tanga mukofoti ikki baravarida",
+    "description": "1336–1405. Samarqandni dunyo poytaxtiga aylantirdi. Ilm, san'at va me'morlikning buyuk homiysi."
+  }
+]

@@ -7,6 +7,8 @@ const LINKS = [
   { to: '/musiqa', label: 'Musiqa' },
   { to: '/kinolar', label: 'Kinolar' },
   { to: '/kitoblar', label: 'Kitoblar' },
+  { to: '/oyinlar', label: "O'yinlar" },
+  { to: '/dokon', label: "Do'kon" },
   { to: '/profil', label: 'Profil' },
 ];
 

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "b1", "scholar": "beruniy",
+    "question": "Beruniy qaysi shaharda tug'ilgan?",
+    "options": ["Samarqand", "Buxoro", "Kot, Xorazm", "G'azna"],
+    "answer": 2, "difficulty": "easy"
+  },
+  {
+    "id": "b2", "scholar": "beruniy",
+    "question": "Beruniy nechta asar yozgan deb hisoblanadi?",
+    "options": ["50 dan ortiq", "100 dan ortiq", "150 dan ortiq", "200 dan ortiq"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "b3", "scholar": "beruniy",
+    "question": "Beruniy qaysi mamlakatda 13 yil yashab, o'sha xalqni chuqur o'rgangan?",
+    "options": ["Eron", "Hindiston", "Xitoy", "Arabiston"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "b4", "scholar": "beruniy",
+    "question": "Beruniy 'Qonuni Mas'udiy' asarini qaysi sohada yozgan?",
+    "options": ["Tibbiyot", "Tarix", "Astronomiya", "Matematika"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "b5", "scholar": "beruniy",
+    "question": "Beruniy qaysi buyuk hukmdor saroyida xizmat qilgan?",
+    "options": ["Amir Temur", "Sulton Mahmud G'aznaviy", "Xorazmshoh", "Ulug'bek"],
+    "answer": 1, "difficulty": "hard"
+  },
+  {
+    "id": "s1", "scholar": "ibn-sino",
+    "question": "Ibn Sino G'arbda qanday nom bilan mashhur?",
+    "options": ["Aristoteles", "Avitsenna", "Averroes", "Alfraganus"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "s2", "scholar": "ibn-sino",
+    "question": "Ibn Sino necha yoshida Qur'onni yod olgan?",
+    "options": ["7", "10", "12", "15"],
+    "answer": 1, "difficulty": "medium"
+  },
+  {
+    "id": "s3", "scholar": "ibn-sino",
+    "question": "'Tib qonunlari' asari necha jilddan iborat?",
+    "options": ["3", "4", "5", "7"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "s4", "scholar": "ibn-sino",
+    "question": "Ibn Sino qaysi shaharda tug'ilgan?",
+    "options": ["Samarqand", "Buxoro (Afshona)", "Toshkent", "Andijon"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "s5", "scholar": "ibn-sino",
+    "question": "Ibn Sino necha yoshida tabiblik sirlarini to'liq egallagan?",
+    "options": ["12", "14", "16", "18"],
+    "answer": 2, "difficulty": "hard"
+  },
+  {
+    "id": "u1", "scholar": "ulugbek",
+    "question": "Ulug'bek kim edi?",
+    "options": ["Amir Temurning o'g'li", "Amir Temurning nevarasi", "Beruniyning shogirdi", "Ibn Sinoning izdoshi"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "u2", "scholar": "ulugbek",
+    "question": "Ulug'bek rasadxonasi qayerda qurilgan?",
+    "options": ["Buxoro", "Toshkent", "Samarqand", "G'azna"],
+    "answer": 2, "difficulty": "easy"
+  },
+  {
+    "id": "u3", "scholar": "ulugbek",
+    "question": "Ulug'bek nechta yulduzning aniq joylashuvini aniqlagan?",
+    "options": ["512", "768", "1018", "1200"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "u4", "scholar": "ulugbek",
+    "question": "Ulug'bek yulduzlar jadvalining nomi nima?",
+    "options": ["Ziji jadidi Ko'ragoniy", "Qonuni Mas'udiy", "Kitob ash-shifo", "Tahqiq mâ li-l-Hind"],
+    "answer": 0, "difficulty": "hard"
+  },
+  {
+    "id": "u5", "scholar": "ulugbek",
+    "question": "Ulug'bek rasadxonasi qachon qurilgan?",
+    "options": ["1400", "1411", "1424", "1437"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "ch1", "scholar": "cholpon",
+    "question": "Cho'lpon qaysi shaharda tug'ilgan?",
+    "options": ["Toshkent", "Samarqand", "Andijon", "Namangan"],
+    "answer": 2, "difficulty": "easy"
+  },
+  {
+    "id": "ch2", "scholar": "cholpon",
+    "question": "Cho'lponning mashhur romani nomi nima?",
+    "options": ["Uyg'onish", "Kecha va kunduz", "Buloqlar", "Tong sirlari"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "ch3", "scholar": "cholpon",
+    "question": "Cho'lpon qaysi harakatning faol ishtirokchisi bo'lgan?",
+    "options": ["Islohotchilik", "Jadidchilik", "Panturkizm", "Kommunizm"],
+    "answer": 1, "difficulty": "medium"
+  },
+  {
+    "id": "ch4", "scholar": "cholpon",
+    "question": "Cho'lpon qachon qatl etilgan?",
+    "options": ["1930", "1935", "1937", "1938"],
+    "answer": 3, "difficulty": "medium"
+  },
+  {
+    "id": "ch5", "scholar": "cholpon",
+    "question": "Cho'lpon qaysi xorijiy yozuvchilarni o'zbek tiliga tarjima qilgan?",
+    "options": ["Tolstoy va Dostoevskiy", "Pushkin, Shekspir va Gogol", "Gyote va Shiller", "Bayron va Shelli"],
+    "answer": 1, "difficulty": "hard"
+  },
+  {
+    "id": "bh1", "scholar": "behbudiy",
+    "question": "Behbudiy qaysi shaharda tug'ilgan?",
+    "options": ["Toshkent", "Buxoro", "Samarqand", "Xiva"],
+    "answer": 2, "difficulty": "easy"
+  },
+  {
+    "id": "bh2", "scholar": "behbudiy",
+    "question": "Behbudiy yozgan birinchi o'zbek pyesasining nomi?",
+    "options": ["Otello", "Padarkush", "Hamlet", "Lola va Majnun"],
+    "answer": 1, "difficulty": "easy"
+  },
+  {
+    "id": "bh3", "scholar": "behbudiy",
+    "question": "Behbudiy qaysi jurnalni tahrir qilgan?",
+    "options": ["Mushtum", "Oyna", "Guliston", "Sharq yulduzi"],
+    "answer": 1, "difficulty": "medium"
+  },
+  {
+    "id": "bh4", "scholar": "behbudiy",
+    "question": "Behbudiy qachon vafot etgan?",
+    "options": ["1915", "1917", "1919", "1921"],
+    "answer": 2, "difficulty": "medium"
+  },
+  {
+    "id": "bh5", "scholar": "behbudiy",
+    "question": "Behbudiy kim tomonidan qatl etilgan?",
+    "options": ["Rus imperiyasi tomonidan", "Buxoro amiri tomonidan", "Sovet hukumati tomonidan", "Noma'lum shaxslar tomonidan"],
+    "answer": 1, "difficulty": "hard"
+  }
+]

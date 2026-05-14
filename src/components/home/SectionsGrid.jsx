@@ -99,17 +99,53 @@ const SECTIONS = [
     ),
   },
   {
-    num: '— VI —',
-    to: '/profil',
-    title: 'Mening Ziyom',
-    subtitle: '— Shaxsiy Yutuqlar —',
-    cta: 'Kirish',
+    num: ‘— VI —‘,
+    to: ‘/profil’,
+    title: ‘Mening Ziyom’,
+    subtitle: ‘— Shaxsiy Yutuqlar —‘,
+    cta: ‘Kirish’,
     description:
-      "Bilim nishonlari, tugatilgan bo‘limlar va keyingi maqsadlar. O‘qituvchilar uchun maxsus panel.",
+      "Bilim nishonlari, tugatilgan bo’limlar va keyingi maqsadlar. O’qituvchilar uchun maxsus panel.",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M32 8 L36 24 L52 24 L40 34 L44 50 L32 40 L20 50 L24 34 L12 24 L28 24 Z" />
         <circle cx="32" cy="32" r="3" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    num: "— VII —",
+    to: "/oyinlar",
+    title: "Oʻyinlar",
+    subtitle: "— Kunlik Vazifalar —",
+    cta: "Oʻynash",
+    description:
+      "Har kuni yangi bilim bellashuvi, soʻz topishmoqlari, xotira oʻyini va vaqt chizigʻi. Oʻynab tanga yigʻing.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="8" y="20" width="48" height="30" rx="4" />
+        <path d="M24 35 L20 35 M22 33 L22 37" strokeLinecap="round" strokeWidth="2" />
+        <circle cx="40" cy="33" r="1.5" fill="currentColor" />
+        <circle cx="44" cy="37" r="1.5" fill="currentColor" />
+        <path d="M28 12 L36 12 L38 20 L26 20 Z" />
+      </svg>
+    ),
+  },
+  {
+    num: "— VIII —",
+    to: "/dokon",
+    title: "Doʻkon",
+    subtitle: "— Qahramonlar Toʻlami —",
+    cta: "Koʻrish",
+    description:
+      "Beruniy, Navoiy, Amir Temur va boshqa tarixiy qahramonlarning kartochkalarini toʻlang. Har kartochka — maxsus kuch.",
+    icon: (
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="10" y="18" width="22" height="30" rx="2" />
+        <rect x="16" y="12" width="22" height="30" rx="2" />
+        <rect x="22" y="22" width="22" height="30" rx="2" />
+        <path d="M28 30 L38 30 M28 36 L36 36" strokeLinecap="round" />
+        <path d="M30 26 L36 26" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -121,7 +157,7 @@ export default function SectionsGrid() {
       {/* Section divider header */}
       <div id="bolimlar" className="text-center py-20 px-6 reveal">
         <OrnamentDivider className="opacity-60 mb-6" />
-        <div className="eyebrow mb-4">— OLTI HAZINA —</div>
+        <div className="eyebrow mb-4">— SAKKIZ HAZINA —</div>
         <h2 className="section-title mb-4">Madaniyat Saroyi</h2>
         <p className="font-serif italic text-xl text-cream-soft max-w-2xl mx-auto opacity-80">
           Har bir bo‘lim — yangi olam. Qaysi eshikdan kirishni o‘zingiz tanlang.

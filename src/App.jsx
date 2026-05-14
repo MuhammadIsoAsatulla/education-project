@@ -14,6 +14,9 @@ import KinoDetailPage from './pages/KinoDetailPage.jsx';
 import KitoblarPage from './pages/KitoblarPage.jsx';
 import KitobDetailPage from './pages/KitobDetailPage.jsx';
 import ProfilPage from './pages/ProfilPage.jsx';
+import OyinlarPage from './pages/OyinlarPage.jsx';
+import StorePage from './pages/StorePage.jsx';
+import MasteryTestPage from './pages/MasteryTestPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
 export default function App() {
@@ -34,6 +37,9 @@ export default function App() {
           <Route path="/kitoblar" element={<KitoblarPage />} />
           <Route path="/kitoblar/:slug" element={<KitobDetailPage />} />
           <Route path="/profil" element={<ProfilPage />} />
+          <Route path="/oyinlar" element={<OyinlarPage />} />
+          <Route path="/dokon" element={<StorePage />} />
+          <Route path="/sinov/:heroId" element={<MasteryTestPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
