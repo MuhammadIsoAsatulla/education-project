@@ -25,7 +25,7 @@ export default function Quiz({ questions = [], previousBest = null, onComplete, 
         setPhase(PHASE.ASKING);
       } else {
         setPhase(PHASE.DONE);
-        onComplete?.(score);
+        onComplete?.(score, total);
       }
     }, 1100);
     return () => clearTimeout(t);

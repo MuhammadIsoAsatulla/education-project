@@ -3,140 +3,349 @@
     "ownerId": "beruniy",
     "ownerType": "allomalar",
     "questions": [
-      {
-        "q": "Beruniy qaysi yilda tug'ilgan?",
-        "options": ["863-yilda", "973-yilda", "1073-yilda", "883-yilda"],
-        "correct": 1
-      },
-      {
-        "q": "Beruniy hisoblab chiqqan eng mashhur natijasi nima?",
-        "options": [
-          "Quyosh haroratini",
-          "Yer sharining radiusini",
-          "Oygacha bo'lgan masofani",
-          "Atmosfera bosimini"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "«Hindiston» asari asosan nimaga bag'ishlangan?",
-        "options": [
-          "Geografiyaga",
-          "Tibbiyotga",
-          "Hind madaniyati va falsafasiga",
-          "Sayohat hikoyalariga"
-        ],
-        "correct": 2
-      }
+      { "q": "Abu Rayhon Beruniy qaysi yili tug'ilgan?", "options": ["863-yilda", "973-yilda", "1073-yilda", "883-yilda"], "correct": 1, "explanation": "Beruniy 973-yili Xorazmda dunyoga kelgan." },
+      { "q": "Beruniy hisoblab chiqqan eng mashhur natijasi nima?", "options": ["Quyosh haroratini", "Yer sharining radiusini", "Oygacha bo'lgan masofani", "Atmosfera bosimini"], "correct": 1, "explanation": "U Hindistondagi Nandana qal'asi tepasidan Yer radiusini hisoblagan." },
+      { "q": "«Hindiston» asari asosan nimaga bag'ishlangan?", "options": ["Geografiyaga", "Tibbiyotga", "Hind madaniyati va falsafasiga", "Sayohat hikoyalariga"], "correct": 2, "explanation": "13 yillik tadqiqot natijasi sifatida yozilgan." },
+      { "q": "Beruniyning vatani qaysi tarixiy o'lka?", "options": ["Buxoro", "Xorazm", "Farg'ona", "Samarqand"], "correct": 1 },
+      { "q": "Beruniy necha tildan ko'p tilni bilgan?", "options": ["2-3", "5", "8-10", "20"], "correct": 1, "explanation": "Arab, fors, sanskrit, suryoniy, yunon va boshqa tillarni bilgan." },
+      { "q": "Beruniy qaysi sohada birinchilardan bo'lib aniq usul ishlab chiqdi?", "options": ["Astronomiya", "Tarjima", "Etnografiya", "Hammasi"], "correct": 3 },
+      { "q": "Uning qancha asarlari hozir saqlangan deb hisoblanadi?", "options": ["10 dan ortiq", "50 dan ortiq", "150 dan ortiq", "500 dan ortiq"], "correct": 2 },
+      { "q": "Beruniyning iqtibosi: «Bilim — eng aziz ___»", "options": ["sovg'a", "xazinadir", "hayotdir", "asar"], "correct": 1 }
     ]
   },
   {
     "ownerId": "ibn-sino",
     "ownerType": "allomalar",
     "questions": [
-      {
-        "q": "Ibn Sino G'arbda qaysi nom bilan mashhur?",
-        "options": ["Algoritmus", "Avitsenna", "Alxazen", "Averroes"],
-        "correct": 1
-      },
-      {
-        "q": "«Al-qonun fit-tib» asari nechta jilddan iborat?",
-        "options": ["3 jild", "5 jild", "7 jild", "10 jild"],
-        "correct": 1
-      },
-      {
-        "q": "Ibn Sino qaerda tug'ilgan?",
-        "options": [
-          "Samarqandda",
-          "Buxoro yaqinidagi Afshonada",
-          "Hamadonda",
-          "Marvda"
-        ],
-        "correct": 1
-      }
+      { "q": "Ibn Sino G'arbda qaysi nom bilan mashhur?", "options": ["Algoritmus", "Avitsenna", "Alxazen", "Averroes"], "correct": 1, "explanation": "Lotinlashtirilgan nomi Avicenna." },
+      { "q": "«Al-qonun fit-tib» asari nechta jilddan iborat?", "options": ["3 jild", "5 jild", "7 jild", "10 jild"], "correct": 1 },
+      { "q": "Ibn Sino qaerda tug'ilgan?", "options": ["Samarqandda", "Buxoro yaqinidagi Afshonada", "Hamadonda", "Marvda"], "correct": 1 },
+      { "q": "U necha yoshida Qur'onni yodlagan?", "options": ["7", "10", "13", "18"], "correct": 1 },
+      { "q": "Ibn Sinoning falsafiy bosh asari?", "options": ["Tib qonunlari", "Kitob ash-shifo", "Donishnoma", "Najot kitobi"], "correct": 1 },
+      { "q": "«Tib qonunlari» Yevropada qachongacha asosiy darslik bo'lgan?", "options": ["13-asrgacha", "15-asrgacha", "17-asrgacha", "19-asrgacha"], "correct": 2 },
+      { "q": "Ibn Sino qaysi mavzularda asar yozmagan?", "options": ["Tibbiyot", "Astronomiya", "Musiqashunoslik", "Kibernetika"], "correct": 3, "explanation": "Kibernetika 20-asr fani." },
+      { "q": "Ibn Sino qaysi yilda vafot etgan?", "options": ["1037-yilda", "1048-yilda", "1099-yilda", "1101-yilda"], "correct": 0 }
     ]
   },
   {
     "ownerId": "ulugbek",
     "ownerType": "allomalar",
     "questions": [
-      {
-        "q": "Mirzo Ulug'bek kimning nevarasi edi?",
-        "options": [
-          "Bobur Mirzo",
-          "Amir Temur",
-          "Shohrux Mirzo",
-          "Hulagu xon"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Ulug'bek rasadxonasi qaerda qurilgan?",
-        "options": ["Buxoroda", "Hirotda", "Samarqand Ko'hak tepaligida", "Toshkentda"],
-        "correct": 2
-      },
-      {
-        "q": "«Ziji jadidi Ko'ragoniy» asarida nechta yulduz keltirilgan?",
-        "options": ["518", "818", "1018", "2018"],
-        "correct": 2
-      }
+      { "q": "Mirzo Ulug'bek kimning nevarasi?", "options": ["Bobur Mirzo", "Amir Temur", "Shohrux Mirzo", "Hulagu xon"], "correct": 1 },
+      { "q": "Ulug'bek rasadxonasi qaerda qurilgan?", "options": ["Buxoroda", "Hirotda", "Samarqand Ko'hak tepaligida", "Toshkentda"], "correct": 2 },
+      { "q": "«Ziji jadidi Ko'ragoniy» da nechta yulduz keltirilgan?", "options": ["518", "818", "1018", "2018"], "correct": 2 },
+      { "q": "Ulug'bek necha yoshda Movarounnahr hukmdori bo'lgan?", "options": ["12", "17", "21", "25"], "correct": 1 },
+      { "q": "Rasadxonaning balandligi taxminan necha metr edi?", "options": ["10 m", "20 m", "40 m", "60 m"], "correct": 2 },
+      { "q": "Ulug'bek davrida Samarqand qanday markaz edi?", "options": ["Savdo markazi", "Ilm-fan va astronomiya markazi", "Harbiy markaz", "Faqat poytaxt"], "correct": 1 },
+      { "q": "Ulug'bekning iqtibosi: «Dinlar tarqaladi va yo'qoladi — ammo ___ abadiy yashaydi»", "options": ["ehtiroslar", "ilmlar", "saroylar", "shoirlar"], "correct": 1 },
+      { "q": "Ulug'bek fojiali ravishda qachon halok bo'lgan?", "options": ["1437", "1449", "1455", "1462"], "correct": 1 }
     ]
   },
   {
     "ownerId": "cholpon",
     "ownerType": "allomalar",
     "questions": [
-      {
-        "q": "Cho'lponning haqiqiy ismi nima?",
-        "options": [
-          "Abdulla Qodiriy",
-          "Abdulhamid Sulaymon o'g'li",
-          "Mahmudxo'ja Behbudiy",
-          "Abdulla Qahhor"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Cho'lponning birinchi she'riy to'plami qanday nomlanadi?",
-        "options": ["Buloqlar", "Tong sirlari", "Uyg'onish", "Soz"],
-        "correct": 2
-      },
-      {
-        "q": "Cho'lpon qanday vafot etgan?",
-        "options": [
-          "Tabiiy o'lim bilan",
-          "Stalin qatag'oni qurboni sifatida otib o'ldirilgan",
-          "Jangda halok bo'lgan",
-          "Kasallikdan vafot etgan"
-        ],
-        "correct": 1
-      }
+      { "q": "Cho'lponning haqiqiy ismi?", "options": ["Abdulla Qodiriy", "Abdulhamid Sulaymon o'g'li", "Mahmudxo'ja Behbudiy", "Abdulla Qahhor"], "correct": 1 },
+      { "q": "Cho'lponning birinchi she'riy to'plami?", "options": ["Buloqlar", "Tong sirlari", "Uyg'onish", "Soz"], "correct": 2 },
+      { "q": "Cho'lpon qanday vafot etgan?", "options": ["Tabiiy", "Stalin qatag'oni qurboni", "Jangda halok", "Kasallikdan"], "correct": 1 },
+      { "q": "U qaysi shaharda tug'ilgan?", "options": ["Toshkent", "Samarqand", "Andijon", "Buxoro"], "correct": 2 },
+      { "q": "«Kecha va Kunduz» qaysi yili yozilgan?", "options": ["1922", "1929", "1936", "1942"], "correct": 2 },
+      { "q": "Cho'lpon qaysi adabiy harakatda faol edi?", "options": ["Klassikchilar", "Jadidchilar", "Realistchilar", "Modernistchilar"], "correct": 1 },
+      { "q": "Cho'lpon shoirligidan tashqari yana nima qilgan?", "options": ["Faqat she'r yozgan", "Tarjima qilgan", "Dramaturg ham bo'lgan", "Tarjima va dramaturg"], "correct": 3 },
+      { "q": "Cho'lponning iqtibosi: «Tilim — ___»", "options": ["bilimim", "qanotim", "kalitim", "boyligim"], "correct": 1 }
     ]
   },
   {
     "ownerId": "behbudiy",
     "ownerType": "allomalar",
     "questions": [
-      {
-        "q": "Behbudiy qaysi shaharda tug'ilgan?",
-        "options": ["Toshkentda", "Buxoroda", "Samarqandda", "Andijonda"],
-        "correct": 2
-      },
-      {
-        "q": "«Padarkush» pyesasi nima bilan mashhur?",
-        "options": [
-          "Birinchi rus pyesasi",
-          "Birinchi o'zbek pyesasi",
-          "Birinchi tarjima pyesasi",
-          "Birinchi tarixiy pyesasi"
-        ],
-        "correct": 1
-      },
-      {
-        "q": "Behbudiy qaysi jurnalni tashkil etgan?",
-        "options": ["Yulduz", "Oyna", "Sharq tongi", "Mushtum"],
-        "correct": 1
-      }
+      { "q": "Behbudiy qaysi shaharda tug'ilgan?", "options": ["Toshkent", "Buxoro", "Samarqand", "Andijon"], "correct": 2 },
+      { "q": "«Padarkush» asari nima bilan mashhur?", "options": ["Birinchi rus pyesasi", "Birinchi o'zbek pyesasi", "Birinchi tarjima pyesa", "Birinchi tarixiy pyesa"], "correct": 1 },
+      { "q": "Behbudiy qaysi jurnalni tashkil etgan?", "options": ["Yulduz", "Oyna", "Sharq tongi", "Mushtum"], "correct": 1 },
+      { "q": "U qaysi yili shahid bo'lgan?", "options": ["1911", "1915", "1919", "1925"], "correct": 2 },
+      { "q": "Behbudiy qaysi gazetaning muharriri edi?", "options": ["Toshkent", "Samarqand", "Buxoroi sharif", "Turkiston"], "correct": 1 },
+      { "q": "U qaysi harakatning peshvosi bo'lgan?", "options": ["Inqilob", "Jadidchilik", "Sho'rolar", "An'anaviy"], "correct": 1 },
+      { "q": "Behbudiyning asosiy g'oyasi?", "options": ["Sport", "Maktab va ma'rifat", "Savdo", "Harbiy ish"], "correct": 1 },
+      { "q": "Behbudiyning iqtibosi: «Maktabsiz millat — ___ qolgan karvon»", "options": ["uysiz", "boyliksiz", "yo'lsiz", "yetimsiz"], "correct": 2 }
+    ]
+  },
+
+  {
+    "ownerId": "registon",
+    "ownerType": "muzeylar",
+    "questions": [
+      { "q": "Registon maydonida nechta madrasa joylashgan?", "options": ["2", "3", "4", "5"], "correct": 1, "explanation": "Ulug'bek, Sherdor va Tillakori." },
+      { "q": "Eng qadimgi madrasa qaysi?", "options": ["Tillakori", "Sherdor", "Ulug'bek", "Mir Arab"], "correct": 2, "explanation": "Ulug'bek 1417-1420 yillarda qurilgan." },
+      { "q": "Sherdor madrasasi nimasi bilan mashhur?", "options": ["Oltin bezaklari", "Sher tasviri", "Yog'och ustunlari", "Suv tizimi"], "correct": 1 },
+      { "q": "Tillakori madrasasi qachon qurilgan?", "options": ["1417-1420", "1646-1660", "1750-1770", "1820-1830"], "correct": 1 },
+      { "q": "Registon qaysi shaharda?", "options": ["Buxoro", "Samarqand", "Toshkent", "Xiva"], "correct": 1 },
+      { "q": "Ulug'bek madrasasida nima o'qitilgan?", "options": ["Faqat din", "Astronomiya va matematika", "Tijorat", "Harbiy ish"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "amir-temur",
+    "ownerType": "muzeylar",
+    "questions": [
+      { "q": "Amir Temur muzeyi qachon ochilgan?", "options": ["1991", "1996", "2001", "2010"], "correct": 1, "explanation": "Sohibqironning 660 yilligida." },
+      { "q": "Muzey qaysi shaharda joylashgan?", "options": ["Samarqand", "Toshkent", "Buxoro", "Shahrisabz"], "correct": 1 },
+      { "q": "Eksponatlar soni taxminan?", "options": ["500", "1000", "5000+", "10000+"], "correct": 2 },
+      { "q": "Bosh zalda nima joylashgan?", "options": ["Saroy maketi", "Sohibqiron haykali", "Qadimgi kitob", "Qurol kolleksiyasi"], "correct": 1 },
+      { "q": "Muzeyda qaysi davr eksponatlari?", "options": ["Bronza davri", "Temuriylar davri", "Sovet davri", "Mustaqillik davri"], "correct": 1 },
+      { "q": "Boburnoma ham muzeyda mavjudmi?", "options": ["Yo'q", "Faqat ko'chirma", "Ha, qo'lyozma nusxasi", "Faqat rasmda"], "correct": 2 }
+    ]
+  },
+  {
+    "ownerId": "ichan-qala",
+    "ownerType": "muzeylar",
+    "questions": [
+      { "q": "Ichan Qal'a qaysi shaharning ichki shahri?", "options": ["Buxoro", "Samarqand", "Xiva", "Qo'qon"], "correct": 2 },
+      { "q": "U qachon UNESCO ro'yxatiga kiritilgan?", "options": ["1985", "1990", "2000", "2010"], "correct": 1 },
+      { "q": "Ichan Qal'a maydoni necha gektar?", "options": ["10", "26", "50", "100"], "correct": 1 },
+      { "q": "Eng mashhur minora?", "options": ["Kalon", "Kalta Minor", "Po'i Kalon", "Burj"], "correct": 1 },
+      { "q": "Kalta Minor qachon qurila boshlagan?", "options": ["1620", "1750", "1851", "1900"], "correct": 2 },
+      { "q": "Hududda nechta tarixiy yodgorlik bor?", "options": ["10", "30", "60+", "200+"], "correct": 2 }
+    ]
+  },
+  {
+    "ownerId": "shahi-zinda",
+    "ownerType": "muzeylar",
+    "questions": [
+      { "q": "Shohi Zinda nima ma'noni anglatadi?", "options": ["Buyuk shoh", "Tirik shoh", "Adolatli shoh", "Donishmand shoh"], "correct": 1 },
+      { "q": "Shohi Zinda qayerda?", "options": ["Buxoro", "Samarqand", "Xiva", "Toshkent"], "correct": 1 },
+      { "q": "Bu yer asosan nima?", "options": ["Madrasa", "Saroy", "Nekropol", "Bozor"], "correct": 2 },
+      { "q": "Eng qadimgi maqbara?", "options": ["Shoda Mulk", "Qusam ibn Abbos", "Tuman Oqa", "Amir Burunduq"], "correct": 1 },
+      { "q": "Qaysi davrda asosan shakllangan?", "options": ["8-asr", "11-19 asrlar", "Faqat Temuriylar davri", "16-asr"], "correct": 1 },
+      { "q": "Shohi Zinda nimasi bilan mashhur?", "options": ["Yog'och bezaklari", "Koshin san'ati", "Oltin bezaklari", "Marmar haykallari"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "buxoro",
+    "ownerType": "muzeylar",
+    "questions": [
+      { "q": "Buxoro nechinchi yili UNESCO ro'yxatiga kiritilgan?", "options": ["1985", "1990", "1993", "2000"], "correct": 2 },
+      { "q": "Buxoroning yoshi taxminan?", "options": ["500 yil", "1000 yil", "2500 yil", "5000 yil"], "correct": 2 },
+      { "q": "Kalon minora qaysi yilda qurilgan?", "options": ["927", "1127", "1327", "1527"], "correct": 1 },
+      { "q": "Mir Arab madrasasi hozir nima?", "options": ["Tarixiy muzey", "Faol diniy ta'lim markazi", "Restoran", "Bo'sh"], "correct": 1 },
+      { "q": "Ismoil Somoniy maqbarasi qaysi davrda qurilgan?", "options": ["8-asr", "9-10 asrlar", "12-asr", "16-asr"], "correct": 1 },
+      { "q": "Buxoro qaysi alloma vatani?", "options": ["Beruniy", "Ibn Sino", "Ulug'bek", "Nasoiy"], "correct": 1 }
+    ]
+  },
+
+  {
+    "ownerId": "munojot",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "«Munojot» qaysi musiqa shaklining qismi?", "options": ["Estrada", "Maqom", "Pop", "Klassik Yevropa"], "correct": 1 },
+      { "q": "«Munojot» qanday ma'noni anglatadi?", "options": ["Quvonch", "Yig'i", "Ilohga murojaat", "Marosim"], "correct": 2 },
+      { "q": "Munojot Yo'lchiyeva qaysi maktabning vakili?", "options": ["Toshkent", "Buxoro", "Xorazm", "Farg'ona-Toshkent"], "correct": 3 },
+      { "q": "Maqom qaysi YuNESKO ro'yxatida?", "options": ["Yo'q", "Moddiy meros", "Nomoddiy madaniy meros", "Tabiiy meros"], "correct": 2 },
+      { "q": "Shashmaqom necha qismdan iborat?", "options": ["3", "5", "6", "12"], "correct": 2 }
+    ]
+  },
+  {
+    "ownerId": "yallama-yorim",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "«Yallama yorim» qo'shig'ining mashhur ijrochisi?", "options": ["Turgun Alimatov", "Sherali Jo'rayev", "Yulduz Usmonova", "Botir Zokirov"], "correct": 1 },
+      { "q": "Bu qaysi janrga mansub?", "options": ["Maqom", "Estrada/Xalq", "Lazgi", "Doston"], "correct": 1 },
+      { "q": "Sherali Jo'rayev qaysi sohada mashhur?", "options": ["Aktyor", "Estrada qo'shiqchisi", "Sportchi", "Rejissyor"], "correct": 1 },
+      { "q": "Qo'shiq qaysi mavzu haqida?", "options": ["Vatan", "Sevgi", "Ona", "Bayram"], "correct": 1 },
+      { "q": "Sherali Jo'rayev tug'ilgan yili?", "options": ["1940", "1947", "1955", "1960"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "ushshoq",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "«Ushshoq» qaysi maqomga tegishli?", "options": ["Buxoro", "Farg'ona-Toshkent", "Shashmaqom", "Xorazm"], "correct": 2 },
+      { "q": "Asosiy ijroda qaysi cholg'u?", "options": ["Karnay", "Tanbur", "Doira", "Sirnoy"], "correct": 1 },
+      { "q": "«Ushshoq» so'zi nima ma'no?", "options": ["Sokin", "Oshiq, sevuvchi", "G'azabli", "Quvonchli"], "correct": 1 },
+      { "q": "Turgun Alimatov qaysi cholg'uda mashhur edi?", "options": ["Sato", "Tanbur", "Dutor", "Hammasi"], "correct": 3 },
+      { "q": "Maqom asosan qanday ohangda?", "options": ["Tezkor", "Sokin va chuqur", "Raqs uchun", "Bolalar uchun"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "lazgi",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "Lazgi qaysi viloyatning raqs musiqasi?", "options": ["Toshkent", "Buxoro", "Xorazm", "Farg'ona"], "correct": 2 },
+      { "q": "Lazgi YUNESKO ro'yxatida?", "options": ["Yo'q", "Faqat nomzod", "Ha, nomoddiy meros", "Yangi qo'shilgan"], "correct": 2 },
+      { "q": "Lazgi qanday ritm?", "options": ["Sokin", "Tezkor va energiyali", "Yumshoq", "Faqat raqs uchun"], "correct": 1 },
+      { "q": "Lazgi raqsi qaysi maktab?", "options": ["Buxoro maktabi", "Farg'ona maktabi", "Xorazm maktabi", "Toshkent maktabi"], "correct": 2 },
+      { "q": "Lazgida asosiy cholg'u?", "options": ["Tanbur", "Karnay-surnay", "Rubob", "Faqat doira"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "andijon-polkasi",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "Andijon polkasi qaysi viloyatning kuyi?", "options": ["Buxoro", "Xorazm", "Farg'ona vodiysi", "Surxondaryo"], "correct": 2 },
+      { "q": "Asosan qaerda yangraydi?", "options": ["Dafn marosimida", "To'y va bayramda", "Hech qachon", "Faqat namozda"], "correct": 1 },
+      { "q": "Bu qo'shiq turi qaysi?", "options": ["Klassik maqom", "Xalq kuyi", "Estrada", "Doston"], "correct": 1 },
+      { "q": "Andijonning mevasi qaysi mashhur?", "options": ["Anor", "Olma", "Behi", "Uzum"], "correct": 1, "explanation": "«Andijonning olmalari» — mashhur ifoda." },
+      { "q": "Farg'ona vodiysida qaysi cholg'u keng tarqalgan?", "options": ["Tanbur", "Sato", "Doira", "Rubob"], "correct": 3 }
+    ]
+  },
+  {
+    "ownerId": "buxoro-tanovari",
+    "ownerType": "musiqa",
+    "questions": [
+      { "q": "«Tanovar» qaysi maqomga tegishli?", "options": ["Xorazm", "Farg'ona", "Buxoro", "Toshkent"], "correct": 2 },
+      { "q": "Tanovarda asosiy mavzu?", "options": ["Vatan", "Sevgi va sog'inch", "Bahor", "Mehnat"], "correct": 1 },
+      { "q": "Tanovarda qaysi cholg'u eshitiladi?", "options": ["Karnay", "Tanbur va doira", "Surnay", "Pianino"], "correct": 1 },
+      { "q": "Shashmaqom qaysi shaharlarda asosan rivojlangan?", "options": ["Samarqand-Buxoro", "Toshkent-Andijon", "Xiva-Marv", "Faqat Toshkent"], "correct": 0 },
+      { "q": "Klassik maqomni o'rganish necha yil oladi?", "options": ["1-2 yil", "3-5 yil", "10+ yil", "Bir umr"], "correct": 3 }
+    ]
+  },
+
+  {
+    "ownerId": "otkan-kunlar",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«O'tgan kunlar» filmi qaysi asar asosida?", "options": ["Cho'lpon", "Abdulla Qodiriy", "Bobur", "Navoiy"], "correct": 1 },
+      { "q": "Film qaysi yilda suratga olingan?", "options": ["1955", "1969", "1980", "1995"], "correct": 1 },
+      { "q": "Rejissyori?", "options": ["Shuhrat Abbosov", "Yo'ldosh A'zamov", "Nabi G'aniyev", "Latif Fayziyev"], "correct": 1 },
+      { "q": "Filmning bosh qahramoni?", "options": ["Anvar", "Otabek", "Tohir", "Alpomish"], "correct": 1 },
+      { "q": "Film davri qaysi?", "options": ["XV asr", "XVII asr", "XIX asr oxiri", "XX asr"], "correct": 2 }
+    ]
+  },
+  {
+    "ownerId": "mahallada-duv-duv-gap",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Mahallada duv-duv gap» qaysi janr?", "options": ["Drama", "Komediya", "Tarixiy", "Doston"], "correct": 1 },
+      { "q": "Rejissyori kim?", "options": ["Shuhrat Abbosov", "Yo'ldosh A'zamov", "Nabi G'aniyev", "Damir Salimov"], "correct": 0 },
+      { "q": "Film qaysi yili suratga olingan?", "options": ["1955", "1960", "1972", "1985"], "correct": 1 },
+      { "q": "Asosiy yer?", "options": ["Qishloq", "Toshkent mahallasi", "Maktab", "Universitet"], "correct": 1 },
+      { "q": "Filmda asosiy mavzu?", "options": ["Urush", "Sevgi va g'iybat", "Mehnat", "Sport"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "tohir-zuhra",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Tohir va Zuhra» qaysi yili suratga olingan?", "options": ["1928", "1945", "1955", "1970"], "correct": 1 },
+      { "q": "Film qaysi mavzuda?", "options": ["Vatan", "Sevgi", "Tarix", "Sport"], "correct": 1 },
+      { "q": "Asar manbai?", "options": ["Yangi roman", "Xalq dostoni", "Tarjima", "Pyesa"], "correct": 1 },
+      { "q": "Filmni «Sharqning ___» deyishadi", "options": ["Hamleti", "Romeo va Juletta", "Otello", "Makbet"], "correct": 1 },
+      { "q": "Rejissyori?", "options": ["Yo'ldosh A'zamov", "Nabi G'aniyev", "Shuhrat Abbosov", "Latif Fayziyev"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "maftuningman",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Maftuningman» qaysi yili suratga olingan?", "options": ["1948", "1958", "1968", "1978"], "correct": 1 },
+      { "q": "Janri?", "options": ["Doston", "Romantik drama", "Tarixiy", "Komediya"], "correct": 1 },
+      { "q": "Rejissyori?", "options": ["Yo'ldosh A'zamov", "Damir Salimov", "Latif Fayziyev", "Nabi G'aniyev"], "correct": 0 },
+      { "q": "Filmning asosiy chizgisi?", "options": ["Urush", "Sevgi va to'siqlar", "Sport", "Savdo"], "correct": 1 },
+      { "q": "Filmda qanday muhit?", "options": ["Harbiy", "Lirik", "Sanoat", "Tarixiy"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "suyunchi",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Suyunchi» qaysi yili suratga olingan?", "options": ["1972", "1982", "1992", "2002"], "correct": 1 },
+      { "q": "Janri?", "options": ["Drama", "Komediya", "Oilaviy", "Doston"], "correct": 2 },
+      { "q": "Film nimaga bag'ishlangan?", "options": ["Urush", "Mahallada bola tug'ilishi", "Sport", "Sayohat"], "correct": 1 },
+      { "q": "Rejissyori?", "options": ["Damir Salimov", "Yo'ldosh A'zamov", "Shuhrat Abbosov", "Latif Fayziyev"], "correct": 0 },
+      { "q": "«Suyunchi» nima ma'no?", "options": ["Sovg'a", "Xushxabar mukofoti", "Tabrik", "Salom"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "alpomish",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Alpomish» qaysi janr filmi?", "options": ["Realistik drama", "Doston/Tarixiy", "Komediya", "Detektiv"], "correct": 1 },
+      { "q": "Manbai?", "options": ["Roman", "Xalq dostoni", "Tarjima", "Tarix"], "correct": 1 },
+      { "q": "Bahodirning ismi?", "options": ["Otabek", "Alpomish", "Tohir", "Anvar"], "correct": 1 },
+      { "q": "Film qachon suratga olingan?", "options": ["1985", "1995", "2000", "2010"], "correct": 2 },
+      { "q": "Rejissyor?", "options": ["Yo'ldosh A'zamov", "Bahodir Yo'ldoshev", "Shuhrat Abbosov", "Damir Salimov"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "qutlugh-qon",
+    "ownerType": "kinolar",
+    "questions": [
+      { "q": "«Qutlug' qon» qaysi yozuvchining asari?", "options": ["Qodiriy", "Cho'lpon", "Oybek", "Qahhor"], "correct": 2 },
+      { "q": "Film qaysi yilda suratga olingan?", "options": ["1958", "1968", "1978", "1988"], "correct": 0 },
+      { "q": "Janr?", "options": ["Komediya", "Tarixiy drama", "Doston", "Multfilm"], "correct": 1 },
+      { "q": "Filmning asosiy mavzusi?", "options": ["Sevgi", "Dehqonlar hayoti", "Sport", "Savdo"], "correct": 1 },
+      { "q": "Rejissyor?", "options": ["Latif Fayziyev", "Yo'ldosh A'zamov", "Nabi G'aniyev", "Shuhrat Abbosov"], "correct": 0 }
+    ]
+  },
+
+  {
+    "ownerId": "boburnoma",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "«Boburnoma» qaysi tilda yozilgan?", "options": ["Arabcha", "Fors", "Eski o'zbek (chig'atoy)", "Sanskrit"], "correct": 2 },
+      { "q": "Bobur qaysi sulolaga asos solgan?", "options": ["Temuriylar (Hindistonda)", "Safaviy", "Sho'ronlar", "Buxoro Mang'itlari"], "correct": 0, "explanation": "Boburiylar imperiyasi Hindistonda." },
+      { "q": "Bobur qayerda tug'ilgan?", "options": ["Buxoro", "Andijon", "Samarqand", "Toshkent"], "correct": 1 },
+      { "q": "Boburnoma qaysi yillarni qamrab oladi?", "options": ["1450-1500", "1494-1530", "1550-1600", "1600-1650"], "correct": 1 },
+      { "q": "Bobur necha tilni bilgan?", "options": ["1", "2", "3-4", "5+"], "correct": 2 },
+      { "q": "Boburning «Boburnoma» janri?", "options": ["Roman", "She'r", "Avtobiografiya", "Drama"], "correct": 2 }
+    ]
+  },
+  {
+    "ownerId": "navoiy-gazallari",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "«Xazoyin ul-Maoniy» nechta devondan iborat?", "options": ["2", "4", "6", "10"], "correct": 1 },
+      { "q": "Navoiy qaysi tilda yozgan?", "options": ["Arab", "Fors", "Eski turk (chig'atoy)", "Sanskrit"], "correct": 2 },
+      { "q": "Birinchi devon nomi?", "options": ["Favoyid ul-kibar", "G'aroyib us-sig'ar", "Navodir ush-shabob", "Badoyi' ul-vasat"], "correct": 1 },
+      { "q": "Navoiy qaysi davrda yashagan?", "options": ["XIII asr", "XV asr", "XVII asr", "XVIII asr"], "correct": 1 },
+      { "q": "Navoiyning yana mashhur tarixiy asari?", "options": ["Tarixi muluki Ajam", "Boburnoma", "Hindiston", "Donishnoma"], "correct": 0 },
+      { "q": "Navoiyning asosiy hami?", "options": ["Saroyda", "She'r va davlat", "Tijorat", "Faqat savdogarlik"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "otkan-kunlar-roman",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "«O'tkan kunlar» kim tomonidan yozilgan?", "options": ["Cho'lpon", "Abdulla Qodiriy", "Oybek", "Qahhor"], "correct": 1 },
+      { "q": "Asar qaysi yili nashr etilgan?", "options": ["1910", "1922", "1935", "1948"], "correct": 1 },
+      { "q": "Bosh qahramonlar?", "options": ["Anvar va Ra'no", "Otabek va Kumush", "Tohir va Zuhra", "Alpomish va Barchin"], "correct": 1 },
+      { "q": "Asar janri?", "options": ["Doston", "Hikoya", "Roman", "Drama"], "correct": 2 },
+      { "q": "O'tkan kunlar qaysi shaharda asosan?", "options": ["Toshkent", "Samarqand", "Buxoro", "Marg'ilon"], "correct": 0 },
+      { "q": "Qodiriy qachon qatag'on qurboni bo'lgan?", "options": ["1928", "1938", "1948", "1953"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "kecha-va-kunduz",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "Asar muallifi kim?", "options": ["Qodiriy", "Cho'lpon", "Qahhor", "Oybek"], "correct": 1 },
+      { "q": "Roman birinchi bo'lib qachon nashr etilgan?", "options": ["1925", "1936", "1946", "1961"], "correct": 1 },
+      { "q": "Bosh qahramoni?", "options": ["Otabek", "Zebixon", "Kumush", "Ra'no"], "correct": 1 },
+      { "q": "Roman necha jilddan?", "options": ["1 (faqat 1-jild)", "2", "3", "5"], "correct": 0, "explanation": "2-jild qatag'on tufayli yo'qolgan." },
+      { "q": "Cho'lpon qaysi adabiy yo'nalishni boshlagan?", "options": ["Realizm", "Modernizm", "Klassikizm", "Postmodernizm"], "correct": 1 },
+      { "q": "Asar qaysi muhitda?", "options": ["Toshkent", "Qishloq", "Buxoro", "Saroy"], "correct": 1 }
+    ]
+  },
+  {
+    "ownerId": "mehrobdan-chayon",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "Asar muallifi?", "options": ["Cho'lpon", "Qodiriy", "Qahhor", "Oybek"], "correct": 1 },
+      { "q": "Qachon yozilgan?", "options": ["1919", "1929", "1939", "1949"], "correct": 1 },
+      { "q": "Asar qaysi davrda?", "options": ["Temuriylar", "Qo'qon xonligi (XIX asr)", "Bobur davri", "Sho'ro davri"], "correct": 1 },
+      { "q": "Bosh qahramonlar?", "options": ["Otabek va Kumush", "Anvar va Ra'no", "Tohir va Zuhra", "Sayyora va Salim"], "correct": 1 },
+      { "q": "Qaysi xon davri?", "options": ["Amir Temur", "Xudoyorxon", "Sherali", "Muhammad Rahimxon"], "correct": 1 },
+      { "q": "Asar mavzusi?", "options": ["Saroy intrigasi va sevgi", "Mehnat", "Sayohat", "Urush"], "correct": 0 }
+    ]
+  },
+  {
+    "ownerId": "sarob",
+    "ownerType": "kitoblar",
+    "questions": [
+      { "q": "«Sarob» kim tomonidan yozilgan?", "options": ["Qodiriy", "Cho'lpon", "Abdulla Qahhor", "Oybek"], "correct": 2 },
+      { "q": "Qachon yozilgan?", "options": ["1924", "1934", "1944", "1954"], "correct": 1 },
+      { "q": "Asar janri?", "options": ["Roman", "She'r", "Drama", "Hikoya"], "correct": 0 },
+      { "q": "Qahhor qaysi yili vafot etgan?", "options": ["1955", "1968", "1972", "1980"], "correct": 1 },
+      { "q": "«Sarob» mavzusi?", "options": ["Sport", "Ziyolining ichki tashvishi", "Tarix", "Tijorat"], "correct": 1 },
+      { "q": "Qahhor qaysi sohada mashhur edi?", "options": ["She'r", "Roman va hikoya", "Tarjima", "Drama"], "correct": 1 }
     ]
   }
 ]

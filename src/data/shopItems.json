@@ -1,0 +1,145 @@
+{
+  "categories": [
+    {
+      "id": "experience",
+      "name": "Yagona Tajribalar",
+      "icon": "✨",
+      "items": [
+        {
+          "id": "alloma-chat-beruniy",
+          "name": "Beruniy bilan suhbat",
+          "description": "Allomadan o'zingiz savol berib, javob olishingiz mumkin (1 sessiya).",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "experience",
+          "consumable": true
+        },
+        {
+          "id": "alloma-chat-ibn-sino",
+          "name": "Ibn Sino bilan suhbat",
+          "description": "Tibbiyot otasi bilan bevosita muloqot.",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "experience",
+          "consumable": true
+        },
+        {
+          "id": "alloma-chat-ulugbek",
+          "name": "Ulug'bek bilan suhbat",
+          "description": "Astronom-shoh bilan yulduzlar haqida.",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "experience",
+          "consumable": true
+        },
+        {
+          "id": "alloma-chat-cholpon",
+          "name": "Cho'lpon bilan suhbat",
+          "description": "Shoir bilan she'riyat haqida.",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "experience",
+          "consumable": true
+        },
+        {
+          "id": "alloma-chat-behbudiy",
+          "name": "Behbudiy bilan suhbat",
+          "description": "Jadid bilan ma'rifat haqida.",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "experience",
+          "consumable": true
+        }
+      ]
+    },
+    {
+      "id": "cosmetic",
+      "name": "Bezaklar",
+      "icon": "🎨",
+      "items": [
+        {
+          "id": "frame-gold",
+          "name": "Oltin profil ramkasi",
+          "description": "Avatar atrofiga oltin halqali ramka.",
+          "price": { "type": "bronze", "amount": 10 },
+          "kind": "cosmetic"
+        },
+        {
+          "id": "frame-mythic",
+          "name": "Asotirim ramka",
+          "description": "Kamalak gradientli ramka — eng noyob.",
+          "price": { "type": "silver", "amount": 3 },
+          "kind": "cosmetic"
+        },
+        {
+          "id": "theme-day",
+          "name": "Kunduzgi tema",
+          "description": "Krem fon va oltin urg'u — yorqin kun.",
+          "price": { "type": "silver", "amount": 2 },
+          "kind": "cosmetic"
+        },
+        {
+          "id": "theme-sunset",
+          "name": "Sahar tema",
+          "description": "Qizg'ish-binafsha tongni eslating.",
+          "price": { "type": "silver", "amount": 3 },
+          "kind": "cosmetic"
+        },
+        {
+          "id": "title-bilimdon",
+          "name": "Unvon: «Bilimli Do'st»",
+          "description": "Profil yonida maxsus unvon ko'rinadi.",
+          "price": { "type": "bronze", "amount": 15 },
+          "kind": "cosmetic"
+        }
+      ]
+    },
+    {
+      "id": "boosters",
+      "name": "Kuchaytirgichlar",
+      "icon": "🚀",
+      "items": [
+        {
+          "id": "boost-2x-24h",
+          "name": "24 soat: Ikki barobar ball",
+          "description": "Bir kun davomida har ish 2× ball beradi.",
+          "price": { "type": "bronze", "amount": 15 },
+          "kind": "booster",
+          "consumable": true
+        },
+        {
+          "id": "streak-shield",
+          "name": "Streak Qalqoni",
+          "description": "Bir kun yo'qlik kechirilsin — zanjir uzilmaydi.",
+          "price": { "type": "silver", "amount": 2 },
+          "kind": "booster",
+          "consumable": true
+        },
+        {
+          "id": "quiz-hint",
+          "name": "Viktorina maslahati",
+          "description": "Bir savol uchun 50% noto'g'rini o'chiradi (3 ta sessiya).",
+          "price": { "type": "bronze", "amount": 8 },
+          "kind": "booster",
+          "consumable": true
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "name": "Hujjatlar",
+      "icon": "📜",
+      "items": [
+        {
+          "id": "certificate-pdf",
+          "name": "«Meros Vorisi» Sertifikati",
+          "description": "Chiroyli PDF, print-tayyor — sizning ismingiz bilan.",
+          "price": { "type": "gold", "amount": 1 },
+          "kind": "document"
+        },
+        {
+          "id": "certificate-kitobxon",
+          "name": "«Kitobxon» Sertifikati",
+          "description": "Mutolaa tugatganlik guvohnomasi.",
+          "price": { "type": "silver", "amount": 5 },
+          "kind": "document"
+        }
+      ]
+    }
+  ]
+}

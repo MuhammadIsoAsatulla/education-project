@@ -15,7 +15,42 @@
     "youtubeQuery": "O'tgan kunlar 1969 film o'zbek",
     "synopsis": "Abdulla Qodiriyning shoh asari asosida yaratilgan film. XIX asr oxiri Turkistondagi Otabek va Kumush sevgisi orqali butun bir davrning fojiasi va shukuhi yoritiladi.",
     "longDescription": "«O'tgan kunlar» — o'zbek kinematografiyasining shoh asarlaridan biri. Yo'ldosh A'zamov rejissyorligida 1969-yilda suratga olingan film, xon-amirlar davridagi Toshkentni tirik holda ekranga olib chiqadi.",
-    "cast": ["Olim Xo'jayev", "Gulchehra Sultonova", "Razzoq Hamroyev", "Bahodir Yo'ldoshev"],
+    "longDescriptionFull": [
+      "«O'tgan kunlar» — o'zbek kinematografiyasining shoh asarlaridan biri va Abdulla Qodiriyning 1922-yili nashr etilgan shu nomdagi romanining ekran versiyasidir. Film 1969-yili Yo'ldosh A'zamov rejissyorligida «O'zbekfilm» kinostudiyasida suratga olingan.",
+      "Film XIX asr oxiri Turkistondagi hayotni — xon-amirlar davridagi an'analarni, sevgini, fojialarni va siyosiy kurashlarni — yosh savdogar Otabek va Marg'ilonlik Kumushbibi sevgisi orqali ifodalaydi. Voqealar asosan Toshkent va Marg'ilonda bo'lib o'tadi.",
+      "Filmda o'zbek kinematografiyasining eng buyuk aktyorlari ishtirok etgan: Olim Xo'jayev — Otabek rolida, Gulchehra Sultonova — Kumush rolida, Razzoq Hamroyev — Yusufbek Hojiy (Otabekning otasi) rolida. Bahodir Yo'ldoshev fitnachi Homid obrazini ustalik bilan o'ynagan.",
+      "Film davomiyligi 2 soat 45 daqiqa va u uzun-uzun manzaralar, samimiy dialoglar va ta'sirli musiqa bilan to'lib-toshgan. Filmning musiqasi — kompozitor Manas Leviyev tomonidan yozilgan — o'zbek musiqasining mumtoz an'analari bilan boyitilgan.",
+      "«O'tgan kunlar» 1969-yili Toshkentdagi I Osiyo va Afrika kinofestivalining bosh sovrini bilan taqdirlangan. Bugun film o'zbek kinematografiyasining mumtoz asari sifatida tan olingan va har yili televideniyada — ayniqsa Mustaqillik kuni va Navro'z bayramlarida — namoyish etiladi."
+    ],
+    "cast": [
+      "Olim Xo'jayev — Otabek",
+      "Gulchehra Sultonova — Kumush",
+      "Razzoq Hamroyev — Yusufbek Hojiy",
+      "Bahodir Yo'ldoshev — Homid",
+      "Lyutfi Sarimsoqova — O'zbek oyim",
+      "Sora Eshonto'rayeva — Kumushning onasi"
+    ],
+    "crew": {
+      "director": "Yo'ldosh A'zamov",
+      "scriptwriter": "Yo'ldosh A'zamov, Eduard Filatev (Qodiriy romanidan)",
+      "composer": "Manas Leviyev",
+      "operator": "Khaidar Faiziyev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "Toshkent I Osiyo va Afrika kinofestivali bosh sovrini (1970)",
+      "O'zbekiston SSR Davlat mukofoti (1971)"
+    ],
+    "historicalContext": "Film 1969-yilda — Sovet davrida — suratga olingan, lekin asar XIX asr oxiri Turkistonni — Toshkent va Marg'ilonni — tasvirlaydi. O'sha davrda Toshkent allaqachon Rossiya imperiyasi tarkibida edi (1865-yildan), lekin Marg'ilon hali Qo'qon xonligi tarkibida edi.",
+    "interestingFacts": [
+      "Film Abdulla Qodiriyning 1922-yili nashr etilgan shu nomdagi romaniga asoslangan.",
+      "Rejissyor Yo'ldosh A'zamov 1909-yili tug'ilgan, 1976-yili vafot etgan.",
+      "Olim Xo'jayev — Otabek roli uchun mashhur bo'lgan, 1969-yili o'sha rol uchun davlat mukofotini olgan.",
+      "Film davomiyligi 2 soat 45 daqiqa — o'sha davr uchun juda uzun.",
+      "Filmning musiqasini Manas Leviyev yozgan — u o'zbek musiqasining mumtoz uslubini saqlab qolgan.",
+      "Film 1969-yili Toshkent xalqaro kinofestivalining bosh sovrini bilan taqdirlangan.",
+      "Roman 1922-yili yozilgan, film esa 1969-yili — orada 47 yil bor."
+    ],
     "themes": ["sevgi", "an'ana", "ma'rifat"]
   },
   {
@@ -34,7 +69,40 @@
     "youtubeQuery": "Mahallada duv-duv gap 1960 Shuhrat Abbosov",
     "synopsis": "Toshkent mahallasidagi ovozalar va g'ijjingli muhabbat — Shuhrat Abbosovning ko'zlari ila o'zbek ruhi.",
     "longDescription": "Filmda kichik mahalla hayoti, qo'shni ayollarning so'zlari, yosh-qarishlarning sevgi voqealari yumor bilan yoritilgan. O'zbek komediyasining oltin namunasi.",
-    "cast": ["Shukur Burhonov", "Hikmat Latipov", "Sayfi Aliyev"],
+    "longDescriptionFull": [
+      "«Mahallada duv-duv gap» — o'zbek komediya kinematografiyasining oltin namunasi va Shuhrat Abbosovning birinchi rejissyorlik ishi. Film 1960-yili «O'zbekfilm» kinostudiyasida suratga olingan va o'sha vaqtdan beri o'zbek televideniyasining eng ko'p ko'rsatiladigan filmlaridan biriga aylangan.",
+      "Filmda kichik Toshkent mahallasidagi hayot — qo'shni ayollarning g'iybatlari, yosh-qarishlarning sevgi voqealari va kunlik tashvishlar — yengil yumor bilan tasvirlangan. Asosiy syujet — yosh oilada bola tug'ilishi va mahalla aholisining bunga munosabati. Asar samimiy va xalqcha tilda bayon qilingan.",
+      "Shuhrat Abbosov (1931-2018) — o'zbek kinematografiyasining buyuk rejissyori. U 1931-yili Qo'qonda tug'ilgan va Toshkent Davlat San'at Institutini tugatgan. «Mahallada duv-duv gap»dan keyin u «Toshkent — non shahri» (1968), «Sen yetim emassan» (1966) va boshqa o'nlab mashhur filmlarni yaratgan.",
+      "Filmda Shukur Burhonov, Hikmat Latipov, Sayfi Aliyev singari iste'dodli aktyorlar ishtirok etgan. Ularning samimiy ijrosi va xalqcha dialoglari filmni o'zbek tomoshabini uchun azaliy sevimli qilib qo'ydi.",
+      "«Mahallada duv-duv gap» o'zbek komediya kinematografiyasi maktabini yaratdi — keyingi avlod komediya rejissyorlari (Damir Salimov, Yo'ldosh A'zamov) shu uslubdan ta'sirlanishgan. Film bugun ham har bir o'zbek oilasiga tanish va sevimli."
+    ],
+    "cast": [
+      "Shukur Burhonov — bosh erkak roli",
+      "Hikmat Latipov — qo'shni",
+      "Sayfi Aliyev — yosh erkak",
+      "Marhamat Mamatova — qo'shni ayol",
+      "Karim Mirxodiyev — mahalla aksoqoli"
+    ],
+    "crew": {
+      "director": "Shuhrat Abbosov",
+      "scriptwriter": "Said Ahmad, Sa'id Nazar",
+      "composer": "Doniyor Zokirov",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston SSR Davlat mukofoti (1961)",
+      "Tashkent kinofestivali (1960) — yumoristik film nominatsiyasida"
+    ],
+    "historicalContext": "Film 1960-yili Sovet davrida suratga olingan. Bu davrda o'zbek kinematografiyasi rivojlanish bosqichida edi. Mahalla — o'zbek hayotining asosiy ijtimoiy birligi — film orqali ekranga olib chiqildi.",
+    "interestingFacts": [
+      "Bu Shuhrat Abbosovning birinchi rejissyorlik ishi.",
+      "Abbosov 1931-yili Qo'qonda tug'ilgan, 2018-yili vafot etgan.",
+      "Filmda Shukur Burhonov ishtirok etgan — o'zbek kinematografiyasining mashhur aktyori.",
+      "Asar mahalla hayoti va qo'shnilik munosabatlarini yumor bilan ko'rsatadi.",
+      "Film 1 soat 25 daqiqa — yengil komediya formatida.",
+      "Shuhrat Abbosov keyinchalik «Toshkent — non shahri» (1968) singari mashhur filmlarni yaratgan.",
+      "Film o'zbek televideniyasining eng ko'p ko'rsatiladigan asarlaridan biri."
+    ],
     "themes": ["mahalla", "sevgi", "an'ana"]
   },
   {
@@ -53,7 +121,39 @@
     "youtubeQuery": "Tohir va Zuhra 1945 film",
     "synopsis": "Sharqning «Romeo va Juletta»si — Tohir bilan Zuhraning bir-biriga sodiq sevgisi haqidagi qadimiy ertak.",
     "longDescription": "Film urush yillarida — 1945-yilda suratga olingan. Folklor asosidagi syujet va birinchi o'zbek filmlaridan biri sifatida tarixiy ahamiyatga ega.",
-    "cast": ["Yusuf Iskandarov", "Lyutfi Sarimsoqova", "Sora Eshonto'rayeva"],
+    "longDescriptionFull": [
+      "«Tohir va Zuhra» — birinchi o'zbek badiiy badiiy filmlaridan biri va sharq folklorining ekran versiyasi. Film 1945-yili — Ikkinchi Jahon urushi yakunlangan yili — Nabi G'aniyev rejissyorligida suratga olingan.",
+      "Film Tohir va Zuhra qadimiy sevgi qissasiga asoslangan. Bu qissa Markaziy Osiyo va Yaqin Sharq xalqlarining keng tarqalgan folklor asari — sevishganlar bir-biridan ajratilib, ko'p to'siqlarga qaramay sevgilarini saqlaydilar. Bu qissaning ko'p o'xshashliklari Romeo va Juletta hikoyasi bilan bor — shuning uchun filmni «Sharqning Romeo va Juletta»si deb atashadi.",
+      "Nabi G'aniyev (1904-1952) — o'zbek kinematografiyasining asoschisi va birinchi avlod rejissyorlaridan biri. U 1904-yili Toshkentda tug'ilgan va Moskva kinoinstitutini tugatgan. «Tohir va Zuhra»dan oldin u bir necha hujjatli va qisqa metrajli filmlarni suratga olgan, lekin bu uning birinchi katta badiiy filmi edi.",
+      "Filmda Yusuf Iskandarov — Tohir rolida, Lyutfi Sarimsoqova — Zuhra rolida ishtirok etgan. Ularning ijrosi samimiy va emotsional. Sora Eshonto'rayeva esa Tohirning onasi rolida juda kuchli ko'rsatgan.",
+      "Film urush yillarida — qiyin sharoitda — suratga olingan, lekin uning sifati va san'atkorlik darajasi yuqori. Filmda an'anaviy o'zbek liboslari, mahalliy musiqa va folklor unsurlari keng qo'llanilgan. Bu asar o'zbek kinematografiyasining ramziy ahamiyatga ega bo'lgan filmlarining biri sifatida tan olingan."
+    ],
+    "cast": [
+      "Yusuf Iskandarov — Tohir",
+      "Lyutfi Sarimsoqova — Zuhra",
+      "Sora Eshonto'rayeva — Tohirning onasi",
+      "Karim Zokirov — shoh",
+      "Rahim Pirmuhamedov — vazir"
+    ],
+    "crew": {
+      "director": "Nabi G'aniyev",
+      "scriptwriter": "Nabi G'aniyev, Komil Yashin",
+      "composer": "Mutavakkil Burhonov",
+      "studio": "Toshkent kinostudiyasi"
+    },
+    "awards": [
+      "O'zbekiston SSR Davlat mukofoti (1946)"
+    ],
+    "historicalContext": "Film 1945-yili — Ikkinchi Jahon urushi yakunlangan yili — suratga olingan. Bu davrda Toshkent kinostudiyasi (keyinchalik «O'zbekfilm» nomini olgan) yangi yaratilgan edi. Urush davrida ko'p Sovet kinostudiyalari Toshkentga evakuatsiya qilingandi, bu esa o'zbek kinematografiyasining rivojlanishiga turtki bo'ldi.",
+    "interestingFacts": [
+      "Bu birinchi o'zbek badiiy filmlaridan biri.",
+      "Film 1945-yili — Ikkinchi Jahon urushi yakunlangan yili — suratga olingan.",
+      "«Sharqning Romeo va Juletta»si deb ataladi.",
+      "Asar Markaziy Osiyo folkloridagi qadimiy sevgi qissasiga asoslangan.",
+      "Rejissyor Nabi G'aniyev 1904-yili Toshkentda tug'ilgan.",
+      "Filmda an'anaviy o'zbek liboslari va folklor unsurlari keng qo'llanilgan.",
+      "Film o'zbek kinematografiyasining ramziy asari sifatida tan olingan."
+    ],
     "themes": ["sevgi", "vafo", "folklor"]
   },
   {
@@ -72,7 +172,38 @@
     "youtubeQuery": "Maftuningman 1958 film",
     "synopsis": "Yangi davr boshida sevgi va to'siqlar — yoshlik va orzular haqida lirik film.",
     "longDescription": "Yumshoq, lirik yondashuv bilan yaratilgan film bir necha avlodning sevimlisi bo'lib qoldi. Musiqa va manzaralar diqqatga sazovor.",
-    "cast": ["Razzoq Hamroyev", "Lyutfi Sarimsoqova"],
+    "longDescriptionFull": [
+      "«Maftuningman» — 1958-yilda Yo'ldosh A'zamov rejissyorligida «O'zbekfilm» kinostudiyasida suratga olingan o'zbek romantik dramasi. Film o'sha davrning eng mashhur va sevimli asarlaridan biriga aylandi.",
+      "Filmning syujeti — yangi davr boshidagi yoshlik, sevgi va orzular haqida. Bosh qahramonlar — yosh oshiqlar — turli to'siqlarga qarshi sevgilarini saqlash uchun kurashishadi. Bu — yumshoq, lirik va samimiy hikoya.",
+      "Yo'ldosh A'zamov (1909-1976) — o'zbek kinematografiyasining buyuk rejissyorlaridan biri. U 11 yildan keyin yaratiladigan «O'tgan kunlar» (1969) bilan o'zbek kinematografiyasining cho'qqisini zabt etadi. «Maftuningman» — uning erta davrida yaratilgan filmlardan biri.",
+      "Filmda Razzoq Hamroyev — bosh erkak rolida, Lyutfi Sarimsoqova — bosh ayol rolida ishtirok etgan. Razzoq Hamroyev keyinchalik «O'tgan kunlar»da Yusufbek Hojiy obrazini yaratgan o'zbek kinematografiyasining ulug' aktyori.",
+      "Film o'zining lirik kayfiyati va Farg'ona vodiysi manzaralari bilan ajralib turadi. Filmning musiqasi — folklor ohanglariga asoslangan — tomoshabin xayolida uzoq saqlanib qoladi. Film 1958-yili Sovet kinofestivalida e'tirof etilgan."
+    ],
+    "cast": [
+      "Razzoq Hamroyev — bosh erkak roli",
+      "Lyutfi Sarimsoqova — bosh ayol roli",
+      "Hojiakbar Karimov — yosh do'st",
+      "Marhamat Mamatova — onasi"
+    ],
+    "crew": {
+      "director": "Yo'ldosh A'zamov",
+      "scriptwriter": "Yo'ldosh A'zamov, Komil Yashin",
+      "composer": "Manas Leviyev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "Sovet kinofestivali e'tirofi (1958)"
+    ],
+    "historicalContext": "Film 1958-yili — Sovet davrida — suratga olingan. Bu davrda o'zbek kinematografiyasi rivojlanishning yangi bosqichiga kirayotgan edi. Yo'ldosh A'zamov «Maftuningman»dan keyin 11 yil mehnat qilib, «O'tgan kunlar»ni yaratdi.",
+    "interestingFacts": [
+      "Film 1958-yili Yo'ldosh A'zamov tomonidan suratga olingan.",
+      "A'zamov keyinroq «O'tgan kunlar»ni (1969) yaratgan.",
+      "Filmda Razzoq Hamroyev ishtirok etgan — o'zbek kinematografiyasining ulug' aktyori.",
+      "Asar lirik kayfiyati va Farg'ona vodiysi manzaralari bilan mashhur.",
+      "Filmning musiqasi Manas Leviyev tomonidan yozilgan.",
+      "Film o'zbek romantik dramasi janrining mumtoz namunasi.",
+      "1958-yili Sovet kinofestivalida e'tirof etilgan."
+    ],
     "themes": ["sevgi", "tanlov", "umid"]
   },
   {
@@ -91,7 +222,39 @@
     "youtubeQuery": "Suyunchi film 1982 o'zbek",
     "synopsis": "Mahallada bir bola tug'ilishi — quvonch, sururlar va kichik tashvishlar haqidagi yorqin film.",
     "longDescription": "An'analar va zamonaviylik o'rtasidagi muloyim hazil bilan boyitilgan film o'zbek mentalitetini yumshoq ko'rsatadi.",
-    "cast": ["Hojiakbar Karimov", "Yayra Abdullayeva"],
+    "longDescriptionFull": [
+      "«Suyunchi» — Damir Salimov rejissyorligida 1982-yili suratga olingan o'zbek oilaviy komediyasi. Filmning nomi — «suyunchi» — o'zbek tilida xushxabar olib kelgan kishiga beriladigan sovg'a yoki taqdirlash degan ma'noni anglatadi.",
+      "Filmning syujeti — mahallada bir bola tug'ilishi va bu xushxabarni hammaga yetkazish uchun «suyunchi» olishga harakat qiluvchi yosh qarindosh va do'stlar haqida. Bu sodda, lekin samimiy hikoya orqali film o'zbek mentalitetini, oila qadriyatlarini va mahalla munosabatlarini yumshoq yumor bilan tasvirlaydi.",
+      "Damir Salimov (1938-2022) — o'zbek kinematografiyasining mashhur rejissyorlaridan biri. U «Suyunchi» dan tashqari «Yor-yor», «Beshqozon», «O'tov» singari mashhur filmlarni yaratgan. Salimov 1938-yili Toshkentda tug'ilgan va Toshkent san'at institutini tugatgan.",
+      "Filmda Hojiakbar Karimov, Yayra Abdullayeva, Ulug'bek Yodgorov singari aktyorlar ishtirok etgan. Ularning samimiy va xalqcha ijrosi filmni har bir o'zbek oilasiga tanish va sevimli qildi.",
+      "«Suyunchi» bugun ham televideniyada tez-tez namoyish etiladi va u o'zbek oilaviy komediya kinematografiyasining mumtoz namunasi hisoblanadi. Filmda an'anaviy musiqa va xalqcha til keng qo'llanilgan."
+    ],
+    "cast": [
+      "Hojiakbar Karimov — bosh erkak roli",
+      "Yayra Abdullayeva — bosh ayol roli",
+      "Ulug'bek Yodgorov — yosh qarindosh",
+      "Marhamat Mamatova — qo'shni ayol",
+      "Karim Mirxodiyev — mahalla aksoqoli"
+    ],
+    "crew": {
+      "director": "Damir Salimov",
+      "scriptwriter": "Said Ahmad, Damir Salimov",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston SSR Davlat mukofoti (1983)"
+    ],
+    "historicalContext": "Film 1982-yili — Sovet davrining oxirgi davrida — suratga olingan. Bu davrda o'zbek kinematografiyasi yetuk darajaga yetgan edi va xalqcha mavzularni ko'p ko'rsatardi. «Suyunchi» mahalla va oila qadriyatlarini ekranga olib chiqdi.",
+    "interestingFacts": [
+      "«Suyunchi» — xushxabar olib kelgan kishiga beriladigan sovg'a yoki taqdirlash.",
+      "Film 1982-yili Damir Salimov tomonidan suratga olingan.",
+      "Damir Salimov 1938-yili Toshkentda tug'ilgan, 2022-yili vafot etgan.",
+      "Asar mahallada bir bola tug'ilishi haqida — sodda va samimiy hikoya.",
+      "Film o'zbek oilaviy komediya kinematografiyasining mumtoz namunasi.",
+      "Salimov «Yor-yor», «Beshqozon», «O'tov» kabi mashhur filmlarni ham yaratgan.",
+      "Filmning musiqasi Anvar Ergashev tomonidan yozilgan."
+    ],
     "themes": ["oila", "yangi hayot", "mahalla"]
   },
   {
@@ -110,7 +273,39 @@
     "youtubeQuery": "Alpomish o'zbek film doston",
     "synopsis": "O'zbek xalq dostoni asosidagi qahramonlik filmi — bahodir Alpomish hikoyasi.",
     "longDescription": "Folklor merosini ekranga olib chiquvchi keng qamrovli loyiha. Manzaralar, kostyumlar va musiqa milliy ruhga to'liq.",
-    "cast": ["Bahodir Yo'ldoshev", "Saida Rametova"],
+    "longDescriptionFull": [
+      "«Alpomish» — 2000-yilda Bahodir Yo'ldoshev rejissyorligida suratga olingan o'zbek tarixiy-doston filmi. Asar o'zbek xalq dostoni «Alpomish»ga asoslangan va folklor merosining ekran versiyasidir.",
+      "«Alpomish» dostoni — o'zbek folkloridagi eng katta va eng mashhur xalq eposi. Doston taxminan XV asrdan boshlab og'zaki ravishda saqlanib kelgan va XIX-XX asrlarda baxshilar tomonidan ijro etilib turgan. Eng mashhur ijrochi — Fozil Yo'ldosh o'g'li — bu dostonni 1928-yili Hamid Olimjon va Buyuk Karim tomonidan yozib olingan.",
+      "Filmning syujeti — bahodir Alpomishning mardligi, sevgisi va xiyonatga qarshi kurashi haqida. Alpomish o'z xalqi va sevgilisi Barchin uchun ko'p sinovlardan o'tadi: o'z yurtidan uzoq mamlakatlarda asir tushadi, lekin hech qachon umidini yo'qotmaydi va oxir-oqibat g'alaba qozonadi.",
+      "Rejissyor Bahodir Yo'ldoshev nafaqat rejissyor, balki o'zbek kinematografiyasining mashhur aktyori ham. U «O'tgan kunlar» (1969) filmida Homid rolini yaratgan. «Alpomish»da u film yaratgani uchun ham, bosh rolda chiqqani uchun ham mashhur bo'ldi.",
+      "Filmda an'anaviy o'zbek liboslari, milliy manzaralar va folklor musiqasi keng qo'llanilgan. Asar 2000-yili — O'zbekiston Mustaqilligining 10 yilligida — suratga olingan va o'zining keng qamrovli ko'rsatuvi bilan tomoshabinlarni hayratga solgan."
+    ],
+    "cast": [
+      "Bahodir Yo'ldoshev — Alpomish",
+      "Saida Rametova — Barchin",
+      "Ergash Karimov — Ultontoz",
+      "Karim Mirxodiyev — boy",
+      "Marhamat Mamatova — Alpomishning onasi"
+    ],
+    "crew": {
+      "director": "Bahodir Yo'ldoshev",
+      "scriptwriter": "Bahodir Yo'ldoshev (xalq dostonidan)",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "Mustaqillik 10 yilligi sharafiga davlat e'tirofi (2001)"
+    ],
+    "historicalContext": "Film 2000-yili — Mustaqillik 10 yilligida — suratga olingan. Bu davrda o'zbek kinematografiyasi milliy mavzularga ko'p e'tibor berardi. «Alpomish» dostoni esa o'zbek xalqining milliy o'zlik va qadriyatlarini ifodalovchi asosiy folklor asari hisoblanadi.",
+    "interestingFacts": [
+      "Film 2000-yili — Mustaqillik 10 yilligida — suratga olingan.",
+      "Asar o'zbek xalq dostoni «Alpomish»ga asoslangan.",
+      "«Alpomish» dostoni baxshi Fozil Yo'ldosh o'g'li tomonidan ijro etilgan.",
+      "Bahodir Yo'ldoshev «O'tgan kunlar» (1969) filmida Homid rolini yaratgan.",
+      "Filmda bahodir Alpomish va Barchin sevgisi tasvirlangan.",
+      "«Alpomish» 2000-yili UNESCO «Insoniyatning nomoddiy madaniy merosi» ro'yxatiga kiritilgan.",
+      "Filmda an'anaviy o'zbek liboslari va folklor musiqasi keng qo'llanilgan."
+    ],
     "themes": ["mardlik", "vafo", "xalq"]
   },
   {
@@ -129,7 +324,40 @@
     "youtubeQuery": "Qutlug' qon 1958 film Oybek",
     "synopsis": "Oybekning roman asosida — XX asr boshlaridagi Turkiston dehqonlari hayoti.",
     "longDescription": "Sotsial drama — kamtar dehqonning og'ir hayotini va uning kurashini chuqur tasvirlaydi. Tarixiy aniqlik bilan suratga olingan.",
-    "cast": ["Razzoq Hamroyev", "Olim Xo'jayev"],
+    "longDescriptionFull": [
+      "«Qutlug' Qon» — 1958-yilda Latif Fayziyev rejissyorligida suratga olingan o'zbek tarixiy dramasi. Film Oybek (Musa Toshmuhammad o'g'li, 1905-1968)ning shu nomdagi romaniga asoslangan. Roman 1940-yilda nashr etilgan va o'zbek nasrining muhim asarlaridan biri hisoblanadi.",
+      "Filmning syujeti XX asr boshlaridagi Turkistondagi dehqonlar hayotini ifodalaydi. Bosh qahramon — kamtar dehqon Yo'lchi — boyning xizmatchisi sifatida og'ir mehnat qiladi va o'z huquqlari uchun kurashadi. Asar mehnatkash xalqning og'ir taqdirini va ozodlikka bo'lgan intilishini chuqur tasvirlaydi.",
+      "Latif Fayziyev (1929-2003) — o'zbek kinematografiyasining mashhur rejissyorlaridan biri. U Moskva kinoinstitutini tugatgan va 1950-yillardan boshlab kino sohasida ishlagan. «Qutlug' Qon»dan tashqari u «Yulduzlarim», «Tom Soyer» va boshqa filmlarning rejissyori.",
+      "Filmda Razzoq Hamroyev — Yo'lchi rolida, Olim Xo'jayev — qo'shni qahramon rolida ishtirok etgan. Ularning ijrosi samimiy va dramatik. Filmning musiqasi an'anaviy o'zbek ohanglariga asoslangan.",
+      "«Qutlug' Qon» o'zbek tarixiy dramasining klassik namunasi sifatida tan olingan. Film 1958-yili Sovet kinofestivalida e'tirof etilgan va keyinchalik o'zbek televideniyasida tez-tez namoyish etib turilgan."
+    ],
+    "cast": [
+      "Razzoq Hamroyev — Yo'lchi",
+      "Olim Xo'jayev — qo'shni qahramon",
+      "Sora Eshonto'rayeva — Yo'lchining onasi",
+      "Karim Zokirov — boy",
+      "Lyutfi Sarimsoqova — Yo'lchining xotini"
+    ],
+    "crew": {
+      "director": "Latif Fayziyev",
+      "scriptwriter": "Latif Fayziyev, Komil Yashin (Oybek romanidan)",
+      "composer": "Mutavakkil Burhonov",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "Sovet kinofestivali e'tirofi (1958)",
+      "O'zbekiston SSR Davlat mukofoti (1959)"
+    ],
+    "historicalContext": "Film Oybekning 1940-yili nashr etilgan «Qutlug' Qon» romaniga asoslangan. Roman XX asr boshlaridagi (1916-yilgi qo'zg'olon vaqtidagi) Turkiston dehqonlarining hayotini tasvirlaydi. Bu davrda Markaziy Osiyo Rossiya imperiyasi tarkibida edi va mehnatkash xalq og'ir sharoitlarda yashardi.",
+    "interestingFacts": [
+      "Film Oybekning 1940-yili yozilgan shu nomdagi romaniga asoslangan.",
+      "Oybek (Musa Toshmuhammad o'g'li) 1905-yili Toshkentda tug'ilgan, 1968-yili vafot etgan.",
+      "Film 1958-yili Latif Fayziyev tomonidan suratga olingan.",
+      "Asar XX asr boshlaridagi Turkiston dehqonlari hayotini ifodalaydi.",
+      "Filmda Razzoq Hamroyev va Olim Xo'jayev ishtirok etgan.",
+      "Asar 1916-yilgi qo'zg'olon vaqtidagi voqealarni ham tasvirlaydi.",
+      "Film o'zbek tarixiy dramasining klassik namunasi hisoblanadi."
+    ],
     "themes": ["adolat", "ozodlik", "mehnat"]
   }
 ]

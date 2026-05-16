@@ -14,16 +14,49 @@
     "pdf": "/kitoblar/boburnoma.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "Sohibqironning nevarasi Boburning shaxsiy kundaliklari — bu nafaqat avtobiografiya, balki butun bir davrning jonli xronikasidir.",
-    "longDescription": "«Boburnoma» — Hindistonda Boburiylar imperiyasiga asos solgan Zahiriddin Muhammad Boburning yodnomalari. Asar Andijonda boshlanib, Hindistonda yakunlanadi.",
+    "longDescription": "«Boburnoma» — Zahiriddin Muhammad Boburning (1483-1530) shaxsiy yodnomalari. Bobur — Amir Temurning beshinchi avlodi va Hindistondagi Boburiylar imperiyasining asoschisi. Asar uning 12 yoshida — 1494-yilda — otasidan Farg'ona vodiysi taxtini meros qilib olishidan boshlanib, hayotining oxirigacha — 1530 yilgacha — bo'lgan voqealarni qamrab oladi. Bu davrda Bobur Samarqandni egallab, ko'p marta yo'qotib, Kobulga ko'chib, va nihoyat 1526-yili Panipat jangida zafar quchib, Hindistonda yangi imperiya barpo etadi.",
+    "longDescriptionFull": [
+      "«Boburnoma» — Zahiriddin Muhammad Boburning (1483-1530) shaxsiy yodnomalari va o'zbek nasrining poydevor asarlaridan biri. Bobur — Amir Temurning beshinchi avlodi va Hindistondagi Boburiylar imperiyasining asoschisi.",
+      "Asar Boburning 12 yoshida — 1494-yilda — otasi Umarshayx Mirzodan Farg'ona vodiysi taxtini meros qilib olishidan boshlanib, hayotining oxirigacha — 1530 yilgacha — bo'lgan voqealarni qamrab oladi. Yodnoma uchta asosiy davrga bo'linadi: Farg'ona davri (1494-1504), Kobul davri (1504-1526) va Hindiston davri (1526-1530).",
+      "Bobur asarda nafaqat o'z hayotini, balki XV-XVI asrlardagi Markaziy Osiyo va Hindistondagi tabiat, joylar, urf-odatlar, oziq-ovqat, kiyim-bosh, hayvon va o'simliklar haqida batafsil ma'lumot beradi. Andijonning olmalari, Samarqandning binolari, Hindistonning ham-da issiq iqlimi va hattoki har qishloqning iqtisodiy ahvoli haqida shaxsan kuzatgan ma'lumotlarini yozadi.",
+      "Asar eski o'zbek (chig'atoy) tilida yozilgan va o'zbek tilidagi eng katta nasriy yodgorliklardan biri. U keyinroq fors, arab, turk, ingliz, rus va boshqa ko'plab tillarga tarjima qilindi. Birinchi to'liq inglizcha tarjima 1826-yili John Leyden va William Erskine tomonidan amalga oshirildi.",
+      "«Boburnoma» o'zining samimiyligi bilan ajralib turadi: Bobur o'z xato va kamchiliklarini ham yozmaslikdan tortinmagan. U o'z ichkilik ichish odatini, askariy mag'lubiyatlarini, ba'zi siyosiy xatolarini ham ochiqcha yozadi. Bu samimiyat asarni boshqa o'rta asr xronikalaridan farqlantirib turadi."
+    ],
+    "characters": [
+      "Zahiriddin Muhammad Bobur (1483-1530) — muallif, Boburiylar imperiyasi asoschisi",
+      "Umarshayx Mirzo — Boburning otasi, Farg'ona hokimi",
+      "Qutlug' Nigorxonim — Boburning onasi",
+      "Sulton Husayn Boyqaro — Hirot hukmdori, Boburning tog'asi",
+      "Shayboniyxon — Boburning bosh raqibi",
+      "Humoyun — Boburning o'g'li, keyingi imperator"
+    ],
     "excerpts": [
       {
         "title": "Andijon haqida",
-        "text": "Andijonning samosi go'zal, suvi shirin, mevasi mo'l. Olmasi va anorini hech bir yurtda topa olmaysan. Ovi ham xushmazza, qush-qurti ham mo'l."
+        "text": "Andijonning samosi go'zal, suvi shirin, mevasi mo'l. Olmasi va anorini hech bir yurtda topa olmaysan. Ovi ham xushmazza, qush-qurti ham mo'l. Andijon viloyatida bir to'la xush havoli joylar bor — ko'rsang ko'zing yumiladi."
       },
       {
         "title": "Sevgi haqida",
-        "text": "Yorni topgan kishi — tojni ham unutadi. Toj — boshda, sevgi — qalbda; qaysi biri haqiqat, kim ayta oladi?"
+        "text": "Yorni topgan kishi — tojni ham unutadi. Toj — boshda, sevgi — qalbda; qaysi biri haqiqat, kim ayta oladi? Men o'sha kuni Boburshohni bir tomondan, va Bobur oshiqni boshqa tomondan ko'rdim."
+      },
+      {
+        "title": "Samarqand haqida",
+        "text": "Samarqand olamda kam shaharlarga teng keladi. Uning olamdek go'zal saroylari, gumbazi yulduzlarga ulashgan masjidlari, va Registon kabi maydoni — bularning hammasini bir umrida ko'rgan kishi baxtlidir."
+      },
+      {
+        "title": "Hindiston haqida",
+        "text": "Hindiston yurti bizning yurtlarimizdan butunlay boshqacha. Tog'lari ham, suvlari ham, daraxti ham, qushi ham boshqa. Issig'i ham kuchli, lekin yomg'irli mavsumda har joy ko'kalam bo'lib o'sib chiqadi. Ko'p meva turlari bor, biz Vatanda ko'rmaganlarimiz."
       }
+    ],
+    "historicalContext": "Asar yozilgan davr — Temuriylar saltanatining parchalanish davri. Bobur Movarounnahrda taxtni qaytarib ola olmagach, Kobulga ko'chib, u yerdan Hindistonga bostirib bordi va 1526-yili Panipat jangida Dehli sultoni Ibrohim Lo'diy ustidan zafar quchib, Boburiylar (Mug'al) imperiyasini barpo etdi. Bu imperiya 1857-yilgacha — 331 yil — Hindistonni boshqargan.",
+    "interestingFacts": [
+      "«Boburnoma» eski o'zbek (chig'atoy) tilida yozilgan eng katta nasriy asar.",
+      "Bobur o'z xato va kamchiliklarini ham yashirmasdan yozgan — bu uni boshqa o'rta asr xronikalaridan farqlantirib turadi.",
+      "Asar 12 yoshli Boburning otasidan taxt olishi bilan boshlanadi.",
+      "Bobur Boburiylar imperiyasini Hindistonda barpo etgan va imperiya 331 yil yashagan.",
+      "1526-yili Panipat jangida Bobur o'z askariy talantini ko'rsatib zafar quchgan.",
+      "Asar 1826-yili birinchi marta inglizcha tarjima qilindi.",
+      "Bobur shoir ham bo'lgan, eski o'zbek tilidagi «Devon»ining muallifi."
     ],
     "themes": ["tarix", "sayohat", "siyosat", "tabiat"]
   },
@@ -42,7 +75,20 @@
     "pdf": "/kitoblar/navoiy-gazallari.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "Mir Alisher Navoiyning to'rt devondan iborat g'azallar to'plami — turk tilining shoh asari.",
-    "longDescription": "«Xazoyin ul-Maoniy» — Navoiyning to'rt devondan iborat she'riy to'plami. «G'aroyib us-sig'ar», «Navodir ush-shabob», «Badoyi' ul-vasat», «Favoyid ul-kibar» — har biri shoirning bir umr davridagi kechinmalarini aks ettiradi.",
+    "longDescription": "«Xazoyin ul-Maoniy» («Ma'nolar xazinasi») — Mir Alisher Navoiyning (1441-1501) to'rt devondan iborat she'riy to'plami. To'plam shoirning bir umrini qamrab oladi: «G'aroyib us-sig'ar» (yoshlik she'rlari, 7-20 yosh), «Navodir ush-shabob» (yigitlik she'rlari, 20-35 yosh), «Badoyi' ul-vasat» (o'rta yosh, 35-45), «Favoyid ul-kibar» (qarilik she'rlari, 45 dan keyin).",
+    "longDescriptionFull": [
+      "«Xazoyin ul-Maoniy» («Ma'nolar xazinasi») — Mir Alisher Navoiyning (1441-1501) to'rt devondan iborat she'riy to'plami. Bu eski o'zbek (chig'atoy) tilida yozilgan she'riyatning eng katta va eng go'zal namunasi.",
+      "To'plam shoirning bir umrini qamrab oladi: «G'aroyib us-sig'ar» (yoshlik she'rlari, 7-20 yosh), «Navodir ush-shabob» (yigitlik she'rlari, 20-35 yosh), «Badoyi' ul-vasat» (o'rta yosh, 35-45), «Favoyid ul-kibar» (qarilik she'rlari, 45 dan keyin).",
+      "Navoiyning to'rt devonida 3132 ta g'azal, ruboiy, qit'a, fard va boshqa she'riy janrlardagi asarlari mavjud. Asar 1498-yili tugatilib, Hirot saroyiga taqdim etilgan. Devonlar Sulton Husayn Boyqaro davrida, Navoiyning eng buyuk ijodiy davrida yozilgan.",
+      "Navoiy bu asar bilan eski o'zbek (turkiy) tilini fors va arab tillari bilan teng holatga olib chiqishni isbotladi. U «Muhakamat ul-lug'atayn» asarida turkiy til forsdan kam bo'lmagan badiiy ifoda imkoniyatlariga ega ekanligini isbotlagan va shu nazariy poydevorda Xazoyin ul-Maoniyni yaratgan.",
+      "Navoiyning asari nafaqat she'riyat namunasi, balki butun tasavvufiy falsafa va islom etikasining lirik ifodasi hisoblanadi. Asarda sevgi mavzusi — Ilohiy sevgi, insoniy sevgi va vatanga muhabbat — mukammal san'atkorlik bilan birlashtirilgan."
+    ],
+    "characters": [
+      "Alisher Navoiy (1441-1501) — shoir, davlat arbobi, ma'naviy peshvo",
+      "Husayn Boyqaro — Hirot hukmdori, Navoiyning bolalikdagi do'sti va homiy",
+      "Abdurahmon Jomiy — Navoiyning ustozi, mashhur fors shoiri",
+      "Layli va Majnun — mashhur sevgi qissasining qahramonlari (Navoiy ham bu mavzuda doston yozgan)"
+    ],
     "excerpts": [
       {
         "title": "Sevgi g'azali",
@@ -50,8 +96,22 @@
       },
       {
         "title": "Til haqida",
-        "text": "Tilim — millatim hayoti, tilim — qalbimning ovozi.\nTilsiz qolgan xalq — yo'lsiz qolgan karvon."
+        "text": "Tilim — millatim hayoti, tilim — qalbimning ovozi.\nTilsiz qolgan xalq — yo'lsiz qolgan karvon.\nHar bir tilning o'z ranglari, o'z ohanglari — \nbiri ikkinchisidan kam bo'lmaydi, agar ko'ngil unga sodiq bo'lsa."
+      },
+      {
+        "title": "Ma'rifat g'azali",
+        "text": "Ilm o'rgan, hatto Xitoyga borishga ham tayyor bo'l —\nChunki bilim — bu nur, jaholat esa zulmat.\nBilimsiz odam — qora chiroq kabidir,\nIchidagi yog' boru, lekin nuri yo'q."
       }
+    ],
+    "historicalContext": "Asar Temuriylar saltanatining Hirot davrida (Sulton Husayn Boyqaro hukmronligi paytida) yozilgan. Bu davr Markaziy Osiyo madaniyatining eng buyuk gullash davri bo'lgan. Navoiy davlat arbobi sifatida vazir lavozimida ishlagan, lekin hayotining ko'p qismini she'riyat va san'atga bag'ishlagan.",
+    "interestingFacts": [
+      "«Xazoyin ul-Maoniy» 4 ta devondan iborat — har biri shoirning bir hayot bosqichi.",
+      "Navoiy 1498-yili Asarni tugatib, Hirot saroyiga taqdim etgan.",
+      "Asarda 3132 ta she'r mavjud — turli janrlarda.",
+      "Navoiy eski o'zbek (turkiy) tilining badiiy imkoniyatlarini isbotlagan.",
+      "U boshqa beshlik dostonlarini ham yozgan — «Layli va Majnun», «Farhod va Shirin», «Saddi Iskandariy» kabi.",
+      "Birinchi devon «G'aroyib us-sig'ar» — 7-20 yosh she'rlari, oxirgisi «Favoyid ul-kibar» qarilik she'rlari.",
+      "Navoiy davlat arbobi sifatida vazir lavozimida ishlagan va xalqning sevimlisi bo'lgan."
     ],
     "themes": ["sevgi", "tasavvuf", "til", "ma'rifat"]
   },
@@ -70,16 +130,47 @@
     "pdf": "/kitoblar/otkan-kunlar.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "O'zbek nasrining birinchi va eng buyuk romani. Otabek va Kumush hikoyasi orqali butun bir davrni ifodalovchi shoh asar.",
-    "longDescription": "Abdulla Qodiriyning «O'tkan kunlar» romani 1922-yilda nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. XIX asr oxiri Turkistondagi hayot, sevgi va fojialar tasvirlanadi.",
+    "longDescription": "Abdulla Qodiriyning (1894-1938) «O'tkan kunlar» romani 1922-yilda qismlarga bo'lib nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. Asar XIX asr oxiri Turkistondagi hayotni — xon-amirlar davridagi an'analar, sevgi, fojialar va siyosiy kurashlarni — Otabek va Kumush sevgisi orqali ifodalaydi.",
+    "longDescriptionFull": [
+      "Abdulla Qodiriyning (1894-1938) «O'tkan kunlar» romani 1922-yilda qismlarga bo'lib nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. Bu o'zbek tilidagi birinchi to'liq qatorlikdagi roman hisoblanadi.",
+      "Asar XIX asr oxiri Turkistondagi hayotni — xon-amirlar davridagi an'analar, sevgi, fojialar va siyosiy kurashlarni — yosh savdogar Otabek va Marg'ilonlik Kumushbibi sevgisi orqali ifodalaydi. Voqealar asosan Toshkent va Marg'ilonda bo'lib o'tadi.",
+      "Romanda Qodiriy XIX asr oxiri Turkistondagi ijtimoiy hayotni juda batafsil tasvirlaydi: mahallalar, bozorlar, hammomlar, savdo munosabatlari, an'anaviy to'ylar, ko'p xotinlilik va uning fojiali oqibatlari, oilada ayolning huquqlari. Asar nafaqat sevgi hikoyasi, balki butun bir davrning ijtimoiy ko'zgusi.",
+      "Qodiriy 1928-yili «Mehrobdan chayon»ni nashr etib, o'zbek romanchiligini yanada rivojlantirdi. Lekin 1937-yili u «xalq dushmani» tuhmati bilan qamoqqa olindi va 1938-yili 47 yoshida otib o'ldirildi. Uning asarlari uzoq yillar taqiqlangan edi.",
+      "Mustaqillik yillarida Qodiriyning merosi to'la-to'kis xalqqa qaytarildi. «O'tkan kunlar» o'rta maktab dasturiga kiritildi, bir necha tilga tarjima qilindi va kino-teatr asarlari uchun mavzu bo'ldi. 1969-yilda Yo'ldosh A'zamov rejissyorligida shu nomdagi mashhur film suratga olindi."
+    ],
+    "characters": [
+      "Otabek — bosh qahramon, Toshkentlik yosh savdogar",
+      "Kumushbibi — Otabekning sevgilisi, Marg'ilonlik qiz",
+      "Yusufbek Hojiy — Otabekning otasi, savdogar va ulug' kishi",
+      "Mirzakarim qutidor — Kumushning otasi, Marg'ilon savdogari",
+      "Hasanali — Otabekning sodiq do'sti va xizmatkori",
+      "Homid — fitnachi, Otabekka qarshi ishlovchi shaxs",
+      "Zaynab — Otabekning ikkinchi xotini, fojiali rolda",
+      "O'zbek oyim — Otabekning onasi"
+    ],
     "excerpts": [
       {
         "title": "Otabek va Kumush uchrashuvi",
-        "text": "Bog' so'qmog'idan kelayotgan yosh qiz birinchi marta yigitning ko'zlariga qaradi. Bu nigoh — butun olamning yorishi edi go'yo. Ikkala qalb ham bir lahzada bir-birini tanidi, garchi tilda hech kim hech narsa demagan bo'lsa-da."
+        "text": "Bog' so'qmog'idan kelayotgan yosh qiz birinchi marta yigitning ko'zlariga qaradi. Bu nigoh — butun olamning yorishi edi go'yo. Ikkala qalb ham bir lahzada bir-birini tanidi, garchi tilda hech kim hech narsa demagan bo'lsa-da. Marg'ilon havosi gulli, sokin va siyosatdan uzoq edi o'sha kuni."
       },
       {
         "title": "Toshkent ko'chalari",
-        "text": "Eski Toshkentning tor ko'chalari, paxsa devorlar ortidagi bog'lar, rangsiz darvozalar — bularning hammasi o'z hikoyasiga ega edi."
+        "text": "Eski Toshkentning tor ko'chalari, paxsa devorlar ortidagi bog'lar, rangsiz darvozalar — bularning hammasi o'z hikoyasiga ega edi. Har bir mahalla — alohida dunyo, har bir qo'shni — uzoq qarindosh."
+      },
+      {
+        "title": "Kumushning iqtibosi",
+        "text": "Sevgi — bu insonning eng buyuk boyligi, eng katta dardidir ham. Uni topgan baxtli, lekin yo'qotgan — eng katta yo'qotishni boshidan o'tkazadi."
       }
+    ],
+    "historicalContext": "Asar XIX asr oxiri (1860-1880-yillar) Turkistonda bo'lib o'tadi. Bu davrda Toshkent allaqachon Rossiya imperiyasi tarkibida edi (1865-yildan), lekin Marg'ilon, Qo'qon Xudoyorxon hukmronligi ostida edi. Romanda an'anaviy hayot va o'zgarayotgan dunyo o'rtasidagi keskinlik aks ettiriladi.",
+    "interestingFacts": [
+      "Bu o'zbek tilidagi birinchi to'liq roman.",
+      "Qodiriy 1894-yili Toshkentda tug'ilgan, 1938-yili — 44 yoshida — otib o'ldirilgan.",
+      "Asar 1922-yili qismlarga bo'lib jurnallarda nashr etilgan, keyin alohida kitob qilib chiqarilgan.",
+      "Romanning ikkinchi mashhur asari «Mehrobdan chayon» — 1929-yilda yozilgan.",
+      "1969-yili Yo'ldosh A'zamov rejissyorligida shu nomdagi film suratga olindi.",
+      "Qodiriyning asarlari Stalin qatag'oni yillarida taqiqlangan edi, mustaqillikdan keyin qaytadan o'qitila boshlandi.",
+      "Roman o'rta maktab adabiyot dasturiga kiritilgan."
     ],
     "themes": ["sevgi", "tarix", "an'ana", "ma'rifat"]
   },
@@ -98,12 +189,45 @@
     "pdf": "/kitoblar/kecha-va-kunduz.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "Cho'lponning shoh asari — XX asr boshlaridagi o'zbek qishloq hayoti va ayollar taqdiri haqida.",
-    "longDescription": "«Kecha va kunduz» — Cho'lponning ijodiy taqdiri qatag'on tomonidan uzilib qolgan, ammo bizgacha yetib kelgan eng yorqin nasriy asarlaridan biri. Zebixonning hayoti orqali muallif butun bir avlodning og'ir taqdirini ko'rsatadi.",
+    "longDescription": "«Kecha va kunduz» — Cho'lponning (Abdulhamid Sulaymon o'g'li, 1897-1938) ijodiy taqdiri qatag'on tomonidan uzilib qolgan, ammo bizgacha yetib kelgan eng yorqin nasriy asarlaridan biri. Yosh qishloq qizi Zebixonning hayoti orqali muallif XX asr boshlaridagi o'zbek qishloq hayoti va ayollar taqdirini ko'rsatadi.",
+    "longDescriptionFull": [
+      "«Kecha va kunduz» — Cho'lponning (Abdulhamid Sulaymon o'g'li, 1897-1938) ijodiy taqdiri qatag'on tomonidan uzilib qolgan, ammo bizgacha yetib kelgan eng yorqin nasriy asarlaridan biri. Asar 1936-yilda nashr etilgan.",
+      "Yosh qishloq qizi Zebixonning hayoti orqali muallif XX asr boshlaridagi o'zbek qishloq hayoti va ayollar taqdirini ko'rsatadi. Zebixon — yosh, go'zal, ma'rifatga intiluvchi qiz — lekin patriarxal jamiyat va siyosiy o'zgarishlarning girdobiga tushib qoladi.",
+      "Roman 2 jildga mo'ljallangan edi, lekin 1937-yili Cho'lpon qamoqqa olinganda 2-jildning qo'lyozmasi yo'qotildi. Hozircha u topilmagan, garchi adabiyotshunoslar bu qo'lyozmaning birorta arxivda saqlanib qolgan bo'lishi mumkinligi haqida fikr yuritsalar-da.",
+      "Cho'lpon bu asarda o'zbek nasrining modernizm yo'nalishini boshlab berdi. U an'anaviy chiziqli hikoyalashdan voz kechib, ichki monologlar, ramziy obrazlar va lirik intermediyalardan keng foydalanadi. Asarning tili she'riy va o'ynoqi.",
+      "1938-yili Cho'lpon «xalq dushmani» tuhmati bilan otib o'ldirilgan keyin asar deyarli 50 yil taqiqlangan bo'ldi. Faqat 1980-yillar oxirida — qayta qurish davrida — asar yana o'qila boshlandi. Hozir u o'zbek modernizm nasrining shoh asari sifatida o'qitiladi."
+    ],
+    "characters": [
+      "Zebixon — bosh qahramon, yosh qishloq qizi",
+      "Akbarali mingboshi — qishloq oqsoqoli, ko'p xotinli boyboy",
+      "Miryoqub — Akbaralining katta o'g'li",
+      "Razzoq sufi — qishloq mullasi",
+      "Saltanat — Akbaralining katta xotini",
+      "Enaxon — Zebixonning onasi"
+    ],
     "excerpts": [
       {
         "title": "Ochil tonglar",
-        "text": "Tong otdi. Qishloq uyqudan uyg'ondi. Qarg'alar daraxtlardan ko'tarilib, bo'z osmonni qora chiziqlar bilan to'ldirdi. Lekin Zebixonning ko'zi yoshli edi."
+        "text": "Tong otdi. Qishloq uyqudan uyg'ondi. Qarg'alar daraxtlardan ko'tarilib, bo'z osmonni qora chiziqlar bilan to'ldirdi. Lekin Zebixonning ko'zi yoshli edi. Ana shu yorug'lik unga azoblar olib keluvchi nur edi."
+      },
+      {
+        "title": "Qishloq hayoti",
+        "text": "Qishloqda har bir uyning o'z dardi, har bir devor ortida o'z fojiasi yashab kelar edi. Lekin tashqi tomondan hech narsa ko'rinmasdi — odamlar barchasini ichida saqlab yashardilar."
+      },
+      {
+        "title": "Zebixonning iqtibosi",
+        "text": "Men yashashni xohlayman, oddiy yashashni. Lekin bu dunyo menga oddiy yashashga ruxsat bermaydi — har kuni meni boshqa qolipga solishga harakat qiladi."
       }
+    ],
+    "historicalContext": "Roman XX asr boshlari — taxminan 1916-1920-yillardagi voqealarni ifodalaydi. Bu davrda O'zbekiston Rossiya imperiyasidan Sovet hokimiyatiga o'tib bordi. An'anaviy patriarxal qishloq hayoti yangi mafkura bilan to'qnashdi. Cho'lpon o'zi ham bu o'zgarishlarning qurboniga aylangan.",
+    "interestingFacts": [
+      "Cho'lponning haqiqiy ismi — Abdulhamid Sulaymon o'g'li Yunusov.",
+      "Roman 2 jildga mo'ljallangan edi, lekin 2-jild qatag'on yillarida yo'qotilgan.",
+      "Cho'lpon 1938-yili — 41 yoshida — Stalin qatag'oni qurboniga aylangan.",
+      "Asar 1980-yillar oxirigacha taqiqlangan edi.",
+      "Cho'lpon o'zbek modernizm nasrining asoschisi hisoblanadi.",
+      "U she'riyat bilan birga drama va tarjima bilan ham shug'ullangan (Shekspir, Pushkin).",
+      "«Cho'lpon» taxallusi «tong yulduzi» degan ma'noni anglatadi."
     ],
     "themes": ["ayol taqdiri", "qishloq", "milliy uyg'onish"]
   },
@@ -122,12 +246,40 @@
     "pdf": "/kitoblar/mehrobdan-chayon.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "Qodiriyning ikkinchi yirik asari — Xudoyorxon davridagi Qo'qon xonligi tarixini sevgi hikoyasi orqali ko'rsatadi.",
-    "longDescription": "«Mehrobdan chayon» — XIX asr o'rtalaridagi Qo'qon xonligi haqida. Anvar va Ra'no sevgisi, saroy intrigasi, fitnalar va sodiqlik — barchasi bir matnda.",
+    "longDescription": "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini sevgi hikoyasi orqali tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar nomi «mehrob» (masjidning eng muqaddas qismi) dan chayon — zaharli hasharot — chiqishini bildiradi, ya'ni eng to'g'ri ko'rinadigan joydan jirkanch xiyonat sodir bo'lishi mumkinligini ramziy ifodalaydi.",
+      "Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini Anvar va Ra'no sevgisi orqali tasvirlaydi. Anvar — yosh, iste'dodli kotib, Ra'no — saroydagi xizmatkor qiz. Ularning sevgisi saroy intrigalari va fitnalari girdobiga tushib qoladi.",
+      "Qodiriy bu romanda Qo'qon xonligi davridagi siyosiy va ijtimoiy hayotni juda batafsil va realistik tasvirlaydi: xon saroyidagi rasm-rusumlar, lavozimlar uchun raqobat, hokimiyatning fitnalari, oddiy xalqning oqibatchasi. Asar nafaqat sevgi hikoyasi, balki o'zbek tarixining og'ir bir davriga oid ijtimoiy roman.",
+      "Asarning eng kuchli qahramonlari — fitna ustasi Sodiq va xudbin saroy ayollar. Qodiriy ularning psixologiyasini juda ustalik bilan ochib beradi. Ularning sevgan kishilarining hayotini buzganligi — asarning trajik chiziqlaridan biri.",
+      "«Mehrobdan chayon» o'zbek tarixiy romanchiligining cho'qqilaridan biri sifatida tan olingan. Asar bir necha marta sahnalashtirilgan va televizion seriallar uchun mavzu bo'lgan. Bugungi kunda ham o'rta maktab adabiyot dasturiga kiritilgan asar."
+    ],
+    "characters": [
+      "Anvar — bosh qahramon, yosh kotib",
+      "Ra'no — Anvarning sevgilisi, saroyda xizmatkor",
+      "Xudoyorxon — Qo'qon xonligining xoni",
+      "Sodiq — fitna ustasi, asarning bosh manfiy qahramoni",
+      "Solih makhdum — saroy mudarrisi, Anvarning ustozi",
+      "Nodir devonbegi — xonning vaziri"
+    ],
     "excerpts": [
       {
         "title": "Saroy hayoti",
-        "text": "Saroyda har xizmatkor, har devorning soyasi — birovning quloq solib turgan ko'zi va qulog'i edi. Bu yerda hech kim na sevishi, na nafratlanishi mumkin emas — barchasi siyosat edi."
+        "text": "Saroyda har xizmatkor, har devorning soyasi — birovning quloq solib turgan ko'zi va qulog'i edi. Bu yerda hech kim na sevishi, na nafratlanishi mumkin emas — barchasi siyosat edi. Bir lafz behushga aytilgan so'z — boshingga jallodning qilichini chaqirishi mumkin."
+      },
+      {
+        "title": "Anvar haqida",
+        "text": "Anvar — yosh, lekin aqli zo'r yigit edi. Lekin u zo'r aql egasi bo'lganligi sababli emas, balki sevgani — Ra'no — saroyda xizmat qilganligi uchun bu yerga tushib qolgandi."
       }
+    ],
+    "historicalContext": "Asar 1830-1875-yillardagi Qo'qon xonligini ifodalaydi. Bu davrda Qo'qon xonligi Xudoyorxon (1845-1858 va 1862-1875) hukmronligi ostida o'zining oxirgi gullash davrini boshidan kechirar edi. 1875-yili Rossiya imperiyasi Qo'qon xonligini bosib oldi va u tugatildi.",
+    "interestingFacts": [
+      "Asar nomi «Mehrobdan chayon» — eng muqaddas joydan zahar chiqishi mumkinligini bildiradi.",
+      "Roman 1929-yilda yozilgan — Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik asari.",
+      "Asar Xudoyorxon davri Qo'qon xonligini tasvirlaydi.",
+      "Qo'qon xonligi 1875-yilda Rossiya imperiyasi tomonidan bosib olindi.",
+      "Asarda fitna ustasi Sodiqning obrazi o'zbek adabiyotidagi eng yorqin manfiy qahramonlardan biri.",
+      "Roman bir necha marta sahnalashtirilgan va TV-serial qilingan."
     ],
     "themes": ["sevgi", "tarix", "saroy", "fitna"]
   },
@@ -147,12 +299,40 @@
     "pdfSource": "ziyouz.com (ta'lim maqsadlari)",
     "annotation": "Yangi davr boshlanishida o'zini topa olmagan ziyolining ichki olami haqida qisqa, lekin chuqur asar.",
     "imagePosition": "center 90%",
-    "longDescription": "Abdulla Qahhorning eng mashhur romani. Shaxsiy va ijtimoiy keskinliklar bir matnda mahorat bilan birlashtirilgan.",
+    "longDescription": "Abdulla Qahhorning (1907-1968) eng mashhur romani «Sarob» 1934-yilda yozilgan. Asar nomi sahrodagi sarob — illuziya kabi — ya'ni haqiqat bo'lib ko'ringan narsalarning aslida bo'sh va aldamchi ekanligini bildiradi.",
+    "longDescriptionFull": [
+      "Abdulla Qahhorning (1907-1968) eng mashhur romani «Sarob» 1934-yilda yozilgan. Asar nomi sahrodagi sarob — illuziya kabi — ya'ni haqiqat bo'lib ko'ringan narsalarning aslida bo'sh va aldamchi ekanligini bildiradi.",
+      "Asar yosh ziyolining ichki olamini — ikki davr o'rtasidagi keskinligini, eski hayotning halokati va yangi tartibning g'alati shakllariga moslashish kerakligini chuqur tasvirlaydi. Bosh qahramon Sa'idiy — yosh, ma'rifatli, lekin o'z o'rnini topa olmagan ziyolik vakili.",
+      "Qahhor bu asarda chuqur psixologik tahlilni o'zbek nasriga olib kirdi. Asar nisbatan qisqa (280 sahifa), lekin har bir sahifasi qahramon ruhiyatining ichki bo'shliqlarini ochib beradi. Qahhor uzun-uzun lirik mulohazalardan ko'ra qisqa, lo'nda jumlalar bilan eng kuchli holatlarni yaratib oladi.",
+      "Qahhorning uslubi rus mumtoz adabiyotidan — Chexov va Bunin singari ustozlardan — ta'sirlangan, lekin u milliy ranglarni va o'zbek hayotini chuqur biladi. Shuning uchun «Sarob» o'zbek nasrining intellektual cho'qqisi sifatida tan olingan.",
+      "Qahhor she'riyat, dramaturgiya va hikoyada ham mashhur. Uning «O'tmishdan ertaklar», «Oltin yulduz», «Bemor» kabi qisqa hikoyalari o'zbek hikoya san'atining mumtoz namunalari. U 1968-yili 61 yoshida vafot etgan."
+    ],
+    "characters": [
+      "Sa'idiy — bosh qahramon, yosh ziyoli",
+      "Salima — Sa'idiyning sevgilisi",
+      "Anvar — Sa'idiyning do'sti",
+      "Mirzo Murod — Sa'idiyning otasi, eski davr ziyolisi",
+      "Tursun — yangi davr vakili"
+    ],
     "excerpts": [
       {
         "title": "Sarobdagi yo'lovchi",
-        "text": "U yo'lda yurib, har lahza orqaga qarar edi. Lekin orqada hech narsa yo'q edi — chunki kelajak ham, o'tmish ham unga sarob bo'lib ko'rinardi."
+        "text": "U yo'lda yurib, har lahza orqaga qarar edi. Lekin orqada hech narsa yo'q edi — chunki kelajak ham, o'tmish ham unga sarob bo'lib ko'rinardi. Faqat hozirgi qadam bor edi — uni qaerga olib boriishini bilmagan qadam."
+      },
+      {
+        "title": "Ziyolining muhokamasi",
+        "text": "Men bilim olganman, kitoblar o'qiganman, lekin baribir o'zimni hali to'liq topa olmadim. Balki bilim — bu eng katta sarob bo'lib chiqar? Bilgan sari kamroq aniqlik qoladi hayotda."
       }
+    ],
+    "historicalContext": "Asar 1920-1930-yillardagi O'zbekistonni ifodalaydi. Bu davrda eski jadidchi ziyolilar yo'q qilinardi, yangi sovet ziyolilari endi shakllanardi. Asarda eski va yangi davr o'rtasidagi keskinlik aks ettirilgan.",
+    "interestingFacts": [
+      "Asar nomi «Sarob» — sahrodagi illuziya, ya'ni aldamchi haqiqat.",
+      "Qahhor 1907-yili Qo'qonda tug'ilgan, 1968-yili vafot etgan.",
+      "Asar yosh ziyolining ichki olamini chuqur psixologik tahlil qiladi.",
+      "Qahhor o'zbek psixologik nasrining asoschisi hisoblanadi.",
+      "U Chexov va Bunindan ta'sirlangan, lekin milliy uslubni saqlab qolgan.",
+      "«Sarob»dan tashqari «Bemor», «O'tmishdan ertaklar» kabi hikoyalari ham mashhur.",
+      "Qahhor 1956-yili «Sinchalak» romanini ham yozgan."
     ],
     "themes": ["o'zlik", "davr", "ziyolilik"]
   }

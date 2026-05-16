@@ -17,7 +17,16 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
   const [pdfDoc, setPdfDoc] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(initialPage);
-  const [visiblePages, setVisiblePages] = useState(() => new Set([1, 2, 3, 4]));
+  // Pre-seed visible pages around initialPage so resumed canvases render before the jump.
+  const [visiblePages, setVisiblePages] = useState(() => {
+    const pages = new Set([1, 2, 3, 4]);
+    if (initialPage > 1) {
+      for (let p = Math.max(1, initialPage - 2); p <= initialPage + 4; p++) {
+        pages.add(p);
+      }
+    }
+    return pages;
+  });
   const [error, setError] = useState(null);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < MOBILE_BREAKPOINT);
   const [editingPage, setEditingPage] = useState(false);
@@ -35,7 +44,8 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
       const mobile = vw < MOBILE_BREAKPOINT;
       // Reserved chrome (toolbar + progress + footer) + breathing padding.
       const chrome = readingMode ? 24 : 170;
-      const side = readingMode ? 16 : 80;
+      // Mobile gets a tighter horizontal reserve so the book ~20% larger.
+      const side = readingMode ? 16 : mobile ? 24 : 80;
       const availH = Math.max(300, vh - chrome);
       const availW = Math.max(300, vw - side);
       let pageH;
@@ -98,11 +108,20 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
     };
   }, []);
 
+  // Persist last page
+  const persist = useCallback(
+    (page) => {
+      if (!totalPages) return;
+      setReadingProgress(book.slug, page, totalPages);
+    },
+    [book.slug, totalPages, setReadingProgress],
+  );
+
   // Jump helpers
   const jumpToPage = useCallback(
     (page) => {
       const fp = flipRef.current?.pageFlip();
-      if (!fp || !totalPages) return;
+      if (!fp || !totalPages) return false;
       const clamped = Math.max(1, Math.min(totalPages, page));
       const pageIndex = clamped - 1;
       // In two-page spread mode, page indices need to be aligned to the LEFT page
@@ -116,11 +135,21 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
         try {
           fp.flip(targetIndex, 'top');
         } catch {
-          /* ignore */
+          return false;
         }
       }
+      // turnToPage() does NOT fire onFlip — update state manually so the UI,
+      // visiblePages preload, and saved progress all reflect the new position.
+      // We record the highest visible page (right side of the spread on desktop)
+      // so reaching the last spread registers as 100% completion.
+      const visiblePage = isMobile
+        ? targetIndex + 1
+        : Math.min(targetIndex + 2, totalPages);
+      setCurrentPage(visiblePage);
+      persist(visiblePage);
+      return true;
     },
-    [totalPages, isMobile],
+    [totalPages, isMobile, persist],
   );
 
   // Keyboard shortcuts
@@ -144,23 +173,39 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose, jumpToPage, currentPage, totalPages, editingPage, readingMode]);
 
-  // Persist last page
-  const persist = useCallback(
-    (page) => {
-      if (!totalPages) return;
-      setReadingProgress(book.slug, page, totalPages);
-    },
-    [book.slug, totalPages, setReadingProgress],
-  );
-
-  // Jump to the initial page once PDF is loaded (reuses jumpToPage logic)
+  // Jump to the initial page once PDF is loaded.
+  // react-pageflip's pageFlip() instance is not ready synchronously after mount,
+  // so retry briefly until it's available — otherwise the jump silently fails
+  // and the saved progress (e.g. "Davom etish: 289-sahifa") doesn't restore.
   const didInitialJump = useRef(false);
   useEffect(() => {
     if (didInitialJump.current) return;
-    if (!pdfDoc || initialPage <= 1) return;
-    jumpToPage(initialPage);
-    didInitialJump.current = true;
-  }, [pdfDoc, initialPage, totalPages, jumpToPage]);
+    if (!pdfDoc || !totalPages || initialPage <= 1) return;
+
+    let cancelled = false;
+    let timer;
+    let tries = 0;
+    const tryJump = () => {
+      if (cancelled || didInitialJump.current) return;
+      const fp = flipRef.current?.pageFlip();
+      if (fp && typeof fp.turnToPage === 'function') {
+        const ok = jumpToPage(initialPage);
+        if (ok) {
+          didInitialJump.current = true;
+          return;
+        }
+      }
+      if (tries < 30) {
+        tries++;
+        timer = setTimeout(tryJump, 60);
+      }
+    };
+    tryJump();
+    return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
+    };
+  }, [pdfDoc, totalPages, initialPage, jumpToPage]);
 
   // Update visible pages whenever current page changes (preload ±2)
   useEffect(() => {
@@ -173,11 +218,16 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
 
   const onFlip = useCallback(
     (e) => {
-      const page = (e.data || 0) + 1;
+      const idx = e.data || 0;
+      // In two-page spread mode, record the RIGHT page of the spread — that's the
+      // highest page the user has seen on this flip. Otherwise the last spread
+      // (e.g. 289-290 of a 290-page book) saves as 289/290 = 99.7% and 100% is
+      // never reachable.
+      const page = isMobile ? idx + 1 : Math.min(idx + 2, totalPages || idx + 1);
       setCurrentPage(page);
       persist(page);
     },
-    [persist],
+    [persist, isMobile, totalPages],
   );
 
   const submitPageInput = () => {
@@ -214,19 +264,13 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.6"
+            strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="w-4 h-4"
+            className="w-3.5 h-3.5"
           >
-            <path d="M10 4H4v6" />
-            <path d="M4 4l6 6" />
-            <path d="M14 4h6v6" />
-            <path d="M20 4l-6 6" />
-            <path d="M10 20H4v-6" />
-            <path d="M4 20l6-6" />
-            <path d="M14 20h6v-6" />
-            <path d="M20 20l-6-6" />
+            <path d="M6 6L18 18" />
+            <path d="M18 6L6 18" />
           </svg>
         </button>
       )}
@@ -310,7 +354,7 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
       {/* Reader content */}
       <div
         className={`relative z-10 flex-1 flex items-center justify-center overflow-hidden ${
-          readingMode ? 'px-2 sm:px-4 py-3' : 'px-4 sm:px-8 md:px-12 py-6 sm:py-10'
+          readingMode ? 'px-2 sm:px-4 py-3' : 'px-2 sm:px-8 md:px-12 py-6 sm:py-10'
         }`}
       >
         {error && (

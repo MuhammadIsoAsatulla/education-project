@@ -8,6 +8,12 @@ import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import FavoriteButton from '../components/common/FavoriteButton.jsx';
 import Quiz from '../components/common/Quiz.jsx';
+import Comments from '../components/common/Comments.jsx';
+import {
+  InterestingFactsSection,
+  LegacySection,
+  LanguagesSection,
+} from '../components/common/EnrichmentSections.jsx';
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
 import useProgress from '../hooks/useProgress.js';
 
@@ -22,7 +28,9 @@ export default function AllomaDetailPage() {
     () => viktorinalar.find((v) => v.ownerType === 'allomalar' && v.ownerId === alloma?.slug),
     [alloma?.slug],
   );
-  const previousQuizScore = alloma ? progressState.quizScores[alloma.slug] : undefined;
+  const previousQuizEntry = alloma ? progressState.quizScores[alloma.slug] : undefined;
+  const previousQuizScore =
+    typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
 
   useEffect(() => {
     if (!alloma) return;
@@ -188,6 +196,15 @@ export default function AllomaDetailPage() {
         </div>
       </section>
 
+      {/* NEW: Languages */}
+      <LanguagesSection languages={alloma.languages} accent={alloma.accent} />
+
+      {/* NEW: Interesting facts */}
+      <InterestingFactsSection facts={alloma.interestingFacts} accent={alloma.accent} />
+
+      {/* NEW: Legacy */}
+      <LegacySection text={alloma.legacy} accent={alloma.accent} />
+
       {/* Quiz section */}
       {quiz && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-4xl mx-auto">
@@ -204,7 +221,7 @@ export default function AllomaDetailPage() {
             <Quiz
               questions={quiz.questions}
               previousBest={previousQuizScore ?? null}
-              onComplete={(score) => submitQuiz(alloma.slug, score)}
+              onComplete={(score, total) => submitQuiz(alloma.slug, score, total)}
               onClose={() => setQuizOpen(false)}
             />
           ) : (
@@ -239,6 +256,13 @@ export default function AllomaDetailPage() {
           )}
         </section>
       )}
+
+      {/* NEW: Comments preview */}
+      <Comments
+        contentType="allomalar"
+        contentId={alloma.id}
+        contentTitle={alloma.name}
+      />
 
       {/* Other allomas navigation */}
       <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 border-t border-gold/10">

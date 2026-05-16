@@ -1,0 +1,22 @@
+[
+  { "rank": 1, "name": "Anvar Karimov", "avatar": "girih-1", "level": "Meros Vorisi", "points": 1240, "streak": 87, "tier": "sohibqiron" },
+  { "rank": 2, "name": "Madina Yusupova", "avatar": "islimi", "level": "Olim Shogirdi", "points": 980, "streak": 64, "tier": "mythic" },
+  { "rank": 3, "name": "Sherzod Rasulov", "avatar": "kalon", "level": "Olim Shogirdi", "points": 905, "streak": 51, "tier": "mythic" },
+  { "rank": 4, "name": "Dilshoda Mirzayeva", "avatar": "girih-2", "level": "Olim Shogirdi", "points": 820, "streak": 42, "tier": "legendary" },
+  { "rank": 5, "name": "Bekzod Tursunov", "avatar": "tanbur", "level": "Olim Shogirdi", "points": 760, "streak": 38, "tier": "legendary" },
+  { "rank": 6, "name": "Nilufar Saidova", "avatar": "moon", "level": "Bilim Do'sti", "points": 695, "streak": 29, "tier": "epic" },
+  { "rank": 7, "name": "Jamshid Olimov", "avatar": "dome", "level": "Bilim Do'sti", "points": 620, "streak": 22, "tier": "epic" },
+  { "rank": 8, "name": "Sevara Toshpo'latova", "avatar": "book", "level": "Bilim Do'sti", "points": 580, "streak": 19, "tier": "epic" },
+  { "rank": 9, "name": "Rustam Asadov", "avatar": "girih-1", "level": "Ma'rifatchi", "points": 510, "streak": 17, "tier": "rare" },
+  { "rank": 10, "name": "Zarina Aliyeva", "avatar": "islimi", "level": "Ma'rifatchi", "points": 470, "streak": 14, "tier": "rare" },
+  { "rank": 11, "name": "Otabek Mirzayev", "avatar": "tanbur", "level": "Ma'rifatchi", "points": 430, "streak": 12, "tier": "rare" },
+  { "rank": 12, "name": "Gulchehra Nematova", "avatar": "moon", "level": "Ma'rifatchi", "points": 395, "streak": 10, "tier": "rare" },
+  { "rank": 13, "name": "Sardor Erkinov", "avatar": "dome", "level": "Yangi Sayyoh", "points": 285, "streak": 8, "tier": "common" },
+  { "rank": 14, "name": "Iroda Yusupova", "avatar": "kalon", "level": "Yangi Sayyoh", "points": 260, "streak": 7, "tier": "common" },
+  { "rank": 15, "name": "Bobur Aliyev", "avatar": "book", "level": "Yangi Sayyoh", "points": 240, "streak": 6, "tier": "common" },
+  { "rank": 16, "name": "Sayyora Boboeva", "avatar": "girih-2", "level": "Yangi Sayyoh", "points": 215, "streak": 5, "tier": "common" },
+  { "rank": 17, "name": "Doniyor Saidov", "avatar": "moon", "level": "Yangi Sayyoh", "points": 195, "streak": 4, "tier": "common" },
+  { "rank": 18, "name": "Kamola Tursunova", "avatar": "tanbur", "level": "Yangi Sayyoh", "points": 175, "streak": 3, "tier": "common" },
+  { "rank": 19, "name": "Bekzod Karimov", "avatar": "girih-1", "level": "Yangi Sayyoh", "points": 145, "streak": 3, "tier": "common" },
+  { "rank": 20, "name": "Munisa Yo'ldosheva", "avatar": "islimi", "level": "Yangi Sayyoh", "points": 120, "streak": 2, "tier": "common" }
+]

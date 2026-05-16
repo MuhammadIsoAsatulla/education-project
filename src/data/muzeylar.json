@@ -12,14 +12,30 @@
     "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
     "shortDescription": "Sharqning eng buyuk me'morchilik ansambli — uchta madrasaning shukuhli birlashmasi.",
     "fullDescription": [
-      "Registon — Samarqand qalbidagi maydon, bu yerda Ulug'bek, Sherdor va Tillakori madrasalari yonma-yon turibdi. Har biri o'z davrining ilmu-ma'rifat markazi bo'lgan.",
-      "Ulug'bek madrasasi (1417–1420) — astronomiya va matematikaning markazi edi. Sherdor (1619–1636) o'z fasadidagi sherlar tasviri bilan mashhur. Tillakori (1646–1660) esa o'zining oltin bezakli devorlari va gumbazi bilan hayratga soladi.",
-      "Bu maydon shunchaki me'moriy yodgorlik emas — bu o'zbek madaniyatining yuragi. Bu yerda Ulug'bek dars bergan, Navoiy yurgan, Bobur ulg'aygan."
+      "Registon — Samarqand qalbidagi tarixiy maydon, nomi forschadan «qumli joy» degan ma'noni anglatadi. Qadim zamonlardan beri bu yer shahar markazi va savdo-sotiq joyi sifatida xizmat qilgan. Maydonda bugun uchta ulug' madrasa yonma-yon turibdi: Ulug'bek (1417–1420), Sherdor (1619–1636) va Tillakori (1646–1660). Har biri o'z davrining ilmu-ma'rifat markazi va me'morchilik shoh asari hisoblanadi.",
+      "Ulug'bek madrasasi 1417-1420-yillarda Mirzo Ulug'bek tomonidan qurilgan va Registonning eng qadimgi binosidir. Bu yerda nafaqat diniy fanlar, balki astronomiya, matematika, falsafa ham o'qitilardi. Madrasaning fasadi yulduz va geometrik bezaklar bilan to'la — bu uning astronomiya ilmiga bag'ishlanganligini ramziy ko'rsatadi. Madrasada bir vaqtning o'zida 100 dan ortiq talaba bilim oladi. Ulug'bekning o'zi ham bu yerda dars bergan.",
+      "Sherdor madrasasi 1619–1636-yillarda Buxoro amirligi davrida Yalangtushbek Bahodir tomonidan qurildi. Uning nomi forschadan «Sherli» (sher tasvirli) deb tarjima qilinadi. Fasadda quyosh ko'tarib turgan ikkita sherning tasviri bor — bu islom me'morchiligida juda kam uchraydigan jonzot tasviridir. Madrasa Ulug'bek madrasasiga sodiq nusxa sifatida qurilgan: o'lchamlari va asosiy shakli aynan o'sha kabi.",
+      "Tillakori madrasasi 1646–1660-yillarda qurilgan va «Oltinli» degan ma'noni anglatadi. Uning ichki bezaklari haqiqatdan ham oltin bilan qoplangan — gumbazning ichki sirti, mehrob va devorlarning sirtidagi bezaklar nafis kufi yozuvlari va o'simlik naqshlari bilan to'lib-toshgan. Madrasa diniy ta'lim markazi bo'lishi bilan birga, juma masjidi vazifasini ham bajargan.",
+      "Registon 2001-yilda Samarqandning boshqa yodgorliklari bilan birga UNESCO Jahon merosi ro'yxatiga kiritildi. Bugun u har yili millionlab sayohatchini o'ziga jalb qiladi. Maydonda «Sharq Taronalari» xalqaro musiqa festivali, bayram dasturlari va davlat tantanalari o'tkazilib turadi."
     ],
     "highlights": [
-      { "title": "Ulug'bek Madrasasi", "text": "1417-yilda qurilgan, ilm dargohi." },
-      { "title": "Sherdor Madrasasi", "text": "Sher tasvirli noyob fasadi bilan mashhur." },
-      { "title": "Tillakori", "text": "Oltin bezakli ichki bezagi nafis." }
+      { "title": "Ulug'bek Madrasasi", "text": "1417–1420-yillarda qurilgan, ilm va astronomiya dargohi." },
+      { "title": "Sherdor Madrasasi", "text": "Sher tasvirli noyob fasadi bilan mashhur (1619–1636)." },
+      { "title": "Tillakori", "text": "Oltin bezaklari va gumbazli juma masjidi (1646–1660)." }
+    ],
+    "architecturalDetails": [
+      "Ulug'bek madrasasi balandligi 35 metr, ikki qavatli, hujralari soni 50 dan ortiq.",
+      "Sherdor fasadidagi sherlar — quyosh ko'tarib turgan holatda, bu Zardusht madaniyatidan o'tgan motiv.",
+      "Tillakori gumbazi ichki sirti 3 kg dan ortiq oltin bilan bezatilgan.",
+      "Uchchala madrasaning ham fasadi feruza, lojuvard va oq koshinlar bilan bezatilgan."
+    ],
+    "interestingFacts": [
+      "«Registon» so'zi forschadan «qumli joy» degan ma'noni anglatadi.",
+      "Bu yerda Ulug'bek, Navoiy va Bobur o'qigan va dars bergan.",
+      "Sherdor fasadidagi sherlar — islom me'morchiligida juda kam uchraydigan jonzot tasviri.",
+      "Tillakorining ichki gumbazi oltin bezaklar tufayli «yulduzli osmon» effektini beradi.",
+      "20-asrning birinchi yarmida madrasalar yer silkinishi natijasida ko'p shikast yegan, 1965-1995-yillarda batafsil restavratsiya qilingan.",
+      "Registon 2001-yili UNESCO Jahon merosi ro'yxatiga kiritildi."
     ],
     "hotspots": [
       {
@@ -60,17 +76,33 @@
     "initial": "A",
     "accent": "#b8893f",
     "image": "/muzeylar/amir-temur.jpg",
-    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778741172568!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ21sS3lpUHc.!2m2!1d41.31365830357972!2d69.27886829404434!3f350.9884447491622!4f9.18579881413568!5f0.7820865974627469",
     "shortDescription": "Sohibqiron Amir Temur va Temuriylar sulolasi tarixiga bag'ishlangan davlat muzeyi.",
     "fullDescription": [
-      "Amir Temur muzeyi 1996-yilda — Sohibqironning 660 yilligida ochilgan. Muzey Toshkentning markazidagi Amir Temur xiyobonida joylashgan.",
-      "Muzey ekspozitsiyasi 5000 dan ortiq eksponatdan iborat: qurol-yarog'lar, libos namunalari, qo'lyozma kitoblar, miniatyuralar, tangalar va Temuriylar davriga oid arxeologik topilmalar.",
-      "Bosh zalda Amir Temurning ulkan haykali va Temuriylar imperiyasining buyuk xaritalari joylashtirilgan."
+      "Amir Temur Davlat Muzeyi 1996-yil 18-oktyabrda — Sohibqironning 660 yilligida ochilgan. Muzey Toshkentning markazidagi Amir Temur xiyobonida, Mustaqillik maydoniga yaqin joyda joylashgan. Bino zamonaviy bo'lishiga qaramay, fasadda gumbaz, koshin bezaklari va minor unsurlari bilan klassik Temuriylar uslubini takrorlaydi.",
+      "Muzey ekspozitsiyasi 5000 dan ortiq eksponatdan iborat va to'rt asosiy bo'limga bo'lingan: Amir Temur shaxsi, Temuriylar imperiyasi, Mirzo Ulug'bek va ilm-fan, Hazrati Imom Bobur va Hindistondagi Boburiylar. Ekspozitsiyada XIV-XVI asrlarga oid noyob qurol-yarog'lar, sovutlar, qilich va xanjarlar, libos namunalari, kumush va tilla zargarlik buyumlari, miniatyura san'ati namunalari, qo'lyozma kitoblar va tangalar mavjud.",
+      "Muzeyning bosh zalida — markaziy gumbazli zalda — Amir Temurning ulkan haykali turibdi. Devorlarda Temuriylar imperiyasining geografik kengligini ko'rsatuvchi katta xaritalar va miniatyura ko'rinishidagi tarixiy lavhalar joylashtirilgan. Bosh zal yuqorisidagi gumbaz Bibi Xonim masjidi gumbaziga shakl jihatdan o'xshashdir.",
+      "Eng qadrli eksponatlar orasida — Boburning «Boburnoma» asarining qo'lyozma nusxasi, Mirzo Ulug'bekning astronomik asboblari modeli, XV asrga oid noyob koshin va miniatyuralar bor. Muzeyda «Sharq Taronalari» degan maxsus zal ham mavjud — bu yerda o'sha davr saroyiga taqlid qilingan musiqa asboblari va kostyumlar namoyish etiladi.",
+      "Muzey bilan birga Amir Temur xiyobonida Sohibqironning 14 metrli otliq haykali bor — bu Toshkentning ramziy obyektlaridan biri. Haykal 1994-yili o'rnatilgan. Xiyobon atrofida fontanlar va guldonlar bilan bezatilgan park bo'lib, bu yerda har yili Mustaqillik kuni va Yangi yil bayramlari nishonlanadi."
     ],
     "highlights": [
-      { "title": "Bosh zal", "text": "Sohibqironning haykali va saroy bezaklari." },
-      { "title": "Qurol-yarog'lar", "text": "Temuriylar davriga oid noyob qurollar." },
-      { "title": "Qo'lyozmalar", "text": "Boburnoma va boshqa noyob qo'lyozmalar." }
+      { "title": "Bosh zal", "text": "Sohibqironning ulkan haykali va Bibi Xonim shaklidagi gumbaz." },
+      { "title": "Qurol-yarog'lar", "text": "XIV–XVI asrlarga oid noyob qilich, sovut va xanjarlar." },
+      { "title": "Qo'lyozmalar", "text": "Boburnoma qo'lyozma nusxasi va boshqa noyob asarlar." }
+    ],
+    "architecturalDetails": [
+      "Muzey binosi 1996-yili Sohibqironning 660 yilligida ochilgan.",
+      "Markaziy gumbaz Bibi Xonim masjidi gumbaziga shakl jihatdan o'xshashdir.",
+      "Bino fasadi koshin bezaklari va Temuriylar uslubidagi geometrik naqshlar bilan bezatilgan.",
+      "Muzey hududidagi otliq haykalining balandligi 14 metr."
+    ],
+    "interestingFacts": [
+      "Muzey 1996-yili — Amir Temurning 660 yilligida ochilgan.",
+      "Ekspozitsiyada 5000 dan ortiq noyob eksponat namoyish etiladi.",
+      "Bosh zaldagi Sohibqiron haykali atrofida Bibi Xonim shaklidagi gumbaz turadi.",
+      "Muzeyda «Boburnoma»ning qo'lyozma nusxasi saqlanmoqda.",
+      "Amir Temur xiyobonidagi otliq haykal 1994-yilda o'rnatilgan, balandligi 14 metr.",
+      "Muzey hududida har yili Yangi yil va Mustaqillik kuni bayramlari o'tkaziladi."
     ],
     "hotspots": [
       { "id": "haykal", "x": 50, "y": 45, "label": "Sohibqiron haykali", "info": "Muzey markazidagi haykal — Sohibqironning shukuhini ifodalaydi." },
@@ -90,17 +122,34 @@
     "initial": "X",
     "accent": "#1a6b7e",
     "image": "/muzeylar/ichan-qala.jpg",
-    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778741408723!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRwTS1tbkFF!2m2!1d41.37844829055776!2d60.35962183089598!3f59.949712902540405!4f-0.7373792049429966!5f0.7820865974627469",
     "shortDescription": "UNESCO ro'yxatidagi ochiq osmon ostidagi muzey — Xivaning qadimgi ichki shahri.",
     "fullDescription": [
-      "Ichan Qal'a — Xivaning ichki shahri, 26 gektar maydonda joylashgan. Bu yer 1990-yilda UNESCO Jahon merosi ro'yxatiga kiritilgan.",
-      "Hududda 60 dan ortiq tarixiy yodgorlik bor: madrasalar, masjidlar, minoralar, saroylar va karvonsaroylar. Eng mashhuri — Kalta Minor minorasi: 1851-yilda qurila boshlagan, lekin tugallanmagan, hatto shunday holatda ham o'zining yorqin feruza koshinlari bilan hayratga soladi.",
-      "Ichan Qal'a — vaqt to'xtab qolgan joy. Bu yerga kelgan kishi o'zini O'rta asrlardagi karvon yo'lining markazida his etadi. Tor ko'chalar, paxsa devorlar, qadimiy darvozalar — barchasi tarixning tirik guvohi."
+      "Ichan Qal'a — Xivaning ichki shahri — 26 gektar maydonda joylashgan ulkan tarixiy hudud. «Ichan Qal'a» so'zma-so'z «ichki qal'a» degan ma'noni anglatadi va bu nom shaharning ikki bosqichli mudofaa tizimini aks ettiradi: tashqi qal'a — Dichan Qal'a, ichki qal'a — Ichan Qal'a. Hudud 1990-yili UNESCO Jahon merosi ro'yxatiga kiritilgan O'zbekistondagi birinchi obyekt bo'ldi.",
+      "Ichan Qal'a tarixi 2500 yildan ortiq davrga borib taqaladi. Bu yer Buyuk Ipak yo'lining muhim chorrahasi sifatida xizmat qilgan. Bugungi me'moriy ko'rinishi asosan XVI–XIX asrlarda Xiva xonligi davrida shakllangan. Hudud paxsa va g'ishtdan qurilgan 10 metrli devorlar bilan o'ralgan, bu devorlarning umumiy uzunligi 2,2 kilometrga teng.",
+      "Hududda 60 dan ortiq tarixiy yodgorlik bor: madrasalar, masjidlar, minoralar, saroylar va karvonsaroylar. Eng mashhuri — Kalta Minor (chala minora). 1851-yilda Muhammad Amin xon tomonidan boshlangan bu minora dunyodagi eng baland minora bo'lishi mo'ljallangan edi — taxminan 70-80 metr balandlikda. Lekin xon vafot etgach, qurilish to'xtab qoldi va minora atigi 29 metr balandlikda «chala» qoldi. Buning hatto shu balandlikda ham diametri 14,2 metrga teng va u yarim quyoshli feruza koshinlari bilan jilolanib turadi.",
+      "Tosh Hovli saroyi 1830-1838-yillarda Olloqulixon davrida qurilgan xonlar qarorgohi. 163 xona va 9 ta ichki hovlidan iborat ushbu kompleks Xiva me'morchilikining ulkan namunasi hisoblanadi. Saroyning naqshli yog'och ustunlari, koshin pannolari va o'yib bezatilgan eshiklari bugun ham hayratga soladi.",
+      "Juma Masjidi X asrda qurilgan va bu Xivaning eng qadimgi masjidi. Uning eng mashhur belgisi — 213 ta yog'och ustun. Har bir ustun alohida — turli vaqtlarda turli o'lkalardan keltirilgan va o'yib naqshlangan. Eng qadimgi ustunlar 1500 yil avvalga, eng so'nggilari XIX asrga oiddir. Bu ustunlar masjid zalini quvvatlab turadi va o'ziga xos shaffof, samimiy muhitni yaratadi."
     ],
     "highlights": [
-      { "title": "Kalta Minor", "text": "Yorqin feruza koshinli noyob minora — Xivaning ramzi." },
-      { "title": "Tosh Hovli", "text": "Xon saroyining muhim qismi, koshin bezaklari bilan." },
-      { "title": "Juma Masjidi", "text": "213 ta yog'och ustun bilan tutib turilgan zal — har biri noyob naqshli." }
+      { "title": "Kalta Minor", "text": "Yorqin feruza koshinli noyob chala minora — Xivaning ramzi (1851)." },
+      { "title": "Tosh Hovli", "text": "Olloqulixon qarorgohi — 163 xona va 9 hovli (1830-1838)." },
+      { "title": "Juma Masjidi", "text": "213 ta noyob yog'och ustun bilan tutib turilgan zal (X asrdan)." }
+    ],
+    "architecturalDetails": [
+      "Ichan Qal'a maydoni 26 gektar, devorlari uzunligi 2,2 kilometr, balandligi 10 metr.",
+      "Hududda 60 dan ortiq tarixiy yodgorlik joylashgan.",
+      "Kalta Minor diametri 14,2 metr, balandligi 29 metr — chala qolgan.",
+      "Juma Masjidi 213 ta turli davrga oid yog'och ustunlardan iborat.",
+      "Tosh Hovli saroyi 163 xona va 9 ichki hovlidan iborat."
+    ],
+    "interestingFacts": [
+      "Ichan Qal'a 1990-yili O'zbekistondan UNESCO ro'yxatiga kiritilgan birinchi obyekt.",
+      "Maydoni 26 gektar, devorlari uzunligi 2,2 km.",
+      "Kalta Minor 1851-yilda boshlanib, lekin xonning vafoti tufayli chala qolgan.",
+      "Juma Masjididagi ustunlarning eng qadimgilari 1500 yildan oshgan.",
+      "Tosh Hovli 8 yil — 1830-1838-yillar — davomida qurilgan.",
+      "Xivada XX asrgacha avliyo va olim-fuzalolarning maqbaralari nekropoli — Pahlavon Mahmud — saqlangan."
     ],
     "hotspots": [
       { "id": "kalta-minor", "x": 30, "y": 40, "label": "Kalta Minor", "info": "1851-yilda qurila boshlagan, lekin tugallanmagan minora. Yorqin feruza koshinlari bilan o'sha vaqtning eng baland minorasi bo'lishi mo'ljallangan edi." },
@@ -120,21 +169,38 @@
     "initial": "Sh",
     "accent": "#1e3a8a",
     "image": "/muzeylar/shahi-zinda.jpg",
-    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778741545732!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGNfOV9WQ3c.!2m2!1d39.66214099059286!2d66.9878819244298!3f349.4559838805947!4f10.98649322423428!5f0.7820865974627469",
     "shortDescription": "«Tirik shoh» — Samarqandning eng go'zal nekropoli, koshin san'atining cho'qqisi.",
     "fullDescription": [
-      "Shohi Zinda — Samarqanddagi eng buyuk me'morchilik ansambllaridan biri. Nomi «Tirik shoh» degan ma'noni anglatadi va Muhammad payg'ambarning amakivachchasi Qusam ibn Abbosga bog'liq.",
-      "Ansambl 11 va 19 asrlar oralig'ida shakllangan. Bu yerda Temuriylar sulolasining muhim a'zolari, sayyidlar va olimlar dafn etilgan. Maqbaralar fasadlari koshin san'atining cho'qqisi hisoblanadi.",
-      "Har bir maqbara o'zining naqshlari, rang-barangligi va o'ziga xosligi bilan ajralib turadi. Feruza va lojuvard ranglar bu yerda eng go'zal ko'rinishda namoyon bo'ladi."
+      "Shohi Zinda — Samarqanddagi eng buyuk va eng go'zal me'morchilik ansambllaridan biri. Nomi forschadan «Tirik shoh» degan ma'noni anglatadi va Muhammad payg'ambarning amakivachchasi Qusam ibn Abbosga bog'liq. Rivoyatlarga ko'ra, u Samarqandda jihod yillarida (676-yili) shahid bo'lganida, dushmanlardan qochib yer ostiga kirib ketgan va u yerda hozir ham tirik holda yashayapti, deb hisoblanadi.",
+      "Ansambl XI asrdan XIX asrgacha bo'lgan davr ichida bosqichma-bosqich shakllangan. Bu yerda Temuriylar sulolasining muhim a'zolari, sayyidlar, olimlar va din arboblari dafn etilgan. Ansambl uchta asosiy qismdan iborat: pastki guruh (XIV asr), o'rtacha guruh (XV asr — eng buyuk davr) va yuqori guruh (asosan XI–XII asrlar). Maqbaralar tor ko'cha bo'ylab tartibga keltirilgan va har birining o'z fasadi nurli koshinlar bilan bezatilgan.",
+      "Eng qadimgi qismi — Qusam ibn Abbos kompleksi — VIII asrdan beri ziyoratgoh. Bu yerga muqaddas ko'cha — «zinapoyaga ko'tarilish» chiqadi va u 36 zinapoyadan iborat. Mahalliy aholi orasida shunday rivoyat bor: zinalarni yuqoridan tushganda va pastdan ko'tarilganda sanagan vaqtdagi soni bir xil bo'lsa — sizning niyatingiz qabul bo'ladi, deb hisoblanadi.",
+      "Ansamblning eng go'zal maqbarasi — Shod-i-Mulk Oqo maqbarasi — 1372-yilda Amir Temur singlisi Shirinbiy Oqo va uning qizi uchun qurilgan. Bu maqbara koshin san'atining cho'qqisi hisoblanadi: deyarli butun sirti relyefli koshin, kashtado'zlik va kaligrafiyaning eng nozik namunalari bilan qoplangan. Maqbaraning fasadidagi koshin texnologiyasi keyingi asrlarda boshqa joylarda qaytarila olmagan.",
+      "Boshqa muhim maqbaralar — Tuman Oqa (Amir Temur xotinining maqbarasi, 1405), Amir Burunduq (Temurning lashkarboshilaridan, 1380-yillar), Amirzoda (Temurning nevarasi). Shohi Zinda 2001-yili UNESCO Jahon merosi ro'yxatiga Samarqandning «Tsivilizatsiyalar chorrahasi» nomli obyekt sifatida kiritildi. Ansamblda namoz vaqtida ziyoratchilar oqimi tashqi davraga to'planadi, ich joy esa muqaddas tinchlikni saqlaydi."
     ],
     "highlights": [
       { "title": "Qusam ibn Abbos maqbarasi", "text": "Eng qadimgi maqbara — VIII asrdan beri ziyoratgoh." },
-      { "title": "Shoda Mulk Oqa maqbarasi", "text": "Koshin san'atining noyob namunasi (1372)." },
-      { "title": "Tuman Oqa kompleksi", "text": "Amir Temur jiyanining maqbarasi va masjidi." }
+      { "title": "Shod-i-Mulk Oqo maqbarasi", "text": "Koshin san'atining noyob namunasi (1372)." },
+      { "title": "Tuman Oqa kompleksi", "text": "Amir Temur xotinining maqbarasi va masjidi (1405)." }
+    ],
+    "architecturalDetails": [
+      "Ansambl 11 va 19 asrlar oralig'ida bosqichma-bosqich shakllangan.",
+      "Pastki guruh — XIV asr, o'rtacha — XV asr (eng buyuk davr), yuqori — XI–XII asr.",
+      "Shod-i-Mulk Oqo maqbarasi 1372-yilda qurilgan, koshin san'atining cho'qqisi.",
+      "Asosiy zinapoya 36 pog'onadan iborat — ziyoratchilar uchun ramziy ahamiyatga ega.",
+      "Maqbaralar fasadi feruza, lojuvard va oltin ranglardagi koshinlar bilan bezatilgan."
+    ],
+    "interestingFacts": [
+      "«Shohi Zinda» — «Tirik shoh» degan ma'no, Qusam ibn Abbosga atalgan.",
+      "Qusam ibn Abbos 676-yili Samarqandda shahid bo'lgan deb hisoblanadi.",
+      "Shod-i-Mulk Oqo maqbarasi 1372-yilda Amir Temur singlisi uchun qurilgan.",
+      "Maqbaralar fasadidagi koshin texnologiyasi keyingi davrlarda qaytarila olmagan.",
+      "Asosiy zinapoyaning 36 pog'onasi bor — ziyoratchi bir xil sanasa, niyati qabul bo'ladi deyiladi.",
+      "Ansambl 2001-yili UNESCO Jahon merosi ro'yxatiga kiritilgan."
     ],
     "hotspots": [
       { "id": "qusam", "x": 25, "y": 55, "label": "Qusam ibn Abbos maqbarasi", "info": "VIII asrdan beri ziyoratgoh. Muhammad payg'ambarning amakivachchasi, Samarqandda jihod yillarida shahid bo'lgan." },
-      { "id": "shoda-mulk", "x": 55, "y": 45, "label": "Shoda Mulk Oqa maqbarasi", "info": "1372-yilda Temur singlisi uchun qurilgan. Koshin san'atining shoh asari." },
+      { "id": "shoda-mulk", "x": 55, "y": 45, "label": "Shod-i-Mulk Oqo maqbarasi", "info": "1372-yilda Temur singlisi uchun qurilgan. Koshin san'atining shoh asari." },
       { "id": "tuman-oqa", "x": 75, "y": 55, "label": "Tuman Oqa", "info": "Amir Temur xotinining maqbarasi va masjidi (1405)." }
     ],
     "audioGuide": null,
@@ -150,17 +216,37 @@
     "initial": "B",
     "accent": "#8b2635",
     "image": "/muzeylar/buxoro.jpg",
-    "embed360": "https://www.google.com/maps/embed?pb=!4v1778643362662!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRHU4LXVVbndF!2m2!1d39.65462701022936!2d66.97569006113511!3f335.24706032095054!4f-27.452433990111388!5f0.4000000000000002",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1778742189869!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzQ3Skg5UlE.!2m2!1d39.77604066513277!2d64.41508938157331!3f93.00031599261752!4f-0.9123476427847663!5f0.7820865974627469",
     "shortDescription": "«Muqaddas Buxoro» — 140 dan ortiq tarixiy yodgorlikni saqlovchi shahar-muzey.",
     "fullDescription": [
-      "Buxoro — 2500 yillik tarixga ega bo'lgan shahar. Butun eski shahar 1993-yilda UNESCO Jahon merosi ro'yxatiga kiritilgan.",
-      "Po'i Kalon ansambli, Mir Arab madrasasi, Ismoil Somoniy maqbarasi, Ark qal'asi, Lyabi Hovuz — bularning har biri o'z navbatida alohida hayrat manbai. Buxoro Buyuk Ipak yo'lining muhim chorrahasi bo'lgan va asrlar davomida ilm va savdo markazi sifatida tanilgan.",
-      "Bu shahar Abu Ali ibn Sino, Abu Hafs Kabir va boshqa buyuk allomalarning vatani. Uning ko'chalari, gumbazlari va minoralari hozir ham o'sha buyuk davrning tirik nafasini olib turibdi."
+      "Buxoro — 2500 yillik tarixga ega bo'lgan shahar va Markaziy Osiyoning eng qadimgi shaharlaridan biri. Uning nomi sanskrit tilidagi «vihara» (monastir) so'zidan kelib chiqqan deb taxmin qilinadi. Bir vaqtlar shaharning rasmiy laqabi «Buxoroi Sharif» — «Muqaddas Buxoro» bo'lgan, chunki bu yer butun islom olamida ilm-fan va din markazi sifatida tanilgan. Eski shahar 1993-yili UNESCO Jahon merosi ro'yxatiga kiritildi.",
+      "Buxoroning eng qadimgi yodgorligi — Ismoil Somoniy maqbarasi (892–907) — Markaziy Osiyodagi eng eski islom binosi. U Somoniylar sulolasi asoschisi sharafiga qurilgan. Maqbara faqat o'qilgan va o'yilgan g'ishtdan tashkil topgan — bezakda hech qanday koshin yoki rang ishlatilmagan. Buning hayratlanarli bezagi natijasida bu bino XIII asrda Chingizxon bosqini paytida ham omon qoldi: mo'g'ullar uni qum bilan ko'milgan deb sezmadilar.",
+      "Po'i Kalon ansambli Buxoroning ramziy markazi. U Kalon minora (1127), Kalon masjidi (1514) va Mir Arab madrasasi (1535)dan iborat. Kalon minoraning balandligi 47 metr va u qurilganda dunyodagi eng baland binoning biri edi. Hatto Chingizxon bosqini paytida ham mo'g'ullar uning hayratlanarli go'zalligi tufayli uni saqlab qolishdi — bu shaharda kam saqlanib qolgan obyektlardan biri.",
+      "Ark qal'asi Buxoro amirlari va xonlarining qarorgohi sifatida ming yildan ko'proq vaqt xizmat qilgan. Qal'aning hozirgi ko'rinishi asosan XVII asrda shakllangan, lekin uning poydevori 1500 yildan ortiq. Ark — shaharning birinchi binosi, taxminan eramizdan oldingi V-IV asrlarga oid. Bu yerda taxti hokimiyat, xon saroyi, masjid, hazina, qamoqxonalar va o'q-dorilar omborlari joylashgan edi.",
+      "Lyabi Hovuz Buxoroning eng go'zal markaziy maydonlaridan biri. Markazda 1620-yilda qurilgan hovuz (suv havzasi), uning atrofida XVI-XVII asrlarga oid Kukeldosh madrasasi (1568), Nodir Devonbegi madrasasi (1623) va Nodir Devonbegi xonaqosi joylashgan. Bu joy bugun ham mahalliy aholi va sayyohlar uchun sevimli dam olish maskani.",
+      "Buxoro nafaqat shahar emas, balki ulug' allomalar vatani — bu yerda Imom Buxoriy (810-870), Abu Ali ibn Sino (980-1037), Abu Hafs Kabir Buxoriy va boshqa o'nlab buyuk olimlar yetishib chiqdi. Yagonai Sharqning eng katta diniy-ilmiy markazlaridan biri sifatida shahar islom dunyosida «Qubbatul-Islom» («Islom gumbazi») laqabini olgan."
     ],
     "highlights": [
-      { "title": "Po'i Kalon ansambli", "text": "Kalon minora, masjid va Mir Arab madrasasi birlashmasi." },
-      { "title": "Ismoil Somoniy maqbarasi", "text": "IX–X asr g'isht me'morchilikining shoh asari." },
-      { "title": "Ark qal'asi", "text": "Buxoro amirlari qarorgohi — qadimiy va shukuhli." }
+      { "title": "Po'i Kalon ansambli", "text": "Kalon minora (1127), masjid (1514) va Mir Arab madrasasi (1535) birlashmasi." },
+      { "title": "Ismoil Somoniy maqbarasi", "text": "IX–X asr (892-907) g'isht me'morchilikining shoh asari." },
+      { "title": "Ark qal'asi", "text": "Buxoro amirlari qarorgohi — 1500 yillik tarixga ega." }
+    ],
+    "architecturalDetails": [
+      "Buxoro eski shahri 1993-yili UNESCO ro'yxatiga kiritilgan.",
+      "Hududda 140 dan ortiq tarixiy yodgorlik joylashgan.",
+      "Kalon minora 1127-yili qurilgan, balandligi 47 metr.",
+      "Ismoil Somoniy maqbarasi (892-907) — Markaziy Osiyoning eng qadimgi islom yodgorligi.",
+      "Mir Arab madrasasi 1535-yili qurilgan va hozir ham faol diniy ta'lim markazi.",
+      "Ark qal'asining poydevori taxminan 1500 yil oldin tashkil qilingan."
+    ],
+    "interestingFacts": [
+      "Buxoro 2500 yillik tarixga ega — Markaziy Osiyoning eng qadimgi shaharlaridan biri.",
+      "Rasmiy laqabi «Buxoroi Sharif» — «Muqaddas Buxoro» bo'lgan.",
+      "Kalon minoraga mo'g'ullar ham hayratga tushib uni saqlab qolgan.",
+      "Ismoil Somoniy maqbarasi mo'g'ullar bosqini paytida qum bilan ko'milib qolgan.",
+      "Mir Arab madrasasi hali ham faoliyat ko'rsatuvchi diniy ta'lim markazi.",
+      "Bu shahar Imom Buxoriy va Ibn Sinoning vatani.",
+      "Buxoroning islom dunyosidagi laqabi «Qubbatul-Islom» — «Islom gumbazi»."
     ],
     "hotspots": [
       { "id": "kalon", "x": 30, "y": 40, "label": "Kalon Minorasi", "info": "1127-yilda qurilgan, balandligi 47 metr. Mo'g'ullar ham hayratga tushib uni saqlab qolgan." },

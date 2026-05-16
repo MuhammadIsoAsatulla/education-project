@@ -1,9 +1,17 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import kitoblar from '../data/kitoblar.json';
+import viktorinalar from '../data/viktorinalar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import ReadingCTA from '../components/kitoblar/ReadingCTA.jsx';
+import Quiz from '../components/common/Quiz.jsx';
+import Comments from '../components/common/Comments.jsx';
+import {
+  CharactersSection,
+  HistoricalContextSection,
+  InterestingFactsSection,
+} from '../components/common/EnrichmentSections.jsx';
 import useProgress from '../hooks/useProgress.js';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
@@ -17,7 +25,15 @@ export default function KitobDetailPage() {
   const [opened, setOpened] = useState(false);
   const [excerptIndex, setExcerptIndex] = useState(0);
   const [readerOpen, setReaderOpen] = useState(false);
-  const { state: progressState, visit, clearReadingProgress } = useProgress();
+  const [quizOpen, setQuizOpen] = useState(false);
+  const { state: progressState, visit, clearReadingProgress, submitQuiz } = useProgress();
+  const quiz = useMemo(
+    () => viktorinalar.find((v) => v.ownerType === 'kitoblar' && v.ownerId === book?.slug),
+    [book?.slug],
+  );
+  const previousQuizEntry = book ? progressState.quizScores[book.slug] : undefined;
+  const previousQuizScore =
+    typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
   const { speak, stop, speaking, available, voiceLabel } = useTextToSpeech();
   const readingProgress = book ? progressState.readingProgress[book.slug] : undefined;
   useScrollReveal();
@@ -202,6 +218,62 @@ export default function KitobDetailPage() {
           </div>
         </section>
       )}
+
+      {/* NEW: Characters */}
+      <CharactersSection characters={book.characters} accent={book.accent} />
+
+      {/* NEW: Historical context */}
+      <HistoricalContextSection text={book.historicalContext} accent={book.accent} />
+
+      {/* NEW: Interesting facts */}
+      <InterestingFactsSection facts={book.interestingFacts} accent={book.accent} />
+
+      {/* NEW: Quiz */}
+      {quiz && (
+        <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <OrnamentDivider className="opacity-60 mb-6" />
+            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
+            <h2 className="section-title">Viktorina</h2>
+            <p className="font-serif italic text-cream-soft/80 mt-3">
+              {quiz.questions.length} ta savol. Har to'g'ri javob — bonus ball.
+            </p>
+          </div>
+
+          {quizOpen ? (
+            <Quiz
+              questions={quiz.questions}
+              previousBest={previousQuizScore ?? null}
+              onComplete={(score, total) => submitQuiz(book.slug, score, total)}
+              onClose={() => setQuizOpen(false)}
+            />
+          ) : (
+            <div className="text-center">
+              {previousQuizScore !== undefined ? (
+                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
+                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
+                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                    {previousQuizScore} / {quiz.questions.length}
+                  </div>
+                  {previousQuizScore === quiz.questions.length && (
+                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                  )}
+                </div>
+              ) : (
+                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                  Hozirgacha bu viktorinani topshirmaganmisiz.
+                </p>
+              )}
+              <button onClick={() => setQuizOpen(true)} className="gold-cta">
+                <span>{previousQuizScore !== undefined ? 'Qayta sinash' : 'Viktorinani boshlash'}</span>
+              </button>
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* NEW: Comments */}
+      <Comments contentType="kitoblar" contentId={book.id} contentTitle={book.title} />
 
       {/* Other books */}
       <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">

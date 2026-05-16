@@ -4,15 +4,23 @@
     "name": "Ilk Qadam",
     "description": "MEROS sayohatini boshladingiz.",
     "icon": "compass",
-    "tier": "bronze",
+    "tier": "common",
     "requires": { "type": "any", "count": 1 }
+  },
+  {
+    "id": "explorer",
+    "name": "Kashfiyotchi",
+    "description": "5 ta turli element bilan tanishdingiz.",
+    "icon": "compass",
+    "tier": "common",
+    "requires": { "type": "any", "count": 5 }
   },
   {
     "id": "alloma-do-st",
     "name": "Alloma Do'sti",
     "description": "Bir alloma haqida to'liq tanishdingiz.",
     "icon": "scroll",
-    "tier": "bronze",
+    "tier": "common",
     "requires": { "type": "allomalar", "count": 1 }
   },
   {
@@ -20,7 +28,7 @@
     "name": "Ulug' Bilim",
     "description": "Barcha allomalarni o'rganib chiqdingiz.",
     "icon": "telescope",
-    "tier": "gold",
+    "tier": "epic",
     "requires": { "type": "allomalar", "count": 5 }
   },
   {
@@ -28,31 +36,55 @@
     "name": "Muzey Mehmoni",
     "description": "Birinchi virtual muzey sayohatini bajarib chiqdingiz.",
     "icon": "landmark",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "muzeylar", "count": 1 }
+  },
+  {
+    "id": "sayyoh",
+    "name": "Sayyoh",
+    "description": "Barcha muzeylarga tashrif buyurdingiz.",
+    "icon": "landmark",
+    "tier": "epic",
+    "requires": { "type": "muzeylar", "count": 5 }
   },
   {
     "id": "maqomshunos",
     "name": "Maqomshunos",
     "description": "5 ta milliy qo'shiqni tinglab chiqdingiz.",
     "icon": "music",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "musiqa", "count": 5 }
+  },
+  {
+    "id": "maqom-ustasi",
+    "name": "Maqom Ustasi",
+    "description": "Barcha qo'shiqlarni o'rganib chiqdingiz.",
+    "icon": "music",
+    "tier": "legendary",
+    "requires": { "type": "musiqa", "count": 6 }
   },
   {
     "id": "kinoshunos",
     "name": "Kinoshunos",
     "description": "5 ta klassik kinoni ko'rib chiqdingiz.",
     "icon": "film",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "kinolar", "count": 5 }
+  },
+  {
+    "id": "kino-tanqidchisi",
+    "name": "Kino Tanqidchisi",
+    "description": "Barcha klassik kinolarni ko'rib chiqdingiz.",
+    "icon": "film",
+    "tier": "legendary",
+    "requires": { "type": "kinolar", "count": 7 }
   },
   {
     "id": "kitobxon",
     "name": "Kitobxon",
     "description": "5 ta kitobni mutolaa qildingiz.",
     "icon": "book-open",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "kitoblar", "count": 5 }
   },
   {
@@ -60,7 +92,7 @@
     "name": "Meros Vorisi",
     "description": "Barcha bo'limlarni kashf etdingiz.",
     "icon": "crown",
-    "tier": "platinum",
+    "tier": "mythic",
     "requires": { "type": "all", "count": 6 }
   },
   {
@@ -68,7 +100,7 @@
     "name": "Sodiq Sayyoh",
     "description": "3 kun ketma-ket saytga tashrif buyurdingiz.",
     "icon": "compass",
-    "tier": "bronze",
+    "tier": "common",
     "requires": { "type": "streak", "count": 3 }
   },
   {
@@ -76,7 +108,7 @@
     "name": "Haftalik Ziyokash",
     "description": "7 kun ketma-ket bilim oldingiz.",
     "icon": "book-open",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "streak", "count": 7 }
   },
   {
@@ -84,31 +116,47 @@
     "name": "Madaniyat Fidoyisi",
     "description": "30 kun ketma-ket — chinakam fidoyilik.",
     "icon": "crown",
-    "tier": "gold",
+    "tier": "legendary",
     "requires": { "type": "streak", "count": 30 }
+  },
+  {
+    "id": "streak-100",
+    "name": "Yuz Kunlik Yo'l",
+    "description": "100 kun davom etdingiz — afsona.",
+    "icon": "crown",
+    "tier": "mythic",
+    "requires": { "type": "streak", "count": 100 }
   },
   {
     "id": "quiz-master",
     "name": "Bilim Sinovi",
     "description": "Bitta viktorinani mukammal (3/3) o'tdingiz.",
     "icon": "scroll",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "quiz-perfect", "count": 1 }
+  },
+  {
+    "id": "quiz-deep",
+    "name": "Mutafakkir",
+    "description": "5 ta viktorinani mukammal o'tdingiz.",
+    "icon": "scroll",
+    "tier": "epic",
+    "requires": { "type": "quiz-perfect", "count": 5 }
   },
   {
     "id": "all-quiz",
     "name": "Bilim Cho'qqisi",
     "description": "Barcha viktorinalarni mukammal o'tdingiz.",
     "icon": "telescope",
-    "tier": "platinum",
-    "requires": { "type": "quiz-perfect", "count": 5 }
+    "tier": "legendary",
+    "requires": { "type": "quiz-perfect", "count": 10 }
   },
   {
     "id": "first-pages",
-    "name": "Birinchi sahifalar",
+    "name": "Birinchi Sahifalar",
     "description": "Bitta kitobning kamida 10 sahifasini o'qidingiz.",
     "icon": "book-open",
-    "tier": "bronze",
+    "tier": "common",
     "requires": { "type": "pages-read", "count": 10 }
   },
   {
@@ -116,7 +164,7 @@
     "name": "Chuqur Mutolaa",
     "description": "Bitta kitobning yarmidan ko'pini o'qib chiqdingiz.",
     "icon": "book-open",
-    "tier": "silver",
+    "tier": "rare",
     "requires": { "type": "pages-percent", "percent": 50 }
   },
   {
@@ -124,7 +172,103 @@
     "name": "Haqiqiy Kitobxon",
     "description": "Bitta kitobni boshidan oxirigacha o'qidingiz.",
     "icon": "book-open",
-    "tier": "gold",
+    "tier": "epic",
     "requires": { "type": "pages-percent", "percent": 95 }
+  },
+  {
+    "id": "muhr-bronze-5",
+    "name": "Birinchi Muhrlar",
+    "description": "5 ta Bronza Muhr yig'dingiz.",
+    "icon": "scroll",
+    "tier": "common",
+    "requires": { "type": "muhr-bronze", "count": 5 }
+  },
+  {
+    "id": "muhr-silver",
+    "name": "Kumush Sayyod",
+    "description": "Birinchi Kumush Muhrga ega bo'ldingiz.",
+    "icon": "telescope",
+    "tier": "rare",
+    "requires": { "type": "muhr-silver", "count": 1 }
+  },
+  {
+    "id": "muhr-gold",
+    "name": "Tilla Muhrli",
+    "description": "Birinchi Tilla Muhrga ega bo'ldingiz.",
+    "icon": "crown",
+    "tier": "epic",
+    "requires": { "type": "muhr-gold", "count": 1 }
+  },
+  {
+    "id": "commenter",
+    "name": "Tanqidchi",
+    "description": "5 ta sharh qoldirdingiz.",
+    "icon": "scroll",
+    "tier": "common",
+    "requires": { "type": "comments", "count": 5 }
+  },
+  {
+    "id": "favorite-collector",
+    "name": "Kollektsioner",
+    "description": "10 ta element sevimliga qo'shdingiz.",
+    "icon": "book-open",
+    "tier": "rare",
+    "requires": { "type": "favorites", "count": 10 }
+  },
+  {
+    "id": "daily-warrior",
+    "name": "Kunlik Jangchi",
+    "description": "7 ta kunlik vazifani bajardingiz.",
+    "icon": "compass",
+    "tier": "rare",
+    "requires": { "type": "daily-completed", "count": 7 }
+  },
+  {
+    "id": "daily-master",
+    "name": "Kunlik Master",
+    "description": "30 ta kunlik vazifani bajardingiz.",
+    "icon": "crown",
+    "tier": "legendary",
+    "requires": { "type": "daily-completed", "count": 30 }
+  },
+  {
+    "id": "word-collector",
+    "name": "So'z Yig'uvchi",
+    "description": "20 ta eski o'zbek so'zini o'rganishni xohladingiz.",
+    "icon": "book-open",
+    "tier": "rare",
+    "requires": { "type": "words-known", "count": 20 }
+  },
+  {
+    "id": "shop-explorer",
+    "name": "Bozor Mehmoni",
+    "description": "Do'kondan ilk xaridingizni amalga oshirdingiz.",
+    "icon": "scroll",
+    "tier": "common",
+    "requires": { "type": "shop-purchase", "count": 1 }
+  },
+  {
+    "id": "renaissance-mind",
+    "name": "Renessans Tafakkuri",
+    "description": "Har bo'limda kamida bitta achievementga ega.",
+    "icon": "telescope",
+    "tier": "epic",
+    "requires": { "type": "all", "count": 6 }
+  },
+  {
+    "id": "knowledge-emperor",
+    "name": "Bilim Imperatori",
+    "description": "5 ta legendar achievementga ega bo'lish.",
+    "icon": "crown",
+    "tier": "mythic",
+    "requires": { "type": "tier-legendary", "count": 5 }
+  },
+  {
+    "id": "sohibqiron",
+    "name": "Sohibqiron",
+    "description": "Eng yuqori daraja — barcha sohada mukammallik. Faqat haqiqiy ustozlar uchun.",
+    "icon": "crown",
+    "tier": "sohibqiron",
+    "requires": { "type": "tier-mythic", "count": 3 }
   }
 ]

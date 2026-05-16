@@ -1,8 +1,21 @@
+import TierParticles from './TierParticles.jsx';
+
+const TIER_LABELS = {
+  common: 'Oddiy',
+  rare: 'Nodir',
+  epic: 'Buyuk',
+  legendary: 'Afsonaviy',
+  mythic: 'Asotirim',
+  sohibqiron: 'Sohibqiron',
+};
+
 const TIER_COLORS = {
-  bronze: '#b8893f',
-  silver: '#cbd5e1',
-  gold: '#d4a574',
-  platinum: '#a3e4ff',
+  common: '#b8893f',
+  rare: '#cbd5e1',
+  epic: '#6680c8',
+  legendary: '#d4a574',
+  mythic: '#e8c898',
+  sohibqiron: '#ffce6b',
 };
 
 const ICONS = {
@@ -22,9 +35,7 @@ const ICONS = {
     </>
   ),
   landmark: (
-    <>
-      <path d="M3 21 H21 M5 21 V11 M19 21 V11 M9 21 V14 M15 21 V14 M3 9 L12 4 L21 9 Z" />
-    </>
+    <path d="M3 21 H21 M5 21 V11 M19 21 V11 M9 21 V14 M15 21 V14 M3 9 L12 4 L21 9 Z" />
   ),
   music: (
     <>
@@ -48,45 +59,92 @@ const ICONS = {
 };
 
 export default function AchievementBadge({ badge, unlocked }) {
-  const color = TIER_COLORS[badge.tier] || TIER_COLORS.bronze;
+  const tier = badge.tier || 'common';
+  const color = TIER_COLORS[tier];
+  const tierLabel = TIER_LABELS[tier];
+  const isHighTier = ['legendary', 'mythic', 'sohibqiron'].includes(tier);
+
   return (
     <div
-      className={`relative p-6 border rounded-sm transition-all duration-500 ${
+      className={`relative p-5 sm:p-6 border rounded-sm transition-all duration-500 group ${
+        unlocked ? `tier-${tier}` : ''
+      } ${
         unlocked
-          ? 'border-gold/60 bg-bg-mid/60 backdrop-blur shadow-[0_0_30px] shadow-gold/10'
-          : 'border-gold/15 bg-bg-mid/30 grayscale opacity-60'
+          ? 'bg-bg-mid/60 backdrop-blur'
+          : 'border-gold/10 bg-bg-mid/20 grayscale opacity-50'
       }`}
+      style={
+        unlocked
+          ? {
+              borderColor: tier === 'mythic' || tier === 'sohibqiron' ? 'transparent' : color,
+              background:
+                tier === 'mythic' || tier === 'sohibqiron'
+                  ? 'rgba(10, 31, 46, 0.7)'
+                  : `linear-gradient(135deg, ${color}10, rgba(10,31,46,0.6))`,
+            }
+          : undefined
+      }
     >
-      <div
-        className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all ${
-          unlocked ? 'animate-float-slow' : ''
-        }`}
-        style={{
-          background: unlocked
-            ? `radial-gradient(circle at 30% 30%, ${color}, ${color}44)`
-            : 'rgba(255,255,255,0.04)',
-          boxShadow: unlocked ? `0 0 20px ${color}66` : 'none',
-        }}
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke={unlocked ? '#0a1f2e' : 'currentColor'}
-          strokeWidth="1.5"
-          className={`w-8 h-8 ${unlocked ? '' : 'text-gold/40'}`}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          {ICONS[badge.icon] || ICONS.compass}
-        </svg>
-      </div>
-      <h4 className="font-serif text-cream text-xl mb-1">{badge.name}</h4>
-      <p className="text-cream-soft/70 text-sm leading-snug">{badge.description}</p>
+      {/* Floating particles for high tiers */}
+      {unlocked && isHighTier && <TierParticles tier={tier} count={tier === 'sohibqiron' ? 10 : 6} />}
+
+      {/* Tier badge in corner */}
       {unlocked && (
-        <span className="absolute top-3 right-3 text-[10px] tracking-[2px] uppercase text-gold">
-          ✦ Ochilgan
+        <span
+          className="absolute top-2.5 right-2.5 text-[9px] tracking-[2px] uppercase px-2 py-0.5 rounded-full font-medium z-10"
+          style={{
+            background: `${color}22`,
+            color,
+            border: `1px solid ${color}66`,
+          }}
+        >
+          {tierLabel}
         </span>
       )}
+
+      {/* Icon */}
+      <div className="relative z-[1]">
+        <div
+          className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 ${
+            unlocked ? 'animate-float-slow' : ''
+          }`}
+          style={{
+            background: unlocked
+              ? `radial-gradient(circle at 30% 30%, ${color}, ${color}33)`
+              : 'rgba(255,255,255,0.04)',
+            boxShadow: unlocked ? `0 0 20px ${color}66` : 'none',
+          }}
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke={unlocked ? '#0a1f2e' : 'currentColor'}
+            strokeWidth="1.5"
+            className={`w-7 h-7 sm:w-8 sm:h-8 ${unlocked ? '' : 'text-gold/40'}`}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            {ICONS[badge.icon] || ICONS.compass}
+          </svg>
+        </div>
+
+        <h4 className="font-serif text-cream text-lg sm:text-xl mb-1 leading-tight">
+          {badge.name}
+        </h4>
+        <p className="text-cream-soft/70 text-xs sm:text-sm leading-snug">{badge.description}</p>
+
+        {unlocked && (
+          <div
+            className="mt-3 pt-3 border-t flex items-center gap-1.5 text-[10px] tracking-[2px] uppercase"
+            style={{ borderColor: `${color}33`, color }}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+            Ochilgan
+          </div>
+        )}
+      </div>
     </div>
   );
 }

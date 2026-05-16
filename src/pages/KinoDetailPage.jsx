@@ -1,15 +1,31 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import kinolar from '../data/kinolar.json';
+import viktorinalar from '../data/viktorinalar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import Quiz from '../components/common/Quiz.jsx';
+import Comments from '../components/common/Comments.jsx';
+import {
+  CastSection,
+  HistoricalContextSection,
+  InterestingFactsSection,
+} from '../components/common/EnrichmentSections.jsx';
 import useProgress from '../hooks/useProgress.js';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 
 export default function KinoDetailPage() {
   const { slug } = useParams();
   const movie = useMemo(() => kinolar.find((m) => m.slug === slug), [slug]);
-  const { visit } = useProgress();
+  const [quizOpen, setQuizOpen] = useState(false);
+  const { state: progressState, visit, submitQuiz } = useProgress();
+  const quiz = useMemo(
+    () => viktorinalar.find((v) => v.ownerType === 'kinolar' && v.ownerId === movie?.slug),
+    [movie?.slug],
+  );
+  const previousQuizEntry = movie ? progressState.quizScores[movie.slug] : undefined;
+  const previousQuizScore =
+    typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
   useScrollReveal();
 
   useEffect(() => {
@@ -208,22 +224,66 @@ export default function KinoDetailPage() {
         </section>
       )}
 
-      {/* Cast */}
-      <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 max-w-[1200px] mx-auto">
-        <div className="text-center mb-10">
-          <OrnamentDivider className="opacity-60 mb-6" />
-          <div className="eyebrow mb-3">— ROLLAR ROYIHASI —</div>
-          <h2 className="section-title">Aktyorlar</h2>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-          {movie.cast.map((c, i) => (
-            <div key={c} className="p-5 border border-gold/20 hover:border-gold/70 rounded-sm bg-bg-mid/40 backdrop-blur transition">
-              <div className="font-serif text-gold/60 text-xs tracking-[3px] mb-2">— {String(i + 1).padStart(2, '0')} —</div>
-              <p className="font-serif text-cream text-lg">{c}</p>
+      {/* Cast + Crew + Awards */}
+      <CastSection
+        cast={movie.cast}
+        crew={movie.crew}
+        awards={movie.awards}
+        accent={movie.accent}
+      />
+
+      {/* NEW: Historical context */}
+      <HistoricalContextSection text={movie.historicalContext} accent={movie.accent} />
+
+      {/* NEW: Interesting facts */}
+      <InterestingFactsSection facts={movie.interestingFacts} accent={movie.accent} />
+
+      {/* NEW: Quiz */}
+      {quiz && (
+        <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <OrnamentDivider className="opacity-60 mb-6" />
+            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
+            <h2 className="section-title">Viktorina</h2>
+            <p className="font-serif italic text-cream-soft/80 mt-3">
+              {quiz.questions.length} ta savol. Har to'g'ri javob — bonus ball.
+            </p>
+          </div>
+
+          {quizOpen ? (
+            <Quiz
+              questions={quiz.questions}
+              previousBest={previousQuizScore ?? null}
+              onComplete={(score, total) => submitQuiz(movie.slug, score, total)}
+              onClose={() => setQuizOpen(false)}
+            />
+          ) : (
+            <div className="text-center">
+              {previousQuizScore !== undefined ? (
+                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
+                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
+                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                    {previousQuizScore} / {quiz.questions.length}
+                  </div>
+                  {previousQuizScore === quiz.questions.length && (
+                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                  )}
+                </div>
+              ) : (
+                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                  Hozirgacha bu viktorinani topshirmaganmisiz.
+                </p>
+              )}
+              <button onClick={() => setQuizOpen(true)} className="gold-cta">
+                <span>{previousQuizScore !== undefined ? 'Qayta sinash' : 'Viktorinani boshlash'}</span>
+              </button>
             </div>
-          ))}
-        </div>
-      </section>
+          )}
+        </section>
+      )}
+
+      {/* NEW: Comments */}
+      <Comments contentType="kinolar" contentId={movie.id} contentTitle={movie.title} />
 
       {/* Recommendations */}
       <RecommendationsSection recommendations={recommendations} />
