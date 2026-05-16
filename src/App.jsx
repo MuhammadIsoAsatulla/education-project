@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/common/Navbar.jsx';
 import Footer from './components/common/Footer.jsx';
 import ScrollToTop from './components/common/ScrollToTop.jsx';
@@ -18,10 +18,15 @@ import KitoblarPage from './pages/KitoblarPage.jsx';
 import KitobDetailPage from './pages/KitobDetailPage.jsx';
 import ProfilPage from './pages/ProfilPage.jsx';
 import CommentsPage from './pages/CommentsPage.jsx';
+import LoginPage from './pages/LoginPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
 export default function App() {
   const { tickStreak } = useProgress();
+  const { pathname } = useLocation();
+  // Login is a full-screen experience — hide global nav/footer chrome there.
+  const isAuthRoute = pathname === '/login';
+
   useEffect(() => {
     tickStreak();
   }, [tickStreak]);
@@ -29,7 +34,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      {!isAuthRoute && <Navbar />}
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -45,10 +50,11 @@ export default function App() {
           <Route path="/kitoblar/:slug" element={<KitobDetailPage />} />
           <Route path="/profil" element={<ProfilPage />} />
           <Route path="/sharhlar/:type/:id" element={<CommentsPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      <Footer />
+      {!isAuthRoute && <Footer />}
     </>
   );
 }

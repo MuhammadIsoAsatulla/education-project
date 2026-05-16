@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import OrnamentDivider from './OrnamentDivider.jsx';
+import useAuth from '../../hooks/useAuth.js';
 
 const ICONS = {
   allomalar: (
@@ -71,6 +72,195 @@ const LINKS = [
   { to: '/profil', label: 'Profil', sub: 'Mening Ziyom', icon: ICONS.profil },
 ];
 
+function AuthBadge({ onNavigate }) {
+  const { user, isAuthenticated, signOut } = useAuth();
+  const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener('mousedown', onDoc);
+    document.addEventListener('touchstart', onDoc);
+    return () => {
+      document.removeEventListener('mousedown', onDoc);
+      document.removeEventListener('touchstart', onDoc);
+    };
+  }, [open]);
+
+  if (!isAuthenticated) {
+    return (
+      <Link
+        to="/login"
+        onClick={onNavigate}
+        className="inline-flex items-center gap-2 px-4 py-1.5 border border-gold/50 hover:bg-gold hover:text-bg-deep text-gold rounded-full text-[11px] tracking-[2px] uppercase transition"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-3.5">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" />
+        </svg>
+        Kirish
+      </Link>
+    );
+  }
+
+  const initial = (user.name || 'M').trim().charAt(0).toUpperCase();
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="flex items-center gap-2 group focus:outline-none"
+        aria-label="Hisob menyusi"
+        aria-expanded={open}
+      >
+        {user.picture ? (
+          <img
+            src={user.picture}
+            alt={user.name}
+            referrerPolicy="no-referrer"
+            className="w-8 h-8 rounded-full border border-gold/60 object-cover group-hover:border-gold transition"
+          />
+        ) : (
+          <span className="w-8 h-8 rounded-full border border-gold/60 bg-bg-deep/60 flex items-center justify-center text-gold font-serif text-sm group-hover:border-gold transition">
+            {initial}
+          </span>
+        )}
+        <span className="hidden lg:inline text-cream text-xs tracking-wide max-w-[110px] truncate">
+          {user.name}
+        </span>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          className={`w-3 h-3 text-gold/60 transition-transform ${open ? 'rotate-180' : ''}`}
+        >
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute right-0 top-full mt-2 w-56 rounded-sm border border-gold/30 bg-bg-deep/95 backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.5)] z-50 overflow-hidden">
+          <div className="p-3 border-b border-gold/15 flex items-center gap-3">
+            {user.picture ? (
+              <img
+                src={user.picture}
+                alt={user.name}
+                referrerPolicy="no-referrer"
+                className="w-10 h-10 rounded-full border border-gold/40 object-cover flex-shrink-0"
+              />
+            ) : (
+              <span className="w-10 h-10 rounded-full border border-gold/40 bg-bg-mid/60 flex items-center justify-center text-gold font-serif flex-shrink-0">
+                {initial}
+              </span>
+            )}
+            <div className="min-w-0 flex-1">
+              <p className="font-serif text-cream text-sm leading-tight truncate">{user.name}</p>
+              {user.email && (
+                <p className="text-cream-soft/50 text-[10px] truncate mt-0.5">{user.email}</p>
+              )}
+              <p className="text-gold/60 text-[9px] tracking-[2px] uppercase mt-0.5">
+                {user.provider === 'google' ? '— Google —' : '— Mehmon —'}
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              setOpen(false);
+              navigate('/profil');
+            }}
+            className="w-full text-left px-4 py-2.5 text-cream-soft hover:bg-bg-mid/40 hover:text-gold text-xs tracking-[2px] uppercase transition flex items-center gap-3"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-4 h-4">
+              <circle cx="12" cy="9" r="3.5" />
+              <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" />
+            </svg>
+            Profilim
+          </button>
+          <button
+            onClick={() => {
+              setOpen(false);
+              signOut();
+              navigate('/');
+            }}
+            className="w-full text-left px-4 py-2.5 text-cream-soft/70 hover:bg-crimson/10 hover:text-crimson text-xs tracking-[2px] uppercase transition border-t border-gold/10 flex items-center gap-3"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-4 h-4">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+            </svg>
+            Chiqish
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function MobileAuthBlock({ onClose }) {
+  const { user, isAuthenticated, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  if (!isAuthenticated) {
+    return (
+      <Link
+        to="/login"
+        onClick={onClose}
+        className="mb-6 flex items-center justify-center gap-3 p-4 border border-gold/50 rounded-sm bg-gold/10 text-gold tracking-[3px] uppercase hover:bg-gold hover:text-bg-deep transition text-sm"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" />
+        </svg>
+        Kirish
+      </Link>
+    );
+  }
+
+  const initial = (user.name || 'M').trim().charAt(0).toUpperCase();
+
+  return (
+    <div className="mb-6 p-4 border border-gold/25 rounded-sm bg-bg-mid/40 backdrop-blur flex items-center gap-3">
+      {user.picture ? (
+        <img
+          src={user.picture}
+          alt={user.name}
+          referrerPolicy="no-referrer"
+          className="w-12 h-12 rounded-full border border-gold/40 object-cover flex-shrink-0"
+        />
+      ) : (
+        <span className="w-12 h-12 rounded-full border border-gold/40 bg-bg-deep/60 flex items-center justify-center text-gold font-serif text-lg flex-shrink-0">
+          {initial}
+        </span>
+      )}
+      <div className="flex-1 min-w-0">
+        <p className="font-serif text-cream text-base leading-tight truncate">{user.name}</p>
+        {user.email && (
+          <p className="text-cream-soft/50 text-[10px] truncate mt-0.5">{user.email}</p>
+        )}
+        <p className="text-gold/60 text-[9px] tracking-[2px] uppercase mt-0.5">
+          {user.provider === 'google' ? '— Google —' : '— Mehmon —'}
+        </p>
+      </div>
+      <button
+        onClick={() => {
+          signOut();
+          onClose?.();
+          navigate('/');
+        }}
+        className="text-cream-soft/70 hover:text-crimson text-[10px] tracking-[2px] uppercase transition flex-shrink-0"
+        aria-label="Chiqish"
+        title="Chiqish"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -122,25 +312,28 @@ export default function Navbar() {
           MEROS
         </Link>
 
-        <ul className="hidden md:flex gap-6 lg:gap-8 list-none m-0 p-0">
-          {LINKS.map((l) => (
-            <li key={l.to}>
-              <NavLink
-                to={l.to}
-                className={({ isActive }) =>
-                  `relative inline-flex items-center gap-2 uppercase text-[12px] font-semibold tracking-[1.8px] transition-colors duration-300 nav-underline ${
-                    isActive ? 'text-gold' : 'text-cream hover:text-gold'
-                  }`
-                }
-              >
-                <span className="w-4 h-4 inline-block flex-shrink-0 transition-transform group-hover:scale-110">
-                  {l.icon}
-                </span>
-                <span>{l.label}</span>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          <ul className="flex gap-6 lg:gap-8 list-none m-0 p-0">
+            {LINKS.map((l) => (
+              <li key={l.to}>
+                <NavLink
+                  to={l.to}
+                  className={({ isActive }) =>
+                    `relative inline-flex items-center gap-2 uppercase text-[12px] font-semibold tracking-[1.8px] transition-colors duration-300 nav-underline ${
+                      isActive ? 'text-gold' : 'text-cream hover:text-gold'
+                    }`
+                  }
+                >
+                  <span className="w-4 h-4 inline-block flex-shrink-0 transition-transform group-hover:scale-110">
+                    {l.icon}
+                  </span>
+                  <span>{l.label}</span>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <AuthBadge />
+        </div>
 
         {/* Mobile burger toggle */}
         <button
@@ -254,6 +447,8 @@ export default function Navbar() {
         {/* Menu content */}
         <div className="relative z-10 h-[calc(100%-72px)] flex flex-col">
           <div className="flex-1 overflow-y-auto px-6 py-6 sm:py-10">
+            <MobileAuthBlock onClose={() => setOpen(false)} />
+
             <div className="text-center mb-6 sm:mb-8">
               <OrnamentDivider className="opacity-50 mb-4" />
               <div className="eyebrow text-[10px]">— OLTI HAZINA —</div>
