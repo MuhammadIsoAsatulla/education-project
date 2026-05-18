@@ -1,39 +1,80 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import {
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut as fbSignOut,
+} from 'firebase/auth';
+import { auth, isFirebaseConfigured } from '../lib/firebase.js';
+import { ensureCloudUserDoc } from '../lib/migrateLocalToCloud.js';
 import useLocalStorage from './useLocalStorage.js';
 
 /**
- * Authentication state.
- * Stored in localStorage so the session survives reloads (no backend yet).
+ * Unified auth state.
  *
- * User shape:
- *   {
- *     id: string,         // Google `sub` for Google users, "guest-..." otherwise
- *     name: string,
- *     email?: string,     // only for Google users
- *     picture?: string,   // Google profile photo URL
- *     provider: 'google' | 'guest',
- *     signedInAt: number, // Date.now()
- *   }
+ *   - When Firebase is configured AND the user has signed in with Google,
+ *     `user` is the Firebase user (uid maps to `users/{uid}` Firestore doc).
+ *   - Otherwise `user` is the guest stored in localStorage, or null.
+ *
+ * Shape of `user`:
+ *   { id, uid?, name, email, picture, provider: 'google'|'guest', signedInAt }
+ *   (`uid` is only set for Firebase users — that's the Firestore key.)
  */
 export default function useAuth() {
-  const [user, setUser] = useLocalStorage('meros:auth', null);
+  const [guestUser, setGuestUser] = useLocalStorage('meros:auth', null);
+  const [firebaseUser, setFirebaseUser] = useState(null);
+  // Until Firebase replies, we don't know yet whether there's a signed-in user.
+  const [authReady, setAuthReady] = useState(!isFirebaseConfigured);
 
-  const signInWithGoogle = useCallback(
-    (googlePayload) => {
-      if (!googlePayload?.sub) return null;
-      const next = {
-        id: googlePayload.sub,
-        name: googlePayload.name || googlePayload.email || 'MEROS foydalanuvchi',
-        email: googlePayload.email || null,
-        picture: googlePayload.picture || null,
+  useEffect(() => {
+    if (!isFirebaseConfigured || !auth) {
+      setAuthReady(true);
+      return undefined;
+    }
+    const unsub = onAuthStateChanged(auth, async (fbUser) => {
+      if (!fbUser) {
+        setFirebaseUser(null);
+        setAuthReady(true);
+        return;
+      }
+      // Ensure the user's Firestore doc exists BEFORE flipping `firebaseUser`,
+      // so when useProgress later subscribes to `users/{uid}` the doc is
+      // already there (no race between migration and incoming user actions).
+      try {
+        await ensureCloudUserDoc(fbUser);
+      } catch (err) {
+        // Migration failed (offline, permission, etc.) — proceed anyway;
+        // useProgress will fall back to localStorage until the next sign-in.
+        // eslint-disable-next-line no-console
+        console.warn('[useAuth] cloud user doc migration failed:', err?.code || err?.message);
+      }
+      setFirebaseUser({
+        id: fbUser.uid,
+        uid: fbUser.uid,
+        name: fbUser.displayName || fbUser.email || 'Foydalanuvchi',
+        email: fbUser.email,
+        picture: fbUser.photoURL,
         provider: 'google',
         signedInAt: Date.now(),
-      };
-      setUser(next);
-      return next;
-    },
-    [setUser],
-  );
+      });
+      setAuthReady(true);
+    });
+    return unsub;
+  }, []);
+
+  const signInWithGoogle = useCallback(async () => {
+    if (!isFirebaseConfigured || !auth) {
+      throw new Error('Firebase auth is not configured');
+    }
+    const provider = new GoogleAuthProvider();
+    // Always show the account picker — never silently sign in the last user,
+    // so multi-account browsers can choose which Google account to use.
+    provider.setCustomParameters({ prompt: 'select_account' });
+    await signInWithPopup(auth, provider);
+    // `onAuthStateChanged` will fire and set `firebaseUser`.
+    // We also clear any stale guest entry so the Navbar widget swaps cleanly.
+    setGuestUser(null);
+  }, [setGuestUser]);
 
   const signInAsGuest = useCallback(
     (name) => {
@@ -45,27 +86,34 @@ export default function useAuth() {
         provider: 'guest',
         signedInAt: Date.now(),
       };
-      setUser(next);
+      setGuestUser(next);
       return next;
     },
-    [setUser],
+    [setGuestUser],
   );
 
-  const signOut = useCallback(() => {
-    // Best-effort: also disable Google's one-tap auto-select so the next
-    // sign-in shows the account picker fresh.
-    try {
-      window.google?.accounts?.id?.disableAutoSelect?.();
-    } catch {
-      /* ignore */
+  const signOut = useCallback(async () => {
+    if (isFirebaseConfigured && auth?.currentUser) {
+      try {
+        await fbSignOut(auth);
+      } catch {
+        /* ignore — we still clear local state below */
+      }
     }
-    setUser(null);
-  }, [setUser]);
+    setGuestUser(null);
+  }, [setGuestUser]);
+
+  // Firebase user always wins over guest entry — prevents stale guest state
+  // from leaking through after a real sign-in.
+  const user = firebaseUser || guestUser;
 
   return {
     user,
     isAuthenticated: !!user,
     isGoogleUser: user?.provider === 'google',
+    isFirebaseUser: !!firebaseUser,
+    authReady,
+    firebaseConfigured: isFirebaseConfigured,
     signInWithGoogle,
     signInAsGuest,
     signOut,

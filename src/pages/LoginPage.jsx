@@ -1,24 +1,47 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import useAuth from '../hooks/useAuth.js';
 import useProgress from '../hooks/useProgress.js';
-import {
-  GOOGLE_CLIENT_ID,
-  decodeJwtPayload,
-  isGoogleAuthConfigured,
-  loadGoogleScript,
-} from '../lib/googleAuth.js';
+
+// Inline Google "G" logo SVG (multi-color) used inside the styled button.
+function GoogleLogo({ className = 'w-5 h-5' }) {
+  return (
+    <svg viewBox="0 0 48 48" className={className} aria-hidden>
+      <path
+        fill="#FFC107"
+        d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 8 3l5.7-5.7C33.6 6.1 29 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"
+      />
+      <path
+        fill="#FF3D00"
+        d="M6.3 14.7l6.6 4.8C14.7 16 19 13 24 13c3 0 5.8 1.1 8 3l5.7-5.7C33.6 6.1 29 4 24 4 16.3 4 9.6 8.3 6.3 14.7z"
+      />
+      <path
+        fill="#4CAF50"
+        d="M24 44c5 0 9.5-1.9 12.9-5l-6-5.1c-2 1.4-4.4 2.1-6.9 2.1-5.2 0-9.7-3.3-11.3-8L6.2 33C9.5 39.6 16.2 44 24 44z"
+      />
+      <path
+        fill="#1976D2"
+        d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.1-4 5.5l6 5.1C40 35.5 44 30 44 24c0-1.3-.1-2.4-.4-3.5z"
+      />
+    </svg>
+  );
+}
 
 export default function LoginPage() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, signInWithGoogle, signInAsGuest } = useAuth();
+  const {
+    user,
+    authReady,
+    firebaseConfigured,
+    signInWithGoogle,
+    signInAsGuest,
+  } = useAuth();
   const { state: progressState, setName: setProgressName } = useProgress();
-  const buttonRef = useRef(null);
-  const [status, setStatus] = useState('loading'); // loading | ready | unavailable | error
   const [errorMsg, setErrorMsg] = useState(null);
   const [guestName, setGuestName] = useState('');
+  const [signingIn, setSigningIn] = useState(false);
 
   // Where to redirect after sign-in (?next=/somewhere)
   const nextPath = new URLSearchParams(location.search).get('next') || '/';
@@ -28,69 +51,33 @@ export default function LoginPage() {
     if (user) navigate(nextPath, { replace: true });
   }, [user, navigate, nextPath]);
 
-  // Initialize Google Identity Services once.
-  useEffect(() => {
-    if (!isGoogleAuthConfigured()) {
-      setStatus('unavailable');
-      return;
+  const handleGoogle = async () => {
+    setErrorMsg(null);
+    setSigningIn(true);
+    try {
+      await signInWithGoogle();
+      // `onAuthStateChanged` will set the user; the redirect effect above does the navigate.
+    } catch (err) {
+      // Common codes: auth/popup-closed-by-user (user cancelled), auth/popup-blocked
+      const code = err?.code || '';
+      if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') {
+        setErrorMsg("Kirish bekor qilindi.");
+      } else if (code === 'auth/popup-blocked') {
+        setErrorMsg("Brauzer popup'ni bloklab qo'ydi. Ruxsat bering va qaytadan urining.");
+      } else {
+        setErrorMsg(err?.message || "Kirishda kutilmagan xato yuz berdi.");
+      }
+    } finally {
+      setSigningIn(false);
     }
-
-    let cancelled = false;
-
-    loadGoogleScript()
-      .then((google) => {
-        if (cancelled) return;
-        google.accounts.id.initialize({
-          client_id: GOOGLE_CLIENT_ID,
-          callback: (response) => {
-            const payload = decodeJwtPayload(response.credential);
-            if (!payload) {
-              setErrorMsg("Google javobini o'qib bo'lmadi. Qaytadan urinib ko'ring.");
-              return;
-            }
-            const authUser = signInWithGoogle(payload);
-            // First-time syncing: adopt the Google name as profile name if the
-            // user still has the default "Mehmon".
-            if (authUser && (!progressState.name || progressState.name === 'Mehmon')) {
-              setProgressName(authUser.name);
-            }
-            navigate(nextPath, { replace: true });
-          },
-        });
-
-        if (buttonRef.current) {
-          // Clear any previous render before re-mounting.
-          buttonRef.current.innerHTML = '';
-          google.accounts.id.renderButton(buttonRef.current, {
-            theme: 'filled_black',
-            size: 'large',
-            type: 'standard',
-            shape: 'pill',
-            text: 'continue_with',
-            logo_alignment: 'left',
-            width: 320,
-          });
-        }
-        setStatus('ready');
-      })
-      .catch((err) => {
-        if (cancelled) return;
-        setStatus('error');
-        setErrorMsg(err?.message || "Google xizmatini ulab bo'lmadi.");
-      });
-
-    return () => {
-      cancelled = true;
-    };
-    // We intentionally don't add progressState.name/setProgressName here — we only
-    // want the GSI button to mount once.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [signInWithGoogle, navigate, nextPath]);
+  };
 
   const handleGuest = (e) => {
     e?.preventDefault?.();
     const trimmed = guestName.trim();
     const authUser = signInAsGuest(trimmed || 'Mehmon');
+    // Sync the chosen guest name into the local profile too, but never clobber
+    // an already-set custom name.
     if (trimmed && (!progressState.name || progressState.name === 'Mehmon')) {
       setProgressName(trimmed);
     }
@@ -160,26 +147,33 @@ export default function LoginPage() {
           </div>
 
           {/* Google Sign-In */}
-          {isGoogleAuthConfigured() ? (
-            <div className="flex justify-center mb-4 min-h-[44px]">
-              {status === 'loading' && (
-                <div className="flex items-center gap-3 text-cream-soft/70 text-sm">
-                  <div className="w-5 h-5 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
-                  Google yuklanmoqda...
-                </div>
+          {firebaseConfigured ? (
+            <button
+              onClick={handleGoogle}
+              disabled={signingIn || !authReady}
+              className="w-full flex items-center justify-center gap-3 px-5 py-3 bg-cream hover:bg-white text-bg-deep rounded-full text-sm font-medium tracking-wide transition shadow-[0_4px_20px_rgba(212,165,116,0.25)] disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {signingIn ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-bg-deep/30 border-t-bg-deep rounded-full animate-spin" />
+                  Kirilmoqda...
+                </>
+              ) : (
+                <>
+                  <GoogleLogo />
+                  Google bilan davom etish
+                </>
               )}
-              <div ref={buttonRef} className="flex justify-center" />
-            </div>
+            </button>
           ) : (
-            <div className="mb-4 p-4 border border-gold/25 bg-bg-deep/40 rounded-sm">
+            <div className="p-4 border border-gold/25 bg-bg-deep/40 rounded-sm">
               <div className="flex items-start gap-3">
                 <span className="text-gold flex-shrink-0 mt-0.5">ⓘ</span>
                 <div className="flex-1 text-sm text-cream-soft/85 leading-relaxed">
                   <p className="font-medium text-gold mb-1">Google login sozlanmagan</p>
                   <p className="text-xs text-cream-soft/60">
-                    Administrator <code className="text-gold/80 bg-bg-deep/60 px-1 py-0.5 rounded">VITE_GOOGLE_CLIENT_ID</code>{' '}
-                    qiymatini qo'shgandan keyin Google bilan kirish ishlaydi. Hozirgacha mehmon
-                    sifatida davom etishingiz mumkin.
+                    Administrator Firebase env qiymatlarini qo'shgandan keyin Google bilan kirish ishlaydi.
+                    Hozircha mehmon sifatida davom etishingiz mumkin.
                   </p>
                 </div>
               </div>
@@ -187,7 +181,7 @@ export default function LoginPage() {
           )}
 
           {errorMsg && (
-            <div className="mb-4 p-3 border border-crimson/40 bg-crimson/10 rounded-sm text-crimson/90 text-xs text-center">
+            <div className="mt-4 p-3 border border-crimson/40 bg-crimson/10 rounded-sm text-crimson/90 text-xs text-center">
               {errorMsg}
             </div>
           )}
@@ -228,8 +222,18 @@ export default function LoginPage() {
           {/* Note */}
           <div className="mt-7 pt-5 border-t border-gold/15 text-center">
             <p className="text-cream-soft/55 text-[11px] leading-relaxed">
-              MEROS hisobsiz ham ishlaydi — progresingiz mahalliy saqlanadi.<br />
-              Google bilan kirsangiz, ismingiz va rasmingiz avtomatik olinadi.
+              {firebaseConfigured ? (
+                <>
+                  Google bilan kirsangiz, progresingiz akkountga bog'lanadi — istalgan qurilmadan
+                  kirib davom ettirishingiz mumkin.<br />
+                  Mehmon sifatida kirsangiz, progres faqat shu brauzerda saqlanadi.
+                </>
+              ) : (
+                <>
+                  MEROS hisobsiz ham ishlaydi — progresingiz mahalliy saqlanadi.<br />
+                  Google bilan kirish faollashganda, ismingiz va rasmingiz avtomatik olinadi.
+                </>
+              )}
             </p>
           </div>
         </div>

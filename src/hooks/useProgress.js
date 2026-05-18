@@ -1,5 +1,8 @@
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 import useLocalStorage from './useLocalStorage.js';
+import useFirestoreDoc from './useFirestoreDoc.js';
+import useAuth from './useAuth.js';
+import { isFirebaseConfigured } from '../lib/firebase.js';
 
 const DEFAULT = {
   name: 'Mehmon',
@@ -106,7 +109,25 @@ function maybeMintBronze(safe, oldPoints, newPoints) {
 }
 
 export default function useProgress() {
-  const [state, setState] = useLocalStorage('meros:progress', DEFAULT);
+  // Auth-aware backend switch:
+  //  - Signed in with Google + Firebase configured → Firestore (`users/{uid}`)
+  //  - Otherwise (guest, or Firebase missing)      → localStorage
+  // The full action surface below doesn't care which is in use; it just calls
+  // `setState(prev => ...)` and the right backend gets the write.
+  const { user, isFirebaseUser } = useAuth();
+  const useCloud = isFirebaseConfigured && isFirebaseUser && !!user?.uid;
+  const cloudPath = useCloud ? `users/${user.uid}` : null;
+
+  const [cloudData, setCloudData] = useFirestoreDoc(cloudPath, DEFAULT);
+  const [localData, setLocalData] = useLocalStorage('meros:progress', DEFAULT);
+
+  // Effective state: cloud once loaded, else local cache (avoids UI flash on sign-in).
+  const state = useCloud ? (cloudData ?? localData) : localData;
+  // Effective writer: route to whichever backend owns the data.
+  const setState = useMemo(
+    () => (useCloud ? setCloudData : setLocalData),
+    [useCloud, setCloudData, setLocalData],
+  );
 
   const visit = useCallback(
     (section, id, { points = 5, achievement = null } = {}) => {

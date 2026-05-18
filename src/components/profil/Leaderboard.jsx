@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import mockLeaderboard from '../../data/mockLeaderboard.json';
 import Avatar from './Avatar.jsx';
+import useLiveLeaderboard from '../../hooks/useLiveLeaderboard.js';
+import useAuth from '../../hooks/useAuth.js';
 
 const TIER_COLORS = {
   common: { ring: 'border-cream-soft/30', label: 'Oddiy' },
@@ -64,7 +66,16 @@ function LeaderboardRow({ entry, isYou }) {
     >
       <MedalIcon rank={entry.rank} />
       <div className={`rounded-full p-0.5 border-2 ${tierInfo.ring} flex-shrink-0`}>
-        <Avatar avatarId={entry.avatar} initial={entry.name?.charAt(0) || 'M'} size={36} />
+        {entry.picture ? (
+          <img
+            src={entry.picture}
+            alt={entry.name}
+            referrerPolicy="no-referrer"
+            className="w-9 h-9 rounded-full object-cover"
+          />
+        ) : (
+          <Avatar avatarId={entry.avatar} initial={entry.name?.charAt(0) || 'M'} size={36} />
+        )}
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5">
@@ -93,6 +104,11 @@ function LeaderboardRow({ entry, isYou }) {
 
 export default function Leaderboard({ state }) {
   const [tab, setTab] = useState('all');
+  const { user, isFirebaseUser } = useAuth();
+  const { users: liveUsers, status: liveStatus } = useLiveLeaderboard(20);
+  // Use live data when Firestore has at least one user; fall back to mock
+  // otherwise so the leaderboard never looks empty during the demo.
+  const useLive = liveStatus === 'ready';
 
   const youEntry = useMemo(() => {
     const points = state.points || 0;
@@ -100,20 +116,44 @@ export default function Leaderboard({ state }) {
       rank: 0,
       name: state.name || 'Mehmon',
       avatar: state.avatar || 'girih-1',
+      // Use Google photo when signed in — overrides MEROS avatar in the row.
+      picture: isFirebaseUser ? user?.picture : null,
       level: getUserLevel(points),
       points,
       streak: state.streak?.current || 0,
       tier: getUserTier(points),
       isYou: true,
+      uid: user?.uid || null,
     };
-  }, [state]);
+  }, [state, user, isFirebaseUser]);
 
   const ranked = useMemo(() => {
-    const combined = [...mockLeaderboard, youEntry]
+    if (useLive) {
+      // Live mode: rank from real users. If the current user is already in
+      // the live list (same uid), mark that row as "you" instead of injecting
+      // a duplicate.
+      const ownUid = youEntry.uid;
+      let foundSelf = false;
+      const rows = liveUsers.map((u) => {
+        const isSelf = ownUid && u.uid === ownUid;
+        if (isSelf) foundSelf = true;
+        return {
+          ...u,
+          level: getUserLevel(u.points),
+          tier: getUserTier(u.points),
+          isYou: isSelf,
+        };
+      });
+      if (!foundSelf) rows.push(youEntry);
+      return rows
+        .sort((a, b) => b.points - a.points)
+        .map((e, i) => ({ ...e, rank: i + 1 }));
+    }
+    // Fallback: mock + own row, deterministic ordering.
+    return [...mockLeaderboard, youEntry]
       .sort((a, b) => b.points - a.points)
       .map((e, i) => ({ ...e, rank: i + 1 }));
-    return combined;
-  }, [youEntry]);
+  }, [useLive, liveUsers, youEntry]);
 
   const filtered = useMemo(() => {
     if (tab === 'top10') return ranked.slice(0, 10);
