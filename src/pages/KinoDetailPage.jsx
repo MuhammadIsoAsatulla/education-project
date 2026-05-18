@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import kinolar from '../data/kinolar.json';
 import viktorinalar from '../data/viktorinalar.json';
@@ -26,6 +26,14 @@ export default function KinoDetailPage() {
   const previousQuizEntry = movie ? progressState.quizScores[movie.slug] : undefined;
   const previousQuizScore =
     typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
+  const cinemaRef = useRef(null);
+
+  const scrollToCinema = () => {
+    // Center the movie frame in the viewport — lands on the player, not on
+    // the section heading above it.
+    cinemaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
   useScrollReveal();
 
   useEffect(() => {
@@ -105,19 +113,19 @@ export default function KinoDetailPage() {
 
             <div className="flex flex-wrap gap-3">
               {movie.youtubeId ? (
-                <a
-                  href={`https://www.youtube.com/watch?v=${movie.youtubeId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={scrollToCinema}
                   className="gold-cta"
+                  aria-label="Tomosha zaliga o'tish"
                 >
                   <span className="flex items-center gap-3">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                       <path d="M8 5v14l11-7z" />
                     </svg>
-                    YouTube'da ko'rish
+                    Tomosha qilish
                   </span>
-                </a>
+                </button>
               ) : (
                 <a
                   href={youtubeSearchUrl}
@@ -142,6 +150,7 @@ export default function KinoDetailPage() {
       {/* Cinema Theater — embedded player */}
       {movie.youtubeId && (
         <section
+          id="tomosha-zali"
           className="relative py-16 sm:py-24 px-4 sm:px-6 md:px-12 overflow-hidden"
           style={{
             background: `radial-gradient(ellipse at center, ${movie.accent}1a 0%, var(--bg-deep) 70%)`,
@@ -165,7 +174,7 @@ export default function KinoDetailPage() {
           </div>
 
           {/* Cinema screen frame */}
-          <div className="relative max-w-[1200px] mx-auto">
+          <div ref={cinemaRef} className="relative max-w-[1200px] mx-auto">
             {/* Side projection lights */}
             <div className="hidden md:block absolute -left-10 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gold/60 animate-pulse" />
             <div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gold/60 animate-pulse" />

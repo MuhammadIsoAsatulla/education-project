@@ -1,24 +1,54 @@
 import { useEffect } from 'react';
 
+/**
+ * Watches `.reveal` elements and adds `.active` once they scroll into view.
+ *
+ * Crucially, this also picks up `.reveal` nodes that appear AFTER mount —
+ * e.g. when a filter is changed and the list re-renders, or when a tab
+ * unfolds new content. Without the MutationObserver leg, newly inserted
+ * elements stayed at `opacity: 0` until a full page refresh.
+ */
 export default function useScrollReveal(selector = '.reveal', options = {}) {
   useEffect(() => {
-    const elements = document.querySelectorAll(selector);
-    if (!elements.length) return;
+    const observed = new WeakSet();
 
-    const observer = new IntersectionObserver(
+    const intersection = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            const delay = (entry.target.dataset.revealDelay || index * 80) | 0;
-            setTimeout(() => entry.target.classList.add('active'), delay);
-            observer.unobserve(entry.target);
-          }
+          if (!entry.isIntersecting) return;
+          const delay = (entry.target.dataset.revealDelay || index * 80) | 0;
+          setTimeout(() => entry.target.classList.add('active'), delay);
+          intersection.unobserve(entry.target);
         });
       },
       { threshold: 0.15, rootMargin: '0px 0px -50px 0px', ...options },
     );
 
-    elements.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const observeAll = () => {
+      document.querySelectorAll(selector).forEach((el) => {
+        if (observed.has(el) || el.classList.contains('active')) return;
+        observed.add(el);
+        intersection.observe(el);
+      });
+    };
+
+    // Pick up everything currently in the DOM.
+    observeAll();
+
+    // Re-scan whenever new nodes are added (filter change, tab switch, etc.).
+    const mutation = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.addedNodes.length) {
+          observeAll();
+          return;
+        }
+      }
+    });
+    mutation.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      intersection.disconnect();
+      mutation.disconnect();
+    };
   }, [selector]);
 }

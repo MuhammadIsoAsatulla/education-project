@@ -1,10 +1,8 @@
 import OrnamentDivider from './OrnamentDivider.jsx';
 
-function Section({ eyebrow, title, children, accent = '#d4a574' }) {
+function Section({ eyebrow, title, children }) {
   return (
-    <section
-      className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 max-w-4xl mx-auto reveal"
-    >
+    <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 max-w-4xl mx-auto">
       <div className="text-center mb-8">
         <OrnamentDivider className="opacity-60 mb-5" />
         <div className="eyebrow mb-3">— {eyebrow} —</div>

@@ -157,7 +157,7 @@ export default function AllomaDetailPage() {
           <div className="eyebrow mb-3">— HAYOT YO'LI —</div>
           <h2 className="section-title">Tarjimai Hol</h2>
         </div>
-        <Typewriter paragraphs={alloma.fullBio} speed={14} startDelay={300} />
+        <Typewriter paragraphs={alloma.fullBio} startDelay={200} />
       </section>
 
       {/* Timeline */}

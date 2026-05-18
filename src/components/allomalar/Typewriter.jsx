@@ -1,52 +1,90 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function Typewriter({ paragraphs, speed = 18, startDelay = 0, onDone }) {
-  const [revealed, setRevealed] = useState([]);
-  const [paragraphIndex, setParagraphIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const startedRef = useRef(false);
+/**
+ * Reveals biography paragraphs one at a time with a typewriter effect.
+ *
+ * Each paragraph types character-by-character at `charSpeed` ms/char, then
+ * pauses `paragraphPause` ms before the next paragraph starts typing.
+ *
+ * Props:
+ *   - paragraphs:     string[]
+ *   - charSpeed:      ms per character (default 5)
+ *   - paragraphPause: ms between finishing one paragraph and starting next (default 150)
+ *   - startDelay:     ms before the very first character appears (default 0)
+ *   - onDone:         fired once the last character is typed
+ */
+export default function Typewriter({
+  paragraphs,
+  charSpeed = 1,
+  paragraphPause = 0,
+  startDelay = 0,
+  onDone,
+}) {
+  // Index of paragraph currently being typed (or completed).
+  const [pIndex, setPIndex] = useState(0);
+  // Char position within the currently-typing paragraph.
+  const [cIndex, setCIndex] = useState(0);
+  // 'pre' (waiting for startDelay), 'typing', 'paused' (between paragraphs), 'done'
+  const [phase, setPhase] = useState('pre');
 
+  // Reset on paragraphs change (e.g., navigating between allomas)
   useEffect(() => {
-    setRevealed([]);
-    setParagraphIndex(0);
-    setCharIndex(0);
-    startedRef.current = false;
+    setPIndex(0);
+    setCIndex(0);
+    setPhase('pre');
   }, [paragraphs]);
 
   useEffect(() => {
-    if (!startedRef.current) {
-      startedRef.current = true;
-      const t = setTimeout(() => setCharIndex(1), startDelay);
-      return () => clearTimeout(t);
-    }
-    if (paragraphIndex >= paragraphs.length) {
-      onDone?.();
-      return;
-    }
-    const current = paragraphs[paragraphIndex] || '';
-    if (charIndex > current.length) {
-      const t = setTimeout(() => {
-        setRevealed((r) => [...r, current]);
-        setParagraphIndex((p) => p + 1);
-        setCharIndex(0);
-      }, 250);
-      return () => clearTimeout(t);
-    }
-    const t = setTimeout(() => setCharIndex((c) => c + 1), speed);
-    return () => clearTimeout(t);
-  }, [charIndex, paragraphIndex, paragraphs, speed, startDelay, onDone]);
+    if (!paragraphs?.length) return undefined;
 
-  const current = paragraphs[paragraphIndex] || '';
+    if (phase === 'pre') {
+      const t = setTimeout(() => setPhase('typing'), startDelay);
+      return () => clearTimeout(t);
+    }
+
+    if (phase === 'done') {
+      onDone?.();
+      return undefined;
+    }
+
+    if (phase === 'paused') {
+      const t = setTimeout(() => {
+        const nextIdx = pIndex + 1;
+        if (nextIdx >= paragraphs.length) {
+          setPhase('done');
+        } else {
+          setPIndex(nextIdx);
+          setCIndex(0);
+          setPhase('typing');
+        }
+      }, paragraphPause);
+      return () => clearTimeout(t);
+    }
+
+    // phase === 'typing'
+    const current = paragraphs[pIndex] || '';
+    if (cIndex >= current.length) {
+      setPhase('paused');
+      return undefined;
+    }
+    const t = setTimeout(() => setCIndex((c) => c + 1), charSpeed);
+    return () => clearTimeout(t);
+  }, [phase, pIndex, cIndex, paragraphs, charSpeed, paragraphPause, startDelay, onDone]);
+
+  const current = paragraphs[pIndex] || '';
+  const stillTyping = phase !== 'done';
 
   return (
     <div className="space-y-5 text-cream-soft text-lg leading-relaxed">
-      {revealed.map((p, i) => (
+      {paragraphs.slice(0, pIndex).map((p, i) => (
         <p key={i}>{p}</p>
       ))}
-      {paragraphIndex < paragraphs.length && (
+      {pIndex < paragraphs.length && (
         <p>
-          {current.slice(0, Math.max(0, charIndex - 1))}
-          <span className="inline-block w-[2px] h-5 ml-0.5 bg-gold align-middle animate-pulse" />
+          {current.slice(0, cIndex)}
+          {stillTyping && (
+            <span className="inline-block w-[2px] h-5 ml-0.5 bg-gold align-middle animate-pulse" />
+          )}
         </p>
       )}
     </div>

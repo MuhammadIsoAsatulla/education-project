@@ -16,12 +16,11 @@ const PdfPage = forwardRef(function PdfPage(
   const [status, setStatus] = useState('idle'); // idle | loading | ready | error
 
   useEffect(() => {
-    if (!visible || !pdfDoc || !pageNum) return;
-    let cancelled = false;
+    if (!visible || !pdfDoc || !pageNum) return undefined;
     setStatus('loading');
-    renderPage(pdfDoc, pageNum)
+    const handle = renderPage(pdfDoc, pageNum);
+    handle.promise
       .then((canvas) => {
-        if (cancelled) return;
         const host = hostRef.current;
         if (!host) return;
         // Replace any previous canvas
@@ -29,11 +28,14 @@ const PdfPage = forwardRef(function PdfPage(
         host.appendChild(canvas);
         setStatus('ready');
       })
-      .catch(() => {
-        if (!cancelled) setStatus('error');
+      .catch((err) => {
+        // Soft-cancelled renders throw AbortError — those are expected on
+        // unmount / visibility-flip and shouldn't show an error state.
+        if (err?.name === 'AbortError') return;
+        setStatus('error');
       });
     return () => {
-      cancelled = true;
+      handle.cancel();
     };
   }, [pdfDoc, pageNum, visible]);
 
