@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import SmartImage from '../common/SmartImage.jsx';
 import FavoriteButton from '../common/FavoriteButton.jsx';
 
-export default function AllomaCard({ alloma, index = 0 }) {
+export default function AllomaCard({ alloma, index = 0, basePath = '/allomalar', section = 'allomalar' }) {
   return (
     <Link
-      to={`/allomalar/${alloma.slug}`}
-      className="group relative block reveal"
+      to={`${basePath}/${alloma.slug}`}
+      className="group relative block reveal w-full max-w-[460px] mx-auto"
       data-reveal-delay={index * 100}
     >
-      <article className="relative h-[520px] overflow-hidden border border-gold/20 hover:border-gold/80 rounded-sm transition-all duration-700 bg-bg-mid">
+      <article className="relative aspect-[3/4] overflow-hidden border border-gold/20 hover:border-gold/80 rounded-sm transition-all duration-700 bg-bg-mid">
         {/* Image fills the card, anchored at top so faces stay visible */}
         <SmartImage
           src={alloma.image}
@@ -40,7 +40,7 @@ export default function AllomaCard({ alloma, index = 0 }) {
 
         {/* Favorite button top-right */}
         <div className="absolute top-5 right-5 z-10">
-          <FavoriteButton section="allomalar" itemId={alloma.id} />
+          <FavoriteButton section={section} itemId={alloma.id} />
         </div>
 
         {/* Text block at the bottom — never overlaps the upper portrait */}

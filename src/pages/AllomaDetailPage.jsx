@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import allomalar from '../data/allomalar.json';
+import defaultSource from '../data/allomalar.json';
 import viktorinalar from '../data/viktorinalar.json';
 import Typewriter from '../components/allomalar/Typewriter.jsx';
 import Timeline from '../components/allomalar/Timeline.jsx';
@@ -17,16 +17,30 @@ import {
 import useTextToSpeech from '../hooks/useTextToSpeech.js';
 import useProgress from '../hooks/useProgress.js';
 
-export default function AllomaDetailPage() {
+/**
+ * Generic detail page for "person" sections. Used by both /allomalar/:slug
+ * (classical scholars) and /jadidlar/:slug (early-20th-century reformers).
+ * The two sections share the exact same UI and data schema — only the data
+ * source, URL prefix, and section labels differ, so we parameterise those.
+ */
+export default function AllomaDetailPage({
+  source = defaultSource,
+  section = 'allomalar',
+  basePath = '/allomalar',
+  notFoundTitle = 'Alloma topilmadi',
+  listLabel = "Allomalar ro'yxati",
+  siblingsLabel = '— BOSHQA ALLOMALAR —',
+  achievement = 'alloma-do-st',
+}) {
   const { slug } = useParams();
-  const alloma = useMemo(() => allomalar.find((a) => a.slug === slug), [slug]);
+  const alloma = useMemo(() => source.find((a) => a.slug === slug), [slug, source]);
   const [parallaxY, setParallaxY] = useState(0);
   const [quizOpen, setQuizOpen] = useState(false);
   const { speak, stop, speaking, available, voiceLabel } = useTextToSpeech();
   const { state: progressState, visit, submitQuiz } = useProgress();
   const quiz = useMemo(
-    () => viktorinalar.find((v) => v.ownerType === 'allomalar' && v.ownerId === alloma?.slug),
-    [alloma?.slug],
+    () => viktorinalar.find((v) => v.ownerType === section && v.ownerId === alloma?.slug),
+    [alloma?.slug, section],
   );
   const previousQuizEntry = alloma ? progressState.quizScores[alloma.slug] : undefined;
   const previousQuizScore =
@@ -34,8 +48,8 @@ export default function AllomaDetailPage() {
 
   useEffect(() => {
     if (!alloma) return;
-    visit('allomalar', alloma.id, { points: 10, achievement: 'alloma-do-st' });
-  }, [alloma, visit]);
+    visit(section, alloma.id, { points: 10, achievement });
+  }, [alloma, visit, section, achievement]);
 
   useEffect(() => {
     const onScroll = () => setParallaxY(window.scrollY * 0.15);
@@ -46,8 +60,8 @@ export default function AllomaDetailPage() {
   if (!alloma) {
     return (
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-        <h1 className="font-serif text-cream text-4xl mb-4">Alloma topilmadi</h1>
-        <Link to="/allomalar" className="gold-cta"><span>Allomalar ro'yxati</span></Link>
+        <h1 className="font-serif text-cream text-4xl mb-4">{notFoundTitle}</h1>
+        <Link to={basePath} className="gold-cta"><span>{listLabel}</span></Link>
       </section>
     );
   }
@@ -66,7 +80,7 @@ export default function AllomaDetailPage() {
         <div className="absolute inset-0 bg-girih opacity-60 pointer-events-none" />
         <div className="relative max-w-[1300px] mx-auto grid lg:grid-cols-[1fr_1.4fr] gap-8 lg:gap-12 items-center">
           {/* Portrait */}
-          <div className="relative aspect-[3/4] w-full max-w-[280px] sm:max-w-[360px] lg:max-w-[420px] mx-auto lg:mx-0 rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+          <div className="relative aspect-[3/4] w-full max-w-[75vw] sm:max-w-[360px] lg:max-w-[420px] mx-auto lg:mx-0 rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
             <div style={{ transform: `translateY(${parallaxY}px)` }} className="absolute inset-0">
               <SmartImage
                 src={alloma.image}
@@ -84,15 +98,15 @@ export default function AllomaDetailPage() {
           </div>
 
           <div>
-            <Link to="/allomalar" className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6">
+            <Link to={basePath} className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6">
               <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
                 <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
               </svg>
-              Allomalar ro'yxati
+              {listLabel}
             </Link>
             <div className="flex items-center justify-between gap-4 mb-3">
               <div className="eyebrow">— {alloma.field} —</div>
-              <FavoriteButton section="allomalar" itemId={alloma.id} size="lg" />
+              <FavoriteButton section={section} itemId={alloma.id} size="lg" />
             </div>
             <h1 className="font-serif text-gold-gradient leading-[0.95] mb-3"
                 style={{ fontSize: 'clamp(48px, 7vw, 96px)', letterSpacing: '2px' }}>
@@ -259,22 +273,22 @@ export default function AllomaDetailPage() {
 
       {/* NEW: Comments preview */}
       <Comments
-        contentType="allomalar"
+        contentType={section}
         contentId={alloma.id}
         contentTitle={alloma.name}
       />
 
-      {/* Other allomas navigation */}
+      {/* Siblings navigation */}
       <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 border-t border-gold/10">
         <div className="max-w-[1200px] mx-auto">
-          <div className="eyebrow mb-6 text-center">— BOSHQA ALLOMALAR —</div>
+          <div className="eyebrow mb-6 text-center">{siblingsLabel}</div>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4">
-            {allomalar
+            {source
               .filter((a) => a.slug !== alloma.slug)
               .map((a) => (
                 <Link
                   key={a.id}
-                  to={`/allomalar/${a.slug}`}
+                  to={`${basePath}/${a.slug}`}
                   className="group p-3 border border-gold/20 hover:border-gold/80 rounded-sm transition-all overflow-hidden"
                 >
                   <div className="aspect-[3/4] mb-3 rounded-sm overflow-hidden">

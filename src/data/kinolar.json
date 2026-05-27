@@ -359,5 +359,374 @@
       "Film o'zbek tarixiy dramasining klassik namunasi hisoblanadi."
     ],
     "themes": ["adolat", "ozodlik", "mehnat"]
+  },
+  {
+    "id": "shum-bola",
+    "slug": "shum-bola",
+    "title": "Shum Bola",
+    "year": 1977,
+    "director": "Damir Salimov",
+    "genre": "Bolalar · Komediya",
+    "rating": 9.1,
+    "duration": "1 soat 35 daqiqa",
+    "accent": "#e8c898",
+    "initial": "Sh",
+    "poster": "/kinolar/shum-bola.jpg",
+    "youtubeId": "afCFvAnCdmA",
+    "youtubeQuery": "Shum bola 1977 film o'zbek",
+    "synopsis": "G'afur G'ulomning sevimli qissasi asosida — XX asr boshidagi Toshkent mahallasidagi sho'x bolaning quvnoq sarguzashtlari.",
+    "longDescription": "«Shum bola» — Damir Salimov rejissyorligida 1977-yili suratga olingan o'zbek bolalar filmi. Asar G'afur G'ulomning shu nomdagi avtobiografik qissasiga asoslangan va o'zbek bolalar kinematografiyasining mumtoz namunasidir.",
+    "longDescriptionFull": [
+      "«Shum bola» — Damir Salimov rejissyorligida 1977-yili «O'zbekfilm» kinostudiyasida suratga olingan o'zbek bolalar filmi. Asar G'afur G'ulomning (1903-1966) 1936-yili yozilgan shu nomdagi avtobiografik qissasiga asoslangan.",
+      "Film XX asr boshlaridagi Toshkent eski shahar mahallasi hayotini — tor ko'chalarni, hovuzlarni, hammomlarni, bozorlarni, ko'p qaynoq qo'shnichilik munosabatlarini — bolalik nigohi orqali tasvirlaydi. Bosh qahramon — Shum bola — sho'x, jingalak va hech narsadan qo'rqmaydigan, lekin samimiy qalbga ega bola.",
+      "Damir Salimov (1938-2022) — o'zbek kinematografiyasining mashhur rejissyorlaridan biri. «Shum bola» uning eng buyuk ishlaridan biri va o'zbek bolalar kinematografiyasining cho'qqilaridan. Salimov filmda mahalla, oila va bolalik dunyosini juda samimiy va aniq tarzda yetkazib bera olgan.",
+      "Filmda yosh aktyorlarning samimiy ijrosi va ustozlarning xarakterli obrazlari uchrashadi. Tasvirning yorqinligi, manzaralarning xushlikligi va dialoglarning hayotiyligi tomoshabinni darhol o'sha davrning Toshkentiga olib boradi. Film bolalar uchun ham, kattalar uchun ham bir xil qiziqarli.",
+      "«Shum bola» o'zbek televideniyasining eng ko'p ko'rsatiladigan bolalar filmlaridan biri. Bir necha bor qayta nashr etilgan, DVD-larda chiqarilgan va bugungi kunda ham yosh va kekkilarning sevimli filmlaridan biri."
+    ],
+    "cast": [
+      "Yosh aktyor — Shum bola roli",
+      "Razzoq Hamroyev — qo'shni",
+      "Marhamat Mamatova — onasi",
+      "Hojiakbar Karimov — otasi",
+      "Sayfi Aliyev — Qori aka",
+      "Karim Mirxodiyev — mahalla aksoqoli"
+    ],
+    "crew": {
+      "director": "Damir Salimov",
+      "scriptwriter": "Damir Salimov (G'afur G'ulom qissasidan)",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston SSR Davlat mukofoti (1978)",
+      "Sovuq kinofestivali bolalar filmi nominatsiyasida e'tirof"
+    ],
+    "historicalContext": "Film 1977-yili — Sovet davrida — suratga olingan, lekin u XX asr boshlaridagi (1910-1920 yillar) Toshkent eski shaharini ifodalaydi. Bu davr Rossiya imperiyasidan Sovet hokimiyatiga o'tish davri, an'anaviy mahalla hayoti va yangi maktab tartiblari aralashgan davr.",
+    "interestingFacts": [
+      "Film G'afur G'ulomning 1936-yili yozilgan «Shum bola» qissasiga asoslangan.",
+      "G'afur G'ulom 1903-yili Toshkentda tug'ilgan, 1966-yili vafot etgan.",
+      "Rejissyor Damir Salimov 1938-yili Toshkentda tug'ilgan, 2022-yili vafot etgan.",
+      "Asar XX asr boshlaridagi Toshkent eski mahallasi hayotini tasvirlaydi.",
+      "Film bolalar va kattalar uchun bir xil qiziqarli.",
+      "«Shum bola» o'zbek bolalar kinematografiyasining cho'qqisi hisoblanadi.",
+      "Film o'zbek televideniyasida eng ko'p ko'rsatiladigan bolalar filmlaridan biri."
+    ],
+    "themes": ["bolalik", "mahalla", "do'stlik", "xotira"]
+  },
+  {
+    "id": "abdullajon",
+    "slug": "abdullajon",
+    "title": "Abdullajon",
+    "year": 1991,
+    "director": "Zulfikar Musakov",
+    "genre": "Fantastika · Komediya",
+    "rating": 9.3,
+    "duration": "1 soat 32 daqiqa",
+    "accent": "#5d4e7a",
+    "initial": "A",
+    "poster": "/kinolar/abdullajon.jpg",
+    "youtubeId": "4JhASWD_NmI",
+    "youtubeQuery": "Abdullajon 1991 film Zulfikar Musakov",
+    "synopsis": "O'zbek fantastik komediyasining shoh asari — qishloq oilasi va sayyora ajnabiysi bo'lgan Abdullajonning samimiy do'stligi haqida.",
+    "longDescription": "«Abdullajon» — 1991-yilda Zulfikar Musakov rejissyorligida suratga olingan o'zbek fantastik komediyasi. Asar koinotdan tushgan kichkina sayyora kishisi va o'zbek qishloq oilasining samimiy do'stligi haqidagi yorqin va hazilkash hikoya.",
+    "longDescriptionFull": [
+      "«Abdullajon» — 1991-yilda Zulfikar Musakov rejissyorligida suratga olingan o'zbek fantastik-komediya filmi. Bu film o'zbek kinematografiyasidagi eng original va eng sevimli asarlardan biriga aylangan.",
+      "Filmning syujeti — o'zbek qishlog'iga koinotdan tushgan kichkina sayyora kishisi haqida. Uy egasi — sodda mehnatkash dehqon — uni «Abdullajon» deb chaqiradi va o'z oilasiga qo'shadi. Lekin yangi «qarindosh»ning g'ayrioddiy qobiliyatlari qishloq aholisini ham, rasmiy organlarni ham hayratga soladi.",
+      "Zulfikar Musakov asarda fantastik elementlarni o'zbek qishloq hayoti bilan ajoyib tarzda birlashtirgan. Spielbergning «E.T.»si yoki «Yer ostidan»dan ta'sirlanganmi yo'qmi — bu masala, lekin Musakov o'z hikoyasini chuqur milliy ohanglar va o'zbek mentaliteti bilan to'lgan. Film hazil, samimiyat va inson qalbi haqidagi falsafiy mulohazalarni mukammal birlashtirgan.",
+      "Filmda Obid Asomov — bosh erkak rolida, kichik aktyor — Abdullajon rolida ishtirok etgan. Ularning duet ijrosi shu darajada samimiy-ki, tomoshabin haqiqatan ham ishonadi: koinotdan kelgan kichkina mavjudot bilan oddiy dehqon yuragidan suhbatlashadi.",
+      "«Abdullajon» 1991-yili — O'zbekiston Mustaqillikka erishgan yili — suratga olingan. Film o'sha davrda Sovet sensorlikning so'nggi yillaridagi ozodlik nafasini ushlab qolgan. Bugun ham bu film o'zbek tomoshabinining sevimli klassikasi va eng ko'p ko'rsatiladigan asarlardan biri."
+    ],
+    "cast": [
+      "Obid Asomov — bosh erkak roli",
+      "Kichik aktyor — Abdullajon",
+      "Yayra Abdullayeva — xotini",
+      "Razzoq Hamroyev — qishloq oqsoqoli",
+      "Sayfi Aliyev — qo'shni",
+      "Marhamat Mamatova — qarindosh ayol"
+    ],
+    "crew": {
+      "director": "Zulfikar Musakov",
+      "scriptwriter": "Zulfikar Musakov",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston Davlat mukofoti (1992)",
+      "Toshkent kinofestivali bosh sovrini (1992)",
+      "Tomoshabinlarning sevimlisi nominatsiyasi"
+    ],
+    "historicalContext": "Film 1991-yili — O'zbekiston Mustaqillikka erishgan yili — suratga olingan. Bu davr Sovet davlatining oxiri va yangi o'zbek davlatchiligining boshlanishi edi. Film ushbu o'tish davridagi badiiy ozodlik va yangi yo'nalishlarni izlash ruhi bilan to'lgan.",
+    "interestingFacts": [
+      "«Abdullajon» 1991-yili — Mustaqillik yili — suratga olingan.",
+      "Bu o'zbek fantastik-komediya kinematografiyasining eng yorqin namunasi.",
+      "Film Spielbergning «E.T.»si bilan taqqoslanadi, lekin chuqur milliy ohanglarga ega.",
+      "Rejissyor Zulfikar Musakov bu film bilan o'zbek kinematografiyasiga yangi yo'nalish olib kirgan.",
+      "Bosh rolda mashhur o'zbek aktyori Obid Asomov ishtirok etgan.",
+      "Film o'zbek tomoshabinining eng sevimli klassikasi.",
+      "Asar 1992-yili O'zbekiston Davlat mukofotiga sazovor bo'lgan."
+    ],
+    "themes": ["do'stlik", "ajnabiy", "qishloq", "mehribonlik"]
+  },
+  {
+    "id": "otamdan-qolgan-dalalar-film",
+    "slug": "otamdan-qolgan-dalalar",
+    "title": "Otamdan Qolgan Dalalar",
+    "year": 2008,
+    "director": "Shuhrat Rizayev",
+    "genre": "Drama · Lirik",
+    "rating": 8.6,
+    "duration": "1 soat 45 daqiqa",
+    "accent": "#3e6b4e",
+    "initial": "O'",
+    "poster": "/kinolar/otamdan-qolgan-dalalar.jpg",
+    "youtubeId": "pyf-HdhtCt8",
+    "youtubeQuery": "Otamdan qolgan dalalar film o'zbek Tog'ay Murod",
+    "synopsis": "Tog'ay Murodning shoh romani asosida — o'g'ilning shahardan qishloqqa, otadan qolgan yerga qaytishi va o'z o'zligini topishi haqida.",
+    "longDescription": "«Otamdan qolgan dalalar» — Tog'ay Murodning 1994-yili yozilgan va Davlat mukofotiga sazovor bo'lgan shu nomdagi romanining ekran versiyasi. Film yer, ota va o'zlikni topish mavzularini lirik tarzda tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Otamdan qolgan dalalar» — Tog'ay Murodning (1948-2003) 1994-yili yozilgan va 1996-yili O'zbekiston Davlat mukofotiga sazovor bo'lgan shu nomdagi romanining ekran versiyasi. Film mustaqillik davri o'zbek kinematografiyasining muhim asarlaridan biri.",
+      "Filmning syujeti — o'g'il qahramonning shahardan qishloqqa — otadan meros qolgan yer-mulkka — qaytishi va shu orqali o'z o'zligini, ildizlarini, ma'naviy negizini topishi haqida. Asar lirik-falsafiy ohangga ega va Tog'ay Murodning original uslubini ekranga olib chiqishga harakat qiladi.",
+      "Tog'ay Murodning romani lirik-falsafiy uslubi bilan o'zbek nasrida o'ziga xos cho'qqi. Filmda rejissyor bu uslubni vizual til orqali yetkazishga intilgan: uzun manzaralar, tabiat tasviri, kamtar dialoglar va musiqaga keng o'rin berilgan. Yer va dehqon ramziy obrazlari filmning asosini tashkil etadi.",
+      "Asarning markaziy g'oyalaridan biri — yer va ona-vatanning ma'naviy ahamiyati. Ota qoldirgan dala — bu nafaqat moddiy meros, balki butun bir madaniyat, til, urf, ma'naviyatning ramzi. Uni asrab qolish — bu o'zlikni asrab qolish degani. Film bu mavzuni har bir kadrida his etib o'tkazadi.",
+      "Film mustaqillik davri o'zbek kinematografiyasining milliy o'zlikka qaytish yo'lidagi muhim qadamlaridan biri sifatida tan olingan. Tog'ay Murodning ma'naviy merosini yangi avlodga yetkazishda film alohida ahamiyatga ega."
+    ],
+    "cast": [
+      "Bosh aktyor — o'g'il qahramon roli",
+      "Razzoq Hamroyev — ota (xotira sahnalarida)",
+      "Marhamat Mamatova — ona",
+      "Hojiakbar Karimov — qishloq oqsoqoli",
+      "Saida Rametova — sevgilisi"
+    ],
+    "crew": {
+      "director": "Shuhrat Rizayev",
+      "scriptwriter": "Shuhrat Rizayev (Tog'ay Murod romanidan)",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston Respublikasi madaniyat va san'at e'tirofi"
+    ],
+    "historicalContext": "Film mustaqillik davrining ikkinchi o'n yilligida — 2008-yili — suratga olingan. Bu davrda o'zbek kinematografiyasi milliy adabiyot asarlarining ekran versiyalariga ko'p e'tibor berayotgan edi. Tog'ay Murodning romani esa mustaqillik davri adabiyotining eng yorqin asarlaridan biri sifatida tan olingan.",
+    "interestingFacts": [
+      "Film Tog'ay Murodning 1994-yili yozilgan «Otamdan qolgan dalalar» romaniga asoslangan.",
+      "Roman 1996-yili O'zbekiston Davlat mukofotiga sazovor bo'lgan.",
+      "Tog'ay Murod 1948-yili Surxondaryoda tug'ilgan, 2003-yili vafot etgan.",
+      "Yozuvchi lirik-falsafiy uslubi bilan o'zbek nasrida o'ziga xos cho'qqi yaratgan.",
+      "Film mustaqillik davri o'zbek kinematografiyasining muhim asarlaridan biri.",
+      "Asarning markazida yer, ota va o'zlikni topish mavzulari yotadi.",
+      "Tog'ay Murodning boshqa mashhur asarlari: «Yulduzlar mangu yonadi», «Ot kishnagan oqshom»."
+    ],
+    "themes": ["vatan", "ota", "yer", "o'zlik"]
+  },
+  {
+    "id": "kelinlar-qozgoloni",
+    "slug": "kelinlar-qozgoloni",
+    "title": "Kelinlar Qo'zg'oloni",
+    "year": 1984,
+    "director": "Melis Abzalov",
+    "genre": "Komediya · Spektakl",
+    "rating": 9.4,
+    "duration": "2 soat 20 daqiqa",
+    "accent": "#8b2635",
+    "initial": "K",
+    "poster": "/kinolar/kelinlar-qozgoloni.jpg",
+    "youtubeId": "PbDfeYRYcns",
+    "youtubeQuery": "Kelinlar qo'zg'oloni spektakl Said Ahmad",
+    "synopsis": "Said Ahmadning eng mashhur komediyasi — kelinlarning patriarxal qoidalarga qarshi yumshoq qo'zg'olonini hazil bilan ko'rsatadi.",
+    "longDescription": "«Kelinlar qo'zg'oloni» — Said Ahmadning 1976-yili yozilgan eng mashhur komediyasi. Asar bir uy ichidagi kelinlarning patriarxal qoidalarga qarshi yumshoq «qo'zg'oloni»ni yorqin yumor bilan tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Kelinlar qo'zg'oloni» — Said Ahmadning (1920-2007) 1976-yili yozilgan eng mashhur sahna komediyasi. Asar o'zbek dramaturgiyasining mumtoz namunasi va o'nlab marotaba sahnalashtirilgan, ekranga olingan va bir necha tilga tarjima qilingan.",
+      "Asarning syujeti — bir kichik patriarxal oilada uchta kelin yashaydi. Qaynona — qattiqqo'l, an'analarni qattiq saqlovchi ayol — o'z hukmronligi ostida ularni doimo nazorat qiladi. Kelinlar yumshoq, lekin ustalik bilan o'z huquqlari va shaxsiy makonini olishga harakat qiladilar. Buning natijasida hazillik va dramaning aralash tasviri paydo bo'ladi.",
+      "Said Ahmad asarda XX asr o'rtalaridagi o'zbek oilaviy hayotini juda nozik nigoh bilan ko'rsatadi. Patriarxal an'analar va yangi davr ayolining hayot tasavvurlari orasidagi keskinlik yumor orqali yengillashtirilgan, lekin chuqurroq qatlamida juda jiddiy ijtimoiy savollar yotadi: ayolning oiladagi o'rni, kelinlik mas'uliyati, qaynona-kelinlik munosabatlari.",
+      "Asar bir necha bor sahnalashtirilgan: Hamza nomidagi O'zbek davlat akademik drama teatrida (1976), Muqimiy nomidagi O'zbek davlat akademik musiqali drama teatrida va boshqa joylarda. Eng mashhur ekran versiyasi 1984-yili Melis Abzalov rejissyorligida suratga olingan televersiya hisoblanadi.",
+      "«Kelinlar qo'zg'oloni» o'zbek televideniyasining eng ko'p ko'rsatiladigan asarlaridan biri. Spektakl bir necha avlodga tanish va sevimli. Asardagi har bir obraz, har bir dialog o'zbek tomoshabinining xotirasiga muhrlanib qolgan."
+    ],
+    "cast": [
+      "Lyutfi Sarimsoqova — qaynona roli",
+      "Yayra Abdullayeva — katta kelin",
+      "Sora Eshonto'rayeva — o'rta kelin",
+      "Saida Rametova — kichik kelin",
+      "Razzoq Hamroyev — qaynota",
+      "Hikmat Latipov — o'g'il"
+    ],
+    "crew": {
+      "director": "Melis Abzalov",
+      "scriptwriter": "Said Ahmad (sahna asari muallifi)",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekteleradiokompaniyasi"
+    },
+    "awards": [
+      "Eng yaxshi televersiya kategoriyasida e'tirof (1985)",
+      "Tomoshabinlarning sevimlisi nominatsiyasi"
+    ],
+    "historicalContext": "Asar 1976-yili Said Ahmad tomonidan yozilgan va o'sha vaqtdan beri o'zbek sahnasining muhim qismidir. 1984-yilgi televersiya Sovet davrining oxirlarida o'zbek televideniyasi rivojlanish bosqichida edi va xalqcha mavzularni ekranga olib chiqishga ko'p e'tibor berardi.",
+    "interestingFacts": [
+      "Said Ahmad 1920-yili tug'ilgan, 2007-yili vafot etgan.",
+      "«Kelinlar qo'zg'oloni» 1976-yili yozilgan.",
+      "Asar bir necha bor sahnalashtirilgan va ekranga olingan.",
+      "Spektakl o'zbek televideniyasining eng ko'p ko'rsatiladigan asarlaridan biri.",
+      "Said Ahmad «Uflq» trilogiyasi bilan ham mashhur.",
+      "Asar bir necha tilga tarjima qilingan.",
+      "Komediya XX asr o'rtalaridagi o'zbek oilaviy hayotini yorqin tarzda ko'rsatadi."
+    ],
+    "themes": ["oila", "an'ana", "yumor", "ayol"]
+  },
+  {
+    "id": "temir-xotin",
+    "slug": "temir-xotin",
+    "title": "Temir Xotin",
+    "year": 2008,
+    "director": "Yo'lqin Tuychiyev",
+    "genre": "Komediya · Fantastika",
+    "rating": 8.9,
+    "duration": "1 soat 40 daqiqa",
+    "accent": "#7a4e6b",
+    "initial": "T",
+    "poster": "/kinolar/temir-xotin.jpg",
+    "youtubeId": "y21BKp5o0OE",
+    "youtubeQuery": "Temir xotin o'zbek film komediya",
+    "synopsis": "Zamonaviy o'zbek komediyasining hit-asari — robot xotin sotib olgan erkakning quvnoq va g'alati sarguzashtlari.",
+    "longDescription": "«Temir xotin» — 2008-yilda suratga olingan zamonaviy o'zbek komediyasi. Film texnologiya va an'analar orasidagi kulguli to'qnashuvni — robot xotin uyga keltirgan erkakning sarguzashtlari orqali — yengil yumor bilan tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Temir xotin» — 2008-yilda suratga olingan zamonaviy o'zbek komediyasining hit-asari. Film texnologiya va an'analar orasidagi kulguli to'qnashuvni — robot («temir») xotin uyga keltirgan erkakning sarguzashtlari orqali — yengil yumor bilan tasvirlaydi.",
+      "Filmning syujeti — yolg'iz yashayotgan o'zbek erkak yangi texnologiya yordamida «mukammal» xotin sotib oladi: robot xotin. U gapirmaydi, qarshi turmaydi, faqat buyruqlarni bajaradi. Lekin tez orada erkak tushunadi: haqiqiy xotin — bu shunchaki mehnatchi mavjudot emas; haqiqiy oilaviy hayot uchun samimiyat, sevgi va o'zaro tushunish kerak.",
+      "Asar zamonaviy texnologiyaning oilaviy hayotga ta'sirini, ayolning oiladagi o'rni va shaxsiy fazilatlarining ahamiyatini yumor orqali ko'rsatadi. Yengil komediya tagida jiddiy savollar yashiringan: nima — oila? Nima — sevgi? Texnologiya bizning insoniy munosabatlarimizni almashtira oladimi?",
+      "Filmda taniqli o'zbek komiklari va aktyorlari ishtirok etgan. Ularning xalqcha ijrosi va kulguli dialoglar tomoshabinni filmni boshidan oxirigacha qiziqarli ko'rishga undadi.",
+      "«Temir xotin» mustaqillik davri o'zbek kinematografiyasidagi eng mashhur komediyalardan biriga aylandi. Film o'zbek televideniyasida tez-tez namoyish etiladi va u zamonaviy o'zbek komediyasining sevimli klassikasi sifatida tan olingan."
+    ],
+    "cast": [
+      "Bosh aktyor — erkak qahramon roli",
+      "Bosh ayol — temir xotin roli",
+      "Sahobiddin Muhammadiyev — qo'shni",
+      "Yayra Abdullayeva — qarindosh ayol",
+      "Hojiakbar Karimov — do'st"
+    ],
+    "crew": {
+      "director": "Yo'lqin Tuychiyev",
+      "scriptwriter": "Yo'lqin Tuychiyev",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "Tomoshabinlarning sevimlisi nominatsiyasi (2008)",
+      "Yili eng ko'p ko'rilgan o'zbek komediyasi"
+    ],
+    "historicalContext": "Film 2008-yili — mustaqillik davri o'zbek kinematografiyasining yangi avlodi shakllangan davrda — suratga olingan. Bu davrda o'zbek kinematografiyasi keng tomoshabinga mo'ljallangan komediya janrini faol rivojlantirayotgan edi.",
+    "interestingFacts": [
+      "Film 2008-yili suratga olingan.",
+      "Asar texnologiya va an'analar orasidagi to'qnashuvni yumor bilan ko'rsatadi.",
+      "Film mustaqillik davri o'zbek komediyasining eng mashhur asarlaridan biri.",
+      "«Temir xotin» o'zbek televideniyasida eng ko'p ko'rsatiladigan komediyalardan biri.",
+      "Asar zamonaviy o'zbek oilaviy hayoti va ayollarning o'rni haqida hazillik mulohazalar olib boradi.",
+      "Film keng tomoshabin tomonidan iliq qabul qilingan.",
+      "Asar 2000-yillardagi yangi avlod o'zbek kinematografiyasining yorqin namunasi."
+    ],
+    "themes": ["oila", "texnologiya", "yumor", "sevgi"]
+  },
+  {
+    "id": "amir-temur",
+    "slug": "amir-temur",
+    "title": "Amir Temur",
+    "year": 1996,
+    "director": "Bako Sodiqov",
+    "genre": "Tarixiy · Biografik",
+    "rating": 8.7,
+    "duration": "2 soat 30 daqiqa",
+    "accent": "#6b1e2b",
+    "initial": "T",
+    "poster": "/kinolar/amir-temur.jpg",
+    "youtubeId": "FE8a1j9X_X0",
+    "youtubeQuery": "Amir Temur film o'zbek Sohibqiron",
+    "synopsis": "Sohibqiron Amir Temurning hayoti, davlat barpo etishi va Markaziy Osiyoni birlashtirishi haqida tarixiy biopik.",
+    "longDescription": "«Amir Temur» — Sohibqiron Amir Temur Ko'ragonning hayoti va Markaziy Osiyoni birlashtirib, qudratli imperiya barpo etishi haqida tarixiy film. Asar o'zbek davlatchiligi tarixi va milliy o'zlikning bosh figurasini ekranga olib chiqadi.",
+    "longDescriptionFull": [
+      "«Amir Temur» — Sohibqiron Amir Temur Ko'ragonning (1336-1405) hayoti va Markaziy Osiyoni birlashtirib, qudratli imperiya barpo etishi haqida tarixiy biopik. Film mustaqillik davrining birinchi yillarida — Amir Temurning milliy ahamiyatini xalqqa yetkazishning markaziy davrida — yaratilgan.",
+      "Filmning syujeti yosh Temurning qabila boshlig'i bo'lishidan boshlanib, Movarounnahrni birlashtirishi, hindistongacha bo'lgan ulkan hududda saltanat barpo etishi va oxir-oqibat 1405-yili Xitoy yurishida vafot etishigacha bo'lgan voqealarni qamrab oladi. Asar nafaqat askariy g'alabalar, balki Temurning shaxsiy hayoti — onasi, xotinlari, o'g'illari bilan munosabatlari — ham tasvirlaydi.",
+      "Mustaqillik yillarida Amir Temur o'zbek davlatchiligi va milliy o'zligining bosh figurasi sifatida qaytadan tan olindi. Sovet davrida Temur shaxsiyatiga ko'pincha tor ramkalarda qaralardi, lekin mustaqillikdan keyin uning haqiqiy buyukligi — davlat tuzuvchi, ilm-fan, san'at va me'morchilikni rivojlantirgan jahongir sifatida — keng ravishda tan olindi. Film shu yo'nalishdagi muhim madaniy asar.",
+      "Filmda Temur shaxsining murakkabligi ko'rsatiladi: u qattiqqo'l harbiy yo'lboshchi, lekin shu bilan birga ilm-ma'rifat homiysi; jahongir, lekin shu bilan birga o'z xalqi va sevgan kishilariga sodiq inson. Asar uning «Temur tuzuklari» asariga ham ishora qiladi — Sohibqironning siyosiy vasiyati va davlatchilik darsligi.",
+      "Film Samarqand, Shahrisabz, Buxoro singari tarixiy shaharlarda suratga olingan. An'anaviy kostyumlar, manzaralar va musiqa Temur davrining ruhini qaytadan tiriltirishga harakat qilgan. Asar o'zbek tarixiy kinematografiyasining muhim namunalaridan biri va Mustaqillik davri madaniy hayotining muhim hodisasi."
+    ],
+    "cast": [
+      "Bosh aktyor — Amir Temur roli",
+      "Saida Rametova — Soroymulkxonim (Bibixonim)",
+      "Razzoq Hamroyev — Tarag'ay (otasi)",
+      "Hojiakbar Karimov — vazir",
+      "Ergash Karimov — Shahrux (o'g'li)",
+      "Marhamat Mamatova — onasi"
+    ],
+    "crew": {
+      "director": "Bako Sodiqov",
+      "scriptwriter": "Bako Sodiqov",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekfilm"
+    },
+    "awards": [
+      "O'zbekiston Respublikasi madaniyat va san'at e'tirofi (1996)",
+      "Mustaqillik kuni sharafiga davlat namoyishi"
+    ],
+    "historicalContext": "Amir Temur Ko'ragon (1336-1405) — Markaziy Osiyo, Eron, Iroq, Anadolu, Kavkaz va Hindistonning ko'p qismini birlashtirgan jahongir. Uning poytaxti Samarqand XIV-XV asrlarda dunyoning eng go'zal shahri edi. Mustaqillik yillarida Amir Temur o'zbek davlatchiligining bosh ramziy figurasi sifatida tan olindi.",
+    "interestingFacts": [
+      "Amir Temur Ko'ragon 1336-yili Shahrisabz yaqinida tug'ilgan.",
+      "Sohibqiron Markaziy Osiyo, Eron, Iroq, Anadolu va Hindistonning ko'p qismini birlashtirgan.",
+      "Samarqand — Temurning poytaxti — XIV-XV asrlarda dunyoning eng go'zal shahri edi.",
+      "«Temur tuzuklari» — Sohibqironning siyosiy vasiyati va davlatchilik darsligi.",
+      "Bobur — Boburiylar imperiyasi asoschisi — Amir Temurning beshinchi avlodi.",
+      "Mustaqillik yillarida Amir Temur o'zbek davlatchiligining bosh ramziy figurasi.",
+      "Toshkentdagi Amir Temur xiyoboni — Sohibqironga bag'ishlangan asosiy yodgorlik."
+    ],
+    "themes": ["tarix", "davlatchilik", "vatan", "jasorat"]
+  },
+  {
+    "id": "oltin-devor",
+    "slug": "oltin-devor",
+    "title": "Oltin Devor (Spektakl)",
+    "year": 1976,
+    "director": "Hamza nomidagi teatr",
+    "genre": "Spektakl · Komediya-satira",
+    "rating": 9.0,
+    "duration": "2 soat 15 daqiqa",
+    "accent": "#b8893f",
+    "initial": "O",
+    "poster": "/kinolar/oltin-devor.jpg",
+    "youtubeId": "7uPB35AsWxA",
+    "youtubeQuery": "Oltin devor spektakl Erkin Vohidov",
+    "synopsis": "Erkin Vohidovning mashhur satirik dramasi — pora va ma'naviy halokat haqida o'tkir komediya-spektakl.",
+    "longDescription": "«Oltin devor» — Erkin Vohidovning satirik dramasi va o'zbek sahna san'atining mumtoz namunalaridan biri. Asar pora, ma'naviy halokat va inson qadrini sotib olishning oqibatlari haqida o'tkir komediya-satira.",
+    "longDescriptionFull": [
+      "«Oltin devor» — Erkin Vohidovning (1936-2016) satirik dramasi va o'zbek sahna san'atining mumtoz namunalaridan biri. Asar 1970-yillarda yozilgan va shu vaqtdan beri o'zbek teatrlarining repertuaridan tushmagan.",
+      "Asarning syujeti — pora, ma'naviy halokat va inson qadrini sotib olishning oqibatlari haqida. Asarning markaziy obrazi — «oltin devor» — bu metaforik tushuncha: pul, mol-dunyo, lavozim odamni o'z ichiga olib, real hayot va haqiqatdan ajratib qo'yadi. Devor tashqaridan ko'rinarki, oltin — qadrli; lekin u devor ortidagi odam endi inson emas.",
+      "Erkin Vohidov — XX asr o'zbek adabiyotining buyuk shoir va dramaturglaridan biri. U 1936-yili Farg'ona viloyatida tug'ilgan, Toshkent universitetini tugatgan. Uning she'riyati va dramaturgiyasi o'zbek adabiyotining oltin xazinasiga kiradi. «Oltin devor» uning eng o'tkir va eng mashhur sahna asarlaridan biri.",
+      "Asar Sovet davrida yozilgan bo'lsa-da, uning mavzulari abadiy — har bir davrda dolzarb. Pora, sotqinlik, mol-dunyo ortidan eziljilik — bu illatlar har qaysi davlatda va davrda mavjud. Erkin Vohidov ularni shunday o'tkir va shunday hazil bilan ko'rsatadi-ki, tomoshabin kulgudan o'la-o'la chuqur fikrga ham botadi.",
+      "Spektaklning mashhur televersiyasi Hamza nomidagi O'zbek davlat akademik drama teatrining tuyqu'larida suratga olingan. Asarda o'zbek sahna san'atining eng iste'dodli aktyorlari — Lyutfi Sarimsoqova, Razzoq Hamroyev, Sora Eshonto'rayeva va boshqalar — ishtirok etishgan. Ularning ijrosi har bir dialogni dahshatdan kulguga, kulgudan chuqur muhokamaga olib boradi."
+    ],
+    "cast": [
+      "Razzoq Hamroyev — bosh erkak roli",
+      "Lyutfi Sarimsoqova — xotini",
+      "Sora Eshonto'rayeva — qarindosh ayol",
+      "Hikmat Latipov — porachi rasmiy",
+      "Hojiakbar Karimov — yon obraz",
+      "Sayfi Aliyev — yosh xodim"
+    ],
+    "crew": {
+      "director": "Hamza nomidagi O'zbek davlat akademik drama teatri",
+      "scriptwriter": "Erkin Vohidov (asar muallifi)",
+      "composer": "Anvar Ergashev",
+      "studio": "O'zbekteleradiokompaniyasi"
+    },
+    "awards": [
+      "O'zbek sahna san'atining mumtoz asari sifatida e'tirof",
+      "Tomoshabinlarning sevimlisi nominatsiyasi"
+    ],
+    "historicalContext": "Asar 1970-yillarda — Sovet davrining oxirgi davrida — yozilgan. Bu davrda o'zbek dramaturgiyasi yetuk darajaga yetgan edi va satirik-tanqidiy yo'nalishdagi asarlar paydo bo'lardi. Erkin Vohidovning «Oltin devor»i shu yo'nalishning yorqin namunalaridan biri.",
+    "interestingFacts": [
+      "Asar Erkin Vohidov tomonidan 1970-yillarda yozilgan.",
+      "Erkin Vohidov 1936-yili Farg'ona viloyatida tug'ilgan, 2016-yili vafot etgan.",
+      "«Oltin devor» nomi metaforik — pul va lavozim odamni qamab qo'yadi.",
+      "Asar o'zbek satirik-komediya dramaturgiyasining mumtoz namunasi.",
+      "Spektakl o'zbek teatrlarining repertuaridan tushmaydigan asarlardan biri.",
+      "Erkin Vohidov shoir, dramaturg va davlat arbobi sifatida tanilgan.",
+      "Asarda mol-dunyoning va poraning oqibatlari o'tkir yumor bilan tasvirlangan."
+    ],
+    "themes": ["pora", "ma'naviy halokat", "satira", "inson qadri"]
   }
 ]

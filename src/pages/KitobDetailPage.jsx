@@ -124,7 +124,7 @@ export default function KitobDetailPage() {
                 <div className="text-bg-deep/50 text-xs tracking-[3px] uppercase mb-2 font-sans">— {book.genre} —</div>
                 <h2 className="font-serif text-bg-deep text-3xl md:text-4xl mb-4">{book.title}</h2>
                 <p className="font-serif italic text-bg-deep/70 mb-6 text-lg">— {book.author}, {book.year} —</p>
-                <div className="grid grid-cols-3 gap-4 text-sm mb-6 pb-6 border-b border-bg-deep/20">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 text-sm mb-6 pb-6 border-b border-bg-deep/20">
                   <div>
                     <div className="text-bg-deep/40 text-[10px] tracking-[2px] uppercase mb-1">Sahifa</div>
                     <div className="font-serif text-bg-deep text-xl">{book.pages}</div>

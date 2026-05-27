@@ -10,8 +10,8 @@
     "accent": "#d4a574",
     "initial": "M",
     "image": "/musiqa/munojot.jpg",
-    "audio": "/audio/musiqa/munojot.mp3",
-    "lrc": "/audio/musiqa/munojot.lrc",
+    "audio": "/musiqa/munojot.mp3",
+    "lrc": "/musiqa/munojot.lrc",
     "youtubeId": "",
     "youtubeQuery": "Munojot Yo'lchiyeva Munojot maqom",
     "about": "Shashmaqomning eng go'zal asarlaridan biri. «Munojot» — arab tilidan «ilohga murojaat» degan ma'noni anglatadi va o'zbek mumtoz musiqasining qalbidir.",
@@ -23,7 +23,12 @@
       "2003-yili Shashmaqom UNESCO «Insoniyatning nomoddiy madaniy merosi» ro'yxatiga kiritildi. Bugun Munojot bu mumtoz an'ananing eng yorqin namunasi sifatida xalqaro maydonda yangrayapti."
     ],
     "performerBio": "Munojot Yo'lchiyeva — 1960-yili Farg'onada tug'ilgan o'zbek xonandasi, O'zbekiston xalq artisti. U mumtoz maqom san'atining eng buyuk vakili va xalqaro miqyosda tan olingan ustoz. UNESCO va boshqa xalqaro tashkilotlardan ko'plab mukofotlar olgan.",
-    "instruments": ["Tanbur", "G'ijjak", "Doira", "Sato"],
+    "instruments": [
+      "Tanbur",
+      "G'ijjak",
+      "Doira",
+      "Sato"
+    ],
     "historicalContext": "Shashmaqom (so'zma-so'z «olti maqom») — o'zbek-tojik mumtoz musiqasining ulug' tizimi. U Buxoroda XVI-XVIII asrlarda shakllangan va keyinchalik turli maktablar — Buxoro, Xorazm, Farg'ona-Toshkent — sifatida rivojlangan. 2003-yili UNESCO nomoddiy madaniy meros ro'yxatiga kiritilgan.",
     "interestingFacts": [
       "«Munojot» so'zi arab tilidan «yolvorish» yoki «ilohga murojaat» degan ma'noni anglatadi.",
@@ -46,8 +51,8 @@
     "accent": "#e8c898",
     "initial": "Y",
     "image": "/musiqa/yallama-yorim.jpg",
-    "audio": "/audio/musiqa/yallama-yorim.mp3",
-    "lrc": "/audio/musiqa/yallama-yorim.lrc",
+    "audio": "/musiqa/yallama-yorim.mp3",
+    "lrc": "/musiqa/yallama-yorim.lrc",
     "youtubeId": "",
     "youtubeQuery": "Sherali Jo'rayev Yallama yorim",
     "about": "Sherali Jo'rayev ijrosida xalq qo'shig'i — sevgining muloyim ohanglari bilan o'zbek dilini erkalaydigan asar.",
@@ -59,7 +64,12 @@
       "Sherali Jo'rayev «Yallama yorim»dan tashqari «Dunyo», «Tilla», «Ovushgan ovsinim», «Mehribonim», «Toshkent» va boshqa o'nlab mashhur qo'shiqlarning egasi. U O'zbekiston Qahramoni va Xalq artisti unvonlariga sazovor bo'lgan."
     ],
     "performerBio": "Sherali Jo'rayev — 1947-yili 4-mayda Surxondaryoda tug'ilgan o'zbek xonandasi. O'zbekiston Qahramoni (1999), Xalq artisti unvonlari sohibi. 50 yildan ortiq vaqt davomida o'zbek estrada san'atining peshvosi. Uning ovozi va uslubi keyingi avlod xonandalariga katta ta'sir ko'rsatgan.",
-    "instruments": ["Rubob", "Doira", "Klaviatura", "Gitara"],
+    "instruments": [
+      "Rubob",
+      "Doira",
+      "Klaviatura",
+      "Gitara"
+    ],
     "historicalContext": "O'zbek estrada musiqasi 1960-yillarda Botir Zokirov boshchiligida shakllana boshlangan. Sherali Jo'rayev 1970-yillarda bu janrning yetakchisiga aylandi va uni an'anaviy ohanglar bilan boyitdi. 1980-yillar — uning eng ijodiy davri.",
     "interestingFacts": [
       "Sherali Jo'rayev 1947-yili 4-mayda Surxondaryoda tug'ilgan.",
@@ -82,8 +92,8 @@
     "accent": "#1a6b7e",
     "initial": "U",
     "image": "/musiqa/ushshoq.jpg",
-    "audio": "/audio/musiqa/ushshoq.mp3",
-    "lrc": "/audio/musiqa/ushshoq.lrc",
+    "audio": "/musiqa/ushshoq.mp3",
+    "lrc": "/musiqa/ushshoq.lrc",
     "youtubeId": "",
     "youtubeQuery": "Turg'un Alimatov Ushshoq tanbur",
     "about": "Shashmaqomning «Ushshoq» qismi — sevgi va sog'inchning eng nozik ifodasi. Tanbur va g'ijjak ohangi bilan boyitilgan.",
@@ -95,7 +105,13 @@
       "Alimatov «O'zbekiston Xalq artisti», UNESCO ustozi va boshqa ko'plab mukofotlarning sohibi edi. U Yevropa, Amerika va Osiyoda chiqishlar qilib, o'zbek maqomini xalqaro maydonga olib chiqqan. Uning shogirdlari bugungi maqom san'atining yetakchilaridan."
     ],
     "performerBio": "Turg'un Alimatov (1922-2008) — o'zbek mumtoz musiqasining buyuk ustozi, tanburchi va sato ijrochisi. O'zbekiston Xalq artisti. U 75 yildan ortiq vaqt davomida maqom an'anasini saqlab kelgan va keyingi avlodlarga o'rgatgan. UNESCO unga «yashayotgan inson xazinasi» unvonini bergan.",
-    "instruments": ["Tanbur", "Sato", "G'ijjak", "Doira", "Dutor"],
+    "instruments": [
+      "Tanbur",
+      "Sato",
+      "G'ijjak",
+      "Doira",
+      "Dutor"
+    ],
     "historicalContext": "«Ushshoq» asari Shashmaqomning Farg'ona-Toshkent maktabiga tegishli. Shashmaqom 6 ta katta maqomdan iborat: Buzruk, Rost, Navo, Dugoh, Segoh va Iroq. Har biri yana o'z ichida bo'limlarga bo'linadi. Ushshoq Dugoh maqomining muhim qismlaridan biri.",
     "interestingFacts": [
       "«Ushshoq» so'zi arab tilidan «oshiqlar» degan ma'noni anglatadi.",
@@ -118,8 +134,8 @@
     "accent": "#b8893f",
     "initial": "L",
     "image": "/musiqa/lazgi.jpg",
-    "audio": "/audio/musiqa/lazgi.mp3",
-    "lrc": "/audio/musiqa/lazgi.lrc",
+    "audio": "/musiqa/lazgi.mp3",
+    "lrc": "/musiqa/lazgi.lrc",
     "youtubeId": "",
     "youtubeQuery": "Xorazm lazgi raqs musiqa",
     "about": "Xorazmning rang-barang raqs musiqasi. UNESCO ro'yxatidagi nomoddiy madaniy meros. Tezkor ritm va energiyaga to'la.",
@@ -131,7 +147,13 @@
       "Bugun lazgi nafaqat Xorazmda, balki butun O'zbekistonda va xalqaro maydonda — Yevropa, Osiyo va AQShdagi festivallarda ham namoyish etiladi. U xalqning baxti va energiyasi ramzi sifatida tan olingan."
     ],
     "performerBio": "Lazgi xalq raqs musiqasi sifatida ma'lum bir muallifga ega emas. U Xorazm xalqi tomonidan asrlar davomida shakllantirilgan jamoaviy meros. Bugungi kunda mashhur ijrochilar — Maxsuma Mansurova, O'rin Boboyev va Xorazm folklor-etnografik ansambli — ushbu an'anani saqlab kelmoqda.",
-    "instruments": ["Karnay", "Surnay", "Bolaman", "Doira", "Dutor"],
+    "instruments": [
+      "Karnay",
+      "Surnay",
+      "Bolaman",
+      "Doira",
+      "Dutor"
+    ],
     "historicalContext": "Lazgi raqs an'anasi Xorazm viloyatining qadimgi madaniyatidan kelib chiqqan. Xorazm Markaziy Osiyoning eng qadimgi madaniyat o'choqlaridan biri va lazgi shu hududning ma'naviy o'zlik ifodasidir. 2019-yili UNESCO ro'yxatiga kiritilishi bilan u xalqaro ahamiyat kasb etdi.",
     "interestingFacts": [
       "Xorazm lazgisi 2019-yili UNESCO nomoddiy madaniy meros ro'yxatiga kiritilgan.",
@@ -154,8 +176,8 @@
     "accent": "#0f4c5c",
     "initial": "A",
     "image": "/musiqa/andijon-polkasi.jpg",
-    "audio": "/audio/musiqa/andijon-polkasi.mp3",
-    "lrc": "/audio/musiqa/andijon-polkasi.lrc",
+    "audio": "/musiqa/andijon-polkasi.mp3",
+    "lrc": "/musiqa/andijon-polkasi.lrc",
     "youtubeId": "",
     "youtubeQuery": "Andijon polkasi xalq kuyi",
     "about": "Farg'ona vodiysining eng mashhur kuylaridan biri. To'y va bayramlarda yangraydigan tetik ohang.",
@@ -167,7 +189,13 @@
       "Bugun «Andijon polkasi» o'zbek davlat ansambllari va folklor guruhlari tomonidan tez-tez ijro etiladi. U milliy bayramlarda, xalqaro festivallarda va to'y marosimlarida yangrab turadi."
     ],
     "performerBio": "Andijon polkasi xalq kuyi sifatida ma'lum bir muallifga ega emas. U Farg'ona vodiysi xalqi tomonidan asrlar davomida shakllantirilgan. Bugun uni asosan an'anaviy folklor ansambllari va to'y guruhlari ijro etadi.",
-    "instruments": ["Rubob", "Dutor", "Doira", "G'ijjak", "Karnay"],
+    "instruments": [
+      "Rubob",
+      "Dutor",
+      "Doira",
+      "G'ijjak",
+      "Karnay"
+    ],
     "historicalContext": "Farg'ona vodiysi musiqa an'analari Farg'ona-Toshkent maqom maktabining bir qismi sifatida shakllangan. XIX asrda Yevropa raqslari — polka, vals — Markaziy Osiyoga keltirilgan va mahalliy musiqa bilan birlashib o'ziga xos shakl olgan. Andijon polkasi shunday qorishma jarayoning natijasidir.",
     "interestingFacts": [
       "«Polka» Yevropa raqs janri — XIX asrda Farg'onaga keltirilgan.",
@@ -190,8 +218,8 @@
     "accent": "#1e3a8a",
     "initial": "T",
     "image": "/musiqa/buxoro-tanovari.jpg",
-    "audio": "/audio/musiqa/buxoro-tanovari.mp3",
-    "lrc": "/audio/musiqa/buxoro-tanovari.lrc",
+    "audio": "/musiqa/buxoro-tanovari.mp3",
+    "lrc": "/musiqa/buxoro-tanovari.lrc",
     "youtubeId": "",
     "youtubeQuery": "Tanovar Buxoro maqom",
     "about": "Buxoro shashmaqomining nafis namunasi. Sevgi va sog'inch ohanglari, tanbur va doira bilan boyitilgan.",
@@ -203,7 +231,13 @@
       "Bugungi kunda Tanovar Buxoro va Toshkent maqom guruhlari tomonidan tez-tez ijro etiladi. Asar mumtoz musiqa darslarida ham o'qitiladi — chunki uni mukammal ijro etish uchun ko'p yillik tajriba talab qilinadi."
     ],
     "performerBio": "Tanovar an'anaviy maqom asari sifatida bir muallifga ega emas — u asrlar davomida shakllantirilgan. Mashhur ijrochilari orasida Sharqning klassik xonandalari — Muhammadjon Mirzayev, Berta Davydova, Munojot Yo'lchiyeva va boshqalar bor.",
-    "instruments": ["Tanbur", "Doira", "G'ijjak", "Nay", "Sato"],
+    "instruments": [
+      "Tanbur",
+      "Doira",
+      "G'ijjak",
+      "Nay",
+      "Sato"
+    ],
     "historicalContext": "Buxoro shashmaqomi XVI-XVIII asrlarda Buxoro saroyida shakllangan. Bu davrda Buxoro Markaziy Osiyoning eng katta madaniy markazi edi va saroyda olim, shoir, musiqachilar to'plangan edi. Shashmaqomning ko'p asarlari shu davrda yaratilgan va keyinchalik xalq an'anasiga aylangan.",
     "interestingFacts": [
       "«Tanovar» so'zining ma'nosi «toza ovoz» yoki «tanlanma» degan taxminlar bor.",
@@ -213,6 +247,155 @@
       "Tanovarni ijro etish uchun ko'p yillik tajriba talab qilinadi.",
       "Asar 2003-yili UNESCO ro'yxatiga kiritilgan Shashmaqom an'anasining qismi.",
       "Mashhur ijrochilari — Mirzayev, Yo'lchiyeva va Davydova kabi ustozlar."
+    ]
+  },
+  {
+    "id": "karvon",
+    "slug": "karvon",
+    "title": "Karvon",
+    "artist": "O'zbek xalq qo'shig'i",
+    "year": "Xalq an'anasi",
+    "genre": "Xalq qo'shig'i · Lirik",
+    "duration": "—",
+    "accent": "#b8893f",
+    "initial": "K",
+    "image": "/musiqa/karvon.jpg",
+    "audio": "/musiqa/karvon.mp3",
+    "lrc": "/musiqa/karvon.lrc",
+    "youtubeId": "",
+    "youtubeQuery": "Karvon o'zbek xalq qo'shig'i",
+    "about": "Ayriliq va sevgi haqida o'zbek xalqining eng samimiy qo'shiqlaridan biri. Karvon yo'lida yorni eslab, vatan va sodiqlik mavzulari yangraydi.",
+    "aboutFull": [
+      "«Karvon» — o'zbek xalq qo'shig'i an'anasining yorqin namunalaridan biri. Asarda lirik qahramon karvonni — ya'ni sayohatga otlangan yor va vatandan uzilish ramzini — ko'rib, o'z dilini to'kib gapiradi. Bu — Sharq adabiyotidagi azaliy mavzu: uzoq yo'l, ayriliq, sodiqlik.",
+      "Qo'shiqning matnida karvonning tuyalari, oltin ostonali yurtga ketayotgan yor obrazi orqali sevgi va vatanga muhabbat birlashtirilgan. «Peshonangga yozganidan ayrilma, yor» — qatori inson taqdirga ko'nikish va shu bilan birga sevgida sadoqatli qolish mavzusini ifodalaydi.",
+      "Asar an'anaviy o'zbek lirik qo'shiqlarining tuzilishini takrorlaydi: kuyning takrorlanuvchi naqshi, har bir naqsh oxirida «yor» so'zining xitobi. Bu shakl asarni xalq dilida abadiy qoldiradi — bir marta eshitilgani yana qaytariladi.",
+      "Karvon zamonaviy ijrochilar tomonidan ham takror-takror ijro etilib turibdi. Eng mashhur ijrochilari orasida Yulduz Usmonova, Sevara Nazarxon va boshqa xalq qo'shiqchilari bor. Asar maqom an'anasidan ko'ra erkinroq tuzilgan, lekin uning ohang chuqurligi va shoirona qatlami klassik darajadadir.",
+      "Karaoke rejimida bu qo'shiqni ijro etish — o'zbek lirik she'riyatining nozik tovushlarini his qilishning eng yaxshi yo'llaridan biri. Har bir misrada ayriliq dardi va sevgining muloyimligi bir-biriga aralashib turadi."
+    ],
+    "performerBio": "Karvon — o'zbek xalq qo'shig'i bo'lib, aniq muallifsiz xalq merosiga tegishli. U avloddan avlodga og'izdan-og'izga o'tib kelgan va ko'p mashhur xonandalar tomonidan ijro etilgan.",
+    "instruments": [
+      "Rubob",
+      "Doira",
+      "Tor",
+      "Nay"
+    ],
+    "historicalContext": "Karvon yo'li va sayohat o'zbek xalq qo'shiqchiligining azaliy mavzusi. Buyuk Ipak Yo'lining markazida joylashgan O'zbekistonda karvon — sayohat, ayriliq, vatan va sodiqlikning ramzi. Bunday qo'shiqlar an'anaviy ravishda bahor va kuz oylarida — karvon mavsumlarida — ayollar va erkaklar tomonidan kuylangan.",
+    "interestingFacts": [
+      "Karvon o'zbek xalq lirik qo'shiqchiligining mumtoz namunasi.",
+      "Asar Buyuk Ipak Yo'li an'analari bilan chambarchas bog'liq.",
+      "Qo'shiqdagi \"nortuya\" — eng go'zal va eng baquvvat tuya — yor obrazining ramzi.",
+      "\"Peshonangga yozganidan ayrilma, yor\" qatori xalq donolik manbalaridan biri.",
+      "Bir necha taniqli o'zbek xonandalari (Yulduz Usmonova, Sevara Nazarxon va boshqalar) bu qo'shiqni o'z talqinida ijro etishgan.",
+      "Asar to'y va xalq bayramlarida tez-tez tinglangan."
+    ]
+  },
+  {
+    "id": "jadidlarim",
+    "slug": "jadidlarim",
+    "title": "Jadidlarim",
+    "artist": "Zamonaviy o'zbek qo'shig'i",
+    "year": "Zamonaviy",
+    "genre": "Vatanparvarlik · Estrada",
+    "duration": "—",
+    "accent": "#8b2635",
+    "initial": "J",
+    "image": "/musiqa/jadidlarim.jpg",
+    "audio": "/musiqa/jadidlarim.mp3",
+    "lrc": "/musiqa/jadidlarim.lrc",
+    "youtubeId": "",
+    "youtubeQuery": "Jadidlarim o'zbek qo'shiq vatanparvarlik",
+    "about": "Jadid harakati arboblariga bag'ishlangan vatanparvarlik qo'shig'i. Asar millat va vatanga muhabbat tuyg'usini kuylaydi.",
+    "aboutFull": [
+      "«Jadidlarim» — XX asr boshidagi jadid harakati namoyondalariga bag'ishlangan zamonaviy o'zbek qo'shig'i. Asarning matni vatanparvarlik tuyg'usi va millat oldidagi farzandlik burchini ifodalaydi.",
+      "Qo'shiqning bosh xulosasi — «Bu vatanni onamdan kam sevsam uyat bo'ladi» — har bir tinglovchining qalbiga to'g'ridan-to'g'ri murojaat qiluvchi satr. Bu — ona-vatan timsoli orqali ifoda etilgan eng kuchli vatanparvarlik tushunchasidir.",
+      "Asar Behbudiy, Cho'lpon, Qodiriy, Fitrat singari jadidlar ruhini bugungi avlodga yetkazishga harakat qiladi. Ular vatan va millat uchun jonini berishgan — ularning xotirasi va g'oyalari abadiy yashashi kerak."
+    ],
+    "performerBio": "Asar zamonaviy o'zbek estradasiga tegishli vatanparvarlik kategoriyasidan.",
+    "instruments": [
+      "Klaviatura",
+      "Gitara",
+      "Doira",
+      "Rubob"
+    ],
+    "historicalContext": "Jadid harakati 1900-1937 yillarda Markaziy Osiyoda ma'rifat, til, va o'zlik uchun kurashgan ziyolilar harakati. Ko'pchiligi Stalin qatag'oni qurbonlariga aylangan. Mustaqillikdan keyin ularning merosi qaytadan o'rganila boshlandi.",
+    "interestingFacts": [
+      "Qo'shiq jadid arboblari xotirasiga bag'ishlangan.",
+      "Markazda \"Vatan = ona\" timsoli yotadi.",
+      "Zamonaviy o'zbek vatanparvarlik estradasining yorqin namunasi.",
+      "Behbudiy, Cho'lpon, Qodiriy, Fitrat singari jadidlar haqida.",
+      "Karaoke rejimida ijro etish vatanparvarlik darslari uchun zo'r vosita."
+    ]
+  },
+  {
+    "id": "mendirman-osha",
+    "slug": "mendirman-osha",
+    "title": "Mendirman, O'sha",
+    "artist": "Zamonaviy o'zbek qo'shig'i",
+    "year": "Zamonaviy",
+    "genre": "Vatanparvarlik · Lirik",
+    "duration": "—",
+    "accent": "#1a6b7e",
+    "initial": "M",
+    "image": "/musiqa/mendirman-osha.jpg",
+    "audio": "/musiqa/mendirman-osha.mp3",
+    "lrc": "/musiqa/mendirman-osha.lrc",
+    "youtubeId": "",
+    "youtubeQuery": "Mendirman o'sha o'zbek qo'shiq vatan",
+    "about": "Vatan — ota-ona merosi haqidagi lirik qo'shiq. O'zlik, ildiz va sodiqlik mavzulari kuylangan.",
+    "aboutFull": [
+      "«Mendirman, O'sha» — vatan, ildiz va o'zlik mavzularida yozilgan zamonaviy o'zbek lirik qo'shig'i. Asarning bosh g'oyasi — «Vatan — ona merosidir, ota merosidir» — bu meros har bir o'zbek farzandining yelkasidagi mas'uliyat va g'urur ekanligini eslatadi.",
+      "Qo'shiqning matnida vatan — meros — ildiz — kelajak chizig'i mukammal ifoda etilgan. Bu — yoshlarga o'z o'zligini topishni, ota-bobolarning yo'lini davom ettirishni undaydigan ohanglarda yozilgan asar.",
+      "«Mendirman» — «men o'shaman» degan ma'noni anglatadi — bu sodiqlikning, o'zlikning, ildizdan ayrilmaslikning kuchli e'lonidir."
+    ],
+    "performerBio": "Asar zamonaviy o'zbek estradasining vatanparvarlik yo'nalishiga tegishli.",
+    "instruments": [
+      "Rubob",
+      "Doira",
+      "Klaviatura",
+      "Nay"
+    ],
+    "historicalContext": "Mustaqillik davri o'zbek estradasida vatan va o'zlik mavzusi markaziy o'rinni egallaydi. Ushbu qo'shiq shu yo'nalishning yorqin namunasi.",
+    "interestingFacts": [
+      "Qo'shiqning markaziy tushunchasi — \"meros\".",
+      "\"Mendirman\" — \"men o'shaman\" degan tasdiqdir.",
+      "Vatan = ona merosidir, ota merosidir — bosh shior.",
+      "Zamonaviy lirik-vatanparvar qo'shiqning klassik namunasi."
+    ]
+  },
+  {
+    "id": "uygon-oglim",
+    "slug": "uygon-oglim",
+    "title": "Uyg'on, O'g'lim!",
+    "artist": "Abdulla Avloniy she'riga",
+    "year": "1909",
+    "genre": "Jadid she'riyati · Vatanparvarlik",
+    "duration": "—",
+    "accent": "#6b1e2b",
+    "initial": "U",
+    "image": "/musiqa/uygon-oglim.jpg",
+    "audio": "/musiqa/uygon-oglim.mp3",
+    "lrc": "/musiqa/uygon-oglim.lrc",
+    "youtubeId": "",
+    "youtubeQuery": "Uyg'on o'g'lim Avloniy she'r",
+    "about": "Abdulla Avloniyning mashhur she'ri asosida yaratilgan qo'shiq — jadid harakatining madhiyalaridan biri va yoshlarga vatan, ma'rifat sari uyg'onish chaqirig'i.",
+    "aboutFull": [
+      "«Uyg'on, o'g'lim!» — Abdulla Avloniyning (1878-1934) jadid harakati davridagi eng mashhur she'rlaridan biri. Asar 1909-yilda yozilgan va keyinchalik jadidlarning ma'naviy madhiyasiga aylangan.",
+      "She'rning bosh g'oyasi — o'g'liga (va keng ma'noda — millatga) qarata yoshlikdan uyg'onish, ilm-ma'rifat olish, vatan oldidagi vazifani anglashga chaqirish. Bu — Behbudiy, Munavvarqori, Fitrat, Cho'lpon kabi jadidlarning umumiy g'oyalarining she'riy ifodasidir.",
+      "Avloniyning bu she'ri o'zbek yoshlariga, talabalarga, kelajak ziyolilariga va o'qituvchilariga atalgan. Asar bugungacha o'zining nafosatini va dolzarbligini saqlab qolgan."
+    ],
+    "performerBio": "Abdulla Avloniy (1878-1934) — o'zbek pedagogikasi va jadid harakatining yetakchi vakili. «Turkiy guliston yoxud axloq» asari muallifi.",
+    "instruments": [
+      "Rubob",
+      "Doira",
+      "Klaviatura"
+    ],
+    "historicalContext": "«Uyg'on, o'g'lim!» 1900-yillar boshida Avloniy va boshqa jadidlar tomonidan yozilgan she'r-madhiyalarning yorqin namunasi. Bu davrda jadidlar o'zbek tilida zamonaviy maktablar ochib, gazeta va jurnal chiqarib, xalqni ma'rifatga undagan.",
+    "interestingFacts": [
+      "She'r Abdulla Avloniyning 1909-yili yozilgan asari.",
+      "Asar jadid harakatining ma'naviy madhiyalaridan biri.",
+      "Avloniy — «Turkiy guliston yoxud axloq» darsligi muallifi.",
+      "She'rning markazida yoshlarning ma'rifat uchun uyg'onishi mavzusi.",
+      "Asar hozir ham o'zbek vatanparvarlik tarbiyasining muhim qismi."
     ]
   }
 ]

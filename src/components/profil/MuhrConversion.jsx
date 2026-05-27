@@ -17,7 +17,7 @@ export default function MuhrConversion({ onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[150] bg-bg-deep/95 backdrop-blur-xl flex items-center justify-center px-4 py-8"
+      className="fixed inset-0 z-[150] bg-bg-deep/95 backdrop-blur-xl flex items-center justify-center px-3 sm:px-6 py-6 sm:py-8"
       onClick={onClose}
       role="dialog"
       aria-modal="true"

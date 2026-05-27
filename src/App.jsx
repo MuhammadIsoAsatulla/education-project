@@ -8,6 +8,8 @@ import useProgress from './hooks/useProgress.js';
 import HomePage from './pages/HomePage.jsx';
 import AllomalarPage from './pages/AllomalarPage.jsx';
 import AllomaDetailPage from './pages/AllomaDetailPage.jsx';
+import JadidlarPage from './pages/JadidlarPage.jsx';
+import jadidlarData from './data/jadidlar.json';
 import MuzeylarPage from './pages/MuzeylarPage.jsx';
 import MuzeyDetailPage from './pages/MuzeyDetailPage.jsx';
 import MusiqaPage from './pages/MusiqaPage.jsx';
@@ -40,6 +42,21 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/allomalar" element={<AllomalarPage />} />
           <Route path="/allomalar/:slug" element={<AllomaDetailPage />} />
+          <Route path="/jadidlar" element={<JadidlarPage />} />
+          <Route
+            path="/jadidlar/:slug"
+            element={
+              <AllomaDetailPage
+                source={jadidlarData}
+                section="jadidlar"
+                basePath="/jadidlar"
+                notFoundTitle="Jadid topilmadi"
+                listLabel="Jadidlar ro'yxati"
+                siblingsLabel="— BOSHQA JADIDLAR —"
+                achievement="jadid-do-st"
+              />
+            }
+          />
           <Route path="/muzeylar" element={<MuzeylarPage />} />
           <Route path="/muzeylar/:slug" element={<MuzeyDetailPage />} />
           <Route path="/musiqa" element={<MusiqaPage />} />

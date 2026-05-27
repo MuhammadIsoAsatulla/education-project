@@ -47,8 +47,8 @@ export default function MuzeyDetailPage() {
   return (
     <article className="relative">
       {/* Hero with image */}
-      <header className="relative pt-20 sm:pt-28 overflow-hidden">
-        <div className="relative h-[50vh] sm:h-[60vh] min-h-[320px] sm:min-h-[420px] overflow-hidden">
+      <header className="relative pt-16 sm:pt-24 overflow-hidden">
+        <div className="relative h-[55vh] sm:h-[60vh] min-h-[300px] sm:min-h-[420px] overflow-hidden">
           <SmartImage
             src={muzey.image}
             alt={muzey.name}
@@ -69,7 +69,7 @@ export default function MuzeyDetailPage() {
             </Link>
             <div className="eyebrow mb-3">— {muzey.city} · {muzey.century} —</div>
             <h1 className="font-serif text-gold-gradient leading-[0.95] mb-4"
-                style={{ fontSize: 'clamp(48px, 7vw, 96px)', letterSpacing: '2px' }}>
+                style={{ fontSize: 'clamp(32px, 7vw, 96px)', letterSpacing: '2px' }}>
               {muzey.name}
             </h1>
             <p className="font-serif italic text-cream-soft text-xl max-w-2xl mx-auto">

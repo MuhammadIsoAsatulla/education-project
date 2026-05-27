@@ -316,8 +316,9 @@ export default function ProfilPage() {
               )}
             </div>
 
-            {/* Actions */}
-            <div className="flex md:flex-col gap-3 md:min-w-[160px]">
+            {/* Actions — vertical stack on phones (3 narrow buttons in a row
+                don't fit on a 360-wide screen), side column at md+. */}
+            <div className="flex flex-col gap-3 md:min-w-[160px]">
               <button
                 onClick={() => setShopOpen(true)}
                 className="gold-cta w-full"

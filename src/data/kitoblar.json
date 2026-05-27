@@ -1,12 +1,408 @@
 [
   {
+    "id": "xamsa",
+    "slug": "xamsa",
+    "title": "Xamsa",
+    "author": "Alisher Navoiy",
+    "year": "1483–1485",
+    "genre": "Doston · Beshlik",
+    "pages": 393,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#b8893f",
+    "initial": "X",
+    "cover": "/kitoblar/xamsa.jpg",
+    "pdf": "/kitoblar/xamsa.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Mir Alisher Navoiyning besh dostondan iborat bosh asari — turkiy adabiyotning toj javhari.",
+    "longDescription": "«Xamsa» («Beshlik») — Alisher Navoiyning (1441-1501) eng yirik ijodiy yutug'i: «Hayrat ul-abror», «Farhod va Shirin», «Layli va Majnun», «Sab'ai sayyor» va «Saddi Iskandariy» dostonlari. 1483-1485 yillarda yozilgan bu besh asar Nizomiy Ganjaviyning forsiy «Xamsa»siga turkiy javob bo'lib, eski o'zbek tilining badiiy salohiyatini olamga isbotladi.",
+    "longDescriptionFull": [
+      "«Xamsa» («Beshlik») — Mir Alisher Navoiyning (1441-1501) ijodiy yo'lining cho'qqisi va turkiy adabiyotning toj javhari. Asar besh alohida dostondan iborat: «Hayrat ul-abror» (axloqiy-falsafiy), «Farhod va Shirin» (ishq dostoni), «Layli va Majnun» (sevgi fojiasi), «Sab'ai sayyor» (yetti sayyora ertaklari) va «Saddi Iskandariy» (Iskandar Zulqarnayn haqida).",
+      "Navoiy 1483-yili «Hayrat ul-abror» bilan boshlab, ikki yil ichida — 1485-yilgacha — barcha besh dostonni yakunlagan. Bu — adabiyot tarixida deyarli misli ko'rilmagan ish: 50 mingdan ortiq misra, butun bir falsafa, etika va badiiy san'at majmuasi.",
+      "Asar Nizomiy Ganjaviyning fors tilidagi «Panj Ganj» (besh xazina) ga turkiy javob sifatida tug'ildi. Navoiydan oldin Xusrav Dehlaviy ham forsda «Xamsa» yozgan, lekin Navoiy birinchi bo'lib turkiy (eski o'zbek) tilida shu hajmdagi beshlikni yaratdi. Shu bilan u «Muhokamat ul-lug'atayn»da bayon etgan nazariyasini — turkiy til forsdan kam emas — amalda isbotladi.",
+      "Har bir doston o'z mavzusi va falsafasiga ega: «Hayrat ul-abror» — donolik va axloq; «Farhod va Shirin» — fidoyi ishq va mehnat; «Layli va Majnun» — ilohiy sevgining insoniy ifodasi; «Sab'ai sayyor» — yetti rangli ertaklarda yashiringan hayot hikmati; «Saddi Iskandariy» — adolatli hukmdor obrazi.",
+      "«Xamsa» beshlik adabiy janri Sharqning eng murakkab badiiy shakli edi va Navoiy uni turkiy tilda mukammal ado etgan birinchi shoir bo'ldi. Asar Temuriylar saroyida — Sulton Husayn Boyqaro davrida — yozilgan va Sharqning barcha tomonlariga tarqalgan."
+    ],
+    "characters": [
+      "Alisher Navoiy (1441-1501) — muallif, davlat arbobi, shoir",
+      "Farhod — tog' o'yuvchi oshiq («Farhod va Shirin»)",
+      "Shirin — Arman malikasi, Farhodning sevgilisi",
+      "Layli va Majnun — fojiali sevgi qissasining qahramonlari",
+      "Iskandar Zulqarnayn — adolatli jahongir hukmdor («Saddi Iskandariy»)",
+      "Sulton Husayn Boyqaro — asar bag'ishlangan hukmdor"
+    ],
+    "excerpts": [
+      {
+        "title": "Hayrat ul-abror — donolik",
+        "text": "Til — tafakkurning libosi, so'z — qalbning oynasi.\nQaysi xalqning tili kam — uning tafakkuri ham kam.\nLekin so'z — bu shunchaki tovush emas: u — bog'lash, ko'tarish, davolash kuchi.\nDonolar so'z bilan tog'larni ko'chirishadi."
+      },
+      {
+        "title": "Farhod va Shirin — mehnat va sevgi",
+        "text": "Farhod tog'ni o'ydi, lekin u tosh yorgan emas — o'z qalbini yordi.\nHar bir zarba bilan u Shiringa qadam yaqinlashayotgan edi.\nMehnatsiz sevgi — bu uchqun, mehnat bilan sevgi — bu o't.\nO't tog'larni eritadi, uchqun esa shamolda so'nadi."
+      },
+      {
+        "title": "Saddi Iskandariy — adolat",
+        "text": "Iskandar Sharqu G'arbni egalladi, lekin u bir narsani izlardi:\nhukm topish — bu mol topish emas, balki o'zini topish edi.\nAdolatli shoh — toj kiygan xizmatkordir,\nzolim shoh — taxtga kishanlangan asir."
+      }
+    ],
+    "historicalContext": "«Xamsa» Temuriylar saltanatining Hirot davrida (Sulton Husayn Boyqaro hukmronligi paytida, 1469-1506) yozilgan. Bu Markaziy Osiyo madaniyatining eng buyuk gullash davri edi — Behzod miniatyuralari, Jomiy she'riyati, Davlatshoh tazkirasi, Mirxond tarixchiligi shu davrning mevasi. Navoiy davlat arbobi sifatida vazir lavozimida ishlagan, lekin hayotining ko'p qismini she'riyat va san'atga bag'ishlagan.",
+    "interestingFacts": [
+      "«Xamsa» turkiy (eski o'zbek) tilida yozilgan birinchi to'la beshlik.",
+      "Navoiy uni 1483-1485 yillarda — atigi ikki yil ichida — yakunlagan.",
+      "Beshlikda 50 mingdan ortiq misra mavjud.",
+      "Asar Nizomiy Ganjaviyning fors «Xamsa»siga javob sifatida tug'ilgan.",
+      "Behzodning miniatyuralari ko'p «Xamsa» qo'lyozmalarini bezagan.",
+      "Asar XV asrdan boshlab Sharqning ko'p tillariga tarjima qilingan.",
+      "«Xamsa» o'qish bir umrlik mashg'ulot bo'lib qoladi — har qayta o'qishda yangi ma'no ochiladi."
+    ],
+    "themes": ["sevgi", "tasavvuf", "adolat", "donolik"]
+  },
+  {
+    "id": "farhod-va-shirin",
+    "slug": "farhod-va-shirin",
+    "title": "Farhod va Shirin",
+    "author": "Alisher Navoiy",
+    "year": "1484",
+    "genre": "Doston · Ishqiy",
+    "pages": 98,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#8b2635",
+    "initial": "F",
+    "cover": "/kitoblar/farhod-va-shirin.jpg",
+    "pdf": "/kitoblar/farhod-va-shirin.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Navoiy «Xamsa»sining ikkinchi dostoni — Farhodning Shiringa bo'lgan jonsiparona sevgisi haqida.",
+    "longDescription": "«Farhod va Shirin» — Alisher Navoiy «Xamsa»sining ikkinchi dostoni, 1484-yilda yozilgan. Asar yosh shahzoda Farhodning Arman malikasi Shiringa bo'lgan tinglovchini hayratga soladigan sevgisini, uning tog'larni o'yib suv kanali qazishini va oxir-oqibat fojiali yakunini hikoya qiladi.",
+    "longDescriptionFull": [
+      "«Farhod va Shirin» — Alisher Navoiyning (1441-1501) «Xamsa» beshligining ikkinchi dostoni, 1484-yilda eski o'zbek (chig'atoy) tilida yozilgan. Doston Nizomiy Ganjaviyning «Xusrav va Shirin» asariga turkiy javob sifatida tug'ildi, lekin Navoiy bosh qahramonni o'zgartirib — Xusrav o'rniga Farhodni qo'ydi.",
+      "Asarning bosh qahramoni Farhod — Xitoy shahzodasi. U bolaligida Yunoniston, fors va arab donishmandlaridan ilm oladi. Bir kuni sehrli ko'zguda Arman malikasi Shirinni ko'rib qoladi va ishq otashiga tushadi. Vatanni tark etib, Armanistonga safar qiladi.",
+      "Armanistonda Farhod o'zining mukammal mahoratini ko'rsatadi: tog'larni o'yib, Shirinning xalqi uchun suv kanali qazadi. Bu mehnat — uning sevgisining isboti, balki muqaddas qurboniligi ham. Lekin Xusrav — fors shohi — Shiringa uylanmoqchi bo'lib, Farhodga qarshi fitna qiladi.",
+      "Doston fojiali yakuniga ega: Farhod soxta xabar — Shirin vafot etdi — degan yolg'on so'zni eshitib, o'zini halok qiladi. Shirin kelib voqea joyini ko'radi va u ham yor izidan ketadi. Bu fojia tinglovchining qalbini larzaga keltiradi, lekin shu fidoyiligi tufayli ularning sevgisi mangulikka aylanadi.",
+      "Navoiy bu dostonda nafaqat ishq mavzusini, balki mehnat fazilatini ham ulug'laydi. Farhod oshiq — lekin bekorchi emas. U til, ilm, kasb, san'at egasi. Uning ishqi tog' o'ymoqchalik — mehnatda namoyon bo'ladi. Bu — Navoiyning klassik fors variantidan eng katta farqi va Sharq adabiyotidagi yangi insonparvarlik konsepsiyasi."
+    ],
+    "characters": [
+      "Farhod — bosh qahramon, Xitoy shahzodasi, oshiq va kasb egasi",
+      "Shirin — Arman malikasi, Farhodning sevgilisi",
+      "Mehinbonu — Shirinning xolasi, donishmand malika",
+      "Xusrav Parviz — fors shohi, Farhodning raqibi",
+      "Shopur — Farhodning do'sti va yo'l hamrohi",
+      "Mulkoro — Farhodning otasi, Xitoy xoqoni"
+    ],
+    "excerpts": [
+      {
+        "title": "Ko'zguda Shirinni ko'rish",
+        "text": "Sehrli oynaga qaragan zahoti Farhodning ko'zlari yondi —\nko'rgan suratiga qalbi shu ondayoq berildi.\nKim aytadiki, sevgi ko'zdan boshlanadi? Yo'q —\nu ko'zdan kirar, lekin qalbni boshqaradi."
+      },
+      {
+        "title": "Tog' o'yish",
+        "text": "Har zarba bilan toshlar parchalandi, lekin Farhodning sabri parchalanmadi.\n«Sevgi mehnatni yengillashtirar» dedi u xizmatkorlariga,\n«mehnat esa sevgini abadiy qilar.»\nShirin ko'rdi va yig'ladi — chunki bu qadar ishq dahshatli edi."
+      },
+      {
+        "title": "Fojia",
+        "text": "Yolg'onchi cholning aytgan so'zi Farhodning yuragiga o'qday botdi.\nU bolta otdi, tog'lar gumburladi, butun olam jim qoldi.\nShirin kelganda, faqat shamolni ko'rdi —\nva shamolda o'zining yoshini eshitdi."
+      }
+    ],
+    "historicalContext": "Doston Temuriylar saltanatining Hirot davrida (Sulton Husayn Boyqaro hukmronligi paytida) yozilgan. Asar Sharqdagi klassik ishqiy doston an'analarini davom ettirgan, lekin Navoiy mehnat va kasb fazilatini qo'shib, asarni gumanistik yo'nalishga olib chiqqan. Doston Behzod va boshqa mashhur miniatyuristlar tomonidan bezatilgan qo'lyozmalarda saqlanib qolgan.",
+    "interestingFacts": [
+      "Doston 1484-yili — Navoiy 43 yoshida — yozilgan.",
+      "Nizomiyning «Xusrav va Shirin» asaridagi bosh qahramon Xusrav o'rniga Navoiy Farhodni qo'ygan.",
+      "Asarda mehnat fazilati — Sharq mumtoz dostonchiligida deyarli yo'q mavzu — ulug'lanadi.",
+      "Farhodning tog' o'yib suv kanali qazishi — fidoyilik va mahoratning mangu ramzi.",
+      "Doston Behzodning miniatyuralari bilan bezatilgan eng mashhur Navoiy qo'lyozmalaridan biri.",
+      "Asar XX asrda balet va opera asarlari uchun mavzu bo'lgan."
+    ],
+    "themes": ["sevgi", "mehnat", "fidoyilik", "san'at"]
+  },
+  {
+    "id": "layli-va-majnun",
+    "slug": "layli-va-majnun",
+    "title": "Layli va Majnun",
+    "author": "Alisher Navoiy",
+    "year": "1484",
+    "genre": "Doston · Ishqiy",
+    "pages": 184,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#5d4e7a",
+    "initial": "L",
+    "cover": "/kitoblar/layli-va-majnun.jpg",
+    "pdf": "/kitoblar/layli-va-majnun.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Sharqning eng mashhur sevgi qissasi — Qaysning Laylig'a bo'lgan jununvor sevgisi.",
+    "longDescription": "«Layli va Majnun» — Alisher Navoiy «Xamsa»sining uchinchi dostoni, 1484-yilda yozilgan. Arab folklorida shakllangan Qays va Layli sevgisining turkiy nasriy ifodasi: yigit Qaysning sevgisi avval junun (telbalik) shakliga o'sib, oxir-oqibat ilohiy oshiqlikka aylanishi.",
+    "longDescriptionFull": [
+      "«Layli va Majnun» — Alisher Navoiyning «Xamsa»sining uchinchi dostoni, 1484-yilda yozilgan. Doston ildizlari arab folklorida — VII asr Bani Omir qabilasidagi haqiqiy yigit Qays va uning sevgilisi Laylo bilan bog'liq qissalarga borib taqaladi.",
+      "Bosh qahramon Qays — yosh, ma'rifatli arab yigit. U Laylini sevib qoladi, ammo qabila urflarsi va onasining qarshiligi ularning birlashishiga yo'l qo'ymaydi. Qaysning sevgisi shu darajada kuchaydikim, u jamiyatdan uzilib, sahroga chiqib ketadi. Odamlar uni «Majnun» — telba, devona — deb chaqirishadi.",
+      "Sahroda Majnun yovvoyi hayvonlar bilan do'st bo'ladi, qushlar uning yelkalariga qo'nadi, ohular uning oyog'iga bosh qo'yadi. U na och, na tashna — uning butun borlig'i Laylo edi. Layli esa zo'rlik bilan boshqa yigitga uylantiriladi, lekin u ham qalbi bilan faqat Qaysni sevadi.",
+      "Doston fojiali yakuniga ega: Laylo dunyodan o'tadi, Qays uning qabriga kelib, oxirgi marta «Laylo!» deb yig'laydi va o'sha yerda jon beradi. Lekin Navoiy bu fojiani — yana Sharq tasavvufi an'anasiga ko'ra — ilohiy birlashish sifatida talqin qiladi: faqat o'limda Majnun va Layli to'liq birlashganlar.",
+      "Bu doston Navoiyga qadar Nizomiy va Xusrav Dehlaviy tomonidan ham yozilgan. Lekin Navoiy turkiy versiyada yangi ramziy qatlamlar qo'shgan: Majnunning telbaligi — bu nafaqat shaxsiy fojia, balki butun jamiyat va din-iyman mavzularining ramzi. Sevgi — bu insonni Xudoga olib boruvchi yo'l. Tasavvufga ko'ra, oshiq — bu Allohga oshiq, sevgili — bu Ilohning aksi."
+    ],
+    "characters": [
+      "Qays (Majnun) — bosh qahramon, oshiq yigit",
+      "Layli — Qaysning sevgilisi, arab qizi",
+      "Naufal — Qaysning yor-do'sti, jasur jangchi",
+      "Ibni Salom — Layli zo'rlik bilan uylantirilgan kishi",
+      "Qaysning otasi — sayyid, Qaysni sahroda ko'rmoqchi bo'lgan",
+      "Laylining onasi — qattiq an'anaparast, sevgiga qarshi"
+    ],
+    "excerpts": [
+      {
+        "title": "Birinchi uchrashuv",
+        "text": "Maktabda Qays Laylini ko'rdi —\nva o'sha dam ikkalasining bolalik tugadi.\nIkki ko'ngil bir-birini taniydi til so'z aytmasdan ham,\nchunki qalbning o'z tili bor — sukut ichidagi qichqiriq."
+      },
+      {
+        "title": "Sahroda Majnun",
+        "text": "Bir kun u tog'lar orasida edi, qushlar uning soyasida uchardi.\n«Sen ahmoqsan,» dedi yo'lovchi, «bunda ham yo'q, unda ham yo'q.»\n«Yo'q,» dedi Majnun, «men hammasidaman —\nLayli qaerdaki bor, men ham o'sha yerdaman.»"
+      },
+      {
+        "title": "Layli qabri",
+        "text": "U qabr ustiga yiqildi, qum yuzini yopdi.\n«Layli» dedi oxirgi marta — keyin ovoz toza shamolga aylandi.\nQuyosh botdi, yulduzlar yondi —\nlekin sahro u kechasi yorqinroq edi har qachondagidan."
+      }
+    ],
+    "historicalContext": "Layli va Majnun qissasi VII asr Arabistondagi haqiqiy voqeaga asoslangan. Navoiyga qadar fors tilida Nizomiy (XII asr), Xusrav Dehlaviy (XIII asr), Jomiy (XV asr) va boshqalar bu mavzuda dostonlar yaratgan. Navoiy birinchi bo'lib turkiy (eski o'zbek) tilida shu darajadagi badiiy mukammal asarni yaratdi.",
+    "interestingFacts": [
+      "Layli va Majnun qissasi VII asr Arabistondagi haqiqiy yoshlar haqida.",
+      "Qaysning haqiqiy ismi Qays ibn al-Mulavvah (VII asr) — Bani Omir qabilasidan.",
+      "Doston Navoiyga qadar Nizomiy, Xusrav Dehlaviy va Jomiy tomonidan ham yozilgan.",
+      "«Majnun» so'zi arab tilida «jin chalingan», ya'ni telba degan ma'noni anglatadi.",
+      "Asar Sharqda eng ko'p sahnalashtirilgan va miniatyuralangan dostonlardan biri.",
+      "1908-yilda Uzeyir Hojibekov shu mavzuda dunyodagi birinchi musulmon operasini yaratgan."
+    ],
+    "themes": ["sevgi", "tasavvuf", "junun", "ayriliq"]
+  },
+  {
+    "id": "saddi-iskandariy",
+    "slug": "saddi-iskandariy",
+    "title": "Saddi Iskandariy",
+    "author": "Alisher Navoiy",
+    "year": "1485",
+    "genre": "Doston · Tarixiy-falsafiy",
+    "pages": 111,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#1a6b7e",
+    "initial": "S",
+    "cover": "/kitoblar/saddi-iskandariy.jpg",
+    "pdf": "/kitoblar/saddi-iskandariy.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Iskandar Zulqarnayn haqida — adolatli hukmdor, sayyoh va donishmand obrazida.",
+    "longDescription": "«Saddi Iskandariy» — Alisher Navoiy «Xamsa»sining beshinchi va yakuniy dostoni, 1485-yilda yozilgan. Asar Iskandar Zulqarnayn (Aleksandr Makedoniyalik) obrazini Sharq an'anasiga ko'ra — adolatli hukmdor, izlanuvchi sayyoh va donishmand sifatida — talqin qiladi.",
+    "longDescriptionFull": [
+      "«Saddi Iskandariy» — Alisher Navoiyning «Xamsa» beshligining beshinchi va yakuniy dostoni, 1485-yilda yozilgan. Asar — Iskandar Zulqarnayn (Aleksandr Makedoniyalik, mil. avv. 356-323) haqida Sharqning o'ziga xos talqini.",
+      "Sharq an'anasida Iskandar — bu shunchaki harbiy jahongir emas, balki adolatli hukmdor, falsafa va ilm sevgan donishmand, dunyoning to'rt tomonini izlagan sayyoh. Qur'oni karimda «Zulqarnayn» (ikki shoxli) deb tilga olingan — bu obraz Iskandarga aralashib ketgan va Sharq adabiyotida shu nom bilan mashhur bo'lgan.",
+      "Dostonda Iskandar ustozi Arastu (Aristotel) bilan suhbatlashadi, dunyoning to'rt tomonini sayohat qiladi, Ya'juj va Ma'juj qavmiga qarshi temirdan «sadd» (devor) quradi. Asar nomi shu sadd — adolatning, donolikning, tsivilizatsiyaning ramziy devori — bilan bog'liq.",
+      "Navoiy bu dostonda ideal hukmdor obrazini chizadi. Iskandar — kuch egasi bo'lsa-da, jabr qilmaydi. U ilm sevadi, donishmandlar bilan suhbatlashadi, o'z qarorlarini hech qachon zo'rlikdan emas, balki adolatdan boshlaydi. Bu — Navoiyning Sulton Husayn Boyqaro va boshqa Temuriy hukmdorlariga bog'lab aytgan eng nozik nasihatlari.",
+      "Doston falsafiy mulohazalarga to'la: o'lim haqida, mol-dunyo o'tkinchiligi haqida, ilm va donolik haqida. Iskandar dunyoning to'rt tomonini bosib oldi, lekin oxirida bir oddiy soldat sifatida — qo'lida hech narsa qolmasdan — vafot etadi. Bu — Sharq tasavvufi an'anasidagi eng kuchli xulosalardan biri: «Hech narsa abadiy emas, faqat amal qoladi.»"
+    ],
+    "characters": [
+      "Iskandar Zulqarnayn — bosh qahramon, jahongir hukmdor",
+      "Arastu (Aristotel) — Iskandarning ustozi va maslahatchisi",
+      "Doro — fors shohi, Iskandarning raqibi",
+      "Nushoba — donishmand malika",
+      "Qoji — Iskandarning xizmatkori",
+      "Ya'juj va Ma'juj — afsonaviy qabila, sadd ortida qolgan"
+    ],
+    "excerpts": [
+      {
+        "title": "Arastu nasihati",
+        "text": "«Ey o'g'lim,» dedi Arastu, «taxt — bu yuk, mol — bu o'tkinchi sayohatchi.\nFaqat ilm va adolat — qolib qoladi.\nQilich bilan dunyoni egallasang ham,\nodamlar qalbini faqat haq so'z bilan ola olasan.»"
+      },
+      {
+        "title": "Sadd qurish",
+        "text": "Ya'juj-Ma'juj qavmi yo'lin to'sgan dovonga keldi Iskandar.\n«Temir keltiringlar,» dedi, «misni eritinglar, devor quring.»\nLekin u bilar edi — eng kuchli sadd metalldan emas,\nbalki adolatli hukmdordan qoladi xalqlar orasida."
+      },
+      {
+        "title": "Iskandarning oxirgi vasiyati",
+        "text": "Bir dunyo egallagan jahongir o'lim to'shagida yotib turardi.\n«Qabrimga,» dedi u jallodlariga, «mening qo'limni tashqariga chiqaringlar.\nBosib olgan barcha xalqlar ko'rsin —\nIskandar ham qo'li bo'sh ketdi bu dunyodan.»"
+      }
+    ],
+    "historicalContext": "Iskandar Zulqarnayn (mil. avv. 356-323) — Makedoniyalik harbiy yo'lboshchi. Tarixiy Iskandar fors imperiyasini, Misrni, Markaziy Osiyoning ko'p qismini, Hindistonning bir qismini egalladi. Sharq adabiyotida u ilohiy missiyali izlanuvchi sifatida talqin qilingan — Qur'onda «Zulqarnayn» nomi bilan tilga olingan. Navoiy bu obrazga turkiy adabiyotda o'z talqinini berdi va uni adolatli, donishmand hukmdor sifatida tasvirladi.",
+    "interestingFacts": [
+      "«Saddi Iskandariy» — Navoiy «Xamsa»sining beshinchi va yakuniy dostoni.",
+      "Asar 1485-yili — Navoiy 44 yoshda — yozilgan.",
+      "Iskandar obrazi Sharq adabiyotida 800 yildan ortiq vaqt davomida rivojlangan.",
+      "Qur'oni karimda Iskandar «Zulqarnayn» (ikki shoxli) deb tilga olingan.",
+      "Doston Sharq miniatyuristlari uchun eng mashhur mavzu bo'lgan.",
+      "Asarda Arastuning falsafiy mulohazalari ham keltirilgan."
+    ],
+    "themes": ["adolat", "donolik", "hukmronlik", "o'lim"]
+  },
+  {
+    "id": "temur-tuzuklari",
+    "slug": "temur-tuzuklari",
+    "title": "Temur Tuzuklari",
+    "author": "Amir Temur (rivoyatga ko'ra)",
+    "year": "XIV asr oxiri",
+    "genre": "Tarixiy · Davlatchilik",
+    "pages": 158,
+    "language": "Eski o'zbek (chig'atoy)",
+    "accent": "#6b1e2b",
+    "initial": "T",
+    "cover": "/kitoblar/temur-tuzuklari.jpg",
+    "pdf": "/kitoblar/temur-tuzuklari.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Sohibqironning davlatchilik, harbiy san'at va adolat haqidagi siyosiy vasiyati.",
+    "longDescription": "«Temur tuzuklari» — Amir Temurning (1336-1405) o'z davlat boshqarish tartiblari, harbiy strategiyasi, vazirlar va sarkardalar bilan munosabatlari, adolat o'rnatish tamoyillari haqida yozilgan deb hisoblanadigan asar. Bu — Sohibqironning siyosiy vasiyati va davlatchilik darsi.",
+    "longDescriptionFull": [
+      "«Temur tuzuklari» (forschada «Tuzukoti Temuriy») — Amir Temur Ko'ragonning (1336-1405) o'z davlat boshqarish tartiblari, harbiy strategiyasi, sarkardalar va vazirlarga munosabati, adolat o'rnatish tamoyillari haqidagi siyosiy vasiyati. Asar ikki qismdan iborat: «Tuzuklar» (davlat boshqaruvi qoidalari) va «Malfuzot» (Temurning o'z hayoti va g'alabalari).",
+      "Asarning muallifligi haqida olimlar orasida bahslar bor. Ba'zilarining fikricha, Temur uni o'z og'zidan aytib bergan va kotiblar yozib olgan; boshqalarning fikricha, asar Temur vafotidan keyin uning xotiralari va saroy hujjatlari asosida tartib berilgan. Lekin asarda aks ettirilgan g'oyalar va Temurning shaxsiy uslubi shubhasiz tarzda Sohibqironga tegishli.",
+      "Asar 12 tuzukdan iborat: birinchisi — Allohni e'tirof etish, ikkinchisi — adolatli boshqaruv, uchinchisi — vazirlar bilan munosabat, to'rtinchisi — sarkardalar bilan munosabat, beshinchisi — harbiy strategiya, oltinchisi — soliq va xazina boshqaruvi va h.k. Har bir tuzuk amaliy nasihat va shaxsiy tajriba bilan bayon etilgan.",
+      "Eng mashhur tamoyili — «Adolat har bir tortishuvga ham aralashmoq kerak». Temur o'z hukmidan o'zga kishilarga ham javobgar hisoblardi va o'z qarorlarini hech qachon yolg'iz qabul qilmasdi. U avval donishmandlar bilan maslahatlashardi, keyin qaror chiqarardi.",
+      "Asar XVI asrdan boshlab Sharqu G'arbga tarqalgan. Hindiston Boburiylari (Bobur, Akbar, Shoh Jahon, Avrangzeb) uni o'z davlatchilik darsligi sifatida o'qishgan. XVIII asrda fransuz, ingliz va boshqa Yevropa tillariga tarjima qilingan. Bugungi kun O'zbekistonda «Temur tuzuklari» davlatchilik tarixining eng muhim manbalaridan biri."
+    ],
+    "characters": [
+      "Amir Temur Ko'ragon (1336-1405) — Sohibqiron, asar muallifi (rivoyatga ko'ra)",
+      "Soroymulkxonim — Temurning birinchi xotini, malika",
+      "Shohrux Mirzo — Temurning to'rtinchi o'g'li, vorisi",
+      "Mironshoh — Temurning uchinchi o'g'li",
+      "Husayn Sufi — Xorazm hokimi, Temurning raqibi",
+      "Bayazid Yildirim — Usmonli sultoni, Temurning raqibi"
+    ],
+    "excerpts": [
+      {
+        "title": "Adolat haqida",
+        "text": "Hokim o'z qaroridagi adolatni e'tibor qilsin,\nchunki adolat — bu davlatning eng mustahkam ustuni.\nQozi yolg'on hukm qilsa, taxtim larzaga keladi;\nlekin oddiy odam haqligini topsa, davlatim azim bo'ladi."
+      },
+      {
+        "title": "Vazirlar haqida",
+        "text": "To'qqiz tabaqali vazirim bo'lsin, har biri o'z ishini bilsin.\nLekin o'rtada bir er bo'lsinki, men uning so'ziga ishonsam —\nu menga rost aytsin, men unga sirimni aytay.\nMaslahat — bu hokimning ko'zi va qulog'i."
+      },
+      {
+        "title": "Harbiy strategiya",
+        "text": "Dushmanni ko'rishdan oldin uni biling.\nU nima sevadi, nima qo'rqadi — bilgan g'oliblikni topadi.\nKuch bilan to'g'rilash mumkin, lekin kuch ortida fikr bo'lsin —\nfikrsiz kuch — bu kor bola qo'lidagi tig'."
+      }
+    ],
+    "historicalContext": "Amir Temur Ko'ragon (1336-1405) Sharqu G'arbga yuzlab yurishlar olib borgan eng buyuk jahongirlardan biri. U Markaziy Osiyo, Eron, Iroq, Anadolu, Kavkaz va Hindistonning ko'p qismini birlashtirgan. Uning poytaxti Samarqand — XIV-XV asrlarda dunyoning eng go'zal shahri edi. «Temur tuzuklari» Sohibqironning siyosiy mafkurasini va davlat tuzilishi tushunchasini aks ettiradi.",
+    "interestingFacts": [
+      "«Temur tuzuklari» 12 ta tuzuk va Malfuzot qismidan iborat.",
+      "Asar XVIII asrdan boshlab Yevropa tillariga tarjima qilingan.",
+      "Boburiylar saltanati (Hindistonda) uni davlatchilik darsligi sifatida ishlatgan.",
+      "Asarning muallifligi haqida olimlar o'rtasida bahs bor — to'g'ridan-to'g'ri Temur tomonidanmi yoki vafotidan keyin tartib berilganmi.",
+      "Sohibqironning eng mashhur tamoyili: «Kuch — adolatdadir».",
+      "Bugungi O'zbekistonda Temur shaxsi va uning merosi davlat siyosatining muhim qismi."
+    ],
+    "themes": ["davlatchilik", "adolat", "harbiy san'at", "siyosat"]
+  },
+  {
+    "id": "jaloliddin-manguberdi",
+    "slug": "jaloliddin-manguberdi",
+    "title": "Jaloliddin Manguberdi",
+    "author": "Maqsud Shayxzoda",
+    "year": "1944",
+    "genre": "Drama · Tarixiy",
+    "pages": 389,
+    "language": "O'zbek",
+    "accent": "#8b2635",
+    "initial": "J",
+    "cover": "/kitoblar/jaloliddin-manguberdi.jpg",
+    "pdf": "/kitoblar/jaloliddin-manguberdi.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Mo'g'ullarga qarshi kurashgan Xorazmshoh Jaloliddinning jasur va fojiali taqdiri haqida drama.",
+    "longDescription": "«Jaloliddin Manguberdi» — Maqsud Shayxzodaning (1908-1967) tarixiy dramasi, 1944-yilda yozilgan. Asar Xorazmshohlar saltanatining oxirgi shahzodasi — Jaloliddin Manguberdining (1199-1231) Chingizxonning mo'g'ul qo'shinlariga qarshi yigirma yillik fidoyi kurashini aks ettiradi.",
+    "longDescriptionFull": [
+      "«Jaloliddin Manguberdi» — Maqsud Shayxzodaning (1908-1967) tarixiy dramasi, 1944-yilda yozilgan. Asar Xorazmshohlar saltanatining oxirgi shahzodasi — Jaloliddin Manguberdining (1199-1231) Chingizxonning mo'g'ul qo'shinlariga qarshi yigirma yillik fidoyi kurashini aks ettiradi.",
+      "1219-yilda Chingizxon Xorazmshohlar davlatiga hujum qildi. Otasi Muhammad Xorazmshoh Kaspiy dengizidagi orolda yashirinib o'ldi, lekin yosh Jaloliddin qochmadi. U o'sha kuchli mo'g'ul askariga qarshi tinmay kurashdi — Hindistondan tortib Kavkazgacha bo'lgan ulkan hududda.",
+      "Drama Jaloliddinning eng mashhur jasoratini — Sind daryosi bo'yidagi jangini — markaziy o'rinda qo'yadi. 1221-yili Chingizxonning katta qo'shini Jaloliddinni Sind daryosiga siqib qo'ydi. Boshqa yo'l qolmaganida, u otini suvga yo'naltirib, har ikki qo'lida qilich bilan dushman tomonga sakradi va omon-omon qarshi qirg'oqqa o'tib oldi. Chingizxon o'z xizmatkorlariga: «Mana bu — er! Bunday o'g'il olishni isteyman» degan deb rivoyat qilinadi.",
+      "Shayxzoda asarda Jaloliddinni nafaqat askariy qahramon sifatida, balki ma'rifatli, til biluvchi, do'stsevar va vatanparvar shahzoda sifatida ko'rsatadi. Drama uning ichki olamini, ota-onasini yo'qotishi, vatansiz qolish dardini, lekin shu bilan birga kurashishdan voz kechmaslik irodasini chuqur tahlil qiladi.",
+      "Asar Ulug' Vatan urushi davrida (1944) yozilgan va bu davr mavzusi bilan ham bog'liq edi: jasur ona vatan himoyachisi obrazi. Lekin Shayxzoda asarni tor mafkura qoliplariga sig'dirmagan — u Jaloliddinni butun bir madaniyatning va xalqning vakili sifatida tasvirlaydi. Drama bugungi kunda O'zbekistonda mustaqillik va vatanparvarlik tarbiyasining muhim asarlaridan biri."
+    ],
+    "characters": [
+      "Jaloliddin Manguberdi (1199-1231) — Xorazmshoh, bosh qahramon",
+      "Muhammad Xorazmshoh — Jaloliddinning otasi, davlat hukmdori",
+      "Terken xotun — Jaloliddinning buvisi, malika",
+      "Chingizxon (Temujin) — mo'g'ul jahongiri, Jaloliddinning raqibi",
+      "Temurmalik — Xo'jand qal'asining bosh himoyachisi",
+      "Najmiddin Kubro — Xorazm so'fi-shoiri (asarda ramziy obraz)"
+    ],
+    "excerpts": [
+      {
+        "title": "Sind daryosida",
+        "text": "Atrofda mo'g'ul, oldida daryo, ortida xalq qoldiqlari.\n«Otim,» dedi Jaloliddin, «sen meni qanchalik ko'tarding —\nendi oxirgi marta meni dushmandan olib o'tasanmi?»\nVa otini suvga yo'naltirib, ikki qo'lida qilich bilan sakradi."
+      },
+      {
+        "title": "Otasi haqida",
+        "text": "«Otam orolda yashirindi,» dedi Jaloliddin,\n«lekin men o'z vatanim ostonasida turaman.\nKuchsiz bo'lishim mumkin, lekin yashirin emas —\notamning qochiqligini o'g'lining jasurligi bilan to'g'rilashga harakat qilaman.»"
+      },
+      {
+        "title": "Chingizxon e'tirofi",
+        "text": "Chingizxon Sind qirg'og'idan suzib o'tayotgan yigitni kuzatdi va dedi:\n«Mana bu — er. Mana bunday o'g'il olishni isteyman.\nLekin tushuning, mening qarshim shu kabilarda emas, balki mana shu kabi qalblarda.\nQilichdan qo'rqmaganni faqat o'limning o'zi yengadi.»"
+      }
+    ],
+    "historicalContext": "Jaloliddin Manguberdi (1199-1231) — Xorazmshohlar saltanatining (1077-1231) so'nggi hukmdori. 1219-yilda Chingizxon Xorazmga hujum qilib, davlatni mahv etdi. Lekin Jaloliddin yigirma yil davomida mo'g'ullarga qarshi kurashdi — Hindistondan Kavkazgacha bo'lgan hududda. U 1231-yili Kavkaz tog'larida vafot etdi. Tarixchilar Jaloliddinni o'rta asrlarning eng jasur va iste'dodli harbiy boshliqlaridan biri sifatida tan olishadi.",
+    "interestingFacts": [
+      "Jaloliddin Manguberdi 1221-yili Sind daryosida otini suvga yo'naltirib, mo'g'ul qo'shinidan qutulib qolgan.",
+      "Chingizxon Jaloliddinning jasoratiga maftun bo'lib, uni e'tirof etgan.",
+      "Maqsud Shayxzoda dramani 1944-yili — Ulug' Vatan urushi davrida — yozgan.",
+      "Asar bir necha o'zbek teatrlarida sahnalashtirilgan.",
+      "Bugungi O'zbekistonda Jaloliddin Manguberdi nomidagi davlat mukofoti bor.",
+      "Asar mustaqillik yillarida o'rta maktab dasturiga kiritilgan."
+    ],
+    "themes": ["vatanparvarlik", "jasorat", "tarix", "fidoyilik"]
+  },
+  {
+    "id": "alpomish",
+    "slug": "alpomish",
+    "title": "Alpomish",
+    "author": "Xalq dostoni (Fozil Yo'ldosh varianti)",
+    "year": "XIV-XVI asrlar (yozma — 1928)",
+    "genre": "Doston · Xalq og'zaki ijodi",
+    "pages": 368,
+    "language": "O'zbek",
+    "accent": "#d4a574",
+    "initial": "A",
+    "cover": "/kitoblar/alpomish.jpg",
+    "pdf": "/kitoblar/alpomish.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "O'zbek xalqining bosh qahramonlik dostoni — Alpomishning jasorat, sevgi va vatanga sodiqlik hikoyasi.",
+    "longDescription": "«Alpomish» — o'zbek xalq og'zaki ijodining eng buyuk yodgorligi, xalqimizning ming yillik ma'naviy davlati. Doston XIV-XVI asrlarda shakllangan va asrlar davomida baxshilar tomonidan og'izdan-og'izga o'tib kelgan. 1928-yilda mashhur baxshi Fozil Yo'ldosh o'g'lidan birinchi marta yozib olingan.",
+    "longDescriptionFull": [
+      "«Alpomish» — o'zbek xalqining bosh qahramonlik dostoni, xalq og'zaki ijodining eng buyuk yodgorligi. Doston XIV-XVI asrlarda Qo'ng'irot urug'i muhitida shakllangan va asrlar davomida baxshilar tomonidan og'izdan-og'izga o'tib kelgan.",
+      "Asarning bosh qahramoni Hakimbek (keyinchalik xalq uni Alpomish — «Alp Tomush» — deb chaqirib ketgan) Qo'ng'irot eli Boysarining o'g'li. U o'n to'qqiz yoshida shunday kuchli yigit bo'ladi-ki, butun el unga maftun. Uning singlisi va Boybo'ri bolasi Bo'tako'z (yoki Barchin) bir-birini sevadi.",
+      "Doston ikki bosh qismdan iborat. Birinchisida Alpomishning yigitlik kunlari, Barchin bilan sevgi qissasi va to'y voqealari hikoya qilinadi. Ikkinchisida Alpomish Qalmoq elidagi yetti yillik asirligi va vatanga qaytishi tasvirlangan. Asarning markazida — vatanga sodiqlik, do'st-yor uchun jonsiparona kurash, sabr-toqat fazilatlari turadi.",
+      "Doston o'ziga xos badiiy uslubga ega: nasriy bayon she'riy boblar bilan almashinib turadi. Baxshi do'mbira chertib, qahramonlik epizodlarini she'r bilan, oddiy bayonlarni nasrda aytadi. Bu — Markaziy Osiyo dostonchiligining mumtoz uslubi. Eng mashhur «Alpomish» varianti 1928-yili Fozil Yo'ldosh o'g'li (1872-1955) tomonidan aytilgan va Hodi Zarif tomonidan yozib olingan.",
+      "«Alpomish» 2000-yilda YUNESKO tomonidan butun insoniyat ma'naviy merosining «o'lmas asari» deb e'tirof etilgan. Asar XX asrda taqiqlangan davrlardan o'tdi (1952-yili «pantürkizm» tuhmati bilan tanqid qilingan), lekin mustaqillik yillarida o'zining haqiqiy bahosini topdi. Bugungi kunda «Alpomish» o'zbek milliy o'zligining bosh ramzlaridan biri."
+    ],
+    "characters": [
+      "Alpomish (Hakimbek) — bosh qahramon, Qo'ng'irot eli yigiti",
+      "Barchin (Oybarchin) — Alpomishning sevgilisi, keyinchalik xotini",
+      "Boybo'ri — Alpomishning otasi",
+      "Boysari — Boybo'rining ukasi, Barchinning otasi",
+      "Qoldirg'och — Alpomishning singlisi, jasur qiz",
+      "Surxayil kampir — Qalmoq elidagi makkor maslahatchi",
+      "Toychixon — Qalmoq xoni, Alpomishni asir tutgan",
+      "Ultontoz — sotqin xizmatkor, Alpomish vatanida fitna qilgan"
+    ],
+    "excerpts": [
+      {
+        "title": "Bo'rilarning ovqati",
+        "text": "Bir kun Hakimbek o'rmonda ov qilib yurganida — yetti bo'rini bir o'qda urdi.\nXalq aytadi: «Mana bu — Alpomish, alpning to'mishi (toqimi) bo'lsin.»\nShu kundan Hakimbekning ismi xalq tilida o'zgardi —\nu endi Alpomish edi, Qo'ng'irot elning umidi."
+      },
+      {
+        "title": "Barchinga sevgi",
+        "text": "«Ey Barchinim, ko'zlaring nega yashilroq?» dedi Alpomish.\n«Chunki men sahroda o'sgan giyohman,» javob berdi qiz,\n«lekin sahroda bir gul bor — uni faqat alp uza biladi.»\nAlpomish kuldi: «Bu gulni men hozir uzaman» dedi va qo'lini tutdi."
+      },
+      {
+        "title": "Asirlik chuqurida",
+        "text": "Yetti yil chuqurda yotdi Alpomish, oy va quyoshni ko'rmagan,\nlekin har kuni xayolida vatani — Qo'ng'irot dashtlari bor edi.\n«Sabr,» dedi u o'ziga, «sabr esa — alpning eng kuchli quroli.\nQilich sinishi mumkin, lekin sabr — abadiy o't.»"
+      }
+    ],
+    "historicalContext": "«Alpomish» dostoni Qo'ng'irot urug'i muhitida XIV-XVI asrlarda shakllangan. Asar O'zbekiston, Qoraqalpog'iston, Qozog'iston, Tojikiston, Turkmaniston va Boshqirdistonda turli variantlarda yashab kelgan. Eng to'liq o'zbekcha varianti 1928-yili Fozil Yo'ldosh o'g'lidan yozib olingan. Doston sovet davrida bir muddat taqiqlangan, mustaqillikdan keyin uning 1000 yilligi (taxminiy) keng nishonlangan.",
+    "interestingFacts": [
+      "«Alpomish» dostoni baxshilar tomonidan asrlar davomida og'izdan-og'izga o'tib kelgan.",
+      "Eng mashhur o'zbekcha varianti 1928-yili Fozil Yo'ldosh o'g'li tomonidan aytilgan.",
+      "Asar 2000-yilda YUNESKO tomonidan insoniyat og'zaki ma'naviy merosi sifatida e'tirof etilgan.",
+      "1999-yilda Toshkentda «Alpomish dostoning 1000 yilligi» xalqaro miqyosda nishonlangan.",
+      "Doston Qo'ng'irot, qoraqalpoq, qozoq, boshqird elatlarida turli variantlarda mavjud.",
+      "Asarning markazida vatanparvarlik, sodiqlik va sabr fazilatlari yotadi.",
+      "Baxshilar dostonni do'mbira chertib aytishadi — bu Markaziy Osiyo og'zaki ijodining mumtoz uslubi."
+    ],
+    "themes": ["jasorat", "vatan", "sevgi", "sabr"]
+  },
+  {
     "id": "boburnoma",
     "slug": "boburnoma",
     "title": "Boburnoma",
     "author": "Zahiriddin Muhammad Bobur",
     "year": "1494–1530",
     "genre": "Avtobiografiya · Tarix",
-    "pages": 540,
+    "pages": 286,
     "language": "Eski o'zbek",
     "accent": "#d4a574",
     "initial": "B",
@@ -14,7 +410,7 @@
     "pdf": "/kitoblar/boburnoma.pdf",
     "pdfSource": "ziyouz.com",
     "annotation": "Sohibqironning nevarasi Boburning shaxsiy kundaliklari — bu nafaqat avtobiografiya, balki butun bir davrning jonli xronikasidir.",
-    "longDescription": "«Boburnoma» — Zahiriddin Muhammad Boburning (1483-1530) shaxsiy yodnomalari. Bobur — Amir Temurning beshinchi avlodi va Hindistondagi Boburiylar imperiyasining asoschisi. Asar uning 12 yoshida — 1494-yilda — otasidan Farg'ona vodiysi taxtini meros qilib olishidan boshlanib, hayotining oxirigacha — 1530 yilgacha — bo'lgan voqealarni qamrab oladi. Bu davrda Bobur Samarqandni egallab, ko'p marta yo'qotib, Kobulga ko'chib, va nihoyat 1526-yili Panipat jangida zafar quchib, Hindistonda yangi imperiya barpo etadi.",
+    "longDescription": "«Boburnoma» — Zahiriddin Muhammad Boburning (1483-1530) shaxsiy yodnomalari. Bobur — Amir Temurning beshinchi avlodi va Hindistondagi Boburiylar imperiyasining asoschisi. Asar uning 12 yoshida — 1494-yilda — otasidan Farg'ona vodiysi taxtini meros qilib olishidan boshlanib, hayotining oxirigacha — 1530 yilgacha — bo'lgan voqealarni qamrab oladi.",
     "longDescriptionFull": [
       "«Boburnoma» — Zahiriddin Muhammad Boburning (1483-1530) shaxsiy yodnomalari va o'zbek nasrining poydevor asarlaridan biri. Bobur — Amir Temurning beshinchi avlodi va Hindistondagi Boburiylar imperiyasining asoschisi.",
       "Asar Boburning 12 yoshida — 1494-yilda — otasi Umarshayx Mirzodan Farg'ona vodiysi taxtini meros qilib olishidan boshlanib, hayotining oxirigacha — 1530 yilgacha — bo'lgan voqealarni qamrab oladi. Yodnoma uchta asosiy davrga bo'linadi: Farg'ona davri (1494-1504), Kobul davri (1504-1526) va Hindiston davri (1526-1530).",
@@ -61,68 +457,71 @@
     "themes": ["tarix", "sayohat", "siyosat", "tabiat"]
   },
   {
-    "id": "navoiy-gazallari",
-    "slug": "navoiy-gazallari",
-    "title": "Xazoyin ul-Maoniy",
-    "author": "Alisher Navoiy",
-    "year": "1498",
-    "genre": "She'riyat · G'azal",
-    "pages": 800,
-    "language": "Eski o'zbek (chig'atoy)",
-    "accent": "#e8c898",
-    "initial": "N",
-    "cover": "/kitoblar/navoiy-gazallari.jpg",
-    "pdf": "/kitoblar/navoiy-gazallari.pdf",
+    "id": "yulduzli-tunlar",
+    "slug": "yulduzli-tunlar",
+    "title": "Yulduzli Tunlar",
+    "author": "Pirimqul Qodirov",
+    "year": "1979",
+    "genre": "Roman · Tarixiy",
+    "pages": 665,
+    "language": "O'zbek",
+    "accent": "#1e3a8a",
+    "initial": "Q",
+    "cover": "/kitoblar/yulduzli-tunlar.jpg",
+    "pdf": "/kitoblar/yulduzli-tunlar.pdf",
     "pdfSource": "ziyouz.com",
-    "annotation": "Mir Alisher Navoiyning to'rt devondan iborat g'azallar to'plami — turk tilining shoh asari.",
-    "longDescription": "«Xazoyin ul-Maoniy» («Ma'nolar xazinasi») — Mir Alisher Navoiyning (1441-1501) to'rt devondan iborat she'riy to'plami. To'plam shoirning bir umrini qamrab oladi: «G'aroyib us-sig'ar» (yoshlik she'rlari, 7-20 yosh), «Navodir ush-shabob» (yigitlik she'rlari, 20-35 yosh), «Badoyi' ul-vasat» (o'rta yosh, 35-45), «Favoyid ul-kibar» (qarilik she'rlari, 45 dan keyin).",
+    "annotation": "Zahiriddin Muhammad Bobur hayoti haqida shoh tarixiy roman — sevgi, kurash va imperiya barpo etish hikoyasi.",
+    "longDescription": "«Yulduzli tunlar» — Pirimqul Qodirovning (1928-2014) eng buyuk tarixiy romani, 1979-yilda nashr etilgan. Asar Boburiylar imperiyasining asoschisi — Zahiriddin Muhammad Boburning (1483-1530) hayotini, sevgisini, kurashini va Hindistondagi yangi davlat barpo etishi tarixini badiiy bayonida tasvirlaydi.",
     "longDescriptionFull": [
-      "«Xazoyin ul-Maoniy» («Ma'nolar xazinasi») — Mir Alisher Navoiyning (1441-1501) to'rt devondan iborat she'riy to'plami. Bu eski o'zbek (chig'atoy) tilida yozilgan she'riyatning eng katta va eng go'zal namunasi.",
-      "To'plam shoirning bir umrini qamrab oladi: «G'aroyib us-sig'ar» (yoshlik she'rlari, 7-20 yosh), «Navodir ush-shabob» (yigitlik she'rlari, 20-35 yosh), «Badoyi' ul-vasat» (o'rta yosh, 35-45), «Favoyid ul-kibar» (qarilik she'rlari, 45 dan keyin).",
-      "Navoiyning to'rt devonida 3132 ta g'azal, ruboiy, qit'a, fard va boshqa she'riy janrlardagi asarlari mavjud. Asar 1498-yili tugatilib, Hirot saroyiga taqdim etilgan. Devonlar Sulton Husayn Boyqaro davrida, Navoiyning eng buyuk ijodiy davrida yozilgan.",
-      "Navoiy bu asar bilan eski o'zbek (turkiy) tilini fors va arab tillari bilan teng holatga olib chiqishni isbotladi. U «Muhakamat ul-lug'atayn» asarida turkiy til forsdan kam bo'lmagan badiiy ifoda imkoniyatlariga ega ekanligini isbotlagan va shu nazariy poydevorda Xazoyin ul-Maoniyni yaratgan.",
-      "Navoiyning asari nafaqat she'riyat namunasi, balki butun tasavvufiy falsafa va islom etikasining lirik ifodasi hisoblanadi. Asarda sevgi mavzusi — Ilohiy sevgi, insoniy sevgi va vatanga muhabbat — mukammal san'atkorlik bilan birlashtirilgan."
+      "«Yulduzli tunlar» — Pirimqul Qodirovning (1928-2014) eng buyuk tarixiy romani, 1979-yilda nashr etilgan. Asar Boburiylar imperiyasining asoschisi — Zahiriddin Muhammad Boburning (1483-1530) hayotini, sevgisini, kurashini va Hindistondagi yangi davlat barpo etishi tarixini badiiy ifodada tasvirlaydi.",
+      "Roman Boburning yoshlik davridan — Farg'ona taxtini meros olishidan — boshlanadi va Samarqandni qaytarib olib, yana yo'qotgan davridan, Kobulga ko'chgan davridan, va nihoyat 1526-yili Panipat jangida zafar quchib, Hindistonda yangi imperiya barpo etishigacha bo'lgan voqealarni qamrab oladi.",
+      "Qodirov asarda Boburning shaxsiy hayotini juda chuqur ochib beradi: onasi Qutlug' Nigorxonim bilan munosabati, mashhur «Boburnoma»dagi sevgi izlari, do'stlari Qosimbek va Hasanali bilan munosabatlar, oilasi va o'g'li Humoyunga muhabbati. Bobur — yagona harbiy sarkarda emas, balki shoir, kuzatuvchi, sevgan ota.",
+      "Asarning eng kuchli tomonlaridan biri — XV-XVI asrlardagi Markaziy Osiyo va Hindistondagi hayotning batafsil tasviri. Samarqand bozorlari, Kobul bog'lari, Hindiston issig'i, Panipatdagi jang sahnalari — bularning hammasi tarixiy aniqlik va badiiy go'zallik bilan chizilgan. Qodirov «Boburnoma»dan tashqari boshqa o'nlab manbalarni o'rganib, ushbu romani yozgan.",
+      "Roman Boburning «Yulduzli tunlar» — yulduzlar tagida o'tirib o'tmishni o'ylash — ifodasiga ishora qiladi. Asar Bobur shaxsini O'zbekiston adabiyotida qaytadan tirgizdi va uni umumiy ma'naviy merosga qaytardi. 1980-yillarda asar bir necha bor qayta nashr etilgan, hozir o'rta maktab va oliy ta'lim dasturlariga kiritilgan."
     ],
     "characters": [
-      "Alisher Navoiy (1441-1501) — shoir, davlat arbobi, ma'naviy peshvo",
-      "Husayn Boyqaro — Hirot hukmdori, Navoiyning bolalikdagi do'sti va homiy",
-      "Abdurahmon Jomiy — Navoiyning ustozi, mashhur fors shoiri",
-      "Layli va Majnun — mashhur sevgi qissasining qahramonlari (Navoiy ham bu mavzuda doston yozgan)"
+      "Zahiriddin Muhammad Bobur (1483-1530) — bosh qahramon, Boburiylar imperiyasi asoschisi",
+      "Qutlug' Nigorxonim — Boburning onasi, donishmand malika",
+      "Mohim begim — Boburning sevgilisi, keyinchalik xotini, Humoyunning onasi",
+      "Humoyun — Boburning to'ng'ich o'g'li, bo'lajak imperator",
+      "Shayboniyxon — Boburning bosh raqibi, o'zbek-Shayboniylar saltanati asoschisi",
+      "Qosimbek — Boburning sodiq do'sti va sarkardasi",
+      "Ibrohim Lo'diy — Dehli sultoni, Panipat jangida Bobur tomonidan mag'lub etilgan"
     ],
     "excerpts": [
       {
-        "title": "Sevgi g'azali",
-        "text": "Kelmadi yor, kelmadi yor — yo'liga ko'z tikkonim sham,\nYondi yondi, yonib bitdi — bag'rim aro armon hamdam.\nUning manzili qaydadir, deb so'rsam ko'klar, suvlardan,\nJavob bermas hech kim, faqat sukut — bu ham bir alam."
+        "title": "Yulduzli tun",
+        "text": "Bobur chodir tashqarisida o'tirib, yulduzlarga qaradi.\n«Bu yulduzlar Andijonda ham, Samarqandda ham, Kobulda ham bir.\nFaqat odam ostida yulduzlar bir, lekin yulduz ostida odam — ko'p.\nMen qanchalar uzoq ketsam ham, yulduzlar ostida vatan boqib turadi.»"
       },
       {
-        "title": "Til haqida",
-        "text": "Tilim — millatim hayoti, tilim — qalbimning ovozi.\nTilsiz qolgan xalq — yo'lsiz qolgan karvon.\nHar bir tilning o'z ranglari, o'z ohanglari — \nbiri ikkinchisidan kam bo'lmaydi, agar ko'ngil unga sodiq bo'lsa."
+        "title": "Onasi bilan",
+        "text": "«O'g'lim,» dedi Qutlug' Nigorxonim, «taxt o'tkinchi, lekin so'z qoladi.\nAgar yo'qotsang ham, yozib qo'y — toki keyingi avlodlar bilsin.\nQilich tang'da chiqadi, lekin qalam — abadiyatda qoladi.»\nBobur o'sha kuni «Boburnoma»sini boshladi."
       },
       {
-        "title": "Ma'rifat g'azali",
-        "text": "Ilm o'rgan, hatto Xitoyga borishga ham tayyor bo'l —\nChunki bilim — bu nur, jaholat esa zulmat.\nBilimsiz odam — qora chiroq kabidir,\nIchidagi yog' boru, lekin nuri yo'q."
+        "title": "Panipat oldida",
+        "text": "Ibrohim Lo'diyning yuz mingdan ortiq qo'shini, Boburda — o'n ikki ming.\nLekin Bobur o'z askaridan ham, fil to'plaridan ham emas — taqdiriga ishondi.\n«Hayot bu — to'g'ridagi yulduzlar,» dedi u, «yulduzlar yo'lni ko'rsatadi.\nBugun esa mening yulduzim yorqin yonyapti.»"
       }
     ],
-    "historicalContext": "Asar Temuriylar saltanatining Hirot davrida (Sulton Husayn Boyqaro hukmronligi paytida) yozilgan. Bu davr Markaziy Osiyo madaniyatining eng buyuk gullash davri bo'lgan. Navoiy davlat arbobi sifatida vazir lavozimida ishlagan, lekin hayotining ko'p qismini she'riyat va san'atga bag'ishlagan.",
+    "historicalContext": "Roman 1494-1530 yillardagi Markaziy Osiyo va Hindistondagi voqealarni qamrab oladi. Bu davrda Temuriylar saltanati parchalanib, Shayboniylar davlati paydo bo'ldi. Bobur Movarounnahrda taxtni qaytarib ola olmagach, Kobulga ko'chib, u yerdan Hindistonga bostirib bordi va 1526-yili Panipat jangida zafar quchib, Boburiylar (Mug'al) imperiyasini barpo etdi. Bu imperiya 1857-yilgacha — 331 yil — Hindistonni boshqargan.",
     "interestingFacts": [
-      "«Xazoyin ul-Maoniy» 4 ta devondan iborat — har biri shoirning bir hayot bosqichi.",
-      "Navoiy 1498-yili Asarni tugatib, Hirot saroyiga taqdim etgan.",
-      "Asarda 3132 ta she'r mavjud — turli janrlarda.",
-      "Navoiy eski o'zbek (turkiy) tilining badiiy imkoniyatlarini isbotlagan.",
-      "U boshqa beshlik dostonlarini ham yozgan — «Layli va Majnun», «Farhod va Shirin», «Saddi Iskandariy» kabi.",
-      "Birinchi devon «G'aroyib us-sig'ar» — 7-20 yosh she'rlari, oxirgisi «Favoyid ul-kibar» qarilik she'rlari.",
-      "Navoiy davlat arbobi sifatida vazir lavozimida ishlagan va xalqning sevimlisi bo'lgan."
+      "«Yulduzli tunlar» 1979-yili nashr etilgan, asar Pirimqul Qodirovga shuhrat keltirgan.",
+      "Roman Boburning «Boburnoma» avtobiografiyasini badiiy talqin sifatida ifodalaydi.",
+      "Asar 665 sahifa — o'zbek tarixiy romanchiligining eng katta asarlaridan biri.",
+      "Pirimqul Qodirov roman uchun 15 yil davomida tarixiy manbalarni o'rgangan.",
+      "Asar Boburiylar saltanatining barpo etilishi haqida — Hindistonda 331 yil hukmronlik qilgan imperiya.",
+      "Roman bir necha tillarga tarjima qilingan.",
+      "Qodirov Boburni nafaqat askariy yo'lboshchi, balki shoir va kuzatuvchi sifatida tasvirlaydi."
     ],
-    "themes": ["sevgi", "tasavvuf", "til", "ma'rifat"]
+    "themes": ["tarix", "vatan", "sevgi", "kurash"]
   },
   {
     "id": "otkan-kunlar-roman",
-    "slug": "otkan-kunlar-roman",
+    "slug": "otkan-kunlar",
     "title": "O'tkan Kunlar",
     "author": "Abdulla Qodiriy",
     "year": "1922",
     "genre": "Roman · Tarixiy",
-    "pages": 432,
+    "pages": 220,
     "language": "O'zbek",
     "accent": "#1a6b7e",
     "initial": "Q",
@@ -135,7 +534,7 @@
       "Abdulla Qodiriyning (1894-1938) «O'tkan kunlar» romani 1922-yilda qismlarga bo'lib nashr etilgan va o'zbek romanchilik san'atining poydevorini qo'ygan asar. Bu o'zbek tilidagi birinchi to'liq qatorlikdagi roman hisoblanadi.",
       "Asar XIX asr oxiri Turkistondagi hayotni — xon-amirlar davridagi an'analar, sevgi, fojialar va siyosiy kurashlarni — yosh savdogar Otabek va Marg'ilonlik Kumushbibi sevgisi orqali ifodalaydi. Voqealar asosan Toshkent va Marg'ilonda bo'lib o'tadi.",
       "Romanda Qodiriy XIX asr oxiri Turkistondagi ijtimoiy hayotni juda batafsil tasvirlaydi: mahallalar, bozorlar, hammomlar, savdo munosabatlari, an'anaviy to'ylar, ko'p xotinlilik va uning fojiali oqibatlari, oilada ayolning huquqlari. Asar nafaqat sevgi hikoyasi, balki butun bir davrning ijtimoiy ko'zgusi.",
-      "Qodiriy 1928-yili «Mehrobdan chayon»ni nashr etib, o'zbek romanchiligini yanada rivojlantirdi. Lekin 1937-yili u «xalq dushmani» tuhmati bilan qamoqqa olindi va 1938-yili 47 yoshida otib o'ldirildi. Uning asarlari uzoq yillar taqiqlangan edi.",
+      "Qodiriy 1928-yili «Mehrobdan chayon»ni nashr etib, o'zbek romanchiligini yanada rivojlantirdi. Lekin 1937-yili u «xalq dushmani» tuhmati bilan qamoqqa olindi va 1938-yili 44 yoshida otib o'ldirildi. Uning asarlari uzoq yillar taqiqlangan edi.",
       "Mustaqillik yillarida Qodiriyning merosi to'la-to'kis xalqqa qaytarildi. «O'tkan kunlar» o'rta maktab dasturiga kiritildi, bir necha tilga tarjima qilindi va kino-teatr asarlari uchun mavzu bo'ldi. 1969-yilda Yo'ldosh A'zamov rejissyorligida shu nomdagi mashhur film suratga olindi."
     ],
     "characters": [
@@ -175,13 +574,65 @@
     "themes": ["sevgi", "tarix", "an'ana", "ma'rifat"]
   },
   {
+    "id": "mehrobdan-chayon",
+    "slug": "mehrobdan-chayon",
+    "title": "Mehrobdan Chayon",
+    "author": "Abdulla Qodiriy",
+    "year": "1929",
+    "genre": "Roman · Tarixiy",
+    "pages": 285,
+    "language": "O'zbek",
+    "accent": "#8b2635",
+    "initial": "Q",
+    "cover": "/kitoblar/mehrobdan-chayon.jpg",
+    "pdf": "/kitoblar/mehrobdan-chayon.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Qodiriyning ikkinchi yirik asari — Xudoyorxon davridagi Qo'qon xonligi tarixini sevgi hikoyasi orqali ko'rsatadi.",
+    "longDescription": "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini sevgi hikoyasi orqali tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar nomi «mehrob» (masjidning eng muqaddas qismi) dan chayon — zaharli hasharot — chiqishini bildiradi, ya'ni eng to'g'ri ko'rinadigan joydan jirkanch xiyonat sodir bo'lishi mumkinligini ramziy ifodalaydi.",
+      "Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini Anvar va Ra'no sevgisi orqali tasvirlaydi. Anvar — yosh, iste'dodli kotib, Ra'no — saroydagi xizmatkor qiz. Ularning sevgisi saroy intrigalari va fitnalari girdobiga tushib qoladi.",
+      "Qodiriy bu romanda Qo'qon xonligi davridagi siyosiy va ijtimoiy hayotni juda batafsil va realistik tasvirlaydi: xon saroyidagi rasm-rusumlar, lavozimlar uchun raqobat, hokimiyatning fitnalari, oddiy xalqning oqibatchasi. Asar nafaqat sevgi hikoyasi, balki o'zbek tarixining og'ir bir davriga oid ijtimoiy roman.",
+      "Asarning eng kuchli qahramonlari — fitna ustasi Sodiq va xudbin saroy ayollar. Qodiriy ularning psixologiyasini juda ustalik bilan ochib beradi. Ularning sevgan kishilarining hayotini buzganligi — asarning trajik chiziqlaridan biri.",
+      "«Mehrobdan chayon» o'zbek tarixiy romanchiligining cho'qqilaridan biri sifatida tan olingan. Asar bir necha marta sahnalashtirilgan va televizion seriallar uchun mavzu bo'lgan. Bugungi kunda ham o'rta maktab adabiyot dasturiga kiritilgan asar."
+    ],
+    "characters": [
+      "Anvar — bosh qahramon, yosh kotib",
+      "Ra'no — Anvarning sevgilisi, saroyda xizmatkor",
+      "Xudoyorxon — Qo'qon xonligining xoni",
+      "Sodiq — fitna ustasi, asarning bosh manfiy qahramoni",
+      "Solih makhdum — saroy mudarrisi, Anvarning ustozi",
+      "Nodir devonbegi — xonning vaziri"
+    ],
+    "excerpts": [
+      {
+        "title": "Saroy hayoti",
+        "text": "Saroyda har xizmatkor, har devorning soyasi — birovning quloq solib turgan ko'zi va qulog'i edi. Bu yerda hech kim na sevishi, na nafratlanishi mumkin emas — barchasi siyosat edi. Bir lafz behushga aytilgan so'z — boshingga jallodning qilichini chaqirishi mumkin."
+      },
+      {
+        "title": "Anvar haqida",
+        "text": "Anvar — yosh, lekin aqli zo'r yigit edi. Lekin u zo'r aql egasi bo'lganligi sababli emas, balki sevgani — Ra'no — saroyda xizmat qilganligi uchun bu yerga tushib qolgandi."
+      }
+    ],
+    "historicalContext": "Asar 1830-1875-yillardagi Qo'qon xonligini ifodalaydi. Bu davrda Qo'qon xonligi Xudoyorxon (1845-1858 va 1862-1875) hukmronligi ostida o'zining oxirgi gullash davrini boshidan kechirar edi. 1875-yili Rossiya imperiyasi Qo'qon xonligini bosib oldi va u tugatildi.",
+    "interestingFacts": [
+      "Asar nomi «Mehrobdan chayon» — eng muqaddas joydan zahar chiqishi mumkinligini bildiradi.",
+      "Roman 1929-yilda yozilgan — Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik asari.",
+      "Asar Xudoyorxon davri Qo'qon xonligini tasvirlaydi.",
+      "Qo'qon xonligi 1875-yilda Rossiya imperiyasi tomonidan bosib olindi.",
+      "Asarda fitna ustasi Sodiqning obrazi o'zbek adabiyotidagi eng yorqin manfiy qahramonlardan biri.",
+      "Roman bir necha marta sahnalashtirilgan va TV-serial qilingan."
+    ],
+    "themes": ["sevgi", "tarix", "saroy", "fitna"]
+  },
+  {
     "id": "kecha-va-kunduz",
     "slug": "kecha-va-kunduz",
     "title": "Kecha va Kunduz",
     "author": "Cho'lpon",
     "year": "1936",
     "genre": "Roman · Modern",
-    "pages": 320,
+    "pages": 272,
     "language": "O'zbek",
     "accent": "#b8893f",
     "initial": "Ch",
@@ -232,56 +683,57 @@
     "themes": ["ayol taqdiri", "qishloq", "milliy uyg'onish"]
   },
   {
-    "id": "mehrobdan-chayon",
-    "slug": "mehrobdan-chayon",
-    "title": "Mehrobdan Chayon",
-    "author": "Abdulla Qodiriy",
-    "year": "1929",
-    "genre": "Roman · Tarixiy",
-    "pages": 380,
-    "language": "O'zbek",
-    "accent": "#8b2635",
-    "initial": "Q",
-    "cover": "/kitoblar/mehrobdan-chayon.jpg",
-    "pdf": "/kitoblar/mehrobdan-chayon.pdf",
+    "id": "qutlug-qon-kiril",
+    "slug": "qutlug-qon-kiril",
+    "title": "Қутлуғ Қон (Кирил)",
+    "author": "Ойбек",
+    "year": "1940",
+    "genre": "Роман · Тарихий",
+    "pages": 190,
+    "language": "Ўзбек (кирил)",
+    "accent": "#6b1e2b",
+    "initial": "О",
+    "cover": "/kitoblar/qutlug-qon-kiril.jpg",
+    "pdf": "/kitoblar/qutlug-qon-kiril.pdf",
     "pdfSource": "ziyouz.com",
-    "annotation": "Qodiriyning ikkinchi yirik asari — Xudoyorxon davridagi Qo'qon xonligi tarixini sevgi hikoyasi orqali ko'rsatadi.",
-    "longDescription": "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini sevgi hikoyasi orqali tasvirlaydi.",
+    "annotation": "1916 йил Жиззах қўзғолони ҳақидаги Ойбекнинг шоҳ романи — кирил ёзувида.",
+    "longDescription": "«Қутлуғ қон» — Мусо Тошмуҳаммад ўғли Ойбекнинг (1905-1968) 1940 йилда ёзилган тарихий романи. Асар 1916 йили Туркистонда содир бўлган Жиззах қўзғолонини — подшо ҳукуматига қарши биринчи кенг қамровли халқ ҳаракатини — тасвирлайди. Бу нашр кирил ёзувида.",
     "longDescriptionFull": [
-      "«Mehrobdan chayon» — Abdulla Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik romani, 1929-yilda yozilgan. Asar nomi «mehrob» (masjidning eng muqaddas qismi) dan chayon — zaharli hasharot — chiqishini bildiradi, ya'ni eng to'g'ri ko'rinadigan joydan jirkanch xiyonat sodir bo'lishi mumkinligini ramziy ifodalaydi.",
-      "Asar XIX asr o'rtalaridagi Qo'qon xonligi — Xudoyorxon davrini Anvar va Ra'no sevgisi orqali tasvirlaydi. Anvar — yosh, iste'dodli kotib, Ra'no — saroydagi xizmatkor qiz. Ularning sevgisi saroy intrigalari va fitnalari girdobiga tushib qoladi.",
-      "Qodiriy bu romanda Qo'qon xonligi davridagi siyosiy va ijtimoiy hayotni juda batafsil va realistik tasvirlaydi: xon saroyidagi rasm-rusumlar, lavozimlar uchun raqobat, hokimiyatning fitnalari, oddiy xalqning oqibatchasi. Asar nafaqat sevgi hikoyasi, balki o'zbek tarixining og'ir bir davriga oid ijtimoiy roman.",
-      "Asarning eng kuchli qahramonlari — fitna ustasi Sodiq va xudbin saroy ayollar. Qodiriy ularning psixologiyasini juda ustalik bilan ochib beradi. Ularning sevgan kishilarining hayotini buzganligi — asarning trajik chiziqlaridan biri.",
-      "«Mehrobdan chayon» o'zbek tarixiy romanchiligining cho'qqilaridan biri sifatida tan olingan. Asar bir necha marta sahnalashtirilgan va televizion seriallar uchun mavzu bo'lgan. Bugungi kunda ham o'rta maktab adabiyot dasturiga kiritilgan asar."
+      "«Қутлуғ қон» — Мусо Тошмуҳаммад ўғли Ойбекнинг (1905-1968) 1940 йилда ёзилган тарихий романи. Асар 1916 йили Туркистонда содир бўлган Жиззах қўзғолонини — подшо ҳукуматига қарши биринчи кенг қамровли халқ ҳаракатини — тасвирлайди.",
+      "1916 йилги воқеалар Рус империяси ҳукуматининг туркистонлик эркакларни «мардикорликка» — фронт орти ишларига — олиш ҳақидаги фармонидан бошланди. Бу фармон йиллар давомида тўпланган норозиликни мажбурий равишда уйғотди. Жиззахдан бошлаб бутун Туркистонда қўзғолон тарқалди.",
+      "Романнинг бош қаҳрамони — деҳқон Йўлчи. У оддий бир йигит, лекин адолатсизлик уни ҳаракатга чорлайди. Йўлчининг севгилиси Гулнор, дўсти Ёрмат, ва бой савдогар Мирзакарим бой — асарнинг асосий қаҳрамонлари. Уларнинг тақдири қўзғолон билан чамбарчас боғлиқ.",
+      "Ойбек асарда XX аср бошидаги ўзбек қишлоқ ҳаётини — деҳқонлар билан бойлар орасидаги зиддиятларни, илм-маърифатга интилишни, миллий уйғониш ҳаракатини — жуда батафсил тасвирлайди. Унинг услуби реалистик, лекин лирик тус ҳам бор.",
+      "Асар Совет даврида ёзилгани сабабли мафкуравий босимлар таъсирида, лекин Ойбек ўз санъатий принципларини сақлай олган. «Қутлуғ қон» ўзбек ҳамзалангинг шох асарларидан биридир ва ҳозирда ҳам ўрта мактаб дастурининг бир қисмидир."
     ],
     "characters": [
-      "Anvar — bosh qahramon, yosh kotib",
-      "Ra'no — Anvarning sevgilisi, saroyda xizmatkor",
-      "Xudoyorxon — Qo'qon xonligining xoni",
-      "Sodiq — fitna ustasi, asarning bosh manfiy qahramoni",
-      "Solih makhdum — saroy mudarrisi, Anvarning ustozi",
-      "Nodir devonbegi — xonning vaziri"
+      "Йўлчи — бош қаҳрамон, ёш деҳқон йигит",
+      "Гулнор — Йўлчининг севгилиси",
+      "Мирзакарим бой — ҳудуднинг бойи",
+      "Ёрмат — Йўлчининг дўсти",
+      "Шакир ота — оқсоқол, мудбир",
+      "Подшо губернатори — қўзғолонни бостириш учун келган"
     ],
     "excerpts": [
       {
-        "title": "Saroy hayoti",
-        "text": "Saroyda har xizmatkor, har devorning soyasi — birovning quloq solib turgan ko'zi va qulog'i edi. Bu yerda hech kim na sevishi, na nafratlanishi mumkin emas — barchasi siyosat edi. Bir lafz behushga aytilgan so'z — boshingga jallodning qilichini chaqirishi mumkin."
+        "title": "Адолатсизлик",
+        "text": "Деҳқонлар бир неча йилдан буён ўзлари экканлари ҳосилни\nеёла билмасдан, бойнинг ҳовлисига олиб бориб ташлаб, ўзлари суратли қолишар эди.\n«Бу — қутлуғ қон,» деди Йўлчи,\n«бизнинг қонимиз — улар учун кофе.»"
       },
       {
-        "title": "Anvar haqida",
-        "text": "Anvar — yosh, lekin aqli zo'r yigit edi. Lekin u zo'r aql egasi bo'lganligi sababli emas, balki sevgani — Ra'no — saroyda xizmat qilganligi uchun bu yerga tushib qolgandi."
+        "title": "Гулнор билан",
+        "text": "«Гулнор, бугун эртаклар тугайди,» деди Йўлчи.\n«Эртадан биз қандай яшаймиз?»\nГулнор унга қаради, сўнг тиззасига тушиб жимгина йиғлади.\n«Сен қаерга борсанг, мен ҳам у ерда боламан.»"
       }
     ],
-    "historicalContext": "Asar 1830-1875-yillardagi Qo'qon xonligini ifodalaydi. Bu davrda Qo'qon xonligi Xudoyorxon (1845-1858 va 1862-1875) hukmronligi ostida o'zining oxirgi gullash davrini boshidan kechirar edi. 1875-yili Rossiya imperiyasi Qo'qon xonligini bosib oldi va u tugatildi.",
+    "historicalContext": "Роман 1916 йилги Жиззах қўзғолонини ифодалайди. Бу — Чор Россияси даврида Туркистонда содир бўлган энг катта халқ қўзғолони эди. Подшо ҳукумати рус-герман уруши учун туркистонлик эркакларни «мардикор» сифатида олиш ҳақидаги фармонни эълон қилгандан кейин бошланди. Қўзғолон тез орада бутун Туркистонга тарқалди ва катта қурбонлар билан бостирилди.",
     "interestingFacts": [
-      "Asar nomi «Mehrobdan chayon» — eng muqaddas joydan zahar chiqishi mumkinligini bildiradi.",
-      "Roman 1929-yilda yozilgan — Qodiriyning «O'tkan kunlar»dan keyingi ikkinchi yirik asari.",
-      "Asar Xudoyorxon davri Qo'qon xonligini tasvirlaydi.",
-      "Qo'qon xonligi 1875-yilda Rossiya imperiyasi tomonidan bosib olindi.",
-      "Asarda fitna ustasi Sodiqning obrazi o'zbek adabiyotidagi eng yorqin manfiy qahramonlardan biri.",
-      "Roman bir necha marta sahnalashtirilgan va TV-serial qilingan."
+      "Ойбекнинг ҳақиқий исми — Мусо Тошмуҳаммад ўғли.",
+      "«Қутлуғ қон» 1940 йилда ёзилган.",
+      "Роман 1916 йилги Жиззах қўзғолонини бадиий ифодалайди.",
+      "Ойбек ҳам шоир, ҳам наср ёзувчи, ҳам адабиётшунос бўлган.",
+      "Унинг бошқа машҳур асарлари: «Қутлуғ қон», «Навоий», «Зайнаб ва Омон».",
+      "Ойбек ўзбек реалистик романининг асосчиларидан бири.",
+      "Асар бир неча тилларга таржима қилинган."
     ],
-    "themes": ["sevgi", "tarix", "saroy", "fitna"]
+    "themes": ["қўзғолон", "адолат", "халқ", "тарих"]
   },
   {
     "id": "sarob",
@@ -290,20 +742,20 @@
     "author": "Abdulla Qahhor",
     "year": "1934",
     "genre": "Roman",
-    "pages": 280,
+    "pages": 239,
     "language": "O'zbek",
     "accent": "#1e3a8a",
     "initial": "Q",
     "cover": "/kitoblar/sarob.jpg",
     "pdf": "/kitoblar/sarob.pdf",
-    "pdfSource": "ziyouz.com (ta'lim maqsadlari)",
+    "pdfSource": "ziyouz.com",
     "annotation": "Yangi davr boshlanishida o'zini topa olmagan ziyolining ichki olami haqida qisqa, lekin chuqur asar.",
     "imagePosition": "center 90%",
     "longDescription": "Abdulla Qahhorning (1907-1968) eng mashhur romani «Sarob» 1934-yilda yozilgan. Asar nomi sahrodagi sarob — illuziya kabi — ya'ni haqiqat bo'lib ko'ringan narsalarning aslida bo'sh va aldamchi ekanligini bildiradi.",
     "longDescriptionFull": [
       "Abdulla Qahhorning (1907-1968) eng mashhur romani «Sarob» 1934-yilda yozilgan. Asar nomi sahrodagi sarob — illuziya kabi — ya'ni haqiqat bo'lib ko'ringan narsalarning aslida bo'sh va aldamchi ekanligini bildiradi.",
       "Asar yosh ziyolining ichki olamini — ikki davr o'rtasidagi keskinligini, eski hayotning halokati va yangi tartibning g'alati shakllariga moslashish kerakligini chuqur tasvirlaydi. Bosh qahramon Sa'idiy — yosh, ma'rifatli, lekin o'z o'rnini topa olmagan ziyolik vakili.",
-      "Qahhor bu asarda chuqur psixologik tahlilni o'zbek nasriga olib kirdi. Asar nisbatan qisqa (280 sahifa), lekin har bir sahifasi qahramon ruhiyatining ichki bo'shliqlarini ochib beradi. Qahhor uzun-uzun lirik mulohazalardan ko'ra qisqa, lo'nda jumlalar bilan eng kuchli holatlarni yaratib oladi.",
+      "Qahhor bu asarda chuqur psixologik tahlilni o'zbek nasriga olib kirdi. Asar nisbatan qisqa, lekin har bir sahifasi qahramon ruhiyatining ichki bo'shliqlarini ochib beradi. Qahhor uzun-uzun lirik mulohazalardan ko'ra qisqa, lo'nda jumlalar bilan eng kuchli holatlarni yaratib oladi.",
       "Qahhorning uslubi rus mumtoz adabiyotidan — Chexov va Bunin singari ustozlardan — ta'sirlangan, lekin u milliy ranglarni va o'zbek hayotini chuqur biladi. Shuning uchun «Sarob» o'zbek nasrining intellektual cho'qqisi sifatida tan olingan.",
       "Qahhor she'riyat, dramaturgiya va hikoyada ham mashhur. Uning «O'tmishdan ertaklar», «Oltin yulduz», «Bemor» kabi qisqa hikoyalari o'zbek hikoya san'atining mumtoz namunalari. U 1968-yili 61 yoshida vafot etgan."
     ],
@@ -335,5 +787,567 @@
       "Qahhor 1956-yili «Sinchalak» romanini ham yozgan."
     ],
     "themes": ["o'zlik", "davr", "ziyolilik"]
+  },
+  {
+    "id": "shum-bola",
+    "slug": "shum-bola",
+    "title": "Shum Bola",
+    "author": "G'afur G'ulom",
+    "year": "1936",
+    "genre": "Qissa · Avtobiografik",
+    "pages": 192,
+    "language": "O'zbek",
+    "accent": "#e8c898",
+    "initial": "G",
+    "cover": "/kitoblar/shum-bola.jpg",
+    "pdf": "/kitoblar/shum-bola.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "G'afur G'ulomning sevimli avtobiografik qissasi — bolalik xotiralari va o'sha davr Toshkenti.",
+    "longDescription": "«Shum bola» — G'afur G'ulomning (1903-1966) avtobiografik qissasi, 1936-yilda yozilgan. Asar XX asr boshlaridagi Toshkent eski shahar hayoti, bolalik xotiralari, do'st-yor munosabatlari va o'zga davrning yorqin-quvnoq tasvirini beradi.",
+    "longDescriptionFull": [
+      "«Shum bola» — G'afur G'ulomning (1903-1966) avtobiografik qissasi, 1936-yilda yozilgan. Asar XX asr boshlaridagi Toshkent eski shahar hayoti, bolalik xotiralari va o'sha davrning yorqin-quvnoq tasvirini beradi.",
+      "Bosh qahramon — Shum bola — muallifning bolalikdagi obrazi. U sho'x, jingalak, hech narsadan qo'rqmaydigan, lekin yaxshi qalbga ega bola. Qissa qator bog'liq hikoyalardan iborat: mahallada o'ynashlar, maktabdagi voqealar, ustozlar, qo'shnilar, oilaviy gaplar.",
+      "G'afur G'ulom asarda 1910-1920-yillardagi Toshkentning eski mahallalarini — tor ko'chalarini, hovuzlarini, hammomlarini, bozorlarini, maktablarini — ajoyib detallarda chizadi. O'sha davr odamlarining tabiati, gap-so'zlari, hazillari — bularning hammasi original sotsial portret bo'lib qolgan.",
+      "Asarning eng kuchli tomonlaridan biri — uslub. G'afur G'ulom oddiy, ravon, jonli til bilan yozadi. Hazil-mutoyiba, lirik chekinishlar, otashin tortishuvlar bir-biri bilan almashinib turadi. Bolalar ham, kattalar ham bu kitobni qiziqib o'qishadi.",
+      "«Shum bola» o'zbek bolalar adabiyotining mumtoz asarlaridan biri. Asar bir necha bor qayta nashr etilgan, sahnalashtirilgan va 1977-yili shu nomdagi mashhur film suratga olingan (rejissyor Damir Salimov). Hozir kitob har bir o'zbek bolasining sevimli asarlaridan biri."
+    ],
+    "characters": [
+      "Shum bola — bosh qahramon, muallifning bolalikdagi obrazi",
+      "Otasi — sodda, mehnatkash kishi",
+      "Onasi — mehribon, ammo qattiqqo'l ayol",
+      "Qori aka — Shum bolaning ustozi",
+      "Suyun va Boltavoy — Shum bolaning mahalla do'stlari",
+      "Mahalla aholisi — ko'plab yorqin obrazlar"
+    ],
+    "excerpts": [
+      {
+        "title": "Hovuzdagi sarguzasht",
+        "text": "Yoz issig'i hayotni qaynatib yuborgan kunda biz uchovimiz —\nmen, Suyun va Boltavoy — Anhorga shung'idik.\nLekin Anhor o'sha kuni achchiqlangan edi —\nu bizni olib ketmoqchi bo'ldi, o'rmoqlab uyga olib keldi."
+      },
+      {
+        "title": "Qori akani aldash",
+        "text": "Qori akamizning soatini eshikka qo'yib qo'yib, biz qochib ketgan edik.\nLekin u bir narsani biz bilmasdik — soat tovushidan ovqat vaqtini ham aniqlardi.\nKechda qaytsak, hovlida turdi —\n«Endi biling, soat — siz kabi shaytonlar uchun emas» dedi."
+      },
+      {
+        "title": "Onamning so'zi",
+        "text": "«Sen shu qadar sho'xsanki,» dedi onam bir kun,\n«balki katta bo'lganingda yozuvchi bo'larsan —\nchunki yolg'on aytishni va haqiqatni ko'rishni bir vaqtda biling.»\nMen kuldim, lekin onam haq edi — keyin yozuvchi bo'ldim."
+      }
+    ],
+    "historicalContext": "Qissa XX asr boshlaridagi (1910-1920-yillar) Toshkentning eski shahar hayotini ifodalaydi. Bu davr — Rossiya imperiyasidan Sovet hokimiyatiga o'tish davri, an'anaviy mahalla hayoti va yangi maktab tartiblari aralashgan davr. Asar bir bola ko'zi orqali shu o'zgarishlarni ko'rsatadi.",
+    "interestingFacts": [
+      "G'afur G'ulom 1903-yili Toshkentda tug'ilgan, 1966-yili vafot etgan.",
+      "«Shum bola» 1936-yili yozilgan va dastlab «Bolalar» jurnalida bosilgan.",
+      "1977-yili Damir Salimov rejissyorligida shu nomdagi mashhur film suratga olingan.",
+      "G'afur G'ulom she'riyatda ham mashhur — «Sen yetim emassan» eng sevimli she'rlaridan biri.",
+      "Asar o'zbek bolalar adabiyotining mumtoz namunasi.",
+      "G'afur G'ulom Toshkentdagi bir necha mahalla va ko'chaga nom berilgan.",
+      "Qissa nafaqat bolalar, balki kattalar uchun ham eng sevimli kitoblardan biri."
+    ],
+    "themes": ["bolalik", "do'stlik", "Toshkent", "xotira"]
+  },
+  {
+    "id": "ufq-kiril",
+    "slug": "ufq-kiril",
+    "title": "Уфқ (Кирил)",
+    "author": "Саид Аҳмад",
+    "year": "1964–1974",
+    "genre": "Роман-трилогия",
+    "pages": 686,
+    "language": "Ўзбек (кирил)",
+    "accent": "#2d5a3d",
+    "initial": "С",
+    "cover": "/kitoblar/ufq-kiril.jpg",
+    "pdf": "/kitoblar/ufq-kiril.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Саид Аҳмаднинг машҳур трилогияси — Иккинчи жаҳон уруши даври ўзбек қишлоғи ҳаёти.",
+    "longDescription": "«Уфқ» — Саид Аҳмаднинг (1920-2007) уч қисмли роман-трилогияси: «Уфқ» (1964), «Ҳижрон кунлари» (1969), «Уфқ ортида» (1974). Асар Иккинчи жаҳон уруши даври ва ундан кейинги ўзбек қишлоғи ҳаётини, бир оила ва бутун бир халқнинг тақдирини тасвирлайди.",
+    "longDescriptionFull": [
+      "«Уфқ» — Саид Аҳмаднинг (1920-2007) уч қисмли роман-трилогияси: «Уфқ» (1964), «Ҳижрон кунлари» (1969), «Уфқ ортида» (1974). Асар Иккинчи жаҳон уруши даври ва ундан кейинги ўзбек қишлоғи ҳаётини, бир оила ва бутун бир халқнинг тақдирини тасвирлайди.",
+      "Романнинг марказида деҳқон оиласи — Икромжон ва унинг яқинлари турадилар. Уруш бошланганда оила эркаклари фронтга кетади, аёллар, кексалар ва болалар орқа фронтда — пахта далаларида, заводларда, шифохоналарда — ишлайди. Асар иккала фронтни — урушнинг олд линиясини ва қишлоқнинг оғир меҳнатини — тасвирлайди.",
+      "Саид Аҳмад трилогияда ўзбек халқининг урушдаги бутун бошидан кечирганини — оғир йўқотишлар, очарчилик, ва шунга қарамасдан давом этган меҳнат ва ишонч — батафсил кўрсатиб беради. Икромжон ва унинг хотини Зебихон, ўғиллари, қизлари — ҳар бирининг тақдири ўзбек халқининг тақдири билан чамбарчас боғлиқ.",
+      "Асар уруш қаҳрамонлигига оид совет адабиётининг анъаналарига риоя қилади, лекин Саид Аҳмад ўз услуби билан буни юзаки эмас — теран ва инсоний ифода қилади. Қаҳрамонлари мафкуравий шиорлар билан эмас, балки ҳаётий, оддий одам сифатида ҳаракат қилади. Шуни учун асар бугунги кунда ҳам ўзбек ўқувчиси учун қизиқарли.",
+      "Саид Аҳмад ўзбек ҳамза ёзувчиларидан бири эди ва трилогия унинг ижодининг чўққиси сифатида тан олинган. Асар 1974 йили СССР Давлат мукофотига сазовор бўлган. Унинг бошқа машҳур асарлари — «Жалолиддин Мангуберди», «Келинлар қўзғолони», «Уфққа қайтиш» каби романлари."
+    ],
+    "characters": [
+      "Икромжон — оила оқсоқоли, бош қаҳрамон",
+      "Зебихон — Икромжоннинг хотини, аёлларнинг бош образи",
+      "Носир — Икромжоннинг ўғли, фронтга кетган",
+      "Гулнор — оила қизи, орқа фронтда меҳнат қилган",
+      "Тоҳир ака — қишлоқ оқсоқоли",
+      "Доктор Авлония — шифокор, аёлларга ёрдам берган"
+    ],
+    "excerpts": [
+      {
+        "title": "Урушнинг бошланиши",
+        "text": "1941 йил, 22 июн. Радиода қизил тонгда ёмон хабар.\nИкромжон майдондан қайтаётганда, эшикда онаси нонга йиғлаб турарди.\n«Бугун ўзимизнинг кунимиз тугади, ўғлим,» деди у.\n«Эртадан бошлаб биз бошқа одамлармиз.»"
+      },
+      {
+        "title": "Орқа фронтда",
+        "text": "Пахта даласи аёллар ва болалар билан тўлган эди.\nЭркаклар — ҳаммаси фронтда, ё қайтмасликда, ё ярадор бўлиб қайтган.\n«Биз ҳам жанг қиламиз,» деди Гулнор, «фақат бизнинг қилич — пахта;\nбизнинг бомба — нон.»"
+      },
+      {
+        "title": "Хотира",
+        "text": "Йиллар ўтиб, кексалик пайтида Икромжон айвонда ўтириб ўйларди:\n«Уруш тугади, лекин уруш ҳеч қачон тугамайди.\nУ бизнинг қалбларимизда — кейинги авлодларга етди.\nЛекин шу қалбларда нон бор, нон — энг катта тинчлик.»"
+      }
+    ],
+    "historicalContext": "Трилогия Иккинчи жаҳон уруши (1939-1945) ва ундан кейинги тиклаш даврларини ифодалайди. Ўзбекистон уруш йилларида 1,5 миллиондан зиёд аскар фронтга юборган, миллионлаб эвакуация қилинганларни қабул қилган, ва катта пахта-ғалла маҳсулотлари етказиб берган. Уруш ўзбек халқининг тақдирида чуқур из қолдирган.",
+    "interestingFacts": [
+      "«Уфқ» трилогияси 1964-1974 йиллар оралиғида учта қисм бўлиб ёзилган.",
+      "Асар 1974 йили СССР Давлат мукофотига сазовор бўлган.",
+      "Саид Аҳмад ўзи ҳам Иккинчи жаҳон урушида қатнашган.",
+      "Уруш йилларида Ўзбекистон 1,5 миллиондан зиёд аскар фронтга юборган.",
+      "Трилогия 686 саҳифа — ўзбек роман-трилогияларининг энг катталаридан бири.",
+      "Саид Аҳмад «Келинлар қўзғолони» комедияси билан ҳам жуда машҳур.",
+      "Асар бир неча тилларга таржима қилинган."
+    ],
+    "themes": ["уруш", "халқ", "оила", "меҳнат"]
+  },
+  {
+    "id": "avlodlar-dovoni",
+    "slug": "avlodlar-dovoni",
+    "title": "Avlodlar Dovoni",
+    "author": "Asqad Muxtor",
+    "year": "1965",
+    "genre": "Roman · Falsafiy",
+    "pages": 640,
+    "language": "O'zbek",
+    "accent": "#3e6b4e",
+    "initial": "M",
+    "cover": "/kitoblar/avlodlar-dovoni.jpg",
+    "pdf": "/kitoblar/avlodlar-dovoni.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Asqad Muxtorning shoh asari — bir necha avlodning hayoti, ma'naviy izlanishlari va davr keskinligi.",
+    "longDescription": "«Avlodlar dovoni» — Asqad Muxtorning (1920-1997) eng yirik va falsafiy ko'lamdor romani. Asar bir necha avlodning hayoti orqali XX asr o'zbek jamiyatining ma'naviy-falsafiy izlanishlarini, davr o'zgarishlarining inson taqdiriga ta'sirini chuqur tahlil qiladi.",
+    "longDescriptionFull": [
+      "«Avlodlar dovoni» — Asqad Muxtorning (1920-1997) eng yirik va falsafiy ko'lamdor romani. Asar bir necha avlodning hayoti orqali XX asr o'zbek jamiyatining ma'naviy-falsafiy izlanishlarini, davr o'zgarishlarining inson taqdiriga ta'sirini chuqur tahlil qiladi.",
+      "Roman «dovon» — tog'lardagi o'tish — metaforasi atrofida qurilgan. Har bir avlod o'z davrining «dovoni»dan o'tishi kerak: ota-bobolarning urflari, mafkuraviy keskinliklar, shaxsiy izlanishlar — bularning hammasi o'sha dovonni qiyinlashtiradi. Lekin dovondan o'tmasdan keyingi avlodga to'g'ri yo'lni ko'rsatish mumkin emas.",
+      "Asarda uch bosh avlod tasvirlangan: bobolar avlodi (XIX asr oxiri va revolyutsiyaga qadar), otalar avlodi (urush va keyingi tiklash) va o'g'illar avlodi (sovet davlatining «turg'unlik» yillari). Har birining o'z dovoni, o'z fojiasi, o'z g'alabasi bor.",
+      "Muxtorning uslubi ko'p qatlamli: lirik chekinishlar, falsafiy mulohazalar, oddiy hayotiy detallar bir-biri bilan almashinib turadi. Asar nafaqat oilaviy yilnomadir, balki XX asr o'zbek ziyolisining ma'naviy avtoportreti hamdir. Muallif o'zining shaxsiy fikrlarini ham qahramonlariga «singdirib» beradi.",
+      "Asqad Muxtor she'r va nasrning aralash uslubida ishlagan o'zbek yozuvchilaridan biri. U dastlab she'r bilan, keyin nasr bilan, oxirida esa esselar va falsafiy mulohazalar bilan mashhur bo'lgan. «Avlodlar dovoni» uning ijodining cho'qqisi va sovet davri o'zbek romanchiligining eng murakkab asarlaridan biri."
+    ],
+    "characters": [
+      "Bobosi — birinchi avlod vakili, eski an'analar saqlovchisi",
+      "Otasi — ikkinchi avlod, urush va tiklash davri kishisi",
+      "Bosh qahramon — uchinchi avlod, o'z yo'lini izlayotgan ziyoli",
+      "Onasi — oilaning ma'naviy markazi",
+      "Sevgilisi — bosh qahramonning his-tuyg'ulari va dunyoqarashining sinov nuqtasi",
+      "Do'sti — boshqa yo'l tutgan, lekin bog'liq qolgan avlod vakili"
+    ],
+    "excerpts": [
+      {
+        "title": "Dovonda",
+        "text": "Har bir avlodning o'z dovoni bor — biri uni o'tib o'tadi,\nikkinchisi uchun u abadiy to'siq bo'lib qoladi.\nLekin o'tganlar ham, qolganlar ham — birga keyingilarni kutadi.\nChunki dovon — ko'priq emas, balki sinov."
+      },
+      {
+        "title": "Otasi haqida",
+        "text": "Otam hech qachon ko'p gapirmas edi.\nU faqat ishlardi, jim ishlardi, qarib ishlardi.\nMen bolaligimda undan nimadir o'rganmagandim,\nlekin endi bilaman — uning butun hayoti — bir uzun dars edi."
+      },
+      {
+        "title": "Onam xotirasi",
+        "text": "«Yo'lda qolgan har bir gulni hidlama,» derdi onam,\n«chunki sen yo'lda emas — sen ham gul bo'lib o'sgansan.»\nFaqat endi tushunaman — u meni boshqa hech kim aytmagan tarzda\no'z qiymatim haqida o'rgatgan edi."
+      }
+    ],
+    "historicalContext": "Roman XX asr o'zbek hayotini — Rus imperiyasi davri oxiridan to 1960-yillarning o'rtalarigacha — uch avlod orqali ko'rsatadi. Bu davr — eng katta o'zgarishlar davri: oktabr inqilobi, kollektivizatsiya, qatag'on, Ulug' Vatan urushi, yangidan tiklash, ottepel. Har bir avlod bu o'zgarishlarni o'zicha qabul qiladi va o'zicha javob beradi.",
+    "interestingFacts": [
+      "Asqad Muxtor 1920-yili tug'ilgan, 1997-yili vafot etgan.",
+      "«Avlodlar dovoni» Muxtor ijodining cho'qqisi sifatida tan olingan.",
+      "Asarda XX asr o'zbek tarixining muhim davrlari aks ettirilgan.",
+      "Muxtor she'rdan boshlab, nasr va esseda davom etgan ko'p qirrali yozuvchi.",
+      "Uning «Tug'ilish» va «Davr mening taqdirimda» asarlari ham mashhur.",
+      "Roman 640 sahifa — keng ko'lamli oilaviy yilnoma.",
+      "Asar 1990-yillardan keyin yangi talqinlar va qayta nashrlar bilan qaytadan o'qila boshlangan."
+    ],
+    "themes": ["avlodlar", "tarix", "falsafa", "oila"]
+  },
+  {
+    "id": "ikki-eshik-orasi",
+    "slug": "ikki-eshik-orasi",
+    "title": "Ikki Eshik Orasi",
+    "author": "O'tkir Hoshimov",
+    "year": "1986",
+    "genre": "Roman · Maishiy",
+    "pages": 608,
+    "language": "O'zbek",
+    "accent": "#7a4e6b",
+    "initial": "H",
+    "cover": "/kitoblar/ikki-eshik-orasi.jpg",
+    "pdf": "/kitoblar/ikki-eshik-orasi.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "O'tkir Hoshimovning shoh asari — bir oilaning hayoti orqali butun o'zbek jamiyatining ko'zgusi.",
+    "longDescription": "«Ikki eshik orasi» — O'tkir Hoshimovning (1941-2013) eng mashhur romani, 1986-yilda yozilgan. Asar bir oddiy oilaning kundalik hayoti orqali Sovet davri o'zbek jamiyatining murakkab ijtimoiy, ma'naviy va oilaviy munosabatlarini chuqur tasvirlaydi.",
+    "longDescriptionFull": [
+      "«Ikki eshik orasi» — O'tkir Hoshimovning (1941-2013) eng mashhur romani, 1986-yilda yozilgan. Asar nomi simvolik — biz hayotimizda ko'pincha ikki eshik orasida — eski va yangi, an'ana va o'zgarish, baxt va azob o'rtasida — turamiz.",
+      "Asar bir oddiy oilaning kundalik hayoti orqali Sovet davri o'zbek jamiyatining murakkab ijtimoiy, ma'naviy va oilaviy munosabatlarini chuqur tasvirlaydi. Bosh qahramonlar — ota-ona va ularning o'g'il-qizlari. Har birining o'z muammosi, o'z izlanishi, o'z dard-quvonchi bor.",
+      "Hoshimov asarda XX asrning so'nggi choragidagi O'zbekiston hayotini eng nozik tafsilotlarigacha tasvirlaydi: mahalla aro qo'shnichilik, oilaviy munosabatlar, qiz uzatish va kelin olish urflari, ish joydagi keskinliklar, sevgi va xiyonat, do'stlik va dushmanchilik. Hech bir mavzu chetda qolmaydi.",
+      "Romanning eng kuchli tomoni — psixologik realizm. Hoshimov har bir qahramonning ichki olamini, motivlarini, his-tuyg'ularini juda nozik chizadi. O'quvchi har birining yonida o'tirgandek his qiladi. Aynan shu sifati uchun asar millionlab kitobxonlarning sevimlisiga aylangan.",
+      "«Ikki eshik orasi» o'zbek nasrining XX asr oxiridagi cho'qqilaridan biri. Asar o'rta maktab dasturidan o'rin olgan, bir necha bor sahnalashtirilgan, TV-serial sifatida ham olingan. Hoshimov bu asar bilan zamonaviy o'zbek maishiy romanchiligining poydevorini qo'ydi."
+    ],
+    "characters": [
+      "Ota — oilaning oqsoqoli, sodda lekin donishmand kishi",
+      "Ona — oilaning ma'naviy markazi, mehribon va kuchli",
+      "To'ng'ich o'g'il — oilaviy va kasbiy keskinliklar girdobida",
+      "Qizi — yangi avlod vakili, an'ana bilan zamon orasida",
+      "Kelini — oilaga kelgan «boshqa» tabiat",
+      "Mahalla aholisi — ko'plab yorqin yon obrazlar"
+    ],
+    "excerpts": [
+      {
+        "title": "Ikki eshik orasida",
+        "text": "Hayotda ko'pincha shunday paytlar bo'ladi —\nbir eshik ortda yopildi, ikkinchisi hali ochilmadi.\nIkki eshik orasida — kim sen? Nima bilan ovqatlanasan?\nFaqat shu paytda chin haqqing mukashshafa bo'ladi."
+      },
+      {
+        "title": "Ona qalbi",
+        "text": "Ona qalbi — bu eng nozik tarozi.\nU bir farzandiga ko'p berib, boshqasiga oz berolmasdi.\nLekin u hammasini bilardi: kim aybdor, kim haq —\nfaqat hech kimga aytmasdi, chunki har birini sevardi."
+      },
+      {
+        "title": "Kelin haqida",
+        "text": "Kelin keldi — biz tashqi ko'zda gulchirayin tutdik.\nLekin uning ko'zlari boshqa narsa derdi:\n«Men sizga keldim, lekin o'z uyimni unutmadim.»\nBu bilan o'rganishimiz kerak edi, lekin biz buni keyin tushundik."
+      }
+    ],
+    "historicalContext": "Asar 1970-1980-yillarning O'zbekistonini ifodalaydi. Bu davr — Sovet davrining oxiri, jamiyatda turg'unlik va o'zgarishlarga taloblar paydo bo'lgan davr. Hoshimov o'sha davr oilaviy va ijtimoiy hayotning eng kichik detallarini tasvirlash orqali butun jamiyat suratini chizadi.",
+    "interestingFacts": [
+      "O'tkir Hoshimov 1941-yili Toshkent viloyatida tug'ilgan, 2013-yili vafot etgan.",
+      "«Ikki eshik orasi» 1986-yili yozilgan va shu zahoti o'zbek nasriy adabiyotining muhim hodisasi bo'lib qolgan.",
+      "Asar bir necha tilga tarjima qilingan va million nusxada qayta nashr etilgan.",
+      "Roman bir necha bor sahnalashtirilgan va TV-serial sifatida olingan.",
+      "Hoshimov «Tushda kechgan umrlar», «Dunyoning ishlari» asarlari bilan ham mashhur.",
+      "Asar zamonaviy o'zbek maishiy romanchiligining poydevorini qo'ygan.",
+      "Roman 608 sahifa va eng katta o'zbek oilaviy romanlaridan biri."
+    ],
+    "themes": ["oila", "an'ana", "sevgi", "davr"]
+  },
+  {
+    "id": "otamdan-qolgan-dalalar",
+    "slug": "otamdan-qolgan-dalalar",
+    "title": "Otamdan Qolgan Dalalar",
+    "author": "Tog'ay Murod",
+    "year": "1994",
+    "genre": "Roman · Lirik-falsafiy",
+    "pages": 360,
+    "language": "O'zbek",
+    "accent": "#3e6b4e",
+    "initial": "T",
+    "cover": "/kitoblar/otamdan-qolgan-dalalar.jpg",
+    "pdf": "/kitoblar/otamdan-qolgan-dalalar.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Tog'ay Murodning eng buyuk va ko'p mukofotli asari — yer, ota, vatan va er-yigit haqida lirik roman.",
+    "longDescription": "«Otamdan qolgan dalalar» — Tog'ay Murodning (1948-2003) eng buyuk va ko'p mukofotli romani, 1994-yilda yozilgan. Asar o'g'ilning otadan meros qolgan yer-mulkka qaytishi va shu orqali o'z o'zligini topishi haqida lirik-falsafiy bayonotdir.",
+    "longDescriptionFull": [
+      "«Otamdan qolgan dalalar» — Tog'ay Murodning (1948-2003) eng buyuk va ko'p mukofotli romani, 1994-yilda yozilgan. Asar mustaqillikning birinchi yillaridagi o'zbek nasrining shoh namunalaridan biri.",
+      "Roman o'g'il qahramonning shahardan qishloqqa — otadan meros qolgan yer-mulkka — qaytishi va shu orqali o'z o'zligini, ildizlarini, ma'naviy negizini topishi haqida. Asar avtobiografik tuslangan bo'lib, Tog'ay Murodning shaxsiy his-tuyg'ulari va falsafasi bilan chuqur to'lgan.",
+      "Tog'ay Murodning uslubi o'ziga xos: lirik tortishuvlar, ramziy obrazlar, qishloq odamlarining oddiy lekin tabarrukk hayoti, tabiat tasvirining o'zbek nasrida deyarli misli ko'rilmagan boyligi. Har bir paragraph she'r kabi keladi va keladi, lekin o'qiganda chuqur falsafiy zamin paydo bo'ladi.",
+      "Asarning markaziy g'oyalaridan biri — yer va ona-vatanning ma'naviy ahamiyati. Ota qoldirgan dala — bu nafaqat moddiy meros, balki butun bir madaniyat, til, urf, ma'naviyatning ramzi. Uni asrab qolish — bu o'zlikni asrab qolish. Uni yo'qotish — bu o'zlikni yo'qotish.",
+      "Asar 1996-yili Davlat mukofotiga sazovor bo'lgan va shu zahoti o'zbek mustaqillik davri adabiyotining eng yorqin hodisalaridan biri sifatida tan olingan. Tog'ay Murod nafaqat o'g'il-otaning, balki butun bir avlodning ma'naviy izlanishlari va vatanga qaytishini badiiy ifodada bayon qilgan."
+    ],
+    "characters": [
+      "O'g'il — bosh qahramon, shahardan qishloqqa qaytgan",
+      "Ota (xotirasi) — asarning eng kuchli ramziy obrazi",
+      "Ona — yer va vatanning timsoli",
+      "Qishloq oqsoqollari — donishmandlik va xotira saqlovchilari",
+      "Yer-suvi — qahramondan ham faolroq «xarakterlar»"
+    ],
+    "excerpts": [
+      {
+        "title": "Otamdan qolgan dalalar",
+        "text": "Dalada turdim, oyog'imning ostida tuproq —\nbu shunchaki tuproq emas, balki otamning izlari bor.\nQancha yo'l bosgan, qancha yer aylantirgan u shu yerlarda?\nHar bir qadami — meni dunyoga olib kelishga qaratilgan."
+      },
+      {
+        "title": "Qishloqda",
+        "text": "Shaharda yiqit bo'ldim, qishloqda — yana o'g'il bo'ldim.\nShahar meni qoplagan to'shaklarni qishloq yerga sochib tashladi.\n«Kel,» dedi qishloq, «sen yo'qotmagansan — sen unutgansan.\nEslat seni — qaerdan kelgan eding.»"
+      },
+      {
+        "title": "Yerga sevgi",
+        "text": "Yerni faqat dehqon emas, balki butun millat ko'taradi.\nDehqon shudgor qilar, lekin yer xotiraga qo'shilib o'g'illarni tug'ar.\nO'g'illar shaharga ketishi mumkin —\nlekin yer ularni har doim kutib turadi, sukut bilan, beg'ubor."
+      }
+    ],
+    "historicalContext": "Asar 1990-yillarning boshlari — O'zbekiston mustaqillikka erishgandan keyingi davr — voqealarini aks ettiradi. Bu davrda o'zbek ziyolilari milliy o'zlik, til, tarix va ma'naviyat masalalariga qaytishni boshlagan edi. Tog'ay Murodning asari shu yo'nalishdagi adabiyotning eng yorqin namunasi.",
+    "interestingFacts": [
+      "Tog'ay Murod 1948-yili Surxondaryoda tug'ilgan, 2003-yili vafot etgan.",
+      "«Otamdan qolgan dalalar» 1996-yili O'zbekiston Davlat mukofotiga sazovor bo'lgan.",
+      "Asar mustaqillik davri o'zbek adabiyotining eng yorqin namunasi.",
+      "Tog'ay Murodning lirik-falsafiy uslubi o'zbek nasriy adabiyotida o'ziga xos.",
+      "Yozuvchining boshqa mashhur asarlari: «Yulduzlar mangu yonadi», «Ot kishnagan oqshom», «Oydinda yurgan odamlar».",
+      "Tog'ay Murod o'zbek qishloq hayoti va tabiat tasvirining mumtoz mahoratiga ega.",
+      "Asar o'rta maktab dasturiga kiritilgan va keng o'rganiladi."
+    ],
+    "themes": ["vatan", "ota", "yer", "o'zlik"]
+  },
+  {
+    "id": "yulduzlar-mangu-yonadi",
+    "slug": "yulduzlar-mangu-yonadi",
+    "title": "Yulduzlar Mangu Yonadi",
+    "author": "Tog'ay Murod",
+    "year": "1976",
+    "genre": "Qissa · Lirik",
+    "pages": 145,
+    "language": "O'zbek",
+    "accent": "#5d4e7a",
+    "initial": "T",
+    "cover": "/kitoblar/yulduzlar-mangu-yonadi.jpg",
+    "pdf": "/kitoblar/yulduzlar-mangu-yonadi.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Tog'ay Murodning erta davr lirik qissasi — sevgi, sodiqlik va xotira haqida.",
+    "longDescription": "«Yulduzlar mangu yonadi» — Tog'ay Murodning (1948-2003) erta davr lirik qissasi. Asar yosh sevgi, sodiqlik, ayriliq va xotira mavzularini lirik-falsafiy uslubda bayon etadi. Tog'ay Murodning keyingi shoh asarlariga olib boruvchi ijodiy yo'lining muhim bosqichi.",
+    "longDescriptionFull": [
+      "«Yulduzlar mangu yonadi» — Tog'ay Murodning (1948-2003) erta davr lirik qissalaridan biri. Asar yosh sevgi, sodiqlik, ayriliq va xotira mavzularini lirik-falsafiy uslubda bayon etadi.",
+      "Qissa Tog'ay Murodning keyingi shoh asarlariga — «Otamdan qolgan dalalar», «Oydinda yurgan odamlar» — olib boruvchi ijodiy yo'lining muhim bosqichi. Bu yerda u o'z uslubini — qisqa, she'riy jumlalar, tabiat va inson ruhini bog'lash, his-tuyg'ularning eng nozik tomonlarini qog'ozga tushirish — shakllantiradi.",
+      "Asar nomi simvolik: yulduzlar mangu yonadi — sevgi ham, xotira ham, qadrli odamlar siymosi ham ko'ngilda mangu yonib turadi, hatto ular jismonan yonida bo'lmasalar ham. Bu — o'zbek lirik nasrining eng sevikli mavzularidan biri.",
+      "Qissaning bosh qahramonlari — yosh ikki sevishgan. Ularning sevgisi, ayriliqlari, qaytishi va yana ayrilishi tabiat tasviri, lirik chekinishlar va xotira lavhalari orqali bayon qilinadi. Tog'ay Murodning bu erta asari uning keyingi yirik romanlaridan farq qilsa-da, o'zining ohanglari va yorqinligi bilan o'quvchini hayratga soladi.",
+      "«Yulduzlar mangu yonadi» Tog'ay Murodning ijodiy izlanishlari va o'zbek nasrining lirik yo'nalishini yangi cho'qqilarga olib chiqishi uchun muhim asar. Yozuvchining ko'p sevimlilarining fikricha, bu qissadagi tabiat tasviri va lirik ohanglar uning keyingi shoh romanlarining «embrioni» bo'lgan."
+    ],
+    "characters": [
+      "Bosh qahramon yigit — yosh, sevimli, izlanuvchi",
+      "Sevgilisi — qishloq qizi, sodiq va g'amxo'r",
+      "Tabiat — alohida qahramon, his-tuyg'ularning aksi",
+      "Qishloq aholisi — yon obrazlar, lirik tasvir berishda muhim",
+      "Yulduzlar — markaziy ramziy obraz"
+    ],
+    "excerpts": [
+      {
+        "title": "Yulduzli tunda",
+        "text": "Biz osmonga qaradik, yulduzlar yondi.\nUlar ming yildan beri shunday yonadi, dedim men.\n«Yo'q,» dedi u, «ular har kecha yangidan yonadi —\nbiz ko'rganimiz uchun, biz birga bo'lganimiz uchun.»"
+      },
+      {
+        "title": "Ayriliqda",
+        "text": "U ketdi. Men yulduzlarga qaradim — ular hali ham yonardi.\n«Demak, u ham ko'radi,» dedim o'zimga,\n«qaerda bo'lmasin, yulduzlar bizni birga ushlab turadi.\nFaqat biz buni hozir bilmaymiz — keyin tushunamiz.»"
+      },
+      {
+        "title": "Xotira",
+        "text": "Yillar o'tdi. Endi yulduzlarga qarayman —\nlekin ko'p narsalar o'zgardi: yulduzlar ham, men ham.\nLekin bir narsa o'zgarmadi: ko'nglim haligacha o'sha kechani saqlaydi.\nDemak, yulduzlar mangu yonadi — qalblarda."
+      }
+    ],
+    "historicalContext": "Asar 1970-yillar oxiridagi o'zbek qishloq hayotini, yoshlarning sevgi va izlanishlarini ifodalaydi. Bu davrda o'zbek nasriy adabiyoti lirik-falsafiy yo'nalishni rivojlantirayotgan, an'anaviy realistik tasvirdan uzoqlashib, ramziy va meditativ usullarga o'tib borardi. Tog'ay Murodning qissalari shu yo'nalishning yorqin namunalari.",
+    "interestingFacts": [
+      "Asar Tog'ay Murodning erta davr ijodiga tegishli.",
+      "Qissa lirik-falsafiy uslubda yozilgan — yozuvchining keyingi shoh asarlariga olib boruvchi yo'l.",
+      "Tog'ay Murodning tabiat tasviri o'zbek nasrida o'ziga xos cho'qqi sifatida tan olingan.",
+      "Asar nomi simvolik — yulduzlar mangu yonadi, ya'ni sevgi va xotira mangu.",
+      "Tog'ay Murod 1948-yili Surxondaryoda tug'ilgan.",
+      "Yozuvchining boshqa mashhur asarlari: «Otamdan qolgan dalalar», «Ot kishnagan oqshom».",
+      "Tog'ay Murod O'zbekiston Davlat mukofoti laureati."
+    ],
+    "themes": ["sevgi", "xotira", "tabiat", "ayriliq"]
+  },
+  {
+    "id": "ikki-karra-ikki-besh",
+    "slug": "ikki-karra-ikki-besh",
+    "title": "Ikki Karra Ikki — Besh",
+    "author": "Erkin A'zam",
+    "year": "1985",
+    "genre": "Qissa · Ironik-falsafiy",
+    "pages": 364,
+    "language": "O'zbek",
+    "accent": "#1e3a8a",
+    "initial": "E",
+    "cover": "/kitoblar/ikki-karra-ikki-besh.jpg",
+    "pdf": "/kitoblar/ikki-karra-ikki-besh.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Mantiqiy bo'lmagan jamiyatda yashashning falsafasi — qissaning nomi hayotning paradokslarini ifodalaydi.",
+    "longDescription": "«Ikki karra ikki — besh» — Erkin A'zamning ironik-falsafiy qissasi. Asar nomi Dostoevskiyning «Yer ostidan eslatmalar»idagi mashhur paradoksga ishora qiladi: ba'zan hayot mantiqiy formulalardan tashqarida, ya'ni 2×2 = 4 emas, balki 5 ham bo'lishi mumkin.",
+    "longDescriptionFull": [
+      "«Ikki karra ikki — besh» — Erkin A'zamning ironik-falsafiy qissasi. Asar nomi Dostoevskiyning «Yer ostidan eslatmalar»idagi mashhur paradoksga ishora qiladi: matematikada 2×2 = 4, lekin hayotda ba'zan u 5 ham bo'lishi mumkin — chunki inson mantiqiy formulalar bilan ovqatlanmaydi.",
+      "Asarning bosh qahramoni — o'z hayotini va atrofdagilarni doimo ironiya va shubha bilan ko'zatuvchi yosh kishi. U Sovet davri jamiyatining «mantiqsiz mantig'i»ni — rasmiy haqiqat va jonli hayot orasidagi farqlarni, mafkura tilini va odamlar tabiati orasidagi keskinliklarni — ochiqcha emas, balki yumshoq satira bilan tanqid qiladi.",
+      "Erkin A'zamning uslubi o'zbek nasrida o'ziga xos: aql-zakovat va ironiya, lirizm va sotsial tanqid, kundalik detallar va falsafiy umumlashtirishlar bir-biri bilan almashinadi. U Sharq an'analari (Nasriddin Afandi) va G'arb adabiyoti (Dostoevskiy, Chexov, Bulgakov) ta'sirini muvozanat saqlay olgan.",
+      "Asar yumor bilan to'la, lekin oxir-oqibatda chuqur falsafiy mulohazalarga olib boradi: nima — haqiqat, nima — ko'rsatma? Hayot haqiqatan ham «2×2 = 4» mantiqiga bo'ysunadimi, yoki uning o'z formulalari bormi? Bu savollar har bir o'quvchini o'z hayotidagi paradokslar haqida o'ylashga undaydi.",
+      "Erkin A'zam zamonaviy o'zbek nasrining eng o'qiladigan va ko'p tarjima qilingan yozuvchilaridan biri. Uning qissalari Sovet davri tugashi bilan birga davom etdi va mustaqillik davri adabiyotida ham muhim o'rinni egalladi."
+    ],
+    "characters": [
+      "Bosh qahramon — yosh kishi, ironik kuzatuvchi",
+      "Do'sti — mantiqning qarama-qarshi tomonida",
+      "Sevgilisi — hayotning «mantiqsiz» tomoni",
+      "Atrofdagilar — har biri o'ziga xos paradoks",
+      "Boshliq — rasmiy mantiqning timsoli"
+    ],
+    "excerpts": [
+      {
+        "title": "Paradoks",
+        "text": "«Ikki karra ikki to'rt,» dedi muallim doskaga yozib.\n«Ikki karra ikki besh,» dedim men ichimda.\nChunki men o'sha kuni sevgilim bilan kelishmagan edim —\nva to'rt o'rniga besh, hatto olti ham bo'lishi mumkindek tuyulardi."
+      },
+      {
+        "title": "Ko'cha hikmatlari",
+        "text": "Ko'chada bir chol o'tirgan — qarib bo'lib qolgan, lekin ko'zi tirik.\n«Nima qilyapsiz?» so'radim.\n«Hech narsa,» dedi u, «hayotni kuzatyapman.\nU har kuni meni hayratga soladi — chunki har kuni o'zini boshqa ko'rsatadi.»"
+      },
+      {
+        "title": "Adolat",
+        "text": "Kim dedi adolat — bu tarozi degan?\nTarozi bir tomoni og'ir bo'lsa, ikkinchisi ko'tariladi.\nAdolat esa — bu ikkala tomonni ham yer ostiga tushirmasdir.\nLekin buni faqat tarozi tarozi bo'lmaganda biladi."
+      }
+    ],
+    "historicalContext": "Asar 1980-yillarning Sovet O'zbekistonidagi ziyolilar hayotini, ularning rasmiy mafkura bilan shaxsiy haqiqat orasidagi kurashlarini ifodalaydi. Bu davr — Sovet jamiyatining oxirgi yillari, qayta qurish va ochiqlik (glasnost) davrining oldidan. Erkin A'zamning asarlari shu davrning yashirin so'zlarini badiiy yetkazib bera olgan.",
+    "interestingFacts": [
+      "Asar nomi Dostoevskiyning «Yer ostidan eslatmalar»idagi mashhur paradoksdan olingan.",
+      "Erkin A'zam zamonaviy o'zbek nasrining eng o'qiladigan yozuvchilaridan biri.",
+      "Uning uslubi Sharq va G'arb adabiy an'analarini muvozanatda saqlaydi.",
+      "Asarlari bir necha tilga tarjima qilingan.",
+      "Erkin A'zam qissa, hikoya va publitsistika sohalarida ishlagan.",
+      "U Nasriddin Afandi an'analarini zamonaviy o'zbek ironik nasrida davom ettirgan.",
+      "Yozuvchi keyinchalik kino-stsenariylar va dramaturgiya sohasida ham mashhur bo'lgan."
+    ],
+    "themes": ["ironiya", "paradoks", "ziyolilik", "haqiqat"]
+  },
+  {
+    "id": "sariq-devni-minib",
+    "slug": "sariq-devni-minib",
+    "title": "Sariq Devni Minib",
+    "author": "Xudoyberdi To'xtaboyev",
+    "year": "1962",
+    "genre": "Qissa · Bolalar fantastikasi",
+    "pages": 236,
+    "language": "O'zbek",
+    "accent": "#e8c898",
+    "initial": "T",
+    "cover": "/kitoblar/sariq-devni-minib.jpg",
+    "pdf": "/kitoblar/sariq-devni-minib.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "O'zbek bolalar adabiyotining mumtoz asari — Hoshimjonning sehrli ko'zli o'g'il va Sariq dev bilan sarguzashtlari.",
+    "longDescription": "«Sariq devni minib» — Xudoyberdi To'xtaboyevning (1932-2023) eng mashhur bolalar qissasi, 1962-yilda yozilgan. Asar bolalarning sevimli kitoblaridan biriga aylangan — o'g'il Hoshimjonning sehrli kuchlari, Sariq dev bilan do'stligi va qiziqarli sarguzashtlari haqida.",
+    "longDescriptionFull": [
+      "«Sariq devni minib» — Xudoyberdi To'xtaboyevning (1932-2023) eng mashhur bolalar qissasi, 1962-yilda yozilgan. Asar bolalar adabiyotining mumtoz namunasi va o'zbek bolalarning sevimli kitoblaridan biri.",
+      "Asarning bosh qahramoni — Hoshimjon — oddiy maktab o'quvchisi. Bir kun u sehrli ko'zli tutadi, va shu ko'z bilan u o'z xohishlarini hayotga aylantira oladi. Lekin sehr ko'p oddiy mas'uliyatlar bilan keladi: har bir xohish o'z oqibatlariga ega.",
+      "Hoshimjon Sariq dev bilan tanishadi — bu xushmuomala va o'ziga xos hazil-tuyg'usi bo'lgan afsonaviy mavjudot. Birga ular qiziqarli sarguzashtlardan o'tib, ko'p saboqlar olishadi: o'z so'zida turish, do'stga sodiq bo'lish, kuchni ezgulik uchun ishlatish, dunyo qoidalarini hurmat qilish.",
+      "To'xtaboyevning yozuvchilik mahorati — fantastik elementlarni o'zbek qishloq hayoti va madaniyatining oddiy detallari bilan birlashtira olishida. Sariq dev — bu Sharq folklorida bo'lgan dev obrazining zamonaviy talqini, lekin u dahshatli emas — aksincha, hazilkash, oqil va inson do'sti.",
+      "Asar bir necha bor qayta nashr etilgan, bolalar teatrlarida sahnalashtirilgan va film sifatida olingan. To'xtaboyev keyinchalik «Sariq devning o'limi», «Beshko'z», «Sehrli qalpoqcha» kabi davom qissalarini ham yozgan. «Sariq devni minib» o'zbek bolalar adabiyotidagi eng sevimli va eng ko'p o'qilgan asarlardan biri."
+    ],
+    "characters": [
+      "Hoshimjon — bosh qahramon, sehrli ko'zli o'g'il",
+      "Sariq dev — afsonaviy do'sti, oqil va hazilkash",
+      "Hoshimjonning otasi va onasi — oddiy qishloq oilasi",
+      "Sinfdoshlari — qiziqarli yon obrazlar",
+      "Muallima — Hoshimjonning ustozasi",
+      "Qaroqchi — manfiy qahramon, sehrni egallashga harakat qilgan"
+    ],
+    "excerpts": [
+      {
+        "title": "Sehrli ko'z",
+        "text": "Hoshimjon ertalab uyg'onganda — bir narsa boshqacha edi.\nKo'zlari oddiy emas, balki sehrli edi.\n«Kim biladi,» dedi u, «balki men endi har bir narsani ko'ra olaman?»\nLekin u hali bilmas edi — sehrli ko'z eng katta sinov."
+      },
+      {
+        "title": "Sariq dev",
+        "text": "Sariq dev ulkan, lekin ovozining yumshoqligi tinglovchini hayratga solardi.\n«Men dev emasman,» dedi u, «men shunchaki katta odamga o'xshayman.\nLekin yurakim bola — chunki bolalar dunyoda haqiqat sevuvchilar.»"
+      },
+      {
+        "title": "Saboq",
+        "text": "«Sehrni o'z xohishingga qaratma,» dedi Sariq dev.\n«Sehrni boshqalarga yordam berishga qarat.\nXohishlaring bilan o'zingni yo'qotasan,\nlekin yaxshilik bilan o'zingni topasan.»"
+      }
+    ],
+    "historicalContext": "Asar 1960-yillarning boshlaridagi o'zbek bolalar adabiyotining yangi bosqichini ifodalaydi. Bu davrda Sovet bolalar adabiyoti realistik tasvirdan fantastik va ertaknamo janr-larga ham yo'l ochib berishni boshladi. To'xtaboyev shu yo'nalishda o'zbek tilidagi mumtoz asarni yaratdi.",
+    "interestingFacts": [
+      "Xudoyberdi To'xtaboyev 1932-yili Andijon viloyatida tug'ilgan.",
+      "«Sariq devni minib» 1962-yili yozilgan va shu zahoti bolalar sevimlisi bo'lgan.",
+      "Asar 100 000 nusxadan ko'p qayta nashr etilgan.",
+      "Bir necha tilga tarjima qilingan — rus, ingliz, fransuz, nemis.",
+      "1976-yili shu nomda kichik animatsion film yaratilgan.",
+      "To'xtaboyev keyinchalik «Sariq devning o'limi» davom qissasini yozgan.",
+      "Yozuvchi O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
+    ],
+    "themes": ["sehr", "bolalik", "do'stlik", "ezgulik"]
+  },
+  {
+    "id": "sariq-devning-olimi",
+    "slug": "sariq-devning-olimi",
+    "title": "Sariq Devning O'limi",
+    "author": "Xudoyberdi To'xtaboyev",
+    "year": "1972",
+    "genre": "Qissa · Bolalar fantastikasi",
+    "pages": 121,
+    "language": "O'zbek",
+    "accent": "#b8893f",
+    "initial": "T",
+    "cover": "/kitoblar/sariq-devning-olimi.jpg",
+    "pdf": "/kitoblar/sariq-devning-olimi.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "«Sariq devni minib»ning davomi — Hoshimjon va Sariq devning yangi va eng dramatik sarguzashtlari.",
+    "longDescription": "«Sariq devning o'limi» — Xudoyberdi To'xtaboyevning «Sariq devni minib» qissasining davomi, 1972-yilda yozilgan. Asar Hoshimjon va Sariq devning yangi sarguzashtlari, lekin bu safar — eng dramatik va ma'naviy ahamiyatli sahifasi.",
+    "longDescriptionFull": [
+      "«Sariq devning o'limi» — Xudoyberdi To'xtaboyevning «Sariq devni minib» qissasining davomi, 1972-yilda yozilgan. Asar Hoshimjon va Sariq devning yangi sarguzashtlari, lekin bu safar — eng dramatik va ma'naviy ahamiyatli sahifasi.",
+      "Asarda Sariq dev katta sinovga duch keladi: eski raqib va xudbin sehrgar uni dunyodan yo'q qilmoqchi bo'ladi. Hoshimjon do'stini saqlash uchun yangi sarguzashtlardan o'tadi, sehrli kuchlarini ishga soladi, do'stlikning chegaralarini sinab ko'radi.",
+      "Asar nomi simvolik — Sariq dev haqiqatan ham o'lishi mumkinmi? Yo'q, To'xtaboyevning yozishi bo'yicha — emas. Sariq dev — bu ramziy obraz: hazil, ezgulik, fantaziya. Bunday narsalar hech qachon o'lmaydi, ular o'zlarini har bir avlodda yangidan ko'rsatadi.",
+      "Qissa birinchi qismdan ham yorqinroq va ham achchiqroq — chunki Hoshimjon endi katta bo'lib qolgan, dunyoning oddiy ekanligini bilgan, lekin shunga qaramasdan Sariq devga sodiq qolyapti. Bu — bolalik va kattalikning chegarasidagi nozik mavzu, va To'xtaboyev uni juda mahorat bilan bayon qilgan.",
+      "Asar o'zbek bolalar adabiyotidagi eng yorqin trilogiyalardan birining ikkinchi qismi. Trilogiya so'nggi qismida («Beshko'z», «Sehrli qalpoqcha») yana yangi qahramonlar va sarguzashtlar paydo bo'ladi, lekin Sariq dev — shubhasiz, eng sevimli obraz bo'lib qoladi."
+    ],
+    "characters": [
+      "Hoshimjon — bosh qahramon, katta bo'lib qolgan o'g'il",
+      "Sariq dev — sevimli do'sti, sinov ostida",
+      "Sehrgar — bosh manfiy qahramon, Sariq devni o'ldirmoqchi",
+      "Yangi do'stlar — Hoshimjonning yordamchilari",
+      "Eski sinfdoshlari — yangi obrazlarda",
+      "Muallima — yangi roli bilan"
+    ],
+    "excerpts": [
+      {
+        "title": "Sariq dev xavfda",
+        "text": "Hoshimjon eshikni ochganda — Sariq dev erga yiqilgan edi.\n«Sehrgar meni topdi,» dedi u zo'rg'a, «bu safar men yengilaman.»\n«Yo'q,» dedi Hoshimjon, «sen yengilmaysan —\nchunki men sen bilanman, va do'st — eng katta sehr.»"
+      },
+      {
+        "title": "Sinov",
+        "text": "Sehrgar uch sinov qo'ydi.\nBirinchisida Hoshimjon o'z xohishlaridan voz kechishi kerak edi.\nIkkinchisida — do'stini boshqa nima narsadan ham ustun qo'yish kerak edi.\nUchinchisida — Hoshimjon o'zini sotmasligi kerak edi."
+      },
+      {
+        "title": "Sariq devning saboqlari",
+        "text": "«Men o'lib bilaman,» dedi Sariq dev oxirgi marta.\n«Lekin men har doim o'lmasdan qaytib kelaman —\nchunki men sen kabi bolalarning xayolidaman.\nQancha sen mening hikoyalarimni gapirsang, men shuncha tirik bo'laman.»"
+      }
+    ],
+    "historicalContext": "Asar 1970-yillarning boshlaridagi o'zbek bolalar adabiyotini ifodalaydi. Bu davrda «Sariq devni minib» allaqachon bolalarning sevikli kitobi edi va davom qissasi katta kutilgan asar bo'lgan. To'xtaboyev birinchi qismdagi yorqin obrazlarni saqlab qoldi, lekin yangi falsafiy chuqurlik qo'shdi.",
+    "interestingFacts": [
+      "«Sariq devning o'limi» — «Sariq devni minib»ning davomi.",
+      "Asar 1972-yili — birinchi qismdan 10 yil keyin — yozilgan.",
+      "Sariq dev obrazi o'zbek bolalar adabiyotidagi eng sevikli obraz.",
+      "Asar nomi simvolik — sehr, hazil va ezgulik o'lmaydi.",
+      "To'xtaboyev keyinchalik «Beshko'z» va «Sehrli qalpoqcha» bilan trilogiyani yakunlagan.",
+      "Yozuvchining asarlari bolalar teatrlarida sahnalashtirilgan.",
+      "Xudoyberdi To'xtaboyev O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
+    ],
+    "themes": ["do'stlik", "sodiqlik", "sehr", "katta bo'lish"]
+  },
+  {
+    "id": "urushning-songgi-qurboni",
+    "slug": "urushning-songgi-qurboni",
+    "title": "Urushning So'nggi Qurboni",
+    "author": "Said Ahmad",
+    "year": "1965",
+    "genre": "Hikoya · Harbiy",
+    "pages": 5,
+    "language": "O'zbek",
+    "accent": "#6b1e2b",
+    "initial": "S",
+    "cover": "/kitoblar/urushning-songgi-qurboni.jpg",
+    "pdf": "/kitoblar/urushning-songgi-qurboni.pdf",
+    "pdfSource": "ziyouz.com",
+    "annotation": "Qisqa, lekin chuqur harbiy hikoya — urushning oxirgi qurboni va uning mangu xotirasi haqida.",
+    "longDescription": "«Urushning so'nggi qurboni» — Said Ahmadning qisqa, lekin chuqur ta'sirli hikoyasi. Asar urushning oxirgi kunlarida — g'alaba arafasida — halok bo'lgan askarning xotirasi va uning oilasiga yetib kelgan xabar atrofida quriladi.",
+    "longDescriptionFull": [
+      "«Urushning so'nggi qurboni» — Said Ahmadning (1920-2007) qisqa, lekin chuqur ta'sirli harbiy hikoyasi. Asar Ikkinchi jahon urushining oxirgi kunlarida — g'alaba arafasida — halok bo'lgan askarning xotirasi va uning oilasiga yetib kelgan xabar atrofida quriladi.",
+      "Hikoyaning bosh qahramoni — yosh askar, urushni boshidan oxirigacha bosib o'tgan, ko'p janglar ko'rgan, lekin g'alabadan oldingi oxirgi soatlarda halok bo'lgan. Uning oilasiga g'alaba haqida xabar yetib keladi — lekin shu xabar bilan birga, eng og'ir xat ham yetib keladi.",
+      "Asar nafaqat bir askar fojiasini, balki butun urushning mantiqsizligini va og'irligini ifodalaydi. Hikoyaning kuchi — uning qisqaligi: 5 sahifa ichida Said Ahmad o'quvchi qalbiga shunday zarba beradi-ki, bu zarba uzoq vaqt unutilmaydi.",
+      "Said Ahmad o'zi ham Ikkinchi jahon urushida qatnashgan. Uning urush mavzusidagi asarlari — «Uflq» trilogiyasi, qator harbiy hikoyalari — shaxsiy tajribadan kelib chiqqan. Yozuvchi har bir asari bilan urushning oddiy odam taqdiriga ta'sirini, uning shaxsiy fojialarini ko'rsatishga harakat qilgan.",
+      "«Urushning so'nggi qurboni» — bu o'zbek qisqa hikoya san'atining mumtoz namunasi. Hikoya o'rta maktab dasturiga kiritilgan va har bir o'zbek o'quvchisi uni bolalik chog'ida o'qigan. Asar urushning yo'qchiligi va tinchlikning eng katta boylik ekanligini bolalar va kattalarga eslab turadi."
+    ],
+    "characters": [
+      "Yosh askar — bosh qahramon, urushning oxirgi qurboni",
+      "Askarning onasi — xabarni qabul qiluvchi",
+      "Askarning otasi — xotiraning og'irligini ko'taruvchi",
+      "Sinfdoshi (askarning xat orqali eslagan) — yashash umidi",
+      "Komandir — askarning so'nggi soatlarini ko'rgan"
+    ],
+    "excerpts": [
+      {
+        "title": "Oxirgi xat",
+        "text": "U xatda yozardi: «Ona, urush tugaydi yaqinda.\nMen sen oldiga qaytaman, biz uchovimiz yana o'sha eski stol atrofida o'tiramiz.\nFaqat sabr qil — sabr qiling, men kelyapman.»\nLekin xat onasiga yetib kelganda — o'g'il endi yo'q edi."
+      },
+      {
+        "title": "G'alaba kuni",
+        "text": "9 may. Radio orqali g'alaba haqida xabar tarqaldi.\nQishloq ko'chalarida quvonch, ko'z yoshlari, raqs.\nLekin bir uy oldida — sukut.\nO'sha xatni qabul qilgan ona — endi g'alabani quvona olmadi."
+      }
+    ],
+    "historicalContext": "Hikoya Ikkinchi jahon urushining (1939-1945) oxirgi kunlarini ifodalaydi. Bu davr eng og'ir kunlardan biri edi — g'alaba yaqin, lekin ko'p askarlar uyga qaytib kelmadi. Said Ahmad o'z asarida shunday bir qurbonning shaxsiy hikoyasi orqali butun urushning og'irligini va tinchlikning qadrini ko'rsatadi.",
+    "interestingFacts": [
+      "Hikoya juda qisqa — atigi 5 sahifa.",
+      "Said Ahmad o'zi ham Ikkinchi jahon urushida qatnashgan.",
+      "Asar o'zbek qisqa hikoya san'atining mumtoz namunasi.",
+      "Said Ahmadning urush mavzusidagi asarlari shaxsiy tajribadan kelib chiqqan.",
+      "Hikoya o'rta maktab dasturiga kiritilgan.",
+      "Yozuvchi «Ufq» trilogiyasi bilan ham urush mavzusini ko'tarib chiqqan.",
+      "Said Ahmad O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
+    ],
+    "themes": ["urush", "qurbon", "tinchlik", "xotira"]
   }
 ]

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import OrnamentDivider from './OrnamentDivider.jsx';
+import GlobalSearch from './GlobalSearch.jsx';
 import useAuth from '../../hooks/useAuth.js';
 
 const ICONS = {
@@ -11,6 +12,17 @@ const ICONS = {
       <path d="M6 12v4c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-4" />
       <path d="M22 10v6" />
       <circle cx="22" cy="17" r="0.9" fill="currentColor" />
+    </svg>
+  ),
+  jadidlar: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      {/* Newspaper — the Jadids' main reform vehicle (Oyna, Sadoyi Turkiston). */}
+      <rect x="3" y="5" width="18" height="15" rx="1" />
+      <path d="M3 9 L21 9" />
+      <path d="M6 12 L11 12" />
+      <path d="M6 15 L11 15" />
+      <path d="M6 18 L10 18" />
+      <rect x="13" y="11" width="6" height="6" rx="0.5" />
     </svg>
   ),
   muzeylar: (
@@ -65,6 +77,7 @@ const ICONS = {
 
 const LINKS = [
   { to: '/allomalar', label: 'Allomalar', sub: 'Buyuk Aql Sohiblari', icon: ICONS.allomalar },
+  { to: '/jadidlar', label: 'Jadidlar', sub: "Milliy Uyg'onish", icon: ICONS.jadidlar },
   { to: '/muzeylar', label: 'Muzeylar', sub: 'Virtual Sayohat', icon: ICONS.muzeylar },
   { to: '/musiqa', label: 'Musiqa', sub: 'Maqom va Karaoke', icon: ICONS.musiqa },
   { to: '/kinolar', label: 'Kinolar', sub: 'Klassik Asarlar', icon: ICONS.kinolar },
@@ -264,6 +277,7 @@ function MobileAuthBlock({ onClose }) {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -275,7 +289,20 @@ export default function Navbar() {
 
   useEffect(() => {
     setOpen(false);
+    setSearchOpen(false);
   }, [pathname]);
+
+  // Cmd/Ctrl+K opens the global search from anywhere.
+  useEffect(() => {
+    const onKey = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setSearchOpen((s) => !s);
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, []);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -312,8 +339,8 @@ export default function Navbar() {
           MEROS
         </Link>
 
-        <div className="hidden md:flex items-center gap-6 lg:gap-8">
-          <ul className="flex gap-6 lg:gap-8 list-none m-0 p-0">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+          <ul className="flex gap-5 lg:gap-7 list-none m-0 p-0">
             {LINKS.map((l) => (
               <li key={l.to}>
                 <NavLink
@@ -332,16 +359,45 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          {/* Global search trigger (desktop) */}
+          <button
+            onClick={() => setSearchOpen(true)}
+            aria-label="Saytbo'ylab qidirish"
+            title="Qidirish (Ctrl+K)"
+            className="inline-flex items-center gap-2 pl-3 pr-2 py-1.5 border border-gold/30 hover:border-gold/70 text-cream-soft hover:text-gold rounded-full text-[11px] tracking-[1.5px] uppercase transition group"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <span className="hidden lg:inline">Qidirish</span>
+            <kbd className="hidden lg:inline-flex items-center px-1.5 py-0.5 text-[9px] tracking-[0.5px] text-cream-soft/50 border border-gold/20 rounded">
+              Ctrl K
+            </kbd>
+          </button>
+
           <AuthBadge />
         </div>
 
-        {/* Mobile burger toggle */}
-        <button
-          className="md:hidden relative w-10 h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
-          onClick={() => setOpen((o) => !o)}
-          aria-label={open ? 'Yopish' : 'Menyu'}
-          aria-expanded={open}
-        >
+        {/* Mobile right-side controls: search + burger */}
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={() => setSearchOpen(true)}
+            aria-label="Qidirish"
+            className="w-10 h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+          </button>
+          <button
+            className="relative w-10 h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+            onClick={() => setOpen((o) => !o)}
+            aria-label={open ? 'Yopish' : 'Menyu'}
+            aria-expanded={open}
+          >
           {/* Animated hamburger / X */}
           <span className="block w-4 h-3 relative">
             <span
@@ -360,7 +416,8 @@ export default function Navbar() {
               }`}
             />
           </span>
-        </button>
+          </button>
+        </div>
 
         <style>{`
           .nav-underline::after {
@@ -451,7 +508,7 @@ export default function Navbar() {
 
             <div className="text-center mb-6 sm:mb-8">
               <OrnamentDivider className="opacity-50 mb-4" />
-              <div className="eyebrow text-[10px]">— OLTI HAZINA —</div>
+              <div className="eyebrow text-[10px]">— YETTI HAZINA —</div>
             </div>
 
             <ul className="space-y-2">
@@ -550,6 +607,10 @@ export default function Navbar() {
           }
         `}</style>
       </div>
+
+      {/* Site-wide search overlay — opens from the navbar search button or
+          via the Ctrl/Cmd+K keyboard shortcut. */}
+      <GlobalSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );
 }

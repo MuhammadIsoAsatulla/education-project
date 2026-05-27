@@ -56,7 +56,7 @@ export default function VirtualTour({ scene = 'registon', accent = '#d4a574', ho
         onMouseMove={onMove}
         onTouchStart={onDown}
         onTouchMove={onMove}
-        className="relative w-full h-[55vh] min-h-[320px] sm:min-h-[420px] md:min-h-[480px] overflow-hidden border border-gold/30 rounded-sm cursor-grab active:cursor-grabbing select-none touch-pan-y"
+        className="relative w-full h-[55vh] min-h-[260px] sm:min-h-[420px] md:min-h-[480px] overflow-hidden border border-gold/30 rounded-sm cursor-grab active:cursor-grabbing select-none touch-pan-y"
         style={{
           background:
             'linear-gradient(180deg, #0a1f2e 0%, #0d2b3e 30%, #0f4c5c 60%, #0a1f2e 100%)',

@@ -2,14 +2,14 @@ import OrnamentDivider from './OrnamentDivider.jsx';
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-deep border-t border-gold/20 px-6 md:px-12 pt-16 pb-10 text-center">
+    <footer className="bg-bg-deep border-t border-gold/20 px-4 sm:px-6 md:px-12 pt-12 sm:pt-16 pb-8 sm:pb-10 text-center">
       <OrnamentDivider className="opacity-50 mb-8" />
       <p className="font-serif italic text-gold text-2xl tracking-wide mb-3">
         “O‘tmishini bilmagan — kelajakka eshikni topa olmaydi.”
       </p>
       <p className="text-cream-soft text-[13px] tracking-[3px] opacity-70 mb-10">— XALQ HIKMATI —</p>
 
-      <div className="grid sm:grid-cols-3 gap-8 max-w-5xl mx-auto text-left mb-12 px-2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto text-left mb-12 px-2">
         <div>
           <h4 className="eyebrow mb-3">— MEROS —</h4>
           <p className="text-cream-soft/80 text-sm leading-relaxed">

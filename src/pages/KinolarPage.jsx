@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import kinolar from '../data/kinolar.json';
 import MoviePoster from '../components/kinolar/MoviePoster.jsx';
 import PageHero from '../components/common/PageHero.jsx';
+import SearchBar from '../components/common/SearchBar.jsx';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 
 const FILTERS = ['Hammasi', 'Drama', 'Komediya', 'Tarixiy', 'Doston'];
@@ -9,11 +10,21 @@ const FILTERS = ['Hammasi', 'Drama', 'Komediya', 'Tarixiy', 'Doston'];
 export default function KinolarPage() {
   useScrollReveal();
   const [filter, setFilter] = useState('Hammasi');
+  const [query, setQuery] = useState('');
 
+  // Genre chip narrows the category, the search box does free-text matching
+  // on title/director/genre/synopsis. Both filters compose (genre AND query).
   const filtered = useMemo(() => {
-    if (filter === 'Hammasi') return kinolar;
-    return kinolar.filter((m) => m.genre.toLowerCase().includes(filter.toLowerCase()));
-  }, [filter]);
+    const q = query.trim().toLowerCase();
+    return kinolar.filter((m) => {
+      const genreMatch =
+        filter === 'Hammasi' || (m.genre || '').toLowerCase().includes(filter.toLowerCase());
+      if (!genreMatch) return false;
+      if (!q) return true;
+      const hay = `${m.title || ''} ${m.director || ''} ${m.genre || ''} ${m.synopsis || ''}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }, [filter, query]);
 
   return (
     <>
@@ -24,7 +35,17 @@ export default function KinolarPage() {
         accent
       />
 
-      <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto pt-4 sm:pt-6 mb-10">
+      <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto pt-4 sm:pt-6 mb-6">
+        <SearchBar
+          value={query}
+          onChange={setQuery}
+          placeholder="Film, rejissyor yoki janr bo'yicha qidiring..."
+          count={filtered.length}
+          total={kinolar.length}
+        />
+      </section>
+
+      <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto mb-10">
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           {FILTERS.map((f) => (
             <button
@@ -50,7 +71,7 @@ export default function KinolarPage() {
         </div>
         {filtered.length === 0 && (
           <p className="text-center text-cream-soft/60 italic font-serif text-xl py-20">
-            Bu janrda hozircha film yo'q.
+            {query.trim() ? "Qidiruvga mos film topilmadi." : "Bu janrda hozircha film yo'q."}
           </p>
         )}
       </section>

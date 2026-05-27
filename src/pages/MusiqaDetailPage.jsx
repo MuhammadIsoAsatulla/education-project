@@ -56,9 +56,9 @@ export default function MusiqaDetailPage() {
         style={{ background: `radial-gradient(ellipse at 50% 20%, ${song.accent}33, var(--bg-deep) 60%)` }}
       >
         <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
-        <div className="relative max-w-[1300px] mx-auto grid md:grid-cols-[320px_1fr] gap-8 md:gap-12 items-center">
+        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-[320px_1fr] gap-6 sm:gap-8 md:gap-12 items-center">
           {/* Album art */}
-          <div className="reveal max-w-[280px] sm:max-w-[320px] mx-auto md:mx-0">
+          <div className="reveal w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] mx-auto md:mx-0">
             <div className="relative aspect-square rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
               <SmartImage src={song.image} alt={song.title} initial={song.initial} accent={song.accent} />
               <span className="absolute inset-3 border border-gold/40 pointer-events-none" />

@@ -61,7 +61,7 @@ export default function KinoDetailPage() {
         style={{ background: `radial-gradient(ellipse at 30% 20%, ${movie.accent}33, var(--bg-deep) 60%)` }}
       >
         <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
-        <div className="relative max-w-[1400px] mx-auto grid lg:grid-cols-[300px_1fr] xl:grid-cols-[360px_1fr] gap-8 lg:gap-12 items-start">
+        <div className="relative max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[300px_1fr] xl:grid-cols-[360px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
           {/* Poster */}
           <div className="reveal max-w-[240px] sm:max-w-[300px] lg:max-w-[360px] mx-auto lg:mx-0 w-full">
             <div className="relative aspect-[2/3] rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
@@ -319,7 +319,7 @@ function RecommendationsSection({ recommendations }) {
     <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
       <div className="max-w-[1300px] mx-auto">
         <div className="eyebrow mb-6 text-center">— BOSHQA KINOLAR —</div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
           {recommendations.map((m) => (
             <Link
               key={m.id}
