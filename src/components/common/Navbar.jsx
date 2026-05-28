@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext.jsx';
 
 const LINKS = [
   { to: '/allomalar', label: 'Allomalar' },
@@ -16,6 +17,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { user, openAuth } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -65,6 +67,16 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+
+      {/* Auth indicator — desktop only */}
+      {!user && (
+        <button
+          onClick={openAuth}
+          className="hidden md:flex items-center gap-2 text-[11px] tracking-[2px] font-semibold uppercase text-gold hover:text-cream transition-colors duration-200 nav-underline"
+        >
+          Kirish
+        </button>
+      )}
 
       <button
         className="md:hidden text-gold p-2"

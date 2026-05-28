@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import achievements from '../data/achievements.json';
 import allomalar from '../data/allomalar.json';
 import muzeylar from '../data/muzeylar.json';
@@ -58,6 +59,7 @@ function nextLevelInfo(points) {
 export default function ProfilPage() {
   useScrollReveal();
   const { state, setName, reset } = useProgress();
+  const { user, openAuth, signOut } = useAuth();
   const [editingName, setEditingName] = useState(false);
   const [nameInput, setNameInput] = useState(state.name);
 
@@ -134,7 +136,28 @@ export default function ProfilPage() {
           </div>
 
           <div className="flex md:flex-col gap-3">
-            <Link to="/" className="px-5 py-2 border border-gold/40 text-cream-soft text-xs tracking-[2px] uppercase hover:text-gold hover:border-gold rounded-sm transition text-center">
+            {user ? (
+              <>
+                <div className="px-4 py-2 border border-gold/20 rounded-sm text-center">
+                  <div className="text-[9px] text-gold/40 tracking-[3px] uppercase mb-0.5">Hisob</div>
+                  <div className="text-cream/70 text-xs truncate max-w-[160px]">{user.email}</div>
+                </div>
+                <button
+                  onClick={signOut}
+                  className="px-5 py-2 border border-gold/30 text-gold/70 text-xs tracking-[2px] uppercase hover:text-gold hover:border-gold rounded-sm transition"
+                >
+                  Chiqish
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={openAuth}
+                className="px-5 py-2 border border-gold/40 text-gold text-xs tracking-[2px] uppercase hover:bg-gold/10 rounded-sm transition"
+              >
+                Kirish / Ro'yxat
+              </button>
+            )}
+            <Link to="/" className="px-5 py-2 border border-gold/20 text-cream-soft text-xs tracking-[2px] uppercase hover:text-gold hover:border-gold rounded-sm transition text-center">
               Bosh sahifa
             </Link>
             <button

@@ -1,0 +1,278 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "MEROS" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+      - text: MEROS
+    - list [ref=e11]:
+      - listitem [ref=e12]:
+        - link "Allomalar" [ref=e13] [cursor=pointer]:
+          - /url: /allomalar
+      - listitem [ref=e14]:
+        - link "Muzeylar" [ref=e15] [cursor=pointer]:
+          - /url: /muzeylar
+      - listitem [ref=e16]:
+        - link "Musiqa" [ref=e17] [cursor=pointer]:
+          - /url: /musiqa
+      - listitem [ref=e18]:
+        - link "Kinolar" [ref=e19] [cursor=pointer]:
+          - /url: /kinolar
+      - listitem [ref=e20]:
+        - link "Kitoblar" [ref=e21] [cursor=pointer]:
+          - /url: /kitoblar
+      - listitem [ref=e22]:
+        - link "O'yinlar" [ref=e23] [cursor=pointer]:
+          - /url: /oyinlar
+      - listitem [ref=e24]:
+        - link "Do'kon" [ref=e25] [cursor=pointer]:
+          - /url: /dokon
+      - listitem [ref=e26]:
+        - link "Profil" [ref=e27] [cursor=pointer]:
+          - /url: /profil
+    - button "Kirish" [ref=e28] [cursor=pointer]
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e33]: ✦
+        - generic [ref=e34]: ✦
+      - generic [ref=e36]:
+        - generic [ref=e37]: — RAQAMLI MEROS PLATFORMASI —
+        - heading "MEROS" [level=1] [ref=e38]
+        - paragraph [ref=e39]:
+          - text: Asrlar sadosi — kelajak ovozi.
+          - text: O'zbek xalqining ma'naviy xazinasi bir joyda.
+        - link "Sayohatni Boshlash" [ref=e40] [cursor=pointer]:
+          - /url: "#bolimlar"
+          - generic [ref=e41]: Sayohatni Boshlash
+          - img [ref=e42]
+      - generic:
+        - img
+      - generic [ref=e44]:
+        - generic [ref=e45]: Pastga
+        - img [ref=e46]
+        - img [ref=e48]
+        - img [ref=e50]
+    - generic [ref=e52]:
+      - img [ref=e53]
+      - generic [ref=e58]: — SAKKIZ HAZINA —
+      - heading "Madaniyat Saroyi" [level=2] [ref=e59]
+      - paragraph [ref=e60]: Har bir bo'lim — yangi olam. Qaysi eshikdan kirishni o'zingiz tanlang.
+    - generic [ref=e62]:
+      - generic:
+        - img
+      - generic:
+        - img
+      - generic:
+        - img
+      - generic:
+        - img
+      - generic [ref=e64]:
+        - link "— I — Allomalar — Buyuk Aql Sohiblari — Beruniy, Ibn Sino, Ulug'bek, Cho'lpon, Behbudiy — har bir alloma o'z hayoti va ta'limoti haqida hikoya qiladi. Tanish" [ref=e65] [cursor=pointer]:
+          - /url: /allomalar
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - generic [ref=e75]: — I —
+          - generic [ref=e76]:
+            - img [ref=e78]
+            - heading "Allomalar" [level=3] [ref=e85]
+            - paragraph [ref=e86]: — Buyuk Aql Sohiblari —
+            - paragraph [ref=e87]: Beruniy, Ibn Sino, Ulug'bek, Cho'lpon, Behbudiy — har bir alloma o'z hayoti va ta'limoti haqida hikoya qiladi.
+            - generic [ref=e88]:
+              - text: Tanish
+              - img [ref=e89]
+        - link "— II — Muzeylar — Virtual Sayohat — Registon maydonidan Ichan Qal'agacha — ekraningiz orqali O'zbekistonning eng buyuk yodgorliklarini 360° kezib chiqing. Sayohat" [ref=e92] [cursor=pointer]:
+          - /url: /muzeylar
+          - generic [ref=e93]:
+            - img [ref=e94]
+            - generic [ref=e102]: — II —
+          - generic [ref=e103]:
+            - img [ref=e105]
+            - heading "Muzeylar" [level=3] [ref=e110]
+            - paragraph [ref=e111]: — Virtual Sayohat —
+            - paragraph [ref=e112]: Registon maydonidan Ichan Qal'agacha — ekraningiz orqali O'zbekistonning eng buyuk yodgorliklarini 360° kezib chiqing.
+            - generic [ref=e113]:
+              - text: Sayohat
+              - img [ref=e114]
+        - link "— III — Musiqa — Maqom va Karaoke — An'anaviy maqomlar, xalq qo'shiqlari va zamonaviy ijodlar. Qo'shing — karaoke rejimi sizni kutmoqda. Tinglash" [ref=e117] [cursor=pointer]:
+          - /url: /musiqa
+          - generic [ref=e118]:
+            - img [ref=e119]
+            - generic [ref=e127]: — III —
+          - generic [ref=e128]:
+            - img [ref=e130]
+            - heading "Musiqa" [level=3] [ref=e136]
+            - paragraph [ref=e137]: — Maqom va Karaoke —
+            - paragraph [ref=e138]: An'anaviy maqomlar, xalq qo'shiqlari va zamonaviy ijodlar. Qo'shing — karaoke rejimi sizni kutmoqda.
+            - generic [ref=e139]:
+              - text: Tinglash
+              - img [ref=e140]
+        - link "— IV — Kinolar — Klassik Asarlar — \"O'tgan kunlar\", \"Mahallada duv-duv gap\", \"Tohir va Zuhra\" — o'zbek kinosining oltin xazinasi. Ko'rish" [ref=e143] [cursor=pointer]:
+          - /url: /kinolar
+          - generic [ref=e144]:
+            - img [ref=e145]
+            - generic [ref=e153]: — IV —
+          - generic [ref=e154]:
+            - img [ref=e156]
+            - heading "Kinolar" [level=3] [ref=e167]
+            - paragraph [ref=e168]: — Klassik Asarlar —
+            - paragraph [ref=e169]: "\"O'tgan kunlar\", \"Mahallada duv-duv gap\", \"Tohir va Zuhra\" — o'zbek kinosining oltin xazinasi."
+            - generic [ref=e170]:
+              - text: Ko'rish
+              - img [ref=e171]
+        - link "— V — Kitoblar — Donolik Bog'i — Navoiy g'azallaridan Cho'lpon she'rlarigacha. Qadimiy hikmatlar yangi formatda — o'qish va tinglash. Mutolaa" [ref=e174] [cursor=pointer]:
+          - /url: /kitoblar
+          - generic [ref=e175]:
+            - img [ref=e176]
+            - generic [ref=e184]: — V —
+          - generic [ref=e185]:
+            - img [ref=e187]
+            - heading "Kitoblar" [level=3] [ref=e191]
+            - paragraph [ref=e192]: — Donolik Bog'i —
+            - paragraph [ref=e193]: Navoiy g'azallaridan Cho'lpon she'rlarigacha. Qadimiy hikmatlar yangi formatda — o'qish va tinglash.
+            - generic [ref=e194]:
+              - text: Mutolaa
+              - img [ref=e195]
+        - link "— VI — Mening Ziyom — Shaxsiy Yutuqlar — Bilim nishonlari, tugatilgan bo'limlar va keyingi maqsadlar. O'qituvchilar uchun maxsus panel. Kirish" [ref=e198] [cursor=pointer]:
+          - /url: /profil
+          - generic [ref=e199]:
+            - img [ref=e200]
+            - generic [ref=e208]: — VI —
+          - generic [ref=e209]:
+            - img [ref=e211]
+            - heading "Mening Ziyom" [level=3] [ref=e214]
+            - paragraph [ref=e215]: — Shaxsiy Yutuqlar —
+            - paragraph [ref=e216]: Bilim nishonlari, tugatilgan bo'limlar va keyingi maqsadlar. O'qituvchilar uchun maxsus panel.
+            - generic [ref=e217]:
+              - text: Kirish
+              - img [ref=e218]
+        - link "— VII — Oʻyinlar — Kunlik Vazifalar — Har kuni yangi bilim bellashuvi, soʻz topishmoqlari, xotira oʻyini va vaqt chizigʻi. Oʻynab tanga yigʻing. Oʻynash" [ref=e221] [cursor=pointer]:
+          - /url: /oyinlar
+          - generic [ref=e222]:
+            - img [ref=e223]
+            - generic [ref=e231]: — VII —
+          - generic [ref=e232]:
+            - img [ref=e234]
+            - heading "Oʻyinlar" [level=3] [ref=e240]
+            - paragraph [ref=e241]: — Kunlik Vazifalar —
+            - paragraph [ref=e242]: Har kuni yangi bilim bellashuvi, soʻz topishmoqlari, xotira oʻyini va vaqt chizigʻi. Oʻynab tanga yigʻing.
+            - generic [ref=e243]:
+              - text: Oʻynash
+              - img [ref=e244]
+        - link "— VIII — Doʻkon — Qahramonlar Toʻlami — Beruniy, Navoiy, Amir Temur va boshqa tarixiy qahramonlarning kartochkalarini toʻlang. Koʻrish" [ref=e247] [cursor=pointer]:
+          - /url: /dokon
+          - generic [ref=e248]:
+            - img [ref=e249]
+            - generic [ref=e257]: — VIII —
+          - generic [ref=e258]:
+            - img [ref=e260]
+            - heading "Doʻkon" [level=3] [ref=e265]
+            - paragraph [ref=e266]: — Qahramonlar Toʻlami —
+            - paragraph [ref=e267]: Beruniy, Navoiy, Amir Temur va boshqa tarixiy qahramonlarning kartochkalarini toʻlang.
+            - generic [ref=e268]:
+              - text: Koʻrish
+              - img [ref=e269]
+    - generic [ref=e273]:
+      - generic [ref=e274]:
+        - img [ref=e275]
+        - generic [ref=e280]: — KUNLIK VAZIFA —
+        - heading "Bugungi Bellashuv" [level=2] [ref=e281]
+        - paragraph [ref=e282]: To'rtta sinovdan o'ting, bilimingizni sinang, tanga yig'ing.
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: 0/4
+            - generic [ref=e286]: Bajarildi
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - img [ref=e290]
+              - text: "0"
+            - generic [ref=e293]: / 220 max
+      - generic [ref=e294]:
+        - button "Bilim Bellashuvi 5 savol · 10 tanga/javob max 50 O'ynash →" [ref=e295] [cursor=pointer]:
+          - generic [ref=e296]:
+            - img [ref=e298]
+            - heading "Bilim Bellashuvi" [level=3] [ref=e302]
+            - paragraph [ref=e303]: 5 savol · 10 tanga/javob
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - img [ref=e306]
+              - text: max 50
+            - generic [ref=e309]: O'ynash →
+        - button "So'z O'yini 5 harf · 6 urinish max 50 O'ynash →" [ref=e310] [cursor=pointer]:
+          - generic [ref=e311]:
+            - img [ref=e313]
+            - heading "So'z O'yini" [level=3] [ref=e316]
+            - paragraph [ref=e317]: 5 harf · 6 urinish
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - img [ref=e320]
+              - text: max 50
+            - generic [ref=e323]: O'ynash →
+        - button "Xotira O'yini 8 juft · kam harakat = ko'proq tanga max 60 O'ynash →" [ref=e324] [cursor=pointer]:
+          - generic [ref=e325]:
+            - img [ref=e327]
+            - heading "Xotira O'yini" [level=3] [ref=e331]
+            - paragraph [ref=e332]: 8 juft · kam harakat = ko'proq tanga
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - img [ref=e335]
+              - text: max 60
+            - generic [ref=e338]: O'ynash →
+        - button "Vaqt Chizig'i Voqealarni tartibga soling max 60 O'ynash →" [ref=e339] [cursor=pointer]:
+          - generic [ref=e340]:
+            - img [ref=e342]
+            - heading "Vaqt Chizig'i" [level=3] [ref=e347]
+            - paragraph [ref=e348]: Voqealarni tartibga soling
+          - generic [ref=e349]:
+            - generic [ref=e350]:
+              - img [ref=e351]
+              - text: max 60
+            - generic [ref=e354]: O'ynash →
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - img "Cho'lpon" [ref=e359]
+        - paragraph [ref=e361]: — BUGUNGI ALLOMA —
+      - generic [ref=e362]:
+        - generic [ref=e363]: — BUGUNGI ALLOMA —
+        - heading "Cho'lpon" [level=2] [ref=e364]
+        - paragraph [ref=e365]: — 1897 — 1938 —
+        - blockquote [ref=e366]: “Tilim — qanotim, men u bilan parvoz etaman.”
+        - paragraph [ref=e367]: O'zbek modernizm she'riyatining asoschisi, jadid harakati yetakchilaridan biri, fojiali taqdir egasi.
+        - link "Batafsil Tanishish" [ref=e368] [cursor=pointer]:
+          - /url: /allomalar/cholpon
+          - generic [ref=e369]: Batafsil Tanishish
+          - img [ref=e370]
+    - generic [ref=e373]:
+      - generic [ref=e374]:
+        - generic [ref=e376]: 25+
+        - generic [ref=e377]: Allomalar
+      - generic [ref=e378]:
+        - generic [ref=e380]: "12"
+        - generic [ref=e381]: Muzeylar
+      - generic [ref=e382]:
+        - generic [ref=e384]: 100+
+        - generic [ref=e385]: Asarlar
+      - generic [ref=e386]:
+        - generic [ref=e387]: ∞
+        - generic [ref=e388]: Bilim
+  - contentinfo [ref=e389]:
+    - img [ref=e390]
+    - paragraph [ref=e395]: “O‘tmishini bilmagan — kelajakka eshikni topa olmaydi.”
+    - paragraph [ref=e396]: — XALQ HIKMATI —
+    - generic [ref=e397]:
+      - generic [ref=e398]:
+        - heading "— MEROS —" [level=4] [ref=e399]
+        - paragraph [ref=e400]: O‘zbek xalqining ma’naviy xazinasini zamonaviy tilda yangi avlodga yetkazish uchun yaratilgan raqamli ta’lim platformasi.
+      - generic [ref=e401]:
+        - heading "— BO‘LIMLAR —" [level=4] [ref=e402]
+        - list [ref=e403]:
+          - listitem [ref=e404]: Allomalar
+          - listitem [ref=e405]: Muzeylar
+          - listitem [ref=e406]: Musiqa va Kinolar
+          - listitem [ref=e407]: Kitoblar va Mening Ziyom
+      - generic [ref=e408]:
+        - heading "— ALOQA —" [level=4] [ref=e409]
+        - list [ref=e410]:
+          - listitem [ref=e411]: Ta’lim muassasalari uchun
+          - listitem [ref=e412]: Hamkorlik takliflari
+          - listitem [ref=e413]: info@meros.uz
+    - generic [ref=e414]: MEROS © 2026 — Raqamli Madaniy Meros Platformasi

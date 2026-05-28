@@ -1,214 +1,161 @@
 import { Link } from 'react-router-dom';
-import OrnamentDivider from '../common/OrnamentDivider.jsx';
 
 const SECTIONS = [
   {
-    num: '— I —',
-    to: '/allomalar',
-    title: 'Allomalar',
-    subtitle: '— Buyuk Aql Sohiblari —',
-    cta: 'Tanish',
-    description:
-      "Beruniy, Ibn Sino, Ulug'bek, Cho'lpon, Behbudiy — har bir alloma o‘z hayoti, asarlari va ta’limoti haqida shaxsan hikoya qiladi.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M32 8 L32 16 M28 12 L36 12" />
-        <path d="M20 20 Q20 18 22 18 L42 18 Q44 18 44 20 L44 50 Q44 52 42 52 L22 52 Q20 52 20 50 Z" />
-        <circle cx="32" cy="30" r="6" />
-        <path d="M24 44 Q32 38 40 44" />
-        <path d="M16 24 L20 24 M16 32 L20 32 M16 40 L20 40" />
-        <path d="M44 24 L48 24 M44 32 L48 32 M44 40 L48 40" />
-      </svg>
-    ),
+    to: '/allomalar', title: 'Allomalar',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M14 14 Q14 12 16 12 L32 12 Q34 12 34 14 L34 38 Q34 40 32 40 L16 40 Q14 40 14 38Z"/><circle cx="24" cy="23" r="5"/><path d="M17 34 Q24 29 31 34"/><path d="M24 6 L24 12"/></svg>,
   },
   {
-    num: '— II —',
-    to: '/muzeylar',
-    title: 'Muzeylar',
-    subtitle: '— Virtual Sayohat —',
-    cta: 'Sayohat',
-    description:
-      "Registon maydonidan Ichan Qal'agacha — ekraningiz orqali O‘zbekistonning eng buyuk yodgorliklarini 360° kezib chiqing.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M8 56 L56 56" />
-        <path d="M12 56 L12 24 M52 56 L52 24" />
-        <path d="M20 56 L20 28 M28 56 L28 28 M36 56 L36 28 M44 56 L44 28" />
-        <path d="M8 24 L56 24 L32 8 Z" />
-        <circle cx="32" cy="18" r="2" fill="currentColor" />
-      </svg>
-    ),
+    to: '/muzeylar', title: 'Muzeylar',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M6 42 L42 42"/><path d="M9 42 L9 18 M39 42 L39 18"/><path d="M15 42 L15 21 M21 42 L21 21 M27 42 L27 21 M33 42 L33 21"/><path d="M6 18 L42 18 L24 6Z"/><circle cx="24" cy="14" r="1.5" fill="currentColor"/></svg>,
   },
   {
-    num: '— III —',
-    to: '/musiqa',
-    title: 'Musiqa',
-    subtitle: '— Maqom va Karaoke —',
-    cta: 'Tinglash',
-    description:
-      "An'anaviy maqomlar, xalq qo‘shiqlari va zamonaviy ijodlar. Qo‘shing — karaoke rejimi sizni kutmoqda.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <ellipse cx="20" cy="48" rx="8" ry="6" />
-        <ellipse cx="44" cy="44" rx="8" ry="6" />
-        <path d="M28 48 L28 16 L52 12 L52 44" />
-        <path d="M28 24 L52 20" />
-        <circle cx="40" cy="8" r="2" fill="currentColor" />
-        <path d="M40 8 L40 16" />
-      </svg>
-    ),
+    to: '/musiqa', title: 'Musiqa',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><ellipse cx="14" cy="37" rx="6" ry="4.5"/><ellipse cx="34" cy="34" rx="6" ry="4.5"/><path d="M20 37 L20 13 L40 9 L40 34"/><path d="M20 19 L40 15"/></svg>,
   },
   {
-    num: '— IV —',
-    to: '/kinolar',
-    title: 'Kinolar',
-    subtitle: '— Klassik Asarlar —',
-    cta: "Ko‘rish",
-    description:
-      "“O‘tgan kunlar”, “Mahallada duv-duv gap”, “Tohir va Zuhra” — o‘zbek kinosining oltin xazinasi.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="8" y="12" width="48" height="40" rx="2" />
-        <circle cx="14" cy="18" r="2" />
-        <circle cx="22" cy="18" r="2" />
-        <circle cx="14" cy="46" r="2" />
-        <circle cx="22" cy="46" r="2" />
-        <circle cx="42" cy="18" r="2" />
-        <circle cx="50" cy="18" r="2" />
-        <circle cx="42" cy="46" r="2" />
-        <circle cx="50" cy="46" r="2" />
-        <path d="M28 24 L28 40 L40 32 Z" fill="currentColor" />
-      </svg>
-    ),
+    to: '/kinolar', title: 'Kinolar',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><rect x="6" y="10" width="36" height="28" rx="2"/><circle cx="10" cy="15" r="1.5"/><circle cx="16" cy="15" r="1.5"/><circle cx="10" cy="33" r="1.5"/><circle cx="16" cy="33" r="1.5"/><circle cx="32" cy="15" r="1.5"/><circle cx="38" cy="15" r="1.5"/><circle cx="32" cy="33" r="1.5"/><circle cx="38" cy="33" r="1.5"/><path d="M21 19 L21 29 L30 24Z" fill="currentColor"/></svg>,
   },
   {
-    num: '— V —',
-    to: '/kitoblar',
-    title: 'Kitoblar',
-    subtitle: "— Donolik Bog‘i —",
-    cta: 'Mutolaa',
-    description:
-      "Navoiy g‘azallaridan Cho‘lpon she'rlarigacha. Qadimiy hikmatlar yangi formatda — o‘qish va tinglash.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M8 12 L8 52 Q32 46 56 52 L56 12 Q32 18 8 12 Z" />
-        <path d="M32 18 L32 50" />
-        <path d="M14 22 L26 25 M14 28 L26 31 M14 34 L26 37" />
-        <path d="M38 25 L50 22 M38 31 L50 28 M38 37 L50 34" />
-      </svg>
-    ),
+    to: '/kitoblar', title: 'Kitoblar',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M6 9 L6 39 Q24 34 42 39 L42 9 Q24 15 6 9Z"/><path d="M24 14 L24 38"/><path d="M10 17 L20 19 M10 22 L20 24 M10 27 L20 29"/><path d="M28 19 L38 17 M28 24 L38 22 M28 29 L38 27"/></svg>,
   },
   {
-    num: ‘— VI —‘,
-    to: ‘/profil’,
-    title: ‘Mening Ziyom’,
-    subtitle: ‘— Shaxsiy Yutuqlar —‘,
-    cta: ‘Kirish’,
-    description:
-      "Bilim nishonlari, tugatilgan bo’limlar va keyingi maqsadlar. O’qituvchilar uchun maxsus panel.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M32 8 L36 24 L52 24 L40 34 L44 50 L32 40 L20 50 L24 34 L12 24 L28 24 Z" />
-        <circle cx="32" cy="32" r="3" fill="currentColor" />
-      </svg>
-    ),
+    to: '/profil', title: 'Mening Ziyom',
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M24 6 L27 18 L39 18 L30 25.5 L33 37.5 L24 30 L15 37.5 L18 25.5 L9 18 L21 18Z"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg>,
   },
   {
-    num: "— VII —",
-    to: "/oyinlar",
-    title: "Oʻyinlar",
-    subtitle: "— Kunlik Vazifalar —",
-    cta: "Oʻynash",
-    description:
-      "Har kuni yangi bilim bellashuvi, soʻz topishmoqlari, xotira oʻyini va vaqt chizigʻi. Oʻynab tanga yigʻing.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="8" y="20" width="48" height="30" rx="4" />
-        <path d="M24 35 L20 35 M22 33 L22 37" strokeLinecap="round" strokeWidth="2" />
-        <circle cx="40" cy="33" r="1.5" fill="currentColor" />
-        <circle cx="44" cy="37" r="1.5" fill="currentColor" />
-        <path d="M28 12 L36 12 L38 20 L26 20 Z" />
-      </svg>
-    ),
-  },
-  {
-    num: "— VIII —",
-    to: "/dokon",
-    title: "Doʻkon",
-    subtitle: "— Qahramonlar Toʻlami —",
-    cta: "Koʻrish",
-    description:
-      "Beruniy, Navoiy, Amir Temur va boshqa tarixiy qahramonlarning kartochkalarini toʻlang. Har kartochka — maxsus kuch.",
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="10" y="18" width="22" height="30" rx="2" />
-        <rect x="16" y="12" width="22" height="30" rx="2" />
-        <rect x="22" y="22" width="22" height="30" rx="2" />
-        <path d="M28 30 L38 30 M28 36 L36 36" strokeLinecap="round" />
-        <path d="M30 26 L36 26" strokeLinecap="round" />
-      </svg>
-    ),
+    to: '/oyinlar', title: "O'yinlar",
+    icon: <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3"><rect x="6" y="15" width="36" height="22" rx="3"/><path d="M18 26 L14 26 M16 24 L16 28" strokeLinecap="round" strokeWidth="1.8"/><circle cx="30" cy="25" r="1.2" fill="currentColor"/><circle cx="34" cy="28" r="1.2" fill="currentColor"/><path d="M21 9 L27 9 L28.5 15 L19.5 15Z"/></svg>,
   },
 ];
 
+
+
 export default function SectionsGrid() {
   return (
-    <>
-      {/* Section divider header */}
-      <div id="bolimlar" className="text-center py-20 px-6 reveal">
-        <OrnamentDivider className="opacity-60 mb-6" />
-        <div className="eyebrow mb-4">— SAKKIZ HAZINA —</div>
-        <h2 className="section-title mb-4">Madaniyat Saroyi</h2>
-        <p className="font-serif italic text-xl text-cream-soft max-w-2xl mx-auto opacity-80">
-          Har bir bo‘lim — yangi olam. Qaysi eshikdan kirishni o‘zingiz tanlang.
-        </p>
+    <section
+      style={{
+        position: 'relative',
+        width: '100vw',
+        left: '50%',
+        marginLeft: '-50vw',
+        marginBottom: '6rem',
+        background: '#18100a',
+      }}
+    >
+      {/* Top cornice */}
+      <div style={{
+        height: '20px',
+        background: 'linear-gradient(to bottom, #0c0804, #1c1008)',
+        borderBottom: '2.5px solid rgba(212,165,116,0.4)',
+      }} />
+
+      {/* Horizontal snap scroll — fixed height so it reads as a strip, not a layout */}
+      <div style={{
+        display: 'flex',
+        overflowX: 'auto',
+        scrollSnapType: 'x mandatory',
+        WebkitOverflowScrolling: 'touch',
+        gap: '8px',
+        padding: '8px',
+        height: '80vh',
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+      }}>
+        {SECTIONS.map((s, i) => (
+          <Link
+            key={s.to}
+            to={s.to}
+            className="group section-card"
+            style={{
+              scrollSnapAlign: 'start',
+              flexShrink: 0,
+              height: '100%',
+              position: 'relative',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textDecoration: 'none',
+              background: 'transparent',
+              overflow: 'hidden',
+            }}
+          >
+            {/* Scroll parchment */}
+            <img
+              src="/scroll.png"
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                transform: 'scaleX(1.2)',
+                transformOrigin: 'center center',
+                pointerEvents: 'none',
+              }}
+            />
+
+            {/* Hover warm glow over parchment */}
+            <div aria-hidden="true" className="opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
+              position: 'absolute', inset: 0,
+              background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200,140,40,0.18), transparent)',
+              pointerEvents: 'none',
+            }} />
+
+            {/* Content sits on the parchment body — below roller (top ~20%), above torn edge (bottom ~15%) */}
+            <div className="relative z-10 flex flex-col items-center text-center px-3"
+              style={{ marginTop: '15%', marginBottom: '20%' }}
+            >
+              <div
+                className="mb-3 transition-all duration-400 group-hover:scale-110"
+                style={{
+                  width: 'clamp(42px, 5vw, 60px)',
+                  height: 'clamp(42px, 5vw, 60px)',
+                  color: 'rgba(55,25,5,1)',
+                  filter: 'drop-shadow(0 1px 4px rgba(180,120,40,0.5))',
+                }}
+              >
+                {s.icon}
+              </div>
+              <h3
+                className="font-serif transition-colors duration-300 group-hover:text-gold"
+                style={{
+                  fontSize: 'clamp(18px, 2.2vw, 26px)',
+                  fontWeight: '700',
+                  color: 'rgba(45,18,3,1)',
+                  letterSpacing: '0.5px',
+                  textShadow: '0 1px 3px rgba(255,220,150,0.5)',
+                  margin: 0,
+                  lineHeight: 1.3,
+                  whiteSpace: 'normal',
+                  overflowWrap: 'break-word',
+                  wordBreak: 'normal',
+                  width: '220px',
+                }}
+              >
+                {s.title}
+              </h3>
+            </div>
+          </Link>
+        ))}
       </div>
 
-      <section className="px-6 md:px-12 pb-32 max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {SECTIONS.map((s) => (
-            <Link
-              key={s.to}
-              to={s.to}
-              className="group relative overflow-hidden border border-gold/20 hover:border-gold transition-all duration-500 ease-out p-12 min-h-[360px] flex flex-col justify-between rounded-sm reveal"
-              style={{
-                background: 'linear-gradient(135deg, var(--bg-mid) 0%, var(--teal) 100%)',
-                transitionTimingFunction: 'var(--ease-out-expo)',
-              }}
-            >
-              {/* Hover overlay */}
-              <span
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background:
-                    'radial-gradient(circle at top right, rgba(212, 165, 116, 0.15), transparent 60%)',
-                }}
-              />
-              {/* Bottom gold line */}
-              <span className="absolute bottom-0 left-0 right-0 h-[2px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 bg-gradient-to-r from-transparent via-gold to-transparent" />
+      {/* Bottom cornice */}
+      <div style={{
+        height: '20px',
+        background: 'linear-gradient(to top, #0c0804, #1c1008)',
+        borderTop: '2.5px solid rgba(212,165,116,0.4)',
+      }} />
 
-              <div className="relative z-10 group-hover:-translate-y-1 transition-transform duration-500">
-                <div className="font-serif text-sm text-gold tracking-[4px] mb-6 opacity-70">{s.num}</div>
-                <div className="w-16 h-16 mb-6 text-gold transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6">
-                  {s.icon}
-                </div>
-                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-cream tracking-wide mb-3">
-                  {s.title}
-                </h3>
-                <p className="font-amiri text-[13px] text-gold tracking-[3px] uppercase mb-5">{s.subtitle}</p>
-                <p className="text-[15px] text-cream-soft/85 leading-relaxed">{s.description}</p>
-              </div>
-
-              <div className="relative z-10 mt-6 inline-flex items-center gap-3 text-gold text-xs tracking-[2px] uppercase font-semibold group-hover:gap-5 transition-[gap] duration-300">
-                {s.cta}
-                <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3">
-                  <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
-                </svg>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </>
+      <style>{`
+        .section-card { width: 410px; }
+        @media (max-width: 640px) { .section-card { width: 300px; } }
+        .section-card::-webkit-scrollbar { display: none; }
+      `}</style>
+    </section>
   );
 }

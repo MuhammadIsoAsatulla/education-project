@@ -1,0 +1,142 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "MEROS" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+      - text: MEROS
+    - list [ref=e11]:
+      - listitem [ref=e12]:
+        - link "Allomalar" [ref=e13] [cursor=pointer]:
+          - /url: /allomalar
+      - listitem [ref=e14]:
+        - link "Muzeylar" [ref=e15] [cursor=pointer]:
+          - /url: /muzeylar
+      - listitem [ref=e16]:
+        - link "Musiqa" [ref=e17] [cursor=pointer]:
+          - /url: /musiqa
+      - listitem [ref=e18]:
+        - link "Kinolar" [ref=e19] [cursor=pointer]:
+          - /url: /kinolar
+      - listitem [ref=e20]:
+        - link "Kitoblar" [ref=e21] [cursor=pointer]:
+          - /url: /kitoblar
+      - listitem [ref=e22]:
+        - link "O'yinlar" [ref=e23] [cursor=pointer]:
+          - /url: /oyinlar
+      - listitem [ref=e24]:
+        - link "Do'kon" [ref=e25] [cursor=pointer]:
+          - /url: /dokon
+      - listitem [ref=e26]:
+        - link "Profil" [ref=e27] [cursor=pointer]:
+          - /url: /profil
+    - button "Kirish" [ref=e28] [cursor=pointer]
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e33]: ✦
+        - generic [ref=e34]: ✦
+      - generic [ref=e36]:
+        - generic [ref=e37]: — RAQAMLI MEROS PLATFORMASI —
+        - heading "MEROS" [level=1] [ref=e38]
+        - paragraph [ref=e39]:
+          - text: Asrlar sadosi — kelajak ovozi.
+          - text: O'zbek xalqining ma'naviy xazinasi bir joyda.
+        - link "Sayohatni Boshlash" [ref=e40] [cursor=pointer]:
+          - /url: "#bolimlar"
+          - generic [ref=e41]: Sayohatni Boshlash
+          - img [ref=e42]
+      - generic:
+        - img
+      - generic [ref=e44]:
+        - generic [ref=e45]: Pastga
+        - img [ref=e46]
+        - img [ref=e48]
+        - img [ref=e50]
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]: — SAKKIZ HAZINA —
+        - heading "Madaniyat Saroyi" [level=2] [ref=e55]
+      - generic [ref=e56]:
+        - link "Allomalar" [ref=e57] [cursor=pointer]:
+          - /url: /allomalar
+          - img [ref=e59]
+          - heading "Allomalar" [level=3] [ref=e64]
+        - link "Muzeylar" [ref=e65] [cursor=pointer]:
+          - /url: /muzeylar
+          - img [ref=e67]
+          - heading "Muzeylar" [level=3] [ref=e72]
+        - link "Musiqa" [ref=e73] [cursor=pointer]:
+          - /url: /musiqa
+          - img [ref=e75]
+          - heading "Musiqa" [level=3] [ref=e80]
+        - link "Kinolar" [ref=e81] [cursor=pointer]:
+          - /url: /kinolar
+          - img [ref=e83]
+          - heading "Kinolar" [level=3] [ref=e94]
+        - link "Kitoblar" [ref=e95] [cursor=pointer]:
+          - /url: /kitoblar
+          - img [ref=e97]
+          - heading "Kitoblar" [level=3] [ref=e101]
+        - link "Mening Ziyom" [ref=e102] [cursor=pointer]:
+          - /url: /profil
+          - img [ref=e104]
+          - heading "Mening Ziyom" [level=3] [ref=e107]
+        - link "O'yinlar" [ref=e108] [cursor=pointer]:
+          - /url: /oyinlar
+          - img [ref=e110]
+          - heading "O'yinlar" [level=3] [ref=e116]
+        - link "Do'kon" [ref=e117] [cursor=pointer]:
+          - /url: /dokon
+          - img [ref=e119]
+          - heading "Do'kon" [level=3] [ref=e124]
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e129]:
+          - img [ref=e130]
+          - generic [ref=e142]: Ch
+        - paragraph [ref=e144]: — BUGUNGI ALLOMA —
+      - generic [ref=e145]:
+        - generic [ref=e146]: — BUGUNGI ALLOMA —
+        - heading "Cho'lpon" [level=2] [ref=e147]
+        - paragraph [ref=e148]: — 1897 — 1938 —
+        - blockquote [ref=e149]: “Tilim — qanotim, men u bilan parvoz etaman.”
+        - paragraph [ref=e150]: O'zbek modernizm she'riyatining asoschisi, jadid harakati yetakchilaridan biri, fojiali taqdir egasi.
+        - link "Batafsil Tanishish" [ref=e151] [cursor=pointer]:
+          - /url: /allomalar/cholpon
+          - generic [ref=e152]: Batafsil Tanishish
+          - img [ref=e153]
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - generic [ref=e159]: 25+
+        - generic [ref=e160]: Allomalar
+      - generic [ref=e161]:
+        - generic [ref=e163]: "12"
+        - generic [ref=e164]: Muzeylar
+      - generic [ref=e165]:
+        - generic [ref=e167]: 100+
+        - generic [ref=e168]: Asarlar
+      - generic [ref=e169]:
+        - generic [ref=e170]: ∞
+        - generic [ref=e171]: Bilim
+  - contentinfo [ref=e172]:
+    - img [ref=e173]
+    - paragraph [ref=e178]: “O‘tmishini bilmagan — kelajakka eshikni topa olmaydi.”
+    - paragraph [ref=e179]: — XALQ HIKMATI —
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - heading "— MEROS —" [level=4] [ref=e182]
+        - paragraph [ref=e183]: O‘zbek xalqining ma’naviy xazinasini zamonaviy tilda yangi avlodga yetkazish uchun yaratilgan raqamli ta’lim platformasi.
+      - generic [ref=e184]:
+        - heading "— BO‘LIMLAR —" [level=4] [ref=e185]
+        - list [ref=e186]:
+          - listitem [ref=e187]: Allomalar
+          - listitem [ref=e188]: Muzeylar
+          - listitem [ref=e189]: Musiqa va Kinolar
+          - listitem [ref=e190]: Kitoblar va Mening Ziyom
+      - generic [ref=e191]:
+        - heading "— ALOQA —" [level=4] [ref=e192]
+        - list [ref=e193]:
+          - listitem [ref=e194]: Ta’lim muassasalari uchun
+          - listitem [ref=e195]: Hamkorlik takliflari
+          - listitem [ref=e196]: info@meros.uz
+    - generic [ref=e197]: MEROS © 2026 — Raqamli Madaniy Meros Platformasi

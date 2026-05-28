@@ -11,7 +11,7 @@
     "field": "Astronom · Matematik · Tarixchi",
     "initial": "B",
     "accent": "#d4a574",
-    "image": "/images/allomalar/beruniy.jpg",
+    "image": "/allomalar/beruniy.jpg",
     "birthplace": "Kot, Xorazm",
     "quote": "Bilim — eng aziz xazinadir. Uni hech kim sendan tortib ololmaydi.",
     "shortBio": "Yer sharining radiusini hisoblagan, 150 dan ortiq asar yozgan, Hindiston tarixi va madaniyatini ilk bo'lib chuqur o'rgangan buyuk qomusiy olim.",
@@ -22,12 +22,36 @@
       "Beruniy 150 dan ortiq asar yozgan deb hisoblanadi. Uning ishlari arab, fors, sanskrit va boshqa tillarda saqlangan — har biri bilim chashmasi sifatida bugun ham qadrli."
     ],
     "timeline": [
-      { "year": 973, "title": "Tug'ilishi", "text": "Xorazmning Kot shahrida dunyoga keldi." },
-      { "year": 995, "title": "Birinchi astronomik kuzatishlar", "text": "Yulduzlar va sayyoralar harakatini o'rgana boshladi." },
-      { "year": 1017, "title": "G'azna saroyiga", "text": "Sulton Mahmud G'aznaviy saroyiga taklif etildi." },
-      { "year": 1030, "title": "«Hindiston» asari", "text": "13 yillik tadqiqot natijasi sifatida yozildi." },
-      { "year": 1037, "title": "«Qonuni Mas'udiy»", "text": "Astronomiya bo'yicha qomusiy asar tugatildi." },
-      { "year": 1048, "title": "Vafoti", "text": "G'aznada vafot etdi, ammo asarlari abadiyatga qoldi." }
+      {
+        "year": 973,
+        "title": "Tug'ilishi",
+        "text": "Xorazmning Kot shahrida dunyoga keldi."
+      },
+      {
+        "year": 995,
+        "title": "Birinchi astronomik kuzatishlar",
+        "text": "Yulduzlar va sayyoralar harakatini o'rgana boshladi."
+      },
+      {
+        "year": 1017,
+        "title": "G'azna saroyiga",
+        "text": "Sulton Mahmud G'aznaviy saroyiga taklif etildi."
+      },
+      {
+        "year": 1030,
+        "title": "«Hindiston» asari",
+        "text": "13 yillik tadqiqot natijasi sifatida yozildi."
+      },
+      {
+        "year": 1037,
+        "title": "«Qonuni Mas'udiy»",
+        "text": "Astronomiya bo'yicha qomusiy asar tugatildi."
+      },
+      {
+        "year": 1048,
+        "title": "Vafoti",
+        "text": "G'aznada vafot etdi, ammo asarlari abadiyatga qoldi."
+      }
     ],
     "works": [
       "Hindiston (Tahqiq mâ li-l-Hind)",
@@ -36,7 +60,12 @@
       "Mineralogiya",
       "Astrolabiya kitobi"
     ],
-    "tags": ["astronomiya", "matematika", "tarix", "geografiya"]
+    "tags": [
+      "astronomiya",
+      "matematika",
+      "tarix",
+      "geografiya"
+    ]
   },
   {
     "id": "ibn-sino",
@@ -50,7 +79,7 @@
     "field": "Tabib · Faylasuf · Olim",
     "initial": "S",
     "accent": "#e8c898",
-    "image": "/images/allomalar/ibn-sino.jpg",
+    "image": "/allomalar/ibn-sino.jpg",
     "birthplace": "Afshona, Buxoro",
     "quote": "Bemorni davolashda eng kuchli dori — umiddir.",
     "shortBio": "G'arbda «Avitsenna» nomi bilan mashhur, «Tib qonunlari» asari 600 yil davomida Yevropa universitetlarida asosiy darslik bo'lgan tabib.",
@@ -61,12 +90,36 @@
       "Ibn Sino umrida 450 dan ortiq asar yozgan. Tibbiyot, falsafa, astronomiya, kimyo, geologiya, musiqashunoslik — barcha sohada chuqur iz qoldirgan."
     ],
     "timeline": [
-      { "year": 980, "title": "Tug'ilishi", "text": "Buxoro yaqinidagi Afshonada tug'ildi." },
-      { "year": 996, "title": "Tabiblik faoliyati", "text": "Buxoro amiri Nuh II ni davolab, kutubxonadan foydalanish huquqini oldi." },
-      { "year": 1014, "title": "Hamadonga ko'chish", "text": "Hamadon hukmdorining vaziri etib tayinlandi." },
-      { "year": 1020, "title": "«Tib qonunlari»", "text": "Beshiklikning eng katta tibbiy asari yozila boshladi." },
-      { "year": 1030, "title": "«Kitob ash-shifo»", "text": "Falsafiy bosh asari tugatildi." },
-      { "year": 1037, "title": "Vafoti", "text": "Hamadonda vafot etdi." }
+      {
+        "year": 980,
+        "title": "Tug'ilishi",
+        "text": "Buxoro yaqinidagi Afshonada tug'ildi."
+      },
+      {
+        "year": 996,
+        "title": "Tabiblik faoliyati",
+        "text": "Buxoro amiri Nuh II ni davolab, kutubxonadan foydalanish huquqini oldi."
+      },
+      {
+        "year": 1014,
+        "title": "Hamadonga ko'chish",
+        "text": "Hamadon hukmdorining vaziri etib tayinlandi."
+      },
+      {
+        "year": 1020,
+        "title": "«Tib qonunlari»",
+        "text": "Beshiklikning eng katta tibbiy asari yozila boshladi."
+      },
+      {
+        "year": 1030,
+        "title": "«Kitob ash-shifo»",
+        "text": "Falsafiy bosh asari tugatildi."
+      },
+      {
+        "year": 1037,
+        "title": "Vafoti",
+        "text": "Hamadonda vafot etdi."
+      }
     ],
     "works": [
       "Al-qonun fit-tib (Tib qonunlari)",
@@ -75,7 +128,12 @@
       "Donishnoma",
       "Risola fil-ishq (Ishq haqida risola)"
     ],
-    "tags": ["tibbiyot", "falsafa", "mantiq", "astronomiya"]
+    "tags": [
+      "tibbiyot",
+      "falsafa",
+      "mantiq",
+      "astronomiya"
+    ]
   },
   {
     "id": "ulugbek",
@@ -89,7 +147,7 @@
     "field": "Astronom · Hukmdor · Olim",
     "initial": "U",
     "accent": "#1a6b7e",
-    "image": "/images/allomalar/ulugbek.jpg",
+    "image": "/allomalar/ulugbek.jpg",
     "birthplace": "Sultoniya, Eron",
     "quote": "Dinlar tarqaladi va yo'qoladi — ammo ilmlar abadiy yashaydi.",
     "shortBio": "Samarqandda dunyoning eng katta o'rta asr rasadxonasini qurgan, 1018 ta yulduzni o'lchagan astronom-shoh.",
@@ -100,19 +158,48 @@
       "1449-yilda fojiali ravishda o'z o'g'li tomonidan o'ldirildi. Lekin uning ilmiy merosi — «Ziji jadidi Ko'ragoniy» Yevropaga yetib bordi va 17-asrgacha asosiy astronomik manba bo'lib qoldi."
     ],
     "timeline": [
-      { "year": 1394, "title": "Tug'ilishi", "text": "Sultoniya shahrida (hozirgi Eron) tug'ildi." },
-      { "year": 1411, "title": "Hokimiyat", "text": "Movarounnahr hokimi etib tayinlandi." },
-      { "year": 1417, "title": "Madrasa", "text": "Samarqand Registonida o'z madrasasini bunyod etdi." },
-      { "year": 1424, "title": "Rasadxona", "text": "Ulug'bek rasadxonasi qurilishi boshlandi." },
-      { "year": 1437, "title": "«Ziji jadidi»", "text": "Yulduzlar jadvali tugatildi — 1018 yulduz." },
-      { "year": 1449, "title": "Vafoti", "text": "Fojiali ravishda hayotdan ko'z yumdi." }
+      {
+        "year": 1394,
+        "title": "Tug'ilishi",
+        "text": "Sultoniya shahrida (hozirgi Eron) tug'ildi."
+      },
+      {
+        "year": 1411,
+        "title": "Hokimiyat",
+        "text": "Movarounnahr hokimi etib tayinlandi."
+      },
+      {
+        "year": 1417,
+        "title": "Madrasa",
+        "text": "Samarqand Registonida o'z madrasasini bunyod etdi."
+      },
+      {
+        "year": 1424,
+        "title": "Rasadxona",
+        "text": "Ulug'bek rasadxonasi qurilishi boshlandi."
+      },
+      {
+        "year": 1437,
+        "title": "«Ziji jadidi»",
+        "text": "Yulduzlar jadvali tugatildi — 1018 yulduz."
+      },
+      {
+        "year": 1449,
+        "title": "Vafoti",
+        "text": "Fojiali ravishda hayotdan ko'z yumdi."
+      }
     ],
     "works": [
       "Ziji jadidi Ko'ragoniy",
       "Tarixi arba' ulus",
       "Risolai Ulug'bek (matematika)"
     ],
-    "tags": ["astronomiya", "matematika", "davlat", "ta'lim"]
+    "tags": [
+      "astronomiya",
+      "matematika",
+      "davlat",
+      "ta'lim"
+    ]
   },
   {
     "id": "cholpon",
@@ -126,7 +213,7 @@
     "field": "Shoir · Yozuvchi · Jadidchi",
     "initial": "Ch",
     "accent": "#8b2635",
-    "image": "/images/allomalar/cholpon.jpg",
+    "image": "/allomalar/cholpon.jpg",
     "birthplace": "Andijon",
     "quote": "Tilim — qanotim, men u bilan parvoz etaman.",
     "shortBio": "O'zbek modernizm she'riyatining asoschisi, jadid harakati yetakchilaridan biri, fojiali taqdir egasi.",
@@ -137,12 +224,36 @@
       "1937-yilda «xalq dushmani» degan tuhmat bilan qamoqqa olindi va 1938-yilda otib o'ldirildi. Uzoq yillar davomida nomi taqiqlangan bo'lsa-da, mustaqillik yillarida butun ulug'vor ijodi qaytadan xalqqa qaytdi."
     ],
     "timeline": [
-      { "year": 1897, "title": "Tug'ilishi", "text": "Andijonda savdogar oilasida tug'ildi." },
-      { "year": 1914, "title": "Birinchi she'rlar", "text": "Matbuotda chiqishni boshladi." },
-      { "year": 1922, "title": "«Uyg'onish»", "text": "Birinchi she'riy to'plami nashrdan chiqdi." },
-      { "year": 1925, "title": "«Buloqlar»", "text": "Ikkinchi to'plami chiqdi — modernizm yorqin namunasi." },
-      { "year": 1936, "title": "«Kecha va kunduz»", "text": "Romanning birinchi qismi nashr etildi." },
-      { "year": 1938, "title": "Fojiali oxiri", "text": "Stalin qatag'oni qurboniga aylandi." }
+      {
+        "year": 1897,
+        "title": "Tug'ilishi",
+        "text": "Andijonda savdogar oilasida tug'ildi."
+      },
+      {
+        "year": 1914,
+        "title": "Birinchi she'rlar",
+        "text": "Matbuotda chiqishni boshladi."
+      },
+      {
+        "year": 1922,
+        "title": "«Uyg'onish»",
+        "text": "Birinchi she'riy to'plami nashrdan chiqdi."
+      },
+      {
+        "year": 1925,
+        "title": "«Buloqlar»",
+        "text": "Ikkinchi to'plami chiqdi — modernizm yorqin namunasi."
+      },
+      {
+        "year": 1936,
+        "title": "«Kecha va kunduz»",
+        "text": "Romanning birinchi qismi nashr etildi."
+      },
+      {
+        "year": 1938,
+        "title": "Fojiali oxiri",
+        "text": "Stalin qatag'oni qurboniga aylandi."
+      }
     ],
     "works": [
       "Uyg'onish (she'riy to'plam)",
@@ -151,7 +262,12 @@
       "Soz",
       "Kecha va kunduz (roman)"
     ],
-    "tags": ["she'riyat", "nasr", "jadidchilik", "tarjima"]
+    "tags": [
+      "she'riyat",
+      "nasr",
+      "jadidchilik",
+      "tarjima"
+    ]
   },
   {
     "id": "behbudiy",
@@ -165,7 +281,7 @@
     "field": "Jadidchi · Dramaturg · Pedagog",
     "initial": "M",
     "accent": "#0f4c5c",
-    "image": "/images/allomalar/behbudiy.jpg",
+    "image": "/allomalar/behbudiy.jpg",
     "birthplace": "Samarqand",
     "quote": "Maktabsiz millat — yo'lsiz qolgan karvon kabidir.",
     "shortBio": "O'zbek jadid harakatining peshvosi, birinchi o'zbek dramaturgi, milliy uyg'onish g'oyasining nazariyotchisi.",
@@ -176,12 +292,36 @@
       "1919-yilda Buxoro amiri tomonidan zolimona qatl etildi. Uning fojiali o'limi butun jadidchilik harakatining katta yo'qotishi bo'ldi, lekin g'oyalari xalq ongida abadiy qoldi."
     ],
     "timeline": [
-      { "year": 1875, "title": "Tug'ilishi", "text": "Samarqandda ruhoniy oilasida tug'ildi." },
-      { "year": 1903, "title": "Hajga safar", "text": "Hindiston, Misr, Turkiya orqali sayohat qildi." },
-      { "year": 1911, "title": "«Padarkush»", "text": "Birinchi o'zbek pyesasi yozildi." },
-      { "year": 1913, "title": "«Oyna» jurnali", "text": "Jadidchilikning markaziy nashri tashkil etildi." },
-      { "year": 1917, "title": "Inqilob davri", "text": "Turkiston Muxtoriyati harakatida faol ishtirok etdi." },
-      { "year": 1919, "title": "Shahid bo'lishi", "text": "Buxoro amiri tomonidan qatl etildi." }
+      {
+        "year": 1875,
+        "title": "Tug'ilishi",
+        "text": "Samarqandda ruhoniy oilasida tug'ildi."
+      },
+      {
+        "year": 1903,
+        "title": "Hajga safar",
+        "text": "Hindiston, Misr, Turkiya orqali sayohat qildi."
+      },
+      {
+        "year": 1911,
+        "title": "«Padarkush»",
+        "text": "Birinchi o'zbek pyesasi yozildi."
+      },
+      {
+        "year": 1913,
+        "title": "«Oyna» jurnali",
+        "text": "Jadidchilikning markaziy nashri tashkil etildi."
+      },
+      {
+        "year": 1917,
+        "title": "Inqilob davri",
+        "text": "Turkiston Muxtoriyati harakatida faol ishtirok etdi."
+      },
+      {
+        "year": 1919,
+        "title": "Shahid bo'lishi",
+        "text": "Buxoro amiri tomonidan qatl etildi."
+      }
     ],
     "works": [
       "Padarkush (drama)",
@@ -189,6 +329,11 @@
       "Oyna (jurnal — muharrir)",
       "Muntaxabi jug'rofiyai umumiy"
     ],
-    "tags": ["jadidchilik", "drama", "matbuot", "ma'rifat"]
+    "tags": [
+      "jadidchilik",
+      "drama",
+      "matbuot",
+      "ma'rifat"
+    ]
   }
 ]

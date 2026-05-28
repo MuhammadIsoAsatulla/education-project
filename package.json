@@ -7,16 +7,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "remotion:studio": "remotion studio src/remotion/index.js --port=3003",
+    "remotion:render": "remotion render src/remotion/index.js BeruniyVideo out/beruniy-video.mp4"
   },
   "dependencies": {
+    "@remotion/cli": "^4.0.463",
+    "@supabase/supabase-js": "^2.105.4",
     "framer-motion": "^11.11.0",
     "howler": "^2.2.4",
     "lucide-react": "^0.460.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
-    "react-youtube": "^10.1.0"
+    "react-youtube": "^10.1.0",
+    "remotion": "^4.0.463"
   },
   "devDependencies": {
     "@types/react": "^18.3.11",

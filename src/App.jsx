@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import AuthModal from './components/auth/AuthModal.jsx';
 import Navbar from './components/common/Navbar.jsx';
 import Footer from './components/common/Footer.jsx';
 import ScrollToTop from './components/common/ScrollToTop.jsx';
@@ -21,8 +23,9 @@ import NotFoundPage from './pages/NotFoundPage.jsx';
 
 export default function App() {
   return (
-    <>
+    <AuthProvider>
       <ScrollToTop />
+      <AuthModal />
       <Navbar />
       <main>
         <Routes>
@@ -44,6 +47,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </AuthProvider>
   );
 }
