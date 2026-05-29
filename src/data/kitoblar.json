@@ -54,7 +54,12 @@
       "Asar XV asrdan boshlab Sharqning ko'p tillariga tarjima qilingan.",
       "«Xamsa» o'qish bir umrlik mashg'ulot bo'lib qoladi — har qayta o'qishda yangi ma'no ochiladi."
     ],
-    "themes": ["sevgi", "tasavvuf", "adolat", "donolik"]
+    "themes": [
+      "sevgi",
+      "tasavvuf",
+      "adolat",
+      "donolik"
+    ]
   },
   {
     "id": "farhod-va-shirin",
@@ -110,7 +115,12 @@
       "Doston Behzodning miniatyuralari bilan bezatilgan eng mashhur Navoiy qo'lyozmalaridan biri.",
       "Asar XX asrda balet va opera asarlari uchun mavzu bo'lgan."
     ],
-    "themes": ["sevgi", "mehnat", "fidoyilik", "san'at"]
+    "themes": [
+      "sevgi",
+      "mehnat",
+      "fidoyilik",
+      "san'at"
+    ]
   },
   {
     "id": "layli-va-majnun",
@@ -166,7 +176,12 @@
       "Asar Sharqda eng ko'p sahnalashtirilgan va miniatyuralangan dostonlardan biri.",
       "1908-yilda Uzeyir Hojibekov shu mavzuda dunyodagi birinchi musulmon operasini yaratgan."
     ],
-    "themes": ["sevgi", "tasavvuf", "junun", "ayriliq"]
+    "themes": [
+      "sevgi",
+      "tasavvuf",
+      "junun",
+      "ayriliq"
+    ]
   },
   {
     "id": "saddi-iskandariy",
@@ -222,7 +237,12 @@
       "Doston Sharq miniatyuristlari uchun eng mashhur mavzu bo'lgan.",
       "Asarda Arastuning falsafiy mulohazalari ham keltirilgan."
     ],
-    "themes": ["adolat", "donolik", "hukmronlik", "o'lim"]
+    "themes": [
+      "adolat",
+      "donolik",
+      "hukmronlik",
+      "o'lim"
+    ]
   },
   {
     "id": "temur-tuzuklari",
@@ -278,7 +298,12 @@
       "Sohibqironning eng mashhur tamoyili: «Kuch — adolatdadir».",
       "Bugungi O'zbekistonda Temur shaxsi va uning merosi davlat siyosatining muhim qismi."
     ],
-    "themes": ["davlatchilik", "adolat", "harbiy san'at", "siyosat"]
+    "themes": [
+      "davlatchilik",
+      "adolat",
+      "harbiy san'at",
+      "siyosat"
+    ]
   },
   {
     "id": "jaloliddin-manguberdi",
@@ -334,7 +359,12 @@
       "Bugungi O'zbekistonda Jaloliddin Manguberdi nomidagi davlat mukofoti bor.",
       "Asar mustaqillik yillarida o'rta maktab dasturiga kiritilgan."
     ],
-    "themes": ["vatanparvarlik", "jasorat", "tarix", "fidoyilik"]
+    "themes": [
+      "vatanparvarlik",
+      "jasorat",
+      "tarix",
+      "fidoyilik"
+    ]
   },
   {
     "id": "alpomish",
@@ -393,7 +423,12 @@
       "Asarning markazida vatanparvarlik, sodiqlik va sabr fazilatlari yotadi.",
       "Baxshilar dostonni do'mbira chertib aytishadi — bu Markaziy Osiyo og'zaki ijodining mumtoz uslubi."
     ],
-    "themes": ["jasorat", "vatan", "sevgi", "sabr"]
+    "themes": [
+      "jasorat",
+      "vatan",
+      "sevgi",
+      "sabr"
+    ]
   },
   {
     "id": "boburnoma",
@@ -454,7 +489,12 @@
       "Asar 1826-yili birinchi marta inglizcha tarjima qilindi.",
       "Bobur shoir ham bo'lgan, eski o'zbek tilidagi «Devon»ining muallifi."
     ],
-    "themes": ["tarix", "sayohat", "siyosat", "tabiat"]
+    "themes": [
+      "tarix",
+      "sayohat",
+      "siyosat",
+      "tabiat"
+    ]
   },
   {
     "id": "yulduzli-tunlar",
@@ -512,7 +552,12 @@
       "Roman bir necha tillarga tarjima qilingan.",
       "Qodirov Boburni nafaqat askariy yo'lboshchi, balki shoir va kuzatuvchi sifatida tasvirlaydi."
     ],
-    "themes": ["tarix", "vatan", "sevgi", "kurash"]
+    "themes": [
+      "tarix",
+      "vatan",
+      "sevgi",
+      "kurash"
+    ]
   },
   {
     "id": "otkan-kunlar-roman",
@@ -571,7 +616,12 @@
       "Qodiriyning asarlari Stalin qatag'oni yillarida taqiqlangan edi, mustaqillikdan keyin qaytadan o'qitila boshlandi.",
       "Roman o'rta maktab adabiyot dasturiga kiritilgan."
     ],
-    "themes": ["sevgi", "tarix", "an'ana", "ma'rifat"]
+    "themes": [
+      "sevgi",
+      "tarix",
+      "an'ana",
+      "ma'rifat"
+    ]
   },
   {
     "id": "mehrobdan-chayon",
@@ -623,7 +673,12 @@
       "Asarda fitna ustasi Sodiqning obrazi o'zbek adabiyotidagi eng yorqin manfiy qahramonlardan biri.",
       "Roman bir necha marta sahnalashtirilgan va TV-serial qilingan."
     ],
-    "themes": ["sevgi", "tarix", "saroy", "fitna"]
+    "themes": [
+      "sevgi",
+      "tarix",
+      "saroy",
+      "fitna"
+    ]
   },
   {
     "id": "kecha-va-kunduz",
@@ -680,7 +735,11 @@
       "U she'riyat bilan birga drama va tarjima bilan ham shug'ullangan (Shekspir, Pushkin).",
       "«Cho'lpon» taxallusi «tong yulduzi» degan ma'noni anglatadi."
     ],
-    "themes": ["ayol taqdiri", "qishloq", "milliy uyg'onish"]
+    "themes": [
+      "ayol taqdiri",
+      "qishloq",
+      "milliy uyg'onish"
+    ]
   },
   {
     "id": "qutlug-qon-kiril",
@@ -733,7 +792,12 @@
       "Ойбек ўзбек реалистик романининг асосчиларидан бири.",
       "Асар бир неча тилларга таржима қилинган."
     ],
-    "themes": ["қўзғолон", "адолат", "халқ", "тарих"]
+    "themes": [
+      "қўзғолон",
+      "адолат",
+      "халқ",
+      "тарих"
+    ]
   },
   {
     "id": "sarob",
@@ -786,7 +850,11 @@
       "«Sarob»dan tashqari «Bemor», «O'tmishdan ertaklar» kabi hikoyalari ham mashhur.",
       "Qahhor 1956-yili «Sinchalak» romanini ham yozgan."
     ],
-    "themes": ["o'zlik", "davr", "ziyolilik"]
+    "themes": [
+      "o'zlik",
+      "davr",
+      "ziyolilik"
+    ]
   },
   {
     "id": "shum-bola",
@@ -843,7 +911,12 @@
       "G'afur G'ulom Toshkentdagi bir necha mahalla va ko'chaga nom berilgan.",
       "Qissa nafaqat bolalar, balki kattalar uchun ham eng sevimli kitoblardan biri."
     ],
-    "themes": ["bolalik", "do'stlik", "Toshkent", "xotira"]
+    "themes": [
+      "bolalik",
+      "do'stlik",
+      "Toshkent",
+      "xotira"
+    ]
   },
   {
     "id": "ufq-kiril",
@@ -900,7 +973,12 @@
       "Саид Аҳмад «Келинлар қўзғолони» комедияси билан ҳам жуда машҳур.",
       "Асар бир неча тилларга таржима қилинган."
     ],
-    "themes": ["уруш", "халқ", "оила", "меҳнат"]
+    "themes": [
+      "уруш",
+      "халқ",
+      "оила",
+      "меҳнат"
+    ]
   },
   {
     "id": "avlodlar-dovoni",
@@ -957,7 +1035,12 @@
       "Roman 640 sahifa — keng ko'lamli oilaviy yilnoma.",
       "Asar 1990-yillardan keyin yangi talqinlar va qayta nashrlar bilan qaytadan o'qila boshlangan."
     ],
-    "themes": ["avlodlar", "tarix", "falsafa", "oila"]
+    "themes": [
+      "avlodlar",
+      "tarix",
+      "falsafa",
+      "oila"
+    ]
   },
   {
     "id": "ikki-eshik-orasi",
@@ -1014,7 +1097,12 @@
       "Asar zamonaviy o'zbek maishiy romanchiligining poydevorini qo'ygan.",
       "Roman 608 sahifa va eng katta o'zbek oilaviy romanlaridan biri."
     ],
-    "themes": ["oila", "an'ana", "sevgi", "davr"]
+    "themes": [
+      "oila",
+      "an'ana",
+      "sevgi",
+      "davr"
+    ]
   },
   {
     "id": "otamdan-qolgan-dalalar",
@@ -1070,7 +1158,12 @@
       "Tog'ay Murod o'zbek qishloq hayoti va tabiat tasvirining mumtoz mahoratiga ega.",
       "Asar o'rta maktab dasturiga kiritilgan va keng o'rganiladi."
     ],
-    "themes": ["vatan", "ota", "yer", "o'zlik"]
+    "themes": [
+      "vatan",
+      "ota",
+      "yer",
+      "o'zlik"
+    ]
   },
   {
     "id": "yulduzlar-mangu-yonadi",
@@ -1126,7 +1219,12 @@
       "Yozuvchining boshqa mashhur asarlari: «Otamdan qolgan dalalar», «Ot kishnagan oqshom».",
       "Tog'ay Murod O'zbekiston Davlat mukofoti laureati."
     ],
-    "themes": ["sevgi", "xotira", "tabiat", "ayriliq"]
+    "themes": [
+      "sevgi",
+      "xotira",
+      "tabiat",
+      "ayriliq"
+    ]
   },
   {
     "id": "ikki-karra-ikki-besh",
@@ -1182,7 +1280,12 @@
       "U Nasriddin Afandi an'analarini zamonaviy o'zbek ironik nasrida davom ettirgan.",
       "Yozuvchi keyinchalik kino-stsenariylar va dramaturgiya sohasida ham mashhur bo'lgan."
     ],
-    "themes": ["ironiya", "paradoks", "ziyolilik", "haqiqat"]
+    "themes": [
+      "ironiya",
+      "paradoks",
+      "ziyolilik",
+      "haqiqat"
+    ]
   },
   {
     "id": "sariq-devni-minib",
@@ -1239,7 +1342,12 @@
       "To'xtaboyev keyinchalik «Sariq devning o'limi» davom qissasini yozgan.",
       "Yozuvchi O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
     ],
-    "themes": ["sehr", "bolalik", "do'stlik", "ezgulik"]
+    "themes": [
+      "sehr",
+      "bolalik",
+      "do'stlik",
+      "ezgulik"
+    ]
   },
   {
     "id": "sariq-devning-olimi",
@@ -1296,7 +1404,12 @@
       "Yozuvchining asarlari bolalar teatrlarida sahnalashtirilgan.",
       "Xudoyberdi To'xtaboyev O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
     ],
-    "themes": ["do'stlik", "sodiqlik", "sehr", "katta bo'lish"]
+    "themes": [
+      "do'stlik",
+      "sodiqlik",
+      "sehr",
+      "katta bo'lish"
+    ]
   },
   {
     "id": "urushning-songgi-qurboni",
@@ -1348,6 +1461,11 @@
       "Yozuvchi «Ufq» trilogiyasi bilan ham urush mavzusini ko'tarib chiqqan.",
       "Said Ahmad O'zbekiston Xalq yozuvchisi unvoniga sazovor bo'lgan."
     ],
-    "themes": ["urush", "qurbon", "tinchlik", "xotira"]
+    "themes": [
+      "urush",
+      "qurbon",
+      "tinchlik",
+      "xotira"
+    ]
   }
 ]

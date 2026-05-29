@@ -3,13 +3,23 @@ import { Link } from 'react-router-dom';
 import useProgress from '../../hooks/useProgress.js';
 import MuhrIcon from './MuhrIcon.jsx';
 
+// Each challenge ships with a `verify(state)` that scans today's activity log
+// to confirm the user actually did the work. The Bajardim button is disabled
+// until verify() returns true. This was the #1 exploit: before, the button
+// just gave 50 pts + 5 bronze on click with no checks.
 const CHALLENGES = [
   {
     id: 'visit-alloma',
-    label: 'Allomalar bo\'limidan 1 ta yangi alloma haqida o\'qing',
+    label: "Allomalar bo'limidan 1 ta yangi alloma haqida o'qing",
     icon: '📜',
     link: '/allomalar',
     cta: 'Allomalar',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some(
+        (a) =>
+          a.type === 'visit' && a.payload?.section === 'allomalar' && a.at >= todayStart,
+      ),
+    hint: "Bugun yangi alloma sahifasiga kiring.",
   },
   {
     id: 'visit-muzey',
@@ -17,41 +27,74 @@ const CHALLENGES = [
     icon: '🏛',
     link: '/muzeylar',
     cta: 'Muzeylar',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some(
+        (a) =>
+          a.type === 'visit' && a.payload?.section === 'muzeylar' && a.at >= todayStart,
+      ),
+    hint: "Muzey sahifasida 360° sayohatni kamida 75% ko'rib chiqing.",
   },
   {
     id: 'visit-musiqa',
-    label: '1 ta mumtoz musiqa asarini tinglang',
+    label: "1 ta mumtoz musiqa asarini tinglang",
     icon: '🎵',
     link: '/musiqa',
     cta: 'Musiqa',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some(
+        (a) =>
+          a.type === 'visit' && a.payload?.section === 'musiqa' && a.at >= todayStart,
+      ),
+    hint: "Karaoke yoki tinglash uchun bir qo'shiq oching.",
   },
   {
     id: 'visit-kino',
-    label: 'Bitta o\'zbek filmini ko\'rib chiqing',
+    label: "Bitta o'zbek filmini ko'rib chiqing",
     icon: '🎬',
     link: '/kinolar',
     cta: 'Kinolar',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some(
+        (a) =>
+          a.type === 'visit' && a.payload?.section === 'kinolar' && a.at >= todayStart,
+      ),
+    hint: "Film sahifasida videoning kamida 70% ko'rib chiqing.",
   },
   {
     id: 'read-kitob',
-    label: 'Bir kitobning kamida 5 sahifasini o\'qing',
+    label: "Bir kitobning kamida 5 sahifasini o'qing",
     icon: '📖',
     link: '/kitoblar',
     cta: 'Kitoblar',
+    verify: (state, todayStart) => {
+      const pagesToday = (state.recentActivity || [])
+        .filter((a) => a.type === 'reading' && a.at >= todayStart)
+        .reduce((sum, a) => sum + (a.payload?.newPages || 0), 0);
+      return pagesToday >= 5;
+    },
+    hint: "Mutolaa rejimida kamida 5 ta yangi sahifani aylantiring.",
   },
   {
     id: 'take-quiz',
-    label: 'Har qaysi viktorinada qatnashing',
+    label: "Har qaysi viktorinada qatnashing",
     icon: '✓',
     link: '/allomalar',
     cta: 'Viktorinalar',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some((a) => a.type === 'quiz' && a.at >= todayStart),
+    hint: "Istalgan sahifadagi viktorinani boshlab javob bering.",
   },
   {
     id: 'leave-comment',
-    label: 'Har qaysi sahifaga sharh qoldiring',
+    label: "Har qaysi sahifaga sharh qoldiring",
     icon: '✎',
     link: '/allomalar',
     cta: 'Boshlash',
+    verify: (state, todayStart) =>
+      (state.recentActivity || []).some(
+        (a) => a.type === 'comment-added' && a.at >= todayStart,
+      ),
+    hint: "Detal sahifasida pastdagi 'Sharhlar' bo'limiga yozing.",
   },
 ];
 
@@ -59,6 +102,12 @@ function dayIndex(date = new Date()) {
   const start = new Date(date.getFullYear(), 0, 0);
   const diff = date - start;
   return Math.floor(diff / (1000 * 60 * 60 * 24));
+}
+
+function startOfTodayMs() {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
 }
 
 export default function DailyChallenge() {
@@ -70,6 +119,12 @@ export default function DailyChallenge() {
     const idx = dayIndex() % CHALLENGES.length;
     return CHALLENGES[idx];
   }, []);
+
+  // Verify the underlying work was actually done today.
+  const verified = useMemo(() => {
+    if (isCompleted) return true;
+    return challenge.verify(state, startOfTodayMs());
+  }, [challenge, state, isCompleted]);
 
   return (
     <div
@@ -103,7 +158,7 @@ export default function DailyChallenge() {
               </span>
               <span className="inline-flex items-center gap-1 px-2 py-1 border border-gold/40 rounded-full text-xs">
                 <MuhrIcon type="bronze" size={14} />
-                <span className="font-serif tabular-nums">5</span>
+                <span className="font-serif tabular-nums">2</span>
               </span>
             </div>
           </div>
@@ -121,15 +176,32 @@ export default function DailyChallenge() {
                 <span>{challenge.cta} ga o'tish</span>
               </Link>
               <button
-                onClick={() => completeDailyChallenge(challenge.id)}
-                className="px-4 py-2 border border-gold/40 text-cream-soft hover:text-gold hover:border-gold rounded-full text-xs tracking-[2px] uppercase transition"
-                title="Qo'lda bajarilgan deb belgilang"
+                onClick={() => verified && completeDailyChallenge(challenge.id)}
+                disabled={!verified}
+                className={`px-4 py-2 border rounded-full text-xs tracking-[2px] uppercase transition ${
+                  verified
+                    ? 'border-gold/60 text-gold hover:bg-gold hover:text-bg-deep'
+                    : 'border-gold/15 text-cream-soft/30 cursor-not-allowed'
+                }`}
+                title={
+                  verified
+                    ? "Mukofotni olish"
+                    : "Avval vazifani bajaring — keyin bu tugma faollashadi"
+                }
               >
-                Bajardim
+                {verified ? '✓ Mukofotni olish' : 'Bajarish kerak'}
               </button>
             </div>
           )}
         </div>
+
+        {/* Hint shown while the challenge isn't yet verifiable, so users know
+            what specifically counts as "done" for today. */}
+        {!isCompleted && !verified && (
+          <p className="mt-3 text-cream-soft/55 text-[11px] italic leading-relaxed">
+            {challenge.hint}
+          </p>
+        )}
 
         {state.daily?.challengeStreak > 0 && (
           <div className="mt-4 pt-4 border-t border-gold/15 flex items-center gap-2 text-xs tracking-[1px]">

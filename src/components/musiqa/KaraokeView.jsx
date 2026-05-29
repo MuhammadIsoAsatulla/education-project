@@ -11,7 +11,16 @@ const STATUS = {
   SEARCH: 'search', // nothing local — point to YouTube search
 };
 
-export default function KaraokeView({ song, onClose }) {
+// How many seconds of REAL playback the user has to log before we credit
+// the song as "listened to". Arrow-seek jumps don't count — only forward
+// progression measured against wall clock. Tuned to "long enough to take in
+// a verse or two" rather than "long enough to finish the song".
+const LISTEN_THRESHOLD_SECONDS = 25;
+// YouTube fallback can't be measured precisely (no iframe API plumbing here),
+// so we use a coarser "modal open + tab visible" timer instead.
+const YOUTUBE_FALLBACK_SECONDS = 30;
+
+export default function KaraokeView({ song, onClose, onListened }) {
   const [status, setStatus] = useState(STATUS.CHECKING);
   const [lyrics, setLyrics] = useState([]);
   const [time, setTime] = useState(0);
@@ -24,6 +33,13 @@ export default function KaraokeView({ song, onClose }) {
   const rafRef = useRef(null);
   const rootRef = useRef(null);
   const idleTimerRef = useRef(null);
+  // Track REAL accumulated playback. `lastSeekRef` stores the previous tick's
+  // playhead position so we only count forward, small-delta progress —
+  // ignoring jumps from arrow-key seeks. `creditedRef` ensures onListened
+  // fires at most once per KaraokeView lifetime.
+  const playedSecondsRef = useRef(0);
+  const lastSeekRef = useRef(0);
+  const creditedRef = useRef(false);
 
   // Detect available media for this song
   useEffect(() => {
@@ -78,17 +94,70 @@ export default function KaraokeView({ song, onClose }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status, song.audio]);
 
-  // Time tracker (only when audio is playing)
+  // Time tracker (only when audio is playing). Also accumulates "real
+  // listened" seconds for visit-credit gating: we only count forward jumps
+  // of < 2s (normal playback) — anything bigger (arrow-seek, scrub) is a
+  // seek and gets discarded. When the threshold is crossed, fire onListened
+  // exactly once.
   useEffect(() => {
     if (!playing || !howlRef.current) return;
+    lastSeekRef.current = howlRef.current?.seek?.() || 0;
     const tick = () => {
       const t = howlRef.current?.seek?.();
-      if (typeof t === 'number') setTime(t);
+      if (typeof t === 'number') {
+        const dt = t - lastSeekRef.current;
+        if (dt > 0 && dt < 2) {
+          playedSecondsRef.current += dt;
+          if (
+            !creditedRef.current &&
+            playedSecondsRef.current >= LISTEN_THRESHOLD_SECONDS
+          ) {
+            creditedRef.current = true;
+            onListened?.();
+          }
+        }
+        lastSeekRef.current = t;
+        setTime(t);
+      }
       rafRef.current = requestAnimationFrame(tick);
     };
     rafRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [playing]);
+  }, [playing, onListened]);
+
+  // YouTube fallback: we can't measure real playback through the iframe,
+  // so we approximate with "modal open + tab visible for N seconds". Pauses
+  // when the tab is hidden so background-tab abuse is mitigated.
+  useEffect(() => {
+    if (status !== STATUS.YOUTUBE || creditedRef.current) return undefined;
+    let elapsed = 0;
+    let intervalId = null;
+    const start = () => {
+      if (intervalId) return;
+      intervalId = setInterval(() => {
+        elapsed += 1;
+        if (elapsed >= YOUTUBE_FALLBACK_SECONDS && !creditedRef.current) {
+          creditedRef.current = true;
+          onListened?.();
+          stop();
+        }
+      }, 1000);
+    };
+    const stop = () => {
+      if (intervalId) clearInterval(intervalId);
+      intervalId = null;
+    };
+    const onVis = () => {
+      if (document.visibilityState === 'visible') start();
+      else stop();
+    };
+    onVis();
+    document.addEventListener('visibilitychange', onVis);
+    return () => {
+      stop();
+      document.removeEventListener('visibilitychange', onVis);
+    };
+  }, [status, onListened]);
 
   const togglePlay = () => {
     const h = howlRef.current;
@@ -614,7 +683,9 @@ function YouTubeView({ song }) {
     <div className="w-full max-w-4xl">
       <div className="aspect-video rounded-sm overflow-hidden border border-gold/30 bg-black shadow-2xl">
         <iframe
-          src={`https://www.youtube.com/embed/${song.youtubeId}?autoplay=1`}
+          src={`https://www.youtube.com/embed/${song.youtubeId}?autoplay=1${
+            song.youtubeStart ? `&start=${song.youtubeStart}` : ''
+          }&rel=0`}
           title={song.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

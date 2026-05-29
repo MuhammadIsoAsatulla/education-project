@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import musiqa from '../data/musiqa.json';
 import viktorinalar from '../data/viktorinalar.json';
@@ -25,6 +25,15 @@ export default function MusiqaDetailPage() {
   const { state: progressState, visit, submitQuiz } = useProgress();
   useScrollReveal();
 
+  // Only credit a "visit" when the user has genuinely listened to the song
+  // via the karaoke player (real cumulative playback ≥ 25s, or 30s of
+  // active YouTube fallback). This stops the old exploit where opening the
+  // page or arrow-skipping through karaoke instantly granted +7 points.
+  const handleListened = () => {
+    if (!song) return;
+    visit('musiqa', song.id, { points: 7, achievement: 'maqomshunos' });
+  };
+
   const quiz = useMemo(
     () => viktorinalar.find((v) => v.ownerType === 'musiqa' && v.ownerId === song?.slug),
     [song?.slug],
@@ -33,9 +42,8 @@ export default function MusiqaDetailPage() {
   const previousQuizScore =
     typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
 
-  useEffect(() => {
-    if (song) visit('musiqa', song.id, { points: 7, achievement: 'maqomshunos' });
-  }, [song, visit]);
+  // No eager visit() on mount any more — the visit fires from handleListened
+  // when KaraokeView reports real playback.
 
   if (!song) {
     return (
@@ -206,7 +214,13 @@ export default function MusiqaDetailPage() {
         </div>
       </section>
 
-      {karaokeOpen && <KaraokeView song={song} onClose={() => setKaraokeOpen(false)} />}
+      {karaokeOpen && (
+        <KaraokeView
+          song={song}
+          onClose={() => setKaraokeOpen(false)}
+          onListened={handleListened}
+        />
+      )}
     </article>
   );
 }

@@ -1,8 +1,8 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
 import useLocalStorage from './useLocalStorage.js';
-import useFirestoreDoc from './useFirestoreDoc.js';
+import useServerProgress from './useServerProgress.js';
 import useAuth from './useAuth.js';
-import { isFirebaseConfigured } from '../lib/firebase.js';
+import { apiFetch } from '../lib/api.js';
 
 const DEFAULT = {
   name: 'Mehmon',
@@ -40,9 +40,14 @@ const DEFAULT = {
   muhrStyle: 'classical',      // 'classical' | 'embroidered'
 };
 
-const POINTS_PER_BRONZE = 50;     // 50 points → 1 Bronza Muhr
-const BRONZE_PER_SILVER = 10;     // 10 Bronza → 1 Kumush
-const SILVER_PER_GOLD = 10;       // 10 Kumush → 1 Tilla
+// Rebalanced 2026-05: was 50 / 10 / 10 which let users earn a Bronza Muhr
+// from a single quiz (90 pts) and let exploits via the Daily Challenge button
+// rack up unlimited free MUHR. Tripling the bronze cost and widening silver
+// + gold thresholds means a legitimate "Tilla Muhr" now requires roughly
+// 45,000 points of real engagement — about a year of daily use.
+const POINTS_PER_BRONZE = 150;    // 150 points → 1 Bronza Muhr
+const BRONZE_PER_SILVER = 15;     // 15 Bronza → 1 Kumush
+const SILVER_PER_GOLD = 20;       // 20 Kumush → 1 Tilla
 
 function normalize(prev) {
   return {
@@ -110,15 +115,14 @@ function maybeMintBronze(safe, oldPoints, newPoints) {
 
 export default function useProgress() {
   // Auth-aware backend switch:
-  //  - Signed in with Google + Firebase configured → Firestore (`users/{uid}`)
-  //  - Otherwise (guest, or Firebase missing)      → localStorage
+  //  - Signed in with Google (server reachable) → /api/users/me/state
+  //  - Otherwise (guest, or backend down)       → localStorage
   // The full action surface below doesn't care which is in use; it just calls
   // `setState(prev => ...)` and the right backend gets the write.
-  const { user, isFirebaseUser } = useAuth();
-  const useCloud = isFirebaseConfigured && isFirebaseUser && !!user?.uid;
-  const cloudPath = useCloud ? `users/${user.uid}` : null;
+  const { user, isGoogleUser } = useAuth();
+  const useCloud = isGoogleUser && !!user?.uid;
 
-  const [cloudData, setCloudData] = useFirestoreDoc(cloudPath, DEFAULT);
+  const [cloudData, setCloudData] = useServerProgress(useCloud, DEFAULT);
   const [localData, setLocalData] = useLocalStorage('meros:progress', DEFAULT);
 
   // Effective state: cloud once loaded, else local cache (avoids UI flash on sign-in).
@@ -128,6 +132,35 @@ export default function useProgress() {
     () => (useCloud ? setCloudData : setLocalData),
     [useCloud, setCloudData, setLocalData],
   );
+
+  // One-time migration: the first time a guest signs in with Google, push
+  // their local progress to the server so they don't lose what they earned
+  // before logging in. Only fires if the server's state is empty (new account)
+  // and the local state has actual points / activity.
+  const migratedRef = useRef(false);
+  useEffect(() => {
+    if (!useCloud || migratedRef.current) return;
+    if (!cloudData) return;
+    const cloudHasData = (cloudData.points || 0) > 0 || (cloudData.recentActivity?.length || 0) > 0;
+    const localHasData = (localData.points || 0) > 0 || (localData.recentActivity?.length || 0) > 0;
+    if (cloudHasData || !localHasData) {
+      migratedRef.current = true;
+      return;
+    }
+    migratedRef.current = true;
+    const merged = normalize({ ...cloudData, ...localData, name: cloudData.name || localData.name });
+    apiFetch('/api/users/me/state', {
+      method: 'PUT',
+      body: { state: merged },
+      auth: 'required',
+    })
+      .then(() => {
+        setCloudData(merged);
+      })
+      .catch(() => {
+        /* migration failed — user can retry later by interacting (auto-syncs) */
+      });
+  }, [useCloud, cloudData, localData, setCloudData]);
 
   const visit = useCallback(
     (section, id, { points = 5, achievement = null } = {}) => {
@@ -217,7 +250,10 @@ export default function useProgress() {
               lastTaken: Date.now(),
             },
           },
-          muhr: { ...safe.muhr, bronze: safe.muhr.bronze + perfectBonus * 2 },
+          // Perfect-quiz bonus was 2 bronze; halved to 1 because earning
+          // bronze itself is now ~3× harder. Keeps the relative value of a
+          // perfect score consistent vs ordinary points.
+          muhr: { ...safe.muhr, bronze: safe.muhr.bronze + perfectBonus * 1 },
         };
         if (perfectBonus > 0) {
           next.muhrHistory = [
@@ -225,7 +261,7 @@ export default function useProgress() {
               id: mkId('mh'),
               type: 'earned',
               muhrType: 'bronze',
-              amount: 2,
+              amount: 1,
               reason: 'Viktorina mukammal: ' + quizId,
               at: Date.now(),
             },
@@ -249,7 +285,7 @@ export default function useProgress() {
         const newPagesRead = Math.max(0, page - previousMax);
         const bonus = newPagesRead;
         const newPoints = safe.points + bonus;
-        const next = {
+        let next = {
           ...safe,
           points: newPoints,
           readingProgress: {
@@ -262,6 +298,13 @@ export default function useProgress() {
             },
           },
         };
+        // Log a 'reading' activity ONLY when new pages were actually read.
+        // The daily challenge verifier uses this to confirm reading happened
+        // today — without the log, simply re-opening the reader at the same
+        // page would falsely satisfy the challenge.
+        if (newPagesRead > 0) {
+          next = pushActivity(next, 'reading', { slug, newPages: newPagesRead, page });
+        }
         return maybeMintBronze(next, safe.points, newPoints);
       });
     },
@@ -388,6 +431,13 @@ export default function useProgress() {
   );
 
   // ── NEW: Daily Challenge actions ────────────────────────────────────────
+  // IMPORTANT: this function does NOT verify whether the challenge was
+  // genuinely completed — that check lives in DailyChallenge.jsx which
+  // disables the Bajardim button until the underlying action is detected
+  // in recentActivity. So by the time this fires, the work has happened.
+  // Rebalanced: was 50 pts + 5 bronze. 50 still stands (this represents a
+  // full day's worth of engagement), but the bronze drop is now 2 instead
+  // of 5 so daily completions can't trivially mint silver / gold.
   const completeDailyChallenge = useCallback(
     (challengeId) => {
       setState((prev) => {
@@ -399,7 +449,7 @@ export default function useProgress() {
         const next = {
           ...safe,
           points: safe.points + 50,
-          muhr: { ...safe.muhr, bronze: safe.muhr.bronze + 5 },
+          muhr: { ...safe.muhr, bronze: safe.muhr.bronze + 2 },
           daily: {
             ...safe.daily,
             completedDays: [...safe.daily.completedDays, today],
@@ -412,7 +462,7 @@ export default function useProgress() {
               id: mkId('mh'),
               type: 'earned',
               muhrType: 'bronze',
-              amount: 5,
+              amount: 2,
               reason: 'Kunlik vazifa bajardingiz',
               at: Date.now(),
             },
@@ -426,10 +476,26 @@ export default function useProgress() {
   );
 
   // ── NEW: Comments actions (local) ──────────────────────────────────────
+  // Posting still works unlimited times; points are capped at the FIRST
+  // comment per content item per day. Stops the 3-pts-per-comment farming
+  // loop without preventing legitimate discussion.
   const addComment = useCallback(
     (contentKey, { text, rating }) => {
       setState((prev) => {
         const safe = normalize(prev);
+        const startOfToday = (() => {
+          const d = new Date();
+          d.setHours(0, 0, 0, 0);
+          return d.getTime();
+        })();
+        const alreadyAwardedToday = (safe.recentActivity || []).some(
+          (a) =>
+            a.type === 'comment-added' &&
+            a.payload?.contentKey === contentKey &&
+            a.at >= startOfToday &&
+            a.payload?.awarded,
+        );
+        const awarded = !alreadyAwardedToday;
         const newComment = {
           id: mkId('c'),
           author: { name: safe.name || 'Mehmon', avatar: safe.avatar },
@@ -439,12 +505,14 @@ export default function useProgress() {
           createdAt: Date.now(),
         };
         const arr = safe.comments[contentKey] || [];
-        const next = {
+        const newPoints = safe.points + (awarded ? 3 : 0);
+        let next = {
           ...safe,
           comments: { ...safe.comments, [contentKey]: [newComment, ...arr] },
-          points: safe.points + 3, // 3 points for commenting
+          points: newPoints,
         };
-        return pushActivity(next, 'comment-added', { contentKey });
+        next = pushActivity(next, 'comment-added', { contentKey, awarded });
+        return maybeMintBronze(next, safe.points, newPoints);
       });
     },
     [setState],

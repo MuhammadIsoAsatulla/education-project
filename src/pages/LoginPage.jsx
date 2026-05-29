@@ -34,7 +34,7 @@ export default function LoginPage() {
   const {
     user,
     authReady,
-    firebaseConfigured,
+    googleEnabled,
     signInWithGoogle,
     signInAsGuest,
   } = useAuth();
@@ -56,16 +56,17 @@ export default function LoginPage() {
     setSigningIn(true);
     try {
       await signInWithGoogle();
-      // `onAuthStateChanged` will set the user; the redirect effect above does the navigate.
+      // useAuth sets the server user; the redirect effect above does the navigate.
     } catch (err) {
-      // Common codes: auth/popup-closed-by-user (user cancelled), auth/popup-blocked
-      const code = err?.code || '';
-      if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') {
+      const msg = err?.message || '';
+      if (msg === 'prompt-suppressed') {
+        setErrorMsg("Brauzer Google oynasini bloklab qo'ydi. Cookie'larga ruxsat bering va qaytadan urining.");
+      } else if (msg === 'no-credential') {
         setErrorMsg("Kirish bekor qilindi.");
-      } else if (code === 'auth/popup-blocked') {
-        setErrorMsg("Brauzer popup'ni bloklab qo'ydi. Ruxsat bering va qaytadan urining.");
+      } else if (msg === 'gis-load-failed') {
+        setErrorMsg("Google skripti yuklanmadi. Internet aloqasini tekshiring.");
       } else {
-        setErrorMsg(err?.message || "Kirishda kutilmagan xato yuz berdi.");
+        setErrorMsg(msg || "Kirishda kutilmagan xato yuz berdi.");
       }
     } finally {
       setSigningIn(false);
@@ -147,7 +148,7 @@ export default function LoginPage() {
           </div>
 
           {/* Google Sign-In */}
-          {firebaseConfigured ? (
+          {googleEnabled ? (
             <button
               onClick={handleGoogle}
               disabled={signingIn || !authReady}
@@ -172,7 +173,7 @@ export default function LoginPage() {
                 <div className="flex-1 text-sm text-cream-soft/85 leading-relaxed">
                   <p className="font-medium text-gold mb-1">Google login sozlanmagan</p>
                   <p className="text-xs text-cream-soft/60">
-                    Administrator Firebase env qiymatlarini qo'shgandan keyin Google bilan kirish ishlaydi.
+                    Administrator Google client ID va serverni sozlagandan keyin Google bilan kirish ishlaydi.
                     Hozircha mehmon sifatida davom etishingiz mumkin.
                   </p>
                 </div>
@@ -222,7 +223,7 @@ export default function LoginPage() {
           {/* Note */}
           <div className="mt-7 pt-5 border-t border-gold/15 text-center">
             <p className="text-cream-soft/55 text-[11px] leading-relaxed">
-              {firebaseConfigured ? (
+              {googleEnabled ? (
                 <>
                   Google bilan kirsangiz, progresingiz akkountga bog'lanadi — istalgan qurilmadan
                   kirib davom ettirishingiz mumkin.<br />

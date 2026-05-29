@@ -28,8 +28,24 @@ export default function MuzeyDetailPage() {
   const previousQuizScore =
     typeof previousQuizEntry === 'number' ? previousQuizEntry : previousQuizEntry?.score;
 
-  useEffect(() => {
+  // Award the museum visit ONLY after the user actually explores the 360°
+  // tour (≥75% scrolled). Previously, points were granted on page load,
+  // so opening the page and immediately leaving still gave +10 pts + the
+  // achievement. Now the visit fires inside `onTourComplete`.
+  const onTourComplete = () => {
     if (muzey) visit('muzeylar', muzey.id, { points: 10, achievement: 'muzey-mehmoni' });
+  };
+
+  // For museums using Google Street View (Embed360), we can't observe the
+  // iframe's interactions. Fallback proxy: award the visit after the user
+  // has stayed on the page for 30 seconds — a basic effort check that's
+  // still better than instant-on-load.
+  useEffect(() => {
+    if (!muzey || !muzey.embed360) return undefined;
+    const t = setTimeout(() => {
+      visit('muzeylar', muzey.id, { points: 10, achievement: 'muzey-mehmoni' });
+    }, 30000);
+    return () => clearTimeout(t);
   }, [muzey, visit]);
 
   if (!muzey || muzey.status !== 'available') {
@@ -98,7 +114,12 @@ export default function MuzeyDetailPage() {
             hotspots={muzey.hotspots || []}
           />
         ) : (
-          <VirtualTour scene={muzey.slug} accent={muzey.accent} hotspots={muzey.hotspots || []} />
+          <VirtualTour
+            scene={muzey.slug}
+            accent={muzey.accent}
+            hotspots={muzey.hotspots || []}
+            onComplete={onTourComplete}
+          />
         )}
 
         {available && (

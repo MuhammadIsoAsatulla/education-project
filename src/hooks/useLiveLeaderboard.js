@@ -1,54 +1,65 @@
 import { useEffect, useState } from 'react';
-import { collection, limit, onSnapshot, orderBy, query } from 'firebase/firestore';
-import { db, isFirebaseConfigured } from '../lib/firebase.js';
+import { apiFetch, probeApi } from '../lib/api.js';
 
 /**
- * Real-time top-N users from Firestore, ordered by points desc.
+ * Top-N users from /api/leaderboard. Polled every 30s — real-time isn't
+ * critical for a leaderboard, and polling keeps the architecture trivial
+ * (no WebSocket plumbing).
  *
  *   status:
- *     'disabled' — Firebase not configured; caller should use the mock list
- *     'loading'  — first snapshot pending
- *     'empty'    — query returned zero users (fresh project)
+ *     'disabled' — backend unreachable; caller falls back to the mock list
+ *     'loading'  — first fetch pending
+ *     'empty'    — endpoint returned zero users
  *     'ready'    — `users` is populated
- *     'error'    — see `error` message
+ *     'error'    — see `error`
  */
+const POLL_INTERVAL_MS = 30_000;
+
 export default function useLiveLeaderboard(max = 20) {
   const [users, setUsers] = useState([]);
-  const [status, setStatus] = useState(isFirebaseConfigured ? 'loading' : 'disabled');
+  const [status, setStatus] = useState('loading');
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!isFirebaseConfigured || !db) {
-      setStatus('disabled');
-      return undefined;
-    }
-    const q = query(collection(db, 'users'), orderBy('points', 'desc'), limit(max));
-    const unsub = onSnapshot(
-      q,
-      (snap) => {
-        const rows = [];
-        snap.forEach((d) => {
-          const data = d.data() || {};
-          rows.push({
-            uid: d.id,
-            name: data.name || 'Foydalanuvchi',
-            picture: data.picture || null,
-            avatar: data.avatar || 'girih-1',
-            points: data.points || 0,
-            streak: data.streak?.current || 0,
-            level: data.level || null,
-            tier: data.tier || null,
-          });
-        });
+    let cancelled = false;
+    let timer = null;
+
+    const fetchOnce = async () => {
+      try {
+        const data = await apiFetch(`/api/leaderboard?limit=${max}`, { auth: 'optional' });
+        if (cancelled) return;
+        const rows = (data?.leaderboard || []).map((u) => ({
+          uid: u.uid,
+          name: u.name || 'Foydalanuvchi',
+          picture: u.picture || null,
+          avatar: 'girih-1',
+          points: u.points || 0,
+          streak: 0,
+        }));
         setUsers(rows);
         setStatus(rows.length ? 'ready' : 'empty');
-      },
-      (err) => {
-        setError(err?.code || err?.message || 'unknown');
+      } catch (err) {
+        if (cancelled) return;
+        setError(err?.message || 'fetch_failed');
         setStatus('error');
-      },
-    );
-    return unsub;
+      }
+    };
+
+    (async () => {
+      const ok = await probeApi();
+      if (cancelled) return;
+      if (!ok) {
+        setStatus('disabled');
+        return;
+      }
+      await fetchOnce();
+      timer = setInterval(fetchOnce, POLL_INTERVAL_MS);
+    })();
+
+    return () => {
+      cancelled = true;
+      if (timer) clearInterval(timer);
+    };
   }, [max]);
 
   return { users, status, error };

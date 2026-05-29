@@ -8,3 +8,11 @@ dist-ssr
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
+
+# Server runtime artifacts
+server/node_modules
+server/.env
+server/*.db
+server/*.db-shm
+server/*.db-wal
+server/_smoke*

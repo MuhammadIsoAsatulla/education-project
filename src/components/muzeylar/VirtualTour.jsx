@@ -6,11 +6,19 @@ import { useEffect, useRef, useState } from 'react';
  * Until real panorama images are wired in, the scene is rendered procedurally
  * with layered SVG silhouettes — yet still produces a wow effect.
  */
-export default function VirtualTour({ scene = 'registon', accent = '#d4a574', hotspots = [] }) {
+export default function VirtualTour({
+  scene = 'registon',
+  accent = '#d4a574',
+  hotspots = [],
+  onComplete,
+  completeThreshold = 0.75,
+}) {
   const trackRef = useRef(null);
   const [offset, setOffset] = useState(0);
   const [active, setActive] = useState(null);
+  const [completed, setCompleted] = useState(false);
   const drag = useRef({ active: false, startX: 0, startOffset: 0 });
+  const completedRef = useRef(false); // mirrors `completed` for the effect's closure
 
   const SCENE_WIDTH = 2400; // logical width
   const VIEW_WIDTH = 1200;
@@ -24,6 +32,20 @@ export default function VirtualTour({ scene = 'registon', accent = '#d4a574', ho
       window.removeEventListener('touchend', onUp);
     };
   }, []);
+
+  // Fire onComplete EXACTLY ONCE when the user has dragged through the
+  // configured fraction of the panorama (default 75%). This is what the
+  // detail page listens for to award the visit/points — preventing the
+  // "I got 10 points for opening the page and immediately leaving" exploit.
+  useEffect(() => {
+    if (completedRef.current) return;
+    const fraction = (-offset) / (SCENE_WIDTH - VIEW_WIDTH);
+    if (fraction >= completeThreshold) {
+      completedRef.current = true;
+      setCompleted(true);
+      onComplete?.();
+    }
+  }, [offset, completeThreshold, onComplete]);
 
   const onDown = (e) => {
     drag.current.active = true;
@@ -194,9 +216,24 @@ export default function VirtualTour({ scene = 'registon', accent = '#d4a574', ho
         <div className="absolute inset-0 pointer-events-none"
              style={{ background: 'radial-gradient(ellipse at center, transparent 50%, rgba(10,31,46,0.6) 100%)' }} />
 
-        {/* Compass / instructions */}
-        <div className="absolute top-4 left-4 px-4 py-2 bg-bg-deep/70 border border-gold/30 rounded-full text-gold text-[11px] tracking-[2px] uppercase backdrop-blur">
-          ↔ Suring · 360°
+        {/* Compass / instructions — flips to a "completed" badge once the
+            user has explored enough to earn the visit points. */}
+        <div className="absolute top-4 left-4 px-4 py-2 bg-bg-deep/70 border border-gold/30 rounded-full text-gold text-[11px] tracking-[2px] uppercase backdrop-blur flex items-center gap-2">
+          {completed ? (
+            <>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="w-3 h-3">
+                <path d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Sayohat tugadi</span>
+            </>
+          ) : (
+            <>
+              <span>↔ Suring · 360°</span>
+              <span className="text-cream-soft/50 tabular-nums">
+                {Math.round(progress)}%
+              </span>
+            </>
+          )}
         </div>
 
         {/* Controls */}

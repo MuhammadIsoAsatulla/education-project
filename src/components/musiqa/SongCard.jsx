@@ -53,12 +53,17 @@ export default function SongCard({ song, onOpen, index = 0 }) {
           <p className="text-gold/60 text-xs tracking-[2px] uppercase mt-1">— {song.genre} —</p>
         </div>
       </button>
+      {/* Bordered pill — was a 10px low-contrast link, basically invisible
+          against the cream song info next to it. Now framed in gold so it
+          reads as a real button. */}
       <Link
         to={`/musiqa/${song.slug}`}
-        className="inline-flex items-center gap-1 mt-2 text-gold/70 hover:text-gold text-[10px] tracking-[2px] uppercase transition"
+        className="inline-flex items-center gap-2 mt-3 px-3 py-1.5 border border-gold/50 hover:border-gold hover:bg-gold/10 text-gold text-[11px] tracking-[2px] uppercase rounded-full transition"
       >
-        Batafsil
-        <span aria-hidden>›</span>
+        <span>Batafsil</span>
+        <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-2.5">
+          <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
+        </svg>
       </Link>
     </div>
   );

@@ -6,6 +6,7 @@ import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import Quiz from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
+import MoviePlayer from '../components/kinolar/MoviePlayer.jsx';
 import {
   CastSection,
   HistoricalContextSection,
@@ -36,9 +37,12 @@ export default function KinoDetailPage() {
 
   useScrollReveal();
 
-  useEffect(() => {
+  // Visit-award is now deferred — it fires from MoviePlayer's onWatched
+  // callback when the user has actually watched ≥70% of the movie. Opening
+  // the page and immediately leaving no longer gives points.
+  const onMovieWatched = () => {
     if (movie) visit('kinolar', movie.id, { points: 7, achievement: 'kinoshunos' });
-  }, [movie, visit]);
+  };
 
   if (!movie) {
     return (
@@ -197,14 +201,16 @@ export default function KinoDetailPage() {
                   ))}
                 </div>
 
-                {/* Actual video screen */}
+                {/* Actual video screen — wrapped in MoviePlayer so we can
+                    track real watch progress via the YouTube IFrame API
+                    and award points only when ≥70% has been watched. */}
                 <div className="aspect-video bg-black rounded-sm overflow-hidden">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${movie.youtubeId}?rel=0&modestbranding=1&cc_load_policy=1`}
+                  <MoviePlayer
+                    youtubeId={movie.youtubeId}
                     title={movie.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                    allowFullScreen
-                    className="w-full h-full"
+                    startSeconds={movie.youtubeStart || 0}
+                    watchThreshold={0.7}
+                    onWatched={onMovieWatched}
                   />
                 </div>
               </div>

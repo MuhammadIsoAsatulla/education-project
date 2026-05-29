@@ -10,6 +10,7 @@ import viktorinalar from '../data/viktorinalar.json';
 import AchievementBadge from '../components/profil/AchievementBadge.jsx';
 import Avatar from '../components/profil/Avatar.jsx';
 import AvatarPicker from '../components/profil/AvatarPicker.jsx';
+import LevelBadge, { getLevelConfig } from '../components/profil/LevelBadge.jsx';
 import FavoritesGallery from '../components/profil/FavoritesGallery.jsx';
 import MuhrBalance from '../components/profil/MuhrBalance.jsx';
 import StatOverview from '../components/profil/StatOverview.jsx';
@@ -286,23 +287,36 @@ export default function ProfilPage() {
                   </button>
                 </h1>
               )}
-              <p className="font-amiri text-gold tracking-[3px] text-sm mb-6">
-                — {level.name.toUpperCase()} —
-              </p>
+              <div className="mb-6">
+                <LevelBadge levelName={level.name} size="lg" />
+              </div>
 
               <div className="max-w-md">
                 <div className="flex items-center justify-between text-xs text-cream-soft/70 mb-2">
                   <span className="tabular-nums">{state.points} ball</span>
                   <span className="tabular-nums">{next.min} ball</span>
                 </div>
+                {/* Progress bar — gradient now matches the current level so
+                    the bar feels like an extension of the badge. Tier 4-5
+                    also get a soft glow under the filled portion. */}
                 <div className="h-2 bg-bg-deep rounded-full overflow-hidden border border-gold/20">
                   <div
-                    className="h-full bg-gradient-to-r from-gold-deep via-gold to-gold-bright transition-all duration-700"
-                    style={{ width: `${Math.max(5, progress * 100)}%` }}
+                    className="h-full transition-all duration-700"
+                    style={{
+                      width: `${Math.max(5, progress * 100)}%`,
+                      background: getLevelConfig(level.name).progressGradient,
+                      boxShadow:
+                        getLevelConfig(level.name).tier >= 4
+                          ? '0 0 10px rgba(245,228,184,0.5)'
+                          : 'none',
+                    }}
                   />
                 </div>
                 <p className="text-cream-soft/60 text-xs mt-2 italic">
-                  Keyingi daraja: <span className="text-gold">{next.name}</span>
+                  Keyingi daraja:{' '}
+                  <span className="inline-flex align-middle">
+                    <LevelBadge levelName={next.name} size="sm" />
+                  </span>
                 </p>
               </div>
 

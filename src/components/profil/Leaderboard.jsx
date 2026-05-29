@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import mockLeaderboard from '../../data/mockLeaderboard.json';
 import Avatar from './Avatar.jsx';
 import useLiveLeaderboard from '../../hooks/useLiveLeaderboard.js';
@@ -56,8 +57,13 @@ function MedalIcon({ rank }) {
 
 function LeaderboardRow({ entry, isYou }) {
   const tierInfo = TIER_COLORS[entry.tier] || TIER_COLORS.common;
+  // Real users get a clickable row → their public profile. Mock entries
+  // and the local guest row stay as plain divs (no profile exists).
+  const Wrapper = entry.uid && !isYou ? Link : 'div';
+  const wrapperProps = entry.uid && !isYou ? { to: `/foydalanuvchilar/${entry.uid}` } : {};
   return (
-    <div
+    <Wrapper
+      {...wrapperProps}
       className={`flex items-center gap-3 p-3 rounded-sm transition ${
         isYou
           ? 'bg-gold/10 border border-gold/50'
@@ -98,7 +104,7 @@ function LeaderboardRow({ entry, isYou }) {
           {entry.streak}d streak
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 
@@ -208,6 +214,16 @@ export default function Leaderboard({ state }) {
         {filtered.map((entry) => (
           <LeaderboardRow key={entry.rank + '-' + entry.name} entry={entry} isYou={!!entry.isYou} />
         ))}
+      </div>
+
+      {/* Footer link to the full users list */}
+      <div className="mt-4 text-center">
+        <Link
+          to="/foydalanuvchilar"
+          className="inline-block text-cream-soft/60 hover:text-gold text-[11px] tracking-[2px] uppercase transition"
+        >
+          Barcha foydalanuvchilarni ko'rish →
+        </Link>
       </div>
     </div>
   );
