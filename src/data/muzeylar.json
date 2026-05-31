@@ -255,5 +255,456 @@
     ],
     "audioGuide": null,
     "panorama": null
+  },
+  {
+    "id": "bibi-xonim",
+    "slug": "bibi-xonim",
+    "name": "Bibi Xonim Masjidi",
+    "city": "Samarqand",
+    "century": "XIV asr (1399–1404)",
+    "status": "available",
+    "initial": "B",
+    "accent": "#4a9b9b",
+    "image": "/muzeylar/bibi-xonim.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780157942380!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDJ4N1RuMXdF!2m2!1d39.6607196005541!2d66.97976844744157!3f230.92307422439865!4f21.37781641071399!5f0.41725860527818404",
+    "shortDescription": "Amir Temur o'z davrining ulug'vor masjidini qurdirdi — bu o'sha davrning eng yirik islom inshootlaridan biri edi.",
+    "fullDescription": [
+      "Bibi Xonim Masjidi — Amir Temur tomonidan 1399–1404-yillarda Samarqandda qurilgan ulug'vor jome masjidi. Sohibqiron Hindiston yurishidan zafar bilan qaytib kelganidan so'ng, o'z imperatorligining shukuhini namoyish etish va Allohga shukrona aytish maqsadida bu masjidning qurilishini boshlatdi. Asar uning sevikli xotini Sarayi Mulk xonim (xalq orasida «Bibi Xonim» deb tanilgan) sharafiga nomlangan.",
+      "Qurilishda 200 dan ortiq usta, 500 chog'li tosh keskuvchi va Hindistondan keltirilgan 95 fil ishlatilgan. Masjid qurilgan paytda islom olamining eng kattalaridan biri sanalardi: bosh ayvon balandligi taxminan 35 metr, bosh gumbazi diametri 18 metrga yetadi. Asosiy hovli o'lchami 78×64 metr edi.",
+      "Masjid kompleksi uchta gumbazli binoni o'z ichiga oladi: g'arbiy tarafdagi katta jome masjid va ikki kichik yon masjidlar. Hovli markazida ulkan marmar Qur'on lavhi (raxlasi) bo'lib, u Ulug'bek davrida Toshlavh deb atalgan; rivoyatlarga ko'ra unga homilador ayollar tegib o'tsa, farzandi sog'lom bo'lar emish.",
+      "Masjid asrlar davomida yer silkinishi va e'tibordan tashqari qolish tufayli vayron bo'lib bordi. XX asr boshlarida uning ko'p qismi xarobaga aylangandi. 1968-yildan boshlab sovet va keyinchalik mustaqil O'zbekiston davrida keng ko'lamli ta'mirlash ishlari olib borildi.",
+      "Masjidning ro'parasida — yo'lning narigi tomonida — kichik Bibi Xonim maqbarasi joylashgan. U yerda Sarayi Mulk xonimning onasi va boshqa Temuriylar avlodidan ba'zi ayollar dafn etilgan. Masjid 2001-yildan UNESCO Jahon merosi ro'yxatidagi Samarqand majmuining bir qismi."
+    ],
+    "highlights": [
+      { "title": "Bosh ayvon", "text": "35 metr balandlikdagi peshtoq — Temuriylar me'morchiligining cho'qqilaridan biri." },
+      { "title": "Marmar Qur'on lavhi", "text": "Hovli markazidagi ulkan toshlavh — Ulug'bek davridan saqlanib qolgan." },
+      { "title": "Bibi Xonim maqbarasi", "text": "Masjid ro'parasidagi kichik gumbazli maqbara — Temuriy ayollari uchun." }
+    ],
+    "architecturalDetails": [
+      "Bosh peshtoq balandligi ~35 metr; ikki tomonda 50 metrli minoralar joylashgan edi.",
+      "Bosh gumbaz diametri 18 metr, balandligi 41 metrga yetadi.",
+      "Devor bezaklarida ko'k va feruza koshinlar, oltin yozuvli kufi xati ishlatilgan.",
+      "Hovli o'lchami 78×64 metr — 10 000 dan ortiq odam bir vaqtda namozga jamlanishi mumkin edi.",
+      "Markaziy marmar lavh (Toshlavh) Mirzo Ulug'bek davrida qo'yilgan."
+    ],
+    "interestingFacts": [
+      "Masjid Amir Temurning sevikli xotini Sarayi Mulk xonim (Bibi Xonim) sharafiga nomlangan.",
+      "Qurilishda Hindistondan keltirilgan 95 fil ishlatilgan deyiladi.",
+      "Inshoot atigi 5 yilda — Temur tirikligida — qurib bitkazilgan.",
+      "Rivoyatga ko'ra, masjidni qurayotgan me'morbosh malikaga oshiq bo'lib, undan o'pich olgan; bu g'azabga sabab bo'lgan.",
+      "XX asr boshida masjidning katta qismi vayron bo'lgandi; restavratsiya 1968–2000-yillarda olib borilgan.",
+      "Marmar Toshlavhga homilador ayollar shifo so'rab kelishadi, degan xalq e'tiqodi bor.",
+      "2001-yili UNESCO Jahon merosi ro'yxatiga kiritildi."
+    ],
+    "hotspots": [
+      { "id": "peshtoq", "x": 35, "y": 40, "label": "Bosh peshtoq", "info": "Sharqning eng baland peshtoqlaridan biri (~35 m). Yon devorlarida feruza va lojuvard koshinlar, oltin yozuvlar." },
+      { "id": "toshlavh", "x": 55, "y": 60, "label": "Marmar Toshlavh", "info": "Hovli markazidagi ulkan marmar Qur'on lavhi. Ulug'bek davrida o'rnatilgan." },
+      { "id": "maqbara", "x": 80, "y": 45, "label": "Bibi Xonim maqbarasi", "info": "Yo'l narigi tomonida joylashgan kichik gumbazli maqbara — Temuriy ayollari dafn etilgan." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "gori-amir",
+    "slug": "gori-amir",
+    "name": "Go'ri Amir",
+    "city": "Samarqand",
+    "century": "XV asr (1403–1404)",
+    "status": "available",
+    "initial": "G",
+    "accent": "#2a6b8a",
+    "image": "/muzeylar/gori-amir.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780158044416!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0d5NlBLclFF!2m2!1d39.64843309012756!2d66.96932460594165!3f249.8421077602606!4f-5.7362877046916765!5f0.7820865974627469",
+    "shortDescription": "«Hukmdorning qabri» — Amir Temur va Temuriylar sulolasining muqaddas dafn maskani.",
+    "fullDescription": [
+      "Go'ri Amir («Amirning qabri») — Amir Temur, uning farzandlari, nabiralari va ma'naviy ustozining maqbarasi bo'lgan ulug'vor yodgorlik. Maqbara dastlab 1403-yilda Temurning nabirasi Muhammad Sulton uchun, u 27 yoshida vafot etganidan so'ng qurilgan; Temur 1404-yilda binoni o'zining sulolaviy maqbarasi sifatida kengaytirgan.",
+      "Maqbarada Amir Temur (1336–1405), uning o'g'illari Mironshoh va Shohruh, nabirasi va merosxo'ri Muhammad Sulton, hamda mashhur nabira Mirzo Ulug'bek (1394–1449) dafn etilgan. Bundan tashqari, Temurning ma'naviy ustozi va piri Mir Sayyid Baraka ham shu yerda. Hammasi bo'lib maqbarada Temuriylar avlodidan to'qqiz nafar shaxs xokini topgan.",
+      "Binoning eng mashhur xususiyati — uning ulug'vor feruza-ko'k qovurg'ali gumbazidir. Gumbaz balandligi tashqaridan 36 metr, diametri 15 metr; uning yuzasida 64 qovurg'a (rebra) bo'lib, ular yulduzli kashtaday taassurot qoldiradi. Bu gumbaz keyinchalik Eron va Hindiston (Boburiylar) me'morchiligiga katta ta'sir ko'rsatgan — Toj Mahalning prototipi sanaladi.",
+      "Maqbara ichi yanada ulug'vor: gumbaz osti to'liq oltin va lojuvard naqshlar bilan bezatilgan; devorlardagi yozuvlar Qur'on oyatlari va arab xattotlik shoh asarlari. Markazdagi yashil nefritdan yasalgan ulkan toshlavh — Temurning qabr toshi — dunyodagi eng katta nefrit bo'lagidir; uni Ulug'bek 1425-yilda Mug'ulistondan olib kelgan.",
+      "Mashhur afsonaga ko'ra, Temur qabr toshiga «Mening qabrimni kim ochsa, men o'limdan keyin ham olamni titratuvchi shaxsdan qo'rqsin» degan yozuvni qoldirgan. 1941-yil 19-iyunda sovet antropologi M.M. Gerasimov boshchiligidagi guruh Temur qabrini ochdi; uch kundan so'ng — 22-iyunda — fashistlar Germaniyasi SSSRga hujum qildi. Bu mashhur tasodif hozirgacha xalq orasida muhokama qilinadi."
+    ],
+    "highlights": [
+      { "title": "Feruza qovurg'ali gumbaz", "text": "64 qovurg'ali, 36 metrli ko'k gumbaz — Toj Mahalning prototipi." },
+      { "title": "Nefrit qabr toshi", "text": "Temur qabri ustidagi yashil nefrit lavh — dunyodagi eng katta nefrit bo'lagi." },
+      { "title": "Sulolaviy maqbara", "text": "Temur, Ulug'bek, Mironshoh, Shohruh, Muhammad Sulton va boshqa Temuriylarning oxirgi maskani." }
+    ],
+    "architecturalDetails": [
+      "Tashqi gumbaz balandligi 36 metr; ichki gumbazdan ajralib turadi (ikki qatlamli konstruktsiya).",
+      "Gumbaz yuzasida 64 vertikal qovurg'a (rebra) — diniy raqamga ishora (Payg'ambar yoshi).",
+      "Devorlar feruza, ko'k va oq koshinlardan iborat; arabcha xattotlik bilan to'lib-toshgan.",
+      "Ichki bezakda ~3 kg sof oltin ishlatilgan deyiladi.",
+      "Me'mor — Muhammad ibn Mahmud Isfahoniy (Sherozdan kelgan).",
+      "Markaziy nefrit qabr toshi 1.85 m uzunlikda; Ulug'bek 1425-yili Mug'ulistondan olib kelgan."
+    ],
+    "interestingFacts": [
+      "Maqbara dastlab Temurning 27 yoshda vafot etgan nabirasi Muhammad Sulton uchun qurilgan.",
+      "Bino keyinchalik Boburiylar (Mug'al) me'morchiligi orqali Toj Mahalga ta'sir ko'rsatgan.",
+      "Temur qabridagi yozuv: «Mening qabrimni kim ochsa...» — keng tarqalgan rivoyat.",
+      "1941-yil 19-iyunda Gerasimov Temur qabrini ochdi; 22-iyunda Buyuk Vatan urushi boshlandi.",
+      "Gerasimov tadqiqotiga ko'ra Temur 173 sm bo'yli, o'ng oyog'i va o'ng qo'li jarohatlangan (shu sababli «Temur» — «cho'loq» laqabi).",
+      "Maqbarada Ulug'bekning qabri ham bor — uning bo'yni kesilgan kalla suyagi bilan dafn etilganligi tasdiqlangan.",
+      "Bino 1996-yilda Temurning 660 yilligi munosabati bilan keng ta'mirlandi."
+    ],
+    "hotspots": [
+      { "id": "gumbaz", "x": 50, "y": 25, "label": "Feruza qovurg'ali gumbaz", "info": "64 qovurg'ali, 36 m balandlikdagi gumbaz — Toj Mahal va boshqa Boburiy maqbaralariga ta'sir ko'rsatgan." },
+      {
+        "id": "ichkari",
+        "x": 50,
+        "y": 55,
+        "label": "Maqbara ichkarisi",
+        "info": "Oltin va lojuvard bezaklar bilan to'lib-toshgan ichki sahn. Markazda Temurning yashil nefrit qabr toshi.",
+        "embed360": "https://www.google.com/maps/embed?pb=!4v1780158126175!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRGNfN19QaXdF!2m2!1d39.64874216925789!2d66.96909773340515!3f169.65254264470676!4f8.326870015086968!5f0.7820865974627469"
+      },
+      { "id": "nefrit", "x": 50, "y": 75, "label": "Nefrit qabr toshi", "info": "Temur qabri ustidagi dunyodagi eng katta nefrit lavh — Ulug'bek 1425-yili Mug'ulistondan olib kelgan." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "ark-qalasi",
+    "slug": "ark-qalasi",
+    "name": "Ark Qal'asi",
+    "city": "Buxoro",
+    "century": "Eramizdan avvalgi V asr – milodiy XX asr",
+    "status": "available",
+    "initial": "A",
+    "accent": "#8b6b3a",
+    "image": "/muzeylar/ark-qalasi.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780158943775!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0V5dDN6YWc.!2m2!1d39.77787563443607!2d64.4101648095227!3f98.28288861813385!4f5.617021669216101!5f0.7820865974627469",
+    "shortDescription": "2500 yillik qal'a — Buxoro amirlarining poytaxti va imperator saroyining qoldig'i.",
+    "fullDescription": [
+      "Ark qal'asi — Buxoroning eng qadimgi va eng muhim yodgorligi. Qal'aning eng qadimgi qismi eramizdan avvalgi V asrga to'g'ri keladi. Buxoro tarixining 2500 yillik davrida bu o'rdada turli sulolalar — Somoniylar, Qoraxoniylar, Saljuqiylar, Shayboniylar, Ashtarxoniylar va so'nggi Mang'itlar (1785–1920) hukmronlik qilgan.",
+      "Qal'a maydoni taxminan 4 gektar bo'lib, devorlari 16–20 metr balandlikda. U Buxoroning eng baland nuqtasida joylashgan: tabiiy tepalik ustiga qurilgan bo'lib, atrofdan 18 metr ko'tariladi. Markaziy darvozasi g'arb tomonda, ikki minora orasida joylashgan.",
+      "Ark amirlik markazi sifatida ko'plab xonalardan iborat edi: kurinishxona (taxt zali), juma masjidi, xazina, zaxira oshxonalari, qurolxonalar, zindon (qamoqxona), zarbxona (pul zarb qilish joyi) va saroy ayollar (harem) uchun ajratilgan qismlar. Bugungi kunda ko'p xonalar muzey eksponatlarini saqlaydi.",
+      "Qal'a tarixining eng dramatik voqealaridan biri — 1842-yilda britaniyalik zobitlar Charlz Stoddart va Artur Konolli amir Nasrulloxon tomonidan «hasharot zindoni»da saqlanib, ikkalasining ham qatl etilishi. Bu voqea Buyuk Britaniya va Rossiya o'rtasidagi «Buyuk O'yin»ning eng mashhur epizodlaridan biri sanaladi.",
+      "1920-yil 2-sentyabrda Qizil Armiya samolyotlari Arkni bombardimon qildi — bu so'nggi amir Sayyid Olimxonning qochishi va Buxoro amirligining tugashiga sabab bo'ldi. Qal'aning katta qismi xarob bo'lgan, lekin yangi davrda qisman tiklangan. Hozir bu yerda Buxoro tarixi muzeyi joylashgan va UNESCO Jahon merosi ro'yxatidagi Buxoro tarixiy markazining muhim qismidir."
+    ],
+    "highlights": [
+      { "title": "Markaziy darvoza va minoralar", "text": "Ikki yon minora va ulkan g'arbiy darvoza — qal'aning timsoli." },
+      { "title": "Kurinishxona (taxt zali)", "text": "Amir Sayyid Olimxonning taxt o'tirgan zali — 1920-yilgacha amaldagi shohlik markazi." },
+      { "title": "Juma masjidi", "text": "Qal'a ichidagi XVII asrga oid kichik masjid va madrasacha." }
+    ],
+    "architecturalDetails": [
+      "Devorlar balandligi 16–20 metr; pastki qismi tabiiy tepalik ustida 18 metr ko'tariladi.",
+      "Qal'a maydoni ~4 gektar (g'arbdan sharqqa 200 m, shimoldan janubga 220 m).",
+      "Markaziy darvoza Mang'itlar davrida (XVIII–XIX asrlar) qayta qurilgan, ikki yarim doira minora bilan o'ralgan.",
+      "Ichida 30 dan ortiq xona, hovli va inshoot mavjud edi.",
+      "Devorlar — quyma g'ishtdan; asrlar davomida qatlam-qatlam tiklangan."
+    ],
+    "interestingFacts": [
+      "Ark Buxoroning eng baland qismida — taxminan 2500 yildan beri shahar markazi vazifasini bajaradi.",
+      "Britaniyalik zobitlar Stoddart va Konolli 1842-yilda Arkning «hasharot zindoni»da qatl etilgan.",
+      "1920-yil 2-sentyabrda Qizil Armiya Arkni samolyotdan bombardimon qildi — Buxoro amirligi shu kuni quladi.",
+      "So'nggi amir Sayyid Olimxon Afg'onistonga qochib, 1944-yili Kobulda vafot etgan.",
+      "Bombardimondan keyin Ark hududining taxminan 80% xarob bo'lgan.",
+      "Hozir Arkning g'arbiy qismida Buxoro tarixi davlat muzeyi joylashgan.",
+      "Aytishlaricha, Arkni dastlabki bor afsonaviy qahramon Siyovush qurdirgan — bu rivoyat Firdavsiyning «Shohnoma»sida ham aks etgan."
+    ],
+    "hotspots": [
+      { "id": "darvoza", "x": 30, "y": 60, "label": "Markaziy darvoza", "info": "Ikki minora bilan o'ralgan g'arbiy darvoza — qal'aning yagona kirish nuqtasi." },
+      { "id": "kurinishxona", "x": 55, "y": 40, "label": "Kurinishxona", "info": "Amirlar taxt o'tirgan zal — 1920-yilgacha shohlik markazi." },
+      { "id": "zindon", "x": 70, "y": 55, "label": "Zindon (hasharot chuquri)", "info": "Britaniyalik zobitlar Stoddart va Konolli saqlangan zindon — 1842-yilgi voqea joyi." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "kalon-minorasi",
+    "slug": "kalon-minorasi",
+    "name": "Kalon Minorasi va Masjidi",
+    "city": "Buxoro",
+    "century": "XII asr (1127)",
+    "status": "available",
+    "initial": "K",
+    "accent": "#c5663a",
+    "image": "/muzeylar/kalon-minorasi.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159040152!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2VqT0swX2dF!2m2!1d39.77585948105446!2d64.4151612045245!3f4.747894748945663!4f-31.789623323479695!5f0.7820865974627469",
+    "shortDescription": "1127-yili qurilgan 47 metrli ulkan minora — Chingizxon bunga shu qadar hayron qoldiki, uni vayron qilmadi.",
+    "fullDescription": [
+      "Kalon Minorasi (forschadan «Buyuk minora» — «Po-i Kalon») — Buxoroning eng tanilgan ramzlaridan biri va o'rta asr islom me'morchiligining shoh asari. Minora 1127-yilda Qoraxoniylar hukmdori Arslonxon (Mahmud) tomonidan qurdirilgan; me'mori — Bako (Buxoroliq usta).",
+      "Minora 45.6–47 metr balandlikda (manbalarda turlicha keltiriladi), aylanasining pastki diametri 9 metr, yuqori qismida esa 6 metr. Yer ostida 10 metr chuqurlikdagi poydevorga ega — shu sababli u sakkiz asr davomida zilzilalarga, urushlarga va Genghixon bosqiniga bardosh berib kelmoqda.",
+      "Minoraning eng diqqatga sazovor jihati — uning silindr yuzasini bezagan 14 ta turli geometrik naqshli kashta-belbog'lardir. Har bir belbog' o'ziga xos g'ishtli naqsh bilan ishlangan: takror takror chiziqlar, sakkiz qirrali yulduzlar, geometrik «girix» nusxalari. Yuqori qismida — sakkiz arkli «chiroq fonari» (sham qo'yiladigan minora cho'qqisi) joylashgan; karvonlar uchun yo'l ko'rsatuvchi mayoq vazifasini bajargan.",
+      "Mashhur rivoyatga ko'ra, 1220-yili Chingizxon Buxoroni bosib olganda Kalon minorasini ko'rib shu qadar hayron qoldiki, bosh kiyimi yerga tushib ketdi va u uni ko'tarish uchun engashdi. «Men hech kim oldida bosh egmaganman, lekin bu inshootga bosh egaman», deb minorani vayron qilmaslikni buyurdi. Bu yagona inshoot bo'lib, Buxoroda mo'g'ul bosqinidan butun saqlanib qolgan.",
+      "Tarixning qora tomoni ham bor: XVIII–XIX asrlarda minora «o'lim minorasi» laqabi bilan ham mashhur edi — jinoyatchilar minoraning cho'qqisidan pastga uloqtirilib qatl etilar edi. Bu odat amir Nasrulloxon davrigacha (1860-yillargacha) davom etgan. Minoraga ulashgan Po-i Kalon ansambli: Kalon masjidi (1514) va Mir Arab madrasasi (1535–1536) ham mavjud."
+    ],
+    "highlights": [
+      { "title": "14 ta geometrik kashta-belbog'", "text": "Har biri o'ziga xos g'ishtli naqsh — o'rta asr islom geometriyasi cho'qqisi." },
+      { "title": "Cho'qqidagi chiroq fonari", "text": "Sakkiz arkli yuqori qism — karvonlar uchun mayoq vazifasini bajargan." },
+      { "title": "Po-i Kalon ansambli", "text": "Minora bilan birga Kalon masjidi (1514) va Mir Arab madrasasi (1536) majmuasi." }
+    ],
+    "architecturalDetails": [
+      "Balandligi 45.6 metr (ba'zi manbalarda 47 m); pastki diametri 9 m, yuqori 6 m.",
+      "Yer osti poydevori 10 m chuqurlikda — minora 9 asr davomida zilzilalarga bardosh bergan.",
+      "G'ishtli korpus aylanasi 14 ta naqshli belbog' (kashta) bilan bezatilgan.",
+      "Yuqori qismida — sakkiz arkli «chiroq fonari» (mayoq); minora ichidan 105 zinapoyali aylanma narvon ko'tariladi.",
+      "Asoschisi va me'mori — Bako (Buxoroliq usta), 1127-yili qurib bitkazgan.",
+      "Yon tomonida — Kalon masjidi (1514, Shayboniylar davri) va Mir Arab madrasasi (1535–1536)."
+    ],
+    "interestingFacts": [
+      "Chingizxon 1220-yili minorani vayron qilmagan — yagona sodda saqlangan Buxoro yodgorligi.",
+      "Minora 1127-yili Qoraxoniy Arslonxon davrida qurilgan; me'mori Bako.",
+      "XVIII–XIX asrlarda minora qatlxona vazifasini ham bajargan («o'lim minorasi»).",
+      "Yuqori qismidagi «chiroq» o'rni cho'lda karvonlar uchun mayoq vazifasini o'tagan.",
+      "Faqat 105 zinapoya orqali minoraning yuqori qismiga chiqish mumkin.",
+      "Kalon masjidi (1514) — Samarqanddagi Bibi Xonim masjididan keyingi ikkinchi yirik Markaziy Osiyo masjidi.",
+      "Mir Arab madrasasi sovet davrida ham faoliyat yuritib turgan kam sonli madrasalardan biri edi."
+    ],
+    "hotspots": [
+      { "id": "minora", "x": 50, "y": 30, "label": "Kalon minorasi", "info": "1127-yilgi 45.6 m balandlikdagi minora — 9 asrdan beri tik turibdi. 14 ta naqshli kashta-belbog' bilan bezatilgan." },
+      {
+        "id": "ansambl",
+        "x": 50,
+        "y": 60,
+        "label": "Po-i Kalon ansambli",
+        "info": "Minora atrofidagi Kalon masjidi (1514) va Mir Arab madrasasi (1536) majmuasi.",
+        "embed360": "https://www.google.com/maps/embed?pb=!4v1780159080219!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ3B5LXJwVnc.!2m2!1d39.77578372316883!2d64.41518604894578!3f268.492469582549!4f28.58236168221039!5f0.7820865974627469"
+      },
+      { "id": "masjid", "x": 70, "y": 50, "label": "Kalon Masjidi", "info": "1514-yilda qurilgan jome masjid — bir vaqtning o'zida 12 000 kishi sig'a oladi." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "hazrati-imom",
+    "slug": "hazrati-imom",
+    "name": "Hazrati Imom Majmuasi",
+    "city": "Toshkent",
+    "century": "X–XXI asrlar",
+    "status": "available",
+    "initial": "H",
+    "accent": "#5a7a3a",
+    "image": "/muzeylar/hazrati-imom.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159212152!6m8!1m7!1sCAoSHENJQUJJaEFVTEVkTlNfdXk5TXUzeU9IV2Q3UDA.!2m2!1d41.33715379823666!2d69.24005698458716!3f253.05693831147246!4f9.107329691215512!5f0.7820865974627469",
+    "shortDescription": "Toshkent ma'naviy poytaxti — dunyodagi eng qadimgi Qur'on (Usmon Mushafi) shu yerda saqlanadi.",
+    "fullDescription": [
+      "Hazrati Imom (yoki «Xast Imom») majmuasi — Toshkentning eng muhim diniy markazlaridan biri va shaharning ma'naviy yuragi. Majmua kompleksning markazida Abu Bakr Muhammad Kaffol Shoshiy (904–976) maqbarasi joylashgan; u Toshkentning ilk imomlaridan bo'lib, «Hazrati Imom» nomi bilan ham mashhur — majmua ham aynan uning sharafiga shunday nomlangan.",
+      "Majmuaga turli asrlarda qurilgan bir necha bino kiradi: Boroqxon madrasasi (XVI asr), Tila Shayx masjidi (1856–1857), Mo'yi Muborak (Muqaddas Soch) madrasasi — bu yerda Payg'ambarimiz s.a.v.ga tegishli deb hisoblanadigan soch saqlanadi, hamda Hazrati Imom maqbarasi.",
+      "Majmuaning eng nodir xazinasi — Usmon Mushafi (Mushaf Usmon). Bu Qur'oni karimning eng qadimgi qo'lyozma nusxalaridan biri (taxminan VIII asr) bo'lib, ravoyatga ko'ra 3-xalifa Usmon bin Affon shahid bo'lgan paytda o'qib turgan Qur'on bo'lgan — qonning izlari sahifalarda hozirgacha ko'rinadi. Mushaf Iroqdan Samarqandga, so'ng Sankt-Peterburgga (chor Rossiyasi davrida) olib ketilgan; 1924-yili V.I. Lenin farmoyishi bilan Toshkentga qaytarilgan.",
+      "2007-yilda mustaqillikning 16 yilligi munosabati bilan majmua tubdan qayta tiklandi. Yangi qurilgan Hazrati Imom Jome masjidi 70×30 metr o'lchamida, ikkala tomonida 53 metrli minoralarga ega. Masjid ichida bir vaqtning o'zida 5000 dan ortiq odam namozga jamlanishi mumkin.",
+      "Majmua bugungi kunda nafaqat diniy markaz, balki muhim ziyoratgoh va turistik joydir. Mushaf Usmonni ko'rish uchun butun dunyodan tadqiqotchilar va dindorlar kelishadi. 1997-yili Usmon Mushafi UNESCO «Jahon xotirasi» reyestriga kiritildi."
+    ],
+    "highlights": [
+      { "title": "Usmon Mushafi", "text": "VIII asrga oid Qur'on qo'lyozmasi — dunyodagi eng qadimgilaridan biri." },
+      { "title": "Hazrati Imom Jome masjidi", "text": "2007-yili qurilgan ulug'vor masjid — ikki 53 m minoralari bilan." },
+      { "title": "Boroqxon madrasasi", "text": "XVI asrdan qolgan tarixiy madrasa — Shayboniy hukmdorlari davridan." }
+    ],
+    "architecturalDetails": [
+      "Yangi Jome masjidi 70×30 m o'lchamda, ikki tomondagi minoralari 53 m balandlikda.",
+      "Masjid ichida 5000 dan ortiq odam bir vaqtda namoz o'qishi mumkin.",
+      "Boroqxon madrasasi XVI asrdan qolgan — Shayboniylar davri me'morchiligi.",
+      "Tila Shayx masjidi (1856–1857) — Buxoro amirligi davriga oid.",
+      "Mo'yi Muborak madrasasida Payg'ambar s.a.v. sochi va Usmon Mushafi saqlanadi."
+    ],
+    "interestingFacts": [
+      "Majmua nomi Abu Bakr Muhammad Kaffol Shoshiy (904–976) — Toshkentning ilk imomi sharafiga.",
+      "Usmon Mushafi taxminan VIII asrga oid; xalifa Usmon shahid bo'lganda o'qigani rivoyat qilinadi.",
+      "Mushaf Iroq → Samarqand → Sankt-Peterburg → Toshkent yo'lini bosib o'tgan (1924-yili Lenin farmoyishi bilan qaytarilgan).",
+      "1997-yili Usmon Mushafi UNESCO «Jahon xotirasi» (Memory of the World) reyestriga kiritildi.",
+      "Mushaf sahifalarida qonning izlari bor — Usmon shahid bo'lgan paytdagi qoldiq deb e'tiqod qilinadi.",
+      "Qur'on dastlab Madinada o'qilgan, keyin xalifa Usmon davrida (~651 m.) kanon shaklida ko'paytirilgan.",
+      "2007-yilgi qayta qurilishida majmua 9 oy ichida bunyod etildi."
+    ],
+    "hotspots": [
+      { "id": "masjid", "x": 50, "y": 35, "label": "Hazrati Imom Jome masjidi", "info": "2007-yili qurilgan masjid — ikki 53 metr minoralari bilan, 5000 ga yaqin odam sig'adi." },
+      { "id": "muyi-muborak", "x": 25, "y": 55, "label": "Mo'yi Muborak madrasasi", "info": "Usmon Mushafi va Payg'ambar s.a.v. sochi saqlanadigan xona." },
+      { "id": "boroqxon", "x": 75, "y": 55, "label": "Boroqxon madrasasi", "info": "XVI asrdan qolgan tarixiy madrasa — Shayboniylar davri." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "moynaq",
+    "slug": "moynaq",
+    "name": "Mo'ynoq Kemalar Qabristoni",
+    "city": "Mo'ynoq, Qoraqalpog'iston",
+    "century": "XX asr (1960-yillardan)",
+    "status": "available",
+    "initial": "M",
+    "accent": "#6b7280",
+    "image": "/muzeylar/moynaq-kemalar.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159286968!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRrLVNRV0E.!2m2!1d43.79011319612662!2d59.03421336007248!3f148.51413464533664!4f-5.542776195790637!5f0.7820865974627469",
+    "shortDescription": "Bir vaqtlar gavjum Orol dengizi porti — bugun dengiz qaytib, qum ustida zanglagan kemalar qoldi.",
+    "fullDescription": [
+      "Mo'ynoq kemalar qabristoni — dunyodagi eng achchiq ekologik fojialardan birining ko'zga ko'rinarli timsoli. 1960-yillarda Mo'ynoq shahri Orol dengizining janubiy sohilida joylashgan gavjum baliq-ovi porti edi; bu yerda 40 000 dan ortiq aholi yashar, kuniga minglab tonna baliq tutilar va konservalanardi.",
+      "Sovet hukumati 1960-yillardan boshlab Amudaryo va Sirdaryoning suvini paxta dalalariga burdi. Bu yirik suv yo'nalishi natijasida Orol dengizi tezda qurib bordi: o'sha davrda dunyoning 4-eng katta ko'li bo'lgan dengiz hozirgi kunga kelib o'zining 90% maydonidan ayrildi. Mo'ynoq sohildan ~150–200 km uzoqlikka chekindi.",
+      "Bir vaqtlar dengiz sathida suzgan baliqchi va savdo kemalari endi qum cho'lida zanglab yotibdi. Ularning ba'zilari ataylab joyida qoldirilib, ochiq osmon ostidagi noyob muzey-yodgorlik majmuasiga aylantirildi. Bugungi tashrif buyuruvchilar 15 dan ortiq kemani ko'rishlari mumkin: «Lev», «Karakalpakstan», «Sevastopol» va boshqalar.",
+      "Mo'ynoq bugun «yo'qolgan dengiz» va inson tomonidan keltirilgan tabiat halokati timsoli sifatida butun dunyoga tanilgan. UNESCO va xalqaro ekologik tashkilotlar Orol fojiasini «XX asrning eng katta ekologik halokatlaridan biri» deb tan olishgan.",
+      "2018-yildan boshlab har yili sentyabrda Mo'ynoqda «Stihia» xalqaro elektron musiqa festivali o'tkaziladi. Bu festival kemalar qabristonini sahna qilib, butun dunyoga Orol fojiasini eslatadi va mahalliy iqtisodiyotni qo'llab-quvvatlaydi. Yaqin yillarda mintaqa bo'ylab ulkan saksavul daraxti ekish loyihalari ham olib borilmoqda."
+    ],
+    "highlights": [
+      { "title": "Zanglagan kemalar", "text": "Cho'l qumidagi 15 dan ortiq tashlandiq baliqchi va savdo kemasi." },
+      { "title": "Qurigan dengiz tubi", "text": "150–200 km masofada cho'kkan qum cho'l — eski dengiz tubi." },
+      { "title": "Stihia festivali", "text": "Har yili sentyabrda o'tkaziladigan xalqaro elektron musiqa festivali." }
+    ],
+    "architecturalDetails": [
+      "Mo'ynoq bir vaqtlar 40 000 aholili gavjum port-shahar edi (hozir ~12 000).",
+      "Shahar dengizdan ~150–200 km uzoqlikda qoldi — sohil chiqib ketgan.",
+      "Kemalar qum ustida 15 km uzunlikdagi maydonda joylashgan.",
+      "Eng katta saqlangan kemalar: «Lev», «Sevastopol», «Karakalpakstan».",
+      "Orol Yarim oroli faqat 1980-yillardan keyin ko'ringan — bunga qadar suv ostida edi."
+    ],
+    "interestingFacts": [
+      "Orol dengizi 1960-yillarda dunyoning 4-eng katta ko'li edi.",
+      "60 yilda dengiz o'z hajmining 90% dan ortig'ini yo'qotdi.",
+      "Mo'ynoqda kuniga 30 000 tonnaga yaqin baliq qayta ishlanardi.",
+      "Sabab — Amudaryo va Sirdaryo suvlarini paxta dalalariga yo'naltirilishi.",
+      "Mintaqada tuzli changlar tarqalib, butun Markaziy Osiyo iqlimiga ta'sir ko'rsatmoqda.",
+      "2018-yildan «Stihia» elektron musiqa festivali o'tkazilib kelinmoqda.",
+      "Yaqin yillarda «Yashil Orol» loyihasi bo'yicha mintaqada saksavul o'rmoni yaratilmoqda."
+    ],
+    "hotspots": [
+      { "id": "kemalar", "x": 50, "y": 60, "label": "Tashlandiq kemalar", "info": "Cho'lda zanglab yotgan baliqchi kemalari — bir vaqtlar dengizda suzgan." },
+      { "id": "cho-l", "x": 30, "y": 70, "label": "Qurigan dengiz tubi", "info": "Hozirgi sohil 150–200 km uzoqlikda — bu yer bir vaqtlar dengiz tubi edi." },
+      { "id": "yodgorlik", "x": 70, "y": 40, "label": "Orol yodgorligi", "info": "Mo'ynoq markazidagi yodgorlik — yo'qolgan dengizga bag'ishlangan." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "oqsaroy",
+    "slug": "oqsaroy",
+    "name": "Oqsaroy",
+    "city": "Shahrisabz",
+    "century": "XIV asr (1380–1404)",
+    "status": "available",
+    "initial": "O",
+    "accent": "#d4a574",
+    "image": "/muzeylar/oqsaroy.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159379088!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJREhfNWVGYWc.!2m2!1d39.06079945048467!2d66.82952285992275!3f179.48587796203142!4f17.662900061072335!5f0.7820865974627469",
+    "shortDescription": "Amir Temurning Shahrisabzdagi ulug'vor «Oq saroy»i — bugun atigi peshtoq xarobalari saqlangan, ammo bir vaqtlar Markaziy Osiyoning eng buyuk saroyi edi.",
+    "fullDescription": [
+      "Oqsaroy («Oq saroy») — Amir Temurning Shahrisabzdagi rasmiy yozgi qarorgohi va eng ulug'vor saroyi. Inshoot 1380-yili qurila boshlangan va 1404-yili (taxminan Temurning vafotigacha) tugatilgan; 24 yil davom etgan qurilish jarayonida butun imperator tomonidan eng yaxshi me'morlar va ustalar Shahrisabzga to'plangan.",
+      "Shahrisabz («Yashil shahar») — Amir Temurning tug'ilgan yurtidir. U 1336-yili shahar yaqinidagi Xo'ja Ilg'or qishlog'ida (Barlos urug'idan) dunyoga kelgan. Shu sababli Temur o'zining ona shahriga alohida e'tibor berib, uni saltanatining marosimiy poytaxti qildi va eng ulug'vor saroyni shu yerda qurdirdi.",
+      "Saroyning dastlabki o'lchamlari haqiqatan ulkan edi: bosh peshtoq balandligi 65–70 metrga, eni 75 metrga yetadi. Yon minoralar 80 metr balandlikda edi. Saroy uch katta hovli, ko'plab xona, hammomlar, bog'lar va hovuzlardan iborat majmua edi. Tashqi devorlarda turli ranglardagi koshinlar — feruza, lojuvard, oltin, oq va yashil — bilan bezatilgan.",
+      "Bosh peshtoqdagi mashhur arabcha yozuv hozirgacha o'qiladi: «Bizning qudratimizdan shubhalansangiz — bizning binolarimizga qarang!» Bu — Temurning saroy orqali jahonga aytmoqchi bo'lgan xabarining ramzi.",
+      "Afsuski, XVI asrda Buxoro amiri Abdullaxon II Shahrisabzga hujum qilib, saroyni qasddan vayron qildi. Tabiat va vaqt ham o'z ishini qildi — bugungi kunda asl binoning atigi bosh peshtoqning ikki yon ustuni (taxminan 38 metr balandlikda) saqlangan. 2000-yili Shahrisabzning tarixiy markazi, jumladan Oqsaroy xarobalari, UNESCO Jahon merosi ro'yxatiga kiritildi."
+    ],
+    "highlights": [
+      { "title": "Ulkan peshtoq xarobalari", "text": "Asl 65–70 m balandlikdagi peshtoq — bugun ~38 m saqlangan, lekin hamon hayratomuz." },
+      { "title": "Yozuv: «Bizning binolarimizga qarang»", "text": "Temurning peshtoqdagi mashhur arabcha shiori — saltanatning qudrat ramzi." },
+      { "title": "Shahrisabz markazi", "text": "Amir Temurning tug'ilgan shahri va Temuriylar marosimiy poytaxti." }
+    ],
+    "architecturalDetails": [
+      "Bosh peshtoqning asl balandligi 65–70 metr, eni 75 metr edi.",
+      "Yon minoralar 80 metr balandlikda bo'lgan deyiladi — keyinchalik qulagan.",
+      "Saroy 24 yil davomida (1380–1404) qurilgan.",
+      "Bosh peshtoqda arabcha yozuv: «Agar bizning qudratimizdan shubhalansangiz, bizning binolarimizga qarang».",
+      "Tashqi yuza feruza, lojuvard, oltin, oq va yashil koshinlar bilan bezatilgan.",
+      "Bugun saqlangan qism — atigi ikki yon ustun, ~38 m balandlikda."
+    ],
+    "interestingFacts": [
+      "Amir Temur 1336-yili Shahrisabz yaqinida — Xo'ja Ilg'or qishlog'ida tug'ilgan.",
+      "Shahrisabzning forschadan tarjimasi — «Yashil shahar».",
+      "Saroyning qurilishi 24 yil davom etgan — Temur uni butun ko'rmaganligi mumkin.",
+      "XVI asrda Buxoro amiri Abdullaxon II Shahrisabzga hujum qilib saroyni qasddan vayron qildi.",
+      "Asl saroy Markaziy Osiyoning eng katta inshootlaridan biri — ehtimol Bibi Xonim masjididan ham kattaroq edi.",
+      "Bugungi qoldiqlar balandligi ~38 m — bu hamon Toshkent metro stansiyasidan baland.",
+      "2000-yili Shahrisabzning tarixiy markazi UNESCO Jahon merosi ro'yxatiga kiritildi."
+    ],
+    "hotspots": [
+      { "id": "peshtoq", "x": 50, "y": 30, "label": "Bosh peshtoq xarobalari", "info": "Asl 65–70 m balandlikdagi peshtoqning ikki yon ustuni — bugun ~38 m saqlangan." },
+      { "id": "yozuv", "x": 50, "y": 50, "label": "Arabcha yozuv", "info": "«Bizning qudratimizdan shubhalansangiz — bizning binolarimizga qarang!» — Temur shiori." },
+      { "id": "maydon", "x": 50, "y": 70, "label": "Saroy hovlisi", "info": "Bir vaqtlar uch katta hovli, hammomlar va bog'lar bilan band edi. Hozir ochiq maydon." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "xudoyorxon-orda",
+    "slug": "xudoyorxon-orda",
+    "name": "Xudoyorxon O'rdasi",
+    "city": "Qo'qon",
+    "century": "XIX asr (1863–1873)",
+    "status": "available",
+    "initial": "X",
+    "accent": "#b8893f",
+    "image": "/muzeylar/xudoyorxon-ordasi.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159480479!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE4N3FDSnc.!2m2!1d40.53869618436647!2d70.93820637837317!3f92.61969537673816!4f-2.1995443715665743!5f0.7820865974627469",
+    "shortDescription": "Qo'qon xonligi so'nggi xoni Xudoyorxon saroyi — 19 marosim xonasi va 70 dan ortiq turli koshinlar bilan jihozlangan.",
+    "fullDescription": [
+      "Xudoyorxon O'rdasi (yoki Xudoyorxon saroyi) — Qo'qon xonligining so'nggi xoni Sayyid Muhammad Xudoyorxonning rasmiy qarorgohi. Saroy 1863–1873-yillarda qurilgan; bosh me'mori — taniqli buxorolik usta Mir Ubaydullo (Ubaydullohjon). Qurilishga jami 16 000 dan ortiq usta jalb qilingan deyiladi.",
+      "Saroy 19 marosim xonasi, 113 dan ortiq oddiy xona, ikki katta hovli, harem va xizmatchilar uchun bo'limlardan iborat ulkan majmua edi. Tashqi va ichki bezaklarda 70 dan ortiq turdagi koshin va naqshli sirlangan g'isht ishlatilgan — bu Markaziy Osiyo me'morchilik tarixida noyob ko'rsatkichdir. Asosiy fasad uzunligi 70 metr, balandligi 30 metr.",
+      "Xudoyorxon (1829–1882) Qo'qon taxtiga uch marta — 1845, 1862 va 1865 yillarda chiqqan. Saroyni qurish — uning eng katta yutuqlaridan biri edi. Saroyni «Sharqning Versali» deb ataganlar; uning bosh peshtoqi va minoralar Qo'qon shahrining timsoliga aylangan.",
+      "1876-yilda Qo'qon xonligi rasman tugatilib, Rossiya imperiyasi tarkibiga kiritildi. Xudoyorxon Orenburgga, keyinchalik Makkaga ko'chib o'tdi; 1882-yili Karbalo yaqinida vafot etgan. Saroy esa avval Rossiya general-gubernatorligi binosi, so'ng sovet davrida turli idoralar joyi sifatida foydalanildi.",
+      "1924-yildan saroy muzey statusiga ega; bugungi kunda u Qo'qon viloyat tarixiy o'lkashunoslik muzeyi vazifasini bajaradi. Muzeyda Qo'qon xonligi davri qurol-yarog'lari, kiyim-boshi, qo'lyozma kitoblar, koshinlar to'plami va etnografik eksponatlar saqlanadi. Saroy bugun Farg'ona vodiysining eng muhim tarixiy-madaniy yodgorliklaridan biridir."
+    ],
+    "highlights": [
+      { "title": "Ulkan bosh peshtoq va minoralar", "text": "70 m uzunlik va 30 m balandlikdagi fasad — Qo'qonning timsoli." },
+      { "title": "70+ turdagi koshinlar", "text": "Sharq me'morchilik tarixida noyob — har xona o'ziga xos naqshlar bilan." },
+      { "title": "Qo'qon tarix muzeyi", "text": "Saroy ichida Qo'qon xonligi davriga oid 5000+ eksponat." }
+    ],
+    "architecturalDetails": [
+      "Saroy 1863–1873-yillar oralig'ida 10 yilda qurib bitkazilgan.",
+      "Bosh me'mori — buxorolik usta Mir Ubaydullo (Ubaydullohjon).",
+      "Asosiy fasad uzunligi 70 m, balandligi 30 m; ikki yon minoraga ega.",
+      "Saroyda 19 marosim xonasi va 113 dan ortiq oddiy xona bor edi.",
+      "Bezakda 70 dan ortiq turdagi naqshli koshin va sirlangan g'isht ishlatilgan.",
+      "Qurilishga 16 000 ga yaqin usta jalb qilingan deyiladi."
+    ],
+    "interestingFacts": [
+      "Xudoyorxon Qo'qon taxtiga uch marta chiqqan: 1845, 1862, 1865.",
+      "Saroy «Sharqning Versali» laqabi bilan ham mashhur.",
+      "1876-yilda Qo'qon xonligi rasman tugatildi va Rossiya imperiyasiga qo'shildi.",
+      "Xudoyorxon 1882-yili Karbalo yaqinida vafot etgan, vatandan tashqarida.",
+      "Saroyning bosh peshtoqi bizgacha o'zgarmasdan saqlangan kam sonli XIX asr Markaziy Osiyo namunalaridan.",
+      "1924-yildan muzey sifatida xizmat qiladi.",
+      "Bugungi kunda muzeyda 5000 dan ortiq eksponat saqlanadi."
+    ],
+    "hotspots": [
+      { "id": "peshtoq", "x": 50, "y": 40, "label": "Bosh peshtoq", "info": "70 m uzunlik va 30 m balandlikdagi fasad — 70+ turli koshin bilan bezatilgan." },
+      { "id": "minora", "x": 25, "y": 50, "label": "Yon minora", "info": "Saroyning ikki yon minoralaridan biri — Qo'qon shahrining timsoli." },
+      { "id": "muzey", "x": 70, "y": 55, "label": "Tarix muzeyi", "info": "Saroy ichidagi Qo'qon viloyat tarixiy o'lkashunoslik muzeyi — 5000+ eksponat bilan." }
+    ],
+    "audioGuide": null,
+    "panorama": null
+  },
+  {
+    "id": "afrosiyob",
+    "slug": "afrosiyob",
+    "name": "Afrosiyob Arxeologik Muzeyi",
+    "city": "Samarqand",
+    "century": "Eramizdan avvalgi VII asr – milodiy XIII asr",
+    "status": "available",
+    "initial": "A",
+    "accent": "#8b4513",
+    "image": "/muzeylar/afrasiyob.jpg",
+    "embed360": "https://www.google.com/maps/embed?pb=!4v1780159524094!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ09yN2FnWnc.!2m2!1d39.66939140682753!2d66.99342899687296!3f303.7126170659905!4f-9.59807100127695!5f0.7820865974627469",
+    "shortDescription": "Eski Samarqand — Maroqand shahrining xarobalari va ulardan topilgan dunyoga mashhur Sug'd devor suratlari.",
+    "fullDescription": [
+      "Afrosiyob — Samarqandning qadim qismi, eramizdan avvalgi VII asr atroflarida vujudga kelgan ulkan shahar yodgorligi. Bu yer asli Sug'd madaniyatining markazi bo'lgan Marokand (yunoncha «Maracanda»), Iskandar Zulqarnayn 329-yilda eramizdan avvalgi bosib olgan shahar. Afrosiyob 219 gektar maydonni egallaydi va Markaziy Osiyoning eng katta arxeologik joylaridan biridir.",
+      "Shahar muhim Ipak yo'li markazi sifatida 1500 yildan ortiq davom etgan, Ahomanidlar, Yunon-Baqtriya, Kushon, Eftalitlar, So'g'd, Arab xalifaligi, Somoniylar va Qoraxoniylar davrlarini boshidan kechirgan. 1220-yilda Chingizxon Samarqandni vayron qildi; aholi shahardan ko'chirilib, hozirgi Samarqand markazida yangi shahar qurildi. Afrosiyob esa o'shandan beri xaroba.",
+      "1965-yili arxeologlar Afrosiyobdan jahonshumul kashfiyot — VII asrga oid Sug'd devor suratlari topdi. «Elchilar zali» deb nomlangan bu suratlar Samarqand hukmdori Varxuman saroyiga kelgan elchilarni tasvirlaydi: Xitoy (Tang sulolasi), Koreya, Hindiston, Eron Sosoniylari va Markaziy Osiyo xalqlaridan kelgan vakillar. Bu suratlar VII asr Sug'd diplomatiyasining va Ipak yo'li dunyo aloqalarining noyob hujjati.",
+      "Afrosiyob arxeologik muzeyi 1970-yilda shu kashfiyotlar uchun maxsus qurilgan. Muzeyda Elchilar zali fragmentlari, Ahomanidlar va Yunon-Baqtriya davriga oid sopol idishlar, tangalar, qurol-yarog'lar, Sug'd va arab tasvirlari, hamda Samarqand shaharsozligi tarixini ko'rsatuvchi modellar va xaritalar mavjud.",
+      "2001-yili Afrosiyob arxeologik yodgorligi Samarqand UNESCO Jahon merosi ro'yxatining tarkibiy qismi sifatida tan olindi. Bugun bu yer Sharq-G'arb madaniyatlari uchrashgan, Sug'd savdogarlari Xitoydan Rimgacha karvonlar bilan o'tgan davrning eng yaxshi shahodatidir."
+    ],
+    "highlights": [
+      { "title": "Elchilar zali devor suratlari", "text": "VII asrga oid Sug'd diplomatik suratlar — Xitoy, Koreya, Hindiston elchilari tasviri." },
+      { "title": "Marokand (Iskandar shahri)", "text": "Iskandar Zulqarnayn 329-yili eramizdan avvalgi bosib olgan qadimgi Samarqand." },
+      { "title": "1500 yillik shahar qatlamlari", "text": "Ahomanidlardan Chingizxon bosqinigacha — har davrdan eksponatlar." }
+    ],
+    "architecturalDetails": [
+      "Afrosiyob 219 gektar maydonda joylashgan — Markaziy Osiyo arxeologik yodgorliklarining eng yiriklari qatorida.",
+      "Shahar qatlamlari eramizdan avvalgi VII asrdan milodiy XIII asrgacha — 2000 yildan ortiq davr.",
+      "Muzey binosi 1970-yilda maxsus Elchilar zali suratlari uchun qurilgan.",
+      "Eng mashhur eksponat — VII asrga oid Sug'd devor suratlari, 1965-yili topilgan.",
+      "Muzey kolleksiyasida 22 000 dan ortiq eksponat saqlanadi.",
+      "Shahar Chingizxon (1220) tomonidan vayron qilingan va undan keyin tiklanmagan."
+    ],
+    "interestingFacts": [
+      "Afrosiyob — Samarqandning eng qadimgi qismi, eramizdan avvalgi VII asrdan beri yashagan.",
+      "Iskandar Zulqarnayn 329-yili eramizdan avvalgi bu shaharni bosib olgan.",
+      "1965-yili topilgan Elchilar zali suratlari VII asr diplomatiyasini ko'rsatadi: Xitoy, Koreya, Hindiston elchilari.",
+      "Shahar nomi Firdavsiyning «Shohnoma»sidagi afsonaviy Turon hukmdori Afrosiyob nomi bilan bog'liq.",
+      "Sug'd savdogarlari Xitoydan Rimgacha karvonlar yetkazib turgan — Afrosiyob shu yo'lning markaziy nuqtasi edi.",
+      "1220-yili Chingizxon bosqinida shahar batamom vayron qilingan, aholi qirilgan yoki ko'chirilgan.",
+      "Muzey binosi maxsus Elchilar zali suratlari himoyasi uchun 1970-yili qurilgan."
+    ],
+    "hotspots": [
+      { "id": "elchilar", "x": 50, "y": 40, "label": "Elchilar zali", "info": "VII asrga oid Sug'd devor suratlari — Xitoy, Koreya, Hindiston elchilarining tasviri." },
+      { "id": "tarix", "x": 25, "y": 55, "label": "Qadimgi davr xonasi", "info": "Ahomanidlar, Yunon-Baqtriya va Kushon davriga oid sopol, tangalar, qurollar." },
+      { "id": "shahar", "x": 75, "y": 50, "label": "Shahar modeli", "info": "Afrosiyob shahrining turli davrlardagi rekonstruksiya modellari va xaritalari." }
+    ],
+    "audioGuide": null,
+    "panorama": null
   }
 ]

@@ -317,10 +317,10 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between transition-all duration-300 bg-bg-deep/90 backdrop-blur-md border-b border-gold/20 ${
+        className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between transition-all duration-300 ${
           scrolled
-            ? 'py-3 px-4 sm:px-6 md:px-12 shadow-[0_4px_30px_rgba(0,0,0,0.4)]'
-            : 'py-4 sm:py-5 px-4 sm:px-6 md:px-12'
+            ? 'py-3 px-4 sm:px-6 md:px-12 shadow-[0_4px_30px_rgba(0,0,0,0.4)] bg-bg-deep/95 backdrop-blur-md border-b border-gold/20'
+            : 'py-4 sm:py-5 px-4 sm:px-6 md:px-12 bg-gradient-to-b from-bg-deep/90 via-bg-deep/55 to-transparent backdrop-blur-sm'
         }`}
       >
         <Link

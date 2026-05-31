@@ -1,0 +1,147 @@
+# MEROS Platformasi uchun Viktorina Manbasi: 9 ta O'zbek/Turkiy Adabiy Durdona
+
+Quyidagi hisobot 9 ta asarning har biri uchun talab qilingan 9 ta maydonni hamda viktorina savollari uchun qo'shimcha tekshirilgan dalillarni o'zbek tilida taqdim etadi — barcha ma'lumotlar JSON fayliga toza ko'chirilishi uchun har bir kitob va har bir maydon bo'yicha aniq tartibga solingan.
+
+## TL;DR (eng muhim xulosalar)
+- **To'qqizta asar ham to'liq qamrab olindi:** uchta asar (Farhod va Shirin, Layli va Majnun, Saddi Iskandariy) Navoiy "Xamsa"sining ichidagi alohida dostonlardir — bu munosabat viktorina savollarida chalkashmaslik uchun aniq ajratildi; "Yulduzli tunlar" (Bobur haqida) va "Jaloliddin Manguberdi" (Xorazm shahzodasi haqida) butunlay boshqa tarixiy shaxslarga bag'ishlangan alohida asarlardir.
+- **Aniq, tekshiriladigan faktlar to'plandi:** har bir asar uchun 6–10 ta viktorina savoliga yetadigan sana, ism, bayt soni, manba va janr ma'lumotlari (masalan, Saddi Iskandariy — 89 bob, 7215 bayt, 1485-yil, mutaqorib bahri).
+- **Noaniqliklar ochiq belgilandi:** Temur Tuzuklari muallifligi bo'yicha ilmiy bahs, Alpomishning og'zaki/qadimiy kelib chiqishi va Shayxzoda dramasining sahnaga qo'yilish sanasi (1943 yoki 1945) kabi munozarali nuqtalar yagona soxta-aniq javob sifatida emas, balki noaniqlik bilan keltirildi.
+
+## Asosiy Topilmalar (Key Findings)
+1. **Navoiy "Xamsa"si** turkiy (chig'atoy) tilda yaratilgan birinchi to'liq beshlik bo'lib, Nizomiy Ganjaviy va Xusrav Dehlaviyning forsiy "Xamsa"lariga javob tariqasida 1483–1485-yillarda yozilgan; jami 51 mingdan ortiq misra.
+2. **Farhod va Shirin, Layli va Majnun, Saddi Iskandariy** — "Xamsa" ichidagi 2-, 3- va 5-dostonlardir (butun beshlik emas).
+3. **Temur Tuzuklari** muallifligi bahsli; matn forsiy tarjima orqali (Abu Tolib al-Husayniy, ~1610) yetib kelgan.
+4. **Alpomish** — og'zaki xalq dostoni; eng mukammal varianti baxshi Fozil Yo'ldosh o'g'lidan yozib olingan (~13 715 misra).
+5. **O'tkan kunlar** — birinchi o'zbek romani; **Yulduzli tunlar** — Bobur haqidagi tarixiy roman; **Jaloliddin Manguberdi** — Ikkinchi jahon urushi davrida vatanparvarlikni uyg'otish uchun yozilgan she'riy tragediya.
+
+---
+
+## Batafsil Ma'lumotlar (Details) — Asarlar bo'yicha
+
+### 1. XAMSA — Alisher Navoiy (slug: `xamsa`)
+- **Muallif (Muallif):** Alisher Navoiy (to'liq nomi Nizomiddin Mir Alisher; 1441-yil 9-fevral, Hirot – 1501-yil 3-yanvar, Hirot). Temuriylar davri shoiri, mutafakkiri va davlat arbobi; Sulton Husayn Boyqaroning yaqin do'sti va vaziri; chig'atoy (eski o'zbek) turkiy adabiyotining eng buyuk namoyandasi. Turkiy asarlarini "Navoiy", forsiy asarlarini "Foniy" taxallusi bilan yozgan.
+- **Yozilgan / nashr etilgan (Yozilgan):** 1483–1485-yillar oralig'ida yozilgan (taxminan ikki yilda); chig'atoy turkiy tilida. Turkiy tilda yaratilgan birinchi "Xamsa". Navoiy ishlagan kunlar hisobga olinsa, ulkan asar olti oyda bitkazilgan deyiladi.
+- **Janr (Janr):** Doston turkumi — besh dostondan iborat beshlik (xamsa).
+- **Asosiy qahramonlar / tarkibiy qismlar (Asosiy qahramonlar):** Besh doston: **(1) Hayrat ul-abror** (falsafiy-ta'limiy, 1483); **(2) Farhod va Shirin** (ishqiy-qahramonlik, 1484); **(3) Layli va Majnun** (ishqiy-fojiaviy, 1484); **(4) Sab'ai sayyor** ("Yetti sayyora", Bahrom haqida, 1484); **(5) Saddi Iskandariy** (Iskandar haqida, 1485).
+- **Syujet (Syujet):** "Xamsa" — besh mustaqil doston bo'lib, har biri alohida mavzuni masnaviy yo'lida yoritadi. Birinchi doston pand-axloqiy, keyingilari ishq, hukmdor va adolat mavzularini badiiy talqin qiladi. Jami hajmi 51 mingdan ortiq misra. Navoiy salaflar syujetini olsa-da, qahramonlar va g'oyalarni tubdan o'zgartirib, "turkona ruh" kiritgan.
+- **Mavzular (Mavzular):** Ishq (majoziy va haqiqiy), adolatli/odil hukmdor, komil inson, axloq va ma'naviy kamolot.
+- **Voqea joyi va davri (Voqea joyi va davri):** O'rta asr Sharqi — Eron, Arabiston, Yunon, Movarounnahr va Xuroson; afsonaviy-tarixiy davr.
+- **Esda qoladigan parcha (Esda qoladigan parcha):** Navoiy "Saddi Iskandariy" muqaddimasida "Xamsa"ning besh dostonini bir kecha-kunduzdagi besh vaqt namozga va baland tog' cho'qqisiga ko'tarilishdagi besh oromgohga qiyoslaydi.
+- **Tarixiy/madaniy ahamiyati (Tarixiy/madaniy ahamiyati):** Turkiy tilda yaratilgan birinchi to'liq "Xamsa" bo'lib, turkiy tilning cheksiz badiiy imkoniyatlarini isbotlab berdi. Nizomiy Ganjaviy va Xusrav Dehlaviy boshlagan xamsachilik an'anasiga turkiy tildagi javob bo'ldi. Navoiyni butun turkiy dunyo erta turkiy adabiyot asoschisi sifatida tan oladi.
+- **Qo'shimcha faktlar (viktorina uchun):** Xamsachilik an'anasi asoschisi — Nizomiy Ganjaviy (XII asr); Xusrav Dehlaviy ham to'liq "Xamsa" yaratgan. Jomiy beshta emas, yetti dostonli "Haft avrang"ni yaratgan. Navoiy "Xamsa"ni yozishga ustozi Abdurahmon Jomiy maslahati bilan kirishgan. Jami misralar soni manbalarda 51 000, 52 000 va 54 000 deb turlicha keltiriladi; eng ko'p iqtibos keltiriladigan raqam — "51 mingdan ortiq misra".
+
+### 2. FARHOD VA SHIRIN — Alisher Navoiy (slug: `farhod-va-shirin`)
+- **Muallif:** Alisher Navoiy (1441–1501) — yuqoridagi bio.
+- **Yozilgan:** 1484-yilda yozib tugatilgan; "Xamsa"ning ikkinchi dostoni; chig'atoy turkiy tilida; aruzning hazaji musaddasi mahzuf vaznida.
+- **Janr:** Ishqiy-qahramonlik dostoni (Navoiy uni "shavq dostoni", ba'zan "Mehnatnoma" deb atagan).
+- **Asosiy qahramonlar:** **Farhod** — Chin xoqonining o'g'li, mehnatkash, hunarmand va fidoyi oshiq (bosh qahramon); **Shirin** — Arman malikasi, Farhodning sevgilisi; **Xusrav** — bosqinchi Eron shohi, raqib; **Shopur** — Farhodning do'sti va ma'lumot yetkazuvchi; **Mehinbonu** — Shirinning xolasi (Arman hukmdori).
+- **Syujet:** Chin xoqoni farzandsizlikdan so'ng o'g'il ko'radi va unga Farhod deb ism qo'yadi. Farhod ilm, hunar va jasoratda kamol topadi; Arman elida Shiringa oshiq bo'ladi. U Shirin uchun ariq (kanal) qazib, tog' kesib o'zining qudratini ko'rsatadi. Bosqinchi Xusrav unga raqib bo'ladi va hiyla bilan Farhodni qo'lga oladi. Farhod qahramonlarcha halok bo'ladi, Shirin esa uning jasadi ustida jon beradi. Navoiy avvalgi dostonlardan farqli o'laroq, podshoh Xusravni emas, oddiy hunarmand Farhodni bosh qahramon qildi.
+- **Mavzular:** Sof muhabbat, mehnat va hunar, sadoqat, vatanparvarlik, adolatparvarlik, insonparvarlik.
+- **Voqea joyi va davri:** Afsonaviy Sharq — Chin (Xitoy), Arman eli va Eron; qadimiy davr.
+- **Esda qoladigan parcha:** Farhod madhi: *"Demonkim, ko'ngli pok-u, ham ko'zi pok, / Tili pok-u, so'zi pok-u, o'zi pok"*. Yana mashhur bayt: *"Birovkim, qilsa olimlarga ta'zim, / Qilur go'yoki payg'ambarg'a ta'zim"*.
+- **Tarixiy/madaniy ahamiyati:** Jahon klassik adabiyotida muhabbat mavzusidagi shoh asarlardan biri. Navoiy syujetni qayta ishlab, Farhodni mehnat va ilm timsoli qildi; bu doston keyingi turkiy xamsachilikka katta ta'sir ko'rsatdi.
+- **Qo'shimcha faktlar:** Doston **54 bob, 5782 baytdan** iborat (11 bob muqaddima). Navoiygacha bu mavzu "Xusrav va Shirin" nomi bilan mashhur edi (Firdavsiy "Shohnoma"si, Nizomiyning "Xusrav va Shirin"i, Dehlaviyning "Shirin va Xusrav"i). 1922-yilda Xurshid musiqali drama, 1941-yilda ozarbayjon shoiri Samad Vurg'un drama yaratgan.
+
+### 3. LAYLI VA MAJNUN — Alisher Navoiy (slug: `layli-va-majnun`)
+- **Muallif:** Alisher Navoiy (1441–1501).
+- **Yozilgan:** 1484-yil; "Xamsa"ning uchinchi dostoni; aruzning hazaji bahrida (musaddasi axrab).
+- **Janr:** Ishqiy-fojiaviy doston (Navoiy uni "Firoqnoma", "Nomai dard" deb ham atagan; "Xamsa"dagi eng g'amgin doston).
+- **Asosiy qahramonlar:** **Qays (Majnun)** — Bani Omir qabilasidan, ishq fidoyisi; **Layli** — Qaysning sevgilisi, go'zallik va sadoqat timsoli; **Navfal** — Majnunga homiylik qiluvchi mard; **Qosid** — xabarchi/elchi obrazi.
+- **Syujet:** Bani Omir qabilasida uzoq kutilgan farzand Qays tug'iladi. U Layliga oshiq bo'lib, ishq yo'lida es-hushini yo'qotadi va "Majnun" ("telba") laqabini oladi. Qabilalar o'rtasidagi to'siqlar va Laylining boshqa kishiga uzatilishi ikki oshiqni ayriliqqa mahkum etadi. Majnun cho'l-biyobonda yovvoyi hayvonlar orasida yashaydi. Oxir-oqibat ikki oshiq ham g'am va firoq tufayli halok bo'ladi; bu — mistik-tragik ishqning timsoli.
+- **Mavzular:** Tragik va ilohiy (tasavvufiy) ishq, sadoqat, jamiyat to'siqlari, ruhiy iztirob.
+- **Voqea joyi va davri:** Arab cho'llari (Bani Omir qabilasi); klassik arab-fors afsonasi davri.
+- **Esda qoladigan parcha:** Doston boshlanishi: *"Men turkcha boshlabon rivoyat, / Qildim bu fasonani hikoyat"* — Navoiy asarini turkiy tilda yozganini alohida ta'kidlaydi.
+- **Tarixiy/madaniy ahamiyati:** Klassik arab-fors afsonasining turkiy tildagi yetuk talqini; Navoiy ruhiyat tasviriga, qahramonlarning ichki kechinmalariga alohida e'tibor qaratgan. Aziz Qayumov "Ishq vodiysi chechaklari" asarida bu dostonni chuqur tahlil qilgan.
+- **Qo'shimcha faktlar:** Doston **36 bob, 3622 baytdan** iborat (ba'zi nashrlarda 38 bob, 3623 bayt). Mavzu Nizomiy, Xusrav Dehlaviy, Jomiy, keyinroq Fuzuliy ijodida ham qayta ishlangan. Navoiy Nizomiy dostonini "qal'a"ga, Dehlaviynikini "qasr"ga qiyoslagan.
+
+### 4. SADDI ISKANDARIY — Alisher Navoiy (slug: `saddi-iskandariy`)
+- **Muallif:** Alisher Navoiy (1441–1501).
+- **Yozilgan:** 1485-yil; "Xamsa"ni yakunlovchi beshinchi doston; aruzning mutaqorib bahrida turkiyda yozilgan.
+- **Janr:** Falsafiy-qahramonlik dostoni (ideal/odil hukmdor haqida).
+- **Asosiy qahramonlar:** **Iskandar (Iskandar Zulqarnayn / Aleksandr Makedonskiy)** — odil shoh, sarkarda, olim va murabbiy timsoli; **Doro** — Eron shohi (raqib); **Bonu** — Iskandarning onasi/tarbiyachisi; yunon hakim-faylasuflari (donishmandlar).
+- **Syujet:** Doston Iskandarning jahongirlik yurishlarini, shaharlar qurishini va adolat bilan hukmronlik qilishini tasvirlaydi. Har bir yurishdan oldin u ustozlar bilan kengashadi, har g'alabadan keyin yurtni obod etadi. Iskandar yajuj-majujlar (odamxo'r qabilalar) tajovuzidan saqlanish uchun Qof tog'i etagida ulkan devor (sadd) quradi — bu ezgulikni yovuzlikdan himoya qilish ramzi. Doston oxirida Iskandar vafot etayotib, bir qo'lini tobutdan tashqariga chiqarib qo'yishni vasiyat qiladi — bu dunyo o'tkinchiligi va jahongir ham narigi dunyoga quruq qo'l ketishiga ishora.
+- **Mavzular:** Adolatli hukmdor, ilm va donishmandlik, dunyo o'tkinchiligi, ezgulik va yovuzlik kurashi.
+- **Voqea joyi va davri:** Antik dunyo (Yunon, Eron, Hindiston, Chin) hamda ramziy ravishda Movarounnahr va Xuroson; Iskandar davri afsonalari.
+- **Esda qoladigan parcha:** Iskandarning o'lim oldidan bo'sh qo'lini tobutdan chiqarib qo'yish vasiyati — jahongir ham bu dunyodan hech narsasiz ketishini eslatuvchi mashhur sahna.
+- **Tarixiy/madaniy ahamiyati:** "Xamsa"ning hajman eng yirik dostoni; Navoiyning odil podshoh haqidagi orzulari mujassamlashgan. Qur'ondagi Zulqarnayn (Kahf surasi, 83–98 oyatlar) qissasi bilan uyg'unlashgan; turkiy adabiyotda ko'plab naziralar (Abay, Shayxzoda) yozilishiga turtki bo'lgan.
+- **Qo'shimcha faktlar:** Doston **89 bob, 7215 baytdan** iborat — Navoiy ijodidagi hajman eng yirik epik asar (O'zbekiston Milliy Ensiklopediyasi). Nizomiy bu mavzuda "Iskandarnoma", Dehlaviy "Oyinayi Iskandariy", Jomiy "Xiradnomai Iskandariy" yaratgan; Navoiy "sadd" (devor) g'oyasini birinchi o'ringa qo'ygan. "Zulqarnayn" — "ikki shoxli" yoki "kun chiqish va kun botish hukmdori" ma'nosini bildiradi.
+
+### 5. TEMUR TUZUKLARI — Amir Temurga nisbat beriladi (slug: `temur-tuzuklari`)
+- **Muallif:** Amir Temur (Temur ko'ragoniy, 1336–1405)ga nisbat beriladi. **Muallifligi bahsli:** ko'pchilik olimlar (jumladan inglizcha noshirlar Devi va Uayt, turk olimi Shamsuddin Somiy, N. Mikluxo-Maklay) asarni Temur o'zi bitgan deb hisoblaydi; boshqa bir guruh olimlar esa asar XVI–XVII asrlarda Hindistonda yozilgan, degan fikrda. Bu noaniqlikni viktorinada ochiq ko'rsatish kerak.
+- **Yozilgan / nashr etilgan:** Fanda qayd etilgan ilk nusxa eski o'zbek (turkiy) tilda bo'lgan. Xurosonlik Mir Abu Tolib al-Husayniy at-Turbatiy uni taxminan **1610-yilda** fors tiliga o'girgan va **1637-yilda** boburiy hukmdor Shoh Jahonga taqdim etgan. Shoh Jahon topshirig'i bilan qozikalon Muhammad Afzal (Ashraf) Buxoriy matnni Sharafuddin Ali Yazdiyning "Zafarnoma"siga solishtirib tahrir qilgan. O'zbek tiliga Alixonto'ra Sog'uniy (1967) va Habibullo Karomatov (1991) tarjima qilgan.
+- **Janr:** Tarixiy-memuar / davlat boshqaruvi qoidalari (tuzuklar, pand-nasihatlar).
+- **Asosiy "qahramonlar" / mazmun obyektlari:** **Amir Temur** (bayon egasi); uning amirlari, vazirlari, qo'shin boshliqlari va farzandlari (ularga qaratilgan maslahatlar).
+- **Syujet / tarkib:** Asar ikki qismdan iborat. **Birinchi qism** — Temurning tarjimai holi va siyosiy faoliyati: Movarounnahrda markaziy hokimiyatni qo'lga kiritishi, 27 mamlakatni (Eron, Afg'oniston, Ozarbayjon, Gruziya, Hindiston) bo'ysundirishi, To'xtamish va Boyazid I Yildirimga qarshi yurishlari. **Ikkinchi qism** — davlatni idora etish qoidalari: kimlarga tayanish, vazir va qo'shin boshliqlarini tanlash, armiya tuzilishi, jang qoidalari, sipohiylar maoshi, xizmatlarni taqdirlash tartibi.
+- **Mavzular:** Davlatchilik va boshqaruv, adolat, harbiy tashkilot, kengash (maslahat), sadoqatni taqdirlash.
+- **Voqea joyi va davri:** XIV asr oxiri – XV asr boshi; Movarounnahr, Xuroson va Temur saltanati hududlari.
+- **Esda qoladigan parcha:** Amir Temurning mashhur shiori — *"Kuch — adolatdadir"* (to'liq shaklda: *"Adolat kuchda emas, kuch adolatdadir"*). Manbaga ko'ra "Kuch — adolatda" so'zlari Temur uzugiga o'yib yozilgan va davlat muhrida ham aks etgan deyiladi; Ibn Arabshoh esa uzuk/muhrdagi haqiqiy yozuvni *"Rosti — rusti"* ("haqgo'y bo'lsang, najot topasan") deb qayd etadi — demak "Kuch — adolatda" shior/devor sifatida keng tarqalgan.
+- **Tarixiy/madaniy ahamiyati:** Amir Temur davridagi o'zbek davlatchiligi tarixini o'rganishda asosiy manba; olti asr davomida jahon e'tiborini tortib kelgan (1783-yilda inglizchaga, 1787-yilda fransuzchaga tarjima qilingan). Mustaqillik yillarida (1996-yil Temurning 660 yilligi) qayta yuksak baholandi.
+- **Qo'shimcha faktlar:** Asar "Tuzuki Temuriy", "Tuzukoti Temur", "Malfuzoti Temuriy", "Voqeoti Temuriy" nomlari bilan ham atalgan. Husayniyning turkiy asl nusxasini topgan joy — Yaman hokimi Ja'far Posho (hukmronligi 1607–1612) kutubxonasi.
+
+### 6. JALOLIDDIN MANGUBERDI — Maqsud Shayxzoda (slug: `jaloliddin-manguberdi`)
+- **Muallif:** Maqsud Shayxzoda (1908-yil 7-noyabr, Ozarbayjonning Og'dosh/Oqtosh shahri – 1967-yil 19-fevral, Toshkent). Ozarbayjon turki aslidan bo'lib, o'zbek adabiyotining yirik shoiri, dramaturgi, olimi va tarjimoni. 1928-yili Toshkentga surgun qilingan; 1952-yilda qatag'on qilinib, 1955-yilda oqlangan. Yana bir mashhur tragediyasi — "Mirzo Ulug'bek" (1964).
+- **Yozilgan / nashr etilgan:** 1944-yilda yozilgan (parchalari 1943-yilda "Qizil O'zbekiston" gazetasida bosilgan). To'liq matni ilk bor ozarbayjon tilida Bokuda, o'zbek tilida esa faqat 1988-yilda (yozuvchining "Boqiy dunyo" kitobida) chop etilgan.
+- **Janr:** She'riy tarixiy tragediya (fojia) — o'zbek dramaturgiyasidagi muhim asar.
+- **Asosiy qahramonlar:** **Jaloliddin Manguberdi** — so'nggi Xorazmshoh, jasur sarkarda (bosh qahramon); **Sulton Muhammad (Alouddin Muhammad)** — Jaloliddinning otasi, Xorazmshoh; **Sultonbegim** — Jaloliddinning singlisi, mard obraz; **Chingizxon** — mo'g'ul bosqinchisi (asosiy antagonist); **Temur Malik** — Jaloliddinning sodiq sarkardasi; **Nasaviy** — tarixiy munshiy/yilnomachi.
+- **Syujet:** Asar XIII asr boshida mo'g'ul bosqiniga qarshi Xorazm xalqi olib borgan kurashni tasvirlaydi. Otasi Sulton Muhammad vafotidan so'ng Jaloliddin og'ir vaziyatda taxtga o'tiradi. U mo'g'ul qo'shinlariga qarshi (jumladan Parvon jangida) g'alabalar qozonadi, ammo o'z sarkardalari orasidagi nizo va xiyonat tufayli kuchsizlanadi. Hal qiluvchi jangdan keyin u dushman qurshovini yorib o'tib, jasorat ko'rsatadi. Tragediya qahramonning halokati bilan tugasa-da, kelajakka ishonch ruhi bilan yo'g'rilgan.
+- **Mavzular:** Vatan ozodligi va mustaqillik, vatanparvarlik, qahramonlik, bosqinchilarga qarshi kurash, sadoqat va xiyonat.
+- **Voqea joyi va davri:** XIII asr boshi (1220–1231); Xorazm, Xuroson, G'azna va Hindiston hududlari (mo'g'ul istilosi davri).
+- **Esda qoladigan parcha:** Jaloliddinning mashhur satri — *"Menga koshonadan chodir yaxshiroq"* (saroy rohatidan ko'ra jang maydonini afzal ko'rishi). Chingizxon timsolining sinik baytlari ham mashhur: *"Adolat yo insof? Nima degan u? / Tupurdim bularga, ming katta tfu!"*
+- **Tarixiy/madaniy ahamiyati:** Ikkinchi jahon urushi davrida xalq va armiyani o'tmishdagi qahramonlardan ibrat olishga, vatanparvarlikka chorlash maqsadida yozilgan ijtimoiy buyurtma asari; mo'g'ullarga qarshi kurash fashizmga qarshi kurash bilan parallel qo'yilgan. O'zbek she'riy dramaturgiyasining yirik namunasi.
+- **Qo'shimcha faktlar:** Asar Hamza nomidagi o'zbek davlat drama teatrida sahnaga qo'yilgan (manbalarda 1943 yoki 1945-yil deb turlicha keltiriladi — bu noaniqlik). 1946-yildan keyin asar "feodal o'tmishni ideallashtirgan" ayblovi bilan sahnadan olib tashlangan va 43 yil davomida taqiqlangan. Asar **pardalar va ko'rinishlarga** bo'lingan she'riy drama (kamida 3 parda tasdiqlangan; aniq umumiy parda soni manbalarda ko'rsatilmagan). Tarixiy Jaloliddin (1198/1199–1231) — Anushteginiylar sulolasidan, "Mankburni" ("yuzida xoli bor") laqabli; 1221-yil 25-noyabrda Sind (Hind) daryosi bo'yidagi jangda mag'lub bo'lib, otda daryoga sakrab o'tgan; Chingizxon uning jasoratiga tan berib: "Ota o'g'il mana shunday bo'lishi lozim!" degan. 1998-yilda 800 yilligi nishonlangan; 2000-yilda "Jaloliddin Manguberdi" ordeni ta'sis etilgan.
+
+### 7. ALPOMISH — O'zbek xalq dostoni (slug: `alpomish`)
+- **Muallif:** Xalq dostoni (jamoaviy og'zaki ijod) — muayyan muallifi yo'q. Eng mukammal va badiiy jihatdan yuksak varianti **baxshi Fozil Yo'ldosh o'g'li** (1872–1955, Bulung'ur dostonchilik maktabining so'nggi yirik vakili) ijrosidan yozib olingan. Boshqa baxshilar: Po'lkan shoir, Berdi baxshi, Ergash Jumanbulbul o'g'li.
+- **Yozilgan / nashr etilgan:** Doston qadimda (asrlar davomida) shakllangan; 1922-yildan beri xalq baxshilari og'zidan yozib olinmoqda. Fozil Yo'ldosh o'g'li varianti 1928-yilda Mahmud Zarif(ov) tomonidan yozib olingan; ilk bor 1939-yilda Hamid Olimjon muharrirligida nashr etilgan.
+- **Janr:** Xalq qahramonlik dostoni (epos).
+- **Asosiy qahramonlar:** **Alpomish (Hakimbek)** — Qo'ng'irot urug'idan bahodir qahramon (bosh qahramon); **Barchin (Oybarchin)** — Alpomishning beshikkerti yori, sadoqat va mardlik timsoli; **Qorajon** — qalmoq alpi, Alpomishning do'sti; **Qaldirg'och** — Alpomishning singlisi; **Ultontoz** — zo'ravon raqib (qul Toz avlodidan); **Boychibor** — Alpomishning sodiq tulpor oti.
+- **Syujet:** Doston Qo'ng'irot urug'i boshliqlari — aka-uka Boybo'ri va Boysarining farzandsizligi tasviri bilan boshlanadi. Hakimbek (Alpomish) va Barchin bir kunda tug'iladi va beshikkerti qilinadi. O'rtadagi nizo tufayli Boysari qalmoq eliga ko'chib ketadi. Alpomish yorini olib kelish uchun safar qilib, Qorajon bilan do'st tutinadi va Barchinning shartlarini bajaradi. Keyin u qalmoq eliga borib yetti yil zindonda tutqun bo'ladi. Oti Boychibor yordamida qutulib, o'z eliga qaytadi va Barchinning Ultontoz bilan bo'layotgan majburiy to'yi ustiga kelib, raqibni yengadi hamda bo'lingan urug'ni qayta birlashtiradi.
+- **Mavzular:** Qahramonlik va mardlik, vatanparvarlik, sevgi va sadoqat, urug'/millat birligi, do'stlik.
+- **Voqea joyi va davri:** Qo'ng'irot eli va qalmoq (kalmik) yurti; turkiy xalqlar qadimiy davri (epik zamon).
+- **Esda qoladigan parcha:** Boychibor otining poygada g'olib kelishi va Barchinning unga alqov (madhiya) aytishi — eposning eng mashhur sahnalaridan; baxshilar dostonni do'mbira jo'rligida kuylagan.
+- **Tarixiy/madaniy ahamiyati:** O'zbek xalq og'zaki ijodining eng mukammal namunasi; turkiy xalqlar (qoraqalpoq, qozoq, oltoy, tatar, boshqird)da turli versiyalari mavjud. O'g'uz eposi "Kitobi Dadam Qo'rqut"dagi "Bamsi Bayrak" asariga syujet jihatidan yaqin.
+- **Qo'shimcha faktlar:** Fozil Yo'ldosh o'g'li varianti she'riy qismining o'zi **13 715 misrani** tashkil etadi (taxminan 14 ming misra; Til va adabiyot instituti folklor arxividagi qo'lyozma). 40 dan ortiq variant yozib olingan. 1999-yilda O'zbekistonda dostonning **ming yilligi** keng nishonlangan (yakuniy tantanalar Termizda bo'lib o'tgan).
+
+### 8. YULDUZLI TUNLAR — Pirimqul Qodirov (slug: `yulduzli-tunlar`)
+- **Muallif:** Pirimqul Qodirov (1928-yil 25-oktabr, Tojikistonning O'ratepa tumani Kengqul qishlog'i – 2010-yil 21-dekabr, Toshkent). O'zbek yozuvchisi, tarixiy romannavis; "Uch ildiz", "Olmos kamar" romanlari muallifi; davomi sifatida "Avlodlar dovoni" (Humoyun va Akbar haqida) romanini yozgan.
+- **Yozilgan / nashr etilgan:** Roman ustida o'n yil (**1969–1978**) ishlangan; ilk bor 1972-yilda nashrga topshirilgan, ammo mustabid tuzum tazyiqi ostida olti yil chop etilmagan; **1979-yilda** kitob holida bosilgan (Sharof Rashidov yordami bilan).
+- **Janr:** Tarixiy roman (to'liq nomi "Yulduzli tunlar (Bobur)").
+- **Asosiy qahramonlar:** **Zahiriddin Muhammad Bobur** — Temuriy shahzoda, keyinchalik Boburiylar (Mug'al) imperiyasi asoschisi (bosh qahramon); Temuriy shahzodalar (og'a-inilar, tog'a-jiyanlar); **Shayboniyxon** — Movarounnahrni egallagan raqib.
+- **Syujet:** Roman Bobur mirzoning hayoti va faoliyatini — uning Farg'ona/Andijonda o'n ikki yoshida taxtga o'tirishidan boshlab tasvirlaydi. Movarounnahrdek ulkan saltanatning parchalanishi, Temuriylar sulolasining inqirozi, taxt talashib bir-biriga qilich ko'targan qarindoshlarning fojiaviy qismati aks ettiriladi. Beklar nizolari va xiyonat tufayli xalq nochor ahvolga tushadi va uyushqoqlikdan bexabar Temuriylarni Shayboniyxon oson mag'lub etadi. Bobur Vatan sog'inchida yashab, yangi yurtda kuch to'playdi.
+- **Mavzular:** Vatanparvarlik va Vatan sog'inchi, birlik va tarqoqlik, taxt uchun kurash, sevgi va sadoqat, tarixiy adolat.
+- **Voqea joyi va davri:** XV asr oxiri – XVI asr boshi; Farg'ona, Andijon, Samarqand, Movarounnahr va Xuroson.
+- **Esda qoladigan parcha:** Boburning mashhur g'azal matlasi (romanda yangragan): *"Jonimdin o'zga yori vafodor topmadim, / Ko'nglumdin o'zga mahrami asror topmadim"* — bu g'azal Boburning o'ziga tegishli.
+- **Tarixiy/madaniy ahamiyati:** Zamonaviy o'zbek adabiyotining eng sara tarixiy romanlaridan biri; Pirimqul Qodirov o'zbek tarixiy romanchiligini ustoz Oybekdan keyin yangi pog'onaga ko'targan. Asar Bobur shaxsiga bo'lgan tarixiy adolatni tiklashga xizmat qilgan.
+- **Qo'shimcha faktlar:** Asosiy manbalar — Boburning "Boburnoma"si va Gulbadanbegimning "Humoyunnoma"si. Roman uchun Qodirovga **1981-yilda Hamza nomidagi O'zbekiston SSR Davlat mukofoti** berilgan. Roman rus, qoraqalpoq, qirg'iz, qozoq, urdu, turkman, hind, bengal, turk tillariga tarjima qilingan. Eslatma: "Yulduzli tunlar" (Bobur haqida), "Jaloliddin Manguberdi" (Xorazm shahzodasi haqida) va "Boburnoma" — uch xil mualliflarga va shaxslarga oid alohida asarlardir.
+
+### 9. O'TKAN KUNLAR — Abdulla Qodiriy (slug: `otkan-kunlar`)
+- **Muallif:** Abdulla Qodiriy (taxallusi Julqunboy; 1894-yil 10-aprel, Toshkent – 1938-yil 4-oktabr, Toshkentda otib o'ldirilgan). O'zbek romanchiligining asoschisi, yozuvchi, dramaturg, jurnalist va tarjimon; jadidchilik harakati ta'sirida shakllangan. Stalin qatag'oni qurboni; 1956-yildan oqlangan.
+- **Yozilgan / nashr etilgan:** Yozuvchi 1917–1918-yillardan material to'plagan; roman "Inqilob" jurnalida **1922–1925-yillarda** bo'lib-bo'lib (seriya tarzida) bosilgan; **1925–1926-yillarda** uch bo'lim holida alohida kitob bo'lib chiqqan. Birinchi o'zbek romani.
+- **Janr:** Tarixiy roman.
+- **Asosiy qahramonlar:** **Otabek** — Toshkentlik savdogar Yusufbek hojining o'g'li, ilg'or fikrli yigit (bosh qahramon); **Kumush (Kumushbibi)** — Marg'ilonlik Mirzakarim qutidorning qizi, Otabekning sevgilisi; **Yusufbek hoji** — Otabekning otasi, millat birligi g'oyasi targ'ibotchisi; **Homid** — makkor, fitnachi raqib; **Zaynab** — Otabekning ikkinchi xotini (kundosh), Kumushni zaharlovchi.
+- **Syujet:** Voqealar XIX asr — Qo'qon xonligi davridagi "xon zamonlari"da kechadi. Otabek Marg'ilonda Mirzakarim qutidor hovlisida Kumushni ko'rib oshiq bo'ladi va ular turmush quradi. Homidning fitnasi tufayli ikki yosh ayriliqqa duchor bo'ladi (soxta taloq xati). O'zbek oyimning istagi bilan Otabek Zaynabga uylanadi va kundoshlik fojiasi boshlanadi. Kumush o'g'il (Yodgor) tug'adi, ammo rashk va ko'pxotinlik illati oqibatida Zaynab uni atalaga zahar qo'shib o'ldiradi. Otabek Zaynabni taloq qiladi; roman fojiaviy yakun topadi.
+- **Mavzular:** Pok sevgi va sadoqat, fojiaviy taqdir, feodal urf-odatlar (ko'pxotinlik) tanqidi, millat birligi va mustaqillik, fitna va xiyonat.
+- **Voqea joyi va davri:** XIX asr o'rtalari (hijriy 1264–1265 yillar atrofida); Toshkent, Marg'ilon, Qo'qon xonligi — "xon zamonlari".
+- **Esda qoladigan parcha:** Otabek va Kumushning ariq bo'yidagi ilk uchrashuvi (nigohlar to'qnashganda ikkala qalbda ishq otashi alangalanishi) — roman tarixidagi eng mashhur sahna; shuningdek Homidning hiylasi bilan yo'llangan soxta taloq xati Kumushni hushidan ketishiga sabab bo'lgan dramatik nuqta.
+- **Tarixiy/madaniy ahamiyati:** Birinchi o'zbek romani; mazmun, shakl va uslub jihatidan butun O'rta Osiyo adabiyotida novator asar. Sharqshunos Ye. E. Bertels uni Yevropa, ingliz va rus romanlari qatoriga qo'ygan; Muxtor Avezov Qodiriyni "Sharqning eng ulkan yozuvchisi" deb baholagan.
+- **Qo'shimcha faktlar:** Qodiriy romanni yozishda arab/livan yozuvchisi Jurji Zaydon asarlaridan ilhomlangan. 1969-yilda "O'zbekfilm"da Yo'ldosh A'zamov rejissyorligida, bosh rolda O'lmas Alixo'jayev ishtirokida film suratga olingan. Mark Riz tomonidan inglizcha tarjimasi ("Bygone Days") 2018-yilda nashr etilgan. Qodiriyning ikkinchi tarixiy romani — "Mehrobdan chayon" (1928–1929). Muallifning to'liq ismi ko'pincha kirilchada keltiriladi; otasi Qodirbobo (1820–1924).
+
+---
+
+## Tavsiyalar (Recommendations) — JSON tuzilishi va viktorina yaratish
+1. **JSON sxemasini quyidagicha tuzing:** har bir kitob obyekti `slug`, `muallif`, `yozilgan`, `janr`, `asosiy_qahramonlar` (massiv: ism + rol), `syujet`, `mavzular` (massiv), `voqea_joyi_davri`, `esda_qoladigan_parcha`, `ahamiyati` va `qoshimcha_faktlar` (massiv) maydonlarini o'z ichiga olsin. Qo'shimcha faktlarni alohida massiv qilib saqlash har bir faktdan bitta viktorina savoli generatsiya qilishni osonlashtiradi.
+2. **To'g'ri javob + chalg'ituvchilar (distractors) uchun eng ishonchli faktlardan foydalaning:** aniq raqamli faktlar ideal — masalan, "Saddi Iskandariy necha baytdan iborat?" (to'g'ri: 7215; chalg'ituvchilar: 5782, 3622, 5000 — bular boshqa dostonlarning baytlari, shuning uchun ishonchli). "Farhod va Shirin necha bob?" (54), "Layli va Majnun necha bayt?" (3622).
+3. **Sana savollarini bemalol qo'ying:** Xamsa (1483–1485), O'tkan kunlar (1922–1925/1926), Yulduzli tunlar (1979 nashr, 1981 mukofot), Jaloliddin Manguberdi (1944), Alpomish ming yilligi (1999).
+4. **Chalkashlikka qarshi maxsus savollar yarating:** "Quyidagilardan qaysi biri 'Xamsa' tarkibidagi doston EMAS?" yoki "'Yulduzli tunlar' qaysi tarixiy shaxs haqida?" (Bobur — Jaloliddin emas) — bular o'quvchilarning farqlash qobiliyatini tekshiradi.
+5. **Noaniq faktlardan viktorina savoli yasamang yoki "ko'pchilik olimlar fikricha" tarzida bering:** Temur Tuzuklari muallifligi, Shayxzoda dramasi sahnaga qo'yilgan aniq yil (1943/1945) va umumiy parda soni — bularni to'g'ri/noto'g'ri savol qilib qo'ymang, aks holda buzuq savol hosil bo'ladi.
+6. **Manba ustunligi tartibi:** uz.wikipedia, O'zbekiston Milliy Ensiklopediyasi, ziyouz, kh-davron va asarlarning o'z muqaddimalarini birламчи manba sifatida ishlating; raqamlarni kamida ikki manbada qiyoslang.
+
+**Chegaralar / qaror o'zgartiruvchi mezonlar:** Agar bir fakt bo'yicha ikki ishonchli manba (masalan, uz.wikipedia va Milliy Ensiklopediya) bir xil raqamni bersa — uni viktorinaga kiriting. Agar manbalar ziddiyatli bo'lsa (Layli va Majnun bob soni 36 vs 38, Xamsa misralari 51000 vs 54000), eng ko'p iqtibos keltirilgan variantni to'g'ri javob qilib oling va chalg'ituvchini boshqa dalildan emas, balki shu ziddiyatdan tashqari raqamlardan tanlang.
+
+## Ogohlantirishlar (Caveats)
+- **Temur Tuzuklari muallifligi** — ilmiy bahsli; "Amir Temur yozgan" degan da'voni mutlaq fakt sifatida bermang.
+- **Alpomish** — og'zaki doston; "yozilgan yili" yo'q, faqat yozib olingan yili (1928) va nashr yili (1939) bor; misralar soni variantga bog'liq (Fozil Yo'ldosh o'g'li varianti ~13 715 misra).
+- **Shayxzoda "Jaloliddin Manguberdi"** — sahnaga qo'yilish yili manbalarda 1943 yoki 1945 deb turlicha; umumiy parda soni aniq tasdiqlanmagan (kamida 3 parda).
+- **Misra/bayt sonlari** — turli nashrlar va tahrirlar tufayli manbalarda biroz farq qiladi (1 bayt = 2 misra); yuqorida eng ko'p iqtibos keltirilgan raqamlar berilgan.
+- **Transliteratsiya** — standart o'zbek lotin yozuvi ishlatildi (Navoiy, Farhod, Shirin, Xusrav, Qays/Majnun, Layli, Iskandar, Alpomish, Barchin, Otabek, Kumush, Bobur, Jaloliddin Manguberdi); ba'zi manbalarda "O'tkan/O'tgan kunlar" ikki shaklda yoziladi.
+- **Esda qoladigan parchalar** — qisqa, mashhur satrlar yoki sahna tavsiflari sifatida berildi; uzun matnlar ko'chirilmadi. Shayxzoda dramasidagi iqtiboslar va Bobur g'azali ikkilamchi manbalardan olingani uchun JSONga kiritishdan oldin asar matnidan qayta tekshirilishi tavsiya etiladi.

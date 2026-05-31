@@ -1,0 +1,324 @@
+{
+  "_meta": {
+    "collection": "jadidlar",
+    "batch": 2,
+    "description": "MEROS viktorina manba fayli — Jadidlar to'plamining 2-qismi (qolgan 7 alloma). Bu batch bilan 14 ta jadid (behbudiy va cholpondan tashqari) to'liq qamrab olindi. Har bir shaxs uchun 8 maydonli shablon + qo'shimcha quiz faktlari. Barcha matn o'zbek tilida. Bu fayl quiz savollari generatsiyasi uchun MANBA hisoblanadi (tayyor savollar emas).",
+    "language": "uz",
+    "fields_per_person": [
+      "born", "died", "majorWorks", "keyAchievements",
+      "eraDynasty", "fields", "quotes", "surprisingFact"
+    ],
+    "ownerType": "jadidlar",
+    "sources": [
+      "uz.wikipedia.org", "ziyouz.uz", "jadid.uz", "oyina.uz", "arboblar.uz",
+      "gazeta.uz", "kun.uz", "O'zbekiston Milliy Ensiklopediyasi", "Sobir Mirvaliyev — O'zbek adiblari"
+    ],
+    "note": "Bu 7 shaxsning deyarli barchasi 1929–1944 yillar qatag'on qurboni. Uchtasi (Fitrat, Qodiriy, Cho'lpon) bir kunda — 1938-yil 4-oktabrda otib o'ldirilgan. Sanalar bir nechta manbada tekshirilgan; ixtilofli holatlar 'caveats' maydonida belgilangan.",
+    "reminder": "Eslatma (foydalanuvchi hujjatidan): behbudiy va cholpon quizlari allaqachon mavjud, ammo ularning ownerType qiymati 'allomalar' bo'lib qolgan — Jadid sahifalarida ko'rinishi uchun uni 'jadidlar'ga o'zgartirish kerak (2 qatorlik tuzatish)."
+  },
+  "people": [
+    {
+      "slug": "ashurali-zohiriy",
+      "displayName": "Ashurali Zohiriy",
+      "fullName": "Ashurali Zohiriy",
+      "born": "1885-yil, Qo'qon yaqinidagi Oyim qishlog'i (o'rtahol dehqon oilasida)",
+      "died": "1937-yil — qatag'on qurboni (1931-yil OGPU otuv hukmini 10 yil qamoqqa almashtirgan, keyin 1937-yilda halok bo'lgan)",
+      "majorWorks": [
+        "\"Imlo\" (1916, Qozonda nashr etilgan) — o'zbek tilida birinchi boshlang'ich imlo (orfografiya) darsligi",
+        "\"Ruscha-o'zbekcha mukammal lug'at\" (1927–1928) — 34 000 so'zli ikki jildli lug'at",
+        "\"Turkiy xrestomatiya yoxud terma kitob\" (1912) — o'quv to'plami",
+        "Navoiyning \"Muhokamat ul-lug'atayn\" va \"Vaqfiya\" asarlarini husnixatda ko'chirib nashr etgan (1916–1917)"
+      ],
+      "keyAchievements": [
+        "Yirik tilshunos va lug'atshunos — o'zbek tilida ilk \"Imlo\" darsligini yaratdi",
+        "Qo'qonda \"G'ayrat\" nomli xususiy nashriyot tashkil etdi; \"Sadoyi Farg'ona\" va \"Farg'ona\" gazetalarida adabiy xodim bo'ldi",
+        "Qo'qondagi birinchi dorilmuallimin (o'qituvchilar bilim yurti)ga asos solib, Farg'ona vodiysi uchun ko'plab o'qituvchi tayyorladi",
+        "Til, alifbo va imlo qurultoylarida (Toshkent 1921, 1922; Boku 1926; O'rta Osiyo 1927) faol qatnashdi",
+        "Navoiy va Bobur asarlari ustida matnshunoslik (matn tiklash) tadqiqotlarini olib bordi"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["Tilshunoslik", "Leksikografiya (lug'atchilik)", "Adabiyotshunoslik / matnshunoslik", "Publitsistika", "Pedagogika"],
+      "quotes": [
+        {
+          "text": "Endi biz qo'rqmaylik. Mumkin bo'lganicha, turkiycha yozganimiz kabi, yot so'zlarni-da, chog'li o'laroq o'z negizimiz ostiga olib boraylik.",
+          "translation": null,
+          "source": "Til-imlo masalasidagi ilmiy chiqishlaridan",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Sovet hukumati lotin, so'ng kirill alifbosiga o'tishni majburlagan davrda Ashurali Zohiriy eski (arab) imloni qat'iy himoya qilgan — \"yangi alifboga o'tsak, ajdodlarimiz bizni qarg'aydi, kelajagimizni madaniy jihatdan ko'r qilgan bo'lamiz\" degan; shu pozitsiyasi uning qatag'on qilinishiga sabablardan biri bo'lgan.",
+      "additionalQuizFacts": [
+        "Arab, fors, turk, ozarbayjon, tatar va rus tillarini bilgan.",
+        "1910-yilda Qo'qonda \"Taraqqiyparvarlar jamiyati\" uyushmasini tuzishda qatnashgan.",
+        "Uning \"Imlo\" darsligini Fitrat o'zining \"Sarf\" kitobi so'zboshisida alohida e'tirof etgan.",
+        "U asos solgan dorilmuallimin keyinchalik Farg'ona davlat pedagogika instituti (1930)ga aylangan."
+      ],
+      "caveats": [
+        "Vafot yili manbalarda 1937 deb beriladi; 1931-yilda berilgan otuv hukmi avval 10 yil qamoqqa almashtirilgan — bu ikki sanani aralashtirmang.",
+        "Asar nomi \"Imlo\" ba'zan \"Imlo darsligi\" deb yoziladi; nashr joyi — Qozon, yili — 1916."
+      ]
+    },
+    {
+      "slug": "fitrat",
+      "displayName": "Abdurauf Fitrat",
+      "fullName": "Abdurauf Abdurahim o'g'li (taxallusi — Fitrat)",
+      "born": "1886-yil, Buxoro (ziyoli oilada)",
+      "died": "1938-yil 4-oktabr, Toshkent — Abdulla Qodiriy va Cho'lpon bilan bir kunda otib o'ldirilgan",
+      "majorWorks": [
+        "\"Munozara\" (1909/1911, Istanbulda) — Hindistonda bir farangi bilan buxorolik mudarrisning usuli jadid xususidagi munozarasi",
+        "\"Hind sayyohi bayonoti\" (\"Bayonoti sayyohi hindi\", 1912)",
+        "\"Abulfayzxon\" (1924) — birinchi o'zbek tarixiy tragediyasi",
+        "\"Chin sevish\" (1920) va \"Hind ixtilolchilari\" (1923) — istiqlol ruhidagi dramalar",
+        "\"Shaytonning tangriga isyoni\" (1924) — dramatik asar"
+      ],
+      "keyAchievements": [
+        "Birinchi o'zbek professori (1926)",
+        "Milliy uyg'onish (jadid) adabiyotining yetakchi siymolaridan biri — shoir, nosir, dramaturg, publitsist, tilshunos, adabiyotshunos va tarixchi",
+        "\"Abulfayzxon\" bilan o'zbek tarixiy tragediya janrini boshlab berdi",
+        "Istanbulda \"Buxoro ta'limi maorif jamiyati\"ni tuzdi; tilshunoslikda \"Sarf\" va \"Nahv\" qo'llanmalarini yaratdi",
+        "Bolsheviklarga qarshi istiqlol g'oyasini sahna asarlarida ramziy (Hindiston voqealari ortida) ifodaladi"
+      ],
+      "eraDynasty": "Buxoro amirligi → Sovet davri (qatag'on); Istanbulda tahsil (1909–1913)",
+      "fields": ["Dramaturgiya", "She'riyat", "Nasr", "Publitsistika", "Tilshunoslik / adabiyotshunoslik", "Davlat-jamoat arbobligi"],
+      "quotes": [
+        {
+          "text": "Men sen uchun tug'ildim, sen uchun yasharman, sening uchun o'larman, ey turkning muqaddas o'chog'i!",
+          "translation": null,
+          "source": "\"Yurt qayg'usi\" (\"Hurriyat\" gazetasida bosilgan she'r-sochma)",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Ilk asarlarini (jumladan \"Munozara\" va \"Sayha\" she'rini) Istanbulda fors tilida yozgan; arab, fors va turk tillarini mukammal bilgan. Asarlari hatto Hindiston ozodlik harakatiga ta'sir ko'rsatgani, J. Neru tomonidan e'tirof etilgan.",
+      "additionalQuizFacts": [
+        "1909–1913 yillarda Istanbul dorilfununida tahsil olgan.",
+        "1922-yilgi \"O'zbek yosh shoirlari\" to'plamida Cho'lpon va Elbek bilan birga she'rlari chop etilgan.",
+        "\"Chig'atoy gurungi\" madaniy-ma'rifiy tashkilotiga rahbarlik qilgan.",
+        "Dastlabki she'riy to'plami — \"Sayha\" (\"Chorlov\", 1911)."
+      ],
+      "caveats": [
+        "Tug'ilgan yili (1886) barqaror; vafot sanasi — 1938-yil 4-oktabr (Qodiriy va Cho'lpon bilan bir kun).",
+        "\"Munozara\"ning yozilish/nashr yili manbalarda 1909 yoki 1911 deb beriladi.",
+        "Familiyasi 'Abdurauf Fitrat' / 'Abdurrauf Fitrat' shaklida yoziladi."
+      ]
+    },
+    {
+      "slug": "hamza",
+      "displayName": "Hamza Hakimzoda Niyoziy",
+      "fullName": "Hamza Hakimzoda Niyoziy (taxallusi — Nihoniy)",
+      "born": "1889-yil 6-mart, Qo'qon (tabib Ibn Yamin Niyoz o'g'li oilasida)",
+      "died": "1929-yil 18-mart, Shohimardon (Farg'ona viloyati) — fojiali halok bo'lgan",
+      "majorWorks": [
+        "\"Boy ila xizmatchi\" (1917/1918) — dramaturgiyasining mashhur namunasi",
+        "\"Maysaraning ishi\" — komediya/drama",
+        "\"Paranji sirlari\" (1926) — drama",
+        "\"Zaharli hayot\" (\"Zaharlangan hayot\") — drama",
+        "\"Tuhmatchilar jazosi\" (1918) — drama"
+      ],
+      "keyAchievements": [
+        "Birinchi \"O'zbekiston xalq yozuvchisi\" unvoni sohibi (1926-yil 27-fevral)",
+        "Birinchi o'zbek dramaturgi va zamonaviy o'zbek musiqa shakllari (ohanglari)ning asoschisi sifatida e'tirof etiladi",
+        "Shoir, dramaturg, bastakor, rejissyor, ma'rifatparvar-pedagog — ko'p qirrali ijodkor",
+        "Qashqardarvoza (1910), Qo'qon (1911) va Marg'ilon (1914)da usuli jadid maktablari ochgan",
+        "\"Nihoniy\" taxallusi bilan 197 she'rdan iborat qo'lyozma devon tuzgan (1903–1914)"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri",
+      "fields": ["Dramaturgiya", "She'riyat", "Musiqa (bastakorlik)", "Pedagogika", "Teatr va jamoat arbobligi"],
+      "quotes": [
+        {
+          "text": "Hamzaning \"Boy ila xizmatchi\" dramasi boy va kambag'al (xizmatchi) o'rtasidagi ijtimoiy ziddiyatni realistik tasvirlab, o'zbek dramaturgiyasining muhim namunasiga aylangan.",
+          "translation": null,
+          "source": "\"Boy ila xizmatchi\" dramasi",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Toshkentda metro bekati, teatr (hozirgi Milliy teatr ham bir vaqtlar), shaharlar, ko'chalar va maktablar uning nomi bilan atalgan; hayoti haqida Oybek doston (1948), Kamil Yashin roman va 16 qismli badiiy film (1975–84) yaratgan.",
+      "additionalQuizFacts": [
+        "1909–1910 yillarda Toshkentda Munavvarqori va Avloniy bilan tanishib, jadidchilik harakatiga qo'shilgan.",
+        "20-yillar boshida Xorazm Xalq Jumhuriyatida maorif ishlari bilan shug'ullangan.",
+        "Vafotidan keyin sovet mafkurasi uning ijodini sinfiylik-partiyaviylik mezonlarida baholash uchun ramz qilib oldi; \"Boy ila xizmatchi\" matni keyinchalik qayta yozilgan."
+      ],
+      "caveats": [
+        "Vafot sanasi — 1929-yil 18-mart (ba'zi manbalarda noto'g'ri '18-avgust' yoziladi; to'g'risi 18-mart).",
+        "Tug'ilgan sana eski uslub bo'yicha 22-fevral / yangi uslub bo'yicha 6-mart 1889.",
+        "O'limi sabablari (\"mutaassiblar tomonidan o'ldirilishi\") sovet davrida targ'ibot uchun ishlatilgan — quizda ehtiyotkor ifoda ishlating."
+      ]
+    },
+    {
+      "slug": "qodiriy",
+      "displayName": "Abdulla Qodiriy",
+      "fullName": "Abdulla Qodiriy (taxallusi — Julqunboy)",
+      "born": "1894-yil 10-aprel, Toshkent",
+      "died": "1938-yil 4-oktabr, Toshkent — Fitrat va Cho'lpon bilan bir kunda otib o'ldirilgan",
+      "majorWorks": [
+        "\"O'tkan kunlar\" (1922–1925) — o'zbek adabiyotidagi birinchi to'laqonli roman",
+        "\"Mehrobdan chayon\" (1928) — tarixiy roman",
+        "\"Obid ketmon\" (1934) — qissa",
+        "\"Kalvak Mahzumning xotira daftaridan\" va \"Toshpo'lat tajang nima deydir?\" — hajviy hikoyalar",
+        "\"Baxtsiz kuyov\" — drama"
+      ],
+      "keyAchievements": [
+        "O'zbek romanchiligining asoschisi — \"O'tkan kunlar\" birinchi o'zbek romani hisoblanadi",
+        "O'zbek adabiyotiga realizmni olib kirdi; tarixiy mavzudagi badiiy nasrning yuksak namunalarini yaratdi",
+        "Uning uslubi keyingi Markaziy Osiyo nosirlariga (jumladan qozoq yozuvchisi Muxtor Avezovga) ta'sir ko'rsatdi",
+        "\"Julqunboy\" taxallusi bilan hajviy publitsistikada faol qalam tebratdi",
+        "Mustaqillikdan keyin Alisher Navoiy nomidagi Davlat mukofoti (1991) va Mustaqillik ordeni (1994) bilan taqdirlangan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["Nasr (roman, qissa, hikoya)", "Dramaturgiya", "Publitsistika (hajviya)", "Tarjima"],
+      "quotes": [
+        {
+          "text": "Bu ikki kitobni bir marta emas, besh marta o'qish kerak. Shunda siz tarixni, turmushni, siyosatni, odobni, tilni o'rganasiz.",
+          "translation": null,
+          "source": "Abdulla Qodiriyning \"O'tkan kunlar\" va \"Mehrobdan chayon\" haqidagi so'zi",
+          "originalLanguage": "O'zbek"
+        },
+        {
+          "text": "Moziyg'a qaytib ish ko'rish xayrlik, deydilar.",
+          "translation": null,
+          "source": "\"O'tkan kunlar\" muqaddimasi",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "\"O'tkan kunlar\" dastlab 1922–1925 yillarda \"Inqilob\" jurnalida bo'lib-bo'lib (serial tarzida) bosilgan. Qodiriy so'nggi yillarida \"Amir Umarxonning kanizi\" nomli yangi roman ustida ishlayotgan edi; u hibsga olinganda qo'lyozmalari ham olib ketilgan va asar yo'qolgan.",
+      "additionalQuizFacts": [
+        "Taxalluslari: Julqunboy, Kalvak Mahzum, Toshpo'lat tajang.",
+        "1937-yil 31-dekabrda \"xalq dushmani\" sifatida hibsga olingan.",
+        "Romanidagi mashhur sahna — Otabek va Kumushning \"Siz o'shami?\" — \"Men — o'sha!\" dialogi.",
+        "\"O'tkan kunlar\" voqealari \"xon zamonlari\" — Qo'qon xonligi davriga oid."
+      ],
+      "caveats": [
+        "Tug'ilgan sana — 1894-yil 10-aprel; vafot — 1938-yil 4-oktabr (Fitrat va Cho'lpon bilan bir kun).",
+        "Asar nomi \"O'tkan kunlar\" / \"O'tgan kunlar\" ikkala shaklda uchraydi — bir asar.",
+        "\"Mehrobdan chayon\" nashr yili ba'zan 1929 deb beriladi (ba'zi manbalarda 1928) — kichik ixtilof."
+      ]
+    },
+    {
+      "slug": "elbek",
+      "displayName": "Elbek",
+      "fullName": "Mashriq Yunusov (taxallusi — Elbek)",
+      "born": "1898-yil, Toshkent viloyati, Bo'stonliq tumani, Xumson qishlog'i",
+      "died": "1939-yil — qatag'on qurboni (Magadan/Kolima jazo lagerida); ba'zi manbalarda 1942-yil",
+      "majorWorks": [
+        "\"Armug'on\" (1921) — asosan masallardan iborat ilk she'riy to'plam",
+        "\"Yolqinlar\" (1925), \"Ko'zgu\" (1926), \"Sezgilar\" (1927), \"Bahor\" (1929) — she'riy to'plamlar",
+        "\"O'rnak\", \"Bilim\", \"Go'zal yozg'ichlar\", \"Boshlang'ich maktabda ona tili\" — maktab darsliklari",
+        "\"Lug'at va atamalar\" (1924) — tilshunoslik qo'llanmasi",
+        "Folklor to'plamlari: \"Laparlar\", \"Ashulalar to'plami\", \"Bolalik qo'shiqlari\""
+      ],
+      "keyAchievements": [
+        "O'zbek bolalar adabiyoti va masal (fable) janrining asoschilaridan biri",
+        "Tilshunos — \"Chig'atoy gurungi\" to'garagida o'zbek imlosi, lug'at va atamalar ustida ishlagan",
+        "Folklorshunos — xalq og'zaki ijodi namunalarini to'plab nashr etgan",
+        "Boshlang'ich maktablar uchun bir qator darslik va o'quv qo'llanmalari yaratgan",
+        "Pushkin, Krilov, Nekrasov asarlarini o'zbek tiliga tarjima qilgan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["She'riyat", "Bolalar adabiyoti / masalchilik", "Tilshunoslik", "Folklorshunoslik", "Pedagogika", "Tarjima"],
+      "quotes": [
+        {
+          "text": "Buyuk tog'ning etagiga solingan, / O'tkazamiz umrimizni yer surib...",
+          "translation": null,
+          "source": "\"Bizning qishloq\" she'ri (1921)",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Avlon iyning \"usuli savtiya\" maktabida o'qigan (1914); keyinchalik o'zi o'nlab darslik yaratib, butun bir avlodni o'qitgan. Tug'ilib o'sgan Bo'stonliq tumani markazi G'azalkentda \"Elbek bog'i\" majmuasi va haykali bunyod etilgan.",
+      "additionalQuizFacts": [
+        "Asl ismi — Mashriq Yunusov.",
+        "1922-yilgi \"O'zbek yosh shoirlari\" to'plamida Fitrat va Cho'lpon she'rlari bilan birga uning she'rlari ham e'lon qilingan.",
+        "Hikoya to'plamlari: \"Oyxon\" (1920), \"Qo'shchi Turg'un\" (1925).",
+        "1937-yil 13-avgustda hibsga olingan; 1957-yilda oqlangan."
+      ],
+      "caveats": [
+        "Vafot yili manbalarda 1939 (eng keng tarqalgan) yoki 1942 deb beriladi — quizda 'taxminan 1939, qatag'on davri' ishonchli.",
+        "Asl ismi 'Mashriq Yunusov' / 'Mashriqxo'ja' / 'Mashriq Yusupov' shaklida uchraydi.",
+        "Tug'ilgan joyi — Xumson qishlog'i (Bo'stonliq tumani, Toshkent viloyati)."
+      ]
+    },
+    {
+      "slug": "botu",
+      "displayName": "Botu",
+      "fullName": "Mahmud Hodiev (taxallusi — Botu)",
+      "born": "1904-yil 15-may, Toshkent",
+      "died": "1938-yil 9-may, Moskva — \"xalq dushmani\" sifatida noxaq ayblanib otib o'ldirilgan",
+      "majorWorks": [
+        "\"Umid uchqunlari\" (1925) — she'riy to'plam",
+        "\"To'lqin tovushlari\" (1929) — she'riy to'plam",
+        "\"Yangi qishloq\" (1928) — asar",
+        "\"Hoshimjon\", \"Hayit xarom bo'ldi\", \"Tursun\" (1929) — asarlari",
+        "Bolalarga bag'ishlangan hikoyalar: \"Bolalar yolg'oni\", \"Mening kitobim\""
+      ],
+      "keyAchievements": [
+        "Yangi zamon o'zbek adabiyotini boshlab berganlardan biri — iste'dodli shoir va jamoat arbobi",
+        "She'rlarida yangi ijtimoiy munosabatlar va bolalar dunyosi ruhiyatini tasvirlagan",
+        "\"Chig'atoy gurungi\"ning \"imlo to'dasi\"da o'zbek imlosini isloh qilish ishida qatnashgan",
+        "Moskva davlat universitetining iqtisod fakultetini bitirgan (1921–1927) — kam sonli oliy ma'lumotli jadidlardan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["She'riyat", "Bolalar adabiyoti", "Tilshunoslik (imlo)", "Jamoat arbobligi"],
+      "quotes": [
+        {
+          "text": "Qish kuni o'tib, yoz kuni keldi, / Yer yuzin olgan qorlar tugaldi.",
+          "translation": null,
+          "source": "\"Yoz kuni\" she'ri",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Moskvada Cho'lpon, Shokir Sulaymon kabi shoirlar qatorida yosh o'zbek talabalariga she'riyat sirlarini o'rgatgan ustozlardan bo'lgan. 1930-yilda qamoqqa olinib, Oq dengizdagi Solovki orollariga (mashhur lagerga) surgun qilingan.",
+      "additionalQuizFacts": [
+        "Asl ismi — Mahmud Hodiev.",
+        "Rus-tuzem maktabida o'qigan (1914–1917).",
+        "Munavvarqori bilan yaqin aloqada bo'lgan (Sirojiddin Ahmad maqolasi: \"Botu va Munavvar Qori\").",
+        "She'riy merosida bolalar she'riyati alohida o'rin tutadi."
+      ],
+      "caveats": [
+        "Tug'ilgan — 1904-yil 15-may, Toshkent; vafot — 1938-yil 9-may, Moskva.",
+        "Botu (Mahmud Hodiev) — o'zbek shoiri; uni Oltin O'rda xoni Botu (Batuxon) bilan ADASHTIRMASLIK kerak (bir xil ism, butunlay boshqa shaxs)."
+      ]
+    },
+    {
+      "slug": "usmon-nosir",
+      "displayName": "Usmon Nosir",
+      "fullName": "Usmon Nosir (Ismsharifi Nosirov)",
+      "born": "1912-yil 13-noyabr, Namangan (kambag'al hunarmand oilasida)",
+      "died": "1944-yil 9-mart, Kemerovo viloyati, Suslovo qishlog'i yaqinidagi jazo lagerida — qatag'on qurboni",
+      "majorWorks": [
+        "\"Quyosh bilan suhbat\" (1932) — ilk she'riy to'plami",
+        "\"Yurak\" (1935) — she'riy to'plam",
+        "\"Mehrim\" (1936) — she'riy to'plam",
+        "\"Norbo'ta\" (1932) va \"Naxshon\" — dostonlar",
+        "\"Nil va Rim\" — mashhur she'ri; \"Atlas\" — drama"
+      ],
+      "keyAchievements": [
+        "30-yillar o'zbek she'riyatining yorqin, isyonkor ovozi — \"erk kuychisi\" deb tan olingan",
+        "Ijodiy merosi 5 she'riy kitob, 4 drama va 3 dostondan iborat",
+        "Pushkinning \"Boqchasaroy fontani\" va Lermontovning \"Demon\" (\"Iblis\") dostonlarini o'zbek tiliga mahorat bilan tarjima qilgan",
+        "Yosh yoshida (24 yoshida) yetuk shoir sifatida xalq e'tirofini qozongan — she'rlari hamon yod aytiladi"
+      ],
+      "eraDynasty": "Rossiya imperiyasi oxiri → Sovet davri (qatag'on)",
+      "fields": ["She'riyat", "Doston", "Dramaturgiya", "Tarjima"],
+      "quotes": [
+        {
+          "text": "Usmon Nosir \"Yurak\" she'rida o'z ijodi va his-tuyg'ularini yurak orqali ifodalagani uchun \"yurak shoiri\" nomini olgan.",
+          "translation": null,
+          "source": "\"Yurak\" she'ri (1935)",
+          "originalLanguage": "O'zbek",
+          "note": "Aniq misralar manbalarda turlicha keltiriladi; verbatim iqtibos sifatida ishlatishdan oldin tekshiring."
+        }
+      ],
+      "surprisingFact": "Shoir \"yurak orqali ijod qilgani\" uchun \"yurak shoiri\" laqabini olgan. Jinoyat ishi 12 192 varaqdan iborat bo'lgan. Qabri noma'lum bo'lgani uchun lager mahbuslari unga ramziy qabr qurib qo'yishgan.",
+      "additionalQuizFacts": [
+        "Asl ism-sharifi — Nosirov.",
+        "Yoshligi Qo'qondagi bolalar uyida o'tgan; 4 yoshida otasidan ayrilgan.",
+        "Samarqand Pedagogika akademiyasi (hozirgi SamDU)da til-adabiyot fakultetida o'qigan (1931 yildan).",
+        "1937-yil 13/14-iyulda \"xalq dushmani\" aybi bilan 10 yilga hukm qilinib, avval Toshkent, so'ng Magadan va Kemerovo lagerlarida saqlangan.",
+        "Turob To'la uni \"Pushkin, Lermontovlarni o'zbek tilida gapirtirgan shoir\" deb ta'riflagan."
+      ],
+      "caveats": [
+        "Tug'ilgan — 1912-yil 13-noyabr; vafot — 1944-yil 9-mart (lagerda).",
+        "Hibsga olingan kun manbalarda 13-iyul yoki 14-iyul 1937 deb beriladi.",
+        "\"Yurak\" she'ridagi misralar manbalarda turlicha keltiriladi — quizda iqtibos so'z tartibini tekshirib ishlating; xavfsizroq yo'l — she'r nomi (\"Yurak\") va \"yurak shoiri\" laqabidan foydalanish."
+      ]
+    }
+  ]
+}

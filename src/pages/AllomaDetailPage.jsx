@@ -7,7 +7,7 @@ import Timeline from '../components/allomalar/Timeline.jsx';
 import SmartImage from '../components/common/SmartImage.jsx';
 import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import FavoriteButton from '../components/common/FavoriteButton.jsx';
-import Quiz from '../components/common/Quiz.jsx';
+import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
 import {
   InterestingFactsSection,
@@ -227,7 +227,7 @@ export default function AllomaDetailPage({
             <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
             <h2 className="section-title">Viktorina</h2>
             <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quiz.questions.length} ta savol. Har to'g'ri javob — bonus ball.
+              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function AllomaDetailPage({
                 <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
                   <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
                   <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
-                    {previousQuizScore} / {quiz.questions.length}
+                    {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
                     <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>

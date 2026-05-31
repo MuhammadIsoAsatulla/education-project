@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import OrnamentDivider from './OrnamentDivider.jsx';
 
 const PHASE = {
@@ -7,14 +7,54 @@ const PHASE = {
   DONE: 'done',
 };
 
-export default function Quiz({ questions = [], previousBest = null, onComplete, onClose }) {
+// Default size of a single quiz session. If the question bank has more
+// questions than this, each session pulls a random subset so retakes don't
+// repeat the same set. If the bank has fewer, all questions are used.
+export const DEFAULT_QUIZ_SIZE = 8;
+
+// Helper for detail pages — figures out how many questions will actually
+// be displayed in one session given a bank of size `bankSize`.
+export function quizSessionSize(bankSize, maxSize = DEFAULT_QUIZ_SIZE) {
+  return Math.min(maxSize, bankSize || 0);
+}
+
+// Fisher-Yates shuffle — returns a NEW array, doesn't mutate the input.
+function shuffle(arr) {
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+export default function Quiz({
+  questions = [],
+  previousBest = null,
+  onComplete,
+  onClose,
+  quizSize = DEFAULT_QUIZ_SIZE,
+}) {
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
   const [score, setScore] = useState(0);
   const [phase, setPhase] = useState(PHASE.ASKING);
+  // Bump to re-sample the question pool on restart. We pick a random subset
+  // every session so users who retake the quiz see a different mix.
+  const [seed, setSeed] = useState(0);
 
-  const total = questions.length;
-  const current = questions[index];
+  // The "bank" is the full questions prop; "displayed" is a random subset of
+  // size min(quizSize, bank.length). Shuffling also randomises ORDER within
+  // the displayed set — twice as much variety with one operation.
+  const displayed = useMemo(() => {
+    if (!questions.length) return [];
+    const n = Math.min(quizSize, questions.length);
+    return shuffle(questions).slice(0, n);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questions, quizSize, seed]);
+
+  const total = displayed.length;
+  const current = displayed[index];
 
   useEffect(() => {
     if (phase !== PHASE.REVEAL) return;
@@ -44,6 +84,10 @@ export default function Quiz({ questions = [], previousBest = null, onComplete, 
     setSelected(null);
     setScore(0);
     setPhase(PHASE.ASKING);
+    // Re-shuffle the bank so the next session shows a different mix of
+    // questions. If the bank ≤ quizSize, the same questions appear but in
+    // a new order — still feels fresh.
+    setSeed((s) => s + 1);
   };
 
   if (phase === PHASE.DONE) {

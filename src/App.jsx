@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/common/Navbar.jsx';
 import Footer from './components/common/Footer.jsx';
 import ScrollToTop from './components/common/ScrollToTop.jsx';
+import GlobalBackground from './components/common/GlobalBackground.jsx';
 import useProgress from './hooks/useProgress.js';
 
 // HomePage stays eager — it's the landing page, any "loading…" flash here
@@ -65,6 +66,7 @@ export default function App() {
 
   return (
     <>
+      <GlobalBackground />
       <ScrollToTop />
       {!isAuthRoute && <Navbar />}
       <main>

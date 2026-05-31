@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "collection": "allomalar",
+    "batch": 3,
+    "description": "MEROS viktorina manba fayli — Allomalar to'plamining yakuniy 3 allomasi. Har bir alloma uchun 8 maydonli shablon + qo'shimcha quiz faktlari. Barcha matn o'zbek tilida. Bu fayl quiz savollari generatsiyasi uchun MANBA hisoblanadi (tayyor savollar emas).",
+    "language": "uz",
+    "fields_per_scholar": [
+      "born", "died", "majorWorks", "keyAchievements",
+      "eraDynasty", "fields", "quotes", "surprisingFact"
+    ],
+    "sources": [
+      "uz.wikipedia.org", "ziyouz.uz", "O'zbekiston Milliy Ensiklopediyasi",
+      "Britannica", "MacTutor History of Mathematics", "arboblar.uz",
+      "uzbekistan.travel", "alishernavoicorpus.uz"
+    ],
+    "note": "Sanalar va raqamlar bir nechta manbada tekshirilgan. Ixtilofli ma'lumotlar har bir alloma ostidagi 'caveats' maydonida belgilangan."
+  },
+  "scholars": [
+    {
+      "slug": "navoiy",
+      "displayName": "Alisher Navoiy",
+      "fullName": "Nizomiddin Mir Alisher Navoiy",
+      "born": "1441-yil 9-fevral, Hirot (Temuriylar davlati, hozirgi Afg'oniston)",
+      "died": "1501-yil 3-yanvar, Hirot",
+      "majorWorks": [
+        "\"Xamsa\" (1483–1485) — besh dostondan iborat: \"Hayrat ul-abror\", \"Farhod va Shirin\", \"Layli va Majnun\", \"Sab'ai sayyor\", \"Saddi Iskandariy\"",
+        "\"Xazoyin ul-maoniy\" — to'rt devondan iborat lirik to'plam: \"G'aroyib us-sig'ar\", \"Navodir ush-shabob\", \"Badoye' ul-vasat\", \"Favoyid ul-kibar\"",
+        "\"Muhokamat ul-lug'atayn\" (1499) — turkiy (chig'atoy) tilning forsiy tildan kam emasligini isbotlovchi risola",
+        "\"Majolis un-nafois\" — shoirlar haqidagi tazkira (biografik antologiya)",
+        "\"Lison ut-tayr\" — Fariduddin Attorning \"Mantiq ut-tayr\"i ruhida yozilgan doston",
+        "\"Mahbub ul-qulub\" — so'nggi nasriy-axloqiy asari"
+      ],
+      "keyAchievements": [
+        "O'zbek (chig'atoy) mumtoz adabiyotining asoschisi sifatida tan olingan",
+        "Turkiy tildagi birinchi to'liq \"Xamsa\"ni yaratdi — besh doston ~51 000 misradan ortiq",
+        "\"Muhokamat ul-lug'atayn\"da turkiy tilning badiiy imkoniyatlari forsiydan kam emasligini ilmiy asoslab berdi",
+        "Husayn Boyqaro saroyida vazir (\"muhri\") sifatida Hirotda ilm-fan, san'at va me'morchilik homiysi bo'ldi — madrasalar, masjidlar, shifoxonalar, ko'priklar qurdirdi",
+        "~30 ga yaqin asar yaratdi; hayotini bosqichlarga bo'lib to'rt devon (\"Xazoyin ul-maoniy\") tuzdi"
+      ],
+      "eraDynasty": "Temuriylar (Hirot madaniy markazi; hukmdor Husayn Boyqaro davri)",
+      "fields": ["She'riyat", "Davlat arbobligi", "Tilshunoslik", "Adabiyotshunoslik", "Tasavvuf"],
+      "quotes": [
+        {
+          "text": "Odami ersang demagil odami, / Onikim yo'q xalq g'amidin g'ami.",
+          "translation": "Inson bo'lsang, uni inson dema — kimning ko'nglida xalq g'amidan g'am bo'lmasa.",
+          "source": "\"Hayrat ul-abror\" dostoni",
+          "originalLanguage": "Chig'atoy turkiysi (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Navoiy umuman uylanmagan, butun umrini ijod va davlat xizmatiga bag'ishlagan. Uning ikkita taxallusi bo'lgan: turkiy she'rlarida \"Navoiy\" (navo — kuy, ohang), forsiy she'rlarida esa \"Foniy\".",
+      "additionalQuizFacts": [
+        "\"Xamsa\" tarkibidagi dostonlar tartibi va hajmi: \"Hayrat ul-abror\" (63 bob, 3988 bayt), \"Farhod va Shirin\" (54 bob, 5782 bayt), \"Layli va Majnun\" (38 bob, 3623 bayt), \"Sab'ai sayyor\" (38 bob, 5009 bayt), \"Saddi Iskandariy\" (yakunlovchi doston).",
+        "\"Xamsa\"ni atigi ikki yil (1483–1485) ichida yozib tugatgan.",
+        "\"Farhod va Shirin\"da Navoiy boshqa xamsanavislardan farqli o'laroq Xusravni emas, Farhodni bosh qahramon qilib oldi.",
+        "Abdurahmon Jomiy uning ustozi va piri bo'lgan; Navoiy Jomiyga \"Xamsatul-mutahayyirin\" asarini bag'ishlagan.",
+        "\"Saddi Iskandariy\" Jomiyning \"Xiradnomai Iskandariy\"siga, \"Hayrat ul-abror\" esa Nizomiy Ganjaviyning \"Maxzan ul-asror\"iga javob (nazira) tarzida yozilgan.",
+        "Navoiy musulmon Sharqining deyarli barcha she'riy janrlarida ijod qilgan: g'azal, ruboiy, qasida, masnaviy, qit'a, tuyuq.",
+        "Hirotda \"Nizomiddin\" ismi va \"Mir\" (amir) unvoni bilan ham tilga olinadi."
+      ],
+      "caveats": [
+        "Umumiy misra soni manbalarda turlicha: \"besh doston ~51 000 misradan ortiq\" yoki \"olti dostonning hajmi ~60 000 misra\". Quizda \"~51 000 misra (Xamsa)\" ishonchli qiymat.",
+        "Tug'ilgan/vafot sanalari ba'zan faqat yil bilan (1441–1501) beriladi; aniq kun (9-fevral / 3-yanvar) ham keng tarqalgan."
+      ]
+    },
+    {
+      "slug": "bobur",
+      "displayName": "Zahiriddin Muhammad Bobur",
+      "fullName": "Zahiriddin Muhammad Bobur ibn Umarshayx Mirzo",
+      "born": "1483-yil 14-fevral, Andijon (Farg'ona ulusi)",
+      "died": "1530-yil 26-dekabr, Agra (Hindiston); xoki keyinchalik vasiyatiga ko'ra Qobulga (Bog'i Bobur) ko'chirilgan",
+      "majorWorks": [
+        "\"Boburnoma\" (\"Vaqoye\") — chig'atoy turkiysida yozilgan avtobiografik-tarixiy asar; 1494–1529 yillar voqealarini qamraydi",
+        "\"Boburiy devon\" — lirik she'rlar to'plami (\"Qobul devoni\", 1519; \"Hind devoni\", 1528–29)",
+        "\"Mubayyin\" (\"Mubayyin ul-zakot\", 1521) — islom soliq-huquqi haqida she'riy risola",
+        "\"Aruz risolasi\" (\"Muxtasar\", 1523–1525) — she'r vazni (aruz) nazariyasi haqida",
+        "\"Xatti Boburiy\" — Boburning o'zi ixtiro qilgan yozuv (alifbo)",
+        "\"Volidiya\" tarjimasi — Xoja Ahror Valiyning asarini forschadan turkiyga o'girgan"
+      ],
+      "keyAchievements": [
+        "Hindistonda Boburiylar (Yevropa tarixchiligida \"Buyuk mo'g'ullar\") saltanatiga asos soldi — bu sulola 1526–1858 yillarda, 300 yildan ortiq hukmronlik qildi",
+        "1526-yil aprelda Panipat jangida Dehli sultoni Ibrohim Lo'diyni mag'lub etib, Hindistonda hokimiyatni qo'lga kiritdi",
+        "\"Boburnoma\" — islom adabiyotidagi dastlabki haqqoniy avtobiografiyalardan biri; jahon tarixnavisligida noyob asar sifatida tan olingan",
+        "Turkiy she'riyatda ruboiy janrining yetuk vakili; nafis g'azal va ruboiylar muallifi",
+        "12 yoshida (1494) Farg'ona taxtiga o'tirgan eng yosh hukmdorlardan biri"
+      ],
+      "eraDynasty": "Temuriylar avlodi → Boburiylar (Mug'al) sulolasi asoschisi. Otasi Umarshayx Mirzo — Farg'ona hokimi (Amir Temurning 5-avlodi); onasi Qutlug' Nigorxonim — Chingizxon avlodidan",
+      "fields": ["She'riyat", "Tarixnavislik", "Memuar (avtobiografiya)", "Davlat arbobligi", "Sarkardalik", "Geografiya"],
+      "quotes": [
+        {
+          "text": "Tole' yo'qi jonimg'a balolig' bo'ldi, / Har ishniki ayladim xatolig' bo'ldi. / O'z yerni qo'yib Hind sari yuzlandim, / Yo Rab, netayin, ne yuz qarolig' bo'ldi.",
+          "translation": "Baxtsizligim jonimga balo bo'ldi, har qilgan ishim xato bo'ldi; o'z yurtimni tashlab Hindiston tomon yuzlandim — Yo Rabbim, naylay, bu qanday yuz qarolik bo'ldi.",
+          "source": "Bobur ruboiysi (g'urbat — vatan sog'inchi mavzusida)",
+          "originalLanguage": "Chig'atoy turkiysi (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Rivoyatga ko'ra, o'g'li Humoyun og'ir kasal bo'lganda, Bobur uning to'shagi atrofini uch marta aylanib, \"kasalini menga ber\" deb Allohga iltijo qilgan; shundan so'ng Humoyun tuzalib, Bobur xastalanib vafot etgan.",
+      "additionalQuizFacts": [
+        "\"Boburnoma\" 1826–1985 yillarda ingliz tiliga 4 marta, fransuz tiliga 3 marta, nemis tiliga 1 marta tarjima qilingan.",
+        "Boburning qizi Gulbadan Begim \"Humoyunnoma\" asarini yozgan.",
+        "1503–1504 yillarda Afg'onistonni (Qobulni) egallagan; 1519–1525 yillarda Hindistonga 5 marta yurish qilgan.",
+        "1527-yil martda Chitor (Chitora) hokimi Rano Sango bilan bo'lgan Sikri jangida ham g'alaba qozongan.",
+        "Panipat jangida to'p (artilleriya) va \"tulg'ama\" (qanot aylanma) harbiy taktikasidan foydalangan.",
+        "To'liq taxallusi shunchaki \"Bobur\"; asl ismi Zahiriddin Muhammad. Yevropada \"Babur\" deb yuritiladi.",
+        "\"Boburnoma\"ning o'ndan ortiq qo'lyozma nusxasi mavjud."
+      ],
+      "caveats": [
+        "Vafot yili ba'zi manbalarda xato bilan 1531 deb beriladi; to'g'ri sana — 1530-yil 26-dekabr.",
+        "\"Buyuk mo'g'ullar\" atamasi — Yevropa tarixchiligidagi shartli nom; asli \"Boburiylar sulolasi\". Quizda buni aniqlashtirib bering."
+      ]
+    },
+    {
+      "slug": "ulugbek",
+      "displayName": "Mirzo Ulug'bek",
+      "fullName": "Muhammad Tarag'ay Ulug'bek ibn Shohruh",
+      "born": "1394-yil 22-mart, Sultoniya shahri (harbiy yurish chog'ida tug'ilgan)",
+      "died": "1449-yil 27-oktyabr — o'z o'g'li Abdullatif ko'rsatmasi bilan o'ldirilgan (qatl etilgan); Samarqanddagi Go'ri Amir maqbarasiga dafn etilgan",
+      "majorWorks": [
+        "\"Ziji jadidi Ko'ragoniy\" (\"Ziji sultoniy\", 1437) — 1018 yulduz tasvirlangan astronomik yulduzlar jadvali",
+        "\"Bir daraja sinusini aniqlash haqida risola\" — matematikaga oid",
+        "\"Risolayi Ulug'bek\" — yulduzlarga bag'ishlangan",
+        "\"Tarixi arba' ulus\" (\"To'rt ulus tarixi\") — tarixga oid asar"
+      ],
+      "keyAchievements": [
+        "Samarqandda 1428–1429 yillarda Ko'hak tepaligida dunyodagi eng yirik o'rta asr rasadxonalaridan birini qurdirdi (diametri ~46 m, ulkan Faxriy sekstanti bilan)",
+        "\"Ziji sultoniy\"da 1018 yulduzni 38 ta yulduz turkumiga ajratib joylashtirdi — teleskop ixtiro qilinishidan oldingi eng aniq yulduz katalogi (Gipparxdan keyingi birinchi yirik katalog)",
+        "1437-yilda yulduz yili (astronomik yil) uzunligini 365 kun 6 soat 10 daqiqa 8 soniya deb o'lchadi — haqiqiy qiymatdan atigi ~58 soniya farq qilgan",
+        "Registon maydonidagi mashhur Ulug'bek madrasasini (1417–1420) hamda Buxoro va G'ijduvonda madrasalarni qurdirdi",
+        "Ekliptika qiyaligini ~23°52' (23.52°) deb aniqladi"
+      ],
+      "eraDynasty": "Temuriylar — Ulug'bekning o'zi temuriy hukmdor (Amir Temurning nabirasi, Shohruhning o'g'li). 1409-yildan Samarqand hokimi, 1447-yildan saltanat taxtida",
+      "fields": ["Astronomiya", "Matematika", "Davlat boshqaruvi (hukmdorlik)", "Tarix", "Ma'rifatparvarlik"],
+      "quotes": [
+        {
+          "text": "Dinlar tarqab ketadi, davlatlar yemiriladi, ammo olimlarning ishlari abadiy qoladi.",
+          "translation": null,
+          "source": "Mirzo Ulug'bekka keng nisbat beriladigan hikmat (so'z tartibi manbalarda farq qiladi)",
+          "originalLanguage": "Manbalarda turli tillarda keltiriladi"
+        }
+      ],
+      "surprisingFact": "Ulug'bek vafotidan keyin rasadxona diniy aqidaparastlar tomonidan vayron qilingan va asrlar davomida uning o'rni topilmagan. Rasadxona qoldiqlari faqat 1908-yilda arxeolog V.L. Vyatkin rahbarligida olib borilgan qazishmalar natijasida topilgan.",
+      "additionalQuizFacts": [
+        "Hamkorlari: Qozizoda Rumiy, G'iyosiddin Jamshid Koshiy (al-Kashi) va Ali Qushchi — barchasi rasadxonada ishlagan.",
+        "Rasadxonaning yerosti qismi (Faxriy sekstanti yoyi) bugungacha saqlanib qolgan.",
+        "\"Ziji sultoniy\" 1665-yilda Oksfordda Tomas Hayd, 1843-yilda Fransiyada Bailly, 1917-yilda Edward Ball Knobel tomonidan qayta nashr etilgan.",
+        "Oyda uning sharafiga nomlangan krater (Ulugh Beigh) va 2439-asteroid (Ulugbek) bor.",
+        "Shohruh vafotidan so'ng atigi 2 yilu 8 oy hukmronlik qilgan.",
+        "Alisher Navoiy \"Majolis un-nafois\" asarida Ulug'bekning she'rlaridan namunalar keltirgan — u tibbiyot, musiqa va she'riyat bilan ham shug'ullangan.",
+        "O'zbekiston Milliy universiteti uning nomi bilan ataladi; 1994-yil \"Mirzo Ulug'bek yili\" deb e'lon qilingan.",
+        "Yozuvchi Odil Yoqubov \"Ulug'bek xazinasi\" (1970–1973) romanini, Maqsud Shayxzoda \"Mirzo Ulug'bek\" pyesasini (1964) unga bag'ishlagan."
+      ],
+      "caveats": [
+        "Yil uzunligi ikki xil qiymatda uchraydi: yulduz yili (sidereal) — 365 kun 6 soat 10 daqiqa 8 soniya (eng keng tarqalgan, ~58 soniya xato); quyosh yili (tropik) bo'yicha uz.wikipedia 365 kun 5 soat 49 daqiqa 15 soniya (~25 soniya xato) qiymatini beradi. Quizda 'yulduz yili — 365 kun 6 soat 10 daqiqa 8 soniya'ni asosiy javob qiling.",
+        "Rasadxona qurilish yili ba'zi manbalarda 1424–1429, boshqalarida 1428–1429 deb beriladi.",
+        "Yulduz turkumlari soni 38 deb keltiriladi (uzbekistan.travel); asar nomi \"Ziji sultoniy\" va \"Ziji jadidi Ko'ragoniy\" sifatida ham yuritiladi — ikkalasi bir asar.",
+        "Ulug'bekka nisbat beriladigan 'olimlar ishi abadiy' hikmatining aniq so'z tartibi manbada turlicha — quizda 'keng nisbat beriladi' deb belgilang yoki iqtibos o'rniga aniq ilmiy faktdan foydalaning."
+      ]
+    }
+  ]
+}

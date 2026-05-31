@@ -1,0 +1,312 @@
+{
+  "_meta": {
+    "collection": "jadidlar",
+    "batch": 1,
+    "description": "MEROS viktorina manba fayli — Jadidlar to'plamining 1-qismi (14 tadan dastlabki 7 alloma). Har bir shaxs uchun 8 maydonli shablon + qo'shimcha quiz faktlari. Barcha matn o'zbek tilida. Bu fayl quiz savollari generatsiyasi uchun MANBA hisoblanadi (tayyor savollar emas).",
+    "language": "uz",
+    "fields_per_person": [
+      "born", "died", "majorWorks", "keyAchievements",
+      "eraDynasty", "fields", "quotes", "surprisingFact"
+    ],
+    "ownerType": "jadidlar",
+    "sources": [
+      "uz.wikipedia.org", "ziyouz.uz", "jadid.uz", "arboblar.uz", "gazeta.uz",
+      "O'zbekiston Milliy Ensiklopediyasi", "Sobir Mirvaliyev — O'zbek adiblari"
+    ],
+    "note": "Ko'p jadidlar 1937–1938 qatag'on qurboni bo'lgan. Sanalar bir nechta manbada tekshirilgan; ixtilofli holatlar 'caveats' maydonida belgilangan."
+  },
+  "people": [
+    {
+      "slug": "is-hoqxon-ibrat",
+      "displayName": "Is'hoqxon Ibrat",
+      "fullName": "Is'hoqxon To'ra Junaydullaxo'ja o'g'li (taxallusi — Ibrat)",
+      "born": "1862-yil (ba'zi manbalarda 1861), Namangan yaqinidagi To'raqo'rg'on qishlog'i (Qo'qon xonligi)",
+      "died": "1937-yil (aprel), Andijon qamoqxonasida — qatag'on qurboni; qabri noma'lum",
+      "majorWorks": [
+        "\"Lug'ati sitta alsina\" (\"Olti tilli lug'at\", 1901) — arab, fors, hind, turk, o'zbek va rus tillaridan iborat lug'at",
+        "\"Jome' ul-xutut\" (\"Yozuvlar majmuasi\", 1912) — dunyo yozuvlari tarixiga oid",
+        "\"Tarixi Farg'ona\" — tarixiy asar",
+        "\"Mezon uz-zamon\" — tarixiy-ilmiy asar",
+        "\"Devoni Ibrat\" — 30 yillik she'riy ijodi to'plami"
+      ],
+      "keyAchievements": [
+        "Ilk o'zbek matbaachilaridan biri — o'z qishlog'ida \"Matbaai Ishoqiya\" nomli litografiya (bosmaxona) tashkil etgan (1908)",
+        "Olti tilli lug'at tuzib, jadid maktablarida sharq va rus tillarini o'rganish uchun asosiy qo'llanma yaratdi",
+        "To'raqo'rg'onda yangi usul (usuli savtiya — tovush usuli) maktabini ochdi",
+        "Tilshunoslik, tarix va matbaachilik bo'yicha keyingi 20 yil ichida 14 ta ilmiy-tarixiy asar yozdi",
+        "Poliglot (ko'p tilli) — sharq va g'arb tillarini bilgan"
+      ],
+      "eraDynasty": "Qo'qon xonligi → Rossiya imperiyasi (Turkiston general-gubernatorligi) → Sovet davri (qatag'on)",
+      "fields": ["She'riyat", "Tilshunoslik (leksikografiya)", "Tarixshunoslik", "Matbaachilik", "Pedagogika"],
+      "quotes": [
+        {
+          "text": "Ibrat o'z she'rlarida (\"Tarixi chopxona\", \"Qalam\", \"Gazeta xususida\") ilm-ma'rifat, matbuot va qalamning kuchini ulug'lab, mahalliy va chor amaldorlarining kirdikorlarini fosh etgan.",
+          "translation": null,
+          "source": "\"Ilmi Ibrat\" she'riy to'plami (1909) va boshqa she'rlari",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Yoshligida onasini haj ziyoratiga olib borgach (1887), Sharq va Yevropa bo'ylab uzoq sayohatga chiqib, Istanbul, Sofiya, Afina, Rim, Berlin, Parij, Jidda, hatto Hindistonning Bombey va Kalkutta shaharlarida yashagan — bu davr ko'p turkistonlik uchun juda noyob edi.",
+      "additionalQuizFacts": [
+        "Ajdodlari mashhur Xoja Ahmad Yassaviy avlodidan hisoblangan.",
+        "Qo'qondagi Muhammad Siddiq Tunqotar madrasasida o'qigan (1878–1886).",
+        "Hindistonda 1892–1896 yillarda istiqomat qilgan.",
+        "1935-yildan barcha lavozimlardan chetlatilgan, 1937-yil 75 yoshida hibsga olingan.",
+        "Amakivachchasi — shoir Mulla Jamolxon Vasfiy (1862–1930)."
+      ],
+      "caveats": [
+        "Tug'ilgan yili manbalarda 1861 yoki 1862 deb beriladi — quizda 'taxminan 1862' ishonchli.",
+        "Vafot joyi ba'zan 'Andijon', ba'zan umumiy 'qamoqxona' deb keltiriladi; qabri aniqlanmagan.",
+        "Asar nomi ba'zan \"Lug'ati sitta alsina\", ba'zan \"Lug'at sitta as-sina\" shaklida yoziladi — bir asar."
+      ]
+    },
+    {
+      "slug": "siddiqiy-ajziy",
+      "displayName": "Siddiqiy-Ajziy",
+      "fullName": "Saidahmadxo'ja Siddiqiy (taxallusi — Ajziy)",
+      "born": "1864-yil, Samarqand atrofi (turkistonlik xo'jalar oilasidan)",
+      "died": "1927-yil, Samarqand",
+      "majorWorks": [
+        "She'riy meros — jadid matbuotida (\"Oyina\", \"Samarqand\" va b.) e'lon qilingan she'rlar",
+        "\"Orzu yoki xayol\" — maqola (1914)",
+        "Rus va fors tillaridan tarjimalar"
+      ],
+      "keyAchievements": [
+        "XX asr boshlarida yetuk shoir, tarjimon va mohir pedagog sifatida tanildi",
+        "Samarqandda usuli jadid maktablarining tashkilotchilaridan biri bo'ldi",
+        "Mahmudxo'ja Behbudiy va Abduqodir Shakuriy bilan birga Samarqand jadidchilik harakatining yetakchilaridan edi",
+        "Arab, fors va rus tillarini bilgan; texnika (soat va mashinalarni ta'mirlash) hamda musiqa bilan ham shug'ullangan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davrining dastlabki yillari",
+      "fields": ["She'riyat", "Tarjimonlik", "Pedagogika", "Ma'rifatparvarlik"],
+      "quotes": [
+        {
+          "text": "Agar men boy bo'lsa edim, ...muallim yetishtiradigan bir rushdiy (o'rta) maktab solur edim, lekin afsuski, pulim yo'q.",
+          "translation": null,
+          "source": "\"Orzu yoki xayol\" maqolasi (1914)",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Jadid maktablari va g'oyalari uchun kurashgani sababli mutaassib ulamolar tomonidan Behbudiy va Shakuriy bilan birga rasman \"takfir\" qilingan (kofirlikda ayblangan).",
+      "additionalQuizFacts": [
+        "Adabiyotshunos Vadud Mahmud (1897–1976) u haqida ilk maqola — \"Turk shoiri Ajziy\"ni \"Inqilob\" jurnalida (1924) e'lon qilgan.",
+        "Bir muddat Buxoroda yashab, so'ng Samarqandga qaytgan.",
+        "150 yilligi (2014) O'zbekistonda keng nishonlangan."
+      ],
+      "caveats": [
+        "Aniq tug'ilgan/vafot kuni va tug'ilgan qishlog'i nomi manbalarda turlicha beriladi; yillari (1864–1927) keng qabul qilingan.",
+        "Alohida nashr etilgan kitob-asar nomlari cheklangan — quizda asosan 'shoir, tarjimon, pedagog' va 'Samarqand jadidlari yetakchisi' faktlariga tayaning; aniq kitob nomini to'g'ri javob qilishdan ehtiyot bo'ling."
+      ]
+    },
+    {
+      "slug": "munavvarqori",
+      "displayName": "Munavvarqori Abdurashidxonov",
+      "fullName": "Munavvarqori Abdurashidxon o'g'li",
+      "born": "1878-yil, Toshkent (Rossiya imperiyasi)",
+      "died": "1931-yil, Moskva — \"aksilinqilobiy faoliyat\"da ayblanib otib o'ldirilgan; qabri Moskvadagi Vagankovo qabristonida",
+      "majorWorks": [
+        "\"Adibi avval\" — yangi usul maktablari uchun alifbo darsligi",
+        "\"Adibi soniy\" — o'qish darsligi",
+        "\"Yer yuzi\" — geografiya darsligi",
+        "\"Tarixi muxtasari Islom\" — islom tarixi qo'llanmasi",
+        "\"Maktab gulshani\" — o'quv to'plami"
+      ],
+      "keyAchievements": [
+        "Toshkent jadidchilik harakatining yetakchi siymosi — adib, notiq, pedagog, jamoat arbobi",
+        "Yangi usul (jadid) maktablarini tashkil etish va milliy ta'lim tizimini rivojlantirishning asosiy tashabbuskori",
+        "Milliy ta'lim uchun bir qator darsliklar yaratdi",
+        "\"Jamiyati Imdodiya\" (1909), \"Turon\" (1913), \"Turkiston kutubxonasi\" (1914), \"Umid\" (1914) kabi jamiyat va tashkilotlarga asoschi/rahbar bo'ldi"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["Pedagogika", "Ma'rifatparvarlik", "Publitsistika", "Jamoat-siyosiy arboblik"],
+      "quotes": [
+        {
+          "text": "Munavvarqori butun umrini millatni ilm-ma'rifat orqali uyg'otish, yangi maktab va milliy ta'lim tizimini barpo etishga bag'ishladi.",
+          "translation": null,
+          "source": "Faoliyati va asarlari (\"Adibi avval\" va b.) mazmunidan",
+          "originalLanguage": "O'zbek"
+        }
+      ],
+      "surprisingFact": "Otasi yoshligida vafot etgani uchun dastlabki ta'limni onasidan olgan; Qur'onni yod olib, qori bo'lgan — \"qori\" so'zi shundan. 1925-yilda qamalib surgun qilingan, 1931-yilda Moskvada otib tashlangan.",
+      "additionalQuizFacts": [
+        "Toshkentdagi Yunusxon madrasasida o'qigan.",
+        "\"Padarkush\" spektaklini Toshkentda sahnaga qo'yishda (1914) Abdulla Avloniy bilan birga rahbarlik qilgan.",
+        "Jadid matbuotida publitsist sifatida faol qatnashgan (Behbudiy, Fitrat bilan bir qatorda)."
+      ],
+      "caveats": [
+        "Vafot joyi: ko'p manbalar Moskva (otib o'ldirilgan, 1931) deb beradi; ayrim eski manbalarda umumiy 'qatag'on qurboni' deyiladi.",
+        "Hibsga olingan/surgun yili manbalarda 1925 yoki 1929 deb farqlanadi."
+      ]
+    },
+    {
+      "slug": "avloniy",
+      "displayName": "Abdulla Avloniy",
+      "fullName": "Abdulla Avloniy (Abdulla Miravlon o'g'li)",
+      "born": "1878-yil, Toshkent (hunarmandlar oilasida)",
+      "died": "1934-yil, Toshkent (o'z ajali bilan — qatag'on qurboni bo'lmagan kam sonli jadidlardan)",
+      "majorWorks": [
+        "\"Turkiy guliston yoxud axloq\" (1913) — axloq-tarbiyaga oid mashhur darslik",
+        "\"Birinchi muallim\" — alifbo darsligi (1917-gacha 4 marta nashr etilgan)",
+        "\"Ikkinchi muallim\" (1912) — alifbodan keyingi o'qish darsligi",
+        "\"Maktab gulistoni\" — Krilov masallaridan tarjimalar to'plami",
+        "\"Adabiyot yoxud milliy she'rlar\" — she'riy to'plam"
+      ],
+      "keyAchievements": [
+        "O'zbek milliy teatrining asoschisi — 1913-yilda \"Turon\" teatr truppasini tashkil etdi",
+        "\"Shuhrat\" gazetasiga asos soldi (1907); o'lkada matbuot rivojiga katta hissa qo'shdi",
+        "Yangi usul maktablari uchun bir qator darsliklar yaratdi (\"Birinchi muallim\", \"Ikkinchi muallim\", \"Turkiy guliston\")",
+        "Ta'lim, matbuot va teatr sohalarini birvarakayiga rivojlantirgan ko'p qirrali ma'rifatparvar",
+        "Sovet davrida ham faoliyatini davom ettirib, professor darajasiga ko'tarilgan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri",
+      "fields": ["She'riyat", "Pedagogika", "Dramaturgiya / teatr", "Publitsistika (jurnalistika)", "Ma'rifatparvarlik"],
+      "quotes": [
+        {
+          "text": "Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir.",
+          "translation": null,
+          "source": "\"Turkiy guliston yoxud axloq\" (1913)",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        },
+        {
+          "text": "Taraddud birla maktabda o'qing, o'g'lonlar, / Bo'lursiz bir kun olamda zo'r insonlar, o'g'lonlar.",
+          "translation": null,
+          "source": "\"Birinchi muallim\" darsligidagi she'r",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Bir necha o'nlab taxalluslardan foydalangan: Hijron, Nabil, Indamas, Shuhrat, Tangriqul, Surxun va boshqalar. Ko'plab jadidlardan farqli o'laroq, u 1937 qatag'oniga qadar — 1934-yilda o'z ajali bilan vafot etgan.",
+      "additionalQuizFacts": [
+        "\"Turkiy guliston yoxud axloq\"da 40 dan ortiq axloqiy tushuncha (sahovat, vatan, ilm, mehnat va b.) yoshlarga o'rgatiladi.",
+        "\"Turon\" truppasi 1914-yil \"Padarkush\" va boshqa jadid dramalarini sahnalashtirgan.",
+        "Sovet davrida Markaziy Osiyo davlat universiteti (SAGU)da professor bo'lib ishlagan."
+      ],
+      "caveats": [
+        "Tug'ilgan/vafot yillari (1878–1934) barqaror; tug'ilgan mahalla nomi manbalarda turlicha (Mergancha/Mervancha).",
+        "\"Birinchi muallim\" va Saidrasul Aziziyning \"Ustozi avval\", Munavvarqorining \"Adibi avval\" alifbolari bir-biriga yaqin davrda chiqqan — quizda muallifni adashtirmang (Avloniy → \"Birinchi/Ikkinchi muallim\", \"Turkiy guliston\")."
+      ]
+    },
+    {
+      "slug": "ayniy",
+      "displayName": "Sadriddin Ayniy",
+      "fullName": "Sadriddin Saidmurodzoda (taxallusi — Ayniy)",
+      "born": "1878-yil 15-aprel, Buxoro amirligi, G'ijduvon tumani, Soktare qishlog'i",
+      "died": "1954-yil 15-iyul, Dushanbe (Stalinobod), Tojikiston SSR",
+      "majorWorks": [
+        "\"Odina\" (1924) — qissa; zamonaviy tojik nasrining boshlanishi hisoblanadi",
+        "\"Doxunda\" (1927–1930) — roman",
+        "\"Qullar\" (1934) — o'zbek tilida yozilgan roman",
+        "\"Sudxo'rning o'limi\" (1939) — qissa",
+        "\"Esdaliklar\" (\"Xotiralar\", 1949–1954) — to'rt qismli memuar"
+      ],
+      "keyAchievements": [
+        "Sovet davri tojik adabiyotining asoschisi; tojik va o'zbek tillarida ijod qilgan",
+        "Tojikiston Fanlar Akademiyasining birinchi prezidenti (1951–1954)",
+        "\"Yosh buxoroliklar\" harakatining faol ishtirokchisi; Buxoro amirligiga qarshi kurashgani uchun zindonga tashlangan",
+        "\"Buxoro mang'it amirligining tarixi\" (1921) va \"Tojik adabiyotidan namunalar\" (1926) kabi ilmiy-tarixiy asarlar yaratdi",
+        "O'zbek va tojik adabiyotidan 200 dan ortiq shoir, olim va tazkiranavislar haqida ilmiy ma'lumot berdi"
+      ],
+      "eraDynasty": "Buxoro amirligi → Sovet davri (Tojikiston SSR / O'zbekiston SSR)",
+      "fields": ["Nasr (roman, qissa)", "She'riyat", "Adabiyotshunoslik / tarixshunoslik", "Jamoat arbobligi", "Pedagogika"],
+      "quotes": [
+        {
+          "text": "Ayniyning to'rt qismli \"Esdaliklar\"i Buxoroning o'tmish hayoti va o'sha davr ijtimoiy-madaniy muhitini yorqin tasvirlaydi.",
+          "translation": null,
+          "source": "\"Esdaliklar\" (\"Xotiralar\", 1949–1954)",
+          "originalLanguage": "Tojik va o'zbek tillarida"
+        }
+      ],
+      "surprisingFact": "Tojiklar uni o'zlarining milliy shoiri (\"Tojikiston Qahramoni\", 1998) deb e'zozlaydi, ammo u o'zbek tilida ham ijod qilib, o'zbek sovet adabiyoti rivojiga ham katta hissa qo'shgan — ikki xalqqa baravar mansub adib.",
+      "additionalQuizFacts": [
+        "Ilk asari — \"Guli surx\" (\"Qizil gul\") she'ri (1897).",
+        "\"Ayniy\" taxallusini 1896-yilda olgan; asl familiyasi Saidmurodzoda (Said-Murodov).",
+        "Maktablar uchun \"Yoshlar tarbiyasi\" (1909) darsligini tuzgan.",
+        "O'zbekiston Fanlar Akademiyasining faxriy a'zosi (1943), filologiya fanlari doktori (1948), professor (1950).",
+        "1889-yilgi chechak epidemiyasida ota-onasidan ayrilgan."
+      ],
+      "caveats": [
+        "Tug'ilgan/vafot sanalari (1878 15-aprel – 1954 15-iyul) ishonchli va manbalarda mos.",
+        "\"Doxunda\" nashr yili manbalarda 1927–1930 oralig'ida turlicha beriladi (tojikcha nashr)."
+      ]
+    },
+    {
+      "slug": "tavallo",
+      "displayName": "Tavallo",
+      "fullName": "To'lagan Xo'jamyorov (taxallusi — Tavallo)",
+      "born": "1882-yil (ba'zi manbalarda 1883), Toshkent, Ko'kcha dahasi",
+      "died": "1937-yil 10-noyabr, Toshkent — qatag'on qurboni (14-avgustda hibsga olingan)",
+      "majorWorks": [
+        "\"Ravnaq ul-Islom\" (1916) — yagona she'riy to'plami (~70 she'r, aruz vaznida)",
+        "\"Mushtum\" jurnalida \"Mag'zava\" taxallusi ostida chop etilgan hajviy she'rlar"
+      ],
+      "keyAchievements": [
+        "XX asr boshi Toshkent adabiy muhitida xalq orasida katta shuhrat qozongan ma'rifatparvar shoir",
+        "She'rlarida \"millat\" va \"Vatan\" tushunchalarini, turkchilik va islomchilik g'oyalarini ilgari surgan",
+        "Abdulla Avloniy va Said Abdulla bilan birga \"Turon\" jamoat birlashmasi va nashriyot ishida qatnashgan",
+        "Publitsist sifatida jadid matbuotida faol bo'lgan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["She'riyat", "Publitsistika", "Ma'rifatparvarlik"],
+      "quotes": [
+        {
+          "text": "Yordam etmak kuni yetdi siza, Turon ahli…",
+          "translation": null,
+          "source": "Tavallo she'ri (\"Ravnaq ul-Islom\", 1916)",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "Yagona she'riy to'plami \"Ravnaq ul-Islom\"ning bitta nusxasigina saqlanib qolgan va u faqat 1993-yilda professor Begali Qosimov tomonidan qayta nashr etilgan. Germaniyadagi Bamberg universitetida 1997–1998 yillarda bu to'plam bo'yicha maxsus kurs o'qilgan.",
+      "additionalQuizFacts": [
+        "Taxallusni unga sayramlik ustozi shoir Yusuf Saryomiy bergan.",
+        "Tatar shoiri Abdulla To'qay vafotiga (1913) atab she'r yozgan.",
+        "Adib Oybek o'zining \"Bolalik\" qissasida Tavallo ijodiga hurmat izhor qilgan.",
+        "\"Beklarbegi\" madrasasida o'qigan (Muqimiy va Furqat ham shu madrasada bo'lgan)."
+      ],
+      "caveats": [
+        "Tug'ilgan yili manbalarda 1882 yoki 1883 deb beriladi.",
+        "To'plam nomi \"Ravnaq ul-Islom\" / \"Ravnaq-ul islom\" shaklida yoziladi; chiqqan yili 1916."
+      ]
+    },
+    {
+      "slug": "hoji-muin",
+      "displayName": "Hoji Muin",
+      "fullName": "Hoji Muin Shukrulla o'g'li (taxalluslari — Mehriy, Nahif)",
+      "born": "1883-yil 19-mart, Samarqand",
+      "died": "1942-yil — qatag'on/surgun davrida vafot etgan",
+      "majorWorks": [
+        "\"Eski maktab — yangi maktab\" — drama",
+        "\"To'y\" — drama",
+        "\"Mazluma xotin\" — drama",
+        "\"Ko'knori\" — drama",
+        "\"Rahnamoi savod\" (1908, fors tilida) va \"O'qituvchi\" (alifbo, Ismatulla Rahmatullazoda bilan) — darsliklar"
+      ],
+      "keyAchievements": [
+        "Samarqand jadidchilik harakatining faol vakili — dramaturg, pedagog, publitsist",
+        "1903-yilda mahallasida usuli jadid maktabini, 1914-yilda \"Tarbiyat\" nomli xususiy ta'lim dargohini ochgan",
+        "Mahmudxo'ja Behbudiyning \"Samarqand\" gazetasi va \"Oyina\" jurnalida, Fitratning \"Hurriyat\" gazetasida faoliyat yuritgan",
+        "1918-yildan \"Mehnatkashlar tovushi\" gazetasiga rahbarlik qilgan",
+        "She'rlarini \"Guldastai adabiyot\" to'plamida jamlagan"
+      ],
+      "eraDynasty": "Rossiya imperiyasi (Turkiston) → Sovet davri (qatag'on)",
+      "fields": ["Dramaturgiya", "Pedagogika", "Publitsistika (jurnalistika)", "She'riyat"],
+      "quotes": [
+        {
+          "text": "\"Eski maktab — yangi maktab\" dramasida Hoji Muin eski usul maktablarining kamchiliklarini va yangi usul (jadid) maktabining afzalliklarini qiyoslab ko'rsatadi.",
+          "translation": null,
+          "source": "\"Eski maktab — yangi maktab\" dramasi",
+          "originalLanguage": "O'zbek (eski o'zbek tili)"
+        }
+      ],
+      "surprisingFact": "\"Mehriy\" va \"Nahif\" degan ikki taxallus bilan ijod qilgan; Behbudiyning \"Padarkush\" dramasidan ilhomlanib yaratilgan 20 ga yaqin jadid dramalaridan bir nechtasi (\"To'y\", \"Eski maktab — yangi maktab\" va b.) aynan Hoji Muin qalamiga mansub.",
+      "additionalQuizFacts": [
+        "Turkiyada bitilgan bolalar she'rlarini forschaga tarjima qilgan.",
+        "Behbudiy haqida xotira-maqolalar yozgan zamondoshlardan biri.",
+        "Dastlab eski maktabda, so'ng madrasada o'qib, muallimlik qilgan."
+      ],
+      "caveats": [
+        "Vafot yili manbalarda asosan 1942 deb beriladi (qatag'on/surgun davri); aniq joyi ba'zan ko'rsatilmaydi — quizda 'taxminan 1942, qatag'on davri' deb bering.",
+        "Familiyasi \"Shukrullaev\" / \"Shukrulla o'g'li\" shaklida yoziladi.",
+        "Drama nomi \"Eski maktab — yangi maktab\" / \"Yangi va eski maktab\" tartibida uchraydi — bir asar."
+      ]
+    }
+  ]
+}

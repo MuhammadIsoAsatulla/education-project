@@ -11,6 +11,7 @@ import AchievementBadge from '../components/profil/AchievementBadge.jsx';
 import Avatar from '../components/profil/Avatar.jsx';
 import AvatarPicker from '../components/profil/AvatarPicker.jsx';
 import LevelBadge, { getLevelConfig } from '../components/profil/LevelBadge.jsx';
+import { quizSessionSize } from '../components/common/Quiz.jsx';
 import FavoritesGallery from '../components/profil/FavoritesGallery.jsx';
 import MuhrBalance from '../components/profil/MuhrBalance.jsx';
 import StatOverview from '../components/profil/StatOverview.jsx';
@@ -68,7 +69,7 @@ function getQuizScore(state, ownerId) {
 function countPerfectQuizzes(state) {
   return viktorinalar.reduce((sum, q) => {
     const { score } = getQuizScore(state, q.ownerId);
-    return score === q.questions.length ? sum + 1 : sum;
+    return score === quizSessionSize(q.questions.length) ? sum + 1 : sum;
   }, 0);
 }
 
@@ -541,8 +542,9 @@ export default function ProfilPage() {
             const owner = OWNER_LOOKUP[q.ownerType]?.(q.ownerId);
             if (!owner) return null;
             const { score } = getQuizScore(state, q.ownerId);
+            const sessionTotal = quizSessionSize(q.questions.length);
             const done = score > 0;
-            const perfect = score === q.questions.length;
+            const perfect = score === sessionTotal;
             const path = `/${q.ownerType}/${owner.slug}`;
             const name = OWNER_NAME[q.ownerType](owner);
             return (
@@ -567,7 +569,7 @@ export default function ProfilPage() {
                       <>
                         {' • '}
                         <span className={perfect ? 'text-gold' : 'text-cream-soft'}>
-                          {score}/{q.questions.length}
+                          {score}/{sessionTotal}
                         </span>
                         {perfect && ' ✦'}
                       </>
