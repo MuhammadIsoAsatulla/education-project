@@ -34,10 +34,14 @@ export default function RegistanSilhouette({ className = '' }) {
         }}
       />
 
-      {/* The mosque image. Mobile zooms in (190% width, centered) so the
-          central dome reads as prominent architecture rather than a
-          decorative strip. Desktop keeps the original 100 % full-bleed. */}
-      <div className="relative" style={{ zIndex: 1 }}>
+      {/* The mosque image. Mobile + iPad zooms in (190%–360% width,
+          centered) so the central dome reads as prominent architecture
+          rather than a decorative strip. Desktop keeps the original
+          100% full-bleed. Direct parent has `overflow-hidden` too, so
+          the scaled-up image can never escape sideways (defense in
+          depth — body and #root also clip, but doing it on the closest
+          ancestor avoids iOS Safari edge cases). */}
+      <div className="relative overflow-hidden" style={{ zIndex: 1 }}>
         <img
           src="/mosque-crop.png?v=3"
           alt=""
@@ -73,28 +77,31 @@ export default function RegistanSilhouette({ className = '' }) {
           opacity: 0.95;
           mix-blend-mode: screen;
         }
-        /* Tablet portrait (iPad: 640–1023 px). Aggressive zoom (~360 %)
-           so the central dome + flanking minarets dominate the lower
-           half of the tall viewport. Side architecture crops out — fine,
-           the user explicitly approved cropping from left/right to gain
-           more visual weight. */
+        /* Tablet + iPad-Pro-portrait (640–1279 px). Modest zoom (~230 %)
+           — dome anchors the bottom half without overwhelming the
+           composition. Title cluster + CTA breathe above it. */
         @media (min-width: 640px) {
           .mosque-img {
-            width: 360%;
-            margin-left: -130%;
+            width: 230%;
+            margin-left: -65%;
             transform: translateY(0);
-            opacity: 0.95;
+            opacity: 0.94;
           }
         }
-        /* Desktop (≥1024 px): original full-bleed composition exactly as
-           before. PC monitors are landscape so the panoramic image fits
-           naturally without zooming. */
-        @media (min-width: 1024px) {
+        /* PC desktop (≥1280 px): original full-bleed composition exactly
+           as before. Standard PC monitors are wide-landscape so the
+           panoramic image fits naturally without zooming. */
+        @media (min-width: 1280px) {
           .mosque-img {
             width: 100%;
             margin-left: 0;
             transform: translateY(4vh);
             opacity: 0.92;
+          }
+        }
+        @media (min-width: 1280px) and (max-height: 820px) {
+          .mosque-img {
+            transform: translateY(2vh);
           }
         }
       `}</style>

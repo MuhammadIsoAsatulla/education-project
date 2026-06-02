@@ -72,7 +72,7 @@ function ColumnHeading({ children }) {
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/[0.06] px-4 sm:px-6 md:px-12 pt-16 sm:pt-20 pb-8 text-center">
+    <footer className="relative border-t border-white/[0.06] px-4 sm:px-6 xl:px-12 pt-16 sm:pt-20 pb-8 text-center">
       {/* Quote */}
       <span aria-hidden="true" className="block mx-auto w-12 h-px bg-gold/40 mb-6" />
       <p

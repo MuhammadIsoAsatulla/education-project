@@ -12,6 +12,11 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    /* Defensive: iOS Safari occasionally ignores body's overflow-x
+       when a child is wider than the viewport. Clipping on <html> too
+       guarantees the page can never scroll sideways. */
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
@@ -20,6 +25,8 @@
     background: var(--bg-deep);
     color: var(--cream);
     overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,6 +37,15 @@
   /* Larger tap targets and removed iOS tap flash */
   button, a {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  /* React root — same defensive horizontal clipping. Some absolute /
+     scaled children (like the zoomed mosque image at 230 %) can
+     trigger horizontal scroll on iOS even when body has overflow-x;
+     #root provides another clip boundary closer to the rendered tree. */
+  #root {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   /* Make sure inputs use 16px on mobile to prevent iOS zoom */

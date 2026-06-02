@@ -177,22 +177,6 @@ export default function BookCover({
         />
       </motion.a>
 
-      {/* Persistent caption below the book — small museum-placard with title
-          + author. Lives in normal flow so it claims its own vertical space
-          and never overlaps the next shelf. Visible at rest so users can
-          identify each book on the shelf without hovering. */}
-      <div
-        className="text-center select-none pointer-events-none px-1"
-        style={{ marginTop: 14, minHeight: 32 }}
-      >
-        <p className="font-serif text-cream/85 text-[11px] leading-tight line-clamp-2">
-          {book.title}
-        </p>
-        <p className="text-cream-soft/45 text-[9.5px] mt-0.5 tracking-[1.5px] uppercase truncate">
-          {book.author}
-        </p>
-      </div>
-
       {/* Floating glass info card (hover / focus). Lives inside the wrapper so
           moving the pointer onto it does not trigger mouseleave. */}
       <AnimatePresence>

@@ -91,7 +91,7 @@ export default function Hero() {
           (sm:pt-[22vh]) so it doesn't leave a dead band above the dome
           on tall iPad screens; PC keeps the original pt-[13vh]
           composition. */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-[12vh] sm:pt-[22vh] lg:pt-[13vh]">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-[12vh] sm:pt-[14vh] xl:pt-[13vh]">
         {/* Eyebrow — tighter tracking + smaller text on phone so the 26-char
             string fits inside 320–412 px viewports without truncating. */}
         <div
@@ -148,7 +148,7 @@ export default function Hero() {
                 designed (button sits under the tagline on PC). */}
         <a
           href="#bolimlar"
-          className="hero-cta opacity-0 animate-fade-in-up min-h-[48px] mt-[30vh] sm:mt-[20vh] lg:mt-10"
+          className="hero-cta opacity-0 animate-fade-in-up min-h-[48px] mt-[30vh] sm:mt-[30vh] xl:mt-10"
           style={{ animationDelay: '1.5s', minHeight: '48px' }}
         >
           <span>Sayohatni Boshlash</span>
@@ -159,7 +159,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-8 left-1/2 z-20 flex flex-col items-center opacity-0"
+        className="absolute bottom-4 sm:bottom-6 xl:bottom-8 left-1/2 z-20 flex flex-col items-center opacity-0"
         style={{
           transform: 'translateX(-50%)',
           animation: 'fadeIn 1s ease 2.5s forwards',
@@ -277,26 +277,26 @@ export default function Hero() {
         @media (min-width: 640px) {
           .hero-title-letters { letter-spacing: 16px; }
         }
-        /* Tablet portrait (640–1023 px): bump the MEROS title MUCH bigger
-           than the inline style provides — and tighten letter-spacing so
-           the 5-letter word doesn't crash the right edge on 768 px iPad.
-           Tagline gets its own bump too. Mobile (<640) and PC (≥1024)
-           keep the inline clamps unchanged. */
-        @media (min-width: 640px) and (max-width: 1023px) {
+        /* Tablet + iPad-Pro-portrait (640–1279 px). Title cluster a touch
+           larger (sits closer to the top), CTA is the obvious primary
+           action — chunky, gold-outlined, lands lower over the dome. */
+        @media (min-width: 640px) and (max-width: 1279px) {
           .hero-meros {
-            font-size: clamp(180px, 24vw, 280px) !important;
+            font-size: clamp(160px, 22vw, 260px) !important;
           }
           /* Reduce letter-spacing on tablet so the bigger letters fit. */
           .hero-title-letters {
             letter-spacing: 8px;
           }
-          /* Tagline + button cluster scales up too. */
           .hero-tagline {
-            font-size: clamp(22px, 3.2vw, 30px) !important;
+            font-size: clamp(22px, 3vw, 30px) !important;
           }
+          /* CTA — large, readable, presence. */
           .hero-cta {
-            padding: 18px 44px !important;
-            font-size: 14px !important;
+            padding: 26px 72px !important;
+            font-size: 18px !important;
+            letter-spacing: 4px !important;
+            border-width: 1.5px !important;
           }
         }
         @keyframes chevronFade {
@@ -308,6 +308,18 @@ export default function Hero() {
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }
+        }
+        /* Short-viewport (smart displays, landscape phones, low-height laptops): */
+        /* compress the CTA margin so the button stays inside the visible viewport */
+        @media (max-height: 720px) {
+          .hero-cta {
+            margin-top: 60px !important;
+          }
+        }
+        @media (max-height: 620px) {
+          .hero-cta {
+            margin-top: 32px !important;
+          }
         }
       `}</style>
     </section>

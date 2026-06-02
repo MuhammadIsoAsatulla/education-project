@@ -48,8 +48,10 @@ export default function Bookshelf({ books, onFeature, compact = false }) {
 
   return (
     <div className="relative">
-      {/* Mobile: horizontal scroll shelf (native swipe). Desktop: centered row. */}
-      <div className="no-scrollbar overflow-x-auto md:overflow-visible -mx-4 px-4 md:mx-0 md:px-0 pb-1">
+      {/* Mobile + tablet: horizontal scroll shelf (native swipe) so any
+          overflow becomes a swipe gesture instead of a clipped book.
+          Desktop (xl+): centered row, no scroll needed. */}
+      <div className="no-scrollbar overflow-x-auto xl:overflow-visible -mx-4 px-4 xl:mx-0 xl:px-0 pb-1">
         <div className="relative mx-auto" style={{ maxWidth: 1240, minWidth: 'min-content' }}>
           <ul
             className="flex items-end justify-start md:justify-center list-none m-0 p-0 pt-16 sm:pt-24 md:pt-32 px-4 sm:px-10"
@@ -59,7 +61,8 @@ export default function Bookshelf({ books, onFeature, compact = false }) {
               const base = SIZES[i % SIZES.length];
               const sz = compact
                 ? (() => {
-                    const scale = Math.min(1, 130 / base.w);
+                    const targetWidth = typeof window !== "undefined" && window.innerWidth < 360 ? 100 : 130;
+                    const scale = Math.min(1, targetWidth / base.w);
                     return { w: Math.round(base.w * scale), h: Math.round(base.h * scale) };
                   })()
                 : base;

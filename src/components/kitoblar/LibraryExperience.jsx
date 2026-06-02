@@ -12,13 +12,18 @@ const DUST = Array.from({ length: 14 }, (_, i) => ({
   delay: (i % 7) * 1.4,
 }));
 
-// Books-per-shelf scales with viewport. The shelf overlaps each book ~22%
+// Books-per-shelf scales with viewport. The shelf overlaps each book ~22 %
 // over its neighbour, so 7 books at 174 px wide collapse to ~960 px — fits
-// the 1240 px container with breathing room. On phones, 3 keeps every
-// title readable; on tablets, 5 stays generous.
+// the 1240 px container with breathing room.
+//
+// Phones (<640): 3 books — every title readable.
+// iPad portrait (640–1023): 4 books — fits 768 px iPad without overflow.
+// iPad Pro portrait / small laptop (1024–1279): 5 books — fits 1024 px.
+// Desktop (≥1280): 7 books — full shelf at large viewports.
 function pickPerShelf(width) {
   if (width < 640) return 3;
-  if (width < 1024) return 5;
+  if (width < 1024) return 4;
+  if (width < 1280) return 5;
   return 7;
 }
 

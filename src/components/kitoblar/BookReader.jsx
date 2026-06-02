@@ -292,7 +292,7 @@ export default function BookReader({ book, initialPage = 1, onClose }) {
             <h2 className="font-serif text-cream text-base sm:text-lg leading-tight truncate">
               {book.title}
             </h2>
-            <p className="text-cream-soft/70 text-[10px] sm:text-[11px] tracking-[1px] truncate">
+            <p className="text-cream-soft/70 text-xs sm:text-sm md:text-base tracking-[1px] truncate">
               {book.author}
               {totalPages > 0 && ` · ${currentPage} / ${totalPages} · ${percent}%`}
             </p>

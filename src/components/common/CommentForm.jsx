@@ -50,7 +50,7 @@ export default function CommentForm({ contentKey, onSubmitted, onCancel }) {
         rows={4}
         maxLength={500}
         placeholder="Fikr-mulohazangizni yozing..."
-        className="w-full bg-bg-deep/50 border border-gold/20 rounded-sm p-3 text-cream font-serif text-base sm:text-sm outline-none focus:border-gold/60 transition resize-none placeholder:text-cream-soft/40"
+        className="w-full bg-bg-deep/50 border border-gold/20 rounded-sm p-3 text-cream font-serif text-base sm:text-base md:text-lg outline-none focus:border-gold/60 transition resize-none placeholder:text-cream-soft/40"
       />
 
       <div className="flex items-center justify-between mt-3">
@@ -62,7 +62,7 @@ export default function CommentForm({ contentKey, onSubmitted, onCancel }) {
             <button
               type="button"
               onClick={onCancel}
-              className="text-cream-soft/60 hover:text-gold text-xs tracking-[2px] uppercase transition"
+              className="text-cream-soft/60 hover:text-gold text-xs tracking-[2px] uppercase transition min-h-9 min-w-9 flex items-center justify-center"
             >
               Bekor qilish
             </button>

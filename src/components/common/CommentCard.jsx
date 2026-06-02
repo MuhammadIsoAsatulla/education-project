@@ -41,7 +41,7 @@ export default function CommentCard({ comment, contentKey, preview = false }) {
               </span>
             ) : null}
           </div>
-          <span className="text-cream-soft/40 text-[10px] tracking-[1px] uppercase flex-shrink-0">
+          <span className="text-cream-soft/40 text-[11px] sm:text-xs tracking-[1px] uppercase flex-shrink-0">
             {relativeTime(comment.createdAt)}
           </span>
         </div>

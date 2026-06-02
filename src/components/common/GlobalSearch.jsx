@@ -121,7 +121,7 @@ export default function GlobalSearch({ open, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-start justify-center px-2 sm:px-4 py-4 sm:py-10 md:py-20"
+      className="fixed inset-0 z-[200] flex items-start justify-center px-2 sm:px-4 py-4 sm:py-10 xl:py-20"
       role="dialog"
       aria-modal="true"
       aria-label="Umumiy qidiruv"

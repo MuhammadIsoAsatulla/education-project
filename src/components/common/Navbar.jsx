@@ -340,7 +340,7 @@ export default function Navbar() {
           MEROS
         </Link>
 
-        <div className="hidden lg:flex items-center gap-4 lg:gap-6">
+        <div className="hidden xl:flex items-center gap-4 xl:gap-6">
           <ul className="flex gap-5 lg:gap-7 list-none m-0 p-0">
             {LINKS.map((l) => (
               <li key={l.to}>
@@ -381,15 +381,16 @@ export default function Navbar() {
           <AuthBadge />
         </div>
 
-        {/* Mobile + tablet portrait right-side controls: search + burger.
-            Desktop nav with all 7 sections only renders at ≥1024 (lg:);
-            on 640–1023 px (iPad portrait) the section links would crash
-            into the MEROS brand, so we use the hamburger drawer instead. */}
-        <div className="lg:hidden flex items-center gap-2">
+        {/* Mobile + iPad-Pro-portrait right-side controls: search + burger.
+            Desktop nav with all 7 sections only renders at ≥1280 (xl:);
+            on 640–1279 px (covers every iPad up to Pro 12.9" portrait)
+            the section links would either crash into the MEROS brand or
+            leave no room for QIDIRISH/KIRISH, so we use the hamburger. */}
+        <div className="xl:hidden flex items-center gap-1.5 sm:gap-3">
           <button
             onClick={() => setSearchOpen(true)}
             aria-label="Qidirish"
-            className="w-11 h-11 md:w-10 md:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+            className="w-11 h-11 xl:w-10 xl:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
               <circle cx="11" cy="11" r="7" />
@@ -397,7 +398,7 @@ export default function Navbar() {
             </svg>
           </button>
           <button
-            className="relative w-11 h-11 md:w-10 md:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+            className="relative w-11 h-11 xl:w-10 xl:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? 'Yopish' : 'Menyu'}
             aria-expanded={open}
@@ -436,9 +437,9 @@ export default function Navbar() {
         `}</style>
       </nav>
 
-      {/* Full-screen mobile + tablet-portrait menu overlay */}
+      {/* Full-screen mobile + iPad-portrait menu overlay */}
       <div
-        className={`lg:hidden fixed inset-0 z-[150] transition-all duration-500 ${
+        className={`xl:hidden fixed inset-0 z-[150] transition-all duration-500 ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         aria-hidden={!open}

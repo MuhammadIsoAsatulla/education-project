@@ -73,7 +73,7 @@ export default function KitobDetailPage() {
           </Link>
 
           {/* Open book layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-8 lg:gap-12 items-stretch perspective">
+          <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.2fr] lg:grid-cols-[1fr_1.4fr] gap-6 sm:gap-8 lg:gap-12 items-stretch perspective">
             {/* Left page (cover) */}
             <div
               className={`relative origin-right transition-transform duration-700 ease-out ${

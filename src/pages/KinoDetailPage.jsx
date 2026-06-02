@@ -64,7 +64,7 @@ export default function KinoDetailPage() {
         className="relative pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 overflow-hidden"
         style={{ background: `radial-gradient(ellipse at 30% 20%, ${movie.accent}1a, transparent 60%)` }}
       >
-        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
+        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 sm:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
           {/* Poster — single hairline, layered shadow */}
           <div className="reveal max-w-[200px] sm:max-w-[240px] lg:max-w-[320px] mx-auto lg:mx-0 w-full">
             <div

@@ -69,7 +69,7 @@ export default function MoviePoster({ movie, index = 0, featured = false }) {
 
         {/* Favorite button top-left (so it doesn't collide with rating badge) */}
         <div className="absolute top-3 left-5 z-20">
-          <FavoriteButton section="kinolar" itemId={movie.id} size="sm" />
+          <FavoriteButton section="kinolar" itemId={movie.id} size="md" />
         </div>
       </article>
     </Link>

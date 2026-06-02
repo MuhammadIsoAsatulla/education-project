@@ -85,7 +85,7 @@ export default function SearchBar({
             type="button"
             onClick={() => onChange('')}
             aria-label="Tozalash"
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-cream-soft/60 hover:text-gold hover:bg-gold/10 transition-all"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-cream-soft/60 hover:text-gold hover:bg-gold/10 transition-all"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-4 h-4">
               <path d="M18 6 6 18M6 6l12 12" />

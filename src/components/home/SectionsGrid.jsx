@@ -198,7 +198,7 @@ function SectionCard({ section }) {
               'radial-gradient(70% 60% at 0% 50%, rgba(212,165,116,0.12), transparent 70%)',
           }}
         />
-        <div className="relative z-10 flex flex-col sm:flex-row sm:items-center gap-5 p-5 sm:gap-7 sm:p-7 md:p-10 min-h-[180px] sm:min-h-[220px]">
+        <div className="relative z-10 flex flex-col sm:flex-row sm:items-center gap-5 p-5 sm:gap-6 sm:p-6 md:p-10 min-h-[180px] sm:min-h-[220px]">
           <div
             className="w-14 h-14 md:w-16 md:h-16 text-gold/85 flex-shrink-0 transition-transform duration-500 group-hover:scale-105"
             aria-hidden="true"

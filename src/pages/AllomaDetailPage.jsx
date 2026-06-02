@@ -77,7 +77,7 @@ export default function AllomaDetailPage({
           background: `radial-gradient(ellipse at 70% 20%, ${alloma.accent}1a 0%, transparent 60%)`,
         }}
       >
-        <div className="relative max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-14 items-center">
+        <div className="relative max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-[280px_1fr] lg:grid-cols-[1fr_1.5fr] gap-6 sm:gap-8 lg:gap-14 items-center">
           {/* Portrait — single hairline border, layered shadow, rounded-2xl. */}
           <div
             className="relative aspect-[3/4] w-full max-w-[75vw] sm:max-w-[340px] lg:max-w-[380px] mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-white/[0.06]"
@@ -317,7 +317,7 @@ export default function AllomaDetailPage({
       <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 border-t border-white/[0.05]">
         <div className="max-w-[1200px] mx-auto">
           <SectionHeading title={siblingsLabel} className="mb-10" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
             {source
               .filter((a) => a.slug !== alloma.slug)
               .map((a) => (

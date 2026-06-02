@@ -53,7 +53,7 @@ export default function KinolarPage() {
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-3 sm:px-5 py-2.5 sm:py-2 rounded-full text-xs sm:text-xs tracking-[2px] uppercase transition-all ${
+              className={`px-3 sm:px-5 py-2.5 sm:py-3 rounded-full text-xs sm:text-xs tracking-[2px] uppercase transition-all ${
                 filter === f
                   ? 'bg-gold text-bg-deep border border-gold shadow-[0_0_20px_rgba(212,165,116,0.3)]'
                   : 'bg-bg-deep/60 backdrop-blur border border-gold/30 text-cream-soft hover:text-gold hover:border-gold/70'

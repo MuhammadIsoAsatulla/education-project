@@ -317,11 +317,11 @@ export default function KaraokeView({ song, onClose, onListened }) {
             <SmartImage src={song.image} alt={song.title} initial={song.initial} accent={song.accent} />
           </div>
           <div className="min-w-0 flex-1">
-            <div className="eyebrow text-[10px] sm:text-xs mb-0.5 sm:mb-1">
+            <div className="eyebrow text-xs sm:text-sm mb-0.5 sm:mb-1">
               — {status === STATUS.KARAOKE ? 'KARAOKE' : status === STATUS.AUDIO_ONLY ? 'TINGLASH' : 'TAFSILOT'} —
             </div>
             <h2 className="font-serif text-cream text-base sm:text-2xl md:text-3xl leading-tight truncate">{song.title}</h2>
-            <p className="text-cream-soft/70 text-[11px] sm:text-sm truncate">{song.artist} · {song.genre}</p>
+            <p className="text-cream-soft/70 text-sm sm:text-base md:text-lg truncate">{song.artist} · {song.genre}</p>
           </div>
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">

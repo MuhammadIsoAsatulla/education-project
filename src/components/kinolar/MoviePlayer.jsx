@@ -215,7 +215,7 @@ export default function MoviePlayer({
           (watchedFraction > 0). Disappears once threshold is hit so it
           doesn't compete with the video. */}
       {watchedFraction > 0 && (
-        <div className="pointer-events-none absolute top-2 right-2 z-10 flex items-center gap-2 px-2.5 py-1 rounded-full bg-bg-deep/80 border border-gold/40 text-[10px] tracking-[2px] uppercase backdrop-blur">
+        <div className="pointer-events-none absolute top-2 right-2 z-10 flex items-center gap-2 px-2.5 py-1 rounded-full bg-bg-deep/80 border border-gold/40 text-[11px] sm:text-xs tracking-[2px] uppercase backdrop-blur">
           {isWatched ? (
             <>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-3 h-3 text-gold">

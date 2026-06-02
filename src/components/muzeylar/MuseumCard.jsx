@@ -19,7 +19,7 @@ export default function MuseumCard({ muzey, index = 0 }) {
       data-reveal-delay={index * 100}
     >
       <article
-        className="relative h-[420px] overflow-hidden rounded-2xl border border-white/[0.06] hover:border-gold/30 transition-all duration-700"
+        className="relative h-[420px] sm:h-[480px] xl:h-[420px] overflow-hidden rounded-2xl border border-white/[0.06] hover:border-gold/30 transition-all duration-700"
         style={{
           boxShadow:
             '0 24px 48px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',

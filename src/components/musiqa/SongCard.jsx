@@ -59,7 +59,7 @@ export default function SongCard({ song, onOpen, index = 0 }) {
             onClick={(e) => e.stopPropagation()}
             onKeyDown={(e) => e.stopPropagation()}
           >
-            <FavoriteButton section="musiqa" itemId={song.id} size="sm" />
+            <FavoriteButton section="musiqa" itemId={song.id} size="md" />
           </div>
         </div>
 

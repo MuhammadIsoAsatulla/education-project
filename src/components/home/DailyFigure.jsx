@@ -42,7 +42,7 @@ export default function DailyFigure() {
       <div className="relative max-w-[1100px] mx-auto grid lg:grid-cols-[380px_1fr] gap-10 lg:gap-16 items-center">
         {/* Portrait */}
         <div
-          className="reveal aspect-[3/4] max-h-[460px] mx-auto lg:mx-0 max-w-[280px] sm:max-w-[340px] lg:max-w-none relative overflow-hidden rounded-2xl border border-white/[0.06]"
+          className="daily-figure-portrait reveal aspect-[3/4] sm:max-h-[460px] mx-auto lg:mx-0 max-w-[280px] sm:max-w-[340px] lg:max-w-none relative overflow-hidden rounded-2xl border border-white/[0.06]"
           style={{
             boxShadow:
               '0 32px 64px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
