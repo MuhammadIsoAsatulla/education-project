@@ -24,7 +24,7 @@ export default function DailyWord() {
       <div className="relative">
         <div className="eyebrow text-[10px] mb-3">— BUGUNGI SO'Z —</div>
         <h3
-          className="font-serif text-gold-gradient text-3xl sm:text-4xl mb-3 tracking-wide"
+          className="font-serif text-gold-gradient text-2xl sm:text-3xl md:text-4xl mb-3 tracking-wide"
           style={{ fontFamily: 'var(--font-amiri, "Amiri", serif)' }}
         >
           {word.word}

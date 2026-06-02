@@ -33,7 +33,7 @@ export default function CommentForm({ contentKey, onSubmitted, onCancel }) {
               onClick={() => setRating(n)}
               onMouseEnter={() => setHover(n)}
               onMouseLeave={() => setHover(0)}
-              className="px-0.5 text-2xl leading-none transition-transform hover:scale-110"
+              className="px-0.5 text-2xl leading-none transition-transform hover:scale-110 min-h-9 min-w-9 flex items-center justify-center"
               aria-label={`${n} yulduz`}
             >
               <span className={(hover || rating) >= n ? 'text-gold' : 'text-gold/20'}>
@@ -50,7 +50,7 @@ export default function CommentForm({ contentKey, onSubmitted, onCancel }) {
         rows={4}
         maxLength={500}
         placeholder="Fikr-mulohazangizni yozing..."
-        className="w-full bg-bg-deep/50 border border-gold/20 rounded-sm p-3 text-cream font-serif text-sm outline-none focus:border-gold/60 transition resize-none placeholder:text-cream-soft/40"
+        className="w-full bg-bg-deep/50 border border-gold/20 rounded-sm p-3 text-cream font-serif text-base sm:text-sm outline-none focus:border-gold/60 transition resize-none placeholder:text-cream-soft/40"
       />
 
       <div className="flex items-center justify-between mt-3">

@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import kitoblar from '../data/kitoblar.json';
 import viktorinalar from '../data/viktorinalar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
 import ReadingCTA from '../components/kitoblar/ReadingCTA.jsx';
 import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
@@ -61,20 +61,19 @@ export default function KitobDetailPage() {
   return (
     <article className="relative">
       <header
-        className="relative pt-24 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 md:px-12 overflow-hidden"
-        style={{ background: `radial-gradient(ellipse at 50% 10%, ${book.accent}33, var(--bg-deep) 60%)` }}
+        className="relative pt-24 sm:pt-28 pb-8 sm:pb-12 px-4 sm:px-6 md:px-12 overflow-hidden"
+        style={{ background: `radial-gradient(ellipse at 50% 10%, ${book.accent}1a, transparent 60%)` }}
       >
-        <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
         <div className="relative max-w-[1300px] mx-auto">
-          <Link to="/kitoblar" className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6 sm:mb-8">
-            <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
+          <Link to="/kitoblar" className="inline-flex items-center gap-2 text-cream-soft/55 hover:text-gold text-[11px] tracking-[2.5px] uppercase mb-6 sm:mb-8 transition-colors">
+            <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-3 rotate-180">
               <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
             </svg>
             Kitoblar
           </Link>
 
           {/* Open book layout */}
-          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-8 lg:gap-12 items-stretch perspective">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-8 lg:gap-12 items-stretch perspective">
             {/* Left page (cover) */}
             <div
               className={`relative origin-right transition-transform duration-700 ease-out ${
@@ -82,24 +81,37 @@ export default function KitobDetailPage() {
               }`}
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <div className="relative aspect-[3/4.2] rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+              <div
+                className="relative aspect-[3/4.2] rounded-2xl overflow-hidden border border-white/[0.06]"
+                style={{
+                  boxShadow:
+                    '0 32px 64px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+                }}
+              >
                 <SmartImage
                   src={book.cover}
                   alt={book.title}
                   initial={book.initial}
                   accent={book.accent}
                 />
-                {/* Cover frame overlay (only visible if image is present, but harmless on fallback too) */}
-                <span className="absolute inset-3 border border-gold/40 pointer-events-none" />
-                <span className="absolute inset-6 border border-gold/20 pointer-events-none" />
-                {/* Bottom title strip */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg-deep via-bg-deep/85 to-transparent">
+                {/* Bottom title strip — single gradient, no double border */}
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-0 bottom-0 h-[35%] pointer-events-none"
+                  style={{
+                    background:
+                      'linear-gradient(0deg, rgba(8,18,30,0.92) 0%, rgba(8,18,30,0.45) 50%, transparent 100%)',
+                  }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="text-center">
-                    <h1 className="font-serif text-cream text-2xl md:text-3xl tracking-wide mb-2 leading-tight">
+                    <h1 className="font-serif text-cream text-xl md:text-2xl mb-2 leading-tight">
                       {book.title}
                     </h1>
-                    <div className="w-12 h-px bg-gold mx-auto mb-2" />
-                    <p className="font-amiri text-gold tracking-[2px] text-xs">— {book.author} —</p>
+                    <div className="w-10 h-px bg-gold/50 mx-auto mb-2" />
+                    <p className="text-gold/85 tracking-[2.5px] text-[10px] uppercase font-medium">
+                      {book.author}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -121,9 +133,9 @@ export default function KitobDetailPage() {
               </div>
 
               <div className="p-6 sm:p-8 md:p-12">
-                <div className="text-bg-deep/50 text-xs tracking-[3px] uppercase mb-2 font-sans">— {book.genre} —</div>
-                <h2 className="font-serif text-bg-deep text-3xl md:text-4xl mb-4">{book.title}</h2>
-                <p className="font-serif italic text-bg-deep/70 mb-6 text-lg">— {book.author}, {book.year} —</p>
+                <div className="text-bg-deep/55 text-[10px] tracking-[4px] uppercase mb-2 font-sans font-medium">{book.genre}</div>
+                <h2 className="font-serif text-bg-deep text-3xl md:text-4xl mb-3">{book.title}</h2>
+                <p className="text-bg-deep/65 mb-6 text-base">{book.author} · {book.year}</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 text-sm mb-6 pb-6 border-b border-bg-deep/20">
                   <div>
                     <div className="text-bg-deep/40 text-[10px] tracking-[2px] uppercase mb-1">Sahifa</div>
@@ -168,11 +180,7 @@ export default function KitobDetailPage() {
       {/* Excerpt reader */}
       {book.excerpts?.length > 0 && currentExcerpt && (
         <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— ASAR PARCHALARI —</div>
-            <h2 className="section-title">O'qib Ko'ring</h2>
-          </div>
+          <SectionHeading eyebrow="Asar Parchalari" title="O'qib Ko'ring" className="mb-10" />
 
           <div className="bg-cream/95 text-bg-deep rounded-sm border border-gold/20 shadow-2xl overflow-hidden">
             <div className="p-6 sm:p-8 md:p-12 relative">
@@ -231,14 +239,12 @@ export default function KitobDetailPage() {
       {/* NEW: Quiz */}
       {quiz && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
-            <h2 className="section-title">Viktorina</h2>
-            <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Bilimlarni Sinash"
+            title="Viktorina"
+            description={`${quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.`}
+            className="mb-10"
+          />
 
           {quizOpen ? (
             <Quiz
@@ -250,17 +256,25 @@ export default function KitobDetailPage() {
           ) : (
             <div className="text-center">
               {previousQuizScore !== undefined ? (
-                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
-                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
-                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                <div
+                  className="inline-block px-8 py-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] mb-6"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
+                >
+                  <p className="text-gold/75 text-[10px] tracking-[4px] uppercase font-medium mb-2">
+                    Eng Yaxshi Natija
+                  </p>
+                  <div className="font-serif text-cream text-4xl sm:text-5xl mb-1">
                     {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
-                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                    <p className="text-gold/80 text-sm">Mukammal ★</p>
                   )}
                 </div>
               ) : (
-                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                <p className="text-cream-soft/65 text-base mb-6">
                   Hozirgacha bu viktorinani topshirmaganmisiz.
                 </p>
               )}
@@ -276,22 +290,26 @@ export default function KitobDetailPage() {
       <Comments contentType="kitoblar" contentId={book.id} contentTitle={book.title} />
 
       {/* Other books */}
-      <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
+      <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 border-t border-white/[0.05]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="eyebrow mb-6 text-center">— BOSHQA KITOBLAR —</div>
+          <SectionHeading title="Boshqa Kitoblar" className="mb-10" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {kitoblar.filter((b) => b.slug !== book.slug).slice(0, 5).map((b) => (
               <Link
                 key={b.id}
                 to={`/kitoblar/${b.slug}`}
-                className="group block rounded-sm border border-gold/20 hover:border-gold/70 overflow-hidden transition"
+                className="group block rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1"
+                style={{
+                  boxShadow:
+                    '0 12px 24px -10px rgba(0,0,0,0.4), 0 3px 8px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)',
+                }}
               >
                 <div className="aspect-[3/4]">
                   <SmartImage src={b.cover} alt={b.title} initial={b.initial} accent={b.accent} />
                 </div>
                 <div className="p-3 text-center">
                   <div className="font-serif text-cream text-sm leading-tight">{b.title}</div>
-                  <div className="text-gold/60 text-[10px] tracking-[2px] mt-1">{b.author}</div>
+                  <div className="text-cream-soft/50 text-[10px] tracking-[2px] mt-1">{b.author}</div>
                 </div>
               </Link>
             ))}

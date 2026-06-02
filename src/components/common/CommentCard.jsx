@@ -57,7 +57,7 @@ export default function CommentCard({ comment, contentKey, preview = false }) {
         <div className="flex items-center gap-3">
           <button
             onClick={onLike}
-            className={`inline-flex items-center gap-1.5 text-xs transition ${
+            className={`inline-flex items-center gap-1.5 text-xs transition min-h-9 min-w-9 justify-center ${
               isLiked ? 'text-crimson' : 'text-cream-soft/50 hover:text-crimson'
             } ${pulsing ? 'heart-pulse' : ''}`}
             aria-label="Yoqtirish"
@@ -77,7 +77,7 @@ export default function CommentCard({ comment, contentKey, preview = false }) {
           {isMine && (
             <button
               onClick={() => deleteComment(contentKey, comment.id)}
-              className="text-cream-soft/30 hover:text-crimson text-[10px] tracking-[2px] uppercase transition"
+              className="text-cream-soft/30 hover:text-crimson text-[10px] tracking-[2px] uppercase transition min-h-9 min-w-9 flex items-center justify-center"
             >
               O'chirish
             </button>

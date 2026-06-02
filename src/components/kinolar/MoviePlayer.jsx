@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 let ytReadyPromise = null;
 function loadYouTubeAPI() {
   if (ytReadyPromise) return ytReadyPromise;
-  ytReadyPromise = new Promise((resolve) => {
+  ytReadyPromise = new Promise((resolve, reject) => {
     if (window.YT && window.YT.Player) {
       resolve(window.YT);
       return;
@@ -15,10 +15,30 @@ function loadYouTubeAPI() {
       prevCallback?.();
       resolve(window.YT);
     };
+    // Hard timeout — if the API never calls back within 6 s (CSP block,
+    // network blackhole, etc.) reject so the caller can render the
+    // fallback iframe instead of staring at a black square forever.
+    const timeout = setTimeout(() => {
+      ytReadyPromise = null;
+      reject(new Error('yt-api-timeout'));
+    }, 6000);
+    const cleanupOnResolve = () => clearTimeout(timeout);
+
+    const onReady = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      cleanupOnResolve();
+      onReady?.();
+    };
+
     if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
       const script = document.createElement('script');
       script.src = 'https://www.youtube.com/iframe_api';
       script.async = true;
+      script.onerror = () => {
+        cleanupOnResolve();
+        ytReadyPromise = null;
+        reject(new Error('yt-api-load-failed'));
+      };
       document.body.appendChild(script);
     }
   });
@@ -175,7 +195,7 @@ export default function MoviePlayer({
   if (fallback) {
     return (
       <iframe
-        src={`https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&cc_load_policy=1${
+        src={`https://www.youtube.com/embed/${encodeURIComponent(youtubeId)}?rel=0&modestbranding=1&cc_load_policy=1${
           startSeconds ? `&start=${Math.floor(startSeconds)}` : ''
         }`}
         title={title}

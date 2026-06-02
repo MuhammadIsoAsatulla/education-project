@@ -2,6 +2,8 @@ import 'dotenv/config';
 import express from 'express';
 import compression from 'compression';
 import cors from 'cors';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
 
 import { getDb } from './db.js';
 import { errorHandler } from './middleware.js';
@@ -22,12 +24,37 @@ const app = express();
 // `1` = trust one hop (nginx); higher would let clients forge X-Forwarded-For.
 app.set('trust proxy', 1);
 
+// Security headers — helmet sets X-Content-Type-Options, X-Frame-Options,
+// Referrer-Policy, Strict-Transport-Security, etc. CSP is intentionally OFF
+// here because the SPA (served by nginx) ships its own CSP meta tag for the
+// document; the API only returns JSON so its CSP would have no effect on
+// rendered content.
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: 'same-site' },
+    referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
+  }),
+);
 app.use(compression());
 app.use(express.json({ limit: '256kb' })); // user state blob ~ 50 KB; cap is generous
 
 if (process.env.ALLOW_ANY_CORS === '1') {
   app.use(cors());
 }
+
+// Global API request limiter — last line of defence against scraping /
+// hammering. Specific routes have stricter per-action limits below.
+app.use(
+  '/api/',
+  rateLimit({
+    windowMs: 60 * 1000,
+    max: 300,
+    standardHeaders: true,
+    legacyHeaders: false,
+  }),
+);
 
 app.get('/api/health', (_req, res) => res.json({ ok: true, ts: Date.now() }));
 

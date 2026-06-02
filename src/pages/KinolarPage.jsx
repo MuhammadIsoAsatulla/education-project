@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import kinolar from '../data/kinolar.json';
 import MoviePoster from '../components/kinolar/MoviePoster.jsx';
 import PageHero from '../components/common/PageHero.jsx';
+import { KinolarIcon } from '../components/common/SectionIcons.jsx';
 import SearchBar from '../components/common/SearchBar.jsx';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 
@@ -33,6 +34,7 @@ export default function KinolarPage() {
         title="Kinolar"
         description="O'zbek kinematografiyasining eng yorqin sahifalari — har bir film o'z davrining oynasidir."
         accent
+        sectionIcon={<KinolarIcon />}
       />
 
       <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto pt-4 sm:pt-6 mb-6">
@@ -51,7 +53,7 @@ export default function KinolarPage() {
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-4 sm:px-5 py-2 rounded-full text-[11px] sm:text-xs tracking-[2px] uppercase transition-all ${
+              className={`px-3 sm:px-5 py-2.5 sm:py-2 rounded-full text-xs sm:text-xs tracking-[2px] uppercase transition-all ${
                 filter === f
                   ? 'bg-gold text-bg-deep border border-gold shadow-[0_0_20px_rgba(212,165,116,0.3)]'
                   : 'bg-bg-deep/60 backdrop-blur border border-gold/30 text-cream-soft hover:text-gold hover:border-gold/70'
@@ -63,8 +65,8 @@ export default function KinolarPage() {
         </div>
       </section>
 
-      <section className="px-6 md:px-12 pb-32 max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-6">
+      <section className="px-3 sm:px-6 md:px-12 pb-32 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-6">
           {filtered.map((m, i) => (
             <MoviePoster key={m.id} movie={m} index={i} />
           ))}

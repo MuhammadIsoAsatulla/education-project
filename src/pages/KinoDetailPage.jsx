@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import kinolar from '../data/kinolar.json';
 import viktorinalar from '../data/viktorinalar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
 import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
 import MoviePlayer from '../components/kinolar/MoviePlayer.jsx';
@@ -61,55 +61,58 @@ export default function KinoDetailPage() {
   return (
     <article className="relative">
       <header
-        className="relative pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 overflow-hidden"
-        style={{ background: `radial-gradient(ellipse at 30% 20%, ${movie.accent}33, var(--bg-deep) 60%)` }}
+        className="relative pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 overflow-hidden"
+        style={{ background: `radial-gradient(ellipse at 30% 20%, ${movie.accent}1a, transparent 60%)` }}
       >
-        <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
-        <div className="relative max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[300px_1fr] xl:grid-cols-[360px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
-          {/* Poster */}
-          <div className="reveal max-w-[240px] sm:max-w-[300px] lg:max-w-[360px] mx-auto lg:mx-0 w-full">
-            <div className="relative aspect-[2/3] rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start">
+          {/* Poster — single hairline, layered shadow */}
+          <div className="reveal max-w-[200px] sm:max-w-[240px] lg:max-w-[320px] mx-auto lg:mx-0 w-full">
+            <div
+              className="relative aspect-[2/3] rounded-2xl overflow-hidden border border-white/[0.06]"
+              style={{
+                boxShadow:
+                  '0 32px 64px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+              }}
+            >
               <SmartImage
                 src={movie.poster}
                 alt={movie.title}
                 initial={movie.initial}
                 accent={movie.accent}
               />
-              <span className="absolute inset-0 border border-gold/20 m-2 pointer-events-none" />
-              <div className="absolute top-0 bottom-0 left-0 w-2 bg-bg-deep flex flex-col justify-around py-2">
-                {Array.from({ length: 18 }).map((_, i) => <span key={i} className="block w-1 h-1.5 mx-auto bg-gold/40 rounded-full" />)}
-              </div>
-              <div className="absolute top-0 bottom-0 right-0 w-2 bg-bg-deep flex flex-col justify-around py-2">
-                {Array.from({ length: 18 }).map((_, i) => <span key={i} className="block w-1 h-1.5 mx-auto bg-gold/40 rounded-full" />)}
-              </div>
             </div>
           </div>
 
           <div>
-            <Link to="/kinolar" className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6">
-              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
+            <Link to="/kinolar" className="inline-flex items-center gap-2 text-cream-soft/55 hover:text-gold text-[11px] tracking-[2.5px] uppercase mb-6 transition-colors">
+              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-3 rotate-180">
                 <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
               </svg>
               Kinolar
             </Link>
-            <div className="eyebrow mb-3">— {movie.genre} · {movie.year} —</div>
-            <h1 className="font-serif text-gold-gradient leading-[0.95] mb-5"
-                style={{ fontSize: 'clamp(48px, 7vw, 96px)', letterSpacing: '1px' }}>
+            <p className="text-gold/75 text-[11px] tracking-[5px] uppercase font-medium mb-3">
+              {movie.genre} · {movie.year}
+            </p>
+            <h1 className="font-serif text-cream leading-[1.02] mb-5"
+                style={{ fontSize: 'clamp(28px, 5.5vw, 72px)' }}>
               {movie.title}
             </h1>
-            <div className="flex flex-wrap items-center gap-5 text-cream-soft/80 text-sm mb-6">
-              <span className="text-gold font-semibold">★ {movie.rating}/10</span>
-              <span>·</span>
+            <div className="flex flex-wrap items-center gap-4 text-cream-soft/70 text-sm mb-6">
+              <span className="text-gold font-medium">★ {movie.rating}/10</span>
+              <span className="text-cream-soft/30">·</span>
               <span>{movie.duration}</span>
-              <span>·</span>
-              <span>Rejissyor: <span className="text-cream">{movie.director}</span></span>
+              <span className="text-cream-soft/30">·</span>
+              <span className="text-cream-soft/55">Rejissyor: <span className="text-cream/90">{movie.director}</span></span>
             </div>
-            <p className="text-cream-soft text-lg leading-relaxed mb-6 max-w-3xl">{movie.synopsis}</p>
-            <p className="text-cream-soft/80 leading-relaxed mb-8 max-w-3xl">{movie.longDescription}</p>
+            <p className="text-cream/85 text-lg leading-relaxed mb-5 max-w-3xl">{movie.synopsis}</p>
+            <p className="text-cream-soft/70 leading-relaxed mb-8 max-w-3xl">{movie.longDescription}</p>
 
             <div className="flex flex-wrap gap-2 mb-8">
               {movie.themes.map((t) => (
-                <span key={t} className="px-4 py-1.5 border border-gold/40 text-gold/90 text-xs tracking-[2px] uppercase rounded-full">
+                <span
+                  key={t}
+                  className="px-3.5 py-1.5 border border-white/[0.08] hover:border-gold/40 text-cream-soft/85 hover:text-gold-bright text-[11px] tracking-[2px] uppercase rounded-full transition-colors"
+                >
                   {t}
                 </span>
               ))}
@@ -167,14 +170,12 @@ export default function KinoDetailPage() {
             style={{ background: `radial-gradient(circle, ${movie.accent}33, transparent 60%)` }}
           />
 
-          {/* Stage header */}
-          <div className="relative text-center mb-10 sm:mb-12">
-            <OrnamentDivider className="opacity-70 mb-6" />
-            <div className="eyebrow mb-3 text-[11px] sm:text-sm">— TOMOSHA ZALI —</div>
-            <h2 className="section-title text-gold-gradient mb-3">Filmni Boshlash</h2>
-            <p className="font-serif italic text-cream-soft/80 text-base sm:text-lg max-w-xl mx-auto">
-              Yorug'likni o'chiring, ovozni baland qiling — kino boshlanmoqda.
-            </p>
+          <div className="relative mb-10 sm:mb-12">
+            <SectionHeading
+              eyebrow="Tomosha Zali"
+              title="Filmni Boshlash"
+              description="Yorug'likni o'chiring, ovozni baland qiling — kino boshlanmoqda."
+            />
           </div>
 
           {/* Cinema screen frame */}
@@ -225,7 +226,7 @@ export default function KinoDetailPage() {
 
           {/* Theater info strip */}
           <div className="relative max-w-[1100px] mx-auto mt-10 sm:mt-12">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
               <StatBlock label="Reyting" value={`★ ${movie.rating}/10`} accent={movie.accent} />
               <StatBlock label="Yili" value={String(movie.year)} accent={movie.accent} />
               <StatBlock label="Davomiyligi" value={movie.duration} accent={movie.accent} />
@@ -256,14 +257,12 @@ export default function KinoDetailPage() {
       {/* NEW: Quiz */}
       {quiz && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
-            <h2 className="section-title">Viktorina</h2>
-            <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Bilimlarni Sinash"
+            title="Viktorina"
+            description={`${quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.`}
+            className="mb-10"
+          />
 
           {quizOpen ? (
             <Quiz
@@ -275,17 +274,25 @@ export default function KinoDetailPage() {
           ) : (
             <div className="text-center">
               {previousQuizScore !== undefined ? (
-                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
-                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
-                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                <div
+                  className="inline-block px-8 py-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] mb-6"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
+                >
+                  <p className="text-gold/75 text-[10px] tracking-[4px] uppercase font-medium mb-2">
+                    Eng Yaxshi Natija
+                  </p>
+                  <div className="font-serif text-cream text-4xl sm:text-5xl mb-1">
                     {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
-                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                    <p className="text-gold/80 text-sm">Mukammal ★</p>
                   )}
                 </div>
               ) : (
-                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                <p className="text-cream-soft/65 text-base mb-6">
                   Hozirgacha bu viktorinani topshirmaganmisiz.
                 </p>
               )}
@@ -309,10 +316,14 @@ export default function KinoDetailPage() {
 function StatBlock({ label, value, accent }) {
   return (
     <div
-      className="p-4 sm:p-5 rounded-sm border border-gold/20 bg-bg-mid/40 backdrop-blur text-center"
-      style={{ background: `linear-gradient(160deg, ${accent}14, transparent)` }}
+      className="p-4 sm:p-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] text-center"
+      style={{
+        background: `linear-gradient(160deg, ${accent}10, rgba(255,255,255,0.02))`,
+        boxShadow:
+          '0 12px 24px -10px rgba(0,0,0,0.4), 0 3px 8px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)',
+      }}
     >
-      <div className="text-cream-soft/60 text-[10px] sm:text-xs tracking-[2px] uppercase mb-2">
+      <div className="text-cream-soft/55 text-[10px] sm:text-xs tracking-[3px] uppercase mb-2 font-medium">
         {label}
       </div>
       <div className="font-serif text-cream text-lg sm:text-xl leading-tight">{value}</div>
@@ -322,20 +333,32 @@ function StatBlock({ label, value, accent }) {
 
 function RecommendationsSection({ recommendations }) {
   return (
-    <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
+    <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 border-t border-white/[0.05]">
       <div className="max-w-[1300px] mx-auto">
-        <div className="eyebrow mb-6 text-center">— BOSHQA KINOLAR —</div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
+        <SectionHeading title="Boshqa Kinolar" className="mb-10" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
           {recommendations.map((m) => (
             <Link
               key={m.id}
               to={`/kinolar/${m.slug}`}
-              className="group block aspect-[2/3] relative overflow-hidden rounded-sm border border-gold/20 hover:border-gold/70 transition"
+              className="group block aspect-[2/3] relative overflow-hidden rounded-2xl border border-white/[0.06] hover:border-gold/30 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1"
+              style={{
+                boxShadow:
+                  '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+              }}
             >
               <SmartImage src={m.poster} alt={m.title} initial={m.initial} accent={m.accent} />
-              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-bg-deep to-transparent">
+              <div
+                aria-hidden="true"
+                className="absolute inset-x-0 bottom-0 h-[55%] pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(0deg, rgba(8,18,30,0.92) 0%, rgba(8,18,30,0.45) 50%, transparent 100%)',
+                }}
+              />
+              <div className="absolute inset-x-0 bottom-0 p-4">
                 <p className="font-serif text-cream text-sm leading-tight">{m.title}</p>
-                <p className="text-gold/70 text-[10px] tracking-[2px] mt-1">{m.year}</p>
+                <p className="text-cream-soft/55 text-[10px] tracking-[2px] mt-1">{m.year}</p>
               </div>
             </Link>
           ))}

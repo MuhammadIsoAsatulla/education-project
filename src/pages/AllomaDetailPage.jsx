@@ -5,7 +5,7 @@ import viktorinalar from '../data/viktorinalar.json';
 import Typewriter from '../components/allomalar/Typewriter.jsx';
 import Timeline from '../components/allomalar/Timeline.jsx';
 import SmartImage from '../components/common/SmartImage.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
 import FavoriteButton from '../components/common/FavoriteButton.jsx';
 import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
@@ -29,7 +29,7 @@ export default function AllomaDetailPage({
   basePath = '/allomalar',
   notFoundTitle = 'Alloma topilmadi',
   listLabel = "Allomalar ro'yxati",
-  siblingsLabel = '— BOSHQA ALLOMALAR —',
+  siblingsLabel = 'Boshqa Allomalar',
   achievement = 'alloma-do-st',
 }) {
   const { slug } = useParams();
@@ -72,15 +72,20 @@ export default function AllomaDetailPage({
     <article className="relative">
       {/* Hero band */}
       <header
-        className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 px-4 sm:px-6 md:px-12 overflow-hidden"
+        className="relative pt-24 sm:pt-28 pb-14 sm:pb-20 px-4 sm:px-6 md:px-12 overflow-hidden"
         style={{
-          background: `radial-gradient(ellipse at 70% 20%, ${alloma.accent}33 0%, var(--bg-deep) 60%)`,
+          background: `radial-gradient(ellipse at 70% 20%, ${alloma.accent}1a 0%, transparent 60%)`,
         }}
       >
-        <div className="absolute inset-0 bg-girih opacity-60 pointer-events-none" />
-        <div className="relative max-w-[1300px] mx-auto grid lg:grid-cols-[1fr_1.4fr] gap-8 lg:gap-12 items-center">
-          {/* Portrait */}
-          <div className="relative aspect-[3/4] w-full max-w-[75vw] sm:max-w-[360px] lg:max-w-[420px] mx-auto lg:mx-0 rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+        <div className="relative max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-14 items-center">
+          {/* Portrait — single hairline border, layered shadow, rounded-2xl. */}
+          <div
+            className="relative aspect-[3/4] w-full max-w-[75vw] sm:max-w-[340px] lg:max-w-[380px] mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-white/[0.06]"
+            style={{
+              boxShadow:
+                '0 32px 64px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+            }}
+          >
             <div style={{ transform: `translateY(${parallaxY}px)` }} className="absolute inset-0">
               <SmartImage
                 src={alloma.image}
@@ -90,38 +95,73 @@ export default function AllomaDetailPage({
                 objectPosition={alloma.imagePosition || 'center top'}
               />
             </div>
-            <div className="absolute inset-3 border border-gold/40 pointer-events-none z-10" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg-deep via-bg-deep/70 to-transparent z-10">
-              <div className="eyebrow text-xs mb-2">— {alloma.era} —</div>
-              <p className="font-serif text-cream text-2xl">{alloma.birthplace}</p>
+            {/* Single bottom gradient + quiet caption — no inset frame */}
+            <span
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-[42%] pointer-events-none"
+              style={{
+                background:
+                  'linear-gradient(0deg, rgba(8,18,30,0.92) 0%, rgba(8,18,30,0.45) 50%, transparent 100%)',
+              }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+              <span className="text-gold/85 text-[10px] tracking-[3.5px] uppercase font-medium block mb-1">
+                {alloma.era}
+              </span>
+              <p className="font-serif text-cream text-xl leading-tight">{alloma.birthplace}</p>
             </div>
           </div>
 
           <div>
-            <Link to={basePath} className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6">
-              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
+            <Link
+              to={basePath}
+              className="inline-flex items-center gap-2 text-cream-soft/55 hover:text-gold text-[11px] tracking-[2.5px] uppercase mb-6 transition-colors"
+            >
+              <svg
+                viewBox="0 0 20 12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="w-4 h-3 rotate-180"
+                aria-hidden="true"
+              >
                 <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
               </svg>
               {listLabel}
             </Link>
-            <div className="flex items-center justify-between gap-4 mb-3">
-              <div className="eyebrow">— {alloma.field} —</div>
+            <div className="flex items-start justify-between gap-4 mb-4">
+              <p className="text-gold/75 text-[11px] tracking-[5px] uppercase font-medium">
+                {alloma.field}
+              </p>
               <FavoriteButton section={section} itemId={alloma.id} size="lg" />
             </div>
-            <h1 className="font-serif text-gold-gradient leading-[0.95] mb-3"
-                style={{ fontSize: 'clamp(48px, 7vw, 96px)', letterSpacing: '2px' }}>
+            <h1
+              className="font-serif text-cream leading-[1.02] mb-3"
+              style={{ fontSize: 'clamp(28px, 5vw, 72px)' }}
+            >
               {alloma.name}
             </h1>
-            <p className="font-amiri text-gold text-lg tracking-[3px] mb-2">— {alloma.years} —</p>
-            <p className="text-cream-soft/80 text-sm tracking-wide mb-8">{alloma.fullName}</p>
+            <p className="text-cream-soft/55 text-sm tracking-[2px] mb-2">{alloma.years}</p>
+            {alloma.fullName ? (
+              <p className="text-cream-soft/55 text-[13px] tracking-wide mb-7">{alloma.fullName}</p>
+            ) : null}
 
-            <blockquote className="font-serif italic text-cream text-2xl md:text-3xl leading-snug border-l-2 border-gold pl-6 mb-8">
-              “{alloma.quote}”
-            </blockquote>
+            {/* Quote — no italic, no gold left bar */}
+            {alloma.quote ? (
+              <blockquote
+                className="font-serif text-cream/90 leading-snug mb-7 max-w-xl"
+                style={{ fontSize: 'clamp(18px, 1.7vw, 24px)' }}
+              >
+                {`"${alloma.quote}"`}
+              </blockquote>
+            ) : null}
 
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap gap-2 mb-8">
               {alloma.tags.map((t) => (
-                <span key={t} className="px-4 py-1.5 border border-gold/40 text-gold/90 text-xs tracking-[2px] uppercase rounded-full">
+                <span
+                  key={t}
+                  className="px-3.5 py-1.5 border border-white/[0.08] hover:border-gold/40 text-cream-soft/85 hover:text-gold-bright text-[11px] tracking-[2px] uppercase rounded-full transition-colors"
+                >
                   {t}
                 </span>
               ))}
@@ -154,7 +194,7 @@ export default function AllomaDetailPage({
                   </span>
                 </button>
                 {voiceLabel && voiceLabel !== "O'zbek ovozi" && (
-                  <span className="text-cream-soft/60 text-xs italic">
+                  <span className="text-cream-soft/55 text-xs">
                     Ovoz: {voiceLabel}
                   </span>
                 )}
@@ -165,71 +205,59 @@ export default function AllomaDetailPage({
       </header>
 
       {/* Biography */}
-      <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <OrnamentDivider className="opacity-60 mb-6" />
-          <div className="eyebrow mb-3">— HAYOT YO'LI —</div>
-          <h2 className="section-title">Tarjimai Hol</h2>
-        </div>
+      <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 max-w-4xl mx-auto">
+        <SectionHeading eyebrow="Hayot Yo'li" title="Tarjimai Hol" className="mb-10" />
         <Typewriter paragraphs={alloma.fullBio} startDelay={200} />
       </section>
 
       {/* Timeline */}
-      <section className="relative px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-[1300px] mx-auto">
-        <div className="text-center mb-16">
-          <OrnamentDivider className="opacity-60 mb-6" />
-          <div className="eyebrow mb-3">— VAQT CHIZIG'I —</div>
-          <h2 className="section-title">Muhim Sanalari</h2>
-        </div>
+      <section className="relative px-4 sm:px-6 md:px-12 py-14 sm:py-20 max-w-[1300px] mx-auto">
+        <SectionHeading eyebrow="Vaqt Chizig'i" title="Muhim Sanalari" className="mb-14" />
         <Timeline events={alloma.timeline} accent={alloma.accent} />
       </section>
 
       {/* Works */}
-      <section className="relative px-4 sm:px-6 md:px-12 py-16 sm:py-24"
-               style={{ background: `linear-gradient(180deg, transparent, ${alloma.accent}1a, transparent)` }}>
+      <section
+        className="relative px-4 sm:px-6 md:px-12 py-14 sm:py-20"
+        style={{ background: `linear-gradient(180deg, transparent, ${alloma.accent}10, transparent)` }}
+      >
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-16">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BOY MEROS —</div>
-            <h2 className="section-title">Mashhur Asarlari</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <SectionHeading eyebrow="Boy Meros" title="Mashhur Asarlari" className="mb-14" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {alloma.works.map((w, i) => (
               <div
                 key={w}
-                className="group relative p-8 border border-gold/20 hover:border-gold rounded-sm bg-bg-mid/40 backdrop-blur transition-all duration-500"
+                className="group relative p-7 rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1"
+                style={{
+                  boxShadow:
+                    '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                }}
               >
-                <div className="font-serif text-gold/60 text-sm tracking-[3px] mb-4">— {String(i + 1).padStart(2, '0')} —</div>
-                <h3 className="font-serif text-cream text-2xl leading-tight group-hover:text-gold-gradient transition-colors">
+                <div className="text-gold/55 text-[11px] tracking-[3px] mb-3 tabular-nums font-medium">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
+                <h3 className="font-serif text-cream text-xl md:text-[22px] leading-tight group-hover:text-gold-bright transition-colors">
                   {w}
                 </h3>
-                <span className="absolute bottom-0 left-0 h-px w-0 group-hover:w-full bg-gold transition-all duration-500" />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* NEW: Languages */}
-      <LanguagesSection languages={alloma.languages} accent={alloma.accent} />
+      <LanguagesSection languages={alloma.languages} />
+      <InterestingFactsSection facts={alloma.interestingFacts} />
+      <LegacySection text={alloma.legacy} />
 
-      {/* NEW: Interesting facts */}
-      <InterestingFactsSection facts={alloma.interestingFacts} accent={alloma.accent} />
-
-      {/* NEW: Legacy */}
-      <LegacySection text={alloma.legacy} accent={alloma.accent} />
-
-      {/* Quiz section */}
+      {/* Quiz */}
       {quiz && (
-        <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
-            <h2 className="section-title">Viktorina</h2>
-            <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
-            </p>
-          </div>
+        <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 max-w-4xl mx-auto">
+          <SectionHeading
+            eyebrow="Bilimlarni Sinash"
+            title="Viktorina"
+            description={`${quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.`}
+            className="mb-10"
+          />
 
           {quizOpen ? (
             <Quiz
@@ -241,17 +269,25 @@ export default function AllomaDetailPage({
           ) : (
             <div className="text-center">
               {previousQuizScore !== undefined ? (
-                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
-                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
-                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                <div
+                  className="inline-block px-8 py-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] mb-6"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
+                >
+                  <p className="text-gold/75 text-[10px] tracking-[4px] uppercase font-medium mb-2">
+                    Eng Yaxshi Natija
+                  </p>
+                  <div className="font-serif text-cream text-4xl sm:text-5xl mb-1">
                     {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
-                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                    <p className="text-gold/80 text-sm">Mukammal ★</p>
                   )}
                 </div>
               ) : (
-                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                <p className="text-cream-soft/65 text-base mb-6">
                   Hozirgacha bu viktorinani topshirmaganmisiz.
                 </p>
               )}
@@ -271,7 +307,6 @@ export default function AllomaDetailPage({
         </section>
       )}
 
-      {/* NEW: Comments preview */}
       <Comments
         contentType={section}
         contentId={alloma.id}
@@ -279,19 +314,23 @@ export default function AllomaDetailPage({
       />
 
       {/* Siblings navigation */}
-      <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20 border-t border-gold/10">
+      <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 border-t border-white/[0.05]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="eyebrow mb-6 text-center">{siblingsLabel}</div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4">
+          <SectionHeading title={siblingsLabel} className="mb-10" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
             {source
               .filter((a) => a.slug !== alloma.slug)
               .map((a) => (
                 <Link
                   key={a.id}
                   to={`${basePath}/${a.slug}`}
-                  className="group p-3 border border-gold/20 hover:border-gold/80 rounded-sm transition-all overflow-hidden"
+                  className="group p-2.5 rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 overflow-hidden"
+                  style={{
+                    boxShadow:
+                      '0 12px 24px -10px rgba(0,0,0,0.4), 0 3px 8px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
                 >
-                  <div className="aspect-[3/4] mb-3 rounded-sm overflow-hidden">
+                  <div className="aspect-[3/4] mb-3 rounded-xl overflow-hidden">
                     <SmartImage
                       src={a.image}
                       alt={a.name}
@@ -300,8 +339,8 @@ export default function AllomaDetailPage({
                       objectPosition={a.imagePosition || 'center top'}
                     />
                   </div>
-                  <div className="font-serif text-cream text-sm text-center">{a.name}</div>
-                  <div className="text-gold/60 text-[10px] tracking-[2px] mt-1 text-center">{a.years}</div>
+                  <div className="font-serif text-cream text-sm text-center leading-tight">{a.name}</div>
+                  <div className="text-cream-soft/50 text-[10px] tracking-[2px] mt-1 text-center">{a.years}</div>
                 </Link>
               ))}
           </div>

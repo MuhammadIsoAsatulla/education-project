@@ -93,7 +93,7 @@ export default function Quiz({
   if (phase === PHASE.DONE) {
     const perfect = score === total;
     return (
-      <div className="relative p-8 sm:p-12 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur text-center max-w-2xl mx-auto">
+      <div className="relative p-6 sm:p-10 md:p-12 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur text-center max-w-2xl mx-auto">
         <OrnamentDivider className="opacity-60 mb-5" />
         <div className="eyebrow mb-3">— NATIJA —</div>
         <h3 className="font-serif text-cream leading-tight mb-3" style={{ fontSize: 'clamp(40px, 6vw, 64px)' }}>
@@ -129,7 +129,7 @@ export default function Quiz({
   }
 
   return (
-    <div className="relative p-6 sm:p-10 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur max-w-2xl mx-auto">
+    <div className="relative p-5 sm:p-8 md:p-10 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <div className="eyebrow text-xs">— SAVOL {index + 1} / {total} —</div>
         {onClose && (
@@ -185,7 +185,7 @@ export default function Quiz({
               >
                 {String.fromCharCode(65 + i)}
               </span>
-              <span className="flex-1 text-base">{opt}</span>
+              <span className="flex-1 text-sm sm:text-base">{opt}</span>
               {isCorrect && <span className="text-emerald-300 text-sm">✓</span>}
               {isWrongPick && <span className="text-crimson text-sm">✕</span>}
             </button>

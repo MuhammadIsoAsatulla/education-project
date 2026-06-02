@@ -683,8 +683,8 @@ function YouTubeView({ song }) {
     <div className="w-full max-w-4xl">
       <div className="aspect-video rounded-sm overflow-hidden border border-gold/30 bg-black shadow-2xl">
         <iframe
-          src={`https://www.youtube.com/embed/${song.youtubeId}?autoplay=1${
-            song.youtubeStart ? `&start=${song.youtubeStart}` : ''
+          src={`https://www.youtube.com/embed/${encodeURIComponent(song.youtubeId)}?autoplay=1${
+            song.youtubeStart ? `&start=${encodeURIComponent(song.youtubeStart)}` : ''
           }&rel=0`}
           title={song.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

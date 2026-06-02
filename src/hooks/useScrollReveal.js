@@ -14,14 +14,22 @@ export default function useScrollReveal(selector = '.reveal', options = {}) {
 
     const intersection = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry, index) => {
-          if (!entry.isIntersecting) return;
-          const delay = (entry.target.dataset.revealDelay || index * 80) | 0;
-          setTimeout(() => entry.target.classList.add('active'), delay);
-          intersection.unobserve(entry.target);
-        });
+        // Cap the visible-batch stagger so a long grid doesn't leave the last
+        // card empty for nearly a second. 35ms × max 6 steps ≈ 210ms tail.
+        entries
+          .filter((e) => e.isIntersecting)
+          .forEach((entry, i) => {
+            const explicit = entry.target.dataset.revealDelay;
+            const delay = explicit != null ? explicit | 0 : Math.min(i, 6) * 35;
+            if (delay) {
+              setTimeout(() => entry.target.classList.add('active'), delay);
+            } else {
+              entry.target.classList.add('active');
+            }
+            intersection.unobserve(entry.target);
+          });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -50px 0px', ...options },
+      { threshold: 0.08, rootMargin: '0px 0px 80px 0px', ...options },
     );
 
     const observeAll = () => {

@@ -221,7 +221,7 @@ function MobileAuthBlock({ onClose }) {
       <Link
         to="/login"
         onClick={onClose}
-        className="mb-6 flex items-center justify-center gap-3 p-4 border border-gold/50 rounded-sm bg-gold/10 text-gold tracking-[3px] uppercase hover:bg-gold hover:text-bg-deep transition text-sm"
+        className="mb-6 flex items-center justify-center gap-3 p-3 sm:p-4 border border-gold/50 rounded-sm bg-gold/10 text-gold tracking-[3px] uppercase hover:bg-gold hover:text-bg-deep transition text-sm"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
           <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" />
@@ -234,7 +234,7 @@ function MobileAuthBlock({ onClose }) {
   const initial = (user.name || 'M').trim().charAt(0).toUpperCase();
 
   return (
-    <div className="mb-6 p-4 border border-gold/25 rounded-sm bg-bg-mid/40 backdrop-blur flex items-center gap-3">
+    <div className="mb-6 p-3 sm:p-4 border border-gold/25 rounded-sm bg-bg-mid/40 backdrop-blur flex items-center gap-3">
       {user.picture ? (
         <img
           src={user.picture}
@@ -292,10 +292,11 @@ export default function Navbar() {
     setSearchOpen(false);
   }, [pathname]);
 
-  // Cmd/Ctrl+K opens the global search from anywhere.
+  // Cmd/Ctrl+Q opens the global search from anywhere.
+  // "Q" = "Qidirish" in Uzbek — easier to recall than the conventional "K".
   useEffect(() => {
     const onKey = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'q') {
         e.preventDefault();
         setSearchOpen((s) => !s);
       }
@@ -339,7 +340,7 @@ export default function Navbar() {
           MEROS
         </Link>
 
-        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+        <div className="hidden lg:flex items-center gap-4 lg:gap-6">
           <ul className="flex gap-5 lg:gap-7 list-none m-0 p-0">
             {LINKS.map((l) => (
               <li key={l.to}>
@@ -364,7 +365,7 @@ export default function Navbar() {
           <button
             onClick={() => setSearchOpen(true)}
             aria-label="Saytbo'ylab qidirish"
-            title="Qidirish (Ctrl+K)"
+            title="Qidirish (Ctrl+Q)"
             className="inline-flex items-center gap-2 pl-3 pr-2 py-1.5 border border-gold/30 hover:border-gold/70 text-cream-soft hover:text-gold rounded-full text-[11px] tracking-[1.5px] uppercase transition group"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
@@ -373,19 +374,22 @@ export default function Navbar() {
             </svg>
             <span className="hidden lg:inline">Qidirish</span>
             <kbd className="hidden lg:inline-flex items-center px-1.5 py-0.5 text-[9px] tracking-[0.5px] text-cream-soft/50 border border-gold/20 rounded">
-              Ctrl K
+              Ctrl Q
             </kbd>
           </button>
 
           <AuthBadge />
         </div>
 
-        {/* Mobile right-side controls: search + burger */}
-        <div className="md:hidden flex items-center gap-2">
+        {/* Mobile + tablet portrait right-side controls: search + burger.
+            Desktop nav with all 7 sections only renders at ≥1024 (lg:);
+            on 640–1023 px (iPad portrait) the section links would crash
+            into the MEROS brand, so we use the hamburger drawer instead. */}
+        <div className="lg:hidden flex items-center gap-2">
           <button
             onClick={() => setSearchOpen(true)}
             aria-label="Qidirish"
-            className="w-10 h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+            className="w-11 h-11 md:w-10 md:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
               <circle cx="11" cy="11" r="7" />
@@ -393,7 +397,7 @@ export default function Navbar() {
             </svg>
           </button>
           <button
-            className="relative w-10 h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
+            className="relative w-11 h-11 md:w-10 md:h-10 flex items-center justify-center text-gold border border-gold/40 rounded-full bg-bg-deep/60 backdrop-blur transition hover:border-gold"
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? 'Yopish' : 'Menyu'}
             aria-expanded={open}
@@ -432,9 +436,9 @@ export default function Navbar() {
         `}</style>
       </nav>
 
-      {/* Full-screen mobile menu overlay */}
+      {/* Full-screen mobile + tablet-portrait menu overlay */}
       <div
-        className={`md:hidden fixed inset-0 z-[150] transition-all duration-500 ${
+        className={`lg:hidden fixed inset-0 z-[150] transition-all duration-500 ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         aria-hidden={!open}
@@ -451,7 +455,7 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
         {/* Spotlight glow */}
         <div
-          className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full blur-3xl pointer-events-none"
+          className="absolute -top-32 left-1/2 -translate-x-1/2 hidden sm:block w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full blur-3xl pointer-events-none"
           style={{ background: 'radial-gradient(circle, rgba(212,165,116,0.18), transparent 65%)' }}
         />
         {/* Twinkling stars */}
@@ -473,7 +477,7 @@ export default function Navbar() {
         </div>
 
         {/* Top bar: logo + close */}
-        <div className="relative z-10 flex items-center justify-between px-5 py-4 border-b border-gold/15">
+        <div className="relative z-10 flex items-center justify-between px-4 py-3 border-b border-gold/15">
           <Link
             to="/"
             onClick={() => setOpen(false)}
@@ -533,7 +537,7 @@ export default function Navbar() {
                     }
                   >
                     {({ isActive }) => (
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-3 sm:gap-4">
                         {/* Icon (left of text) */}
                         <div
                           className={`w-11 h-11 rounded-sm border flex items-center justify-center flex-shrink-0 transition ${

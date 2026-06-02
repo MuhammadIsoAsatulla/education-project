@@ -22,8 +22,9 @@ import DailyQuote from '../components/profil/DailyQuote.jsx';
 import DailyWord from '../components/profil/DailyWord.jsx';
 import Shop from '../components/profil/Shop.jsx';
 import MixedQuiz from '../components/profil/MixedQuiz.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
 import PageHero from '../components/common/PageHero.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
+import { ProfilIcon } from '../components/common/SectionIcons.jsx';
 import useProgress from '../hooks/useProgress.js';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 
@@ -213,6 +214,7 @@ export default function ProfilPage() {
         title="Profil"
         description="Sayohatingiz xronikasi. Yig'gan ballaringiz, ochgan nishonlaringiz va bilim daraxtingiz."
         accent
+        sectionIcon={<ProfilIcon />}
       />
 
       {/* ============================================================ */}
@@ -220,10 +222,15 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto -mt-4 mb-10 sm:mb-12">
         <div
-          className="reveal p-6 sm:p-8 md:p-10 rounded-sm border border-gold/30 bg-bg-mid/50 backdrop-blur"
-          style={{ background: 'linear-gradient(135deg, rgba(212,165,116,0.08), rgba(15,76,92,0.4))' }}
+          className="reveal p-6 sm:p-8 md:p-10 rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur"
+          style={{
+            background:
+              'linear-gradient(135deg, rgba(212,165,116,0.07), rgba(255,255,255,0.01) 60%, rgba(212,165,116,0.05))',
+            boxShadow:
+              '0 24px 48px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+          }}
         >
-          <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start">
             {/* Avatar + Streak */}
             <div className="flex flex-col items-center md:items-start">
               <button
@@ -251,7 +258,7 @@ export default function ProfilPage() {
 
             {/* Info */}
             <div>
-              <div className="eyebrow text-xs mb-3">— SALOM —</div>
+              <p className="text-gold/75 text-[10px] tracking-[4.5px] uppercase font-medium mb-3">Salom</p>
               {editingName ? (
                 <form
                   onSubmit={(e) => {
@@ -273,7 +280,7 @@ export default function ProfilPage() {
               ) : (
                 <h1
                   className="font-serif text-cream mb-2 leading-tight"
-                  style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}
+                  style={{ fontSize: 'clamp(26px, 4.5vw, 56px)' }}
                 >
                   {state.name}
                   <button
@@ -333,7 +340,7 @@ export default function ProfilPage() {
 
             {/* Actions — vertical stack on phones (3 narrow buttons in a row
                 don't fit on a 360-wide screen), side column at md+. */}
-            <div className="flex flex-col gap-3 md:min-w-[160px]">
+            <div className="flex flex-col gap-3 w-full md:w-auto md:min-w-[160px]">
               <button
                 onClick={() => setShopOpen(true)}
                 className="gold-cta w-full"
@@ -372,9 +379,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto mb-10 sm:mb-14 reveal">
         <div className="text-center mb-6 sm:mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— KUNLIK XAZINALAR —</div>
-          <h2 className="section-title">Har Kun Yangi Bilim</h2>
+          <SectionHeading eyebrow="Kunlik Xazinalar" title="Har Kun Yangi Bilim" />
         </div>
 
         <div className="space-y-4">
@@ -398,9 +403,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto mb-14 sm:mb-20 reveal">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— SAYOHAT XRONIKASI —</div>
-          <h2 className="section-title">Bo'limlar bo'yicha tugatish</h2>
+          <SectionHeading eyebrow="Sayohat Xronikasi" title="Bo'limlar bo'yicha tugatish" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-5">
@@ -452,7 +455,7 @@ export default function ProfilPage() {
           >
             <div className="absolute inset-0 bg-girih opacity-25 pointer-events-none" />
             <div className="relative">
-              <div className="eyebrow mb-3">— ARALASH VIKTORINA —</div>
+              <p className="text-gold/75 text-[10px] tracking-[4.5px] uppercase font-medium mb-3">Aralash Viktorina</p>
               <h3 className="font-serif text-gold-gradient text-2xl sm:text-3xl mb-3">
                 5 bo'limdan 10 ta tasodifiy savol
               </h3>
@@ -473,9 +476,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1300px] mx-auto mb-14 sm:mb-20">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— BILIM NISHONLARI —</div>
-          <h2 className="section-title">Yutuqlaringiz</h2>
+          <SectionHeading eyebrow="Bilim Nishonlari" title="Yutuqlaringiz" />
           <p className="font-serif italic text-cream-soft/80 mt-3">
             <span className="text-gold tabular-nums">{unlockedCount}</span> ta ochilgan,{' '}
             <span className="text-cream-soft/60 tabular-nums">{achievements.length - unlockedCount}</span>{' '}
@@ -506,7 +507,7 @@ export default function ProfilPage() {
           })}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 reveal">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 reveal">
           {filteredAchievements.map((a) => (
             <AchievementBadge key={a.id} badge={a} unlocked={isUnlocked(a, state, achievements)} />
           ))}
@@ -518,9 +519,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto mb-14 sm:mb-20 reveal">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— MENING TO'PLAMIM —</div>
-          <h2 className="section-title">Sevimlilar</h2>
+          <SectionHeading eyebrow="Mening To'plamim" title="Sevimlilar" />
         </div>
         <FavoritesGallery favorites={state.favorites} />
       </section>
@@ -530,14 +529,12 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1200px] mx-auto mb-14 sm:mb-20 reveal">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— BILIM SINOVLARI —</div>
-          <h2 className="section-title">Viktorinalar</h2>
+          <SectionHeading eyebrow="Bilim Sinovlari" title="Viktorinalar" />
           <p className="font-serif italic text-cream-soft/80 mt-3">
             <span className="text-gold tabular-nums">{quizDoneCount}</span> / {quizCount} viktorina topshirildi
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {viktorinalar.map((q) => {
             const owner = OWNER_LOOKUP[q.ownerType]?.(q.ownerId);
             if (!owner) return null;
@@ -590,9 +587,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[900px] mx-auto mb-14 sm:mb-20 reveal">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— ENG YAXSHILAR —</div>
-          <h2 className="section-title">Reyting</h2>
+          <SectionHeading eyebrow="Eng Yaxshilar" title="Reyting" />
         </div>
         <Leaderboard state={state} />
       </section>
@@ -602,9 +597,7 @@ export default function ProfilPage() {
       {/* ============================================================ */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[900px] mx-auto pb-20 sm:pb-32 reveal">
         <div className="text-center mb-8">
-          <OrnamentDivider className="opacity-60 mb-4" />
-          <div className="eyebrow mb-2">— SO'NGGI FAOLIYAT —</div>
-          <h2 className="section-title">Xronikangiz</h2>
+          <SectionHeading eyebrow="So'nggi Faoliyat" title="Xronikangiz" />
         </div>
         <RecentActivity state={state} />
       </section>

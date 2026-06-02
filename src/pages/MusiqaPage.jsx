@@ -3,6 +3,7 @@ import musiqa from '../data/musiqa.json';
 import SongCard from '../components/musiqa/SongCard.jsx';
 import KaraokeView from '../components/musiqa/KaraokeView.jsx';
 import PageHero from '../components/common/PageHero.jsx';
+import { MusiqaIcon } from '../components/common/SectionIcons.jsx';
 import SearchBar from '../components/common/SearchBar.jsx';
 import useScrollReveal from '../hooks/useScrollReveal.js';
 import useProgress from '../hooks/useProgress.js';
@@ -39,6 +40,7 @@ export default function MusiqaPage() {
         title="Musiqa"
         description="Shashmaqomdan xalq qo'shiqlarigacha — har bir ohang dilning ko'zgusi. Karaoke rejimida o'zingiz ham qo'shing."
         accent
+        sectionIcon={<MusiqaIcon />}
       />
 
       <section className="relative z-10 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto pt-4 sm:pt-6 mb-6">
@@ -51,8 +53,8 @@ export default function MusiqaPage() {
         />
       </section>
 
-      <section className="px-6 md:px-12 pb-32 max-w-[1400px] mx-auto -mt-2">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <section className="px-3 sm:px-6 md:px-12 pb-32 max-w-[1400px] mx-auto -mt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {filtered.map((s, i) => (
             <SongCard key={s.id} song={s} index={i} onOpen={setActive} />
           ))}

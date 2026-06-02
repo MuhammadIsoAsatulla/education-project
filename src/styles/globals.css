@@ -134,12 +134,20 @@
   /* Reveal-on-scroll utility */
   .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(20px);
+    transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
   }
   .reveal.active {
     opacity: 1;
     transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      transition: opacity 0.2s ease;
+      transform: none;
+    }
   }
 
   /* Subtle ornamental hairline divider */

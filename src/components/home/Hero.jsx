@@ -60,31 +60,17 @@ export default function Hero() {
         }}
       />
 
-      {/* Frosted focus — softly blurs the busy building ONLY behind the text.
-          The radial mask feathers the edges so there is no visible panel. */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          zIndex: 3,
-          backdropFilter: 'blur(3.2px)',
-          WebkitBackdropFilter: 'blur(3.2px)',
-          WebkitMaskImage:
-            'radial-gradient(ellipse 58% 42% at 50% 38%, #000 0%, #000 42%, transparent 76%)',
-          maskImage:
-            'radial-gradient(ellipse 58% 42% at 50% 38%, #000 0%, #000 42%, transparent 76%)',
-        }}
-      />
+      {/* Frosted focus — softly blurs the busy building behind the text.
+          Mobile uses a short ellipse high on the page so the title is
+          legible but the dome's moon/finial stays crisp. Desktop uses
+          the original taller ellipse so the tagline (which sits low,
+          over the dome on PC) is also legible. Class-based so a media
+          query can switch the mask between the two shapes. */}
+      <div className="hero-frosted-focus absolute inset-0 pointer-events-none" />
 
-      {/* Local contrast — feathered darkening centered behind the title & subtitle
-          (lightest at the edges so the mosque keeps its glow) */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          zIndex: 4,
-          background:
-            'radial-gradient(ellipse 72% 50% at 50% 38%, rgba(3,9,18,0.46) 0%, rgba(3,9,18,0.30) 40%, rgba(3,9,18,0.12) 64%, transparent 82%)',
-        }}
-      />
+      {/* Local contrast — feathered darkening behind the title cluster.
+          Same dual mobile/desktop sizing as the frosted-focus above. */}
+      <div className="hero-local-contrast absolute inset-0 pointer-events-none" />
 
       {/* Top ornamental divider — connects both sides of the page */}
       <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[90%] max-w-[1150px] z-10">
@@ -99,11 +85,17 @@ export default function Hero() {
         <span className="absolute -top-3 right-[15%] text-gold text-base" style={{ textShadow: '0 0 16px rgba(214,164,74,0.9)' }}>✦</span>
       </div>
 
-      {/* Hero content — title floats high above the architecture */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-[12vh] sm:pt-[13vh]">
-        {/* Eyebrow */}
+      {/* Hero content — title floats high above the architecture.
+          Tiers: mobile drops the title a touch lower (pt-[12vh]); tablet
+          portrait drops it ALL the way down to viewport center
+          (sm:pt-[22vh]) so it doesn't leave a dead band above the dome
+          on tall iPad screens; PC keeps the original pt-[13vh]
+          composition. */}
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 pt-[12vh] sm:pt-[22vh] lg:pt-[13vh]">
+        {/* Eyebrow — tighter tracking + smaller text on phone so the 26-char
+            string fits inside 320–412 px viewports without truncating. */}
         <div
-          className="font-amiri text-gold tracking-[4px] sm:tracking-[8px] text-xs sm:text-base lg:text-lg opacity-0 animate-fade-in-up"
+          className="font-amiri text-gold tracking-[2.5px] sm:tracking-[6px] lg:tracking-[8px] text-[10px] sm:text-base lg:text-lg opacity-0 animate-fade-in-up max-w-full px-2"
           style={{
             animationDelay: '0.3s',
             textShadow: '0 0 20px rgba(212,165,116,0.4)',
@@ -112,7 +104,10 @@ export default function Hero() {
           — RAQAMLI MEROS PLATFORMASI —
         </div>
 
-        {/* Title */}
+        {/* Title — clamp(88, 12vw, 260) keeps it dominant on every viewport
+            we ship; .hero-title-letters CSS below tightens letter-spacing
+            below 360 px so 5 letters never crash the right edge on ultra-small
+            phones. */}
         <h1
           className="font-serif font-medium hero-meros mb-0 leading-[0.9] opacity-0 animate-hero-title hero-title-letters"
           style={{
@@ -126,9 +121,11 @@ export default function Hero() {
           MEROS
         </h1>
 
-        {/* Subtitle — sits in open air beneath the title */}
+        {/* Subtitle — sits in open air beneath the title. `hero-tagline`
+            class lets the tablet media query bump the font-size up
+            without affecting the mobile or PC clamp. */}
         <p
-          className="font-serif italic text-cream font-medium max-w-2xl mx-auto opacity-0 animate-fade-in-up px-2"
+          className="hero-tagline font-serif italic text-cream font-medium max-w-2xl mx-auto opacity-0 animate-fade-in-up px-2"
           style={{
             fontSize: 'clamp(16px, 2.5vw, 26px)',
             animationDelay: '1.2s',
@@ -143,11 +140,16 @@ export default function Hero() {
           O'zbek xalqining ma'naviy xazinasi bir joyda.
         </p>
 
-        {/* CTA */}
+        {/* CTA — gap above the button is responsive:
+              - mobile (<640): mt-[30vh] pushes button toward the dome
+              - tablet portrait (640–1023): sm:mt-[20vh] still big enough
+                to land over the architecture on the tall iPad viewport
+              - PC (≥1024): lg:mt-10 — original 40 px gap exactly as
+                designed (button sits under the tagline on PC). */}
         <a
           href="#bolimlar"
-          className="hero-cta opacity-0 animate-fade-in-up"
-          style={{ animationDelay: '1.5s', marginTop: '38px' }}
+          className="hero-cta opacity-0 animate-fade-in-up min-h-[48px] mt-[30vh] sm:mt-[20vh] lg:mt-10"
+          style={{ animationDelay: '1.5s', minHeight: '48px' }}
         >
           <span>Sayohatni Boshlash</span>
         </a>
@@ -203,6 +205,34 @@ export default function Hero() {
       </div>
 
       <style>{`
+        /* Frosted-focus mask — mobile: short ellipse high on the page so
+           the dome's moon stays crisp. Desktop: original taller ellipse
+           so the tagline (which sits low, over the dome) stays legible. */
+        .hero-frosted-focus {
+          z-index: 3;
+          backdrop-filter: blur(3px);
+          -webkit-backdrop-filter: blur(3px);
+          -webkit-mask-image: radial-gradient(ellipse 70% 22% at 50% 28%, #000 0%, #000 55%, transparent 100%);
+          mask-image: radial-gradient(ellipse 70% 22% at 50% 28%, #000 0%, #000 55%, transparent 100%);
+        }
+        @media (min-width: 640px) {
+          .hero-frosted-focus {
+            backdrop-filter: blur(3.2px);
+            -webkit-backdrop-filter: blur(3.2px);
+            -webkit-mask-image: radial-gradient(ellipse 58% 42% at 50% 38%, #000 0%, #000 42%, transparent 76%);
+            mask-image: radial-gradient(ellipse 58% 42% at 50% 38%, #000 0%, #000 42%, transparent 76%);
+          }
+        }
+        /* Local-contrast darkening — same dual sizing strategy. */
+        .hero-local-contrast {
+          z-index: 4;
+          background: radial-gradient(ellipse 72% 28% at 50% 28%, rgba(3,9,18,0.46) 0%, rgba(3,9,18,0.30) 50%, rgba(3,9,18,0.12) 80%, transparent 100%);
+        }
+        @media (min-width: 640px) {
+          .hero-local-contrast {
+            background: radial-gradient(ellipse 72% 50% at 50% 38%, rgba(3,9,18,0.46) 0%, rgba(3,9,18,0.30) 40%, rgba(3,9,18,0.12) 64%, transparent 82%);
+          }
+        }
         /* MEROS word — luxe gold gradient with a soft glow */
         .hero-meros {
           background: linear-gradient(180deg, #fff7d4 0%, #ffea90 44%, #ffd95e 100%);
@@ -238,9 +268,36 @@ export default function Hero() {
           border-color: rgba(214,164,74,1);
           color: #ffe7b0;
         }
-        .hero-title-letters { letter-spacing: 6px; }
+        /* Ultra-small phones (≤360 px iPhone SE, small Android): tighten so
+           5 letters of MEROS never crash the right edge. */
+        .hero-title-letters { letter-spacing: 4px; }
+        @media (min-width: 380px) {
+          .hero-title-letters { letter-spacing: 6px; }
+        }
         @media (min-width: 640px) {
           .hero-title-letters { letter-spacing: 16px; }
+        }
+        /* Tablet portrait (640–1023 px): bump the MEROS title MUCH bigger
+           than the inline style provides — and tighten letter-spacing so
+           the 5-letter word doesn't crash the right edge on 768 px iPad.
+           Tagline gets its own bump too. Mobile (<640) and PC (≥1024)
+           keep the inline clamps unchanged. */
+        @media (min-width: 640px) and (max-width: 1023px) {
+          .hero-meros {
+            font-size: clamp(180px, 24vw, 280px) !important;
+          }
+          /* Reduce letter-spacing on tablet so the bigger letters fit. */
+          .hero-title-letters {
+            letter-spacing: 8px;
+          }
+          /* Tagline + button cluster scales up too. */
+          .hero-tagline {
+            font-size: clamp(22px, 3.2vw, 30px) !important;
+          }
+          .hero-cta {
+            padding: 18px 44px !important;
+            font-size: 14px !important;
+          }
         }
         @keyframes chevronFade {
           0% { opacity: 0; transform: translateY(-6px); }

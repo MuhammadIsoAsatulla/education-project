@@ -24,9 +24,9 @@ export default function FeaturedBook({ book }) {
       };
 
   return (
-    <div className="relative grid lg:grid-cols-[268px_1fr] gap-8 lg:gap-14 items-center">
+    <div className="relative grid lg:grid-cols-[268px_1fr] gap-4 sm:gap-6 lg:gap-14 items-center">
       {/* Large cover */}
-      <div className="mx-auto lg:mx-0" style={{ width: 268, maxWidth: '70vw' }}>
+      <div className="mx-auto lg:mx-0" style={{ width: 268, maxWidth: 'min(70vw, 260px)' }}>
         <div className="relative" style={{ perspective: 1400 }}>
           {/* glow */}
           <div
@@ -58,7 +58,7 @@ export default function FeaturedBook({ book }) {
           <p className="text-gold uppercase font-semibold mb-3" style={{ fontSize: 12, letterSpacing: '3px' }}>
             {book.genre}
           </p>
-          <h2 className="font-serif text-cream leading-tight mb-4" style={{ fontSize: 'clamp(30px, 4vw, 52px)' }}>
+          <h2 className="font-serif text-cream leading-tight mb-4" style={{ fontSize: 'clamp(22px, 4vw, 52px)' }}>
             {book.title}
           </h2>
 

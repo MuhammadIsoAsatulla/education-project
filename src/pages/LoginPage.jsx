@@ -43,8 +43,15 @@ export default function LoginPage() {
   const [guestName, setGuestName] = useState('');
   const [signingIn, setSigningIn] = useState(false);
 
-  // Where to redirect after sign-in (?next=/somewhere)
-  const nextPath = new URLSearchParams(location.search).get('next') || '/';
+  // Where to redirect after sign-in (?next=/somewhere). MUST be a same-origin
+  // SPA path — reject anything starting with "//" (protocol-relative) or a
+  // scheme so an attacker can't craft /login?next=https://evil.com and bounce
+  // a freshly authenticated user off-site.
+  const nextPath = (() => {
+    const raw = new URLSearchParams(location.search).get('next') || '/';
+    if (!raw.startsWith('/') || raw.startsWith('//') || raw.includes('\\')) return '/';
+    return raw;
+  })();
 
   // Already authenticated? Go straight to the destination.
   useEffect(() => {
@@ -66,7 +73,10 @@ export default function LoginPage() {
       } else if (msg === 'gis-load-failed') {
         setErrorMsg("Google skripti yuklanmadi. Internet aloqasini tekshiring.");
       } else {
-        setErrorMsg(msg || "Kirishda kutilmagan xato yuz berdi.");
+        // Never surface a raw backend / library message — could include
+        // implementation details (token internals, stack hints) and confuses
+        // end users in any case.
+        setErrorMsg("Kirishda kutilmagan xato yuz berdi. Iltimos, qaytadan urining.");
       }
     } finally {
       setSigningIn(false);

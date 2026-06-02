@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import rateLimit from 'express-rate-limit';
 import {
   getUserRow,
   updateUserState,
@@ -9,6 +10,18 @@ import {
 import { requireAuth, optionalAuth } from '../middleware.js';
 
 const router = Router();
+
+// State writes are debounced to 500 ms client-side and beaconed on tab close,
+// so a legitimate user produces ≤ a couple per minute. Cap at 60/min to stop
+// a hostile client from flooding the DB or trying to creep past the
+// per-write points clamp by spamming +250 deltas indefinitely.
+const stateWriteLimiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 60,
+  keyGenerator: (req) => req.user?.uid || req.ip,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
 
 // Public read of any profile — used by UserProfilePage when viewing other
 // people. We strip the heavy `state` blob and only ship the slice the
@@ -44,7 +57,7 @@ router.get('/me/full', requireAuth, (req, res) => {
   res.json(row);
 });
 
-router.put('/me/state', requireAuth, (req, res) => {
+router.put('/me/state', requireAuth, stateWriteLimiter, (req, res) => {
   const state = req.body?.state;
   if (!state || typeof state !== 'object') {
     return res.status(400).json({ error: 'missing_state' });

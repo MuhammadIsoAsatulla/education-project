@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import kitoblar from '../data/kitoblar.json';
 import PageHero from '../components/common/PageHero.jsx';
+import { KitoblarIcon } from '../components/common/SectionIcons.jsx';
 import SearchBar from '../components/common/SearchBar.jsx';
 import LibraryExperience from '../components/kitoblar/LibraryExperience.jsx';
 import useScrollReveal from '../hooks/useScrollReveal.js';
@@ -29,6 +30,7 @@ export default function KitoblarPage() {
         title="Kitoblar"
         description="Navoiy g'azallaridan zamonaviy nasrgacha — har sahifa bir olam, har kitob bir umr."
         accent
+        sectionIcon={<KitoblarIcon />}
       />
 
       {/* Search bar — A's enhancement (B's library page didn't have one).

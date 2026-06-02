@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CommentCard from './CommentCard.jsx';
 import CommentForm from './CommentForm.jsx';
-import OrnamentDivider from './OrnamentDivider.jsx';
+import SectionHeading from './SectionHeading.jsx';
 import useProgress from '../../hooks/useProgress.js';
 
 /**
@@ -23,16 +23,16 @@ export default function Comments({ contentType, contentId, contentTitle }) {
 
   return (
     <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 max-w-3xl mx-auto">
-      <div className="text-center mb-8">
-        <OrnamentDivider className="opacity-60 mb-5" />
-        <div className="eyebrow mb-3">— FOYDALANUVCHILAR SHARHI —</div>
-        <h2 className="section-title mb-3">Fikrlar va Mulohazalar</h2>
-        <p className="font-serif italic text-cream-soft/70">
-          {all.length > 0
+      <SectionHeading
+        eyebrow="Foydalanuvchilar Sharhi"
+        title="Fikrlar va Mulohazalar"
+        description={
+          all.length > 0
             ? `${all.length} ta sharh — eng yoqgan ${top3.length} tasi`
-            : 'Birinchi bo\'lib o\'z fikringizni qoldiring'}
-        </p>
-      </div>
+            : "Birinchi bo'lib o'z fikringizni qoldiring"
+        }
+        className="mb-8"
+      />
 
       {/* Top liked preview */}
       {top3.length > 0 && (

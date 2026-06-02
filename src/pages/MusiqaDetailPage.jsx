@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import musiqa from '../data/musiqa.json';
 import viktorinalar from '../data/viktorinalar.json';
 import SmartImage from '../components/common/SmartImage.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
 import FavoriteButton from '../components/common/FavoriteButton.jsx';
 import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
@@ -60,42 +60,48 @@ export default function MusiqaDetailPage() {
     <article className="relative">
       {/* Hero */}
       <header
-        className="relative pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 overflow-hidden"
-        style={{ background: `radial-gradient(ellipse at 50% 20%, ${song.accent}33, var(--bg-deep) 60%)` }}
+        className="relative pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 overflow-hidden"
+        style={{ background: `radial-gradient(ellipse at 50% 20%, ${song.accent}1a, transparent 60%)` }}
       >
-        <div className="absolute inset-0 bg-girih opacity-40 pointer-events-none" />
-        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-[320px_1fr] gap-6 sm:gap-8 md:gap-12 items-center">
-          {/* Album art */}
-          <div className="reveal w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] mx-auto md:mx-0">
-            <div className="relative aspect-square rounded-sm overflow-hidden border border-gold shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+        <div className="relative max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[300px_1fr] gap-6 sm:gap-8 md:gap-12 items-center">
+          {/* Album art — single hairline border, layered shadow */}
+          <div className="reveal w-full max-w-[200px] sm:max-w-[260px] md:max-w-[300px] mx-auto md:mx-0">
+            <div
+              className="relative aspect-square rounded-2xl overflow-hidden border border-white/[0.06]"
+              style={{
+                boxShadow:
+                  '0 32px 64px -16px rgba(0,0,0,0.55), 0 4px 14px -6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
+              }}
+            >
               <SmartImage src={song.image} alt={song.title} initial={song.initial} accent={song.accent} />
-              <span className="absolute inset-3 border border-gold/40 pointer-events-none" />
             </div>
           </div>
 
           <div>
             <Link
               to="/musiqa"
-              className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-6"
+              className="inline-flex items-center gap-2 text-cream-soft/55 hover:text-gold text-[11px] tracking-[2.5px] uppercase mb-6 transition-colors"
             >
-              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
+              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-3 rotate-180">
                 <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
               </svg>
               Musiqa
             </Link>
-            <div className="flex items-center justify-between gap-4 mb-3">
-              <div className="eyebrow">— {song.genre} —</div>
+            <div className="flex items-start justify-between gap-4 mb-3">
+              <p className="text-gold/75 text-[11px] tracking-[5px] uppercase font-medium">
+                {song.genre}
+              </p>
               <FavoriteButton section="musiqa" itemId={song.id} size="lg" />
             </div>
             <h1
-              className="font-serif text-gold-gradient leading-[0.95] mb-3"
-              style={{ fontSize: 'clamp(40px, 6vw, 80px)', letterSpacing: '1px' }}
+              className="font-serif text-cream leading-[1.02] mb-3"
+              style={{ fontSize: 'clamp(26px, 5vw, 64px)' }}
             >
               {song.title}
             </h1>
-            <p className="font-amiri text-gold tracking-[3px] text-base sm:text-lg mb-6">— {song.artist} —</p>
+            <p className="text-cream-soft/55 text-sm tracking-[2px] mb-6">{song.artist}</p>
 
-            <p className="font-serif italic text-cream text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl">
+            <p className="font-serif text-cream/85 text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl">
               {song.about}
             </p>
 
@@ -116,11 +122,7 @@ export default function MusiqaDetailPage() {
       {/* About — long */}
       {song.aboutFull?.length > 0 && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto reveal">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— ASAR HAQIDA —</div>
-            <h2 className="section-title">Batafsil</h2>
-          </div>
+          <SectionHeading eyebrow="Asar Haqida" title="Batafsil" className="mb-10" />
           <div className="space-y-5 text-cream-soft text-base sm:text-lg leading-relaxed">
             {song.aboutFull.map((p, i) => (
               <p key={i}>{p}</p>
@@ -144,14 +146,12 @@ export default function MusiqaDetailPage() {
       {/* Quiz */}
       {quiz && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
-            <h2 className="section-title">Viktorina</h2>
-            <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Bilimlarni Sinash"
+            title="Viktorina"
+            description={`${quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.`}
+            className="mb-10"
+          />
 
           {quizOpen ? (
             <Quiz
@@ -163,17 +163,25 @@ export default function MusiqaDetailPage() {
           ) : (
             <div className="text-center">
               {previousQuizScore !== undefined ? (
-                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
-                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
-                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                <div
+                  className="inline-block px-8 py-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] mb-6"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
+                >
+                  <p className="text-gold/75 text-[10px] tracking-[4px] uppercase font-medium mb-2">
+                    Eng Yaxshi Natija
+                  </p>
+                  <div className="font-serif text-cream text-4xl sm:text-5xl mb-1">
                     {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
-                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                    <p className="text-gold/80 text-sm">Mukammal ★</p>
                   )}
                 </div>
               ) : (
-                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                <p className="text-cream-soft/65 text-base mb-6">
                   Hozirgacha bu viktorinani topshirmaganmisiz.
                 </p>
               )}
@@ -189,9 +197,9 @@ export default function MusiqaDetailPage() {
       <Comments contentType="musiqa" contentId={song.id} contentTitle={song.title} />
 
       {/* Other songs */}
-      <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-16 border-t border-gold/10">
+      <section className="px-4 sm:px-6 md:px-12 py-14 sm:py-20 border-t border-white/[0.05]">
         <div className="max-w-[1300px] mx-auto">
-          <div className="eyebrow mb-6 text-center">— BOSHQA ASARLAR —</div>
+          <SectionHeading title="Boshqa Asarlar" className="mb-10" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {musiqa
               .filter((m) => m.slug !== song.slug)
@@ -199,14 +207,18 @@ export default function MusiqaDetailPage() {
                 <Link
                   key={m.id}
                   to={`/musiqa/${m.slug}`}
-                  className="group block rounded-sm border border-gold/20 hover:border-gold/70 overflow-hidden transition"
+                  className="group block rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1"
+                  style={{
+                    boxShadow:
+                      '0 12px 24px -10px rgba(0,0,0,0.4), 0 3px 8px -3px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
                 >
                   <div className="aspect-square">
                     <SmartImage src={m.image} alt={m.title} initial={m.initial} accent={m.accent} />
                   </div>
                   <div className="p-3 text-center">
                     <div className="font-serif text-cream text-sm leading-tight truncate">{m.title}</div>
-                    <div className="text-gold/60 text-[10px] tracking-[2px] mt-1 truncate">{m.artist}</div>
+                    <div className="text-cream-soft/50 text-[10px] tracking-[2px] mt-1 truncate">{m.artist}</div>
                   </div>
                 </Link>
               ))}

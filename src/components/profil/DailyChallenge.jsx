@@ -148,7 +148,7 @@ export default function DailyChallenge() {
           <span className="text-3xl sm:text-4xl flex-shrink-0">{challenge.icon}</span>
         </div>
 
-        <div className="flex items-center justify-between gap-3 mt-5 flex-wrap">
+        <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:items-center sm:justify-between sm:flex-wrap">
           <div className="flex items-center gap-3">
             <span className="text-cream-soft/70 text-xs tracking-[2px] uppercase">Mukofot:</span>
             <div className="flex items-center gap-2">

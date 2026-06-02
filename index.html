@@ -2,6 +2,24 @@
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
+    <!--
+      Content-Security-Policy — defence-in-depth against XSS.
+
+        default-src 'self'             everything off-origin must be explicit
+        script-src   'self' GIS        GIS is loaded as accounts.google.com/gsi
+        style-src    'self' 'unsafe-inline' Google Fonts CSS  (Tailwind injects
+                                       inline <style> tags via Vite at runtime)
+        font-src     'self' Google Fonts files
+        img-src      'self' data: https:  user avatars + book covers are remote
+        connect-src  'self' Google OAuth endpoints (id_token verify side-call)
+        frame-src    YouTube + Google Maps   the only iframes we host
+        object-src   'none'             disables plugins; <object>/<embed> blocked
+        base-uri     'self'             blocks <base href=...> hijacking
+        form-action  'self'             POSTs only to our own origin
+        frame-ancestors 'none'          stops clickjacking via embedded iframe
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com https://apis.google.com https://www.youtube.com https://s.ytimg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; media-src 'self' blob: data: https://www.youtube.com; connect-src 'self' https://accounts.google.com https://oauth2.googleapis.com https://www.youtube.com https://s.ytimg.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://accounts.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; worker-src 'self' blob:" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#0a1f2e" />

@@ -3,7 +3,7 @@ export default function OrnamentDivider({ className = '' }) {
     <svg
       viewBox="0 0 200 40"
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-[200px] h-10 mx-auto ${className}`}
+      className={`w-[150px] sm:w-[200px] max-w-[90%] h-10 mx-auto ${className}`}
       aria-hidden="true"
     >
       <g fill="none" stroke="#d4a574" strokeWidth="1">

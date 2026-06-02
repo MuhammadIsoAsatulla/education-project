@@ -135,7 +135,7 @@ export default function GlobalSearch({ open, onClose }) {
       />
 
       {/* Panel */}
-      <div className="relative w-full max-w-2xl bg-bg-mid/95 backdrop-blur-xl border border-gold/30 rounded-sm shadow-[0_30px_80px_rgba(0,0,0,0.6)] overflow-hidden flex flex-col max-h-[90vh] sm:max-h-[80vh]">
+      <div className="relative w-full max-w-[calc(100%-16px)] md:max-w-2xl bg-bg-mid/95 backdrop-blur-xl border border-gold/30 rounded-sm shadow-[0_30px_80px_rgba(0,0,0,0.6)] overflow-hidden flex flex-col max-h-[90vh] sm:max-h-[80vh]">
         {/* Input row */}
         <div className="flex items-center gap-3 px-4 sm:px-5 py-4 border-b border-gold/15">
           <svg
@@ -156,7 +156,7 @@ export default function GlobalSearch({ open, onClose }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Alloma, kitob, film, qo'shiq, muzey..."
-            className="flex-1 bg-transparent text-cream text-base sm:text-lg font-serif placeholder:text-cream-soft/40 focus:outline-none"
+            className="flex-1 bg-transparent text-cream text-base font-serif placeholder:text-cream-soft/40 focus:outline-none"
           />
           <kbd className="hidden sm:inline-flex items-center px-2 py-1 text-[10px] tracking-[1px] text-cream-soft/50 border border-gold/20 rounded">
             ESC

@@ -18,20 +18,15 @@ export default function SmartImage({
   objectPosition = 'center',
 }) {
   const [failed, setFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const showImage = src && !failed;
 
   return (
     <div className={`relative w-full h-full overflow-hidden ${className}`}>
-      {showImage ? (
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          onError={() => setFailed(true)}
-          style={{ objectPosition }}
-          className={`absolute inset-0 w-full h-full object-cover ${rounded ? 'rounded-sm' : ''} ${imgClassName}`}
-        />
-      ) : (
+      {/* Placeholder is always rendered behind the img so the slot is never
+          blank while the image is still loading — solves the "empty space
+          during scroll" effect from lazy decoding. */}
+      {(!showImage || !loaded) && (
         <div
           className={`absolute inset-0 flex items-center justify-center ${fallbackClassName}`}
           style={{
@@ -72,6 +67,22 @@ export default function SmartImage({
             {initial || alt?.[0]?.toUpperCase() || '✦'}
           </span>
         </div>
+      )}
+      {showImage && (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          decoding="async"
+          onLoad={() => setLoaded(true)}
+          onError={() => setFailed(true)}
+          style={{
+            objectPosition,
+            opacity: loaded ? 1 : 0,
+            transition: 'opacity 0.35s ease',
+          }}
+          className={`absolute inset-0 w-full h-full object-cover ${rounded ? 'rounded-sm' : ''} ${imgClassName}`}
+        />
       )}
     </div>
   );

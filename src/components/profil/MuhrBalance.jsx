@@ -13,7 +13,7 @@ export default function MuhrBalance({ compact = false }) {
 
   return (
     <>
-      <div className={`flex items-center gap-3 ${compact ? '' : 'flex-wrap'}`}>
+      <div className={`flex flex-wrap items-center gap-3 sm:flex-nowrap ${compact ? '' : ''}`}>
         {/* Three muhr tiers side by side */}
         <button
           onClick={() => setHistoryOpen(true)}

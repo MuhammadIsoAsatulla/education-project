@@ -18,7 +18,7 @@ const NEIGHBOR_SHIFT = 46; // spread enough to reveal a book hidden by overlap
 const OVERLAP = 0.22; // each book sits ~22% over its left neighbour
 const PULL_MS = 680;
 
-export default function Bookshelf({ books, onFeature }) {
+export default function Bookshelf({ books, onFeature, compact = false }) {
   const reduceMotion = useReducedMotion();
   const navigate = useNavigate();
   const [hovered, setHovered] = useState(null);
@@ -52,11 +52,17 @@ export default function Bookshelf({ books, onFeature }) {
       <div className="no-scrollbar overflow-x-auto md:overflow-visible -mx-4 px-4 md:mx-0 md:px-0 pb-1">
         <div className="relative mx-auto" style={{ maxWidth: 1240, minWidth: 'min-content' }}>
           <ul
-            className="flex items-end justify-start md:justify-center list-none m-0 p-0 pt-28 sm:pt-32 px-10"
+            className="flex items-end justify-start md:justify-center list-none m-0 p-0 pt-16 sm:pt-24 md:pt-32 px-4 sm:px-10"
             style={{ perspective: 1600 }}
           >
             {books.map((b, i) => {
-              const sz = SIZES[i % SIZES.length];
+              const base = SIZES[i % SIZES.length];
+              const sz = compact
+                ? (() => {
+                    const scale = Math.min(1, 130 / base.w);
+                    return { w: Math.round(base.w * scale), h: Math.round(base.h * scale) };
+                  })()
+                : base;
               const isFront = pulling === i || hovered === i;
               const phase =
                 pulling === i

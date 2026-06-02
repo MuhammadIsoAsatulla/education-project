@@ -11,7 +11,7 @@ export default function JadidDetailRoute() {
       basePath="/jadidlar"
       notFoundTitle="Jadid topilmadi"
       listLabel="Jadidlar ro'yxati"
-      siblingsLabel="— BOSHQA JADIDLAR —"
+      siblingsLabel="Boshqa Jadidlar"
       achievement="jadid-do-st"
     />
   );

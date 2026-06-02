@@ -23,6 +23,7 @@ export function shade(hex, amt = 0.74) {
 
 export default function BookCoverFace({ book, lit = false, large = false }) {
   const [failed, setFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const showImage = book.cover && !failed;
   const radius = large ? 6 : 3;
 
@@ -43,14 +44,20 @@ export default function BookCoverFace({ book, lit = false, large = false }) {
         transition: 'box-shadow 0.45s cubic-bezier(0.22,1,0.36,1)',
       }}
     >
-      {showImage ? (
+      {/* Fallback always rendered underneath while loading — keeps the shelf
+          slot filled during scroll so books never appear as blank rectangles. */}
+      {(!showImage || !loaded) && <FallbackFace book={book} large={large} />}
+      {showImage && (
         <>
           <img
             src={book.cover}
             alt=""
             loading="lazy"
+            decoding="async"
+            onLoad={() => setLoaded(true)}
             onError={() => setFailed(true)}
             className="absolute inset-0 w-full h-full object-cover"
+            style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.35s ease' }}
             draggable="false"
           />
           {/* gold frame + soft bottom vignette */}
@@ -59,11 +66,11 @@ export default function BookCoverFace({ book, lit = false, large = false }) {
             style={{
               boxShadow: 'inset 0 0 0 1px rgba(212,165,116,0.4)',
               background: 'linear-gradient(180deg, transparent 62%, rgba(4,12,20,0.32) 100%)',
+              opacity: loaded ? 1 : 0,
+              transition: 'opacity 0.35s ease',
             }}
           />
         </>
-      ) : (
-        <FallbackFace book={book} large={large} />
       )}
 
       {/* Hover lighting sweep (shared) */}

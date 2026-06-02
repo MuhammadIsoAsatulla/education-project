@@ -126,17 +126,47 @@ export function getUserRow(uid) {
 // Writes happen often (debounced from the client at 500 ms). Storing the
 // whole state blob is the simplest path and matches what Firestore was doing.
 // `points` is denormalised onto the row for the leaderboard's index.
+//
+// Anti-cheat: the client is NOT trusted with `points`. A signed-in user could
+// PUT {state: {points: 9e9}} and rank #1. We instead:
+//   1. Read the user's current authoritative points from the row.
+//   2. Cap the new value to `current + MAX_DELTA_PER_WRITE` (~250 pts ≈ 50
+//      visits, 25 quizzes, or a couple of perfect days — way above what a
+//      legitimate 500 ms-debounced write can earn in one tick).
+//   3. Refuse to ever decrease points (monotonic), so quiz retakes etc.
+//      cannot be exploited via rollback.
+// The full state blob is stored as-is for everything else (it's user-owned
+// non-ranking data), but the rewritten `points` is also written back into the
+// blob so the client sees the clamped value on next fetch.
+const MAX_DELTA_PER_WRITE = 250;
+
 export function updateUserState(uid, state) {
-  const points = Number.isFinite(state?.points) ? state.points : 0;
-  const name = state?.name || null;
+  const d = getDb();
+  const current = d
+    .prepare('SELECT points FROM users WHERE uid = ?')
+    .get(uid);
+  if (!current) return false;
+
+  const claimed = Number.isFinite(state?.points) ? Math.floor(state.points) : 0;
+  const safePoints = Math.max(
+    current.points,
+    Math.min(claimed, current.points + MAX_DELTA_PER_WRITE),
+  );
+
+  // Strip any obviously-bogus values inside nested objects we know about.
+  // The state blob is otherwise free-form (per-user UI prefs etc.) so we keep
+  // a minimal allow-list approach: we don't try to validate every field, we
+  // just make sure the leaderboard-relevant value is clean.
+  const sanitized = { ...(state || {}), points: safePoints };
+  const name = typeof state?.name === 'string' ? state.name.slice(0, 64) : null;
   const now = Date.now();
-  const info = getDb()
+  const info = d
     .prepare(
       `UPDATE users
          SET state = ?, points = ?, name = COALESCE(?, name), updated_at = ?
        WHERE uid = ?`,
     )
-    .run(JSON.stringify(state || {}), points, name, now, uid);
+    .run(JSON.stringify(sanitized), safePoints, name, now, uid);
   return info.changes > 0;
 }
 

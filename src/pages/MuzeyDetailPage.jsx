@@ -4,7 +4,7 @@ import muzeylar from '../data/muzeylar.json';
 import viktorinalar from '../data/viktorinalar.json';
 import VirtualTour from '../components/muzeylar/VirtualTour.jsx';
 import SmartImage from '../components/common/SmartImage.jsx';
-import OrnamentDivider from '../components/common/OrnamentDivider.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
 import Quiz, { quizSessionSize } from '../components/common/Quiz.jsx';
 import Comments from '../components/common/Comments.jsx';
 import {
@@ -77,18 +77,20 @@ export default function MuzeyDetailPage() {
 
         <div className="absolute inset-x-0 bottom-0 px-4 sm:px-6 md:px-12 pb-6 sm:pb-10">
           <div className="max-w-[1300px] mx-auto text-center">
-            <Link to="/muzeylar" className="inline-flex items-center gap-2 text-gold/70 hover:text-gold text-xs tracking-[2px] uppercase mb-4">
-              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-3 rotate-180">
+            <Link to="/muzeylar" className="inline-flex items-center gap-2 text-cream-soft/55 hover:text-gold text-[11px] tracking-[2.5px] uppercase mb-4 transition-colors">
+              <svg viewBox="0 0 20 12" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-3 rotate-180">
                 <path d="M0 6 L18 6 M13 1 L18 6 L13 11" />
               </svg>
               Muzeylar
             </Link>
-            <div className="eyebrow mb-3">— {muzey.city} · {muzey.century} —</div>
-            <h1 className="font-serif text-gold-gradient leading-[0.95] mb-4"
-                style={{ fontSize: 'clamp(32px, 7vw, 96px)', letterSpacing: '2px' }}>
+            <p className="text-gold/75 text-[11px] tracking-[5px] uppercase font-medium mb-3">
+              {muzey.city} · {muzey.century}
+            </p>
+            <h1 className="font-serif text-cream leading-[1.02] mb-4"
+                style={{ fontSize: 'clamp(26px, 4.5vw, 72px)' }}>
               {muzey.name}
             </h1>
-            <p className="font-serif italic text-cream-soft text-xl max-w-2xl mx-auto">
+            <p className="text-cream-soft/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
               {muzey.shortDescription}
             </p>
           </div>
@@ -97,15 +99,16 @@ export default function MuzeyDetailPage() {
 
       {/* Virtual tour */}
       <section className="px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto py-8 sm:py-12">
-        <div className="text-center mb-8">
-          <div className="eyebrow mb-3">— 360° INTERAKTIV SAYOHAT —</div>
-          <h2 className="section-title mb-3">Ichkariga Boqing</h2>
-          <p className="font-serif italic text-cream-soft/80">
-            {muzey.embed360
+        <SectionHeading
+          eyebrow="360° Interaktiv Sayohat"
+          title="Ichkariga Boqing"
+          description={
+            muzey.embed360
               ? 'Sahnani sichqoncha bilan suring, zoom qiling — Google Street View'
-              : "Sahnani sichqoncha bilan suring · ✦-belgilarini bosing"}
-          </p>
-        </div>
+              : "Sahnani sichqoncha bilan suring · ✦-belgilarini bosing"
+          }
+          className="mb-8"
+        />
         {muzey.embed360 ? (
           <Embed360
             src={muzey.embed360}
@@ -145,11 +148,7 @@ export default function MuzeyDetailPage() {
 
       {/* About */}
       <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-24 max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <OrnamentDivider className="opacity-60 mb-6" />
-          <div className="eyebrow mb-3">— TARIXIY MA'LUMOT —</div>
-          <h2 className="section-title">Yodgorlik Haqida</h2>
-        </div>
+        <SectionHeading eyebrow="Tarixiy Ma'lumot" title="Yodgorlik Haqida" className="mb-10" />
         <div className="space-y-5 text-cream-soft text-lg leading-relaxed">
           {(muzey.fullDescription || []).map((p, i) => (
             <p key={i}>{p}</p>
@@ -161,21 +160,21 @@ export default function MuzeyDetailPage() {
       {/* Hotspots info accordion (shown alongside Google Maps tour) */}
       {muzey.embed360 && muzey.hotspots?.length > 0 && (
         <section className="px-4 sm:px-6 md:px-12 py-12 max-w-[1200px] mx-auto">
-          <div className="text-center mb-8">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— SAYOHAT NUQTALARI —</div>
-            <h2 className="section-title">Diqqatga Sazovor Joylar</h2>
-          </div>
+          <SectionHeading eyebrow="Sayohat Nuqtalari" title="Diqqatga Sazovor Joylar" className="mb-10" />
           <div className="grid md:grid-cols-3 gap-5">
             {muzey.hotspots.map((h) => (
               <div
                 key={h.id}
-                className="p-6 border border-gold/20 hover:border-gold/70 rounded-sm bg-bg-mid/40 backdrop-blur transition"
+                className="p-6 rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] transition-colors"
+                style={{
+                  boxShadow:
+                    '0 16px 32px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05)',
+                }}
               >
                 <div className="flex items-center gap-3 mb-3">
                   <span
-                    className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center text-gold flex-shrink-0"
-                    style={{ background: `${muzey.accent}33` }}
+                    className="w-9 h-9 rounded-full border border-gold/40 flex items-center justify-center text-gold/85 flex-shrink-0"
+                    style={{ background: `${muzey.accent}22` }}
                   >
                     ✦
                   </span>
@@ -193,20 +192,24 @@ export default function MuzeyDetailPage() {
         <section className="px-4 sm:px-6 md:px-12 py-12 sm:py-20"
                  style={{ background: `linear-gradient(180deg, transparent, ${muzey.accent}1a, transparent)` }}>
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12">
-              <OrnamentDivider className="opacity-60 mb-6" />
-              <div className="eyebrow mb-3">— DIQQATGA SAZOVOR —</div>
-              <h2 className="section-title">Asosiy Eksponatlar</h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <SectionHeading eyebrow="Diqqatga Sazovor" title="Asosiy Eksponatlar" className="mb-12" />
+            <div className="grid md:grid-cols-3 gap-5">
               {muzey.highlights.map((h, i) => (
                 <div
                   key={h.title}
-                  className="p-7 border border-gold/20 hover:border-gold/70 rounded-sm bg-bg-mid/40 backdrop-blur transition-all"
+                  className="group p-7 rounded-2xl border border-white/[0.06] hover:border-gold/30 bg-white/[0.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
                 >
-                  <div className="font-serif text-gold/60 text-sm tracking-[3px] mb-3">— {String(i + 1).padStart(2, '0')} —</div>
-                  <h3 className="font-serif text-cream text-2xl mb-3">{h.title}</h3>
-                  <p className="text-cream-soft/80 text-sm leading-relaxed">{h.text}</p>
+                  <div className="text-gold/55 text-[11px] tracking-[3px] mb-3 tabular-nums font-medium">
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <h3 className="font-serif text-cream text-xl md:text-[22px] mb-3 leading-tight group-hover:text-gold-bright transition-colors">
+                    {h.title}
+                  </h3>
+                  <p className="text-cream-soft/75 text-[14px] leading-relaxed">{h.text}</p>
                 </div>
               ))}
             </div>
@@ -223,14 +226,12 @@ export default function MuzeyDetailPage() {
       {/* NEW: Quiz */}
       {quiz && (
         <section className="px-4 sm:px-6 md:px-12 py-16 sm:py-20 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <OrnamentDivider className="opacity-60 mb-6" />
-            <div className="eyebrow mb-3">— BILIMLARNI SINASH —</div>
-            <h2 className="section-title">Viktorina</h2>
-            <p className="font-serif italic text-cream-soft/80 mt-3">
-              {quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Bilimlarni Sinash"
+            title="Viktorina"
+            description={`${quizSessionSize(quiz.questions.length)} ta savol. Har to'g'ri javob — bonus ball.`}
+            className="mb-10"
+          />
 
           {quizOpen ? (
             <Quiz
@@ -242,17 +243,25 @@ export default function MuzeyDetailPage() {
           ) : (
             <div className="text-center">
               {previousQuizScore !== undefined ? (
-                <div className="inline-block p-6 sm:p-8 border border-gold/30 rounded-sm bg-bg-mid/50 backdrop-blur mb-6">
-                  <div className="eyebrow text-xs mb-2">— ENG YAXSHI NATIJA —</div>
-                  <div className="font-serif text-gold-gradient text-4xl sm:text-5xl mb-1">
+                <div
+                  className="inline-block px-8 py-7 rounded-2xl border border-white/[0.06] bg-white/[0.02] mb-6"
+                  style={{
+                    boxShadow:
+                      '0 18px 36px -12px rgba(0,0,0,0.45), 0 4px 10px -4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
+                  }}
+                >
+                  <p className="text-gold/75 text-[10px] tracking-[4px] uppercase font-medium mb-2">
+                    Eng Yaxshi Natija
+                  </p>
+                  <div className="font-serif text-cream text-4xl sm:text-5xl mb-1">
                     {previousQuizScore} / {quizSessionSize(quiz.questions.length)}
                   </div>
                   {previousQuizScore === quiz.questions.length && (
-                    <p className="text-gold/80 text-sm italic">Mukammal! ✦</p>
+                    <p className="text-gold/80 text-sm">Mukammal ★</p>
                   )}
                 </div>
               ) : (
-                <p className="font-serif italic text-cream-soft text-lg mb-6">
+                <p className="text-cream-soft/65 text-base mb-6">
                   Hozirgacha bu viktorinani topshirmaganmisiz.
                 </p>
               )}

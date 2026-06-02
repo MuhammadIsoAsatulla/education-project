@@ -17,7 +17,7 @@ export default function DailyQuote() {
     <div className="relative p-6 sm:p-8 border border-gold/25 rounded-sm bg-bg-mid/40 backdrop-blur overflow-hidden">
       {/* Decorative quote mark */}
       <div
-        className="absolute top-0 right-4 text-8xl sm:text-9xl text-gold/15 font-serif leading-none pointer-events-none select-none"
+        className="absolute top-0 right-4 text-6xl sm:text-8xl md:text-9xl text-gold/15 font-serif leading-none pointer-events-none select-none"
         aria-hidden
       >
         “

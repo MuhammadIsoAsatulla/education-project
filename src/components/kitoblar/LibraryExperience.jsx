@@ -12,16 +12,47 @@ const DUST = Array.from({ length: 14 }, (_, i) => ({
   delay: (i % 7) * 1.4,
 }));
 
+// Books-per-shelf scales with viewport. The shelf overlaps each book ~22%
+// over its neighbour, so 7 books at 174 px wide collapse to ~960 px — fits
+// the 1240 px container with breathing room. On phones, 3 keeps every
+// title readable; on tablets, 5 stays generous.
+function pickPerShelf(width) {
+  if (width < 640) return 3;
+  if (width < 1024) return 5;
+  return 7;
+}
+
+function chunk(arr, size) {
+  const out = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+
 export default function LibraryExperience({ books }) {
   // Featured book defaults to the first book. We resync if the parent
   // (KitoblarPage) filters the list down — that way searching for a single
   // title makes that book the featured one automatically.
   const [featured, setFeatured] = useState(books[0]);
 
+  // Track viewport width so we can re-chunk shelves on resize. SSR-safe
+  // initial value (1280) means the first paint assumes desktop and corrects
+  // on hydration if needed.
+  const [perShelf, setPerShelf] = useState(() =>
+    pickPerShelf(typeof window === 'undefined' ? 1280 : window.innerWidth),
+  );
+
+  useEffect(() => {
+    const onResize = () => setPerShelf(pickPerShelf(window.innerWidth));
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
   useEffect(() => {
     if (!books.length) return;
     setFeatured((curr) => (books.find((b) => b.id === curr?.id) ? curr : books[0]));
   }, [books]);
+
+  const shelves = chunk(books, perShelf);
 
   if (!books.length) {
     return (
@@ -76,7 +107,21 @@ export default function LibraryExperience({ books }) {
           </p>
         </div>
 
-        <Bookshelf books={books} onFeature={setFeatured} />
+        {/* Multi-row bookshelf — every row is its own wooden plank, so the
+            collection reads as a real library with depth. Hovering a book on
+            any shelf re-features it; the rest of the shelves stay
+            independent (no cross-shelf neighbour shifting, which is the
+            physically correct behaviour). */}
+        <div className="space-y-3 sm:space-y-3 md:space-y-4">
+          {shelves.map((shelf, idx) => (
+            <Bookshelf
+              key={idx}
+              books={shelf}
+              onFeature={setFeatured}
+              compact={perShelf === 3}
+            />
+          ))}
+        </div>
       </div>
 
       <style>{`
